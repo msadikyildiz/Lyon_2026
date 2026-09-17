@@ -53,21 +53,35 @@ def main():
         if root.is_relative_to(ROOT) and not root.is_relative_to(ROOT / 'runs'):
             parser.error('Within this checkout, place refit outputs under runs/')
         shutil.copytree(ROOT, root, ignore=shutil.ignore_patterns('.git', 'runs', '__pycache__', '.DS_Store', '.venv'))
+        # Remove only generated directories inside the newly created refit copy.
+        for relative in [SCRIPTS / 'out', Path('working/source-data'), Path('working/figures-assembled')]:
+            if (root / relative).exists():
+                shutil.rmtree(root / relative)
         cache = root / SCRIPTS / 'cache'
         cache.rename(root / 'reference-cache')
         cache.mkdir()
     logs = root / 'runs' / 'logs'
     logs.mkdir(parents=True, exist_ok=True)
-    if args.refit:
-        def refit(name):
-            run(root, [SCRIPTS / 'build_all.py', name], logs / (name + '.log'))
-        with ThreadPoolExecutor(max_workers=args.jobs) as pool:
-            list(pool.map(refit, DATASETS))
-        run(root, ['scripts/compare_caches.py', str(root / 'reference-cache'), str(root / SCRIPTS / 'cache'), str(root / 'runs/refit-comparison.json')], logs / 'compare-refits.log')
-    run(root, ['-m', 'unittest', 'discover', '-s', SCRIPTS / 'tests', '-v'], logs / 'tests.log')
-    for step in STEPS:
-        run(root, [SCRIPTS / step], logs / (step + '.log'))
-    run(root, ['scripts/reproduce_trajectories.py'], logs / 'trajectories.log')
+    result_file = root / 'runs/reproduction.json'
+    result_file.write_text(json.dumps({'status': 'running', 'started': time.strftime('%Y-%m-%dT%H:%M:%S%z')})+'\n')
+    try:
+        if args.refit:
+            def refit(name):
+                run(root, [SCRIPTS / 'build_all.py', name], logs / (name + '.log'))
+            with ThreadPoolExecutor(max_workers=args.jobs) as pool:
+                list(pool.map(refit, DATASETS))
+            run(root, ['scripts/compare_caches.py', str(root / 'reference-cache'), str(root / SCRIPTS / 'cache'), str(root / 'runs/refit-comparison.json')], logs / 'compare-refits.log')
+        run(root, ['-m', 'unittest', 'discover', '-s', SCRIPTS / 'tests', '-v'], logs / 'tests.log')
+        for step in STEPS:
+            run(root, [SCRIPTS / step], logs / (step + '.log'))
+            if step == 'final_stats.py':
+                run(root, ['scripts/check_primary.py'], logs / 'primary-regression.log')
+        run(root, ['scripts/reproduce_trajectories.py'], logs / 'trajectories.log')
+        if args.refit:
+            run(root, ['scripts/compare_outputs.py', str(ROOT), str(root), '--report', str(root/'runs/output-comparison.json')], logs/'compare-outputs.log')
+    except BaseException as error:
+        result_file.write_text(json.dumps({'status': 'failed', 'error': str(error), 'seconds': round(time.time()-start, 2)}, indent=2)+'\n')
+        raise
     report = {'mode': 'raw-refit' if args.refit else 'cached', 'python': platform.python_version(),
               'platform': platform.platform(), 'seconds': round(time.time()-start, 2),
               'steps': STEPS + ['scripts/reproduce_trajectories.py'], 'status': 'passed',

@@ -20,7 +20,17 @@ The default run uses the included fitted curves and redoes the statistics, data 
 micromamba run -n lyon-2026 python reproduce.py --refit --jobs 2
 ```
 
-Refits run in a new directory under `runs/`, compare all regenerated fit/cache tables with the supplied tables, and execute the full pipeline there. The original caches remain unchanged. An existing output directory is rejected. Use `--output /path/to/new-directory` to place a refit elsewhere. Cached runs take several minutes; refits take longer. Logs and a machine-readable result are written under the run's `runs/` directory.
+Refits run in a new directory under `runs/`, start with empty generated-output directories, compare all regenerated fit/cache tables with the supplied tables, execute the full pipeline there, and compare the regenerated outputs with the reference checkout. The original caches remain unchanged. An existing output directory is rejected. Use `--output /path/to/new-directory` to place a refit elsewhere. Cached runs take several minutes; refits take longer. Logs and a machine-readable result are written under the run's `runs/` directory.
+
+## Compare outputs
+
+Raw-refit runs automatically compare their rebuilt outputs with this checkout. To repeat the comparison separately:
+
+```sh
+micromamba run -n lyon-2026 python scripts/compare_outputs.py /path/to/reference /path/to/rebuilt --report comparison.json
+```
+
+The comparator checks all 24 CSV tables (including the panel manifest), 125 PNG files, and Source Data cell values/types. Numerical tolerance is 1e-8 relative and 1e-10 absolute. PNG bytes must match. PDF, SVG and XLSX containers include timestamps, so regeneration can change their file hashes without changing rendered content or values. The driver also checks the 36 primary contrasts against the committed numerical reference; each run records `running`, `failed` or `passed` explicitly.
 
 ## Results and source files
 
@@ -31,7 +41,7 @@ Refits run in a new directory under `runs/`, compare all regenerated fit/cache t
 - [Original workbooks and reference notebooks](working/figures), [fitting workbooks](working/analysis/stats-rework/biohpc-pull/data), and [recovered genomic tables](data/genomics).
 - [Figure coverage](docs/FIGURE_COVERAGE.md), [genomic input requirements](data/genomics/README.md), and [verification record](docs/VALIDATION.md).
 
-Paths retain their existing figure names so that notebook, workbook and manuscript references remain traceable. The repository is self-contained for the supported workflow and does not need a manuscript DOCX or access to the original workstation. Exact typography uses Times New Roman, supplied by Microsoft Office on the validation Mac; see the font note below.
+Paths retain their existing figure names so that notebook, workbook and manuscript references remain traceable. The repository is self-contained for the supported workflow and does not need a manuscript DOCX or access to the original workstation. Exact typography uses Times New Roman from the validation Mac’s system fonts; see the font note below.
 
 ## Analysis conventions
 
@@ -43,6 +53,6 @@ Genomic notebooks and recovered tables are included, but per-sample mutation cal
 
 ## Fonts and reuse
 
-Install Times New Roman to reproduce the reviewed typography. Matplotlib may substitute another font when it is absent, changing line wrapping and panel geometry. Microsoft fonts are not redistributed here. Numerical results do not depend on fonts.
+Install Times New Roman to reproduce the reviewed typography. Matplotlib may substitute another font when it is absent, changing line wrapping and panel geometry. Fonts installed with macOS are not redistributed here. The trajectory notebooks use the bundled DejaVu Sans font explicitly where their original Nimbus Roman request fell back on the validation Mac. Numerical results do not depend on fonts.
 
 This repository is private for coauthor review. The authors' code/data license and public release remain to be decided. The vendored plategig MIT license applies to that component. No archival deposition is associated with this version.

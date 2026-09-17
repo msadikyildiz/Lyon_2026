@@ -10,7 +10,6 @@ from stats import split_strain
 
 DEST = ROOT / 'working/source-data'
 SOURCE = ROOT / 'data/supplementary_tables.json'
-NS = {'w': 'http://schemas.openxmlformats.org/wordprocessingml/2006/main'}
 COVERAGE = []
 EXPECTED_CELLS = []
 

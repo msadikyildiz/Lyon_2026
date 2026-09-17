@@ -76,7 +76,7 @@
   "environment": "environment-osx-arm64.lock + requirements-pip.txt",
   "python": "3.11.14",
   "date": "2026-09-17",
-  "cached_run_seconds": 152.02,
+  "cached_run_seconds": 150.31,
   "raw_refit": {
     "rtol": 1e-08,
     "atol": 1e-10,
@@ -155,7 +155,7 @@
       }
     ]
   },
-  "raw_refit_seconds": 388.74,
+  "raw_refit_seconds": 358.91,
   "refit_numeric_tables_match": 23,
   "refit_figures-assembled_pngs_identical": 20,
   "refit_figures-final_pngs_identical": 59,
@@ -164,7 +164,66 @@
   "clean_checkout_figures-final_pngs_identical": 59,
   "trajectory_notebooks_executed": 6,
   "trajectory_pngs": 6,
-  "tests_passed": 6,
+  "tests_passed": 8,
   "historical_values_checked": 49,
-  "acceptance_checks_passed": 357
+  "acceptance_checks_passed": 357,
+  "final_driver_clean_checkout_steps": [
+    "validate.py",
+    "final_stats.py",
+    "mdk_source.py",
+    "supp11_mdk.py",
+    "manifest.py",
+    "report_results.py",
+    "plot_final.py",
+    "source_data.py",
+    "print_panels.py",
+    "assemble_figures.py",
+    "scripts/reproduce_trajectories.py"
+  ],
+  "final_driver_clean_checkout_seconds": 135.73,
+  "primary_contrasts_checked": 36,
+  "post_review_cached_output_comparison": {
+    "status": "passed",
+    "csv_tables": 24,
+    "pngs_identical": {
+      "working/analysis/stats-rework/out/figures-final": 59,
+      "working/analysis/stats-rework/out/print-panels": 40,
+      "working/analysis/stats-rework/out/trajectories": 6,
+      "working/figures-assembled": 20
+    },
+    "workbook_cells_checked": 414279,
+    "workbook_numeric_cells": 138959,
+    "rtol": 1e-08,
+    "atol": 1e-10,
+    "comparison": "CSV values, PNG bytes, workbook values and cell types; PDF/SVG/XLSX container timestamps ignored"
+  },
+  "post_review_refit_output_comparison": {
+    "status": "passed",
+    "csv_tables": 24,
+    "pngs_identical": {
+      "working/analysis/stats-rework/out/figures-final": 59,
+      "working/analysis/stats-rework/out/print-panels": 40,
+      "working/analysis/stats-rework/out/trajectories": 6,
+      "working/figures-assembled": 20
+    },
+    "workbook_cells_checked": 414279,
+    "workbook_numeric_cells": 138959,
+    "rtol": 1e-08,
+    "atol": 1e-10,
+    "comparison": "CSV values, PNG bytes, workbook values and cell types; PDF/SVG/XLSX container timestamps ignored"
+  },
+  "post_review_refit_started_with_empty_output_directories": true,
+  "post_review_run_steps": [
+    "validate.py",
+    "final_stats.py",
+    "mdk_source.py",
+    "supp11_mdk.py",
+    "manifest.py",
+    "report_results.py",
+    "plot_final.py",
+    "source_data.py",
+    "print_panels.py",
+    "assemble_figures.py",
+    "scripts/reproduce_trajectories.py"
+  ]
 }

@@ -1,7 +1,7 @@
 """Final statistics for the revision. Version 3, 15 September 2026.
 
-Supersedes the 17 August version (kept as superseded/final_stats_17aug.py).
-What changed and why is in ../PLAN_2026-09-14_package.md, section 2.
+The 17 August comparison table is retained under superseded/out-17aug.
+Current conventions and figure coverage are described in the repository README.
 
 Design facts, from Adam Lyon's answers of 17 August 2026:
   * P1-P10 are the day-0 ancestors of every same-numbered culture in every arm,

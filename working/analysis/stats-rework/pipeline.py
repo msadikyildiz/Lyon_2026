@@ -1,9 +1,7 @@
 """Faithful re-implementation of Adam's plategig IC50 pipeline.
 
 Reproduces cells 1-26 of ``241011_Adam_mic_*.ipynb`` so growth features can be
-regenerated outside Jupyter. Validated against the BioHPC export
-``growth_features.xlsx`` (12 May 2025), which itself reproduces every published
-p-value to six decimals.
+regenerated outside Jupyter. Historical numerical agreement is checked by ``validate.py`` against the saved notebook values.
 
 plategig is vendored at commit 88839a2 to preserve the original fitting API.
 """
@@ -97,7 +95,6 @@ PLATE_ID_OFFSET_UNT = {4: 0, 2: 99, 3: 148}
 # Plate-map review verified that experiment-2 plates 39-41 are cefepime-only.
 # Retain their drug-specific exclusions. ATEC-C3's reason remains unconfirmed;
 # retain the recorded exclusion provisionally and list it for Adam's review.
-# The all-drug counterfactual below is historical and is not a primary dataset.
 #
 # Note also that ('2', 'ATEC-C-R', 'Cefepime') never matches anything: the group
 # is spelled 'ATEC-C-r' in the data, and the filter is applied to Strain, which
@@ -122,18 +119,6 @@ ATEC_TO_REMOVE = [
     ("2", "ATEC2", "Cefepime"), ("2", "ATEC4", "Cefepime"),
     ("2", "ATEC-C3", "Cefepime"),
 ]
-# The same exclusions extended to every drug, for the counterfactual.
-ATEC_TO_REMOVE_ALL_DRUGS = [
-    (exp, strain, drug)
-    for exp, strain, _ in ATEC_TO_REMOVE
-    for drug in ("Cefepime", "Levofloxacin", "Amikacin")
-]
-
-# Backwards-compatible aliases.
-GROUPS_TO_REMOVE = GROUPS_TO_REMOVE_FULL
-STRAINS_TO_REMOVE = STRAINS_TO_REMOVE_FULL
-
-
 def _plate_id(row, offsets=PLATE_ID_OFFSET):
     exp = row["Experiment"]
     return row["Plate"] + offsets[exp] if exp in offsets else None

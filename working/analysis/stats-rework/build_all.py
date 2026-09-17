@@ -22,7 +22,7 @@ from pathlib import Path
 
 warnings.filterwarnings("ignore")
 
-from pipeline import (ATEC_TO_REMOVE, ATEC_TO_REMOVE_ALL_DRUGS,
+from pipeline import (ATEC_TO_REMOVE,
                       GROUPS_TO_REMOVE_FULL, GROUPS_TO_REMOVE_SHORT,
                       PLATE_ID_OFFSET, PLATE_ID_OFFSET_UNT,
                       STRAINS_TO_REMOVE_FULL, STRAINS_TO_REMOVE_SHORT,
@@ -62,14 +62,6 @@ DATASETS = {
     "supp4_atec":   (*PAPLPC,  ["ATEC", "ATEC-C", "ATEC-C-r"],
                      "Supplementary Figure 4b-d (as published)",
                      dict(plate_offsets=PLATE_ID_OFFSET, **SHORT)),
-    # Counterfactual: the same exclusions applied to all three drugs, so the
-    # effect of the drug-specific filter can be quantified rather than asserted.
-    "supp4_atec_excluded": (*PAPLPC, ["ATEC", "ATEC-C", "ATEC-C-r"],
-                     "Supplementary Figure 4b-d (plating errors excluded for all drugs)",
-                     dict(plate_offsets=PLATE_ID_OFFSET,
-                          groups_to_remove=GROUPS_TO_REMOVE_SHORT,
-                          strains_to_remove=STRAINS_TO_REMOVE_SHORT,
-                          drug_strains_to_remove=ATEC_TO_REMOVE_ALL_DRUGS)),
     "fig5_mutants": (*MUTANTS, None,
                      "Figure 5b-d, Supplementary Figure 10a-c",
                      dict(plate_offsets=PLATE_ID_OFFSET, **NONE)),
@@ -79,7 +71,6 @@ DATASETS = {
 }
 
 
-DATASETS.pop("supp4_atec_excluded")  # Withdrawn counterfactual is not a supported entry point.
 
 def main(names):
     for name in names:
@@ -99,4 +90,4 @@ def main(names):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1:] or [name for name in DATASETS if name != "supp4_atec_excluded"])
+    main(sys.argv[1:] or list(DATASETS))

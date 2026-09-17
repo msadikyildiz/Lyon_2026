@@ -2,7 +2,7 @@
 
 The current primary analysis is final_stats.py: Figures 2/3 use culture-ID-paired
 log10 IC50 tests; Supplementary Figures 3/4/6 use Welch tests; Holm adjustment is
-by panel and drug. See RESULTS_v2.md and ../PLAN_2026-09-14_package.md.
+by panel and drug. See RESULTS_v2.md and the repository README.
 
 compare() retains the old raw-scale modes for validate.py. panel_tests() and
 its design_mode() reproduce the superseded August exploratory analysis only;
