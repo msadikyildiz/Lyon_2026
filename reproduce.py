@@ -67,9 +67,10 @@ def main():
     run(root, ['-m', 'unittest', 'discover', '-s', SCRIPTS / 'tests', '-v'], logs / 'tests.log')
     for step in STEPS:
         run(root, [SCRIPTS / step], logs / (step + '.log'))
+    run(root, ['scripts/reproduce_trajectories.py'], logs / 'trajectories.log')
     report = {'mode': 'raw-refit' if args.refit else 'cached', 'python': platform.python_version(),
               'platform': platform.platform(), 'seconds': round(time.time()-start, 2),
-              'steps': STEPS, 'status': 'passed',
+              'steps': STEPS + ['scripts/reproduce_trajectories.py'], 'status': 'passed',
               'coverage': 'docs/FIGURE_COVERAGE.md',
               'raw_inputs': {str(p.relative_to(root)): hashlib.sha256(p.read_bytes()).hexdigest()
                 for p in sorted((root / SCRIPTS / 'biohpc-pull/data').glob('*.xlsx'))}}

@@ -72,5 +72,99 @@
       "Source: working/manuscript/2026-08-12_Paper_Lyon_Toprak_Nature_REVISION.docx",
       "Source: data/supplementary_tables.json"
     ]
-  ]
+  ],
+  "environment": "environment-osx-arm64.lock + requirements-pip.txt",
+  "python": "3.11.14",
+  "date": "2026-09-17",
+  "cached_run_seconds": 152.02,
+  "raw_refit": {
+    "rtol": 1e-08,
+    "atol": 1e-10,
+    "tables": [
+      {
+        "file": "fig2_paplpc.pkl",
+        "rows": 120,
+        "columns": 17,
+        "passed": true
+      },
+      {
+        "file": "fig2_paplpc__df_analysis.pkl",
+        "rows": 5058,
+        "columns": 13,
+        "passed": true
+      },
+      {
+        "file": "fig3_plac.pkl",
+        "rows": 120,
+        "columns": 17,
+        "passed": true
+      },
+      {
+        "file": "fig3_plac__df_analysis.pkl",
+        "rows": 5088,
+        "columns": 13,
+        "passed": true
+      },
+      {
+        "file": "fig5_mutants.pkl",
+        "rows": 72,
+        "columns": 17,
+        "passed": true
+      },
+      {
+        "file": "fig5_mutants__df_analysis.pkl",
+        "rows": 864,
+        "columns": 13,
+        "passed": true
+      },
+      {
+        "file": "supp3_pcr.pkl",
+        "rows": 48,
+        "columns": 17,
+        "passed": true
+      },
+      {
+        "file": "supp3_pcr__df_analysis.pkl",
+        "rows": 2556,
+        "columns": 13,
+        "passed": true
+      },
+      {
+        "file": "supp4_atec.pkl",
+        "rows": 39,
+        "columns": 17,
+        "passed": true
+      },
+      {
+        "file": "supp4_atec__df_analysis.pkl",
+        "rows": 1599,
+        "columns": 13,
+        "passed": true
+      },
+      {
+        "file": "supp6_unt.pkl",
+        "rows": 24,
+        "columns": 17,
+        "passed": true
+      },
+      {
+        "file": "supp6_unt__df_analysis.pkl",
+        "rows": 864,
+        "columns": 13,
+        "passed": true
+      }
+    ]
+  },
+  "raw_refit_seconds": 388.74,
+  "refit_numeric_tables_match": 23,
+  "refit_figures-assembled_pngs_identical": 20,
+  "refit_figures-final_pngs_identical": 59,
+  "clean_checkout_numeric_tables_match": 23,
+  "clean_checkout_figures-assembled_pngs_identical": 20,
+  "clean_checkout_figures-final_pngs_identical": 59,
+  "trajectory_notebooks_executed": 6,
+  "trajectory_pngs": 6,
+  "tests_passed": 6,
+  "historical_values_checked": 49,
+  "acceptance_checks_passed": 357
 }

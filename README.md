@@ -1,6 +1,6 @@
 # Lyon et al. (2026): data, analysis and figures
 
-Reproduction repository for the revised Lyon manuscript. The available dose-response, growth and survival analyses rebuild from the included workbooks. One command regenerates the statistical tables, Source Data workbook, 40 size-specific panels and ten assembled figures. Genomic and single-cell coverage is incomplete; the [figure map](docs/FIGURE_COVERAGE.md) identifies the remaining inputs and retained image panels.
+Reproduction repository for the revised Lyon manuscript. The available dose-response, growth and survival analyses rebuild from the included workbooks. One command regenerates the statistical tables, Source Data workbook, 40 size-specific panels, six original trajectory plots and ten assembled figures. Genomic and single-cell coverage is incomplete; the [figure map](docs/FIGURE_COVERAGE.md) identifies the remaining inputs and retained image panels.
 
 ## Run
 
