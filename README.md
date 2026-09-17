@@ -1,6 +1,20 @@
 # Lyon et al. (2026): data, analysis and figures
 
-Reproduction repository for the revised Lyon manuscript. The available dose-response, growth and survival analyses rebuild from the included workbooks. One command regenerates the statistical tables, Source Data workbook, 40 size-specific panels, six original trajectory plots and ten assembled figures. Genomic and single-cell coverage is incomplete; the [figure map](docs/FIGURE_COVERAGE.md) identifies the remaining inputs and retained image panels.
+Data and analysis code for *Recurrent Extinction of Resistance Mutations Leads to Convergent Multidrug Resistance in Sequential Antibiotic Treatment*. Maintained by Adam Lyon and Muhammed Sadik Yildiz.
+
+## TODO
+
+| Task | Input or work remaining | Affected outputs |
+|---|---|---|
+| Complete genomic inputs | Add per-sample mutation calls or full-precision frequency tables, including PLAC traced-allele data and the 33 missing PbEc rows; retain reference and calling provenance. | Figure 4; Supplementary Figures 4, 8 and 9; upstream genomic analyses |
+| Add single-cell inputs and code | Add source objects, sample metadata, embeddings, analysis scripts, and complete differential-expression/enrichment tables; resolve table mapping and sample replication. | Figure 6; Supplementary Figures 12 and 13; Supplementary Table 4 |
+| Resolve survival source records | Confirm Supplementary Figure 11 plated volumes, the two blank Figure 3 parent counts, and explicit 40 µL MDK entries. | Survivor fractions and MDK summaries |
+| Confirm culture provenance and exclusions | Document parent-culture matching in Supplementary Figures 3/6 and the ATEC-C3 exclusion reason. | Comparison design and exclusion records |
+| Complete figure generation | Connect the genomic and single-cell inputs to executable plotting code, replace retained image panels where numerical inputs are available, and automate the remaining figure compositions. | Full figure coverage; see [figure map](docs/FIGURE_COVERAGE.md) |
+| Complete data access information | Add the whole-genome sequencing accession and confirm GSE314756 access and sample mapping. | Data availability and sample provenance |
+| Specify reuse terms | Add licenses for the study code and data. | Repository license files |
+
+The included workbooks support dose-response, growth and survival analyses. One command regenerates the statistical tables, Source Data workbook, 40 size-specific panels, six trajectory plots and ten assembled figures. The [figure map](docs/FIGURE_COVERAGE.md) documents executable coverage and retained image panels.
 
 ## Run
 
@@ -34,7 +48,7 @@ The comparator checks all 24 CSV tables (including the panel manifest), 125 PNG 
 
 ## Results and source files
 
-- [All revised figures](working/figures-assembled/All_revised_figures.pdf), also individual PDF/PNG files in that directory.
+- [Figures](working/figures-assembled/All_figures.pdf), also individual PDF/PNG files in that directory.
 - [Source Data workbook](working/source-data/Source%20Data.xlsx), with source paths, experimental units and missing-data records.
 - [Final statistics](working/analysis/stats-rework/out/final_statistics.csv) and adjacent numerical CSVs.
 - [Analysis code](working/analysis/stats-rework), including the pinned [plategig source and MIT license](working/analysis/stats-rework/plategig-88839a2).
@@ -45,14 +59,14 @@ Paths retain their existing figure names so that notebook, workbook and manuscri
 
 ## Analysis conventions
 
-Primary IC50 comparisons use log10 values, culture-ID pairing for Figures 2/3, Welch tests elsewhere, and Holm adjustment within each panel and antibiotic. MIC and biological-n=1 mutant measurements are descriptive. Fit-perturbation ranges are sensitivity summaries. Fixed seeds and complete paired IDs are checked by the analysis. The historical p-value gate verifies 49 saved notebook results, including six expected NaNs; it is separate from the revised statistical analysis.
+Primary IC50 comparisons use log10 values, culture-ID pairing for Figures 2/3, Welch tests elsewhere, and Holm adjustment within each panel and antibiotic. MIC and biological-n=1 mutant measurements are descriptive. Fit-perturbation ranges are sensitivity summaries. Fixed seeds and complete paired IDs are checked by the analysis. The historical p-value gate verifies 49 saved notebook results, including six expected NaNs; it is separate from the primary statistical analysis.
 
-Supplementary Figure 11 absolute fractions provisionally assume equal plated volumes across time. A 10 µL baseline and 20 µL later schedule would halve those fractions. Figure 3 contains two blank parent counts; several MDK formulas use 40 µL. The ATEC-C3 exclusion reason and parent matching in Supplementary Figures 3/6 remain unconfirmed. These records and their consequences are retained for author review.
+Supplementary Figure 11 absolute fractions provisionally assume equal plated volumes across time. A 10 µL baseline and 20 µL later schedule would halve those fractions. Figure 3 contains two blank parent counts; several MDK formulas use 40 µL. The ATEC-C3 exclusion reason and parent matching in Supplementary Figures 3/6 remain unconfirmed.
 
-Genomic notebooks and recovered tables are included, but per-sample mutation calls and some full frequency tables are still missing. Single-cell matrices and analysis code are also needed. These gaps prevent a claim that every manuscript figure can be regenerated from raw data. Static panels retained in the ten assemblies have explicit source hashes; figure assembly alone does not regenerate those panels.
+Genomic notebooks and recovered tables are included. Static panels retained in the ten assemblies have explicit source hashes. The TODO table and [genomic input specification](data/genomics/README.md) identify the inputs required for complete numerical regeneration.
 
 ## Fonts and reuse
 
-Install Times New Roman to reproduce the reviewed typography. Matplotlib may substitute another font when it is absent, changing line wrapping and panel geometry. Fonts installed with macOS are not redistributed here. The trajectory notebooks use the bundled DejaVu Sans font explicitly where their original Nimbus Roman request fell back on the validation Mac. Numerical results do not depend on fonts.
+Install Times New Roman to reproduce the reference typography. Matplotlib may substitute another font when it is absent, changing line wrapping and panel geometry. Fonts installed with macOS are not redistributed here. The trajectory notebooks use the bundled DejaVu Sans font explicitly where their original Nimbus Roman request fell back on the validation Mac. Numerical results do not depend on fonts.
 
-This repository is private for coauthor review. The authors' code/data license and public release remain to be decided. The vendored plategig MIT license applies to that component. No archival deposition is associated with this version.
+The vendored plategig source is distributed under its included MIT license.

@@ -1,4 +1,4 @@
-"""Assemble the review Source Data workbook with explicit coverage and provenance."""
+"""Assemble the Source Data workbook with explicit coverage and provenance."""
 from pathlib import Path
 import json
 import numpy as np
@@ -133,28 +133,28 @@ def main():
             if result:
                 complete, n, cell, expected, table = result
                 note = f'Saved notebook cell {cell}; {n}/{expected} rows recovered. '
-                note += 'Complete displayed table.' if complete else 'PARTIAL: full underlying table required before submission.'
+                note += 'Complete displayed table.' if complete else 'Partial table: the full source table is required for figure regeneration.'
                 block(ws, f'Panel {panels}: saved mutation-frequency table', table, source, note)
             else:
                 block(ws, f'Panel {panels}: mutation source-data dependency',
                       pd.DataFrame({'status':['Full numeric table not saved in the local notebook outputs']}), source,
-                      'Pending genomic data export. Original figures retained; values are not reconstructed from raster colors.')
+                      'The full numerical table is unavailable; the source notebook is included.')
 
     tables = json.loads(SOURCE.read_text())
     for i, rows in enumerate(tables, 1):
-        block(wb[f'Supp Table {i}'], f'Existing manuscript table {i}', pd.DataFrame(rows[1:], columns=rows[0]),
-              str(SOURCE.relative_to(ROOT)), 'Existing manuscript table; verify author-approved final table captions.')
+        block(wb[f'Supp Table {i}'], f'Supplementary Table {i}', pd.DataFrame(rows[1:], columns=rows[0]),
+              str(SOURCE.relative_to(ROOT)), 'Table values and column headings from the source manuscript.')
     for fig in ['Figure 6', 'Supplementary Figure 12', 'Supplementary Figure 13']:
-        block(wb[sheet_name(fig)], 'Existing single-cell analysis',
-              pd.DataFrame({'status':['Rosenthal source matrices and full differential-expression tables pending']}),
-              'GSE314756 and existing manuscript', 'Analysis unchanged; confirm sample provenance and table mapping with Adam.')
+        block(wb[sheet_name(fig)], 'Single-cell analysis',
+              pd.DataFrame({'status':['Source matrices and full differential-expression tables are unavailable']}),
+              'GSE314756 and manuscript', 'Source objects, sample metadata and table mappings are required for reproduction.')
     block(wb['Supp Table 4'], 'Single-cell source-table dependency',
-          pd.DataFrame({'status':['Full differential-expression/enrichment table and numbering require confirmation']}), 'Existing manuscript')
+          pd.DataFrame({'status':['Full differential-expression/enrichment table and figure mapping are unavailable']}), 'Manuscript')
     for filename in ['sensitivity_all.csv', 'what_changes_vs_published.csv', 'what_changes_vs_17aug_report.csv', 'experimental_units.csv']:
         block(wb['Sensitivity'], filename, pd.read_csv(HERE / 'out' / filename), 'out/' + filename,
               'Sensitivity p-values identify their family. Fit-perturbation bounds are empirical sensitivity ranges.')
-    block(wb['Read me'], 'Source Data for co-author review', manifest, 'out/panel_manifest.csv',
-          'Review copy. Conditional MDK records and genomic/single-cell source-data gaps are identified in their sheets. '
+    block(wb['Read me'], 'Source Data', manifest, 'out/panel_manifest.csv',
+          'Conditional MDK records and genomic/single-cell source-data gaps are identified in their sheets. '
           'One sheet per figure; full-precision numerical cells and source paths retained.')
     for ws in wb:
         ws.freeze_panes = 'C6'

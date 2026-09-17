@@ -65,24 +65,24 @@ Figure 2,Panel a: fitted curve,573,100,cache/fig2_paplpc.pkl,
 Figure 2,Panel f: saved mutation-frequency table,679,43,working/figures/Figure 2/F-H heatmaps/05-PA.ipynb,Saved notebook cell 9; 43/43 rows recovered. Complete displayed table.
 Figure 2,Panel g: saved mutation-frequency table,728,64,working/figures/Figure 2/F-H heatmaps/07-PL.ipynb,Saved notebook cell 9; 64/64 rows recovered. Complete displayed table.
 Figure 2,Panel h: saved mutation-frequency table,798,80,working/figures/Figure 2/F-H heatmaps/06-PC.ipynb,Saved notebook cell 12; 80/80 rows recovered. Complete displayed table.
-Figure 4,"Panel a,b,c: mutation source-data dependency",6,1,working/figures/Figure 4/02-PLAC.ipynb,Pending genomic data export. Original figures retained; values are not reconstructed from raster colors.
+Figure 4,"Panel a,b,c: mutation source-data dependency",6,1,working/figures/Figure 4/02-PLAC.ipynb,The full numerical table is unavailable; the source notebook is included.
 Supp Fig 3,Panel e: saved mutation-frequency table,177,56,working/figures/Supplemental Figure 3 - CefR/E - genetics/08-PCr.ipynb,Saved notebook cell 8; 56/56 rows recovered. Complete displayed table.
-Supp Fig 4,Panel f: saved mutation-frequency table,5582,50,working/figures/Supplemental Figure 4 - Pb/F - Mutations/10-ATEC12.ipynb,Saved notebook cell 14; 50/83 rows recovered. PARTIAL: full underlying table required before submission.
+Supp Fig 4,Panel f: saved mutation-frequency table,5582,50,working/figures/Supplemental Figure 4 - Pb/F - Mutations/10-ATEC12.ipynb,Saved notebook cell 14; 50/83 rows recovered. Partial table: the full source table is required for figure regeneration.
 Supp Fig 5,Panel a: saved mutation-frequency table,6,43,working/figures/Supplemental Figure 5 - Extended heatmaps/A/05-PA.ipynb,Saved notebook cell 9; 43/43 rows recovered. Complete displayed table.
 Supp Fig 5,Panel b: saved mutation-frequency table,55,64,working/figures/Supplemental Figure 5 - Extended heatmaps/B/07-PL.ipynb,Saved notebook cell 9; 64/64 rows recovered. Complete displayed table.
 Supp Fig 5,Panel c: saved mutation-frequency table,125,80,working/figures/Supplemental Figure 5 - Extended heatmaps/C/06-PC.ipynb,Saved notebook cell 12; 80/80 rows recovered. Complete displayed table.
 Supp Fig 6,Panel d: saved mutation-frequency table,57,38,working/figures/Supplemental Figure 6/B - heatmap/05-Punt.ipynb,Saved notebook cell 9; 38/38 rows recovered. Complete displayed table.
-Supp Fig 8,"Panel a,b,c,d,e: mutation source-data dependency",6,1,working/figures/Supplemental Figure 8 - extended traced alleles/02-PLAC.ipynb,Pending genomic data export. Original figures retained; values are not reconstructed from raster colors.
-Supp Fig 9,Panel all: mutation source-data dependency,6,1,working/figures/Supplemental Figure 9 - big heatmap/13-bigheatmap.ipynb,Pending genomic data export. Original figures retained; values are not reconstructed from raster colors.
-Supp Table 1,Existing manuscript table 1,6,7,data/supplementary_tables.json,Existing manuscript table; verify author-approved final table captions.
-Supp Table 2,Existing manuscript table 2,6,21,data/supplementary_tables.json,Existing manuscript table; verify author-approved final table captions.
-Supp Table 3,Existing manuscript table 3,6,19,data/supplementary_tables.json,Existing manuscript table; verify author-approved final table captions.
-Figure 6,Existing single-cell analysis,6,1,GSE314756 and existing manuscript,Analysis unchanged; confirm sample provenance and table mapping with Adam.
-Supp Fig 12,Existing single-cell analysis,6,1,GSE314756 and existing manuscript,Analysis unchanged; confirm sample provenance and table mapping with Adam.
-Supp Fig 13,Existing single-cell analysis,6,1,GSE314756 and existing manuscript,Analysis unchanged; confirm sample provenance and table mapping with Adam.
-Supp Table 4,Single-cell source-table dependency,6,1,Existing manuscript,
+Supp Fig 8,"Panel a,b,c,d,e: mutation source-data dependency",6,1,working/figures/Supplemental Figure 8 - extended traced alleles/02-PLAC.ipynb,The full numerical table is unavailable; the source notebook is included.
+Supp Fig 9,Panel all: mutation source-data dependency,6,1,working/figures/Supplemental Figure 9 - big heatmap/13-bigheatmap.ipynb,The full numerical table is unavailable; the source notebook is included.
+Supp Table 1,Supplementary Table 1,6,7,data/supplementary_tables.json,Table values and column headings from the source manuscript.
+Supp Table 2,Supplementary Table 2,6,21,data/supplementary_tables.json,Table values and column headings from the source manuscript.
+Supp Table 3,Supplementary Table 3,6,19,data/supplementary_tables.json,Table values and column headings from the source manuscript.
+Figure 6,Single-cell analysis,6,1,GSE314756 and manuscript,"Source objects, sample metadata and table mappings are required for reproduction."
+Supp Fig 12,Single-cell analysis,6,1,GSE314756 and manuscript,"Source objects, sample metadata and table mappings are required for reproduction."
+Supp Fig 13,Single-cell analysis,6,1,GSE314756 and manuscript,"Source objects, sample metadata and table mappings are required for reproduction."
+Supp Table 4,Single-cell source-table dependency,6,1,Manuscript,
 Sensitivity,sensitivity_all.csv,6,72,out/sensitivity_all.csv,Sensitivity p-values identify their family. Fit-perturbation bounds are empirical sensitivity ranges.
 Sensitivity,what_changes_vs_published.csv,84,36,out/what_changes_vs_published.csv,Sensitivity p-values identify their family. Fit-perturbation bounds are empirical sensitivity ranges.
 Sensitivity,what_changes_vs_17aug_report.csv,126,57,out/what_changes_vs_17aug_report.csv,Sensitivity p-values identify their family. Fit-perturbation bounds are empirical sensitivity ranges.
 Sensitivity,experimental_units.csv,189,423,out/experimental_units.csv,Sensitivity p-values identify their family. Fit-perturbation bounds are empirical sensitivity ranges.
-Read me,Source Data for co-author review,6,75,out/panel_manifest.csv,Review copy. Conditional MDK records and genomic/single-cell source-data gaps are identified in their sheets. One sheet per figure; full-precision numerical cells and source paths retained.
+Read me,Source Data,6,75,out/panel_manifest.csv,Conditional MDK records and genomic/single-cell source-data gaps are identified in their sheets. One sheet per figure; full-precision numerical cells and source paths retained.

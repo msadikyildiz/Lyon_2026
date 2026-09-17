@@ -1,4 +1,4 @@
-"""Final panels for the revision. Version 2, 15 September 2026.
+"""Dose-response, growth and survival figure panels.
 
 Every tested IC50 panel: each culture as a point, the geometric mean as a line,
 its 95% confidence interval as an error bar, and a bracket carrying the
@@ -304,7 +304,7 @@ def draw_mdk(rep, summ, order, col, lab, stem, conditional=False):
     ax.legend(fontsize=24, frameon=False, loc='lower center', bbox_to_anchor=(.5, 1.02), ncol=2)
     notes = ['Horizontal offsets separate strains and replicates.']
     if conditional:
-        notes += ['Equal plating volume assumed; confirmation pending.',
+        notes += ['Equal plated volumes assumed across time.',
                   'Open triangle: below detection. Dashed bar: allowed MAD range.']
     if omitted:
         notes += ['Lower MAD arms reaching zero are omitted on the log axis.']

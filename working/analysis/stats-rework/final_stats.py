@@ -1,9 +1,9 @@
-"""Final statistics for the revision. Version 3, 15 September 2026.
+"""Statistical analysis of dose-response, growth and survival measurements.
 
 The 17 August comparison table is retained under superseded/out-17aug.
 Current conventions and figure coverage are described in the repository README.
 
-Design facts, from Adam Lyon's answers of 17 August 2026:
+Experimental design:
   * P1-P10 are the day-0 ancestors of every same-numbered culture in every arm,
     so contrasts among P, PA, PC, PL, PLA, PLAC are within-lineage and PAIRED,
     aligned on culture number. (The published code paired by row position.)
@@ -15,7 +15,7 @@ Design facts, from Adam Lyon's answers of 17 August 2026:
 
 Estimand: log10 IC50 (primary). Effects are ratios of geometric means with
 pointwise 95% CIs. MIC is descriptive (geometric mean and CI, no test).
-Correction: Holm within panel and drug (reviewer 2's family). Sensitivity:
+Correction: Holm within panel and drug. Sensitivity:
 BH and Bonferroni per drug, Holm per figure, the other test (Welch or paired),
 raw scale, exact sign-flip or permutation, nested bootstrap over cultures and
 curve fits, and Figure 3 with lineages 2, 3, 8 excluded.

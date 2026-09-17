@@ -1,4 +1,4 @@
-"""Generate the numerical review note directly from full-precision outputs."""
+"""Generate the numerical results summary directly from full-precision outputs."""
 from pathlib import Path
 import pandas as pd
 
@@ -42,12 +42,12 @@ def main():
         lines.append(f'Figure 2 cefepime {g}/P: primary Holm {p_text(r.p_holm)}, '
                      f'per-drug Bonferroni {p_text(r.p_bonferroni)}, '
                      f'figure-wide Holm {p_text(r.p_holm_figure)}. Both comparisons depend on the correction family.')
-    lines += ['', 'Reviewer 2 identifies Figure 3 cefepime PL versus PLA. Its primary adjusted '
-              'p-value is 0.025, not the PL-versus-PLAC value. All adjusted values, including '
+    lines += ['', 'The Figure 3 cefepime PL-versus-PLA comparison has a primary adjusted '
+              'p-value of 0.025. All adjusted values, including '
               'nonsignificant comparisons, are available in the tables.', '',
               'Supplementary Figure 4 cefepime changes from the historical significant call to '
               'a nonsignificant log-scale comparison. Untreated passage changes IC50 in all three '
-              'drugs; describe the ratios rather than calling that control unchanged.', '',
+              'drugs, as quantified by the reported ratios.', '',
               '## Mutant IC50, descriptive', '',
               '| Strain | Drug | Ratio to MG | Technical range / MG geometric mean |', '|---|---|---|---|']
     for _, r in f5[f5.Strain != 'MG'].iterrows():
@@ -57,7 +57,7 @@ def main():
               'The calculation assumes equal plated volumes across time. If the actual schedule '
               'was 10 microlitres at baseline and 20 microlitres later, absolute fractions would '
               'be half these values. Relative strain comparisons are unchanged under a common '
-              'volume schedule. Adam must reconcile the workbook and written account.', '',
+              'volume schedule. The workbook and written account specify inconsistent volume normalization.', '',
               '| Strain | Time (h) | Median fraction | Ratio to hipA |', '|---|---|---|---|']
     for _, r in m[m.Time > 0].iterrows():
         lines.append(f'| {r.strain} | {r.Time} | {r["median"]:.3g} | {r.ratio_to_hipA_median:.3g} |')

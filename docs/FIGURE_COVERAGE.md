@@ -26,4 +26,4 @@
 
 The ten assemblies contain 50 placements: 40 regenerated size-specific panels and ten retained images. `assembly_assets.json` maps all input assets and `assembly_layout.json` records their layout; `out/print-panels/manifest.json` identifies replacements generated from numerical inputs. The output assembly manifest records final placements and validation.
 
-The six original trajectory notebooks also render standalone panels to `out/trajectories`. These retain the original plotting rules, with the validated DejaVu Sans fallback font selected explicitly in the survival notebooks; the reviewed assembled figures continue to use the established static trajectory panels.
+The six original trajectory notebooks also render standalone panels to `out/trajectories`. These retain the original plotting rules, with the validated DejaVu Sans fallback font selected explicitly in the survival notebooks; the assembled figures continue to use the established static trajectory panels.

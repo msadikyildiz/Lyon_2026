@@ -5,78 +5,10 @@
   "composite_pngs_identical": 20,
   "composite_pngs_compared": 20,
   "source_data_numeric_cells_matched": 138959,
-  "source_data_text_differences": [
-    [
-      "Read me",
-      "D71",
-      "working/figures/Figure_4.zip",
-      "working/figures/Figure 4/Figure4D-Cartoon.pptx"
-    ],
-    [
-      "Read me",
-      "D77",
-      "working/manuscript/2026-08-12_Paper_Lyon_Toprak_Nature_REVISION.docx",
-      "data/supplementary_tables.json"
-    ],
-    [
-      "Read me",
-      "L77",
-      "extract existing table",
-      "table extracted in Source Data workbook"
-    ],
-    [
-      "Read me",
-      "D78",
-      "working/manuscript/2026-08-12_Paper_Lyon_Toprak_Nature_REVISION.docx",
-      "data/supplementary_tables.json"
-    ],
-    [
-      "Read me",
-      "L78",
-      "extract existing table",
-      "table extracted in Source Data workbook"
-    ],
-    [
-      "Read me",
-      "D79",
-      "working/manuscript/2026-08-12_Paper_Lyon_Toprak_Nature_REVISION.docx",
-      "data/supplementary_tables.json"
-    ],
-    [
-      "Read me",
-      "L79",
-      "extract existing table",
-      "table extracted in Source Data workbook"
-    ],
-    [
-      "Read me",
-      "D80",
-      "working/manuscript/2026-08-12_Paper_Lyon_Toprak_Nature_REVISION.docx",
-      "data/supplementary_tables.json"
-    ],
-    [
-      "Supp Table 1",
-      "A2",
-      "Source: working/manuscript/2026-08-12_Paper_Lyon_Toprak_Nature_REVISION.docx",
-      "Source: data/supplementary_tables.json"
-    ],
-    [
-      "Supp Table 2",
-      "A2",
-      "Source: working/manuscript/2026-08-12_Paper_Lyon_Toprak_Nature_REVISION.docx",
-      "Source: data/supplementary_tables.json"
-    ],
-    [
-      "Supp Table 3",
-      "A2",
-      "Source: working/manuscript/2026-08-12_Paper_Lyon_Toprak_Nature_REVISION.docx",
-      "Source: data/supplementary_tables.json"
-    ]
-  ],
   "environment": "environment-osx-arm64.lock + requirements-pip.txt",
   "python": "3.11.14",
   "date": "2026-09-17",
-  "cached_run_seconds": 150.31,
+  "cached_run_seconds": 138.22,
   "raw_refit": {
     "rtol": 1e-08,
     "atol": 1e-10,
@@ -182,7 +114,7 @@
   ],
   "final_driver_clean_checkout_seconds": 135.73,
   "primary_contrasts_checked": 36,
-  "post_review_cached_output_comparison": {
+  "verified_cached_output_comparison": {
     "status": "passed",
     "csv_tables": 24,
     "pngs_identical": {
@@ -197,7 +129,7 @@
     "atol": 1e-10,
     "comparison": "CSV values, PNG bytes, workbook values and cell types; PDF/SVG/XLSX container timestamps ignored"
   },
-  "post_review_refit_output_comparison": {
+  "verified_refit_output_comparison": {
     "status": "passed",
     "csv_tables": 24,
     "pngs_identical": {
@@ -212,8 +144,8 @@
     "atol": 1e-10,
     "comparison": "CSV values, PNG bytes, workbook values and cell types; PDF/SVG/XLSX container timestamps ignored"
   },
-  "post_review_refit_started_with_empty_output_directories": true,
-  "post_review_run_steps": [
+  "verified_refit_started_with_empty_output_directories": true,
+  "verified_run_steps": [
     "validate.py",
     "final_stats.py",
     "mdk_source.py",
@@ -225,5 +157,40 @@
     "print_panels.py",
     "assemble_figures.py",
     "scripts/reproduce_trajectories.py"
-  ]
+  ],
+  "portable_source_provenance": {
+    "updated_text_cells": 11,
+    "sources": [
+      "data/supplementary_tables.json",
+      "working/figures/Figure 4/Figure4D-Cartoon.pptx"
+    ],
+    "numeric_values_unchanged": true
+  },
+  "presentation_comparison": {
+    "status": "passed",
+    "csv_tables_unchanged": 24,
+    "pngs_identical": 124,
+    "png_annotation_changes": [
+      {
+        "file": "working/analysis/stats-rework/out/figures-final/SuppFig11_MDK_double_mutants.png",
+        "difference_box": [
+          1358,
+          6689,
+          3698,
+          6812
+        ],
+        "size": [
+          5490,
+          7014
+        ],
+        "change": "Plating-volume assumption note wording only"
+      }
+    ],
+    "workbook_cells_checked": 414279,
+    "workbook_numeric_cells_unchanged": 138959,
+    "cached_run_seconds": 138.22,
+    "input_checksums_passed": 86,
+    "workbook_text_cells_updated": 26,
+    "reference_commit": "f6026fc"
+  }
 }

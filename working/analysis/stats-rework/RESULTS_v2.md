@@ -52,9 +52,9 @@ The fit-perturbation sensitivity reports empirical 2.5th-97.5th percentiles from
 Figure 2 cefepime PA/P: primary Holm p = 0.032, per-drug Bonferroni p = 0.096, figure-wide Holm p = 0.128. Both comparisons depend on the correction family.
 Figure 2 cefepime PC/P: primary Holm p = 0.026, per-drug Bonferroni p = 0.040, figure-wide Holm p = 0.066. Both comparisons depend on the correction family.
 
-Reviewer 2 identifies Figure 3 cefepime PL versus PLA. Its primary adjusted p-value is 0.025, not the PL-versus-PLAC value. All adjusted values, including nonsignificant comparisons, are available in the tables.
+The Figure 3 cefepime PL-versus-PLA comparison has a primary adjusted p-value of 0.025. All adjusted values, including nonsignificant comparisons, are available in the tables.
 
-Supplementary Figure 4 cefepime changes from the historical significant call to a nonsignificant log-scale comparison. Untreated passage changes IC50 in all three drugs; describe the ratios rather than calling that control unchanged.
+Supplementary Figure 4 cefepime changes from the historical significant call to a nonsignificant log-scale comparison. Untreated passage changes IC50 in all three drugs, as quantified by the reported ratios.
 
 ## Mutant IC50, descriptive
 
@@ -86,7 +86,7 @@ Figure 5a reports six technical wells per strain, with doubling times in minutes
 
 ## Supplementary Figure 11, conditional normalization
 
-The calculation assumes equal plated volumes across time. If the actual schedule was 10 microlitres at baseline and 20 microlitres later, absolute fractions would be half these values. Relative strain comparisons are unchanged under a common volume schedule. Adam must reconcile the workbook and written account.
+The calculation assumes equal plated volumes across time. If the actual schedule was 10 microlitres at baseline and 20 microlitres later, absolute fractions would be half these values. Relative strain comparisons are unchanged under a common volume schedule. The workbook and written account specify inconsistent volume normalization.
 
 | Strain | Time (h) | Median fraction | Ratio to hipA |
 |---|---|---|---|

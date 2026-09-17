@@ -120,7 +120,7 @@ def correct(df, pcol, family_cols=("Antibiotic",), methods=("bonferroni", "fdr_b
     """Add corrected p-values within each family defined by ``family_cols``.
 
     Correction is applied over the comparisons a panel actually reports for one
-    drug, which reproduces reviewer 2's arithmetic (k = 3 in Figure 2, k = 6 in
+    drug, with the stated comparison counts (k = 3 in Figure 2, k = 6 in
     Figure 3). NaN p-values are excluded from k, so a comparison that could not
     be computed does not inflate the penalty on the ones that could.
     """

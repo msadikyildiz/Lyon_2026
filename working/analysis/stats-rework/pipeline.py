@@ -94,7 +94,7 @@ PLATE_ID_OFFSET_UNT = {4: 0, 2: 99, 3: 148}
 #
 # Plate-map review verified that experiment-2 plates 39-41 are cefepime-only.
 # Retain their drug-specific exclusions. ATEC-C3's reason remains unconfirmed;
-# retain the recorded exclusion provisionally and list it for Adam's review.
+# retain the recorded exclusion and document the unresolved source record.
 #
 # Note also that ('2', 'ATEC-C-R', 'Cefepime') never matches anything: the group
 # is spelled 'ATEC-C-r' in the data, and the filter is applied to Strain, which

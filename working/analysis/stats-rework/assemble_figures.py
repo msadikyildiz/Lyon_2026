@@ -1,6 +1,6 @@
-"""Compose the ten review figures from checked sources and explicit panel geometry.
+"""Compose the ten figures from checked sources and explicit panel geometry.
 
-assembly_layout.json records the reviewed layout. assembly_assets.json records the
+assembly_layout.json records the panel layout. assembly_assets.json records the
 unchanged panel sources, conservative white-margin crops, hashes and panel identities.
 Only composition changes here; numerical results and individual panels are inputs.
 """
@@ -138,7 +138,7 @@ def main():
         assert len(page.get_drawings()) == expected_vectors
         assert len(page.get_images()) == expected_images
         doc.set_metadata({'title': figure['title'],
-                          'subject': 'Coauthor review; conditional MDK and source-data dependencies are documented in the review notes.'})
+                          'subject': 'Lyon et al. (2026). Source data and analysis code: https://github.com/msadikyildiz/Lyon_2026'})
         destination = OUT / (figure['name'] + '.pdf')
         doc.save(destination, garbage=4, deflate=True)
         # Render the saved PDF so media-box rounding agrees with downstream viewers.
@@ -157,8 +157,8 @@ def main():
             with fitz.open(OUT / (figure['name'] + '.pdf')) as source:
                 combined.insert_pdf(source)
         combined.set_toc([[1, f['title'], i + 1] for i, f in enumerate(ordered)])
-        combined.set_metadata({'title': 'Revised figure assemblies for Adam Lyon'})
-        combined.save(OUT / 'All_revised_figures.pdf', garbage=4, deflate=True)
+        combined.set_metadata({'title': 'Lyon et al. (2026): figures'})
+        combined.save(OUT / 'All_figures.pdf', garbage=4, deflate=True)
     print(json.dumps(checks, indent=2))
 
 

@@ -1,4 +1,4 @@
-"""Growth-data loader for the descriptive revision analysis.
+"""Growth-data loader for the descriptive growth analysis.
 
 Adam confirmed six technical wells from one culture per strain (biological
 n=1). Use final_stats.py for current summaries. The inferential main routine

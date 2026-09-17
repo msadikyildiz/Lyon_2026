@@ -89,7 +89,7 @@ def main():
               'raw_inputs': {str(p.relative_to(root)): hashlib.sha256(p.read_bytes()).hexdigest()
                 for p in sorted((root / SCRIPTS / 'biohpc-pull/data').glob('*.xlsx'))}}
     (root / 'runs/reproduction.json').write_text(json.dumps(report, indent=2)+'\n')
-    print(f'Completed: {root / "working/figures-assembled/All_revised_figures.pdf"}', flush=True)
+    print(f'Completed: {root / "working/figures-assembled/All_figures.pdf"}', flush=True)
     print(f'Validation: {root / "runs/reproduction.json"}', flush=True)
 
 if __name__ == '__main__':

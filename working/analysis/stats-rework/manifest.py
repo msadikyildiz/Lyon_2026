@@ -1,4 +1,4 @@
-"""Panel identities and experimental units for the revision package.
+"""Panel identities and experimental units for the figure analyses.
 
 Paths are relative to this repository. Panel letters follow the manuscript
 legends, with documented corrections recorded in panel_manifest.csv.

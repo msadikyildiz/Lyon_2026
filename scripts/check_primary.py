@@ -1,4 +1,4 @@
-"""Check the 36 revised primary results against the committed numerical reference."""
+"""Check the 36 primary results against the committed numerical reference."""
 from pathlib import Path
 import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
@@ -11,7 +11,7 @@ def main():
     actual = actual[reference.columns].sort_values(keys).reset_index(drop=True)
     reference = reference.sort_values(keys).reset_index(drop=True)
     pd.testing.assert_frame_equal(reference, actual, rtol=1e-8, atol=1e-10, check_exact=False)
-    print('36 revised primary contrasts match the committed reference')
+    print('36 primary contrasts match the committed reference')
 
 if __name__ == '__main__':
     main()
