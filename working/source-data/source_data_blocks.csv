@@ -1,0 +1,88 @@
+sheet,block,first_data_row,rows,source,note
+Figure 2,Panel b/c/d: IC50 per culture or technical series,6,120,cache/fig2_paplpc.pkl,One fitted estimate per culture; matched lineage IDs retained.
+Figure 2,IC50 contrasts,132,9,out/final_statistics.csv,Pointwise 95% t-based ratio intervals estimate uncertainty; they are not multiplicity-adjusted. IC50 p-values use Holm adjustment within panel and drug.
+Figure 2,IC50 group summaries,147,12,out/group_summaries.csv,
+Figure 3,Panel b/c/d: IC50 per culture or technical series,6,120,cache/fig3_plac.pkl,One fitted estimate per culture; matched lineage IDs retained.
+Figure 3,IC50 contrasts,132,18,out/final_statistics.csv,Pointwise 95% t-based ratio intervals estimate uncertainty; they are not multiplicity-adjusted. IC50 p-values use Holm adjustment within panel and drug.
+Figure 3,IC50 group summaries,156,12,out/group_summaries.csv,
+Figure 5,Panel b/c/d: IC50 per culture or technical series,6,72,cache/fig5_mutants.pkl,Three technical series from one overnight culture per strain; biological n=1.
+Figure 5,IC50 descriptive summaries,84,24,out/fig5_descriptive.csv,
+Supp Fig 2,Panel a: IC50 per culture or technical series,6,120,cache/fig2_paplpc.pkl,One fitted estimate per culture; matched lineage IDs retained.
+Supp Fig 2,IC50 contrasts,132,9,out/final_statistics.csv,Pointwise 95% t-based ratio intervals estimate uncertainty; they are not multiplicity-adjusted. IC50 p-values use Holm adjustment within panel and drug.
+Supp Fig 2,IC50 group summaries,147,12,out/group_summaries.csv,
+Supp Fig 2,Panel b: MIC per culture or technical series,165,120,cache/fig2_paplpc.pkl,One fitted estimate per culture; matched lineage IDs retained.
+Supp Fig 2,MIC contrasts,291,9,out/final_statistics.csv,"Pointwise 95% t-based ratio intervals estimate uncertainty; they are not multiplicity-adjusted. MIC has no hypothesis tests, adjusted p-values, or significance calls."
+Supp Fig 2,MIC group summaries,306,12,out/group_summaries.csv,
+Supp Fig 3,Panel b/c/d: IC50 per culture or technical series,6,48,cache/supp3_pcr.pkl,One fitted estimate per culture; matched lineage IDs retained.
+Supp Fig 3,IC50 contrasts,60,3,out/final_statistics.csv,Pointwise 95% t-based ratio intervals estimate uncertainty; they are not multiplicity-adjusted. IC50 p-values use Holm adjustment within panel and drug.
+Supp Fig 3,IC50 group summaries,69,6,out/group_summaries.csv,
+Supp Fig 4,Panel b/c/d: IC50 per culture or technical series,6,39,cache/supp4_atec.pkl,One fitted estimate per culture; matched lineage IDs retained.
+Supp Fig 4,IC50 contrasts,51,3,out/final_statistics.csv,Pointwise 95% t-based ratio intervals estimate uncertainty; they are not multiplicity-adjusted. IC50 p-values use Holm adjustment within panel and drug.
+Supp Fig 4,IC50 group summaries,60,9,out/group_summaries.csv,
+Supp Fig 6,Panel a/b/c: IC50 per culture or technical series,6,24,cache/supp6_unt.pkl,One fitted estimate per culture; matched lineage IDs retained.
+Supp Fig 6,IC50 contrasts,36,3,out/final_statistics.csv,Pointwise 95% t-based ratio intervals estimate uncertainty; they are not multiplicity-adjusted. IC50 p-values use Holm adjustment within panel and drug.
+Supp Fig 6,IC50 group summaries,45,6,out/group_summaries.csv,
+Supp Fig 7,Panel a: IC50 per culture or technical series,6,120,cache/fig3_plac.pkl,One fitted estimate per culture; matched lineage IDs retained.
+Supp Fig 7,IC50 contrasts,132,18,out/final_statistics.csv,Pointwise 95% t-based ratio intervals estimate uncertainty; they are not multiplicity-adjusted. IC50 p-values use Holm adjustment within panel and drug.
+Supp Fig 7,IC50 group summaries,156,12,out/group_summaries.csv,
+Supp Fig 7,Panel b: MIC per culture or technical series,174,120,cache/fig3_plac.pkl,One fitted estimate per culture; matched lineage IDs retained.
+Supp Fig 7,MIC contrasts,300,18,out/final_statistics.csv,"Pointwise 95% t-based ratio intervals estimate uncertainty; they are not multiplicity-adjusted. MIC has no hypothesis tests, adjusted p-values, or significance calls."
+Supp Fig 7,MIC group summaries,324,12,out/group_summaries.csv,
+Supp Fig 10,Panel a/b/c: MIC per culture or technical series,6,72,cache/fig5_mutants.pkl,Three technical series from one overnight culture per strain; biological n=1.
+Supp Fig 10,MIC descriptive summaries,84,24,out/fig5_descriptive.csv,
+Figure 2,Panel e: MDK records,165,288,out/Fig2e_MDK_records.csv,40 uL entries require confirmation; day 1 omitted by original notebook Missing counts are distinct from recorded zero counts; MAD is normal-scaled.
+Figure 2,Panel e: MDK summary,459,66,out/Fig2e_MDK_summary.csv,40 uL entries require confirmation; day 1 omitted by original notebook Missing counts are distinct from recorded zero counts; MAD is normal-scaled.
+Figure 3,Panel e: MDK records,174,216,out/Fig3e_MDK_records.csv,40 uL entries and two blank counts require confirmation Missing counts are distinct from recorded zero counts; MAD is normal-scaled.
+Figure 3,Panel e: MDK summary,396,66,out/Fig3e_MDK_summary.csv,40 uL entries and two blank counts require confirmation Missing counts are distinct from recorded zero counts; MAD is normal-scaled.
+Figure 5,Panel e: MDK records,114,144,out/Fig5e_MDK_records.csv, Missing counts are distinct from recorded zero counts; MAD is normal-scaled.
+Figure 5,Panel e: MDK summary,264,48,out/Fig5e_MDK_summary.csv, Missing counts are distinct from recorded zero counts; MAD is normal-scaled.
+Supp Fig 4,Panel e: MDK records,75,126,out/SuppFig4e_MDK_records.csv,40 uL entries require confirmation Missing counts are distinct from recorded zero counts; MAD is normal-scaled.
+Supp Fig 4,Panel e: MDK summary,207,42,out/SuppFig4e_MDK_summary.csv,40 uL entries require confirmation Missing counts are distinct from recorded zero counts; MAD is normal-scaled.
+Supp Fig 10,Panel d: MDK records,114,90,out/SuppFig10d_MDK_records.csv, Missing counts are distinct from recorded zero counts; MAD is normal-scaled.
+Supp Fig 10,Panel d: MDK summary,210,30,out/SuppFig10d_MDK_summary.csv, Missing counts are distinct from recorded zero counts; MAD is normal-scaled.
+Supp Fig 11,Panel all: MDK records,6,60,out/supp11_recomputed.csv,"Equal plating volume provisional; one censored count; 1/2 h not measured, 5 h excluded for dilution error Missing counts are distinct from recorded zero counts; MAD is normal-scaled."
+Supp Fig 11,Panel all: MDK summary,72,15,out/supp11_summary.csv,"Equal plating volume provisional; one censored count; 1/2 h not measured, 5 h excluded for dilution error Missing counts are distinct from recorded zero counts; MAD is normal-scaled."
+Figure 5,Panel a: doubling time,318,48,out/fig5a_doubling_times_per_well.csv,Minutes; six technical wells of one biological culture per strain.
+Figure 5,Panel a: doubling time,372,8,out/fig5a_descriptive.csv,Minutes; six technical wells of one biological culture per strain.
+Figure 1,"Trajectory records, original sheet ATEC",6,180,working/figures/Figure 1/D-F/SurvivalData.xlsx,"Complete source workbook retained, including sheets outside this figure. Figure 1 uses PA, PL, PC. Original sheet, strain, culture, and day identify observations."
+Figure 1,"Trajectory records, original sheet PA",192,280,working/figures/Figure 1/D-F/SurvivalData.xlsx,"Complete source workbook retained, including sheets outside this figure. Figure 1 uses PA, PL, PC. Original sheet, strain, culture, and day identify observations."
+Figure 1,"Trajectory records, original sheet PL",478,384,working/figures/Figure 1/D-F/SurvivalData.xlsx,"Complete source workbook retained, including sheets outside this figure. Figure 1 uses PA, PL, PC. Original sheet, strain, culture, and day identify observations."
+Figure 1,"Trajectory records, original sheet PC",868,399,working/figures/Figure 1/D-F/SurvivalData.xlsx,"Complete source workbook retained, including sheets outside this figure. Figure 1 uses PA, PL, PC. Original sheet, strain, culture, and day identify observations."
+Figure 1,"Trajectory records, original sheet PLAC",1273,1840,working/figures/Figure 1/D-F/SurvivalData.xlsx,"Complete source workbook retained, including sheets outside this figure. Figure 1 uses PA, PL, PC. Original sheet, strain, culture, and day identify observations."
+Figure 3,"Trajectory records, original sheet ATEC",468,180,working/figures/Figure 3/A - survival/SurvivalData.xlsx,"Complete source workbook retained, including sheets outside this figure. Figure 3 uses PLAC. Original sheet, strain, culture, and day identify observations."
+Figure 3,"Trajectory records, original sheet PA",654,280,working/figures/Figure 3/A - survival/SurvivalData.xlsx,"Complete source workbook retained, including sheets outside this figure. Figure 3 uses PLAC. Original sheet, strain, culture, and day identify observations."
+Figure 3,"Trajectory records, original sheet PL",940,768,working/figures/Figure 3/A - survival/SurvivalData.xlsx,"Complete source workbook retained, including sheets outside this figure. Figure 3 uses PLAC. Original sheet, strain, culture, and day identify observations."
+Figure 3,"Trajectory records, original sheet PC",1714,399,working/figures/Figure 3/A - survival/SurvivalData.xlsx,"Complete source workbook retained, including sheets outside this figure. Figure 3 uses PLAC. Original sheet, strain, culture, and day identify observations."
+Figure 3,"Trajectory records, original sheet PLAC",2119,3670,working/figures/Figure 3/A - survival/SurvivalData.xlsx,"Complete source workbook retained, including sheets outside this figure. Figure 3 uses PLAC. Original sheet, strain, culture, and day identify observations."
+Supp Fig 3,"Trajectory records, original sheet PCr-evolution",81,90,working/figures/Supplemental Figure 3 - CefR/A - ResistanceEvo/pcr_evolution.xlsx,"Source workbook values retained. Supplementary Figure 3 uses PCr-evolution. Original sheet, strain, culture, and day identify observations."
+Supp Fig 4,"Trajectory records, original sheet ATEC",255,180,working/figures/Supplemental Figure 4 - Pb/A - Survival/SurvivalData.xlsx,"Complete source workbook retained, including sheets outside this figure. Supplementary Figure 4 uses ATEC. Original sheet, strain, culture, and day identify observations."
+Supp Fig 4,"Trajectory records, original sheet PA",441,280,working/figures/Supplemental Figure 4 - Pb/A - Survival/SurvivalData.xlsx,"Complete source workbook retained, including sheets outside this figure. Supplementary Figure 4 uses ATEC. Original sheet, strain, culture, and day identify observations."
+Supp Fig 4,"Trajectory records, original sheet PL",727,768,working/figures/Supplemental Figure 4 - Pb/A - Survival/SurvivalData.xlsx,"Complete source workbook retained, including sheets outside this figure. Supplementary Figure 4 uses ATEC. Original sheet, strain, culture, and day identify observations."
+Supp Fig 4,"Trajectory records, original sheet PC",1501,399,working/figures/Supplemental Figure 4 - Pb/A - Survival/SurvivalData.xlsx,"Complete source workbook retained, including sheets outside this figure. Supplementary Figure 4 uses ATEC. Original sheet, strain, culture, and day identify observations."
+Supp Fig 4,"Trajectory records, original sheet PLAC",1906,3670,working/figures/Supplemental Figure 4 - Pb/A - Survival/SurvivalData.xlsx,"Complete source workbook retained, including sheets outside this figure. Supplementary Figure 4 uses ATEC. Original sheet, strain, culture, and day identify observations."
+Figure 2,Panel a: representative PA5 levofloxacin dose response,531,36,cache/fig2_paplpc__df_analysis.pkl; original notebook cell 29,
+Figure 2,Panel a: fitted curve,573,100,cache/fig2_paplpc.pkl,
+Figure 2,Panel f: saved mutation-frequency table,679,43,working/figures/Figure 2/F-H heatmaps/05-PA.ipynb,Saved notebook cell 9; 43/43 rows recovered. Complete displayed table.
+Figure 2,Panel g: saved mutation-frequency table,728,64,working/figures/Figure 2/F-H heatmaps/07-PL.ipynb,Saved notebook cell 9; 64/64 rows recovered. Complete displayed table.
+Figure 2,Panel h: saved mutation-frequency table,798,80,working/figures/Figure 2/F-H heatmaps/06-PC.ipynb,Saved notebook cell 12; 80/80 rows recovered. Complete displayed table.
+Figure 4,"Panel a,b,c: mutation source-data dependency",6,1,working/figures/Figure 4/02-PLAC.ipynb,Pending genomic data export. Original figures retained; values are not reconstructed from raster colors.
+Supp Fig 3,Panel e: saved mutation-frequency table,177,56,working/figures/Supplemental Figure 3 - CefR/E - genetics/08-PCr.ipynb,Saved notebook cell 8; 56/56 rows recovered. Complete displayed table.
+Supp Fig 4,Panel f: saved mutation-frequency table,5582,50,working/figures/Supplemental Figure 4 - Pb/F - Mutations/10-ATEC12.ipynb,Saved notebook cell 14; 50/83 rows recovered. PARTIAL: full underlying table required before submission.
+Supp Fig 5,Panel a: saved mutation-frequency table,6,43,working/figures/Supplemental Figure 5 - Extended heatmaps/A/05-PA.ipynb,Saved notebook cell 9; 43/43 rows recovered. Complete displayed table.
+Supp Fig 5,Panel b: saved mutation-frequency table,55,64,working/figures/Supplemental Figure 5 - Extended heatmaps/B/07-PL.ipynb,Saved notebook cell 9; 64/64 rows recovered. Complete displayed table.
+Supp Fig 5,Panel c: saved mutation-frequency table,125,80,working/figures/Supplemental Figure 5 - Extended heatmaps/C/06-PC.ipynb,Saved notebook cell 12; 80/80 rows recovered. Complete displayed table.
+Supp Fig 6,Panel d: saved mutation-frequency table,57,38,working/figures/Supplemental Figure 6/B - heatmap/05-Punt.ipynb,Saved notebook cell 9; 38/38 rows recovered. Complete displayed table.
+Supp Fig 8,"Panel a,b,c,d,e: mutation source-data dependency",6,1,working/figures/Supplemental Figure 8 - extended traced alleles/02-PLAC.ipynb,Pending genomic data export. Original figures retained; values are not reconstructed from raster colors.
+Supp Fig 9,Panel all: mutation source-data dependency,6,1,working/figures/Supplemental Figure 9 - big heatmap/13-bigheatmap.ipynb,Pending genomic data export. Original figures retained; values are not reconstructed from raster colors.
+Supp Table 1,Existing manuscript table 1,6,7,data/supplementary_tables.json,Existing manuscript table; verify author-approved final table captions.
+Supp Table 2,Existing manuscript table 2,6,21,data/supplementary_tables.json,Existing manuscript table; verify author-approved final table captions.
+Supp Table 3,Existing manuscript table 3,6,19,data/supplementary_tables.json,Existing manuscript table; verify author-approved final table captions.
+Figure 6,Existing single-cell analysis,6,1,GSE314756 and existing manuscript,Analysis unchanged; confirm sample provenance and table mapping with Adam.
+Supp Fig 12,Existing single-cell analysis,6,1,GSE314756 and existing manuscript,Analysis unchanged; confirm sample provenance and table mapping with Adam.
+Supp Fig 13,Existing single-cell analysis,6,1,GSE314756 and existing manuscript,Analysis unchanged; confirm sample provenance and table mapping with Adam.
+Supp Table 4,Single-cell source-table dependency,6,1,Existing manuscript,
+Sensitivity,sensitivity_all.csv,6,72,out/sensitivity_all.csv,Sensitivity p-values identify their family. Fit-perturbation bounds are empirical sensitivity ranges.
+Sensitivity,what_changes_vs_published.csv,84,36,out/what_changes_vs_published.csv,Sensitivity p-values identify their family. Fit-perturbation bounds are empirical sensitivity ranges.
+Sensitivity,what_changes_vs_17aug_report.csv,126,57,out/what_changes_vs_17aug_report.csv,Sensitivity p-values identify their family. Fit-perturbation bounds are empirical sensitivity ranges.
+Sensitivity,experimental_units.csv,189,423,out/experimental_units.csv,Sensitivity p-values identify their family. Fit-perturbation bounds are empirical sensitivity ranges.
+Read me,Source Data for co-author review,6,75,out/panel_manifest.csv,Review copy. Conditional MDK records and genomic/single-cell source-data gaps are identified in their sheets. One sheet per figure; full-precision numerical cells and source paths retained.

@@ -1,0 +1,76 @@
+figure,panel,measure,source,drug,dataset,units,output,statistics_panel,raw_data,unit,status,note
+Figure 2,b,IC50,working/analysis/stats-rework/cache/fig2_paplpc.pkl,Amikacin,fig2_paplpc,ug/mL,out/figures-final/Fig2_Amikacin_IC50,Figure 2b-d,biohpc-pull/data/ODFinal.xlsx,culture,replot,
+Figure 2,c,IC50,working/analysis/stats-rework/cache/fig2_paplpc.pkl,Levofloxacin,fig2_paplpc,ug/mL,out/figures-final/Fig2_Levofloxacin_IC50,Figure 2b-d,biohpc-pull/data/ODFinal.xlsx,culture,replot,
+Figure 2,d,IC50,working/analysis/stats-rework/cache/fig2_paplpc.pkl,Cefepime,fig2_paplpc,ug/mL,out/figures-final/Fig2_Cefepime_IC50,Figure 2b-d,biohpc-pull/data/ODFinal.xlsx,culture,replot,
+Figure 3,b,IC50,working/analysis/stats-rework/cache/fig3_plac.pkl,Levofloxacin,fig3_plac,ug/mL,out/figures-final/Fig3_Levofloxacin_IC50,Figure 3b-d,biohpc-pull/data/ODFinal.xlsx,culture,replot,
+Figure 3,c,IC50,working/analysis/stats-rework/cache/fig3_plac.pkl,Amikacin,fig3_plac,ug/mL,out/figures-final/Fig3_Amikacin_IC50,Figure 3b-d,biohpc-pull/data/ODFinal.xlsx,culture,replot,
+Figure 3,d,IC50,working/analysis/stats-rework/cache/fig3_plac.pkl,Cefepime,fig3_plac,ug/mL,out/figures-final/Fig3_Cefepime_IC50,Figure 3b-d,biohpc-pull/data/ODFinal.xlsx,culture,replot,
+Figure 5,b,IC50,working/analysis/stats-rework/cache/fig5_mutants.pkl,Amikacin,fig5_mutants,ug/mL,out/figures-final/Fig5_Amikacin_IC50,,biohpc-pull/data/ODFinal_mutants.xlsx,technical dose-response series; biological n=1 per strain,replot,
+Figure 5,c,IC50,working/analysis/stats-rework/cache/fig5_mutants.pkl,Levofloxacin,fig5_mutants,ug/mL,out/figures-final/Fig5_Levofloxacin_IC50,,biohpc-pull/data/ODFinal_mutants.xlsx,technical dose-response series; biological n=1 per strain,replot,
+Figure 5,d,IC50,working/analysis/stats-rework/cache/fig5_mutants.pkl,Cefepime,fig5_mutants,ug/mL,out/figures-final/Fig5_Cefepime_IC50,,biohpc-pull/data/ODFinal_mutants.xlsx,technical dose-response series; biological n=1 per strain,replot,
+Supplementary Figure 2,a,IC50,working/analysis/stats-rework/cache/fig2_paplpc.pkl,Amikacin,fig2_paplpc,ug/mL,out/figures-final/Fig2_Amikacin_IC50,Figure 2b-d,biohpc-pull/data/ODFinal.xlsx,culture,replot,Shared IC50 panel reuses primary adjustment family
+Supplementary Figure 2,a,IC50,working/analysis/stats-rework/cache/fig2_paplpc.pkl,Levofloxacin,fig2_paplpc,ug/mL,out/figures-final/Fig2_Levofloxacin_IC50,Figure 2b-d,biohpc-pull/data/ODFinal.xlsx,culture,replot,Shared IC50 panel reuses primary adjustment family
+Supplementary Figure 2,a,IC50,working/analysis/stats-rework/cache/fig2_paplpc.pkl,Cefepime,fig2_paplpc,ug/mL,out/figures-final/Fig2_Cefepime_IC50,Figure 2b-d,biohpc-pull/data/ODFinal.xlsx,culture,replot,Shared IC50 panel reuses primary adjustment family
+Supplementary Figure 2,b,MIC,working/analysis/stats-rework/cache/fig2_paplpc.pkl,Amikacin,fig2_paplpc,ug/mL,out/figures-final/SuppFig2_Amikacin_MIC,Figure 2b-d,biohpc-pull/data/ODFinal.xlsx,culture,replot,
+Supplementary Figure 2,b,MIC,working/analysis/stats-rework/cache/fig2_paplpc.pkl,Levofloxacin,fig2_paplpc,ug/mL,out/figures-final/SuppFig2_Levofloxacin_MIC,Figure 2b-d,biohpc-pull/data/ODFinal.xlsx,culture,replot,
+Supplementary Figure 2,b,MIC,working/analysis/stats-rework/cache/fig2_paplpc.pkl,Cefepime,fig2_paplpc,ug/mL,out/figures-final/SuppFig2_Cefepime_MIC,Figure 2b-d,biohpc-pull/data/ODFinal.xlsx,culture,replot,
+Supplementary Figure 3,b,IC50,working/analysis/stats-rework/cache/supp3_pcr.pkl,Amikacin,supp3_pcr,ug/mL,out/figures-final/SuppFig3_Amikacin_IC50,Supplementary Figure 3b-d,biohpc-pull/data/ODFinal.xlsx,culture,replot,
+Supplementary Figure 3,c,IC50,working/analysis/stats-rework/cache/supp3_pcr.pkl,Levofloxacin,supp3_pcr,ug/mL,out/figures-final/SuppFig3_Levofloxacin_IC50,Supplementary Figure 3b-d,biohpc-pull/data/ODFinal.xlsx,culture,replot,
+Supplementary Figure 3,d,IC50,working/analysis/stats-rework/cache/supp3_pcr.pkl,Cefepime,supp3_pcr,ug/mL,out/figures-final/SuppFig3_Cefepime_IC50,Supplementary Figure 3b-d,biohpc-pull/data/ODFinal.xlsx,culture,replot,
+Supplementary Figure 4,b,IC50,working/analysis/stats-rework/cache/supp4_atec.pkl,Amikacin,supp4_atec,ug/mL,out/figures-final/SuppFig4_Amikacin_IC50,Supplementary Figure 4b-d,biohpc-pull/data/ODFinal.xlsx,culture,replot,
+Supplementary Figure 4,c,IC50,working/analysis/stats-rework/cache/supp4_atec.pkl,Levofloxacin,supp4_atec,ug/mL,out/figures-final/SuppFig4_Levofloxacin_IC50,Supplementary Figure 4b-d,biohpc-pull/data/ODFinal.xlsx,culture,replot,
+Supplementary Figure 4,d,IC50,working/analysis/stats-rework/cache/supp4_atec.pkl,Cefepime,supp4_atec,ug/mL,out/figures-final/SuppFig4_Cefepime_IC50,Supplementary Figure 4b-d,biohpc-pull/data/ODFinal.xlsx,culture,replot,
+Supplementary Figure 6,a,IC50,working/analysis/stats-rework/cache/supp6_unt.pkl,Amikacin,supp6_unt,ug/mL,out/figures-final/SuppFig6_Amikacin_IC50,Supplementary Figure 6a-c,biohpc-pull/data/ODFinal_unt.xlsx,culture,replot,
+Supplementary Figure 6,b,IC50,working/analysis/stats-rework/cache/supp6_unt.pkl,Cefepime,supp6_unt,ug/mL,out/figures-final/SuppFig6_Cefepime_IC50,Supplementary Figure 6a-c,biohpc-pull/data/ODFinal_unt.xlsx,culture,replot,
+Supplementary Figure 6,c,IC50,working/analysis/stats-rework/cache/supp6_unt.pkl,Levofloxacin,supp6_unt,ug/mL,out/figures-final/SuppFig6_Levofloxacin_IC50,Supplementary Figure 6a-c,biohpc-pull/data/ODFinal_unt.xlsx,culture,replot,
+Supplementary Figure 7,a,IC50,working/analysis/stats-rework/cache/fig3_plac.pkl,Amikacin,fig3_plac,ug/mL,out/figures-final/Fig3_Amikacin_IC50,Figure 3b-d,biohpc-pull/data/ODFinal.xlsx,culture,replot,Shared IC50 panel reuses primary adjustment family
+Supplementary Figure 7,a,IC50,working/analysis/stats-rework/cache/fig3_plac.pkl,Levofloxacin,fig3_plac,ug/mL,out/figures-final/Fig3_Levofloxacin_IC50,Figure 3b-d,biohpc-pull/data/ODFinal.xlsx,culture,replot,Shared IC50 panel reuses primary adjustment family
+Supplementary Figure 7,a,IC50,working/analysis/stats-rework/cache/fig3_plac.pkl,Cefepime,fig3_plac,ug/mL,out/figures-final/Fig3_Cefepime_IC50,Figure 3b-d,biohpc-pull/data/ODFinal.xlsx,culture,replot,Shared IC50 panel reuses primary adjustment family
+Supplementary Figure 7,b,MIC,working/analysis/stats-rework/cache/fig3_plac.pkl,Amikacin,fig3_plac,ug/mL,out/figures-final/SuppFig7_Amikacin_MIC,Figure 3b-d,biohpc-pull/data/ODFinal.xlsx,culture,replot,
+Supplementary Figure 7,b,MIC,working/analysis/stats-rework/cache/fig3_plac.pkl,Levofloxacin,fig3_plac,ug/mL,out/figures-final/SuppFig7_Levofloxacin_MIC,Figure 3b-d,biohpc-pull/data/ODFinal.xlsx,culture,replot,
+Supplementary Figure 7,b,MIC,working/analysis/stats-rework/cache/fig3_plac.pkl,Cefepime,fig3_plac,ug/mL,out/figures-final/SuppFig7_Cefepime_MIC,Figure 3b-d,biohpc-pull/data/ODFinal.xlsx,culture,replot,
+Supplementary Figure 10,a,MIC,working/analysis/stats-rework/cache/fig5_mutants.pkl,Amikacin,fig5_mutants,ug/mL,out/figures-final/SuppFig10_Amikacin_MIC,,biohpc-pull/data/ODFinal_mutants.xlsx,technical dose-response series; biological n=1 per strain,replot,
+Supplementary Figure 10,b,MIC,working/analysis/stats-rework/cache/fig5_mutants.pkl,Levofloxacin,fig5_mutants,ug/mL,out/figures-final/SuppFig10_Levofloxacin_MIC,,biohpc-pull/data/ODFinal_mutants.xlsx,technical dose-response series; biological n=1 per strain,replot,
+Supplementary Figure 10,c,MIC,working/analysis/stats-rework/cache/fig5_mutants.pkl,Cefepime,fig5_mutants,ug/mL,out/figures-final/SuppFig10_Cefepime_MIC,,biohpc-pull/data/ODFinal_mutants.xlsx,technical dose-response series; biological n=1 per strain,replot,
+Figure 2,e,MDK survivor fraction,working/figures/Figure 2/E - MDK/mdk.P.PC.cultures-3days.xlsx,Cefepime,,fraction,out/figures-final/Fig2e_MDK,,,biological culture; day and replicate retained,audit original,40 uL entries require confirmation; day 1 omitted by original notebook
+Figure 3,e,MDK survivor fraction,working/figures/Figure 3/E - MDK/mdk.P.PLAC.cultures-2days.xlsx,Cefepime,,fraction,out/figures-final/Fig3e_MDK,,,biological culture; day and replicate retained,audit original,40 uL entries and two blank counts require confirmation
+Figure 5,e,MDK survivor fraction,working/figures/Figure 5 - mutants/E - MDK/MDK_mutants_correct.xlsx,Cefepime,,fraction,out/figures-final/Fig5e_MDK,,,biological culture; day and replicate retained,replot,
+Supplementary Figure 4,e,MDK survivor fraction,working/figures/Supplemental Figure 4 - Pb/E - MDK/mdk.ATECc.cultures.xlsx,Cefepime,,fraction,out/figures-final/SuppFig4e_MDK,,,biological culture; day and replicate retained,audit original,40 uL entries require confirmation
+Supplementary Figure 10,d,MDK survivor fraction,working/figures/Supplemental Figure 10 - mutant prs and other/D - prs_hipA mdk/MDK_prs_mutant.xlsx,Cefepime,,fraction,out/figures-final/SuppFig10d_MDK,,,biological culture; day and replicate retained,replot,
+Supplementary Figure 11,all,MDK survivor fraction,working/figures/Supplemental Figure 11 - double mutants/MDK_double_mutant.xlsx,Cefepime,,fraction,out/figures-final/SuppFig11_MDK_double_mutants,,,biological culture; day and replicate retained,replot,"Equal plating volume provisional; one censored count; 1/2 h not measured, 5 h excluded for dilution error"
+Figure 5,a,doubling time,working/figures/Figure 5 - mutants/A - doubling times/growth_022525_mutants.xlsx,,,min,out/figures-final/Fig5a_doubling_time,,,six technical wells; biological n=1 per strain,replot,
+Figure 1,d,survival trajectory,working/figures/Figure 1/D-F/SurvivalData.xlsx,,,percent,,,,culture tracked over time,retain; export source values,
+Figure 1,e,survival trajectory,working/figures/Figure 1/D-F/SurvivalData.xlsx,,,percent,,,,culture tracked over time,retain; export source values,
+Figure 1,f,survival trajectory,working/figures/Figure 1/D-F/SurvivalData.xlsx,,,percent,,,,culture tracked over time,retain; export source values,
+Figure 3,a,survival trajectory,working/figures/Figure 3/A - survival/SurvivalData.xlsx,,,percent,,,,culture tracked over time,retain; export source values,
+Supplementary Figure 4,a,survival trajectory,working/figures/Supplemental Figure 4 - Pb/A - Survival/SurvivalData.xlsx,,,percent,,,,culture tracked over time,retain; export source values,
+Supplementary Figure 3,a,resistance trajectory,working/figures/Supplemental Figure 3 - CefR/A - ResistanceEvo/pcr_evolution.xlsx,,,ug/mL,,,,culture tracked over time,retain; export source values,
+Figure 2,f,mutation frequency,working/figures/Figure 2/F-H heatmaps/05-PA.ipynb,,,fraction,,,,population sequencing sample,retain; recover source values,
+Figure 2,g,mutation frequency,working/figures/Figure 2/F-H heatmaps/07-PL.ipynb,,,fraction,,,,population sequencing sample,retain; recover source values,
+Figure 2,h,mutation frequency,working/figures/Figure 2/F-H heatmaps/06-PC.ipynb,,,fraction,,,,population sequencing sample,retain; recover source values,
+Figure 4,a,mutation frequency,working/figures/Figure 4/02-PLAC.ipynb,,,fraction,,,,population sequencing sample,retain; recover source values,
+Figure 4,b,mutation frequency,working/figures/Figure 4/02-PLAC.ipynb,,,fraction,,,,population sequencing sample,retain; recover source values,
+Figure 4,c,mutation frequency,working/figures/Figure 4/02-PLAC.ipynb,,,fraction,,,,population sequencing sample,retain; recover source values,
+Supplementary Figure 3,e,mutation frequency,working/figures/Supplemental Figure 3 - CefR/E - genetics/08-PCr.ipynb,,,fraction,,,,population sequencing sample,retain; recover source values,
+Supplementary Figure 4,f,mutation frequency,working/figures/Supplemental Figure 4 - Pb/F - Mutations/10-ATEC12.ipynb,,,fraction,,,,population sequencing sample,retain; recover source values,
+Supplementary Figure 5,a,mutation frequency,working/figures/Supplemental Figure 5 - Extended heatmaps/A/05-PA.ipynb,,,fraction,,,,population sequencing sample,retain; recover source values,Supp 5 b/c corrected to notebook identities
+Supplementary Figure 5,b,mutation frequency,working/figures/Supplemental Figure 5 - Extended heatmaps/B/07-PL.ipynb,,,fraction,,,,population sequencing sample,retain; recover source values,Supp 5 b/c corrected to notebook identities
+Supplementary Figure 5,c,mutation frequency,working/figures/Supplemental Figure 5 - Extended heatmaps/C/06-PC.ipynb,,,fraction,,,,population sequencing sample,retain; recover source values,Supp 5 b/c corrected to notebook identities
+Supplementary Figure 6,d,mutation frequency,working/figures/Supplemental Figure 6/B - heatmap/05-Punt.ipynb,,,fraction,,,,population sequencing sample,retain; recover source values,
+Supplementary Figure 8,a,mutation frequency,working/figures/Supplemental Figure 8 - extended traced alleles/02-PLAC.ipynb,,,fraction,,,,population sequencing sample,retain; recover source values,
+Supplementary Figure 8,b,mutation frequency,working/figures/Supplemental Figure 8 - extended traced alleles/02-PLAC.ipynb,,,fraction,,,,population sequencing sample,retain; recover source values,
+Supplementary Figure 8,c,mutation frequency,working/figures/Supplemental Figure 8 - extended traced alleles/02-PLAC.ipynb,,,fraction,,,,population sequencing sample,retain; recover source values,
+Supplementary Figure 8,d,mutation frequency,working/figures/Supplemental Figure 8 - extended traced alleles/02-PLAC.ipynb,,,fraction,,,,population sequencing sample,retain; recover source values,
+Supplementary Figure 8,e,mutation frequency,working/figures/Supplemental Figure 8 - extended traced alleles/02-PLAC.ipynb,,,fraction,,,,population sequencing sample,retain; recover source values,
+Supplementary Figure 9,all,mutation frequency,working/figures/Supplemental Figure 9 - big heatmap/13-bigheatmap.ipynb,,,fraction,,,,population sequencing sample,retain; recover source values,
+Figure 1,abc,schematic,working/figures/Figure 1/A-C/Figure 1 A-C.pptx,,,not applicable,,,,not applicable,retain schematic,
+Figure 4,d,schematic,working/figures/Figure 4/Figure4D-Cartoon.pptx,,,not applicable,,,,not applicable,retain schematic,
+Supplementary Figure 1,all,schematic,working/figures/Supplemental Figure 1/cartoon - survival mechanisms.pptx,,,not applicable,,,,not applicable,retain schematic,
+Figure 2,a,representative dose-response curve,working/figures/Figure 2/A-D - MIC/B-D/241011_Adam_mic_PAPLPC.ipynb,,,OD and ug/mL,,,,dose-response series,"recovered PA5 levofloxacin, original notebook cell 29",
+Figure 6,all,single-cell RNA analysis,working/figures/Figure 6 -scRNA,,,,,,,cell; sample provenance to document,existing Rosenthal analysis; source-data dependency,
+Supplementary Figure 12,all,single-cell RNA analysis,working/figures/Figure 6 -scRNA,,,,,,,cell; sample provenance to document,existing Rosenthal analysis; source-data dependency,
+Supplementary Figure 13,all,single-cell RNA analysis,working/figures/Figure 6 -scRNA,,,,,,,cell; sample provenance to document,existing Rosenthal analysis; source-data dependency,
+Supplementary Table 1,all,table,data/supplementary_tables.json,,,,,,,,table extracted in Source Data workbook,
+Supplementary Table 2,all,table,data/supplementary_tables.json,,,,,,,,table extracted in Source Data workbook,
+Supplementary Table 3,all,table,data/supplementary_tables.json,,,,,,,,table extracted in Source Data workbook,
+Supplementary Table 4,all,table,data/supplementary_tables.json,,,,,,,,Rosenthal source-table dependency,

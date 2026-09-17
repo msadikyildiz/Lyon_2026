@@ -1,0 +1,76 @@
+{
+  "numeric_tables_matched": 23,
+  "analytical_pngs_identical": 59,
+  "analytical_pngs_compared": 59,
+  "composite_pngs_identical": 20,
+  "composite_pngs_compared": 20,
+  "source_data_numeric_cells_matched": 138959,
+  "source_data_text_differences": [
+    [
+      "Read me",
+      "D71",
+      "working/figures/Figure_4.zip",
+      "working/figures/Figure 4/Figure4D-Cartoon.pptx"
+    ],
+    [
+      "Read me",
+      "D77",
+      "working/manuscript/2026-08-12_Paper_Lyon_Toprak_Nature_REVISION.docx",
+      "data/supplementary_tables.json"
+    ],
+    [
+      "Read me",
+      "L77",
+      "extract existing table",
+      "table extracted in Source Data workbook"
+    ],
+    [
+      "Read me",
+      "D78",
+      "working/manuscript/2026-08-12_Paper_Lyon_Toprak_Nature_REVISION.docx",
+      "data/supplementary_tables.json"
+    ],
+    [
+      "Read me",
+      "L78",
+      "extract existing table",
+      "table extracted in Source Data workbook"
+    ],
+    [
+      "Read me",
+      "D79",
+      "working/manuscript/2026-08-12_Paper_Lyon_Toprak_Nature_REVISION.docx",
+      "data/supplementary_tables.json"
+    ],
+    [
+      "Read me",
+      "L79",
+      "extract existing table",
+      "table extracted in Source Data workbook"
+    ],
+    [
+      "Read me",
+      "D80",
+      "working/manuscript/2026-08-12_Paper_Lyon_Toprak_Nature_REVISION.docx",
+      "data/supplementary_tables.json"
+    ],
+    [
+      "Supp Table 1",
+      "A2",
+      "Source: working/manuscript/2026-08-12_Paper_Lyon_Toprak_Nature_REVISION.docx",
+      "Source: data/supplementary_tables.json"
+    ],
+    [
+      "Supp Table 2",
+      "A2",
+      "Source: working/manuscript/2026-08-12_Paper_Lyon_Toprak_Nature_REVISION.docx",
+      "Source: data/supplementary_tables.json"
+    ],
+    [
+      "Supp Table 3",
+      "A2",
+      "Source: working/manuscript/2026-08-12_Paper_Lyon_Toprak_Nature_REVISION.docx",
+      "Source: data/supplementary_tables.json"
+    ]
+  ]
+}

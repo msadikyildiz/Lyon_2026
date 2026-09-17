@@ -1,0 +1,290 @@
+[
+  [
+    [
+      "Target Gene",
+      "Observed Mutation",
+      "Modification Made",
+      "Oligo nucleotide"
+    ],
+    [
+      "gatA",
+      "IS5 insertion within gene",
+      " added duplicate stop codons at insert site to truncate protein",
+      "ATGAACTTTATTTGTTGGCCTTAACAGATAAATGGCTGACGATTATTACTTAGCATGAATCGCCTCACAATGCGGTATTGCAATAGCGTG"
+    ],
+    [
+      "glvC",
+      "1-nucleotide deletion",
+      "deleted nucleotide",
+      "CCATGTTGCCCACCACACCAAAGAGATACATTACGGTCGACATTGGGCCGCCAGCACGGCGTGTACCGCAAACAGCAACGGTGAAATGAA"
+    ],
+    [
+      "hipA",
+      "SNP",
+      "alter nucleotide",
+      "TACGTGACCGGATCGTTAAACGTTATCATGCCAAATCCAGACAACTGTTTGATTTATTGTCAGAAATAGGGCGAGACAGCGTTGGTGCCG"
+    ],
+    [
+      "selB",
+      "2-nucleotide insertion",
+      "insert nucleotides",
+      "CACCACGGTTCGTCACCAAACAGTGGCTCTGCTTTTTGCCAGATGTGGCCTGCTGCTCTTCGCTGAAGCCCGCTTTGTGATCTGGCAGAT"
+    ],
+    [
+      "rpoZ",
+      "7-nucleotide deletion",
+      "delete nucleotides",
+      "ACGCTGTAGAGAAAATTGGTAACCGTTTTGACCTGGTACTGGTCGTCGCGCTCGTCAGATGCAGGTAGGCGGAAAGGATCCGCTGGTACC"
+    ],
+    [
+      "ftsH",
+      "12-nucleotide deletion",
+      "delete nucleotides",
+      "CAGCATCTGGTTCAGAGTCTGTTCACGTTCATCGTGACCACCGCCACGCTGGCGGCCTACGGCGTCGATTTCATCGATAAAGATGATGCA"
+    ],
+    [
+      "fimE",
+      "IS5 insertion between promoter and transcription start",
+      "full gene deletion",
+      "AACTTTATTATCAATAAGTTAAATCAATGATCCTGACGACGGAGACCGCCGTCGTCGACAAGCCCACAATAGTAGTACTCCTAACTGAGA"
+    ]
+  ],
+  [
+    [
+      "Gene",
+      "Primer Name",
+      "Full-length, Mutant-Specific, Both",
+      "Primer Direction",
+      "Sequence"
+    ],
+    [
+      "glvC",
+      "fwd_glvC_full",
+      "Both",
+      "FWD",
+      "CATCTGCAAGAGTTCAGTTTG"
+    ],
+    [
+      "glvC",
+      "glvC_mt_rv",
+      "Mutant-Specific",
+      "REV",
+      "ACATTACGGTCGACATTGG"
+    ],
+    [
+      "glvC",
+      "rev_glvC_full",
+      "Full-Length",
+      "REV",
+      "AGTAGAGTTTCACTTCCGCATC"
+    ],
+    [
+      "gatA",
+      "fwd_gatA_full",
+      "Full-Length",
+      "FWD",
+      "AGGACGGTATATGACTAACCTG"
+    ],
+    [
+      "gatA",
+      "fwd_gatA_stops",
+      "Mutant-Specific",
+      "FWD",
+      "GAGGCGATTCATGCTAAGTAAT"
+    ],
+    [
+      "gatA",
+      "rev_gatA_full",
+      "Both",
+      "REV",
+      "GCAAGCGACAATAATCTTG"
+    ],
+    [
+      "selB",
+      "fwd_selB_full",
+      "Full-Length",
+      "FWD",
+      "GTTATAGCTTGTTGAATGCG"
+    ],
+    [
+      "selB",
+      "fwd_selB_mut",
+      "Mutant-Specific",
+      "FWD",
+      "AGAGCAGCAGGCCACA"
+    ],
+    [
+      "selB",
+      "rev_selB_full",
+      "Both",
+      "REV",
+      "GTTGAACCACACTCCTGAT"
+    ],
+    [
+      "hipA",
+      "fwd_hipA_full",
+      "Full-Length",
+      "FWD",
+      "TCACTTGGATGAACAACCAG"
+    ],
+    [
+      "hipA",
+      "hipA_mt_fwd",
+      "Mutant-Specific",
+      "FWD",
+      "ATGCCAAATCCAGACAACT"
+    ],
+    [
+      "hipA",
+      "rev_hipA_full",
+      "Both",
+      "REV",
+      "TTTAATGATGTGCGTCGTC"
+    ],
+    [
+      "rpoZ",
+      "fwd_rpoZ_full",
+      "Full-Length",
+      "FWD",
+      "GAATGATGACTTCGATACCG"
+    ],
+    [
+      "rpoZ",
+      "fwd_rpoZ_span",
+      "Mutant-Specific",
+      "FWD",
+      "TACTGGTCGTCGCGCT"
+    ],
+    [
+      "rpoZ",
+      "rev_rpoZ_full",
+      "Both",
+      "REV",
+      "GACGCTTGATTTGGTCTTC"
+    ],
+    [
+      "ftsH",
+      "fwd_ftsH_full",
+      "Both",
+      "FWD",
+      "CAGAAACTCGGCGGTAAG"
+    ],
+    [
+      "ftsH",
+      "rev_ftsH_full",
+      "Full-Length",
+      "REV",
+      "ATGTGAACTTTCAGGATCTGC"
+    ],
+    [
+      "ftsH",
+      "rev_ftsHm_del",
+      "Mutant-Specific",
+      "REV",
+      "GACCACCGCCACGCT"
+    ],
+    [
+      "fimE",
+      "fwd_fimE_full",
+      "Full-Length",
+      "FWD",
+      "GACTGATAGCCACATCACTC"
+    ],
+    [
+      "fimE",
+      "rev_fimE_del",
+      "Both",
+      "REV",
+      "CGTGCTTTCCTCTATGAGTC"
+    ],
+    [
+      "p57",
+      "pDel_seq_chlor_fwd",
+      "Mutant-Specific",
+      "FWD",
+      "GCGTTACATCCCTGGCTTGTTG"
+    ]
+  ],
+  [
+    [
+      "Sample name",
+      "Cell numbers"
+    ],
+    [
+      "MG-3 replicate 1",
+      "7827"
+    ],
+    [
+      "MG-3 replicate 2",
+      "10774"
+    ],
+    [
+      "MGLEV,AMI,CEF-4 replicate 1",
+      "4764"
+    ],
+    [
+      "MGLEV,AMI,CEF-4 replicate 2",
+      "2764"
+    ],
+    [
+      "MGLEV,AMI,CEF-7 replicate 1",
+      "9619"
+    ],
+    [
+      "MGLEV,AMI,CEF-7 replicate 2",
+      "13135"
+    ],
+    [
+      "TOTAL CELLS",
+      "48883"
+    ],
+    [
+      "",
+      ""
+    ],
+    [
+      "Cluster name",
+      "Cell numbers"
+    ],
+    [
+      "1",
+      "9335"
+    ],
+    [
+      "2",
+      "7034"
+    ],
+    [
+      "3",
+      "6008"
+    ],
+    [
+      "4",
+      "5989"
+    ],
+    [
+      "5",
+      "5092"
+    ],
+    [
+      "6",
+      "4967"
+    ],
+    [
+      "7",
+      "4961"
+    ],
+    [
+      "8",
+      "3052"
+    ],
+    [
+      "9",
+      "2445"
+    ],
+    [
+      "TOTAL CELLS",
+      "48883"
+    ]
+  ]
+]

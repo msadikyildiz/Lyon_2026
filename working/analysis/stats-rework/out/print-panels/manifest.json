@@ -1,0 +1,570 @@
+{
+  "panels": {
+    "Figure_2::original_image8": {
+      "source": "working/analysis/stats-rework/out/print-panels/Figure_2__original_image8.pdf",
+      "sha256": "2bdcac4656f1aa8e38c884e59de5ec4e6b73207f2ca7007f06c308496d1985b2",
+      "native_width": 244.24000549316406,
+      "native_height": 160.82000732421875,
+      "content_box": [
+        0,
+        0,
+        244.24000549316406,
+        160.82000732421875
+      ],
+      "content_aspect": 1.5187165425304805
+    },
+    "Figure_2::Fig2_Amikacin_IC50_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Figure_2__Fig2_Amikacin_IC50_labels.pdf",
+      "sha256": "fd0f63bd0f570a759a6c8a7feff29e10e870284715233f615218de4954590767",
+      "native_width": 141.88795471191406,
+      "native_height": 149.68385314941406,
+      "content_box": [
+        0,
+        0,
+        141.88795471191406,
+        149.68385314941406
+      ],
+      "content_aspect": 0.9479175724470551
+    },
+    "Figure_2::Fig2_Levofloxacin_IC50_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Figure_2__Fig2_Levofloxacin_IC50_labels.pdf",
+      "sha256": "79e2f07510c76a940400ef0bca13050b2c3b9420cfcf028eed15edc2277a7a46",
+      "native_width": 144.05601501464844,
+      "native_height": 149.68385314941406,
+      "content_box": [
+        0,
+        0,
+        144.05601501464844,
+        149.68385314941406
+      ],
+      "content_aspect": 0.9624018354929177
+    },
+    "Figure_2::Fig2_Cefepime_IC50_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Figure_2__Fig2_Cefepime_IC50_labels.pdf",
+      "sha256": "1878983361c447a675ea55bc9315d026ebee18df1d32a60da7ccaa071383c057",
+      "native_width": 144.05601501464844,
+      "native_height": 149.68385314941406,
+      "content_box": [
+        0,
+        0,
+        144.05601501464844,
+        149.68385314941406
+      ],
+      "content_aspect": 0.9624018354929177
+    },
+    "Figure_3::original_image17": {
+      "source": "working/analysis/stats-rework/out/print-panels/Figure_3__original_image17.pdf",
+      "sha256": "9765e1d4b87d983a038c820b2004ecc593f2822bf8d22fa2c54602353ea1b542",
+      "native_width": 288.5738525390625,
+      "native_height": 354.3148498535156,
+      "content_box": [
+        0,
+        0,
+        288.5738525390625,
+        354.3148498535156
+      ],
+      "content_aspect": 0.8144559920600776
+    },
+    "Figure_3::Fig3_Levofloxacin_IC50_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Figure_3__Fig3_Levofloxacin_IC50_labels.pdf",
+      "sha256": "59afa0a06c183e05402ca64c0bb9dbf3e6223ba9e3f9acf163627f895fc8fd92",
+      "native_width": 148.30613708496094,
+      "native_height": 152.93638610839844,
+      "content_box": [
+        0,
+        0,
+        148.30613708496094,
+        152.93638610839844
+      ],
+      "content_aspect": 0.9697243465648805
+    },
+    "Figure_3::Fig3_Amikacin_IC50_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Figure_3__Fig3_Amikacin_IC50_labels.pdf",
+      "sha256": "c513c36244593612e88e2a6ae5ff2a4ac66a046ff65ea5effd0f27e3264ea0ce",
+      "native_width": 148.30613708496094,
+      "native_height": 152.93724060058594,
+      "content_box": [
+        0,
+        0,
+        148.30613708496094,
+        152.93724060058594
+      ],
+      "content_aspect": 0.9697189285131691
+    },
+    "Figure_3::Fig3_Cefepime_IC50_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Figure_3__Fig3_Cefepime_IC50_labels.pdf",
+      "sha256": "3f3a130e2384e7fc9d223efce74933918b639dc50e003814416d2bff3a654500",
+      "native_width": 148.30613708496094,
+      "native_height": 152.93638610839844,
+      "content_box": [
+        0,
+        0,
+        148.30613708496094,
+        152.93638610839844
+      ],
+      "content_aspect": 0.9697243465648805
+    },
+    "Figure_5::Fig5a_doubling_time_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Figure_5__Fig5a_doubling_time_labels.pdf",
+      "sha256": "fa34bd3b8b1ce5855ad5874691e9d57a81110038eada5cdadfe94c8897431b50",
+      "native_width": 218.44000244140625,
+      "native_height": 216.72000122070312,
+      "content_box": [
+        0,
+        0,
+        218.44000244140625,
+        216.72000122070312
+      ],
+      "content_aspect": 1.0079365135244325
+    },
+    "Figure_5::Fig5e_MDK": {
+      "source": "working/analysis/stats-rework/out/print-panels/Figure_5__Fig5e_MDK.pdf",
+      "sha256": "43f7ace4784c18439438e84f6ca284e4026092b3bce541051865ae88fd3b9b0f",
+      "native_width": 218.44000244140625,
+      "native_height": 216.72000122070312,
+      "content_box": [
+        0,
+        0,
+        218.44000244140625,
+        216.72000122070312
+      ],
+      "content_aspect": 1.0079365135244325
+    },
+    "Figure_5::Fig5_Amikacin_IC50_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Figure_5__Fig5_Amikacin_IC50_labels.pdf",
+      "sha256": "35dfa2a9e2cddfc8358739a99e70ef2646424070492ca84589c63136386beba7",
+      "native_width": 141.88795471191406,
+      "native_height": 163.39999389648438,
+      "content_box": [
+        0,
+        0,
+        141.88795471191406,
+        163.39999389648438
+      ],
+      "content_aspect": 0.8683473684937931
+    },
+    "Figure_5::Fig5_Levofloxacin_IC50_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Figure_5__Fig5_Levofloxacin_IC50_labels.pdf",
+      "sha256": "5c771fa5e0acd148262eb1832b83f5d46767b57eef48de692bd137c80c1227dd",
+      "native_width": 144.05601501464844,
+      "native_height": 163.39999389648438,
+      "content_box": [
+        0,
+        0,
+        144.05601501464844,
+        163.39999389648438
+      ],
+      "content_aspect": 0.8816157918947626
+    },
+    "Figure_5::Fig5_Cefepime_IC50_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Figure_5__Fig5_Cefepime_IC50_labels.pdf",
+      "sha256": "4495f19b4194b5fef0f5fee2c337897661062c14eb1608531c0173f3f5f9d113",
+      "native_width": 144.05601501464844,
+      "native_height": 163.39999389648438,
+      "content_box": [
+        0,
+        0,
+        144.05601501464844,
+        163.39999389648438
+      ],
+      "content_aspect": 0.8816157918947626
+    },
+    "Supplementary_Figure_2::Fig2_Amikacin_IC50_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Supplementary_Figure_2__Fig2_Amikacin_IC50_labels.pdf",
+      "sha256": "0f80a19a0e8d69f4cad7f09e1389a085c5472aa7a180ef5e254cd02aecab9b5e",
+      "native_width": 208.63858032226562,
+      "native_height": 161.2620391845703,
+      "content_box": [
+        0,
+        0,
+        208.63858032226562,
+        161.2620391845703
+      ],
+      "content_aspect": 1.2937860725143822
+    },
+    "Supplementary_Figure_2::SuppFig2_Amikacin_MIC_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Supplementary_Figure_2__SuppFig2_Amikacin_MIC_labels.pdf",
+      "sha256": "7fa00f9e5b00195869b66667543b6b4cce07b762931d015e5f7dc9f91a117da9",
+      "native_width": 208.63858032226562,
+      "native_height": 161.43833923339844,
+      "content_box": [
+        0,
+        0,
+        208.63858032226562,
+        161.43833923339844
+      ],
+      "content_aspect": 1.2923731829316438
+    },
+    "Supplementary_Figure_2::Fig2_Levofloxacin_IC50_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Supplementary_Figure_2__Fig2_Levofloxacin_IC50_labels.pdf",
+      "sha256": "cdb7e41b664d8352f18dc607e7d6810114a858259fec617d2b31266afad8a7b2",
+      "native_width": 208.63858032226562,
+      "native_height": 158.83511352539062,
+      "content_box": [
+        0,
+        0,
+        208.63858032226562,
+        158.83511352539062
+      ],
+      "content_aspect": 1.3135545138066316
+    },
+    "Supplementary_Figure_2::SuppFig2_Levofloxacin_MIC_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Supplementary_Figure_2__SuppFig2_Levofloxacin_MIC_labels.pdf",
+      "sha256": "fe796b4beae10f981c4d08cb5d22ce7c4acc4c12e076ffba164ba772115f2786",
+      "native_width": 208.63858032226562,
+      "native_height": 159.00625610351562,
+      "content_box": [
+        0,
+        0,
+        208.63858032226562,
+        159.00625610351562
+      ],
+      "content_aspect": 1.3121407008441137
+    },
+    "Supplementary_Figure_2::Fig2_Cefepime_IC50_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Supplementary_Figure_2__Fig2_Cefepime_IC50_labels.pdf",
+      "sha256": "060400f090697befbb28db0533a3f69abba55cb09a65aa617e0761f63235c93e",
+      "native_width": 208.63858032226562,
+      "native_height": 158.83425903320312,
+      "content_box": [
+        0,
+        0,
+        208.63858032226562,
+        158.83425903320312
+      ],
+      "content_aspect": 1.3135615804311542
+    },
+    "Supplementary_Figure_2::SuppFig2_Cefepime_MIC_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Supplementary_Figure_2__SuppFig2_Cefepime_MIC_labels.pdf",
+      "sha256": "0b72f891396ba7e75f78de636356731f1238a152a421857d509a664bab02551d",
+      "native_width": 208.63858032226562,
+      "native_height": 159.00540161132812,
+      "content_box": [
+        0,
+        0,
+        208.63858032226562,
+        159.00540161132812
+      ],
+      "content_aspect": 1.3121477522647975
+    },
+    "Supplementary_Figure_7::Fig3_Amikacin_IC50_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Supplementary_Figure_7__Fig3_Amikacin_IC50_labels.pdf",
+      "sha256": "bbda1af3047828ee29d89a9c038a397980ca83b48ed6b33e6a819d26bf4a64b9",
+      "native_width": 186.0412139892578,
+      "native_height": 161.2620391845703,
+      "content_box": [
+        0,
+        0,
+        186.0412139892578,
+        161.2620391845703
+      ],
+      "content_aspect": 1.153657828773496
+    },
+    "Supplementary_Figure_7::SuppFig7_Amikacin_MIC_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Supplementary_Figure_7__SuppFig7_Amikacin_MIC_labels.pdf",
+      "sha256": "6e55d283dcb625aa924dcf67e951cc310fe403ea5bfd6d2cec4a85635d2f4909",
+      "native_width": 186.0412139892578,
+      "native_height": 161.43833923339844,
+      "content_box": [
+        0,
+        0,
+        186.0412139892578,
+        161.43833923339844
+      ],
+      "content_aspect": 1.1523979673768194
+    },
+    "Supplementary_Figure_7::Fig3_Levofloxacin_IC50_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Supplementary_Figure_7__Fig3_Levofloxacin_IC50_labels.pdf",
+      "sha256": "b013db075abae1c2e2ecf3fa851857b9917b33280ed2acd14408684c4a61567b",
+      "native_width": 186.0412139892578,
+      "native_height": 158.83511352539062,
+      "content_box": [
+        0,
+        0,
+        186.0412139892578,
+        158.83511352539062
+      ],
+      "content_aspect": 1.171285176558382
+    },
+    "Supplementary_Figure_7::SuppFig7_Levofloxacin_MIC_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Supplementary_Figure_7__SuppFig7_Levofloxacin_MIC_labels.pdf",
+      "sha256": "36bbac43a21e42bf8a73d2c273e113f8d62f08e2d13c10d1eddf31d14558295d",
+      "native_width": 186.0412139892578,
+      "native_height": 159.00625610351562,
+      "content_box": [
+        0,
+        0,
+        186.0412139892578,
+        159.00625610351562
+      ],
+      "content_aspect": 1.1700244917919582
+    },
+    "Supplementary_Figure_7::Fig3_Cefepime_IC50_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Supplementary_Figure_7__Fig3_Cefepime_IC50_labels.pdf",
+      "sha256": "2319b8b84f4629f8971f1dc18638c98c11ee4c964d58a9fe25fedf71067d95d0",
+      "native_width": 186.0412139892578,
+      "native_height": 158.83425903320312,
+      "content_box": [
+        0,
+        0,
+        186.0412139892578,
+        158.83425903320312
+      ],
+      "content_aspect": 1.1712914778062287
+    },
+    "Supplementary_Figure_7::SuppFig7_Cefepime_MIC_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Supplementary_Figure_7__SuppFig7_Cefepime_MIC_labels.pdf",
+      "sha256": "4f900d99773c2f6e9ed178d3c6bfcf91e34ed06a1aa5b87ce079a6fbd78fa102",
+      "native_width": 186.0412139892578,
+      "native_height": 159.00540161132812,
+      "content_box": [
+        0,
+        0,
+        186.0412139892578,
+        159.00540161132812
+      ],
+      "content_aspect": 1.1700307794826736
+    },
+    "Supplementary_Figure_3::SuppFig3_Amikacin_IC50_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Supplementary_Figure_3__SuppFig3_Amikacin_IC50_labels.pdf",
+      "sha256": "607ebc6213f00dc6f6383f02635904a3f52822b1810beba5a6787f47bdf26f23",
+      "native_width": 190.6026611328125,
+      "native_height": 153.14793395996094,
+      "content_box": [
+        0,
+        0,
+        190.6026611328125,
+        153.14793395996094
+      ],
+      "content_aspect": 1.2445656706191266
+    },
+    "Supplementary_Figure_3::SuppFig3_Levofloxacin_IC50_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Supplementary_Figure_3__SuppFig3_Levofloxacin_IC50_labels.pdf",
+      "sha256": "ac7712feab08cc42e996dd4a7d6335617c1ea260f78b19130d1129d06a03a105",
+      "native_width": 193.51547241210938,
+      "native_height": 153.14707946777344,
+      "content_box": [
+        0,
+        0,
+        193.51547241210938,
+        153.14707946777344
+      ],
+      "content_aspect": 1.263592313249634
+    },
+    "Supplementary_Figure_3::SuppFig3_Cefepime_IC50_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Supplementary_Figure_3__SuppFig3_Cefepime_IC50_labels.pdf",
+      "sha256": "16a3226315ceabf2936a8cd9976d1adb0ab85eacc47c0aa5591832827c544354",
+      "native_width": 193.51547241210938,
+      "native_height": 153.14707946777344,
+      "content_box": [
+        0,
+        0,
+        193.51547241210938,
+        153.14707946777344
+      ],
+      "content_aspect": 1.263592313249634
+    },
+    "Supplementary_Figure_4::original_image41": {
+      "source": "working/analysis/stats-rework/out/print-panels/Supplementary_Figure_4__original_image41.pdf",
+      "sha256": "20570544693eee2854c62e2eb18767fae911b065448ab6a695c9081d28f57f23",
+      "native_width": 165.81488037109375,
+      "native_height": 178.22897338867188,
+      "content_box": [
+        0,
+        0,
+        165.81488037109375,
+        178.22897338867188
+      ],
+      "content_aspect": 0.9303475030936403
+    },
+    "Supplementary_Figure_4::SuppFig4_Amikacin_IC50_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Supplementary_Figure_4__SuppFig4_Amikacin_IC50_labels.pdf",
+      "sha256": "a3a0f02707536cc8da9455fe743ec3eb07497ecaf61b5315ff564f35873c4ca5",
+      "native_width": 141.88795471191406,
+      "native_height": 111.68218231201172,
+      "content_box": [
+        0,
+        0,
+        141.88795471191406,
+        111.68218231201172
+      ],
+      "content_aspect": 1.2704618747108207
+    },
+    "Supplementary_Figure_4::SuppFig4_Levofloxacin_IC50_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Supplementary_Figure_4__SuppFig4_Levofloxacin_IC50_labels.pdf",
+      "sha256": "caf277a8fa6901da107f4fc63d26192f71609f18e6980a6df408125385a488a9",
+      "native_width": 144.05601501464844,
+      "native_height": 111.68218231201172,
+      "content_box": [
+        0,
+        0,
+        144.05601501464844,
+        111.68218231201172
+      ],
+      "content_aspect": 1.289874642780461
+    },
+    "Supplementary_Figure_4::SuppFig4_Cefepime_IC50_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Supplementary_Figure_4__SuppFig4_Cefepime_IC50_labels.pdf",
+      "sha256": "3c95b6b0178b9a10fad1e2365e9dce4f35227070100722e1ecdecc51fb103094",
+      "native_width": 144.05601501464844,
+      "native_height": 111.68218231201172,
+      "content_box": [
+        0,
+        0,
+        144.05601501464844,
+        111.68218231201172
+      ],
+      "content_aspect": 1.289874642780461
+    },
+    "Supplementary_Figure_6::SuppFig6_Amikacin_IC50_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Supplementary_Figure_6__SuppFig6_Amikacin_IC50_labels.pdf",
+      "sha256": "2f4c321e2817380eb9d03249d812c7d369afa9cedbdaf147c8693c7bf784cc31",
+      "native_width": 142.44093322753906,
+      "native_height": 110.40679931640625,
+      "content_box": [
+        0,
+        0,
+        142.44093322753906,
+        110.40679931640625
+      ],
+      "content_aspect": 1.2901463869025735
+    },
+    "Supplementary_Figure_6::SuppFig6_Cefepime_IC50_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Supplementary_Figure_6__SuppFig6_Cefepime_IC50_labels.pdf",
+      "sha256": "1137a4d88028ab1c6393f3570a88d4c7f2966031f5d2a5ded52a1a1dcb7fbe34",
+      "native_width": 142.44093322753906,
+      "native_height": 108.74527740478516,
+      "content_box": [
+        0,
+        0,
+        142.44093322753906,
+        108.74527740478516
+      ],
+      "content_aspect": 1.3098585669824332
+    },
+    "Supplementary_Figure_6::SuppFig6_Levofloxacin_IC50_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Supplementary_Figure_6__SuppFig6_Levofloxacin_IC50_labels.pdf",
+      "sha256": "1fa22e63b585d5bab050d8a43acaeab4f8c8626ad96be68ef120b7d43844ded6",
+      "native_width": 142.44093322753906,
+      "native_height": 108.74527740478516,
+      "content_box": [
+        0,
+        0,
+        142.44093322753906,
+        108.74527740478516
+      ],
+      "content_aspect": 1.3098585669824332
+    },
+    "Supplementary_Figure_10::SuppFig10_Amikacin_MIC_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Supplementary_Figure_10__SuppFig10_Amikacin_MIC_labels.pdf",
+      "sha256": "485c4b543c88b739dec52a2bc99392431b3701228849f3028b596915ea9dde58",
+      "native_width": 144.3939971923828,
+      "native_height": 130.72000122070312,
+      "content_box": [
+        0,
+        0,
+        144.3939971923828,
+        130.72000122070312
+      ],
+      "content_aspect": 1.1046052313646555
+    },
+    "Supplementary_Figure_10::SuppFig10_Levofloxacin_MIC_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Supplementary_Figure_10__SuppFig10_Levofloxacin_MIC_labels.pdf",
+      "sha256": "aaceaad6b15955b105ba57fe36e608122a036b4e7afb1c92f327bade72c873a2",
+      "native_width": 144.3939971923828,
+      "native_height": 130.72000122070312,
+      "content_box": [
+        0,
+        0,
+        144.3939971923828,
+        130.72000122070312
+      ],
+      "content_aspect": 1.1046052313646555
+    },
+    "Supplementary_Figure_10::SuppFig10_Cefepime_MIC_labels": {
+      "source": "working/analysis/stats-rework/out/print-panels/Supplementary_Figure_10__SuppFig10_Cefepime_MIC_labels.pdf",
+      "sha256": "35dcd562f85d6005e1ab48179a8e47e70fee7f5e8179c7a47a5ea333eb82a466",
+      "native_width": 144.3939971923828,
+      "native_height": 130.72000122070312,
+      "content_box": [
+        0,
+        0,
+        144.3939971923828,
+        130.72000122070312
+      ],
+      "content_aspect": 1.1046052313646555
+    },
+    "Supplementary_Figure_10::SuppFig10d_MDK": {
+      "source": "working/analysis/stats-rework/out/print-panels/Supplementary_Figure_10__SuppFig10d_MDK.pdf",
+      "sha256": "8b788022a8dc91109caa152a14dfcd6b4f026e106bf78171d95f8af5c048f639",
+      "native_width": 292.4859924316406,
+      "native_height": 430.0,
+      "content_box": [
+        0,
+        0,
+        292.4859924316406,
+        430.0
+      ],
+      "content_aspect": 0.6801999823991642
+    },
+    "Supplementary_Figure_11::SuppFig11_MDK_double_mutants": {
+      "source": "working/analysis/stats-rework/out/print-panels/Supplementary_Figure_11__SuppFig11_MDK_double_mutants.pdf",
+      "sha256": "a4abbf036e3a388901be0dfc7075921879f6b6f4d8d85a34f86898810eea82ba",
+      "native_width": 398.38812255859375,
+      "native_height": 503.5299987792969,
+      "content_box": [
+        0,
+        0,
+        398.38812255859375,
+        503.5299987792969
+      ],
+      "content_aspect": 0.7911904425245813
+    }
+  },
+  "layout_sha256": "924742fd6f80c3e831f7c81b39c7f350fe5e6910fbfb3d2071e6f0f9c56ab85d",
+  "inputs": {
+    "working/analysis/stats-rework/print_panels.py": "1338c7c0cc996a93439c78121df48130e381cf30d3e3671c3f11de068390a2ae",
+    "working/analysis/stats-rework/plot_final.py": "b1faa26811c1d93a25d3f0df8f449894fde7b3b9bfc8094b13cf379c6c9a0bae",
+    "working/analysis/stats-rework/assembly_layout.json": "924742fd6f80c3e831f7c81b39c7f350fe5e6910fbfb3d2071e6f0f9c56ab85d",
+    "working/analysis/stats-rework/fig5a_doubling.py": "b6b210e8cd958f8ae5e41d1e12f6e17662050bb90894a12726599bf0e0d935ba",
+    "working/figures/Figure 5 - mutants/A - doubling times/growth_022525_mutants.xlsx": "81d66492dd60832468cd3732179182dd42eb57fa16b09e17f768355893c6c8dc",
+    "working/analysis/stats-rework/stats.py": "dea2f75117aff326364b5b34c456a48c4734b734633e26545a92b6f31ac01440",
+    "working/analysis/stats-rework/report_results.py": "9e69d2dd6addd6ec7ef43122356bc4e870af8928054198566708af27d02ec858",
+    "working/analysis/stats-rework/cache/fig2_paplpc.pkl": "7c64d9d05a6bb998da04a4afc43c5594faab0632013151e43c08626b96464724",
+    "working/analysis/stats-rework/cache/fig2_paplpc__df_analysis.pkl": "150de0e9d1ef99360ca5dcd2885c9186b06ec91a50edb8ee2dd8255ac1e8da7a",
+    "working/analysis/stats-rework/cache/fig3_plac.pkl": "9d1f192525a7c4bba73d09124b8a3bf3f42d557fff2b46bd54b6da2fe46b2d38",
+    "working/analysis/stats-rework/cache/fig3_plac__df_analysis.pkl": "b1fa20eddbc2068dc658e10fa299635d16b85ccdd9cc6a7662b2b5660e016e6e",
+    "working/analysis/stats-rework/cache/fig5_mutants.pkl": "7de64a2688c19162964c2ce71530a91f8d31570cdba981d5f94b14d2d6a14dd4",
+    "working/analysis/stats-rework/cache/fig5_mutants__df_analysis.pkl": "3afca04be5fb9840d0be2d7f937e53a56d70ec04adcd3e16583959bce7a6adcf",
+    "working/analysis/stats-rework/cache/supp3_pcr.pkl": "a308ce6c4a242afbeea08d778921767a4b4c5acc33633c9e64ceb57a10541ad3",
+    "working/analysis/stats-rework/cache/supp3_pcr__df_analysis.pkl": "c532a699a5e69553e6317bc2a40cbd3431b03a256c98f5cf4d3e6163b42db984",
+    "working/analysis/stats-rework/cache/supp4_atec.pkl": "64388b7503a79be28a478c968040f38982dbc0f1b3f82a0f9f51661ee54deea9",
+    "working/analysis/stats-rework/cache/supp4_atec__df_analysis.pkl": "8f5ea7d029af1419ae31acb2161de369d72635493b4303aeefad4182284ed5de",
+    "working/analysis/stats-rework/cache/supp6_unt.pkl": "11425a436d9a639610323603a4ba222ebb8df1a87533b0cf8253c5d1f438139e",
+    "working/analysis/stats-rework/cache/supp6_unt__df_analysis.pkl": "a54e4149340517ccc72d056559e2976a81178312fa75bf69fc460ab3a1e744db",
+    "working/analysis/stats-rework/out/Fig2e_MDK_records.csv": "1663fae17d3b1a7eaa898886f78d8412cf3b46ac616912d96ac6cccb685de73c",
+    "working/analysis/stats-rework/out/Fig2e_MDK_summary.csv": "4a4e401cb72622ec628c96305f40f2a14c5582c8f9fb6a43fefea7f767c859e8",
+    "working/analysis/stats-rework/out/Fig3e_MDK_records.csv": "ade4121b0d48dfa22cf197e2a029df1fb40c4ede1a6d02765ccd16f7ef763489",
+    "working/analysis/stats-rework/out/Fig3e_MDK_summary.csv": "25791c33ee65ae1030e810b00839f306f154b48058c5b2e084249c05dc895c49",
+    "working/analysis/stats-rework/out/Fig5e_MDK_records.csv": "a7b72969f6585e91948a821e5cd2ffc54d23a870d85d0e78fd4373ea5058ca17",
+    "working/analysis/stats-rework/out/Fig5e_MDK_summary.csv": "85f4abc74b95eea2736eb80a23b12d28caad97d7164db68d9fa8b1736fa947a4",
+    "working/analysis/stats-rework/out/SuppFig10d_MDK_records.csv": "e874e0af272f87eb39f47411041d89e7313e366d8411662066a6a8db73091e97",
+    "working/analysis/stats-rework/out/SuppFig10d_MDK_summary.csv": "ecb632a848e4a18471653b869a6994e31136d6a15ce51324e61014d803812649",
+    "working/analysis/stats-rework/out/SuppFig4e_MDK_records.csv": "0b366a1e54829a22c462c28d3763728d4a74b44f1e1b606a0e21c2dc7fafadd2",
+    "working/analysis/stats-rework/out/SuppFig4e_MDK_summary.csv": "2116e9c5a4aa7287e174f746a030ecc8da823d6e55b9f0bafa99ca8291c2840d",
+    "working/analysis/stats-rework/out/acceptance_checks.csv": "672123e7f5a52ffda0f1c633b0ccfc02d99ae1a8842688eafa5b6fde6751eef0",
+    "working/analysis/stats-rework/out/experimental_units.csv": "8b30be3aa9f1309b0e3a3b9103f1dace9fda82dfddf1d448c8cd5be179468c92",
+    "working/analysis/stats-rework/out/fig5_descriptive.csv": "20f0b14c28d2adc47ff92b4ac6c0aac524d21148f65d9ae03630fd47e5a37481",
+    "working/analysis/stats-rework/out/fig5a_descriptive.csv": "daaceb357ee55fee5061dcf6cdfbd88dac8ad8978346f611e4bdd1f88a330d94",
+    "working/analysis/stats-rework/out/fig5a_doubling_times_per_well.csv": "79dca0b4b4eaa8fe7c95fcd426ddda4915f11889eefcba67101e0fda14e27da2",
+    "working/analysis/stats-rework/out/final_statistics.csv": "716a06721513ad7676662dcf3c5564306ded5fc9077812bc5b3e04f7f2783332",
+    "working/analysis/stats-rework/out/group_summaries.csv": "b4a4a673ee2c1f7b569168f8e0703cb56c32af65709b0a5478c8af69fc38a52e",
+    "working/analysis/stats-rework/out/panel_manifest.csv": "f67dd0c8e28b37512404c66f9ca581baef4cd82b842c28da0baa1dbc02afd5ec",
+    "working/analysis/stats-rework/out/render_manifest.csv": "225fe4afc41c09a8df1eca4ce747dc4640acfa5991ecf09720cbc28ac6d9fc00",
+    "working/analysis/stats-rework/out/sensitivity_all.csv": "20b2791be5b6a87e43ae85580991db70fdae609a9417a298d79a8aa23b6aae72",
+    "working/analysis/stats-rework/out/supp11_recomputed.csv": "258a614cceb057d2d44f3d291c55b6e23160b6679cc93a952c338ca363d4d3a3",
+    "working/analysis/stats-rework/out/supp11_summary.csv": "80b0f7a55025fa73fb5943e3f4d92790eaaf52a0cc470c6d825b2bfebd2d91a1",
+    "working/analysis/stats-rework/out/what_changes_vs_17aug_report.csv": "2712de03c387cdbc6ead18cc394f3771a7fa888cfbf1a45c081399d9310e6404",
+    "working/analysis/stats-rework/out/what_changes_vs_published.csv": "e56c141675e094a016ea46e86f449f3c241f7833928b7f7999c4e4d2bf03872d"
+  }
+}

@@ -1,0 +1,358 @@
+check,panel,drug,item,passed
+expected unique culture IDs,fig2_paplpc,Levofloxacin,P,True
+finite positive IC50,fig2_paplpc,Levofloxacin,P,True
+finite positive MIC,fig2_paplpc,Levofloxacin,P,True
+1000 valid fit draws per culture,fig2_paplpc,Levofloxacin,P,True
+expected unique culture IDs,fig2_paplpc,Levofloxacin,PA,True
+finite positive IC50,fig2_paplpc,Levofloxacin,PA,True
+finite positive MIC,fig2_paplpc,Levofloxacin,PA,True
+1000 valid fit draws per culture,fig2_paplpc,Levofloxacin,PA,True
+expected unique culture IDs,fig2_paplpc,Levofloxacin,PL,True
+finite positive IC50,fig2_paplpc,Levofloxacin,PL,True
+finite positive MIC,fig2_paplpc,Levofloxacin,PL,True
+1000 valid fit draws per culture,fig2_paplpc,Levofloxacin,PL,True
+expected unique culture IDs,fig2_paplpc,Levofloxacin,PC,True
+finite positive IC50,fig2_paplpc,Levofloxacin,PC,True
+finite positive MIC,fig2_paplpc,Levofloxacin,PC,True
+1000 valid fit draws per culture,fig2_paplpc,Levofloxacin,PC,True
+expected unique culture IDs,fig2_paplpc,Amikacin,P,True
+finite positive IC50,fig2_paplpc,Amikacin,P,True
+finite positive MIC,fig2_paplpc,Amikacin,P,True
+1000 valid fit draws per culture,fig2_paplpc,Amikacin,P,True
+expected unique culture IDs,fig2_paplpc,Amikacin,PA,True
+finite positive IC50,fig2_paplpc,Amikacin,PA,True
+finite positive MIC,fig2_paplpc,Amikacin,PA,True
+1000 valid fit draws per culture,fig2_paplpc,Amikacin,PA,True
+expected unique culture IDs,fig2_paplpc,Amikacin,PL,True
+finite positive IC50,fig2_paplpc,Amikacin,PL,True
+finite positive MIC,fig2_paplpc,Amikacin,PL,True
+1000 valid fit draws per culture,fig2_paplpc,Amikacin,PL,True
+expected unique culture IDs,fig2_paplpc,Amikacin,PC,True
+finite positive IC50,fig2_paplpc,Amikacin,PC,True
+finite positive MIC,fig2_paplpc,Amikacin,PC,True
+1000 valid fit draws per culture,fig2_paplpc,Amikacin,PC,True
+expected unique culture IDs,fig2_paplpc,Cefepime,P,True
+finite positive IC50,fig2_paplpc,Cefepime,P,True
+finite positive MIC,fig2_paplpc,Cefepime,P,True
+1000 valid fit draws per culture,fig2_paplpc,Cefepime,P,True
+expected unique culture IDs,fig2_paplpc,Cefepime,PA,True
+finite positive IC50,fig2_paplpc,Cefepime,PA,True
+finite positive MIC,fig2_paplpc,Cefepime,PA,True
+1000 valid fit draws per culture,fig2_paplpc,Cefepime,PA,True
+expected unique culture IDs,fig2_paplpc,Cefepime,PL,True
+finite positive IC50,fig2_paplpc,Cefepime,PL,True
+finite positive MIC,fig2_paplpc,Cefepime,PL,True
+1000 valid fit draws per culture,fig2_paplpc,Cefepime,PL,True
+expected unique culture IDs,fig2_paplpc,Cefepime,PC,True
+finite positive IC50,fig2_paplpc,Cefepime,PC,True
+finite positive MIC,fig2_paplpc,Cefepime,PC,True
+1000 valid fit draws per culture,fig2_paplpc,Cefepime,PC,True
+expected unique culture IDs,fig3_plac,Levofloxacin,P,True
+finite positive IC50,fig3_plac,Levofloxacin,P,True
+finite positive MIC,fig3_plac,Levofloxacin,P,True
+1000 valid fit draws per culture,fig3_plac,Levofloxacin,P,True
+expected unique culture IDs,fig3_plac,Levofloxacin,PL,True
+finite positive IC50,fig3_plac,Levofloxacin,PL,True
+finite positive MIC,fig3_plac,Levofloxacin,PL,True
+1000 valid fit draws per culture,fig3_plac,Levofloxacin,PL,True
+expected unique culture IDs,fig3_plac,Levofloxacin,PLA,True
+finite positive IC50,fig3_plac,Levofloxacin,PLA,True
+finite positive MIC,fig3_plac,Levofloxacin,PLA,True
+1000 valid fit draws per culture,fig3_plac,Levofloxacin,PLA,True
+expected unique culture IDs,fig3_plac,Levofloxacin,PLAC,True
+finite positive IC50,fig3_plac,Levofloxacin,PLAC,True
+finite positive MIC,fig3_plac,Levofloxacin,PLAC,True
+1000 valid fit draws per culture,fig3_plac,Levofloxacin,PLAC,True
+expected unique culture IDs,fig3_plac,Amikacin,P,True
+finite positive IC50,fig3_plac,Amikacin,P,True
+finite positive MIC,fig3_plac,Amikacin,P,True
+1000 valid fit draws per culture,fig3_plac,Amikacin,P,True
+expected unique culture IDs,fig3_plac,Amikacin,PL,True
+finite positive IC50,fig3_plac,Amikacin,PL,True
+finite positive MIC,fig3_plac,Amikacin,PL,True
+1000 valid fit draws per culture,fig3_plac,Amikacin,PL,True
+expected unique culture IDs,fig3_plac,Amikacin,PLA,True
+finite positive IC50,fig3_plac,Amikacin,PLA,True
+finite positive MIC,fig3_plac,Amikacin,PLA,True
+1000 valid fit draws per culture,fig3_plac,Amikacin,PLA,True
+expected unique culture IDs,fig3_plac,Amikacin,PLAC,True
+finite positive IC50,fig3_plac,Amikacin,PLAC,True
+finite positive MIC,fig3_plac,Amikacin,PLAC,True
+1000 valid fit draws per culture,fig3_plac,Amikacin,PLAC,True
+expected unique culture IDs,fig3_plac,Cefepime,P,True
+finite positive IC50,fig3_plac,Cefepime,P,True
+finite positive MIC,fig3_plac,Cefepime,P,True
+1000 valid fit draws per culture,fig3_plac,Cefepime,P,True
+expected unique culture IDs,fig3_plac,Cefepime,PL,True
+finite positive IC50,fig3_plac,Cefepime,PL,True
+finite positive MIC,fig3_plac,Cefepime,PL,True
+1000 valid fit draws per culture,fig3_plac,Cefepime,PL,True
+expected unique culture IDs,fig3_plac,Cefepime,PLA,True
+finite positive IC50,fig3_plac,Cefepime,PLA,True
+finite positive MIC,fig3_plac,Cefepime,PLA,True
+1000 valid fit draws per culture,fig3_plac,Cefepime,PLA,True
+expected unique culture IDs,fig3_plac,Cefepime,PLAC,True
+finite positive IC50,fig3_plac,Cefepime,PLAC,True
+finite positive MIC,fig3_plac,Cefepime,PLAC,True
+1000 valid fit draws per culture,fig3_plac,Cefepime,PLAC,True
+expected unique culture IDs,supp3_pcr,Levofloxacin,P,True
+finite positive IC50,supp3_pcr,Levofloxacin,P,True
+finite positive MIC,supp3_pcr,Levofloxacin,P,True
+1000 valid fit draws per culture,supp3_pcr,Levofloxacin,P,True
+expected unique culture IDs,supp3_pcr,Levofloxacin,PCr,True
+finite positive IC50,supp3_pcr,Levofloxacin,PCr,True
+finite positive MIC,supp3_pcr,Levofloxacin,PCr,True
+1000 valid fit draws per culture,supp3_pcr,Levofloxacin,PCr,True
+expected unique culture IDs,supp3_pcr,Amikacin,P,True
+finite positive IC50,supp3_pcr,Amikacin,P,True
+finite positive MIC,supp3_pcr,Amikacin,P,True
+1000 valid fit draws per culture,supp3_pcr,Amikacin,P,True
+expected unique culture IDs,supp3_pcr,Amikacin,PCr,True
+finite positive IC50,supp3_pcr,Amikacin,PCr,True
+finite positive MIC,supp3_pcr,Amikacin,PCr,True
+1000 valid fit draws per culture,supp3_pcr,Amikacin,PCr,True
+expected unique culture IDs,supp3_pcr,Cefepime,P,True
+finite positive IC50,supp3_pcr,Cefepime,P,True
+finite positive MIC,supp3_pcr,Cefepime,P,True
+1000 valid fit draws per culture,supp3_pcr,Cefepime,P,True
+expected unique culture IDs,supp3_pcr,Cefepime,PCr,True
+finite positive IC50,supp3_pcr,Cefepime,PCr,True
+finite positive MIC,supp3_pcr,Cefepime,PCr,True
+1000 valid fit draws per culture,supp3_pcr,Cefepime,PCr,True
+expected unique culture IDs,supp4_atec,Levofloxacin,ATEC,True
+finite positive IC50,supp4_atec,Levofloxacin,ATEC,True
+finite positive MIC,supp4_atec,Levofloxacin,ATEC,True
+1000 valid fit draws per culture,supp4_atec,Levofloxacin,ATEC,True
+expected unique culture IDs,supp4_atec,Levofloxacin,ATEC-C,True
+finite positive IC50,supp4_atec,Levofloxacin,ATEC-C,True
+finite positive MIC,supp4_atec,Levofloxacin,ATEC-C,True
+1000 valid fit draws per culture,supp4_atec,Levofloxacin,ATEC-C,True
+expected unique culture IDs,supp4_atec,Levofloxacin,ATEC-C-r,True
+finite positive IC50,supp4_atec,Levofloxacin,ATEC-C-r,True
+finite positive MIC,supp4_atec,Levofloxacin,ATEC-C-r,True
+1000 valid fit draws per culture,supp4_atec,Levofloxacin,ATEC-C-r,True
+expected unique culture IDs,supp4_atec,Amikacin,ATEC,True
+finite positive IC50,supp4_atec,Amikacin,ATEC,True
+finite positive MIC,supp4_atec,Amikacin,ATEC,True
+1000 valid fit draws per culture,supp4_atec,Amikacin,ATEC,True
+expected unique culture IDs,supp4_atec,Amikacin,ATEC-C,True
+finite positive IC50,supp4_atec,Amikacin,ATEC-C,True
+finite positive MIC,supp4_atec,Amikacin,ATEC-C,True
+1000 valid fit draws per culture,supp4_atec,Amikacin,ATEC-C,True
+expected unique culture IDs,supp4_atec,Amikacin,ATEC-C-r,True
+finite positive IC50,supp4_atec,Amikacin,ATEC-C-r,True
+finite positive MIC,supp4_atec,Amikacin,ATEC-C-r,True
+1000 valid fit draws per culture,supp4_atec,Amikacin,ATEC-C-r,True
+expected unique culture IDs,supp4_atec,Cefepime,ATEC,True
+finite positive IC50,supp4_atec,Cefepime,ATEC,True
+finite positive MIC,supp4_atec,Cefepime,ATEC,True
+1000 valid fit draws per culture,supp4_atec,Cefepime,ATEC,True
+expected unique culture IDs,supp4_atec,Cefepime,ATEC-C,True
+finite positive IC50,supp4_atec,Cefepime,ATEC-C,True
+finite positive MIC,supp4_atec,Cefepime,ATEC-C,True
+1000 valid fit draws per culture,supp4_atec,Cefepime,ATEC-C,True
+expected unique culture IDs,supp4_atec,Cefepime,ATEC-C-r,True
+finite positive IC50,supp4_atec,Cefepime,ATEC-C-r,True
+finite positive MIC,supp4_atec,Cefepime,ATEC-C-r,True
+1000 valid fit draws per culture,supp4_atec,Cefepime,ATEC-C-r,True
+expected unique culture IDs,supp6_unt,Levofloxacin,P,True
+finite positive IC50,supp6_unt,Levofloxacin,P,True
+finite positive MIC,supp6_unt,Levofloxacin,P,True
+1000 valid fit draws per culture,supp6_unt,Levofloxacin,P,True
+expected unique culture IDs,supp6_unt,Levofloxacin,P-unt,True
+finite positive IC50,supp6_unt,Levofloxacin,P-unt,True
+finite positive MIC,supp6_unt,Levofloxacin,P-unt,True
+1000 valid fit draws per culture,supp6_unt,Levofloxacin,P-unt,True
+expected unique culture IDs,supp6_unt,Amikacin,P,True
+finite positive IC50,supp6_unt,Amikacin,P,True
+finite positive MIC,supp6_unt,Amikacin,P,True
+1000 valid fit draws per culture,supp6_unt,Amikacin,P,True
+expected unique culture IDs,supp6_unt,Amikacin,P-unt,True
+finite positive IC50,supp6_unt,Amikacin,P-unt,True
+finite positive MIC,supp6_unt,Amikacin,P-unt,True
+1000 valid fit draws per culture,supp6_unt,Amikacin,P-unt,True
+expected unique culture IDs,supp6_unt,Cefepime,P,True
+finite positive IC50,supp6_unt,Cefepime,P,True
+finite positive MIC,supp6_unt,Cefepime,P,True
+1000 valid fit draws per culture,supp6_unt,Cefepime,P,True
+expected unique culture IDs,supp6_unt,Cefepime,P-unt,True
+finite positive IC50,supp6_unt,Cefepime,P-unt,True
+finite positive MIC,supp6_unt,Cefepime,P-unt,True
+1000 valid fit draws per culture,supp6_unt,Cefepime,P-unt,True
+expected unique culture IDs,fig5_mutants,Levofloxacin,MG,True
+finite positive IC50,fig5_mutants,Levofloxacin,MG,True
+finite positive MIC,fig5_mutants,Levofloxacin,MG,True
+expected unique culture IDs,fig5_mutants,Levofloxacin,gata,True
+finite positive IC50,fig5_mutants,Levofloxacin,gata,True
+finite positive MIC,fig5_mutants,Levofloxacin,gata,True
+expected unique culture IDs,fig5_mutants,Levofloxacin,glvc,True
+finite positive IC50,fig5_mutants,Levofloxacin,glvc,True
+finite positive MIC,fig5_mutants,Levofloxacin,glvc,True
+expected unique culture IDs,fig5_mutants,Levofloxacin,hipa,True
+finite positive IC50,fig5_mutants,Levofloxacin,hipa,True
+finite positive MIC,fig5_mutants,Levofloxacin,hipa,True
+expected unique culture IDs,fig5_mutants,Levofloxacin,selb,True
+finite positive IC50,fig5_mutants,Levofloxacin,selb,True
+finite positive MIC,fig5_mutants,Levofloxacin,selb,True
+expected unique culture IDs,fig5_mutants,Levofloxacin,rpoz,True
+finite positive IC50,fig5_mutants,Levofloxacin,rpoz,True
+finite positive MIC,fig5_mutants,Levofloxacin,rpoz,True
+expected unique culture IDs,fig5_mutants,Levofloxacin,ftsh,True
+finite positive IC50,fig5_mutants,Levofloxacin,ftsh,True
+finite positive MIC,fig5_mutants,Levofloxacin,ftsh,True
+expected unique culture IDs,fig5_mutants,Levofloxacin,fime,True
+finite positive IC50,fig5_mutants,Levofloxacin,fime,True
+finite positive MIC,fig5_mutants,Levofloxacin,fime,True
+expected unique culture IDs,fig5_mutants,Amikacin,MG,True
+finite positive IC50,fig5_mutants,Amikacin,MG,True
+finite positive MIC,fig5_mutants,Amikacin,MG,True
+expected unique culture IDs,fig5_mutants,Amikacin,gata,True
+finite positive IC50,fig5_mutants,Amikacin,gata,True
+finite positive MIC,fig5_mutants,Amikacin,gata,True
+expected unique culture IDs,fig5_mutants,Amikacin,glvc,True
+finite positive IC50,fig5_mutants,Amikacin,glvc,True
+finite positive MIC,fig5_mutants,Amikacin,glvc,True
+expected unique culture IDs,fig5_mutants,Amikacin,hipa,True
+finite positive IC50,fig5_mutants,Amikacin,hipa,True
+finite positive MIC,fig5_mutants,Amikacin,hipa,True
+expected unique culture IDs,fig5_mutants,Amikacin,selb,True
+finite positive IC50,fig5_mutants,Amikacin,selb,True
+finite positive MIC,fig5_mutants,Amikacin,selb,True
+expected unique culture IDs,fig5_mutants,Amikacin,rpoz,True
+finite positive IC50,fig5_mutants,Amikacin,rpoz,True
+finite positive MIC,fig5_mutants,Amikacin,rpoz,True
+expected unique culture IDs,fig5_mutants,Amikacin,ftsh,True
+finite positive IC50,fig5_mutants,Amikacin,ftsh,True
+finite positive MIC,fig5_mutants,Amikacin,ftsh,True
+expected unique culture IDs,fig5_mutants,Amikacin,fime,True
+finite positive IC50,fig5_mutants,Amikacin,fime,True
+finite positive MIC,fig5_mutants,Amikacin,fime,True
+expected unique culture IDs,fig5_mutants,Cefepime,MG,True
+finite positive IC50,fig5_mutants,Cefepime,MG,True
+finite positive MIC,fig5_mutants,Cefepime,MG,True
+expected unique culture IDs,fig5_mutants,Cefepime,gata,True
+finite positive IC50,fig5_mutants,Cefepime,gata,True
+finite positive MIC,fig5_mutants,Cefepime,gata,True
+expected unique culture IDs,fig5_mutants,Cefepime,glvc,True
+finite positive IC50,fig5_mutants,Cefepime,glvc,True
+finite positive MIC,fig5_mutants,Cefepime,glvc,True
+expected unique culture IDs,fig5_mutants,Cefepime,hipa,True
+finite positive IC50,fig5_mutants,Cefepime,hipa,True
+finite positive MIC,fig5_mutants,Cefepime,hipa,True
+expected unique culture IDs,fig5_mutants,Cefepime,selb,True
+finite positive IC50,fig5_mutants,Cefepime,selb,True
+finite positive MIC,fig5_mutants,Cefepime,selb,True
+expected unique culture IDs,fig5_mutants,Cefepime,rpoz,True
+finite positive IC50,fig5_mutants,Cefepime,rpoz,True
+finite positive MIC,fig5_mutants,Cefepime,rpoz,True
+expected unique culture IDs,fig5_mutants,Cefepime,ftsh,True
+finite positive IC50,fig5_mutants,Cefepime,ftsh,True
+finite positive MIC,fig5_mutants,Cefepime,ftsh,True
+expected unique culture IDs,fig5_mutants,Cefepime,fime,True
+finite positive IC50,fig5_mutants,Cefepime,fime,True
+finite positive MIC,fig5_mutants,Cefepime,fime,True
+PLAC7/PLAC10 absent from experiment 1,Figure 3b-d,,,True
+experiment-2 cefepime failures excluded (incl. ATEC-C-r1),Supplementary Figure 4b-d,,,True
+experiment-2 levofloxacin/amikacin data retained for those cultures,Supplementary Figure 4b-d,,,True
+unique culture IDs,Figure 2b-d,Levofloxacin,P,True
+unique culture IDs,Figure 2b-d,Levofloxacin,PA,True
+unique culture IDs,Figure 2b-d,Levofloxacin,PC,True
+unique culture IDs,Figure 2b-d,Levofloxacin,PL,True
+complete IC50 pairs,Figure 2b-d,Levofloxacin,P-PA,True
+complete MIC pairs,Figure 2b-d,Levofloxacin,P-PA,True
+complete IC50 pairs,Figure 2b-d,Levofloxacin,P-PC,True
+complete MIC pairs,Figure 2b-d,Levofloxacin,P-PC,True
+complete IC50 pairs,Figure 2b-d,Levofloxacin,P-PL,True
+complete MIC pairs,Figure 2b-d,Levofloxacin,P-PL,True
+unique culture IDs,Figure 2b-d,Amikacin,P,True
+unique culture IDs,Figure 2b-d,Amikacin,PA,True
+unique culture IDs,Figure 2b-d,Amikacin,PC,True
+unique culture IDs,Figure 2b-d,Amikacin,PL,True
+complete IC50 pairs,Figure 2b-d,Amikacin,P-PA,True
+complete MIC pairs,Figure 2b-d,Amikacin,P-PA,True
+complete IC50 pairs,Figure 2b-d,Amikacin,P-PC,True
+complete MIC pairs,Figure 2b-d,Amikacin,P-PC,True
+complete IC50 pairs,Figure 2b-d,Amikacin,P-PL,True
+complete MIC pairs,Figure 2b-d,Amikacin,P-PL,True
+unique culture IDs,Figure 2b-d,Cefepime,P,True
+unique culture IDs,Figure 2b-d,Cefepime,PA,True
+unique culture IDs,Figure 2b-d,Cefepime,PC,True
+unique culture IDs,Figure 2b-d,Cefepime,PL,True
+complete IC50 pairs,Figure 2b-d,Cefepime,P-PA,True
+complete MIC pairs,Figure 2b-d,Cefepime,P-PA,True
+complete IC50 pairs,Figure 2b-d,Cefepime,P-PC,True
+complete MIC pairs,Figure 2b-d,Cefepime,P-PC,True
+complete IC50 pairs,Figure 2b-d,Cefepime,P-PL,True
+complete MIC pairs,Figure 2b-d,Cefepime,P-PL,True
+unique culture IDs,Figure 3b-d,Levofloxacin,P,True
+unique culture IDs,Figure 3b-d,Levofloxacin,PL,True
+unique culture IDs,Figure 3b-d,Levofloxacin,PLA,True
+unique culture IDs,Figure 3b-d,Levofloxacin,PLAC,True
+complete IC50 pairs,Figure 3b-d,Levofloxacin,P-PL,True
+complete MIC pairs,Figure 3b-d,Levofloxacin,P-PL,True
+complete IC50 pairs,Figure 3b-d,Levofloxacin,P-PLA,True
+complete MIC pairs,Figure 3b-d,Levofloxacin,P-PLA,True
+complete IC50 pairs,Figure 3b-d,Levofloxacin,P-PLAC,True
+complete MIC pairs,Figure 3b-d,Levofloxacin,P-PLAC,True
+complete IC50 pairs,Figure 3b-d,Levofloxacin,PL-PLA,True
+complete MIC pairs,Figure 3b-d,Levofloxacin,PL-PLA,True
+complete IC50 pairs,Figure 3b-d,Levofloxacin,PL-PLAC,True
+complete MIC pairs,Figure 3b-d,Levofloxacin,PL-PLAC,True
+complete IC50 pairs,Figure 3b-d,Levofloxacin,PLA-PLAC,True
+complete MIC pairs,Figure 3b-d,Levofloxacin,PLA-PLAC,True
+unique culture IDs,Figure 3b-d,Amikacin,P,True
+unique culture IDs,Figure 3b-d,Amikacin,PL,True
+unique culture IDs,Figure 3b-d,Amikacin,PLA,True
+unique culture IDs,Figure 3b-d,Amikacin,PLAC,True
+complete IC50 pairs,Figure 3b-d,Amikacin,P-PL,True
+complete MIC pairs,Figure 3b-d,Amikacin,P-PL,True
+complete IC50 pairs,Figure 3b-d,Amikacin,P-PLA,True
+complete MIC pairs,Figure 3b-d,Amikacin,P-PLA,True
+complete IC50 pairs,Figure 3b-d,Amikacin,P-PLAC,True
+complete MIC pairs,Figure 3b-d,Amikacin,P-PLAC,True
+complete IC50 pairs,Figure 3b-d,Amikacin,PL-PLA,True
+complete MIC pairs,Figure 3b-d,Amikacin,PL-PLA,True
+complete IC50 pairs,Figure 3b-d,Amikacin,PL-PLAC,True
+complete MIC pairs,Figure 3b-d,Amikacin,PL-PLAC,True
+complete IC50 pairs,Figure 3b-d,Amikacin,PLA-PLAC,True
+complete MIC pairs,Figure 3b-d,Amikacin,PLA-PLAC,True
+unique culture IDs,Figure 3b-d,Cefepime,P,True
+unique culture IDs,Figure 3b-d,Cefepime,PL,True
+unique culture IDs,Figure 3b-d,Cefepime,PLA,True
+unique culture IDs,Figure 3b-d,Cefepime,PLAC,True
+complete IC50 pairs,Figure 3b-d,Cefepime,P-PL,True
+complete MIC pairs,Figure 3b-d,Cefepime,P-PL,True
+complete IC50 pairs,Figure 3b-d,Cefepime,P-PLA,True
+complete MIC pairs,Figure 3b-d,Cefepime,P-PLA,True
+complete IC50 pairs,Figure 3b-d,Cefepime,P-PLAC,True
+complete MIC pairs,Figure 3b-d,Cefepime,P-PLAC,True
+complete IC50 pairs,Figure 3b-d,Cefepime,PL-PLA,True
+complete MIC pairs,Figure 3b-d,Cefepime,PL-PLA,True
+complete IC50 pairs,Figure 3b-d,Cefepime,PL-PLAC,True
+complete MIC pairs,Figure 3b-d,Cefepime,PL-PLAC,True
+complete IC50 pairs,Figure 3b-d,Cefepime,PLA-PLAC,True
+complete MIC pairs,Figure 3b-d,Cefepime,PLA-PLAC,True
+unique culture IDs,Supplementary Figure 3b-d,Levofloxacin,P,True
+unique culture IDs,Supplementary Figure 3b-d,Levofloxacin,PCr,True
+unique culture IDs,Supplementary Figure 3b-d,Amikacin,P,True
+unique culture IDs,Supplementary Figure 3b-d,Amikacin,PCr,True
+unique culture IDs,Supplementary Figure 3b-d,Cefepime,P,True
+unique culture IDs,Supplementary Figure 3b-d,Cefepime,PCr,True
+unique culture IDs,Supplementary Figure 4b-d,Levofloxacin,ATEC,True
+unique culture IDs,Supplementary Figure 4b-d,Levofloxacin,ATEC-C,True
+unique culture IDs,Supplementary Figure 4b-d,Levofloxacin,ATEC-C-r,True
+unique culture IDs,Supplementary Figure 4b-d,Amikacin,ATEC,True
+unique culture IDs,Supplementary Figure 4b-d,Amikacin,ATEC-C,True
+unique culture IDs,Supplementary Figure 4b-d,Amikacin,ATEC-C-r,True
+unique culture IDs,Supplementary Figure 4b-d,Cefepime,ATEC,True
+unique culture IDs,Supplementary Figure 4b-d,Cefepime,ATEC-C,True
+unique culture IDs,Supplementary Figure 4b-d,Cefepime,ATEC-C-r,True
+unique culture IDs,Supplementary Figure 6a-c,Levofloxacin,P,True
+unique culture IDs,Supplementary Figure 6a-c,Levofloxacin,P-unt,True
+unique culture IDs,Supplementary Figure 6a-c,Amikacin,P,True
+unique culture IDs,Supplementary Figure 6a-c,Amikacin,P-unt,True
+unique culture IDs,Supplementary Figure 6a-c,Cefepime,P,True
+unique culture IDs,Supplementary Figure 6a-c,Cefepime,P-unt,True
+36 primary IC50 contrasts,,,,True
+all primary results finite,,,,True
+36 matched August comparisons,,,,True

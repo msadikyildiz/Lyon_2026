@@ -1,0 +1,887 @@
+{
+  "schema": "print-layout/2",
+  "page_width": 540.0,
+  "height_cap": 627.5,
+  "panel_label_fontsize": 11,
+  "panel_label_font": "Helvetica-Bold",
+  "title_fontsize": 10,
+  "title_font": "Helvetica-Bold",
+  "title_position": [
+    12.0,
+    15.0
+  ],
+  "margins": {
+    "left": 12.0,
+    "right": 12.0,
+    "bottom": 10.0,
+    "top_title_band": 26.0
+  },
+  "gutter": 8.0,
+  "label_band": 14.0,
+  "label_offset": [
+    -1.0,
+    -3.0
+  ],
+  "figures": [
+    {
+      "name": "Figure_2",
+      "title": "Figure 2",
+      "width": 540.0,
+      "height": 627.5,
+      "panels": [
+        {
+          "asset": "original_image5",
+          "panel": "a",
+          "display_label": "a",
+          "rect": [
+            12,
+            40,
+            217.894,
+            227
+          ],
+          "label_position": [
+            11,
+            37
+          ]
+        },
+        {
+          "asset": "original_image8",
+          "panel": "e",
+          "display_label": "e",
+          "rect": [
+            244,
+            40,
+            528,
+            227
+          ],
+          "label_position": [
+            243,
+            37
+          ]
+        },
+        {
+          "asset": "Fig2_Amikacin_IC50_labels",
+          "panel": "b",
+          "display_label": "b",
+          "rect": [
+            12.0,
+            249,
+            176.986,
+            423.051
+          ],
+          "label_position": [
+            11.0,
+            246
+          ]
+        },
+        {
+          "asset": "Fig2_Levofloxacin_IC50_labels",
+          "panel": "c",
+          "display_label": "c",
+          "rect": [
+            184.986,
+            249,
+            352.493,
+            423.051
+          ],
+          "label_position": [
+            183.986,
+            246
+          ]
+        },
+        {
+          "asset": "Fig2_Cefepime_IC50_labels",
+          "panel": "d",
+          "display_label": "d",
+          "rect": [
+            360.493,
+            249,
+            528.0,
+            423.051
+          ],
+          "label_position": [
+            359.493,
+            246
+          ]
+        },
+        {
+          "asset": "original_image12",
+          "panel": "f",
+          "display_label": "f",
+          "rect": [
+            12.0,
+            445.051,
+            167.389,
+            617.5
+          ],
+          "label_position": [
+            11.0,
+            442.051
+          ]
+        },
+        {
+          "asset": "original_image13",
+          "panel": "g",
+          "display_label": "g",
+          "rect": [
+            175.389,
+            445.051,
+            364.83,
+            617.5
+          ],
+          "label_position": [
+            174.389,
+            442.051
+          ]
+        },
+        {
+          "asset": "original_image11",
+          "panel": "h",
+          "display_label": "h",
+          "rect": [
+            372.83,
+            445.051,
+            528.0,
+            617.5
+          ],
+          "label_position": [
+            371.83,
+            442.051
+          ]
+        }
+      ],
+      "design": {
+        "grid": "[a | e] / [b c d] / [f g h]",
+        "row1_gutter": 26.106,
+        "rationale": "drug-aligned columns in rows 2-3; a shorter top row reserves height for readable statistical labels"
+      }
+    },
+    {
+      "name": "Figure_3",
+      "title": "Figure 3",
+      "width": 540.0,
+      "height": 627.5,
+      "panels": [
+        {
+          "asset": "original_image15",
+          "panel": "a",
+          "display_label": "a",
+          "rect": [
+            12.0,
+            40.0,
+            347.551,
+            183.506
+          ],
+          "label_position": [
+            11.0,
+            37.0
+          ]
+        },
+        {
+          "asset": "original_image17",
+          "panel": "e",
+          "display_label": "e",
+          "rect": [
+            12.0,
+            205.506,
+            347.551,
+            617.5
+          ],
+          "label_position": [
+            11.0,
+            202.506
+          ]
+        },
+        {
+          "asset": "Fig3_Levofloxacin_IC50_labels",
+          "panel": "b",
+          "display_label": "b",
+          "rect": [
+            355.551,
+            40.0,
+            528.0,
+            217.833
+          ],
+          "label_position": [
+            354.551,
+            37.0
+          ]
+        },
+        {
+          "asset": "Fig3_Amikacin_IC50_labels",
+          "panel": "c",
+          "display_label": "c",
+          "rect": [
+            355.551,
+            239.833,
+            528.0,
+            417.667
+          ],
+          "label_position": [
+            354.551,
+            236.833
+          ]
+        },
+        {
+          "asset": "Fig3_Cefepime_IC50_labels",
+          "panel": "d",
+          "display_label": "d",
+          "rect": [
+            355.551,
+            439.667,
+            528.0,
+            617.5
+          ],
+          "label_position": [
+            354.551,
+            436.667
+          ]
+        }
+      ],
+      "notes": [],
+      "design": {
+        "grid": "[a ; e] | [b ; c ; d]",
+        "left_col_width": 335.6,
+        "right_col_width": 172.4,
+        "rationale": "tall left MDK panel beside three equal statistical panels; additional height accommodates print-sized annotations"
+      }
+    },
+    {
+      "name": "Figure_5",
+      "title": "Figure 5",
+      "width": 540.0,
+      "height": 514,
+      "panels": [
+        {
+          "asset": "Fig5a_doubling_time_labels",
+          "panel": "a",
+          "display_label": "a",
+          "rect": [
+            12,
+            40,
+            266,
+            292
+          ],
+          "label_position": [
+            11,
+            37
+          ]
+        },
+        {
+          "asset": "Fig5e_MDK",
+          "panel": "e",
+          "display_label": "e",
+          "rect": [
+            274,
+            40,
+            528,
+            292
+          ],
+          "label_position": [
+            273,
+            37
+          ]
+        },
+        {
+          "asset": "Fig5_Amikacin_IC50_labels",
+          "panel": "b",
+          "display_label": "b",
+          "rect": [
+            12.0,
+            314,
+            176.986,
+            504
+          ],
+          "label_position": [
+            11.0,
+            311
+          ]
+        },
+        {
+          "asset": "Fig5_Levofloxacin_IC50_labels",
+          "panel": "c",
+          "display_label": "c",
+          "rect": [
+            184.986,
+            314,
+            352.493,
+            504
+          ],
+          "label_position": [
+            183.986,
+            311
+          ]
+        },
+        {
+          "asset": "Fig5_Cefepime_IC50_labels",
+          "panel": "d",
+          "display_label": "d",
+          "rect": [
+            360.493,
+            314,
+            528.0,
+            504
+          ],
+          "label_position": [
+            359.493,
+            311
+          ]
+        }
+      ],
+      "design": {
+        "grid": "[a | e] / [b c d]",
+        "rationale": "equal-width growth and MDK panels above three statistical panels; explanatory prose remains in the caption"
+      }
+    },
+    {
+      "name": "Supplementary_Figure_2",
+      "title": "Supplementary Figure 2",
+      "width": 540.0,
+      "height": 627.5,
+      "panels": [
+        {
+          "asset": "Fig2_Amikacin_IC50_labels",
+          "panel": "a",
+          "display_label": "a",
+          "rect": [
+            16.548,
+            40.0,
+            259.151,
+            227.514
+          ],
+          "label_position": [
+            15.548,
+            37.0
+          ]
+        },
+        {
+          "asset": "SuppFig2_Amikacin_MIC_labels",
+          "panel": "b",
+          "display_label": "b",
+          "rect": [
+            280.849,
+            40.0,
+            523.452,
+            227.719
+          ],
+          "label_position": [
+            279.849,
+            37.0
+          ]
+        },
+        {
+          "asset": "Fig2_Levofloxacin_IC50_labels",
+          "panel": "a",
+          "display_label": "",
+          "rect": [
+            16.548,
+            237.719,
+            259.151,
+            422.411
+          ],
+          "label_position": null
+        },
+        {
+          "asset": "SuppFig2_Levofloxacin_MIC_labels",
+          "panel": "b",
+          "display_label": "",
+          "rect": [
+            280.849,
+            237.719,
+            523.452,
+            422.61
+          ],
+          "label_position": null
+        },
+        {
+          "asset": "Fig2_Cefepime_IC50_labels",
+          "panel": "a",
+          "display_label": "",
+          "rect": [
+            16.548,
+            432.61,
+            259.151,
+            617.301
+          ],
+          "label_position": null
+        },
+        {
+          "asset": "SuppFig2_Cefepime_MIC_labels",
+          "panel": "b",
+          "display_label": "",
+          "rect": [
+            280.849,
+            432.61,
+            523.452,
+            617.5
+          ],
+          "label_position": null
+        }
+      ],
+      "design": {
+        "grid": "2 columns (a IC50 | b MIC) x 3 drug rows",
+        "column_width": 242.6,
+        "gutter": 21.7,
+        "side_margin": 16.5,
+        "rationale": "height-capped grid; leftover width widens the gutter between the two measures"
+      }
+    },
+    {
+      "name": "Supplementary_Figure_7",
+      "title": "Supplementary Figure 7",
+      "width": 540.0,
+      "height": 627.5,
+      "panels": [
+        {
+          "asset": "Fig3_Amikacin_IC50_labels",
+          "panel": "a",
+          "display_label": "a",
+          "rect": [
+            36.255,
+            40.0,
+            252.582,
+            227.514
+          ],
+          "label_position": [
+            35.255,
+            37.0
+          ]
+        },
+        {
+          "asset": "SuppFig7_Amikacin_MIC_labels",
+          "panel": "b",
+          "display_label": "b",
+          "rect": [
+            287.418,
+            40.0,
+            503.745,
+            227.719
+          ],
+          "label_position": [
+            286.418,
+            37.0
+          ]
+        },
+        {
+          "asset": "Fig3_Levofloxacin_IC50_labels",
+          "panel": "a",
+          "display_label": "",
+          "rect": [
+            36.255,
+            237.719,
+            252.582,
+            422.411
+          ],
+          "label_position": null
+        },
+        {
+          "asset": "SuppFig7_Levofloxacin_MIC_labels",
+          "panel": "b",
+          "display_label": "",
+          "rect": [
+            287.418,
+            237.719,
+            503.745,
+            422.61
+          ],
+          "label_position": null
+        },
+        {
+          "asset": "Fig3_Cefepime_IC50_labels",
+          "panel": "a",
+          "display_label": "",
+          "rect": [
+            36.255,
+            432.61,
+            252.582,
+            617.301
+          ],
+          "label_position": null
+        },
+        {
+          "asset": "SuppFig7_Cefepime_MIC_labels",
+          "panel": "b",
+          "display_label": "",
+          "rect": [
+            287.418,
+            432.61,
+            503.745,
+            617.5
+          ],
+          "label_position": null
+        }
+      ],
+      "design": {
+        "grid": "2 columns (a IC50 | b MIC) x 3 drug rows",
+        "column_width": 216.3,
+        "gutter": 34.8,
+        "side_margin": 36.3,
+        "rationale": "height-capped grid; leftover width widens the gutter between the two measures"
+      }
+    },
+    {
+      "name": "Supplementary_Figure_3",
+      "title": "Supplementary Figure 3",
+      "width": 540.0,
+      "height": 627.5,
+      "panels": [
+        {
+          "asset": "original_image32",
+          "panel": "a",
+          "display_label": "a",
+          "rect": [
+            12.0,
+            40.0,
+            226.118,
+            218.079
+          ],
+          "label_position": [
+            11.0,
+            37.0
+          ]
+        },
+        {
+          "asset": "SuppFig3_Amikacin_IC50_labels",
+          "panel": "b",
+          "display_label": "b",
+          "rect": [
+            302.982,
+            40.0,
+            524.613,
+            218.079
+          ],
+          "label_position": [
+            301.982,
+            37.0
+          ]
+        },
+        {
+          "asset": "SuppFig3_Levofloxacin_IC50_labels",
+          "panel": "c",
+          "display_label": "c",
+          "rect": [
+            12.0,
+            240.079,
+            237.018,
+            418.157
+          ],
+          "label_position": [
+            11.0,
+            237.079
+          ]
+        },
+        {
+          "asset": "SuppFig3_Cefepime_IC50_labels",
+          "panel": "d",
+          "display_label": "d",
+          "rect": [
+            302.982,
+            240.079,
+            528.0,
+            418.157
+          ],
+          "label_position": [
+            301.982,
+            237.079
+          ]
+        },
+        {
+          "asset": "original_image34",
+          "panel": "e",
+          "display_label": "e",
+          "rect": [
+            12.0,
+            440.157,
+            528.0,
+            617.5
+          ],
+          "label_position": [
+            11.0,
+            437.157
+          ]
+        }
+      ],
+      "design": {
+        "grid": "[a b] / [c d] / [e]",
+        "block_row_height": 178.1,
+        "central_gutter_row2": 66.0,
+        "rationale": "2x2 block preserves a-b-c-d order with no lone centred panel; e keeps full width for its rotated labels"
+      }
+    },
+    {
+      "name": "Supplementary_Figure_4",
+      "title": "Supplementary Figure 4",
+      "width": 540.0,
+      "height": 627.5,
+      "panels": [
+        {
+          "asset": "original_image38",
+          "panel": "a",
+          "display_label": "a",
+          "rect": [
+            12.0,
+            40.0,
+            274.959,
+            247.243
+          ],
+          "label_position": [
+            11.0,
+            37.0
+          ]
+        },
+        {
+          "asset": "original_image41",
+          "panel": "e",
+          "display_label": "e",
+          "rect": [
+            335.192,
+            40.0,
+            528.0,
+            247.243
+          ],
+          "label_position": [
+            334.192,
+            37.0
+          ]
+        },
+        {
+          "asset": "SuppFig4_Amikacin_IC50_labels",
+          "panel": "b",
+          "display_label": "b",
+          "rect": [
+            12.0,
+            269.243,
+            176.986,
+            399.106
+          ],
+          "label_position": [
+            11.0,
+            266.243
+          ]
+        },
+        {
+          "asset": "SuppFig4_Levofloxacin_IC50_labels",
+          "panel": "c",
+          "display_label": "c",
+          "rect": [
+            184.986,
+            269.243,
+            352.493,
+            399.106
+          ],
+          "label_position": [
+            183.986,
+            266.243
+          ]
+        },
+        {
+          "asset": "SuppFig4_Cefepime_IC50_labels",
+          "panel": "d",
+          "display_label": "d",
+          "rect": [
+            360.493,
+            269.243,
+            528.0,
+            399.106
+          ],
+          "label_position": [
+            359.493,
+            266.243
+          ]
+        },
+        {
+          "asset": "original_image44",
+          "panel": "f",
+          "display_label": "f",
+          "rect": [
+            12.0,
+            421.106,
+            528.0,
+            617.5
+          ],
+          "label_position": [
+            11.0,
+            418.106
+          ]
+        }
+      ],
+      "design": {
+        "grid": "[a | e] / [b c d] / [f]",
+        "row1_gutter": 60.2,
+        "rationale": "same family as Figure 2; f keeps full width for its 22 rotated mutation labels"
+      }
+    },
+    {
+      "name": "Supplementary_Figure_6",
+      "title": "Supplementary Figure 6",
+      "width": 540.0,
+      "height": 475.276,
+      "panels": [
+        {
+          "asset": "SuppFig6_Amikacin_IC50_labels",
+          "panel": "a",
+          "display_label": "a",
+          "rect": [
+            12.0,
+            40.0,
+            177.629,
+            168.38
+          ],
+          "label_position": [
+            11.0,
+            37.0
+          ]
+        },
+        {
+          "asset": "SuppFig6_Cefepime_IC50_labels",
+          "panel": "b",
+          "display_label": "b",
+          "rect": [
+            12.0,
+            190.38,
+            177.629,
+            316.828
+          ],
+          "label_position": [
+            11.0,
+            187.38
+          ]
+        },
+        {
+          "asset": "SuppFig6_Levofloxacin_IC50_labels",
+          "panel": "c",
+          "display_label": "c",
+          "rect": [
+            12.0,
+            338.828,
+            177.629,
+            465.276
+          ],
+          "label_position": [
+            11.0,
+            335.828
+          ]
+        },
+        {
+          "asset": "original_image49",
+          "panel": "d",
+          "display_label": "d",
+          "rect": [
+            185.629,
+            40.0,
+            528.0,
+            465.276
+          ],
+          "label_position": [
+            184.629,
+            37.0
+          ]
+        }
+      ],
+      "design": {
+        "grid": "[a ; b ; c] | [d]",
+        "left_col_width": 165.6,
+        "right_col_width": 342.4,
+        "rationale": "right column height solved to equal the three-panel stack; no unoccupied column"
+      }
+    },
+    {
+      "name": "Supplementary_Figure_10",
+      "title": "Supplementary Figure 10",
+      "width": 540.0,
+      "height": 550,
+      "panels": [
+        {
+          "asset": "SuppFig10_Amikacin_MIC_labels",
+          "panel": "a",
+          "display_label": "a",
+          "rect": [
+            12.0,
+            40.0,
+            179.9,
+            192.0
+          ],
+          "label_position": [
+            11.0,
+            37.0
+          ]
+        },
+        {
+          "asset": "SuppFig10_Levofloxacin_MIC_labels",
+          "panel": "b",
+          "display_label": "b",
+          "rect": [
+            12.0,
+            214.0,
+            179.9,
+            366.0
+          ],
+          "label_position": [
+            11.0,
+            211.0
+          ]
+        },
+        {
+          "asset": "SuppFig10_Cefepime_MIC_labels",
+          "panel": "c",
+          "display_label": "c",
+          "rect": [
+            12.0,
+            388.0,
+            179.9,
+            540.0
+          ],
+          "label_position": [
+            11.0,
+            385.0
+          ]
+        },
+        {
+          "asset": "SuppFig10d_MDK",
+          "panel": "d",
+          "display_label": "d",
+          "rect": [
+            187.9,
+            40.0,
+            528.0,
+            540
+          ],
+          "label_position": [
+            186.9,
+            37.0
+          ]
+        }
+      ],
+      "design": {
+        "grid": "[a ; b ; c] | [d]",
+        "left_col_width": 167.9,
+        "right_col_width": 340.1,
+        "rationale": "right column height solved to equal the three-panel stack; no unoccupied column"
+      }
+    },
+    {
+      "name": "Supplementary_Figure_11",
+      "title": "Supplementary Figure 11",
+      "width": 540.0,
+      "height": 627.5,
+      "panels": [
+        {
+          "asset": "SuppFig11_MDK_double_mutants",
+          "panel": "whole figure",
+          "display_label": "",
+          "rect": [
+            38.379,
+            32.0,
+            501.621,
+            617.5
+          ],
+          "label_position": null
+        }
+      ],
+      "design": {
+        "grid": "single panel",
+        "rationale": "page height set by the manuscript box; no dead band below the panel"
+      }
+    }
+  ]
+}

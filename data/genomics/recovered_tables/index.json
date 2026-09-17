@@ -1,0 +1,65 @@
+{
+  "working/figures/Figure 2/F-H heatmaps/05-PA.ipynb": {
+    "file": "data/genomics/recovered_tables/MG_AMI.json",
+    "complete": true,
+    "rows": 43,
+    "cell": 9,
+    "expected": 43
+  },
+  "working/figures/Figure 2/F-H heatmaps/07-PL.ipynb": {
+    "file": "data/genomics/recovered_tables/MG_LEV.json",
+    "complete": true,
+    "rows": 64,
+    "cell": 9,
+    "expected": 64
+  },
+  "working/figures/Figure 2/F-H heatmaps/06-PC.ipynb": {
+    "file": "data/genomics/recovered_tables/MG_CEF.json",
+    "complete": true,
+    "rows": 80,
+    "cell": 12,
+    "expected": 80
+  },
+  "working/figures/Supplemental Figure 3 - CefR/E - genetics/08-PCr.ipynb": {
+    "file": "data/genomics/recovered_tables/MG_CEF_R.json",
+    "complete": true,
+    "rows": 56,
+    "cell": 8,
+    "expected": 56
+  },
+  "working/figures/Supplemental Figure 4 - Pb/F - Mutations/10-ATEC12.ipynb": {
+    "file": "data/genomics/recovered_tables/PbEc_CEF_partial.json",
+    "complete": false,
+    "rows": 50,
+    "cell": 14,
+    "expected": 83
+  },
+  "working/figures/Supplemental Figure 5 - Extended heatmaps/A/05-PA.ipynb": {
+    "file": "data/genomics/recovered_tables/MG_AMI.json",
+    "complete": true,
+    "rows": 43,
+    "cell": 9,
+    "expected": 43
+  },
+  "working/figures/Supplemental Figure 5 - Extended heatmaps/B/07-PL.ipynb": {
+    "file": "data/genomics/recovered_tables/MG_LEV.json",
+    "complete": true,
+    "rows": 64,
+    "cell": 9,
+    "expected": 64
+  },
+  "working/figures/Supplemental Figure 5 - Extended heatmaps/C/06-PC.ipynb": {
+    "file": "data/genomics/recovered_tables/MG_CEF.json",
+    "complete": true,
+    "rows": 80,
+    "cell": 12,
+    "expected": 80
+  },
+  "working/figures/Supplemental Figure 6/B - heatmap/05-Punt.ipynb": {
+    "file": "data/genomics/recovered_tables/MG_untreated.json",
+    "complete": true,
+    "rows": 38,
+    "cell": 9,
+    "expected": 38
+  }
+}
