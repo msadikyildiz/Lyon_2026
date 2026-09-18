@@ -22,6 +22,22 @@ EXPECTED_IDS = {
                      ['MG', 'gata', 'glvc', 'hipa', 'selb', 'rpoz', 'ftsh', 'fime']},
 }
 
+
+def comparison_cohort(dataset, table):
+    """Use the six confirmed PCr parent pairs; preserve all rows in the raw cache."""
+    if dataset != 'supp3_pcr':
+        return table
+    expected = {str(i) for i in range(1, 7)}
+    for drug, rows in table.groupby('Antibiotic'):
+        for group in ('P', 'PCr'):
+            ids = rows.loc[rows['group'] == group, 'culturenumber'].astype(str)
+            if ids.duplicated().any() or not expected.issubset(set(ids)):
+                raise ValueError(f'{dataset}/{drug}/{group}: missing or duplicate confirmed pairs')
+        if set(rows.loc[rows['group'] == 'PCr', 'culturenumber'].astype(str)) != expected:
+            raise ValueError(f'{dataset}/{drug}: unexpected evolved lineage IDs')
+    keep = (table['group'] != 'P') | table['culturenumber'].astype(str).isin(expected)
+    return table.loc[keep].copy()
+
 # Figure, letters, dataset, measure, render stem, drug order, statistics panel.
 FIT_PANELS = [
     ('Figure 2', 'bcd', 'fig2_paplpc', 'IC50', 'Fig2', DRUGS, 'Figure 2b-d'),
@@ -142,8 +158,10 @@ def experimental_units():
                        drug=r.Antibiotic, IC50=r.IC50, MIC=r.MIC,
                        biological_unit=(r['group'] if ds == 'fig5_mutants' else r.Strain),
                        unit_type='technical series' if ds == 'fig5_mutants' else 'culture',
-                       lineage_id=str(r.culturenumber) if ds.startswith(('fig2_', 'fig3_')) else '',
-                       matching='confirmed by Adam 17 August' if ds.startswith(('fig2_', 'fig3_')) else 'not established',
+                       lineage_id=str(r.culturenumber) if ds in ('fig2_paplpc', 'fig3_plac', 'supp3_pcr', 'supp6_unt') else '',
+                       matching=('confirmed 18 September 2026; same-numbered pairs' if ds in ('supp3_pcr', 'supp6_unt')
+                                 else 'confirmed 17 August 2026' if ds.startswith(('fig2_', 'fig3_')) else 'not established'),
+                       included_in_comparison=not (ds == 'supp3_pcr' and r['group'] == 'P' and int(r.culturenumber) > 6),
                        analysis_source=f'cache/{ds}__df_analysis.pkl')
             for field in ['Experiment', 'Day', 'Plate', 'Plate_ID', 'Well', 'Row', 'Column']:
                 row[field] = '|'.join(map(str, sub[field].dropna().unique())) if field in sub else ''

@@ -45,6 +45,20 @@ class ValidationTests(unittest.TestCase):
             f.nested_boot([np.array([0., 1.]), np.array([])],
                           [np.array([0., 1.]), np.array([1., 2.])], 'paired')
 
+    def test_pcr_uses_declared_six_pairs_and_preserves_raw_records(self):
+        rows = [('P', str(i), 'Cefepime') for i in range(1, 11)]
+        rows += [('PCr', str(i), 'Cefepime') for i in range(1, 7)]
+        raw = pd.DataFrame(rows, columns=['group', 'culturenumber', 'Antibiotic'])
+        selected = f.comparison_cohort('supp3_pcr', raw)
+        self.assertEqual(len(raw), 16)
+        self.assertEqual(len(selected), 12)
+        for _, group in selected.groupby('group'):
+            self.assertEqual(set(group.culturenumber), set('123456'))
+        # A missing declared parent must fail, not become a five-pair analysis.
+        missing = raw[~((raw['group'] == 'P') & (raw.culturenumber == '6'))]
+        with self.assertRaisesRegex(ValueError, 'missing or duplicate'):
+            f.comparison_cohort('supp3_pcr', missing)
+
     def test_failed_validation_preserves_existing_outputs(self):
         # An exclusion failure occurs before any numerical calculation or CSV replacement.
         with tempfile.TemporaryDirectory() as temp:

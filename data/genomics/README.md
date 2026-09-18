@@ -17,4 +17,4 @@ data/genomics/out/<FolderDate>/<source_file>/output/output.gd.tsv
 
 `FolderDate` and `source_file` are metadata columns. The tables require mutation-calling/reference provenance and the corresponding plotting notebook version. If rerunning the mutation calls is intended, reference genome, caller version/options and read accessions are also needed. The supplied notebooks cover plotting and downstream table processing, not a complete raw-read alignment/calling workflow.
 
-Single-cell data are separate: Figure 6 and Supplementary Figures 12/13 need their expression/metadata objects, embeddings, differential-expression/enrichment tables and generating code from the Rosenthal analysis. None of those inputs is present in this repository.
+Single-cell data are separate: Figure 6 and Supplementary Figures 12/13 need their expression/metadata objects, embeddings, differential-expression/enrichment tables and generating code from the Rosenthal analysis. These inputs are absent from the repository and remain to be obtained from the Rosenthal group.

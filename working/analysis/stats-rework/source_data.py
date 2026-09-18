@@ -7,6 +7,7 @@ from openpyxl import Workbook, load_workbook
 from openpyxl.styles import Font, PatternFill, Alignment
 from manifest import HERE, ROOT, panel_manifest, FIT_PANELS, MDK
 from stats import split_strain
+from manifest import comparison_cohort
 
 DEST = ROOT / 'working/source-data'
 SOURCE = ROOT / 'data/supplementary_tables.json'
@@ -77,6 +78,10 @@ def main():
         cols = ['Strain', 'group', 'culturenumber', 'Antibiotic', value]
         note = ('Three technical series from one overnight culture per strain; biological n=1.'
                 if ds == 'fig5_mutants' else 'One fitted estimate per culture; matched lineage IDs retained.')
+        if ds == 'supp3_pcr':
+            gf['included_in_comparison'] = gf.index.isin(comparison_cohort(ds, gf).index)
+            cols.append('included_in_comparison')
+            note += ' Paired comparison and plot use P1-P6/PCr1-PCr6. P7-P10 have no evolved partners here and remain source records only.'
         block(ws, f'Panel {"/".join(dict.fromkeys(letters))}: {value} per culture or technical series',
               gf[cols], f'cache/{ds}.pkl', note)
         if stat_panel:
@@ -112,6 +117,14 @@ def main():
                       ('Complete source workbook retained, including sheets outside this figure. '
                        if len(book.sheet_names) > 1 else 'Source workbook values retained. ') +
                       f'{fig} uses {shown}. Original sheet, strain, culture, and day identify observations.')
+    from survival import records as survival_records
+    survival = survival_records()
+    block(wb['Figure 1'], 'Panel f: paired survival percentages', survival,
+          'working/figures/Figure 1/D-F/SurvivalData.xlsx, PC',
+          'Pre/post observations matched by culture and day; includes recovered culture 10 at day 20.')
+    block(wb['Figure 1'], 'Panel f: daily mean and sample SD',
+          survival.groupby('day').survival_percent.agg(n='count', mean='mean', sd='std').reset_index(),
+          'Panel f paired survival percentages')
     raw = pd.read_pickle(HERE / 'cache/fig2_paplpc__df_analysis.pkl')
     example = raw[(raw.Strain == 'PA5') & (raw.Antibiotic == 'Levofloxacin')]
     block(wb['Figure 2'], 'Panel a: representative PA5 levofloxacin dose response', example,

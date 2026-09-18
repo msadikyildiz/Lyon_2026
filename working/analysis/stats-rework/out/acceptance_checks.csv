@@ -334,10 +334,16 @@ complete IC50 pairs,Figure 3b-d,Cefepime,PLA-PLAC,True
 complete MIC pairs,Figure 3b-d,Cefepime,PLA-PLAC,True
 unique culture IDs,Supplementary Figure 3b-d,Levofloxacin,P,True
 unique culture IDs,Supplementary Figure 3b-d,Levofloxacin,PCr,True
+complete IC50 pairs,Supplementary Figure 3b-d,Levofloxacin,P-PCr,True
+complete MIC pairs,Supplementary Figure 3b-d,Levofloxacin,P-PCr,True
 unique culture IDs,Supplementary Figure 3b-d,Amikacin,P,True
 unique culture IDs,Supplementary Figure 3b-d,Amikacin,PCr,True
+complete IC50 pairs,Supplementary Figure 3b-d,Amikacin,P-PCr,True
+complete MIC pairs,Supplementary Figure 3b-d,Amikacin,P-PCr,True
 unique culture IDs,Supplementary Figure 3b-d,Cefepime,P,True
 unique culture IDs,Supplementary Figure 3b-d,Cefepime,PCr,True
+complete IC50 pairs,Supplementary Figure 3b-d,Cefepime,P-PCr,True
+complete MIC pairs,Supplementary Figure 3b-d,Cefepime,P-PCr,True
 unique culture IDs,Supplementary Figure 4b-d,Levofloxacin,ATEC,True
 unique culture IDs,Supplementary Figure 4b-d,Levofloxacin,ATEC-C,True
 unique culture IDs,Supplementary Figure 4b-d,Levofloxacin,ATEC-C-r,True
@@ -349,10 +355,16 @@ unique culture IDs,Supplementary Figure 4b-d,Cefepime,ATEC-C,True
 unique culture IDs,Supplementary Figure 4b-d,Cefepime,ATEC-C-r,True
 unique culture IDs,Supplementary Figure 6a-c,Levofloxacin,P,True
 unique culture IDs,Supplementary Figure 6a-c,Levofloxacin,P-unt,True
+complete IC50 pairs,Supplementary Figure 6a-c,Levofloxacin,P-P-unt,True
+complete MIC pairs,Supplementary Figure 6a-c,Levofloxacin,P-P-unt,True
 unique culture IDs,Supplementary Figure 6a-c,Amikacin,P,True
 unique culture IDs,Supplementary Figure 6a-c,Amikacin,P-unt,True
+complete IC50 pairs,Supplementary Figure 6a-c,Amikacin,P-P-unt,True
+complete MIC pairs,Supplementary Figure 6a-c,Amikacin,P-P-unt,True
 unique culture IDs,Supplementary Figure 6a-c,Cefepime,P,True
 unique culture IDs,Supplementary Figure 6a-c,Cefepime,P-unt,True
+complete IC50 pairs,Supplementary Figure 6a-c,Cefepime,P-P-unt,True
+complete MIC pairs,Supplementary Figure 6a-c,Cefepime,P-P-unt,True
 36 primary IC50 contrasts,,,,True
 all primary results finite,,,,True
 36 matched August comparisons,,,,True

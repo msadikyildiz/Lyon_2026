@@ -10,8 +10,11 @@ Experimental design:
   * Figure 5b-d and Supplementary Figure 10 triplicates are three technical
     dose-response series from one overnight culture per strain: biological
     n = 1, so no inferential test. Descriptive tables only.
-  * The other panels have no established lineage link between groups and use
-    Welch's unpaired t-test.
+  * Supplementary Figures 3 and 6 use same-numbered parent/descendant pairs,
+    confirmed by Adam Lyon on 18 September 2026. S3 uses lineages 1-6,
+    S6 uses 1-4. S3 parent records 7-10 remain in the raw inputs only.
+  * Supplementary Figure 4 has no established lineage link and uses Welch's
+    unpaired t-test.
 
 Estimand: log10 IC50 (primary). Effects are ratios of geometric means with
 pointwise 95% CIs. MIC is descriptive (geometric mean and CI, no test).
@@ -39,7 +42,7 @@ from statsmodels.stats.multitest import multipletests
 
 from stats import split_strain
 from fig5a_doubling import load_doubling_times
-from manifest import EXPECTED_IDS
+from manifest import EXPECTED_IDS, comparison_cohort
 
 HERE = Path(__file__).resolve().parent
 OUT = HERE / "out"
@@ -57,9 +60,9 @@ PANELS = [
     ("Figure 3b-d", "fig3_plac",
      list(itertools.combinations(["P", "PL", "PLA", "PLAC"], 2)),
      "paired", "Supplementary Figure 7"),
-    ("Supplementary Figure 3b-d", "supp3_pcr", [("P", "PCr")], "welch", ""),
+    ("Supplementary Figure 3b-d", "supp3_pcr", [("P", "PCr")], "paired", ""),
     ("Supplementary Figure 4b-d", "supp4_atec", [("ATEC", "ATEC-C")], "welch", ""),
-    ("Supplementary Figure 6a-c", "supp6_unt", [("P", "P-unt")], "welch", ""),
+    ("Supplementary Figure 6a-c", "supp6_unt", [("P", "P-unt")], "paired", ""),
 ]
 DRUG_ABBR = {"Levofloxacin": "LEV", "Amikacin": "AMI", "Cefepime": "CEF"}
 MUTANTS = ["gata", "glvc", "hipa", "selb", "rpoz", "ftsh", "fime"]
@@ -241,6 +244,7 @@ def contrast_rows(datasets=None):
     checks = []
     for panel, ds, comps, design, also in PANELS:
         gf = datasets[ds] if datasets is not None else load(ds)
+        gf = comparison_cohort(ds, gf)
         present = set(gf["group"])
         for drug in ["Levofloxacin", "Amikacin", "Cefepime"]:
             d = gf[gf["Antibiotic"] == drug]

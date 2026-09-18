@@ -1,8 +1,8 @@
 # Numerical results
 
-36 primary IC50 comparisons; 357/357 acceptance checks passed. Source Data retain full precision.
+36 primary IC50 comparisons; 369/369 acceptance checks passed. Source Data retain full precision.
 
-IC50 comparisons use log10 measurements, culture-ID-aligned paired t-tests for Figures 2 and 3, and Welch tests where matching is unconfirmed. Holm correction is applied within panel and drug (three comparisons in Figure 2, six in Figure 3, one in each other tested panel). Ratios compare Group2 with Group1; confidence intervals are pointwise. MIC ratio intervals estimate uncertainty using the stated log-scale t method, without multiplicity adjustment; MIC has no hypothesis tests or significance calls. Figure 5a-d and Supplementary Figure 10a-c are technical replicates of one culture per strain.
+IC50 comparisons use log10 measurements, culture-ID-aligned paired t-tests for Figures 2/3 and Supplementary Figures 3/6, and Welch tests where matching is unconfirmed. Holm correction is applied within panel and drug (three comparisons in Figure 2, six in Figure 3, one in each other tested panel). Ratios compare Group2 with Group1; confidence intervals are pointwise. MIC ratio intervals estimate uncertainty using the stated log-scale t method, without multiplicity adjustment; MIC has no hypothesis tests or significance calls. Figure 5a-d and Supplementary Figure 10a-c are technical replicates of one culture per strain.
 
 The fit-perturbation sensitivity reports empirical 2.5th-97.5th percentiles from 4,000 culture/fit resamples (seed 20260915); primary inference uses the t-tests and t-based intervals. Other sensitivity p-values have explicitly identified adjustment families.
 
@@ -37,15 +37,15 @@ The fit-perturbation sensitivity reports empirical 2.5th-97.5th percentiles from
 | Figure 3b-d | Cefepime | PLA/PL | 0.598 (0.431-0.83) | p = 0.025 |
 | Figure 3b-d | Cefepime | PLAC/PL | 0.667 (0.537-0.827) | p = 0.011 |
 | Figure 3b-d | Cefepime | PLAC/PLA | 1.12 (0.767-1.62) | p = 0.527 |
-| Supplementary Figure 3b-d | Levofloxacin | PCr/P | 3.6 (1.86-6.98) | p = 0.003 |
-| Supplementary Figure 3b-d | Amikacin | PCr/P | 1.67 (0.817-3.41) | p = 0.129 |
-| Supplementary Figure 3b-d | Cefepime | PCr/P | 102 (12.8-819) | p = 0.002 |
+| Supplementary Figure 3b-d | Levofloxacin | PCr/P | 4 (2.04-7.82) | p = 0.003 |
+| Supplementary Figure 3b-d | Amikacin | PCr/P | 1.77 (0.996-3.16) | p = 0.051 |
+| Supplementary Figure 3b-d | Cefepime | PCr/P | 109 (13-922) | p = 0.002 |
 | Supplementary Figure 4b-d | Levofloxacin | ATEC-C/ATEC | 1.09 (0.988-1.2) | p = 0.076 |
 | Supplementary Figure 4b-d | Amikacin | ATEC-C/ATEC | 0.767 (0.502-1.17) | p = 0.192 |
 | Supplementary Figure 4b-d | Cefepime | ATEC-C/ATEC | 0.811 (0.597-1.1) | p = 0.159 |
-| Supplementary Figure 6a-c | Levofloxacin | P-unt/P | 1.22 (1.07-1.4) | p = 0.012 |
-| Supplementary Figure 6a-c | Amikacin | P-unt/P | 0.711 (0.525-0.962) | p = 0.033 |
-| Supplementary Figure 6a-c | Cefepime | P-unt/P | 0.677 (0.521-0.878) | p = 0.015 |
+| Supplementary Figure 6a-c | Levofloxacin | P-unt/P | 1.22 (1.13-1.32) | p = 0.004 |
+| Supplementary Figure 6a-c | Amikacin | P-unt/P | 0.711 (0.566-0.892) | p = 0.017 |
+| Supplementary Figure 6a-c | Cefepime | P-unt/P | 0.677 (0.517-0.885) | p = 0.019 |
 
 ## Correction-family sensitivity
 

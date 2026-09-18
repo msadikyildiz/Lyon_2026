@@ -58,7 +58,7 @@ def fit_panel(asset, width, height, final):
     stem, drug, value, _ = asset.split('_')
     spec = next(s for s in PANELS if s[3] == stem and s[4] == value)
     panel, ds, order, _, _, interval, use_brackets = spec
-    gf = original.split_strain(pd.read_pickle(HERE/'cache'/f'{ds}.pkl'))
+    gf = original.comparison_cohort(ds, original.split_strain(pd.read_pickle(HERE/'cache'/f'{ds}.pkl')))
     sub = gf[gf.Antibiotic == drug]
     present = [g for g in order if g in set(sub['group'])]
     br = brackets_for(final, panel, drug, present) if use_brackets else []

@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parent
 SCRIPTS = Path('working/analysis/stats-rework')
 DATASETS = ['fig2_paplpc', 'fig3_plac', 'supp3_pcr', 'supp4_atec', 'fig5_mutants', 'supp6_unt']
 STEPS = ['validate.py', 'final_stats.py', 'mdk_source.py', 'supp11_mdk.py',
-         'manifest.py', 'report_results.py', 'plot_final.py', 'source_data.py',
+         'manifest.py', 'report_results.py', 'survival.py', 'plot_final.py', 'source_data.py',
          'print_panels.py', 'assemble_figures.py']
 
 

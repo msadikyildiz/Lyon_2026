@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-18",
+  "sources": [
+    {
+      "filename": "SurvivalData_26.xlsx",
+      "sha256": "e3d7bdbe7ea1eebab0dd0e6be54ac6bc2f8aecd5f0ad40b8258b69b489956fd9",
+      "sheet": "PC",
+      "row": 401
+    },
+    {
+      "filename": "bigcfu070523_26.xlsx",
+      "sha256": "7ce8c10cc162dd96f79821c35779d492a23d2863b4e62ee8ecd60f501ae178b3",
+      "sheet": "singleDrug",
+      "row": 401
+    }
+  ],
+  "recovered_observation": {
+    "culture": 10,
+    "group": "PC",
+    "day": 20.5,
+    "colony_count": 16,
+    "dilution": 1e-05,
+    "plated_volume_microlitres": 20,
+    "cfu_per_ml": 80000000,
+    "pretreatment_cfu_per_ml": 150000000,
+    "survival_percent": 53.33333333333333
+  },
+  "canonical_workbooks": [
+    "working/figures/Figure 1/D-F/SurvivalData.xlsx",
+    "working/figures/Figure 3/A - survival/SurvivalData.xlsx"
+  ],
+  "scope": "Only the missing PC row was restored; other cells preserved."
+}

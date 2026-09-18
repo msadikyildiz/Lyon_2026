@@ -32,7 +32,7 @@ from scipy import stats as sps
 
 from stats import split_strain
 from fig5a_doubling import load_doubling_times
-from manifest import panel_manifest
+from manifest import panel_manifest, comparison_cohort
 from report_results import p_text
 
 HERE = Path(__file__).resolve().parent
@@ -194,7 +194,7 @@ def draw_panel(ax, sub, order, value, ylim, labelled, brackets, interval):
 def tested_panels(final):
     made = 0
     for panel, ds, order, stem, value, interval, use_brackets in PANELS:
-        gf = split_strain(pd.read_pickle(HERE / "cache" / f"{ds}.pkl"))
+        gf = comparison_cohort(ds, split_strain(pd.read_pickle(HERE / "cache" / f"{ds}.pkl")))
         gf["culturenumber"] = gf["culturenumber"].astype(str)
         for drug in DRUGS:
             sub = gf[gf["Antibiotic"] == drug]

@@ -496,7 +496,7 @@
     },
     "original_image49": {
       "source": "data/figure-assets/image49.png",
-      "sha256": "d00573f99d44c5b127fac08d9bca1a0707e745f3fd60c7eedcb2df31eb6eb911",
+      "sha256": "d207086b2c119ea334a4339939f882b282000347bad14e8801b212e2056a11fa",
       "native_width": 999,
       "native_height": 1238,
       "content_box": [
@@ -505,7 +505,8 @@
         993.0,
         1232.0
       ],
-      "content_aspect": 0.8050570962479608
+      "content_aspect": 0.8050570962479608,
+      "correction": "Terminal sampling label changed from day 81 to day 82, confirmed 18 September 2026; heatmap data pixels unchanged."
     },
     "SuppFig10_Amikacin_MIC_labels": {
       "source": "working/analysis/stats-rework/out/figures-final/SuppFig10_Amikacin_MIC_labels.pdf",

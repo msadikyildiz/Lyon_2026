@@ -9,12 +9,12 @@ Data and analysis code for *Recurrent Extinction of Resistance Mutations Leads t
 | Complete genomic inputs | Add per-sample mutation calls or full-precision frequency tables, including PLAC traced-allele data and the 33 missing PbEc rows; retain reference and calling provenance. | Figure 4; Supplementary Figures 4, 8 and 9; upstream genomic analyses |
 | Add single-cell inputs and code | Add source objects, sample metadata, embeddings, analysis scripts, and complete differential-expression/enrichment tables; resolve table mapping and sample replication. | Figure 6; Supplementary Figures 12 and 13; Supplementary Table 4 |
 | Resolve survival source records | Confirm Supplementary Figure 11 plated volumes, the two blank Figure 3 parent counts, and explicit 40 µL MDK entries. | Survivor fractions and MDK summaries |
-| Confirm culture provenance and exclusions | Document parent-culture matching in Supplementary Figures 3/6 and the ATEC-C3 exclusion reason. | Comparison design and exclusion records |
+| Confirm exclusion record | Document the ATEC-C3 exclusion reason. | Supplementary Figure 4 exclusion records |
 | Complete figure generation | Connect the genomic and single-cell inputs to executable plotting code, replace retained image panels where numerical inputs are available, and automate the remaining figure compositions. | Full figure coverage; see [figure map](docs/FIGURE_COVERAGE.md) |
 | Complete data access information | Add the whole-genome sequencing accession and confirm GSE314756 access and sample mapping. | Data availability and sample provenance |
 | Specify reuse terms | Add licenses for the study code and data. | Repository license files |
 
-The included workbooks support dose-response, growth and survival analyses. One command regenerates the statistical tables, Source Data workbook, 40 size-specific panels, six trajectory plots and ten assembled figures. The [figure map](docs/FIGURE_COVERAGE.md) documents executable coverage and retained image panels.
+The included workbooks support dose-response, growth and survival analyses. One command regenerates the statistical tables, Source Data workbook, 40 size-specific panels, seven trajectory plots and ten assembled figures. The [figure map](docs/FIGURE_COVERAGE.md) documents executable coverage and retained image panels.
 
 ## Run
 
@@ -44,7 +44,7 @@ Raw-refit runs automatically compare their rebuilt outputs with this checkout. T
 micromamba run -n lyon-2026 python scripts/compare_outputs.py /path/to/reference /path/to/rebuilt --report comparison.json
 ```
 
-The comparator checks all 24 CSV tables (including the panel manifest), 125 PNG files, and Source Data cell values/types. Numerical tolerance is 1e-8 relative and 1e-10 absolute. PNG bytes must match. PDF, SVG and XLSX containers include timestamps, so regeneration can change their file hashes without changing rendered content or values. The driver also checks the 36 primary contrasts against the committed numerical reference; each run records `running`, `failed` or `passed` explicitly.
+The comparator checks all 26 CSV tables (including the panel manifest), 126 PNG files, and Source Data cell values/types. Numerical tolerance is 1e-8 relative and 1e-10 absolute. PNG bytes must match. PDF, SVG and XLSX containers include timestamps, so regeneration can change their file hashes without changing rendered content or values. The driver also checks the 36 primary contrasts against the committed numerical reference; each run records `running`, `failed` or `passed` explicitly.
 
 ## Results and source files
 
@@ -59,9 +59,9 @@ Paths retain their existing figure names so that notebook, workbook and manuscri
 
 ## Analysis conventions
 
-Primary IC50 comparisons use log10 values, culture-ID pairing for Figures 2/3, Welch tests elsewhere, and Holm adjustment within each panel and antibiotic. MIC and biological-n=1 mutant measurements are descriptive. Fit-perturbation ranges are sensitivity summaries. Fixed seeds and complete paired IDs are checked by the analysis. The historical p-value gate verifies 49 saved notebook results, including six expected NaNs; it is separate from the primary statistical analysis.
+Primary IC50 comparisons use log10 values, culture-ID pairing for Figures 2/3 and Supplementary Figures 3/6, Welch tests for Supplementary Figure 4, and Holm adjustment within each panel and antibiotic. MIC and biological-n=1 mutant measurements are descriptive. Fit-perturbation ranges are sensitivity summaries. Fixed seeds and complete paired IDs are checked by the analysis. The historical p-value gate verifies 49 saved notebook results, including six expected NaNs; it is separate from the primary statistical analysis.
 
-Supplementary Figure 11 absolute fractions provisionally assume equal plated volumes across time. A 10 µL baseline and 20 µL later schedule would halve those fractions. Figure 3 contains two blank parent counts; several MDK formulas use 40 µL. The ATEC-C3 exclusion reason and parent matching in Supplementary Figures 3/6 remain unconfirmed.
+Supplementary Figure 11 absolute fractions provisionally assume equal plated volumes across time. A 10 µL baseline and 20 µL later schedule would halve those fractions. Figure 3 contains two blank parent counts; several MDK formulas use 40 µL. The ATEC-C3 exclusion reason remains unconfirmed. Supplementary Figure 3 uses six same-numbered parent/evolved pairs and Supplementary Figure 6 uses four; the additional four S3 parent records remain in Source Data but are outside that comparison and plot. The restored Figure 1f culture-10 observation gives day-20 survival of 34.7 ± 30.5% (mean ± sample SD, n = 10). The final sequencing day is 82. See [source corrections](docs/DATA_CORRECTIONS.md).
 
 Genomic notebooks and recovered tables are included. Static panels retained in the ten assemblies have explicit source hashes. The TODO table and [genomic input specification](data/genomics/README.md) identify the inputs required for complete numerical regeneration.
 

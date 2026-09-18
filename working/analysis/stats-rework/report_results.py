@@ -20,7 +20,7 @@ def main():
     lines = ['# Numerical results', '',
              f'{len(ic)} primary IC50 comparisons; {len(checks)}/{len(checks)} acceptance checks passed. '
              'Source Data retain full precision.', '',
-             'IC50 comparisons use log10 measurements, culture-ID-aligned paired t-tests for Figures 2 and 3, '
+             'IC50 comparisons use log10 measurements, culture-ID-aligned paired t-tests for Figures 2/3 and Supplementary Figures 3/6, '
              'and Welch tests where matching is unconfirmed. Holm correction is applied within panel and drug '
              '(three comparisons in Figure 2, six in Figure 3, one in each other tested panel). '
              'Ratios compare Group2 with Group1; confidence intervals are pointwise. MIC ratio intervals '

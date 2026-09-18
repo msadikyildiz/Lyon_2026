@@ -26,15 +26,15 @@ Figure 3b-d,CEF:P-vs-PLAC,matched,unpaired Welch,0.052517402935387,False,"paired
 Figure 3b-d,CEF:PL-vs-PLA,matched,paired,0.0125296738288104,True,"paired t on log10, aligned on culture",0.02505934765762088,True,False
 Figure 3b-d,CEF:PL-vs-PLAC,matched,paired,0.0064257366044995,True,"paired t on log10, aligned on culture",0.010709561007499317,True,False
 Figure 3b-d,CEF:PLA-vs-PLAC,matched,paired,0.5269413837589554,False,"paired t on log10, aligned on culture",0.5269413837589554,False,False
-Supplementary Figure 3b-d,LEV:P-vs-PCr,matched,unpaired Welch,0.0034018276110309,True,Welch t on log10,0.003401827611030918,True,False
-Supplementary Figure 3b-d,AMI:P-vs-PCr,matched,unpaired Welch,0.1292536713275595,False,Welch t on log10,0.12925367132755952,False,False
-Supplementary Figure 3b-d,CEF:P-vs-PCr,matched,unpaired Welch,0.0022378719963348,True,Welch t on log10,0.002237871996334808,True,False
+Supplementary Figure 3b-d,LEV:P-vs-PCr,matched,unpaired Welch,0.0034018276110309,True,"paired t on log10, aligned on culture",0.0031618670363619426,True,False
+Supplementary Figure 3b-d,AMI:P-vs-PCr,matched,unpaired Welch,0.1292536713275595,False,"paired t on log10, aligned on culture",0.05111493054652427,False,False
+Supplementary Figure 3b-d,CEF:P-vs-PCr,matched,unpaired Welch,0.0022378719963348,True,"paired t on log10, aligned on culture",0.0023946443537977307,True,False
 Supplementary Figure 4b-d,LEV:ATEC-vs-ATEC-C,matched,unpaired Welch,0.0759199336229853,False,Welch t on log10,0.07591993362298537,False,False
 Supplementary Figure 4b-d,AMI:ATEC-vs-ATEC-C,matched,unpaired Welch,0.191968600870176,False,Welch t on log10,0.19196860087017606,False,False
 Supplementary Figure 4b-d,CEF:ATEC-vs-ATEC-C,matched,unpaired Welch,0.1587593268228334,False,Welch t on log10,0.15875932682283342,False,False
-Supplementary Figure 6a-c,LEV:P-vs-P-unt,matched,unpaired Welch,0.0116018969310307,True,Welch t on log10,0.011601896931030756,True,False
-Supplementary Figure 6a-c,AMI:P-vs-P-unt,matched,unpaired Welch,0.0331719022489566,True,Welch t on log10,0.03317190224895669,True,False
-Supplementary Figure 6a-c,CEF:P-vs-P-unt,matched,unpaired Welch,0.0146815668766035,True,Welch t on log10,0.014681566876603566,True,False
+Supplementary Figure 6a-c,LEV:P-vs-P-unt,matched,unpaired Welch,0.0116018969310307,True,"paired t on log10, aligned on culture",0.003946843234391711,True,False
+Supplementary Figure 6a-c,AMI:P-vs-P-unt,matched,unpaired Welch,0.0331719022489566,True,"paired t on log10, aligned on culture",0.01731637960062372,True,False
+Supplementary Figure 6a-c,CEF:P-vs-P-unt,matched,unpaired Welch,0.0146815668766035,True,"paired t on log10, aligned on culture",0.019063061538381408,True,False
 Figure 5b-d,AMI:MG-vs-gata,"retired: biological n=1, descriptive reporting","Dunnett (log10, pooled SD)",0.9581877679893402,False,descriptive,,,False
 Figure 5b-d,AMI:MG-vs-glvc,"retired: biological n=1, descriptive reporting","Dunnett (log10, pooled SD)",0.997910812113126,False,descriptive,,,False
 Figure 5b-d,AMI:MG-vs-hipa,"retired: biological n=1, descriptive reporting","Dunnett (log10, pooled SD)",0.5774059693154884,False,descriptive,,,False
