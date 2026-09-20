@@ -1,0 +1,45 @@
+position,ref_seq,new_seq,aa_new_seq,freq,gene_name,gene_product,aa_ref_seq,codon_ref_seq,aa_pos,gene_pos,mut_cat,label
+335576,T,C,N,"[0, 0, 0, 0, 0, 0.18, 0.12, 0.17, 0.47, 0]",yahD,ankyrin repeat-containing protein YahD,N,AAT,99.0,297,snp_synonymous,yahD N99N
+3638193,C,A,T,"[0, 0, 0, 0, 0, 0, 0, 0.1, 0, 0]",pitA,metal phosphate:H(+) symporter PitA,T,ACC,184.0,552,snp_synonymous,pitA T184T
+1087565,T,G,I,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0.12]",pgaC,poly-N-acetyl-D-glucosamine synthase subunit PgaC,I,ATA,94.0,282,snp_synonymous,pgaC I94I
+1196220,C,T,H,"[0, 0, 0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0]",icd,isocitrate dehydrogenase,H,CAC,366.0,1098,snp_synonymous,icd H366H
+1196232,C,T,T,"[0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0]",icd,isocitrate dehydrogenase,T,ACC,370.0,1110,snp_synonymous,icd T370T
+1196245,T,C,M,"[0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0]",icd,isocitrate dehydrogenase,L,TTA,375.0,1123,snp_synonymous,icd L375M
+1196247,A,G,M,"[0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0]",icd,isocitrate dehydrogenase,L,TTA,375.0,1125,snp_synonymous,icd L375M
+3545512,T,G,V,"[0, 0, 0, 0, 0, 0, 0, 0, 0.49, 0]",yhgH,DNA utilization protein YhgH,L,TTA,211.0,631,snp_nonsynonymous,yhgH L211V
+3054894,G,T,Q,"[0, 0, 0, 0, 0, 0, 0, 0.15, 0, 0]",ygfB,PF03695 family protein YgfB,P,CCA,184.0,551,snp_nonsynonymous,ygfB P184Q
+1228409,A,G,V,"[0, 0, 0, 0, 0, 0, 0.64, 0, 0, 0]",ycgM,putative isomerase/hydrolase,M,ATG,111.0,331,snp_nonsynonymous,ycgM M111V
+4033383,T,A,Q,"[0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0]",trkH,K(+) transporter TrkH,L,CTG,80.0,239,snp_nonsynonymous,trkH L80Q
+4033698,T,A,Q,"[0, 0, 0, 0, 0, 0.88, 1.0, 1.0, 1.0, 0.94]",trkH,K(+) transporter TrkH,L,CTG,185.0,554,snp_nonsynonymous,trkH L185Q
+759127,T,C,A,"[0, 0, 0, 0, 0, 0.66, 1.0, 0.27, 0.37, 0]",sucA,subunit of E1(0) component of 2-oxoglutarate dehydrogenase,V,GTC,141.0,422,snp_nonsynonymous,sucA V141A
+3214385,G,C,P,"[0, 0, 0, 0.18, 0, 0, 0, 0, 0, 0]",rpoD,RNA polymerase sigma factor RpoD,A,GCG,447.0,1339,snp_nonsynonymous,rpoD A447P
+4182931,A,G,A,"[0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0]",rpoB,RNA polymerase subunit beta,T,ACC,563.0,1687,snp_nonsynonymous,rpoB T563A
+1348077,C,T,H,"[0, 0, 0, 0, 0.13, 0, 0, 0, 0, 0]",rnb,RNase II,R,CGC,279.0,836,snp_nonsynonymous,rnb R279H
+4388892,C,A,V,"[0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0]",mscM,miniconductance mechanosensitive channel MscM,G,GGA,160.0,479,snp_nonsynonymous,mscM G160V
+489327,T,G,C,"[0, 0, 0, 0, 0, 0, 0, 0, 0.47, 0]",mscK,"potassium dependent, small conductance mechanosensitive channel",F,TTC,931.0,2792,snp_nonsynonymous,mscK F931C
+1230269,T,A,D,"[0, 0, 0.1, 0, 0, 0, 0, 0, 0, 0]",hlyE,hemolysin E,E,GAA,42.0,126,snp_nonsynonymous,hlyE E42D
+1591920,G,A,L,"[0, 0, 0, 0, 0, 0, 0, 0.72, 0.71, 1.0]",hipA,serine/threonine-protein kinase toxin HipA,P,CCG,86.0,257,snp_nonsynonymous,hipA P86L
+2339173,G,A,L,"[0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]",gyrA,DNA gyrase subunit A,S,TCG,83.0,248,snp_nonsynonymous,gyrA S83L
+2339173,G,C,W,"[0, 0, 1.0, 0.92, 0, 0, 0, 0, 0, 0]",gyrA,DNA gyrase subunit A,S,TCG,83.0,248,snp_nonsynonymous,gyrA S83W
+4117564,C,G,A,"[0, 0, 0, 0, 0, 0, 0.58, 0, 0, 0]",glpF,glycerol facilitator,G,GGC,176.0,527,snp_nonsynonymous,glpF G176A
+4117565,C,T,S,"[0, 0, 0, 0, 0, 0, 0.15, 0, 0, 0]",glpF,glycerol facilitator,G,GGC,176.0,526,snp_nonsynonymous,glpF G176S
+4117936,A,T,E,"[0, 0, 0, 0, 0, 0.68, 1.0, 0.31, 0.52, 0]",glpF,glycerol facilitator,V,GTG,52.0,155,snp_nonsynonymous,glpF V52E
+847955,G,A,V,"[0, 0, 0, 0, 0.43, 0, 0, 0, 0, 0]",glnH,L-glutamine ABC transporter periplasmic binding protein,A,GCG,17.0,50,snp_nonsynonymous,glnH A17V
+3473332,A,C,M,"[0, 0, 0, 0, 0, 0.18, 0, 0, 0, 0]",fusA,elongation factor G,I,ATT,61.0,183,snp_nonsynonymous,fusA I61M
+3473379,C,A,C,"[0, 0, 0, 0, 0.22, 0, 0, 0, 0, 0]",fusA,elongation factor G,G,GGC,46.0,136,snp_nonsynonymous,fusA G46C
+2562049,A,C,,"[0, 0, 0.1, 0.11, 0, 0, 0, 0, 0, 0]",yffN/yffO,uncharacterized protein YffN/uncharacterized protein YffO,,,,intergenic (+56/-62),snp_intergenic,yffN/yffO snp_intergenic
+3561970,T,C,,"[0, 0, 0, 0, 0, 0, 0, 0.24, 0.4, 0]",glpE/glpD,thiosulfate sulfurtransferase GlpE/aerobic glycerol 3-phosphate dehydrogenase,,,,intergenic (-147/-43),snp_intergenic,glpE/glpD snp_intergenic
+3659164,A,G,,"[0, 0, 0, 0.22, 0, 0, 0, 0, 0, 0]",gadF/mdtE,small regulatory RNA GadF/multidrug efflux pump membrane fusion protein MdtE,,,,intergenic (+82/-68),snp_intergenic,gadF/mdtE snp_intergenic
+2311562,C,A,,"[0, 0, 0, 0.14, 0, 0, 0, 0, 0, 0]",ftp/ompC,FAD:protein FMN transferase/outer membrane porin C,,,,intergenic (-28/+84),snp_intergenic,ftp/ompC snp_intergenic
+135606,G,G,,"[0, 0, 0, 0, 0, 0.25, 0, 0, 0, 0]",speE,spermidine synthase,,,,coding (859/867 nt),small_indel,speE small_indel
+3758381,A,G,,"[0, 0, 0, 0, 0, 0.16, 0, 0.7, 0.48, 0.84]",selB,selenocysteyl-tRNA-specific translation elongation factor,,,,coding (1481/1845 nt),small_indel,selB small_indel
+3758381,A,T,,"[0, 0, 0, 0, 0, 0.16, 0, 0.7, 0.48, 0.84]",selB,selenocysteyl-tRNA-specific translation elongation factor,,,,coding (1481/1845 nt),small_indel,selB small_indel
+3822173,CCGCGCG,,,"[0, 0, 0, 0, 0, 0, 0, 0.67, 0.55, 0.93]",rpoZ,RNA polymerase subunit omega,,,,coding (68-74/276 nt),small_indel,rpoZ small_indel
+4182858,GACCCGTGAACG,,,"[0, 0, 1.0, 0.92, 0, 0, 0, 0, 0, 0]",rpoB,RNA polymerase subunit beta,,,,coding (1614-1625/4029 nt),small_indel,rpoB small_indel
+1544571,G,,,"[0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0]",narU/yddK,nitrate/nitrite transporter NarU/leucine-rich repeat domain-containing protein YddK,,,,intergenic (-511/+187),small_indel,narU/yddK small_indel
+3862562,A,,,"[0, 0, 0, 0, 0, 0.9, 1.0, 1.0, 1.0, 1.0]",glvC,putative PTS enzyme II component GlvC,,,,coding (1042/1107 nt),small_indel,glvC small_indel
+4542987,T,,,"[0, 0, 0, 0, 0, 0.27, 0.12, 0, 0.55, 0]",fimE/fimA,regulator for fimA/type 1 fimbriae major subunit,,,,intergenic (+354/-128),small_indel,fimE/fimA small_indel
+3854770,GGCTGGCT,,,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0.22]",emrD,multidrug efflux pump EmrD,,,,coding (849-856/1185 nt),small_indel,emrD small_indel
+3079761,CAGGCCAAC,,,"[0, 0, 0, 0, 0, 0, 0.11, 0, 0, 0]",tktA,transketolase 1,,,,coding (1867-1875/1992 nt),mobile_element_insertion,tktA mobile_element_insertion
+4542020,TTAG,,,"[0, 0, 0, 0, 0, 0.19, 0, 0.71, 0.56, 0.93]",fimB/fimE,Type 1 fimbriae regulatory protein FimB/regulator for fimA,,,,intergenic (+461/-14),mobile_element_insertion,fimB/fimE mobile_element_insertion
+3993186,101-bp,,,"[0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0]",cyaA,adenylate cyclase,,,,coding (2034-2134/2547 nt),large_deletion,cyaA large_deletion

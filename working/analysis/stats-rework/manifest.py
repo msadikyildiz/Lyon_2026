@@ -120,7 +120,7 @@ def panel_manifest():
         for panel in ([panels] if panels == 'all' else panels):
             add(fig, panel, 'mutation frequency', 'working/figures/' + path,
                 units='fraction', unit='population sequencing sample',
-                status='retain; recover source values',
+                status='table regenerated from mutation calls; assembly retains image',
                 note='Supp 5 b/c corrected to notebook identities' if fig == 'Supplementary Figure 5' else '')
     for fig, panels, source in [
         ('Figure 1', 'abc', 'working/figures/Figure 1/A-C/Figure 1 A-C.pptx'),

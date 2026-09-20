@@ -6,15 +6,15 @@ Data and analysis code for *Recurrent Extinction of Resistance Mutations Leads t
 
 | Task | Input or work remaining | Affected outputs |
 |---|---|---|
-| Complete genomic inputs | Add per-sample mutation calls or full-precision frequency tables, including PLAC traced-allele data and the 33 missing PbEc rows; retain reference and calling provenance. | Figure 4; Supplementary Figures 4, 8 and 9; upstream genomic analyses |
+| Complete genomic calling provenance | Add reference-genome files/version and mutation-caller version/options. All 149 downstream mutation tables and 17 processed exports are included. | Reproduction from sequencing reads |
 | Add single-cell inputs and code | Add source objects, sample metadata, embeddings, analysis scripts, and complete differential-expression/enrichment tables; resolve table mapping and sample replication. | Figure 6; Supplementary Figures 12 and 13; Supplementary Table 4 |
 | Resolve survival source records | Confirm Supplementary Figure 11 plated volumes, the two blank Figure 3 parent counts, and explicit 40 µL MDK entries. | Survivor fractions and MDK summaries |
 | Confirm exclusion record | Document the ATEC-C3 exclusion reason. | Supplementary Figure 4 exclusion records |
-| Complete figure generation | Connect the genomic and single-cell inputs to executable plotting code, replace retained image panels where numerical inputs are available, and automate the remaining figure compositions. | Full figure coverage; see [figure map](docs/FIGURE_COVERAGE.md) |
+| Complete figure generation | Connect the regenerated genomic tables and the pending single-cell inputs to automated plotting and figure composition; replace retained numerical image panels. | Full figure coverage; see [figure map](docs/FIGURE_COVERAGE.md) |
 | Complete data access information | Add the whole-genome sequencing accession and confirm GSE314756 access and sample mapping. | Data availability and sample provenance |
 | Specify reuse terms | Add licenses for the study code and data. | Repository license files |
 
-The included workbooks support dose-response, growth and survival analyses. One command regenerates the statistical tables, Source Data workbook, 40 size-specific panels, seven trajectory plots and ten assembled figures. The [figure map](docs/FIGURE_COVERAGE.md) documents executable coverage and retained image panels.
+The included workbooks support dose-response, growth and survival analyses. One command regenerates eight genomic tables, the statistical tables, Source Data workbook, 40 size-specific panels, seven trajectory plots and ten assembled figures. The [figure map](docs/FIGURE_COVERAGE.md) documents executable coverage and retained image panels.
 
 ## Run
 
@@ -52,7 +52,7 @@ The comparator checks all 26 CSV tables (including the panel manifest), 126 PNG 
 - [Source Data workbook](working/source-data/Source%20Data.xlsx), with source paths, experimental units and missing-data records.
 - [Final statistics](working/analysis/stats-rework/out/final_statistics.csv) and adjacent numerical CSVs.
 - [Analysis code](working/analysis/stats-rework), including the pinned [plategig source and MIT license](working/analysis/stats-rework/plategig-88839a2).
-- [Original workbooks and reference notebooks](working/figures), [fitting workbooks](working/analysis/stats-rework/biohpc-pull/data), and [recovered genomic tables](data/genomics).
+- [Original workbooks and reference notebooks](working/figures), [fitting workbooks](working/analysis/stats-rework/biohpc-pull/data), and [genomic inputs and regenerated tables](data/genomics).
 - [Figure coverage](docs/FIGURE_COVERAGE.md), [genomic input requirements](data/genomics/README.md), and [verification record](docs/VALIDATION.md).
 
 Paths retain their existing figure names so that notebook, workbook and manuscript references remain traceable. The repository is self-contained for the supported workflow and does not need a manuscript DOCX or access to the original workstation. Exact typography uses Times New Roman from the validation Mac’s system fonts; see the font note below.
@@ -63,7 +63,7 @@ Primary IC50 comparisons use log10 values, culture-ID pairing for Figures 2/3 an
 
 Supplementary Figure 11 absolute fractions provisionally assume equal plated volumes across time. A 10 µL baseline and 20 µL later schedule would halve those fractions. Figure 3 contains two blank parent counts; several MDK formulas use 40 µL. The ATEC-C3 exclusion reason remains unconfirmed. Supplementary Figure 3 uses six same-numbered parent/evolved pairs and Supplementary Figure 6 uses four; the additional four S3 parent records remain in Source Data but are outside that comparison and plot. The restored Figure 1f culture-10 observation gives day-20 survival of 34.7 ± 30.5% (mean ± sample SD, n = 10). The final sequencing day is 82. See [source corrections](docs/DATA_CORRECTIONS.md).
 
-Genomic notebooks and recovered tables are included. Static panels retained in the ten assemblies have explicit source hashes. The TODO table and [genomic input specification](data/genomics/README.md) identify the inputs required for complete numerical regeneration.
+Genomic calculations now execute from the 149 included mutation-call tables. The full 83-row PbEc table and PLAC/combined-lineage tables are exported to Source Data. All 17 supplied processed exports match the rerun calculations. Historical notebook-display exports remain available as references. Static panels retained in the ten figure assemblies have explicit source hashes; replacing them with newly rendered genomic panels remains listed in the TODO table. See [genomic inputs and validation](data/genomics/README.md).
 
 ## Fonts and reuse
 

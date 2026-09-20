@@ -1,0 +1,23 @@
+abs_position,freq,gene_name,gene_product,aa_ref_seq,aa_new_seq,aa_pos,gene_pos,mut_cat,new_seq,codon_ref_seq,label
+MR_Cli1_contig_14 145,[0.   0.11],SEED:fig_6666666.487694.peg.919,core protein,G,G,10.0,30,snp_synonymous,A,GGC,SEED:fig_6666666.487694.peg.919 G10G
+MR_Cli1_contig_5 72850,[0. 1.],SEED:fig_6666666.487694.peg.4001,Cell division protein FtsI [Peptidoglycan synthetase] (EC 2.4.1.129),V,M,313.0,937,snp_nonsynonymous,A,GTG,SEED:fig_6666666.487694.peg.4001 V313M
+MR_Cli1_contig_30 149898,[0. 1.],SEED:fig_6666666.487694.peg.2381,HTH-type transcriptional repressor ComR,P,Q,37.0,110,snp_nonsynonymous,A,CCA,SEED:fig_6666666.487694.peg.2381 P37Q
+MR_Cli1_contig_26 47567,[0. 1.],SEED:fig_6666666.487694.peg.1857,Multiple antibiotic resistance protein MarR,R,C,77.0,229,snp_nonsynonymous,T,CGC,SEED:fig_6666666.487694.peg.1857 R77C
+MR_Cli1_contig_2 61433,[0. 1.],SEED:fig_6666666.487694.peg.1415,Copper sensory histidine kinase CpxA,L,R,30.0,89,snp_nonsynonymous,G,CTC,SEED:fig_6666666.487694.peg.1415 L30R
+MR_Cli1_contig_1 97469,[0. 1.],SEED:fig_6666666.487694.peg.101,"Multidrug efflux system AcrAB-TolC, inner-membrane proton/drug antiporter AcrB (RND type)",V,G,127.0,380,snp_nonsynonymous,C,GTG,SEED:fig_6666666.487694.peg.101 V127G
+MR_Cli1_contig_39 25113,[0.   0.43],GO:0046961,ATP synthase beta chain (EC 3.6.3.14),S,R,342.0,1026,snp_nonsynonymous,A,AGC,GO:0046961 S342R
+MR_Cli1_contig_4 179221,[0. 1.],SEED:fig_6666666.487694.peg.3302,Outer membrane porin OmpC,W,*,124.0,371,snp_nonsense,T,TGG,SEED:fig_6666666.487694.peg.3302 W124*
+MR_Cli1_contig_39 25563,[0. 1.],GO:0046961,ATP synthase epsilon chain (EC 3.6.3.14),Q,*,25.0,73,snp_nonsense,T,CAG,GO:0046961 Q25*
+MR_Cli1_contig_4 376208,[0.   0.28],SEED:fig_6666666.487694.rna.49,tRNA-Ala-TGC,,,,noncoding (43/77 nt),snp_noncoding,A,,SEED:fig_6666666.487694.rna.49 snp_noncoding
+MR_Cli1_contig_4 376194,[0.  0.3],SEED:fig_6666666.487694.rna.49,tRNA-Ala-TGC,,,,noncoding (29/77 nt),snp_noncoding,T,,SEED:fig_6666666.487694.rna.49 snp_noncoding
+MR_Cli1_contig_4 376200,[0.  0.3],SEED:fig_6666666.487694.rna.49,tRNA-Ala-TGC,,,,noncoding (35/77 nt),snp_noncoding,G,,SEED:fig_6666666.487694.rna.49 snp_noncoding
+MR_Cli1_contig_22 86211,[0.   0.14],SEED:fig_6666666.487694.rna.22,tRNA-Gln-TTG,,,,noncoding (63/75 nt),snp_noncoding,G,,SEED:fig_6666666.487694.rna.22 snp_noncoding
+MR_Cli1_contig_22 86212,[0.   0.15],SEED:fig_6666666.487694.rna.22,tRNA-Gln-TTG,,,,noncoding (62/75 nt),snp_noncoding,A,,SEED:fig_6666666.487694.rna.22 snp_noncoding
+MR_Cli1_contig_4 97218,[0.   0.12],SEED:fig_6666666.487694.peg.3222/SEED:fig_6666666.487694.peg.3223,Putative multidrug resistance outer membrane protein MdtQ/tRNA-dihydrouridine(16) synthase,,,,intergenic (-329/+261),snp_intergenic,G,,SEED:fig_6666666.487694.peg.3222/SEED:fig_6666666.487694.peg.3223 snp_intergenic
+MR_Cli1_contig_1 99159,[0. 1.],SEED:fig_6666666.487694.peg.102/SEED:fig_6666666.487694.peg.103,"Multidrug efflux system AcrAB-TolC, membrane fusion component AcrA/Transcriptional regulator of acrAB operon, AcrR",,,,intergenic (-95/-47),snp_intergenic,G,,SEED:fig_6666666.487694.peg.102/SEED:fig_6666666.487694.peg.103 snp_intergenic
+MR_Cli1_contig_7 178265,[0.   0.12],GO:0016020/SEED:fig_6666666.487694.peg.4440,Aquaporin Z/Lysine exporter LysO,,,,intergenic (+126/-369),snp_intergenic,G,,GO:0016020/SEED:fig_6666666.487694.peg.4440 snp_intergenic
+MR_Cli1_contig_41 1807,[0.   0.15],GO:0004616/–,"6-phosphogluconate dehydrogenase, decarboxylating (EC 1.1.1.44)/–",,,,intergenic (+266/–),snp_intergenic,A,,GO:0004616/– snp_intergenic
+MR_Cli1_contig_40 9333,[0. 1.],wbaP,Undecaprenyl-phosphate galactosephosphotransferase (EC 2.7.8.6),,,,coding (89/1428 nt),small_indel,,,wbaP small_indel
+MR_Cli1_contig_39 25321,[0.   0.27],GO:0046961,ATP synthase beta chain (EC 3.6.3.14),,,,coding (1234-1243/1383 nt),small_indel,,,GO:0046961 small_indel
+MR_Cli1_contig_35 50961,[0.   0.52],SEED:fig_6666666.487694.peg.2859/SEED:fig_6666666.487694.peg.2860,Uncharacterized radical SAM protein YjjW/hypothetical protein,,,,intergenic (+31/-65),large_substitution,AACCTGTAGGCATGATAAGACGCGTCAAGCGTCGCATCAGGCATTGTGCGCCAACTGCCGGATGCGGCGTGAACGCCTTATCCGGCCTACGGTTCGGCACAAACC,,SEED:fig_6666666.487694.peg.2859/SEED:fig_6666666.487694.peg.2860 large_substitution
+MR_Cli1_contig_36 30633,[0. 1.],[SEED:fig_6666666.487694.peg.2908],[SEED:fig_6666666.487694.peg.2908],,,,,large_deletion,,,[SEED:fig_6666666.487694.peg.2908] large_deletion

@@ -1,0 +1,57 @@
+position,freq,gene_name,gene_product,aa_ref_seq,aa_new_seq,aa_pos,gene_pos,mut_cat,new_seq,codon_ref_seq,label,Pop,last_freq
+92419,"[0.0, 1.0]",ftsI,peptidoglycan DD-transpeptidase FtsI,I,S,336,1007,snp_nonsynonymous,G,ATT,ftsI I336S,1,1.0
+92638,"[0.0, 1.0]",ftsI|ftsO,peptidoglycan DD-transpeptidase FtsI|small regulatory RNA FtsO,D|NA,G|NA,409|NA,1226|noncoding (154/174 nt),snp_nonsynonymous|noncoding,G,GAC|NA,ftsI|ftsO D|NA409|NAG|NA,1,1.0
+93019,"[0.0, 1.0]",ftsI,peptidoglycan DD-transpeptidase FtsI,Q,L,536,1607,snp_nonsynonymous,T,CAG,ftsI Q536L,1,1.0
+481657,"[0.0, 1.0]",acrB,multidrug efflux pump RND permease AcrB,A,G,916,2747,snp_nonsynonymous,C,GCC,acrB A916G,1,1.0
+485997,"[0.0, 1.0]",acrR,DNA-binding transcriptional repressor AcrR,,,,coding (237-244/648 nt),mobile_element_insertion,,,acrR IS1 insertion,1,1.0
+1619199,"[0.0, 1.0]",marR,DNA-binding transcriptional repressor MarR,R,P,27,80,snp_nonsynonymous,C,CGC,marR R27P,1,1.0
+2017423,"[0.0, 1.0]",fliI,flagellar export ATPase FliI,E,D,290,870,snp_nonsynonymous,C,GAA,fliI E290D,1,1.0
+2312301,"[0.0, 1.0]",ompC,outer membrane porin C,,,,coding (442-449/1104 nt),mobile_element_insertion,,,ompC mobile_element_insertion,1,1.0
+3535037,"[0.0, 1.0]",envZ,sensor histidine kinase EnvZ,N,Y,278,832,snp_nonsynonymous,A,AAC,envZ N278Y,1,1.0
+4503456,"[0.0, 0.11]",insG/nanX,IS4 family putative transposase/sialic acid transporter NanX,,,,intergenic (-25/-602),snp_intergenic,C,,insG/nanX snp_intergenic,1,0.11
+92539,"[0.0, 1.0]",ftsI|ftsO,peptidoglycan DD-transpeptidase FtsI|small regulatory RNA FtsO,L|NA,S|NA,376|NA,1127|noncoding (55/174 nt),snp_nonsynonymous|noncoding,C,TTA|NA,ftsI|ftsO L|NA376|NAS|NA,2,1.0
+93019,"[0.0, 1.0]",ftsI,peptidoglycan DD-transpeptidase FtsI,Q,L,536,1607,snp_nonsynonymous,T,CAG,ftsI Q536L,2,1.0
+482528,"[0.0, 0.94]",acrB,multidrug efflux pump RND permease AcrB,I,F,626,1876,snp_nonsynonymous,A,ATT,acrB I626F,2,0.94
+482698,"[0.0, 1.0]",acrB,multidrug efflux pump RND permease AcrB,Q,L,569,1706,snp_nonsynonymous,A,CAG,acrB Q569L,2,1.0
+486025,"[0.0, 1.0]",acrR,DNA-binding transcriptional repressor AcrR,,,,coding (265-268/648 nt),mobile_element_insertion,,,acrR IS5 insertion,2,1.0
+915226,"[0.0, 0.12]",lysO/aqpZ,L-lysine/thialysine exporter/water channel AqpZ,,,,intergenic (-369/+126),snp_intergenic,C,,lysO/aqpZ snp_intergenic,2,0.12
+1619400,"[0.0, 1.0]",marR,DNA-binding transcriptional repressor MarR,R,H,94,281,snp_nonsynonymous,A,CGC,marR R94H,2,1.0
+2312396,"[0.0, 1.0]",ompC,outer membrane porin C,,,,coding (346-354/1104 nt),mobile_element_insertion,,,ompC mobile_element_insertion,2,1.0
+3535147,"[0.0, 1.0]",envZ,sensor histidine kinase EnvZ,V,G,241,722,snp_nonsynonymous,C,GTA,envZ V241G,2,1.0
+4104222,"[0.0, 1.0]",cpxA,sensor histidine kinase CpxA,T,P,252,754,snp_nonsynonymous,G,ACC,cpxA T252P,2,1.0
+92539,"[0.0, 1.0]",ftsI|ftsO,peptidoglycan DD-transpeptidase FtsI|small regulatory RNA FtsO,L|NA,S|NA,376|NA,1127|noncoding (55/174 nt),snp_nonsynonymous|noncoding,C,TTA|NA,ftsI|ftsO L|NA376|NAS|NA,3,1.0
+93019,"[0.0, 1.0]",ftsI,peptidoglycan DD-transpeptidase FtsI,Q,L,536,1607,snp_nonsynonymous,T,CAG,ftsI Q536L,3,1.0
+482698,"[0.0, 1.0]",acrB,multidrug efflux pump RND permease AcrB,Q,L,569,1706,snp_nonsynonymous,A,CAG,acrB Q569L,3,1.0
+486025,"[0.0, 1.0]",acrR,DNA-binding transcriptional repressor AcrR,,,,coding (265-268/648 nt),mobile_element_insertion,,,acrR IS5 insertion,3,1.0
+1619400,"[0.0, 1.0]",marR,DNA-binding transcriptional repressor MarR,R,H,94,281,snp_nonsynonymous,A,CGC,marR R94H,3,1.0
+2312396,"[0.0, 1.0]",ompC,outer membrane porin C,,,,coding (346-354/1104 nt),mobile_element_insertion,,,ompC mobile_element_insertion,3,1.0
+3535427,"[0.0, 1.0]",envZ,sensor histidine kinase EnvZ,P,S,148,442,snp_nonsynonymous,A,CCG,envZ P148S,3,1.0
+4104222,"[0.0, 1.0]",cpxA,sensor histidine kinase CpxA,T,P,252,754,snp_nonsynonymous,G,ACC,cpxA T252P,3,1.0
+93019,"[0.0, 1.0]",ftsI,peptidoglycan DD-transpeptidase FtsI,Q,L,536.0,1607,snp_nonsynonymous,T,CAG,ftsI Q536L,4,1.0
+482698,"[0.0, 1.0]",acrB,multidrug efflux pump RND permease AcrB,Q,L,569.0,1706,snp_nonsynonymous,A,CAG,acrB Q569L,4,1.0
+486164,"[0.0, 1.0]",acrR,DNA-binding transcriptional repressor AcrR,,,,coding (404-411/648 nt),mobile_element_insertion,,,acrR IS1 insertion,4,1.0
+915226,"[0.0, 0.13]",lysO/aqpZ,L-lysine/thialysine exporter/water channel AqpZ,,,,intergenic (-369/+126),snp_intergenic,C,,lysO/aqpZ snp_intergenic,4,0.13
+1619202,"[0.0, 1.0]",marR,DNA-binding transcriptional repressor MarR,,,,coding (83-92/435 nt),small_indel,,,marR small_indel,4,1.0
+2062926,"[0.0, 1.0]",ldtA,"L,D-transpeptidase LdtA",R,H,133.0,398,snp_nonsynonymous,T,CGT,ldtA R133H,4,1.0
+2312004,"[0.0, 1.0]",ompC,outer membrane porin C,,,,coding (746/1104 nt),small_indel,,,ompC small_indel,4,1.0
+3054894,"[0.0, 0.21]",ygfB,PF03695 family protein YgfB,P,Q,184.0,551,snp_nonsynonymous,T,CCA,ygfB P184Q,4,0.21
+4104690,"[0.0, 1.0]",cpxA,sensor histidine kinase CpxA,G,S,96.0,286,snp_nonsynonymous,T,GGC,cpxA G96S,4,1.0
+4182851,"[0.0, 1.0]",rpoB,RNA polymerase subunit beta,G,V,536.0,1607,snp_nonsynonymous,T,GGC,rpoB G536V,4,1.0
+92362,"[0.0, 1.0]",ftsI,peptidoglycan DD-transpeptidase FtsI,A,V,317.0,950,snp_nonsynonymous,T,GCG,ftsI A317V,5,1.0
+93019,"[0.0, 1.0]",ftsI,peptidoglycan DD-transpeptidase FtsI,Q,L,536.0,1607,snp_nonsynonymous,T,CAG,ftsI Q536L,5,1.0
+482698,"[0.0, 1.0]",acrB,multidrug efflux pump RND permease AcrB,Q,L,569.0,1706,snp_nonsynonymous,A,CAG,acrB Q569L,5,1.0
+486025,"[0.0, 1.0]",acrR,DNA-binding transcriptional repressor AcrR,,,,coding (265-268/648 nt),mobile_element_insertion,,,acrR IS5 insertion,5,1.0
+1619400,"[0.0, 1.0]",marR,DNA-binding transcriptional repressor MarR,R,H,94.0,281,snp_nonsynonymous,A,CGC,marR R94H,5,1.0
+1659227,"[0.0, 1.0]",ynfE,putative selenate reductase YnfE,T,A,387.0,1159,snp_nonsynonymous,G,ACT,ynfE T387A,5,1.0
+2312396,"[0.0, 1.0]",ompC,outer membrane porin C,,,,coding (346-354/1104 nt),mobile_element_insertion,,,ompC mobile_element_insertion,5,1.0
+4104222,"[0.0, 1.0]",cpxA,sensor histidine kinase CpxA,T,P,252.0,754,snp_nonsynonymous,G,ACC,cpxA T252P,5,1.0
+93019,"[0.0, 1.0]",ftsI,peptidoglycan DD-transpeptidase FtsI,Q,L,536.0,1607,snp_nonsynonymous,T,CAG,ftsI Q536L,6,1.0
+482698,"[0.0, 1.0]",acrB,multidrug efflux pump RND permease AcrB,Q,L,569.0,1706,snp_nonsynonymous,A,CAG,acrB Q569L,6,1.0
+484202,"[0.0, 0.21]",acrB,multidrug efflux pump RND permease AcrB,N,D,68.0,202,snp_nonsynonymous,C,AAT,acrB N68D,6,0.21
+486025,"[0.0, 1.0]",acrR,DNA-binding transcriptional repressor AcrR,,,,coding (265-268/648 nt),mobile_element_insertion,,,acrR IS5 insertion,6,1.0
+1619400,"[0.0, 1.0]",marR,DNA-binding transcriptional repressor MarR,R,H,94.0,281,snp_nonsynonymous,A,CGC,marR R94H,6,1.0
+2312396,"[0.0, 1.0]",ompC,outer membrane porin C,,,,coding (346-354/1104 nt),mobile_element_insertion,,,ompC mobile_element_insertion,6,1.0
+3326620,"[0.0, 0.39]",ftsH,ATP-dependent zinc metalloprotease FtsH,W,R,106.0,316,snp_nonsynonymous,T,TGG,ftsH W106R,6,0.39
+3518721,"[0.0, 0.49]",aroK,shikimate kinase 1,,,,coding (341-344/522 nt),small_indel,,,aroK small_indel,6,0.49
+4104222,"[0.0, 1.0]",cpxA,sensor histidine kinase CpxA,T,P,252.0,754,snp_nonsynonymous,G,ACC,cpxA T252P,6,1.0
+4189277,"[0.0, 0.53]",rpoC,RNA polymerase subunit beta',T,A,1310.0,3928,snp_nonsynonymous,G,ACC,rpoC T1310A,6,0.53

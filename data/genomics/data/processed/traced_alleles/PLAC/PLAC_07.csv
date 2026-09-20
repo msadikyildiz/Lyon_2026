@@ -1,0 +1,37 @@
+position,ref_seq,new_seq,aa_new_seq,freq,gene_name,gene_product,aa_ref_seq,codon_ref_seq,aa_pos,gene_pos,mut_cat,label
+3638193,C,A,T,"[0, 0, 0, 0, 0, 0, 0.17, 0, 0, 0]",pitA,metal phosphate:H(+) symporter PitA,T,ACC,184.0,552,snp_synonymous,pitA T184T
+1196220,C,T,H,"[0, 0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0]",icd,isocitrate dehydrogenase,H,CAC,366.0,1098,snp_synonymous,icd H366H
+1196232,C,T,T,"[0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0]",icd,isocitrate dehydrogenase,T,ACC,370.0,1110,snp_synonymous,icd T370T
+1196245,T,C,M,"[0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0]",icd,isocitrate dehydrogenase,L,TTA,375.0,1123,snp_synonymous,icd L375M
+1196247,A,G,M,"[0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0]",icd,isocitrate dehydrogenase,L,TTA,375.0,1125,snp_synonymous,icd L375M
+822909,G,A,G,"[0, 0, 0, 0, 0.81, 1.0, 1.0, 1.0, 0.41, 0]",clsB,cardiolipin synthase B,G,GGC,277.0,831,snp_synonymous,clsB G277G
+1395492,C,T,D,"[0, 0, 0, 0, 0, 0, 1.0, 0.79, 0.33, 0]",ynaI,small conductance mechanosensitive channel YnaI,G,GGC,144.0,431,snp_nonsynonymous,ynaI G144D
+3575614,A,G,V,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0.21]",yhgN,MarC family putative inner membrane protein YhgN,M,ATG,182.0,544,snp_nonsynonymous,yhgN M182V
+3054894,G,T,Q,"[0, 0, 0.19, 0, 0, 0, 0, 0, 0, 0.15]",ygfB,PF03695 family protein YgfB,P,CCA,184.0,551,snp_nonsynonymous,ygfB P184Q
+2758577,G,T,K,"[0, 0, 0, 0, 0, 0, 0, 0, 0.38, 0.63]",yfjH,uncharacterized protein YfjH,N,AAC,8.0,24,snp_nonsynonymous,yfjH N8K
+3032307,C,T,M,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0.18]",uacT,urate:H(+) symporter,T,ACG,314.0,941,snp_nonsynonymous,uacT T314M
+4033698,T,A,Q,"[0, 0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]",trkH,K(+) transporter TrkH,L,CTG,185.0,554,snp_nonsynonymous,trkH L185Q
+3437506,T,C,T,"[0, 0, 0, 0, 0, 0, 0.19, 0, 0, 0]",trkA,NAD-binding component of Trk potassium transporters,I,ATC,330.0,989,snp_nonsynonymous,trkA I330T
+759127,T,C,A,"[0, 0, 0.31, 0, 0, 0, 0, 0, 0, 0]",sucA,subunit of E1(0) component of 2-oxoglutarate dehydrogenase,V,GTC,141.0,422,snp_nonsynonymous,sucA V141A
+397126,T,A,E,"[0, 0, 0, 0, 0.15, 0.21, 0, 0, 0, 0]",sbmA,peptide antibiotic/peptide nucleic acid transporter,V,GTG,163.0,488,snp_nonsynonymous,sbmA V163E
+1591920,G,A,L,"[0, 0, 0, 0, 0, 0, 0, 0, 0.62, 1.0]",hipA,serine/threonine-protein kinase toxin HipA,P,CCG,86.0,257,snp_nonsynonymous,hipA P86L
+2339173,G,A,L,"[0, 0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]",gyrA,DNA gyrase subunit A,S,TCG,83.0,248,snp_nonsynonymous,gyrA S83L
+3486163,T,C,S,"[0, 0, 0, 0, 0, 0, 0.37, 0.8, 0.5, 0]",crp,DNA-binding transcriptional dual regulator CRP,F,TTC,15.0,44,snp_nonsynonymous,crp F15S
+3809910,T,C,S,"[0, 0, 0, 0, 0, 0, 0, 0.18, 0, 0]",coaD,pantetheine-phosphate adenylyltransferase,F,TTC,29.0,86,snp_nonsynonymous,coaD F29S
+397203,C,T,*,"[0, 0, 0, 0, 0, 0, 0, 0.15, 0, 0]",sbmA,peptide antibiotic/peptide nucleic acid transporter,Q,CAG,189.0,565,snp_nonsense,sbmA Q189*
+915226,T,C,,"[0, 0.12, 0, 0, 0, 0.12, 0, 0, 0, 0]",lysO/aqpZ,L-lysine/thialysine exporter/water channel AqpZ,,,,intergenic (-369/+126),snp_intergenic,lysO/aqpZ snp_intergenic
+4296060,C,T,,"[0, 0.23, 0.18, 0.19, 0.22, 0.22, 0.19, 0.22, 0.15, 0.23]",gltP/yjcO,glutamate/aspartate : H(+) symporter GltP/Sel1 repeat-containing protein YjcO,,,,intergenic (+266/+376),snp_intergenic,gltP/yjcO snp_intergenic
+2304680,T,C,,"[0, 0, 0, 0, 0, 0, 0, 0.15, 0, 0]",eco/mqo,serine protease inhibitor ecotin/malate:quinone oxidoreductase,,,,intergenic (+287/+428),snp_intergenic,eco/mqo snp_intergenic
+3758381,A,G,,"[0, 0, 0.11, 0, 0.94, 0.92, 0.92, 0.9, 0.91, 0.92]",selB,selenocysteyl-tRNA-specific translation elongation factor,,,,coding (1481/1845 nt),small_indel,selB small_indel
+3758381,A,T,,"[0, 0, 0.11, 0, 0.94, 0.92, 0.92, 0.9, 0.91, 0.92]",selB,selenocysteyl-tRNA-specific translation elongation factor,,,,coding (1481/1845 nt),small_indel,selB small_indel
+3822173,CCGCGCG,,,"[0, 0, 0, 0, 0, 0, 0, 0, 0.56, 1.0]",rpoZ,RNA polymerase subunit omega,,,,coding (68-74/276 nt),small_indel,rpoZ small_indel
+3862562,A,,,"[0, 0, 0.94, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]",glvC,putative PTS enzyme II component GlvC,,,,coding (1042/1107 nt),small_indel,glvC small_indel
+3326144,CAGACCAGCGCC,,,"[0, 0, 0, 0, 0, 0, 0, 0, 0.51, 1.0]",ftsH,ATP-dependent zinc metalloprotease FtsH,,,,coding (781-792/1935 nt),small_indel,ftsH small_indel
+4104926,AGC,,,"[0, 0, 0, 0, 0.81, 1.0, 1.0, 1.0, 0.48, 0]",cpxA,sensor histidine kinase CpxA,,,,coding (48-50/1374 nt),small_indel,cpxA small_indel
+2388525,GTTAT,,,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0.16]",yfbN/yfbO,uncharacterized protein YfbN/uncharacterized protein YfbO,,,,intergenic (-99/-106),mobile_element_insertion,yfbN/yfbO mobile_element_insertion
+1158638,AAATG,,,"[0, 0, 0, 0, 0, 0, 0, 0, 0.11, 0]",ptsG,glucose-specific PTS enzyme IIBC component,,,,coding (770-774/1434 nt),mobile_element_insertion,ptsG mobile_element_insertion
+2174844,TTAG,,,"[0, 0, 0, 0, 0, 0, 0, 0, 0.55, 1.0]",gatA,galactitol-specific PTS enzyme IIA component,,,,coding (203-206/453 nt),mobile_element_insertion,gatA mobile_element_insertion
+4542020,TTAG,,,"[0, 0, 0.13, 0.14, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]",fimB/fimE,Type 1 fimbriae regulatory protein FimB/regulator for fimA,,,,intergenic (+461/-14),mobile_element_insertion,fimB/fimE mobile_element_insertion
+1626071,TTAA,,,"[0, 0, 0, 0, 0, 0, 0.56, 0.81, 0.45, 0]",dcp,peptidyl-dipeptidase Dcp,,,,coding (1307-1310/2046 nt),mobile_element_insertion,dcp mobile_element_insertion
+396591,TTAA,,,"[0, 0, 0, 0, 0.66, 0.78, 1.0, 0.78, 0.5, 0]",ampH/sbmA,peptidoglycan DD-carboxypeptidase/peptidoglycan DD-endopeptidase/peptide antibiotic/peptide nucleic acid transporter,,,,intergenic (-304/-45),mobile_element_insertion,ampH/sbmA mobile_element_insertion
+396624,TTAG,,,"[0, 0, 0, 0, 0.13, 0, 0, 0, 0, 0]",ampH/sbmA,peptidoglycan DD-carboxypeptidase/peptidoglycan DD-endopeptidase/peptide antibiotic/peptide nucleic acid transporter,,,,intergenic (-337/-12),mobile_element_insertion,ampH/sbmA mobile_element_insertion

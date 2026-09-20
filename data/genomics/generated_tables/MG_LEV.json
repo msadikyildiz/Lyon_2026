@@ -1,0 +1,1345 @@
+{
+  "schema":{
+    "fields":[
+      {
+        "name":"position",
+        "type":"integer"
+      },
+      {
+        "name":"freq",
+        "type":"string"
+      },
+      {
+        "name":"gene_name",
+        "type":"string"
+      },
+      {
+        "name":"gene_product",
+        "type":"string"
+      },
+      {
+        "name":"aa_ref_seq",
+        "type":"string"
+      },
+      {
+        "name":"aa_new_seq",
+        "type":"string"
+      },
+      {
+        "name":"aa_pos",
+        "type":"string"
+      },
+      {
+        "name":"gene_pos",
+        "type":"string"
+      },
+      {
+        "name":"mut_cat",
+        "type":"string"
+      },
+      {
+        "name":"new_seq",
+        "type":"string"
+      },
+      {
+        "name":"codon_ref_seq",
+        "type":"string"
+      },
+      {
+        "name":"label",
+        "type":"string"
+      },
+      {
+        "name":"last_freq",
+        "type":"number"
+      },
+      {
+        "name":"Pop",
+        "type":"integer"
+      }
+    ],
+    "pandas_version":"1.4.0"
+  },
+  "data":[
+    {
+      "position":1196220,
+      "freq":[
+        0.0,
+        0.0,
+        1.0
+      ],
+      "gene_name":"icd",
+      "gene_product":"isocitrate dehydrogenase",
+      "aa_ref_seq":"H",
+      "aa_new_seq":"H",
+      "aa_pos":366.0,
+      "gene_pos":"1098",
+      "mut_cat":"snp_synonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"CAC",
+      "label":"icd H366H",
+      "last_freq":1.0,
+      "Pop":1
+    },
+    {
+      "position":1447641,
+      "freq":[
+        0.0,
+        0.0,
+        1.0
+      ],
+      "gene_name":"feaB",
+      "gene_product":"phenylacetaldehyde dehydrogenase",
+      "aa_ref_seq":"D",
+      "aa_new_seq":"E",
+      "aa_pos":41.0,
+      "gene_pos":"123",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"GAT",
+      "label":"feaB D41E",
+      "last_freq":1.0,
+      "Pop":1
+    },
+    {
+      "position":2339179,
+      "freq":[
+        0.0,
+        0.0,
+        1.0
+      ],
+      "gene_name":"gyrA",
+      "gene_product":"DNA gyrase subunit A",
+      "aa_ref_seq":"G",
+      "aa_new_seq":"D",
+      "aa_pos":81.0,
+      "gene_pos":"242",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"GGT",
+      "label":"gyrA G81D",
+      "last_freq":1.0,
+      "Pop":1
+    },
+    {
+      "position":4180260,
+      "freq":[
+        0.0,
+        0.0,
+        1.0
+      ],
+      "gene_name":"rplJ",
+      "gene_product":"50S ribosomal subunit protein L10",
+      "aa_ref_seq":"P",
+      "aa_new_seq":"S",
+      "aa_pos":89.0,
+      "gene_pos":"265",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"CCG",
+      "label":"rplJ P89S",
+      "last_freq":1.0,
+      "Pop":1
+    },
+    {
+      "position":4184435,
+      "freq":[
+        0.0,
+        0.0,
+        1.0
+      ],
+      "gene_name":"rpoB",
+      "gene_product":"RNA polymerase subunit beta",
+      "aa_ref_seq":"D",
+      "aa_new_seq":"G",
+      "aa_pos":1064.0,
+      "gene_pos":"3191",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"G",
+      "codon_ref_seq":"GAC",
+      "label":"rpoB D1064G",
+      "last_freq":1.0,
+      "Pop":1
+    },
+    {
+      "position":1359616,
+      "freq":[
+        0.0,
+        0.0,
+        0.15
+      ],
+      "gene_name":"puuA",
+      "gene_product":"glutamate-putrescine ligase",
+      "aa_ref_seq":"D",
+      "aa_new_seq":"D",
+      "aa_pos":431.0,
+      "gene_pos":"1293",
+      "mut_cat":"snp_synonymous",
+      "new_seq":"G",
+      "codon_ref_seq":"GAT",
+      "label":"puuA D431D",
+      "last_freq":0.15,
+      "Pop":2
+    },
+    {
+      "position":1458984,
+      "freq":[
+        0.0,
+        0.0,
+        0.67
+      ],
+      "gene_name":"paaG",
+      "gene_product":"putative ring 1,2-epoxyphenylacetyl-CoA isomerase (oxepin-CoA forming)",
+      "aa_ref_seq":"S",
+      "aa_new_seq":"C",
+      "aa_pos":241.0,
+      "gene_pos":"721",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"AGC",
+      "label":"paaG S241C",
+      "last_freq":0.67,
+      "Pop":2
+    },
+    {
+      "position":2311594,
+      "freq":[
+        0.0,
+        0.15,
+        0.0
+      ],
+      "gene_name":"ftp\/ompC",
+      "gene_product":"FAD:protein FMN transferase\/outer membrane porin C",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"intergenic (-60\/+52)",
+      "mut_cat":"snp_intergenic",
+      "new_seq":"G",
+      "codon_ref_seq":null,
+      "label":"ftp\/ompC snp_intergenic",
+      "last_freq":0.0,
+      "Pop":2
+    },
+    {
+      "position":2339173,
+      "freq":[
+        0.0,
+        0.0,
+        0.51
+      ],
+      "gene_name":"gyrA",
+      "gene_product":"DNA gyrase subunit A",
+      "aa_ref_seq":"S",
+      "aa_new_seq":"L",
+      "aa_pos":83.0,
+      "gene_pos":"248",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"TCG",
+      "label":"gyrA S83L",
+      "last_freq":0.51,
+      "Pop":2
+    },
+    {
+      "position":2339179,
+      "freq":[
+        0.0,
+        0.0,
+        0.2
+      ],
+      "gene_name":"gyrA",
+      "gene_product":"DNA gyrase subunit A",
+      "aa_ref_seq":"G",
+      "aa_new_seq":"D",
+      "aa_pos":81.0,
+      "gene_pos":"242",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"GGT",
+      "label":"gyrA G81D",
+      "last_freq":0.2,
+      "Pop":2
+    },
+    {
+      "position":2383468,
+      "freq":[
+        0.0,
+        0.0,
+        0.1
+      ],
+      "gene_name":"elaD",
+      "gene_product":"protease ElaD",
+      "aa_ref_seq":"C",
+      "aa_new_seq":"C",
+      "aa_pos":252.0,
+      "gene_pos":"756",
+      "mut_cat":"snp_synonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"TGC",
+      "label":"elaD C252C",
+      "last_freq":0.1,
+      "Pop":2
+    },
+    {
+      "position":2722723,
+      "freq":[
+        0.0,
+        0.0,
+        0.48
+      ],
+      "gene_name":"pssL",
+      "gene_product":"protein PssL",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"coding (22\/42 nt)",
+      "mut_cat":"small_indel",
+      "new_seq":null,
+      "codon_ref_seq":null,
+      "label":"pssL small_indel",
+      "last_freq":0.48,
+      "Pop":2
+    },
+    {
+      "position":3880158,
+      "freq":[
+        0.0,
+        0.0,
+        0.12
+      ],
+      "gene_name":"recF",
+      "gene_product":"recombination mediator protein RecF",
+      "aa_ref_seq":"I",
+      "aa_new_seq":"T",
+      "aa_pos":355.0,
+      "gene_pos":"1064",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"G",
+      "codon_ref_seq":"ATA",
+      "label":"recF I355T",
+      "last_freq":0.12,
+      "Pop":2
+    },
+    {
+      "position":4184434,
+      "freq":[
+        0.0,
+        0.0,
+        0.24
+      ],
+      "gene_name":"rpoB",
+      "gene_product":"RNA polymerase subunit beta",
+      "aa_ref_seq":"D",
+      "aa_new_seq":"N",
+      "aa_pos":1064.0,
+      "gene_pos":"3190",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"GAC",
+      "label":"rpoB D1064N",
+      "last_freq":0.24,
+      "Pop":2
+    },
+    {
+      "position":4185043,
+      "freq":[
+        0.0,
+        0.0,
+        0.77
+      ],
+      "gene_name":"rpoB",
+      "gene_product":"RNA polymerase subunit beta",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"coding (3799-3801\/4029 nt)",
+      "mut_cat":"small_indel",
+      "new_seq":null,
+      "codon_ref_seq":null,
+      "label":"rpoB small_indel",
+      "last_freq":0.77,
+      "Pop":2
+    },
+    {
+      "position":1196220,
+      "freq":[
+        0.0,
+        0.0,
+        1.0
+      ],
+      "gene_name":"icd",
+      "gene_product":"isocitrate dehydrogenase",
+      "aa_ref_seq":"H",
+      "aa_new_seq":"H",
+      "aa_pos":366.0,
+      "gene_pos":"1098",
+      "mut_cat":"snp_synonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"CAC",
+      "label":"icd H366H",
+      "last_freq":1.0,
+      "Pop":3
+    },
+    {
+      "position":1502770,
+      "freq":[
+        0.0,
+        0.28,
+        0.0
+      ],
+      "gene_name":"ydcL",
+      "gene_product":"DUF3313 domain-containing lipoprotein YdcL",
+      "aa_ref_seq":"I",
+      "aa_new_seq":"T",
+      "aa_pos":105.0,
+      "gene_pos":"314",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"C",
+      "codon_ref_seq":"ATA",
+      "label":"ydcL I105T",
+      "last_freq":0.0,
+      "Pop":3
+    },
+    {
+      "position":2339065,
+      "freq":[
+        0.0,
+        0.0,
+        0.28
+      ],
+      "gene_name":"gyrA",
+      "gene_product":"DNA gyrase subunit A",
+      "aa_ref_seq":"A",
+      "aa_new_seq":"E",
+      "aa_pos":119.0,
+      "gene_pos":"356",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"GCA",
+      "label":"gyrA A119E",
+      "last_freq":0.28,
+      "Pop":3
+    },
+    {
+      "position":2339179,
+      "freq":[
+        0.0,
+        0.0,
+        0.62
+      ],
+      "gene_name":"gyrA",
+      "gene_product":"DNA gyrase subunit A",
+      "aa_ref_seq":"G",
+      "aa_new_seq":"D",
+      "aa_pos":81.0,
+      "gene_pos":"242",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"GGT",
+      "label":"gyrA G81D",
+      "last_freq":0.62,
+      "Pop":3
+    },
+    {
+      "position":2972129,
+      "freq":[
+        0.0,
+        0.0,
+        0.66
+      ],
+      "gene_name":"tas",
+      "gene_product":"putative NADP(H)-dependent aldo-keto reductase Tas",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"coding (533\/1041 nt)",
+      "mut_cat":"small_indel",
+      "new_seq":null,
+      "codon_ref_seq":null,
+      "label":"tas small_indel",
+      "last_freq":0.66,
+      "Pop":3
+    },
+    {
+      "position":4184954,
+      "freq":[
+        0.0,
+        0.0,
+        0.32
+      ],
+      "gene_name":"rpoB",
+      "gene_product":"RNA polymerase subunit beta",
+      "aa_ref_seq":"H",
+      "aa_new_seq":"L",
+      "aa_pos":1237.0,
+      "gene_pos":"3710",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"CAC",
+      "label":"rpoB H1237L",
+      "last_freq":0.32,
+      "Pop":3
+    },
+    {
+      "position":4185113,
+      "freq":[
+        0.0,
+        0.0,
+        0.64
+      ],
+      "gene_name":"rpoB",
+      "gene_product":"RNA polymerase subunit beta",
+      "aa_ref_seq":"M",
+      "aa_new_seq":"R",
+      "aa_pos":1290.0,
+      "gene_pos":"3869",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"G",
+      "codon_ref_seq":"ATG",
+      "label":"rpoB M129R",
+      "last_freq":0.64,
+      "Pop":3
+    },
+    {
+      "position":4220506,
+      "freq":[
+        0.0,
+        0.0,
+        0.15
+      ],
+      "gene_name":"arpA",
+      "gene_product":"regulator of acetyl CoA synthetase",
+      "aa_ref_seq":"D",
+      "aa_new_seq":"A",
+      "aa_pos":661.0,
+      "gene_pos":"1982",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"G",
+      "codon_ref_seq":"GAT",
+      "label":"arpA D661A",
+      "last_freq":0.15,
+      "Pop":3
+    },
+    {
+      "position":4640231,
+      "freq":[
+        0.0,
+        0.0,
+        0.25
+      ],
+      "gene_name":"arcA",
+      "gene_product":"DNA-binding transcriptional dual regulator ArcA",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"coding (76\/717 nt)",
+      "mut_cat":"small_indel",
+      "new_seq":"CGCTTCGAAAACATCATAGCCTTC",
+      "codon_ref_seq":null,
+      "label":"arcA small_indel",
+      "last_freq":0.25,
+      "Pop":3
+    },
+    {
+      "position":257908,
+      "freq":[
+        0.0,
+        0.0,
+        1.0
+      ],
+      "gene_name":"insB9\u2013[crl]",
+      "gene_product":"insB9,insA9,[crl]",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":null,
+      "mut_cat":"large_deletion",
+      "new_seq":null,
+      "codon_ref_seq":null,
+      "label":"insB9\u2013[crl] large_deletion",
+      "last_freq":1.0,
+      "Pop":4
+    },
+    {
+      "position":584487,
+      "freq":[
+        0.0,
+        0.0,
+        1.0
+      ],
+      "gene_name":"appY\/ompT",
+      "gene_product":"DNA-binding transcriptional activator AppY\/omptin family outer membrane protease OmpT",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"intergenic (+57\/+193)",
+      "mut_cat":"small_indel",
+      "new_seq":null,
+      "codon_ref_seq":null,
+      "label":"appY\/ompT small_indel",
+      "last_freq":1.0,
+      "Pop":4
+    },
+    {
+      "position":1196220,
+      "freq":[
+        0.0,
+        0.0,
+        1.0
+      ],
+      "gene_name":"icd",
+      "gene_product":"isocitrate dehydrogenase",
+      "aa_ref_seq":"H",
+      "aa_new_seq":"H",
+      "aa_pos":366.0,
+      "gene_pos":"1098",
+      "mut_cat":"snp_synonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"CAC",
+      "label":"icd H366H",
+      "last_freq":1.0,
+      "Pop":4
+    },
+    {
+      "position":2339179,
+      "freq":[
+        0.0,
+        0.0,
+        0.95
+      ],
+      "gene_name":"gyrA",
+      "gene_product":"DNA gyrase subunit A",
+      "aa_ref_seq":"G",
+      "aa_new_seq":"D",
+      "aa_pos":81.0,
+      "gene_pos":"242",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"GGT",
+      "label":"gyrA G81D",
+      "last_freq":0.95,
+      "Pop":4
+    },
+    {
+      "position":3054894,
+      "freq":[
+        0.0,
+        0.2,
+        0.0
+      ],
+      "gene_name":"ygfB",
+      "gene_product":"PF03695 family protein YgfB",
+      "aa_ref_seq":"P",
+      "aa_new_seq":"Q",
+      "aa_pos":184.0,
+      "gene_pos":"551",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"CCA",
+      "label":"ygfB P184Q",
+      "last_freq":0.0,
+      "Pop":4
+    },
+    {
+      "position":4184954,
+      "freq":[
+        0.0,
+        0.0,
+        1.0
+      ],
+      "gene_name":"rpoB",
+      "gene_product":"RNA polymerase subunit beta",
+      "aa_ref_seq":"H",
+      "aa_new_seq":"L",
+      "aa_pos":1237.0,
+      "gene_pos":"3710",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"CAC",
+      "label":"rpoB H1237L",
+      "last_freq":1.0,
+      "Pop":4
+    },
+    {
+      "position":1087590,
+      "freq":[
+        0.0,
+        0.0,
+        0.1
+      ],
+      "gene_name":"pgaC",
+      "gene_product":"poly-N-acetyl-D-glucosamine synthase subunit PgaC",
+      "aa_ref_seq":"E",
+      "aa_new_seq":"G",
+      "aa_pos":86.0,
+      "gene_pos":"257",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"C",
+      "codon_ref_seq":"GAG",
+      "label":"pgaC E86G",
+      "last_freq":0.1,
+      "Pop":5
+    },
+    {
+      "position":1196220,
+      "freq":[
+        0.0,
+        0.0,
+        1.0
+      ],
+      "gene_name":"icd",
+      "gene_product":"isocitrate dehydrogenase",
+      "aa_ref_seq":"H",
+      "aa_new_seq":"H",
+      "aa_pos":366.0,
+      "gene_pos":"1098",
+      "mut_cat":"snp_synonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"CAC",
+      "label":"icd H366H",
+      "last_freq":1.0,
+      "Pop":5
+    },
+    {
+      "position":2339162,
+      "freq":[
+        0.0,
+        0.0,
+        0.2
+      ],
+      "gene_name":"gyrA",
+      "gene_product":"DNA gyrase subunit A",
+      "aa_ref_seq":"D",
+      "aa_new_seq":"Y",
+      "aa_pos":87.0,
+      "gene_pos":"259",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"GAC",
+      "label":"gyrA D87Y",
+      "last_freq":0.2,
+      "Pop":5
+    },
+    {
+      "position":2339173,
+      "freq":[
+        0.0,
+        0.0,
+        0.63
+      ],
+      "gene_name":"gyrA",
+      "gene_product":"DNA gyrase subunit A",
+      "aa_ref_seq":"S",
+      "aa_new_seq":"L",
+      "aa_pos":83.0,
+      "gene_pos":"248",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"TCG",
+      "label":"gyrA S83L",
+      "last_freq":0.63,
+      "Pop":5
+    },
+    {
+      "position":3269943,
+      "freq":[
+        0.0,
+        0.0,
+        0.13
+      ],
+      "gene_name":"yhaC\/rnpB",
+      "gene_product":"uncharacterized protein YhaC\/RNase P catalytic RNA component",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"intergenic (+341\/+273)",
+      "mut_cat":"snp_intergenic",
+      "new_seq":"T",
+      "codon_ref_seq":null,
+      "label":"yhaC\/rnpB snp_intergenic",
+      "last_freq":0.13,
+      "Pop":5
+    },
+    {
+      "position":3630489,
+      "freq":[
+        0.0,
+        0.0,
+        0.12
+      ],
+      "gene_name":"yhiI",
+      "gene_product":"putative membrane fusion protein YhiI",
+      "aa_ref_seq":"V",
+      "aa_new_seq":"V",
+      "aa_pos":38.0,
+      "gene_pos":"114",
+      "mut_cat":"snp_synonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"GTC",
+      "label":"yhiI V38V",
+      "last_freq":0.12,
+      "Pop":5
+    },
+    {
+      "position":4184954,
+      "freq":[
+        0.0,
+        0.0,
+        1.0
+      ],
+      "gene_name":"rpoB",
+      "gene_product":"RNA polymerase subunit beta",
+      "aa_ref_seq":"H",
+      "aa_new_seq":"L",
+      "aa_pos":1237.0,
+      "gene_pos":"3710",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"CAC",
+      "label":"rpoB H1237L",
+      "last_freq":1.0,
+      "Pop":5
+    },
+    {
+      "position":4640112,
+      "freq":[
+        0.0,
+        0.0,
+        0.18
+      ],
+      "gene_name":"arcA",
+      "gene_product":"DNA-binding transcriptional dual regulator ArcA",
+      "aa_ref_seq":"L",
+      "aa_new_seq":"F",
+      "aa_pos":65.0,
+      "gene_pos":"195",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"G",
+      "codon_ref_seq":"TTA",
+      "label":"arcA L65F",
+      "last_freq":0.18,
+      "Pop":5
+    },
+    {
+      "position":2339179,
+      "freq":[
+        0.0,
+        0.0,
+        1.0
+      ],
+      "gene_name":"gyrA",
+      "gene_product":"DNA gyrase subunit A",
+      "aa_ref_seq":"G",
+      "aa_new_seq":"D",
+      "aa_pos":81.0,
+      "gene_pos":"242",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"GGT",
+      "label":"gyrA G81D",
+      "last_freq":1.0,
+      "Pop":6
+    },
+    {
+      "position":4184434,
+      "freq":[
+        0.0,
+        0.0,
+        1.0
+      ],
+      "gene_name":"rpoB",
+      "gene_product":"RNA polymerase subunit beta",
+      "aa_ref_seq":"D",
+      "aa_new_seq":"N",
+      "aa_pos":1064.0,
+      "gene_pos":"3190",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"GAC",
+      "label":"rpoB D1064N",
+      "last_freq":1.0,
+      "Pop":6
+    },
+    {
+      "position":759127,
+      "freq":[
+        0.0,
+        0.0,
+        0.31
+      ],
+      "gene_name":"sucA",
+      "gene_product":"subunit of E1(0) component of 2-oxoglutarate dehydrogenase",
+      "aa_ref_seq":"V",
+      "aa_new_seq":"A",
+      "aa_pos":141.0,
+      "gene_pos":"422",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"C",
+      "codon_ref_seq":"GTC",
+      "label":"sucA V141A",
+      "last_freq":0.31,
+      "Pop":7
+    },
+    {
+      "position":915226,
+      "freq":[
+        0.0,
+        0.12,
+        0.0
+      ],
+      "gene_name":"lysO\/aqpZ",
+      "gene_product":"L-lysine\/thialysine exporter\/water channel AqpZ",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"intergenic (-369\/+126)",
+      "mut_cat":"snp_intergenic",
+      "new_seq":"C",
+      "codon_ref_seq":null,
+      "label":"lysO\/aqpZ snp_intergenic",
+      "last_freq":0.0,
+      "Pop":7
+    },
+    {
+      "position":1196220,
+      "freq":[
+        0.0,
+        0.0,
+        1.0
+      ],
+      "gene_name":"icd",
+      "gene_product":"isocitrate dehydrogenase",
+      "aa_ref_seq":"H",
+      "aa_new_seq":"H",
+      "aa_pos":366.0,
+      "gene_pos":"1098",
+      "mut_cat":"snp_synonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"CAC",
+      "label":"icd H366H",
+      "last_freq":1.0,
+      "Pop":7
+    },
+    {
+      "position":2339173,
+      "freq":[
+        0.0,
+        0.07,
+        1.0
+      ],
+      "gene_name":"gyrA",
+      "gene_product":"DNA gyrase subunit A",
+      "aa_ref_seq":"S",
+      "aa_new_seq":"L",
+      "aa_pos":83.0,
+      "gene_pos":"248",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"TCG",
+      "label":"gyrA S83L",
+      "last_freq":1.0,
+      "Pop":7
+    },
+    {
+      "position":3054894,
+      "freq":[
+        0.0,
+        0.0,
+        0.19
+      ],
+      "gene_name":"ygfB",
+      "gene_product":"PF03695 family protein YgfB",
+      "aa_ref_seq":"P",
+      "aa_new_seq":"Q",
+      "aa_pos":184.0,
+      "gene_pos":"551",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"CCA",
+      "label":"ygfB P184Q",
+      "last_freq":0.19,
+      "Pop":7
+    },
+    {
+      "position":3758381,
+      "freq":[
+        0.0,
+        0.0,
+        0.11
+      ],
+      "gene_name":"selB",
+      "gene_product":"selenocysteyl-tRNA-specific translation elongation factor",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"coding (1481\/1845 nt)",
+      "mut_cat":"small_indel",
+      "new_seq":"T",
+      "codon_ref_seq":null,
+      "label":"selB small_indel",
+      "last_freq":0.11,
+      "Pop":7
+    },
+    {
+      "position":3862562,
+      "freq":[
+        0.0,
+        0.0,
+        0.94
+      ],
+      "gene_name":"glvC",
+      "gene_product":"putative PTS enzyme II component GlvC",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"coding (1042\/1107 nt)",
+      "mut_cat":"small_indel",
+      "new_seq":null,
+      "codon_ref_seq":null,
+      "label":"glvC small_indel",
+      "last_freq":0.94,
+      "Pop":7
+    },
+    {
+      "position":4033698,
+      "freq":[
+        0.0,
+        0.0,
+        1.0
+      ],
+      "gene_name":"trkH",
+      "gene_product":"K(+) transporter TrkH",
+      "aa_ref_seq":"L",
+      "aa_new_seq":"Q",
+      "aa_pos":185.0,
+      "gene_pos":"554",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"CTG",
+      "label":"trkH L185Q",
+      "last_freq":1.0,
+      "Pop":7
+    },
+    {
+      "position":4296060,
+      "freq":[
+        0.0,
+        0.23,
+        0.18
+      ],
+      "gene_name":"gltP\/yjcO",
+      "gene_product":"glutamate\/aspartate : H(+) symporter GltP\/Sel1 repeat-containing protein YjcO",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"intergenic (+266\/+376)",
+      "mut_cat":"snp_intergenic",
+      "new_seq":"T",
+      "codon_ref_seq":null,
+      "label":"gltP\/yjcO snp_intergenic",
+      "last_freq":0.18,
+      "Pop":7
+    },
+    {
+      "position":4542020,
+      "freq":[
+        0.0,
+        0.0,
+        0.13
+      ],
+      "gene_name":"fimB\/fimE",
+      "gene_product":"Type 1 fimbriae regulatory protein FimB\/regulator for fimA",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"intergenic (+461\/-14)",
+      "mut_cat":"mobile_element_insertion",
+      "new_seq":null,
+      "codon_ref_seq":null,
+      "label":"fimB\/fimE mobile_element_insertion",
+      "last_freq":0.13,
+      "Pop":7
+    },
+    {
+      "position":822959,
+      "freq":[
+        0.0,
+        0.12,
+        0.0
+      ],
+      "gene_name":"clsB",
+      "gene_product":"cardiolipin synthase B",
+      "aa_ref_seq":"P",
+      "aa_new_seq":"S",
+      "aa_pos":261.0,
+      "gene_pos":"781",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"CCG",
+      "label":"clsB P261S",
+      "last_freq":0.0,
+      "Pop":8
+    },
+    {
+      "position":1196220,
+      "freq":[
+        0.0,
+        0.0,
+        1.0
+      ],
+      "gene_name":"icd",
+      "gene_product":"isocitrate dehydrogenase",
+      "aa_ref_seq":"H",
+      "aa_new_seq":"H",
+      "aa_pos":366.0,
+      "gene_pos":"1098",
+      "mut_cat":"snp_synonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"CAC",
+      "label":"icd H366H",
+      "last_freq":1.0,
+      "Pop":8
+    },
+    {
+      "position":2311562,
+      "freq":[
+        0.0,
+        0.0,
+        0.13
+      ],
+      "gene_name":"ftp\/ompC",
+      "gene_product":"FAD:protein FMN transferase\/outer membrane porin C",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"intergenic (-28\/+84)",
+      "mut_cat":"snp_intergenic",
+      "new_seq":"A",
+      "codon_ref_seq":null,
+      "label":"ftp\/ompC snp_intergenic",
+      "last_freq":0.13,
+      "Pop":8
+    },
+    {
+      "position":2339173,
+      "freq":[
+        0.0,
+        0.0,
+        0.74
+      ],
+      "gene_name":"gyrA",
+      "gene_product":"DNA gyrase subunit A",
+      "aa_ref_seq":"S",
+      "aa_new_seq":"W",
+      "aa_pos":83.0,
+      "gene_pos":"248",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"C",
+      "codon_ref_seq":"TCG",
+      "label":"gyrA S83W",
+      "last_freq":0.74,
+      "Pop":8
+    },
+    {
+      "position":3352254,
+      "freq":[
+        0.0,
+        0.0,
+        0.69
+      ],
+      "gene_name":"arcB",
+      "gene_product":"sensor histidine kinase ArcB",
+      "aa_ref_seq":"G",
+      "aa_new_seq":"C",
+      "aa_pos":258.0,
+      "gene_pos":"772",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"GGT",
+      "label":"arcB G258C",
+      "last_freq":0.69,
+      "Pop":8
+    },
+    {
+      "position":4184954,
+      "freq":[
+        0.0,
+        0.0,
+        1.0
+      ],
+      "gene_name":"rpoB",
+      "gene_product":"RNA polymerase subunit beta",
+      "aa_ref_seq":"H",
+      "aa_new_seq":"L",
+      "aa_pos":1237.0,
+      "gene_pos":"3710",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"CAC",
+      "label":"rpoB H1237L",
+      "last_freq":1.0,
+      "Pop":8
+    },
+    {
+      "position":1230269,
+      "freq":[
+        0.0,
+        0.0,
+        0.1
+      ],
+      "gene_name":"hlyE",
+      "gene_product":"hemolysin E",
+      "aa_ref_seq":"E",
+      "aa_new_seq":"D",
+      "aa_pos":42.0,
+      "gene_pos":"126",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"GAA",
+      "label":"hlyE E42D",
+      "last_freq":0.1,
+      "Pop":9
+    },
+    {
+      "position":2339173,
+      "freq":[
+        0.0,
+        0.0,
+        1.0
+      ],
+      "gene_name":"gyrA",
+      "gene_product":"DNA gyrase subunit A",
+      "aa_ref_seq":"S",
+      "aa_new_seq":"W",
+      "aa_pos":83.0,
+      "gene_pos":"248",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"C",
+      "codon_ref_seq":"TCG",
+      "label":"gyrA S83W",
+      "last_freq":1.0,
+      "Pop":9
+    },
+    {
+      "position":2562049,
+      "freq":[
+        0.0,
+        0.0,
+        0.1
+      ],
+      "gene_name":"yffN\/yffO",
+      "gene_product":"uncharacterized protein YffN\/uncharacterized protein YffO",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"intergenic (+56\/-62)",
+      "mut_cat":"snp_intergenic",
+      "new_seq":"C",
+      "codon_ref_seq":null,
+      "label":"yffN\/yffO snp_intergenic",
+      "last_freq":0.1,
+      "Pop":9
+    },
+    {
+      "position":4182858,
+      "freq":[
+        0.0,
+        0.0,
+        1.0
+      ],
+      "gene_name":"rpoB",
+      "gene_product":"RNA polymerase subunit beta",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"coding (1614-1625\/4029 nt)",
+      "mut_cat":"small_indel",
+      "new_seq":null,
+      "codon_ref_seq":null,
+      "label":"rpoB small_indel",
+      "last_freq":1.0,
+      "Pop":9
+    },
+    {
+      "position":2339173,
+      "freq":[
+        0.0,
+        0.0,
+        0.91
+      ],
+      "gene_name":"gyrA",
+      "gene_product":"DNA gyrase subunit A",
+      "aa_ref_seq":"S",
+      "aa_new_seq":"L",
+      "aa_pos":83.0,
+      "gene_pos":"248",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"TCG",
+      "label":"gyrA S83L",
+      "last_freq":0.91,
+      "Pop":10
+    },
+    {
+      "position":2755863,
+      "freq":[
+        0.0,
+        0.11,
+        0.0
+      ],
+      "gene_name":"ssrA",
+      "gene_product":"tmRNA",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"noncoding (271\/363 nt)",
+      "mut_cat":"snp_noncoding",
+      "new_seq":"A",
+      "codon_ref_seq":null,
+      "label":"ssrA snp_noncoding",
+      "last_freq":0.0,
+      "Pop":10
+    },
+    {
+      "position":3054894,
+      "freq":[
+        0.0,
+        0.2,
+        0.0
+      ],
+      "gene_name":"ygfB",
+      "gene_product":"PF03695 family protein YgfB",
+      "aa_ref_seq":"P",
+      "aa_new_seq":"Q",
+      "aa_pos":184.0,
+      "gene_pos":"551",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"CCA",
+      "label":"ygfB P184Q",
+      "last_freq":0.0,
+      "Pop":10
+    },
+    {
+      "position":4182930,
+      "freq":[
+        0.0,
+        0.0,
+        0.83
+      ],
+      "gene_name":"rpoB",
+      "gene_product":"RNA polymerase subunit beta",
+      "aa_ref_seq":"E",
+      "aa_new_seq":"D",
+      "aa_pos":562.0,
+      "gene_pos":"1686",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"C",
+      "codon_ref_seq":"GAA",
+      "label":"rpoB E562D",
+      "last_freq":0.83,
+      "Pop":10
+    }
+  ]
+}

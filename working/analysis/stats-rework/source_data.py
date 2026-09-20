@@ -53,12 +53,13 @@ def block(ws, title, table, source, note=''):
 
 
 def notebook_table(rel):
-    index = json.loads((ROOT / 'data/genomics/recovered_tables/index.json').read_text())
-    item = index.get(rel)
-    if item is None:
-        return None
-    table = pd.read_json(ROOT / item['file'], orient='table')
-    return item['complete'], len(table), item['cell'], item['expected'], table
+    genomic_repo = ROOT
+    index = json.loads((genomic_repo / 'data/genomics/generated_tables/index.json').read_text())
+    item = index[rel]
+    table = pd.read_json(genomic_repo / item['file'], orient='table', precise_float=True)
+    if len(table) != item['rows']:
+        raise ValueError(f"Genomic table row count differs: {rel}")
+    return table, item
 
 
 def main():
@@ -143,15 +144,12 @@ def main():
         for source in rows.source.unique():
             result = recovered.setdefault(source, notebook_table(source))
             panels = ','.join(rows[rows.source == source].panel)
-            if result:
-                complete, n, cell, expected, table = result
-                note = f'Saved notebook cell {cell}; {n}/{expected} rows recovered. '
-                note += 'Complete displayed table.' if complete else 'Partial table: the full source table is required for figure regeneration.'
-                block(ws, f'Panel {panels}: saved mutation-frequency table', table, source, note)
-            else:
-                block(ws, f'Panel {panels}: mutation source-data dependency',
-                      pd.DataFrame({'status':['Full numeric table not saved in the local notebook outputs']}), source,
-                      'The full numerical table is unavailable; the source notebook is included.')
+            table, item = result
+            note = (f"Regenerated from mutation-call TSVs using notebook cells {item['cells']}; "
+                    f"{len(table)} rows. Original two-decimal frequency rounding retained; "
+                    "full-precision calls and input hashes are in the Lyon_2026 repository.")
+            block(ws, f'Panel {panels}: regenerated mutation-frequency table', table,
+                  item['file'] + '; notebook: ' + source, note)
 
     tables = json.loads(SOURCE.read_text())
     for i, rows in enumerate(tables, 1):
@@ -167,7 +165,7 @@ def main():
         block(wb['Sensitivity'], filename, pd.read_csv(HERE / 'out' / filename), 'out/' + filename,
               'Sensitivity p-values identify their family. Fit-perturbation bounds are empirical sensitivity ranges.')
     block(wb['Read me'], 'Source Data', manifest, 'out/panel_manifest.csv',
-          'Conditional MDK records and genomic/single-cell source-data gaps are identified in their sheets. '
+          'Conditional MDK records and single-cell source-data gaps are identified in their sheets. Genomic tables are regenerated from the supplied mutation calls. '
           'One sheet per figure; full-precision numerical cells and source paths retained.')
     for ws in wb:
         ws.freeze_panes = 'C6'
@@ -180,6 +178,24 @@ def main():
         ws.page_setup.paperSize = ws.PAPERSIZE_A3
         ws.page_setup.fitToWidth = 1
         ws.page_setup.fitToHeight = 0
+    # Full annotations are longer than notebook display snippets. Wrap the new
+    # genomic blocks without changing the layout of preceding source records.
+    import math
+    from openpyxl.utils import get_column_letter
+    for entry in COVERAGE:
+        if 'regenerated mutation-frequency table' not in entry['block']:
+            continue
+        ws = wb[entry['sheet']]
+        first = entry['first_data_row']
+        ws.row_dimensions[first - 1].height = 30
+        for row in ws.iter_rows(min_row=first, max_row=first + entry['rows'] - 1):
+            lines = 1
+            for cell in row:
+                cell.alignment = Alignment(wrap_text=True, vertical='top')
+                if isinstance(cell.value, str):
+                    width = ws.column_dimensions[get_column_letter(cell.column)].width
+                    lines = max(lines, math.ceil(len(cell.value) / (width * 0.9)))
+            ws.row_dimensions[row[0].row].height = min(409, 14 * lines + 4)
     file = DEST / 'Source Data.xlsx'
     wb.save(file)
     check = load_workbook(file, data_only=False, read_only=False)

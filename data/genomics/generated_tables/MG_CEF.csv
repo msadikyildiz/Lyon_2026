@@ -1,0 +1,81 @@
+position,freq,gene_name,gene_product,aa_ref_seq,aa_new_seq,aa_pos,gene_pos,mut_cat,new_seq,codon_ref_seq,label,Pop,last_freq
+1904774,"[0.0, 0.1]",manZ/yobD,mannose-specific PTS enzyme IID component/DUF986 domain-containing inner membrane protein YobD,,,,intergenic (+28/-27),snp_intergenic,T,,manZ/yobD snp_intergenic,1,0.1
+3269943,"[0.0, 0.11]",yhaC/rnpB,uncharacterized protein YhaC/RNase P catalytic RNA component,,,,intergenic (+341/+273),snp_intergenic,T,,yhaC/rnpB snp_intergenic,1,0.11
+3638193,"[0.0, 0.15]",pitA,metal phosphate:H(+) symporter PitA,T,T,184.0,552,snp_synonymous,A,ACC,pitA T184T,1,0.15
+3817494,"[0.0, 0.56]",yicC,putative RNase adaptor protein YicC,,,,coding (819-823/864 nt),mobile_element_insertion,,,yicC mobile_element_insertion,1,0.56
+4001648,"[0.0, 0.53]",corA,Ni(2(+))/Co(2(+))/Mg(2(+)) transporter,H,N,75.0,223,snp_nonsynonymous,A,CAC,corA H75N,1,0.53
+4220007,"[0.0, 0.12]",aceK,isocitrate dehydrogenase kinase/phosphatase,V,G,471.0,1412,snp_nonsynonymous,G,GTG,aceK V471G,1,0.12
+4467491,"[0.0, 0.36]",mgtL/mgtA,leader peptide MgtL/Mg(2(+)) importing P-type ATPase,,,,intergenic (+7/-102),small_indel,,,mgtL/mgtA small_indel,1,0.36
+1645740,"[0.0, 1.0]",relB,antitoxin/DNA-binding transcriptional repressor RelB,P,S,45.0,133,snp_nonsynonymous,A,CCG,relB P45S,2,1.0
+2566930,"[0.0, 0.16]",eutH,putative ethanolamine permease EutH,P,Q,393.0,1178,snp_nonsynonymous,T,CCA,eutH P393Q,2,0.16
+3054894,"[0.0, 0.1]",ygfB,PF03695 family protein YgfB,P,Q,184.0,551,snp_nonsynonymous,T,CCA,ygfB P184Q,2,0.1
+3638193,"[0.0, 0.11]",pitA,metal phosphate:H(+) symporter PitA,T,T,184.0,552,snp_synonymous,A,ACC,pitA T184T,2,0.11
+4220007,"[0.0, 0.16]",aceK,isocitrate dehydrogenase kinase/phosphatase,V,G,471.0,1412,snp_nonsynonymous,G,GTG,aceK V471G,2,0.16
+6302,"[0.0, 0.16]",yaaA,DNA binding and peroxide stress response protein YaaA,S,I,53,158,snp_nonsynonymous,A,AGC,yaaA S53I,3,0.16
+166833,"[0.0, 1.0]",mrcB|mrcB,peptidoglycan glycosyltransferase/peptidoglycan DD-transpeptidase MrcB|PBP1Bgamma,T|T,S|S,702|657,2104|1969,snp_nonsynonymous|nonsynonymous,T,ACC|ACC,mrcB|mrcB T|T702|657S|S,3,1.0
+631067,"[0.0, 0.16]",cstA,pyruvate transporter CstA,A,S,392,1174,snp_nonsynonymous,T,GCC,cstA A392S,3,0.16
+1087565,"[0.0, 0.14]",pgaC,poly-N-acetyl-D-glucosamine synthase subunit PgaC,I,I,94,282,snp_synonymous,G,ATA,pgaC I94I,3,0.14
+1087606,"[0.0, 0.11]",pgaC,poly-N-acetyl-D-glucosamine synthase subunit PgaC,I,L,81,241,snp_nonsynonymous,G,ATT,pgaC I81L,3,0.11
+1189662,"[0.0, 1.0]",phoQ,sensor histidine kinase PhoQ,G,C,39,115,snp_nonsynonymous,A,GGT,phoQ G39C,3,1.0
+1400594,"[0.0, 0.18]",abgT,p-aminobenzoyl glutamate:H(+) symporter,L,F,394,1180,snp_nonsynonymous,A,CTT,abgT L394F,3,0.18
+2411241,"[0.0, 0.12]",yfbS,putative transporter YfbS,A,S,38,112,snp_nonsynonymous,A,GCA,yfbS A38S,3,0.12
+3054894,"[0.0, 0.1]",ygfB,PF03695 family protein YgfB,P,Q,184,551,snp_nonsynonymous,T,CCA,ygfB P184Q,3,0.1
+3638193,"[0.0, 0.1]",pitA,metal phosphate:H(+) symporter PitA,T,T,184,552,snp_synonymous,A,ACC,pitA T184T,3,0.1
+4088086,"[0.0, 0.1]",yiiG/frvR,DUF3829 domain-containing lipoprotein YiiG/putative DNA-binding transcriptional regulator FrvR,,,,intergenic (+29/+21),snp_intergenic,G,,yiiG/frvR snp_intergenic,3,0.1
+4439045,"[0.0, 0.14]",ytfJ,PF09695 family protein YtfJ,A,E,73,218,snp_nonsynonymous,T,GCA,ytfJ A73E,3,0.14
+61619,"[0.0, 0.11]",rapA,RNA polymerase-binding ATPase and RNAP recycling factor,W,*,549.0,1646,snp_nonsense,T,TGG,rapA W549*,4,0.11
+1188509,"[0.0, 0.47]",phoQ,sensor histidine kinase PhoQ,,,,coding (1265-1268/1461 nt),mobile_element_insertion,,,phoQ IS2 insertion,4,0.47
+1189637,"[0.0, 0.34]",phoQ,sensor histidine kinase PhoQ,,,,coding (136-140/1461 nt),mobile_element_insertion,,,phoQ IS5 insertion,4,0.34
+1261649,"[0.0, 0.77]",prs,ribose-phosphate diphosphokinase,A,V,76.0,227,snp_nonsynonymous,A,GCC,prs A76V,4,0.77
+2736240,"[0.0, 0.1]",bamD,outer membrane protein assembly factor BamD,P,Q,32.0,95,snp_nonsynonymous,A,CCA,bamD P32Q,4,0.1
+3054894,"[0.0, 0.13]",ygfB,PF03695 family protein YgfB,P,Q,184.0,551,snp_nonsynonymous,T,CCA,ygfB P184Q,4,0.13
+847955,"[0.0, 0.29]",glnH,L-glutamine ABC transporter periplasmic binding protein,A,V,17.0,50,snp_nonsynonymous,A,GCG,glnH A17V,5,0.29
+1261535,"[0.0, 1.0]",prs,ribose-phosphate diphosphokinase,A,V,114.0,341,snp_nonsynonymous,A,GCA,prs A114V,5,1.0
+1261845,"[0.0, 0.19]",prs,ribose-phosphate diphosphokinase,A,S,11.0,31,snp_nonsynonymous,A,GCC,prs A11S,5,0.19
+2566930,"[0.0, 0.16]",eutH,putative ethanolamine permease EutH,P,Q,393.0,1178,snp_nonsynonymous,T,CCA,eutH P393Q,5,0.16
+2751428,"[0.0, 0.18]",nadK,NAD kinase,T,P,200.0,598,snp_nonsynonymous,C,ACC,nadK T200P,5,0.18
+3269943,"[0.0, 0.12]",yhaC/rnpB,uncharacterized protein YhaC/RNase P catalytic RNA component,,,,intergenic (+341/+273),snp_intergenic,T,,yhaC/rnpB snp_intergenic,5,0.12
+4001574,"[0.0, 0.18]",corA,Ni(2(+))/Co(2(+))/Mg(2(+)) transporter,L,Q,50.0,149,snp_nonsynonymous,A,CTG,corA L50Q,5,0.18
+4227771,"[0.0, 0.68]",yjbB,putative inorganic phosphate export protein YjbB,L,Q,14.0,41,snp_nonsynonymous,A,CTG,yjbB L14Q,5,0.68
+88080,"[0.0, 0.25]",cra,DNA-binding transcriptional dual regulator Cra,S,N,18.0,53,snp_nonsynonymous,A,AGC,cra S18N,6,0.25
+275203,"[0.0, 0.12]",insH1/mmuP,IS5 family transposase and trans-activator/S-methyl-L-methionine transporter,,,,intergenic (-122/-122),snp_intergenic,A,,insH1/mmuP snp_intergenic,6,0.12
+555503,"[0.0, 0.21]",cysS,cysteine--tRNA ligase,Y,S,298.0,893,snp_nonsynonymous,C,TAT,cysS Y298S,6,0.21
+631067,"[0.0, 0.15]",cstA,pyruvate transporter CstA,A,S,392.0,1174,snp_nonsynonymous,T,GCC,cstA A392S,6,0.15
+1087606,"[0.0, 0.13]",pgaC,poly-N-acetyl-D-glucosamine synthase subunit PgaC,I,L,81.0,241,snp_nonsynonymous,G,ATT,pgaC I81L,6,0.13
+1261535,"[0.0, 0.68]",prs,ribose-phosphate diphosphokinase,A,V,114.0,341,snp_nonsynonymous,A,GCA,prs A114V,6,0.68
+1261845,"[0.0, 0.19]",prs,ribose-phosphate diphosphokinase,A,S,11.0,31,snp_nonsynonymous,A,GCC,prs A11S,6,0.19
+1428767,"[0.0, 0.12]",insH5/lomR,IS5 family transposase and trans-activator/Rac prophage; protein LomR_1,,,,intergenic (-41/-29),snp_intergenic,C,,insH5/lomR snp_intergenic,6,0.12
+1904774,"[0.0, 0.1]",manZ/yobD,mannose-specific PTS enzyme IID component/DUF986 domain-containing inner membrane protein YobD,,,,intergenic (+28/-27),snp_intergenic,T,,manZ/yobD snp_intergenic,6,0.1
+2751428,"[0.0, 0.18]",nadK,NAD kinase,T,P,200.0,598,snp_nonsynonymous,C,ACC,nadK T200P,6,0.18
+3054894,"[0.0, 0.12]",ygfB,PF03695 family protein YgfB,P,Q,184.0,551,snp_nonsynonymous,T,CCA,ygfB P184Q,6,0.12
+3491706,"[0.0, 0.14]",yhfG/ppiA,DUF2559 domain-containing protein YhfG/peptidyl-prolyl cis-trans isomerase A,,,,intergenic (-86/+19),snp_intergenic,G,,yhfG/ppiA snp_intergenic,6,0.14
+3544172,"[0.0, 0.1]",bioH,pimeloyl-acyl carrier protein methyl ester esterase,S,C,225.0,673,snp_nonsynonymous,A,AGC,bioH S225C,6,0.1
+3794967,"[0.0, 0.23]",waaF,ADP-heptose--LPS heptosyltransferase 2,D,E,13.0,39,snp_nonsynonymous,A,GAC,waaF D13E,6,0.23
+4001574,"[0.0, 0.21]",corA,Ni(2(+))/Co(2(+))/Mg(2(+)) transporter,L,Q,50.0,149,snp_nonsynonymous,A,CTG,corA L50Q,6,0.21
+4227771,"[0.0, 0.17]",yjbB,putative inorganic phosphate export protein YjbB,L,Q,14.0,41,snp_nonsynonymous,A,CTG,yjbB L14Q,6,0.17
+6305,"[0.0, 0.13]",yaaA,DNA binding and peroxide stress response protein YaaA,I,T,52.0,155,snp_nonsynonymous,G,ATC,yaaA I52T,7,0.13
+847955,"[0.0, 0.22]",glnH,L-glutamine ABC transporter periplasmic binding protein,A,V,17.0,50,snp_nonsynonymous,A,GCG,glnH A17V,7,0.22
+1189699,"[0.0, 0.44]",phoQ,sensor histidine kinase PhoQ,,,,coding (78/1461 nt),small_indel,AGCACC,,phoQ small_indel,7,0.44
+1190248,"[0.0, 0.16]",phoP,DNA-binding transcriptional dual regulator PhoP,R,H,67.0,200,snp_nonsynonymous,T,CGT,phoP R67H,7,0.16
+1261649,"[0.0, 0.21]",prs,ribose-phosphate diphosphokinase,A,V,76.0,227,snp_nonsynonymous,A,GCC,prs A76V,7,0.21
+1904774,"[0.0, 0.11]",manZ/yobD,mannose-specific PTS enzyme IID component/DUF986 domain-containing inner membrane protein YobD,,,,intergenic (+28/-27),snp_intergenic,T,,manZ/yobD snp_intergenic,7,0.11
+3491701,"[0.0, 0.1]",yhfG/ppiA,DUF2559 domain-containing protein YhfG/peptidyl-prolyl cis-trans isomerase A,,,,intergenic (-81/+24),snp_intergenic,A,,yhfG/ppiA snp_intergenic,7,0.1
+4220007,"[0.0, 0.14]",aceK,isocitrate dehydrogenase kinase/phosphatase,V,G,471.0,1412,snp_nonsynonymous,G,GTG,aceK V471G,7,0.14
+4409451,"[0.0, 0.1]",rlmB,23S rRNA 2'-O-ribose G2251 methyltransferase,D,E,59.0,177,snp_nonsynonymous,A,GAC,rlmB D59E,7,0.1
+555503,"[0.0, 1.0]",cysS,cysteine--tRNA ligase,Y,S,298.0,893,snp_nonsynonymous,C,TAT,cysS Y298S,8,1.0
+1619100,"[0.0, 0.13]",marC/marR,inner membrane protein MarC/DNA-binding transcriptional repressor MarR,,,,intergenic (-192/-1),small_indel,,,marC/marR small_indel,8,0.13
+1619397,"[0.0, 0.18]",marR,DNA-binding transcriptional repressor MarR,,,,coding (278/435 nt),small_indel,,,marR small_indel,8,0.18
+1619468,"[0.0, 0.13]",marR,DNA-binding transcriptional repressor MarR,Q,*,117.0,349,snp_nonsense,T,CAG,marR Q117*,8,0.13
+3638193,"[0.0, 0.13]",pitA,metal phosphate:H(+) symporter PitA,T,T,184.0,552,snp_synonymous,A,ACC,pitA T184T,8,0.13
+3794967,"[0.0, 1.0]",waaF,ADP-heptose--LPS heptosyltransferase 2,D,E,13.0,39,snp_nonsynonymous,A,GAC,waaF D13E,8,1.0
+4220007,"[0.0, 0.15]",aceK,isocitrate dehydrogenase kinase/phosphatase,V,G,471.0,1412,snp_nonsynonymous,G,GTG,aceK V471G,8,0.15
+1087565,"[0.0, 0.15]",pgaC,poly-N-acetyl-D-glucosamine synthase subunit PgaC,I,I,94.0,282,snp_synonymous,G,ATA,pgaC I94I,9,0.15
+1798903,"[0.0, 1.0]",pheS,phenylalanine--tRNA ligase subunit alpha,A,P,14.0,40,snp_nonsynonymous,G,GCC,pheS A14P,9,1.0
+3054894,"[0.0, 0.16]",ygfB,PF03695 family protein YgfB,P,Q,184.0,551,snp_nonsynonymous,T,CCA,ygfB P184Q,9,0.16
+6305,"[0.0, 0.11]",yaaA,DNA binding and peroxide stress response protein YaaA,I,T,52.0,155,snp_nonsynonymous,G,ATC,yaaA I52T,10,0.11
+500131,"[0.0, 0.11]",gsk,inosine/guanosine kinase,F,I,3.0,7,snp_nonsynonymous,A,TTT,gsk F3I,10,0.11
+1261424,"[0.0, 0.83]",prs,ribose-phosphate diphosphokinase,I,T,151.0,452,snp_nonsynonymous,G,ATC,prs I151T,10,0.83
+1261641,"[0.0, 1.0]",prs,ribose-phosphate diphosphokinase,R,C,79.0,235,snp_nonsynonymous,A,CGT,prs R79C,10,1.0
+1622808,"[0.0, 0.13]",mgtT,protein MgtT,Y,S,23.0,68,snp_nonsynonymous,C,TAT,mgtT Y23S,10,0.13
+3331544,"[0.0, 0.11]",obgE,GTPase ObgE,Q,K,71.0,211,snp_nonsynonymous,T,CAG,obgE Q71K,10,0.11
+3934246,"[0.0, 0.78]",rbsA,ribose ABC transporter ATP binding subunit,S,R,157.0,469,snp_nonsynonymous,C,AGC,rbsA S157R,10,0.78

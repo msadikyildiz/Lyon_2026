@@ -1,0 +1,119 @@
+{
+  "status": "passed",
+  "mutation_input_files": 149,
+  "processed_exports_matched": [
+    {
+      "file": "data/processed/traced_alleles/ATEC-C/ATEC-C-R_01.csv",
+      "rows_matched": 22
+    },
+    {
+      "file": "data/processed/traced_alleles/ATEC-C/ATEC-C_01.csv",
+      "rows_matched": 10
+    },
+    {
+      "file": "data/processed/traced_alleles/ATEC-C/ATEC-C_02.csv",
+      "rows_matched": 11
+    },
+    {
+      "file": "data/processed/traced_alleles/ATEC-C/ATEC-C_03.csv",
+      "rows_matched": 9
+    },
+    {
+      "file": "data/processed/traced_alleles/ATEC-C/ATEC-C_04.csv",
+      "rows_matched": 11
+    },
+    {
+      "file": "data/processed/traced_alleles/ATEC-C/ATEC-C_05.csv",
+      "rows_matched": 7
+    },
+    {
+      "file": "data/processed/traced_alleles/ATEC-C/ATEC-C_06.csv",
+      "rows_matched": 13
+    },
+    {
+      "file": "data/processed/traced_alleles/PLAC/PLAC_01.csv",
+      "rows_matched": 61
+    },
+    {
+      "file": "data/processed/traced_alleles/PLAC/PLAC_02.csv",
+      "rows_matched": 120
+    },
+    {
+      "file": "data/processed/traced_alleles/PLAC/PLAC_03.csv",
+      "rows_matched": 107
+    },
+    {
+      "file": "data/processed/traced_alleles/PLAC/PLAC_04.csv",
+      "rows_matched": 36
+    },
+    {
+      "file": "data/processed/traced_alleles/PLAC/PLAC_05.csv",
+      "rows_matched": 40
+    },
+    {
+      "file": "data/processed/traced_alleles/PLAC/PLAC_06.csv",
+      "rows_matched": 33
+    },
+    {
+      "file": "data/processed/traced_alleles/PLAC/PLAC_07.csv",
+      "rows_matched": 36
+    },
+    {
+      "file": "data/processed/traced_alleles/PLAC/PLAC_08.csv",
+      "rows_matched": 99
+    },
+    {
+      "file": "data/processed/traced_alleles/PLAC/PLAC_09.csv",
+      "rows_matched": 44
+    },
+    {
+      "file": "data/processed/traced_alleles/PLAC/PLAC_10.csv",
+      "rows_matched": 36
+    }
+  ],
+  "archive_sha256": "7b008bb74f4b24d21f999af625ddf7e62192a9e773aaf59de37d44993e7e499d",
+  "saved_display_comparisons": [
+    {
+      "dataset": "MG_AMI",
+      "saved_rows_matched": 43,
+      "regenerated_rows": 43
+    },
+    {
+      "dataset": "MG_LEV",
+      "saved_rows_matched": 64,
+      "regenerated_rows": 64
+    },
+    {
+      "dataset": "MG_CEF",
+      "saved_rows_matched": 80,
+      "regenerated_rows": 80
+    },
+    {
+      "dataset": "MG_CEF_R",
+      "saved_rows_matched": 56,
+      "regenerated_rows": 56
+    },
+    {
+      "dataset": "PbEc_CEF",
+      "saved_rows_matched": 50,
+      "regenerated_rows": 83
+    },
+    {
+      "dataset": "MG_untreated",
+      "saved_rows_matched": 38,
+      "regenerated_rows": 38
+    }
+  ],
+  "row_counts": {
+    "MG_AMI": 43,
+    "MG_LEV": 64,
+    "MG_CEF": 80,
+    "MG_CEF_R": 56,
+    "PbEc_CEF": 83,
+    "MG_untreated": 38,
+    "PLAC": 601,
+    "combined_lineages": 963
+  },
+  "comparison_rules": "Mutation keys exact; numeric tolerance 1e-12; saved display prefixes and empty-field formatting normalized. Original notebook frequency rounding retained.",
+  "inputs_unchanged": true
+}

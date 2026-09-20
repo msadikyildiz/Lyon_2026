@@ -1,0 +1,186 @@
+{
+  "working/figures/Figure 2/F-H heatmaps/05-PA.ipynb": {
+    "file": "data/genomics/generated_tables/MG_AMI.json",
+    "complete": true,
+    "rows": 43,
+    "cells": [
+      0,
+      1,
+      3,
+      5,
+      6,
+      9
+    ],
+    "notebook_sha256": "5877939e745d7e5384d9b76c48212df5fe31cf06cd8066566d5ba75e0527ecfa"
+  },
+  "working/figures/Figure 2/F-H heatmaps/07-PL.ipynb": {
+    "file": "data/genomics/generated_tables/MG_LEV.json",
+    "complete": true,
+    "rows": 64,
+    "cells": [
+      0,
+      1,
+      3,
+      5,
+      6,
+      8,
+      9
+    ],
+    "notebook_sha256": "06667e9ea53675134007c16102e409ace89f3f27d13d07a0f7b9ac4e75eaa7b5"
+  },
+  "working/figures/Figure 2/F-H heatmaps/06-PC.ipynb": {
+    "file": "data/genomics/generated_tables/MG_CEF.json",
+    "complete": true,
+    "rows": 80,
+    "cells": [
+      0,
+      1,
+      3,
+      5,
+      6,
+      8,
+      12
+    ],
+    "notebook_sha256": "9826778463eccb62d5221a5692d9037b495637b253ecbdb505fc922503c478fb"
+  },
+  "working/figures/Supplemental Figure 3 - CefR/E - genetics/08-PCr.ipynb": {
+    "file": "data/genomics/generated_tables/MG_CEF_R.json",
+    "complete": true,
+    "rows": 56,
+    "cells": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "notebook_sha256": "20390dbf9ce6572bc24fae5fea024a3222eef10b7a0c0802e9fee6019f9dda4d"
+  },
+  "working/figures/Supplemental Figure 4 - Pb/F - Mutations/10-ATEC12.ipynb": {
+    "file": "data/genomics/generated_tables/PbEc_CEF.json",
+    "complete": true,
+    "rows": 83,
+    "cells": [
+      0,
+      1,
+      4,
+      7,
+      8,
+      12,
+      14
+    ],
+    "notebook_sha256": "100a1bede59105f16c01db6afe65b93f94b32770493f0ed57c76d2adfc67f304"
+  },
+  "working/figures/Supplemental Figure 6/B - heatmap/05-Punt.ipynb": {
+    "file": "data/genomics/generated_tables/MG_untreated.json",
+    "complete": true,
+    "rows": 38,
+    "cells": [
+      0,
+      1,
+      4,
+      5,
+      6,
+      9
+    ],
+    "notebook_sha256": "948612b06252cd752a5992ad0c053278cbafc7c020d6a463d6dbfba9a767aa6b"
+  },
+  "working/figures/Figure 4/02-PLAC.ipynb": {
+    "file": "data/genomics/generated_tables/PLAC.json",
+    "complete": true,
+    "rows": 601,
+    "cells": [
+      0,
+      1,
+      4,
+      6,
+      9,
+      13,
+      14,
+      27
+    ],
+    "notebook_sha256": "afe2484f9162240d98ee57a3a11cc2f96ddfd68f308db83c9a1d02809b39566a"
+  },
+  "working/figures/Supplemental Figure 9 - big heatmap/13-bigheatmap.ipynb": {
+    "file": "data/genomics/generated_tables/combined_lineages.json",
+    "complete": true,
+    "rows": 963,
+    "cells": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      6,
+      8
+    ],
+    "notebook_sha256": "a1e0a05693d3a354bbdb4e76133d188e367ae4b29a6649de9521ae20ece4e96a"
+  },
+  "working/figures/Supplemental Figure 5 - Extended heatmaps/A/05-PA.ipynb": {
+    "file": "data/genomics/generated_tables/MG_AMI.json",
+    "complete": true,
+    "rows": 43,
+    "cells": [
+      0,
+      1,
+      3,
+      5,
+      6,
+      9
+    ],
+    "notebook_sha256": "c7617a0bdf457716ef2f08ea1203d2865609b5afaef11e2611a19d1be524246b",
+    "executed_notebook": "working/figures/Figure 2/F-H heatmaps/05-PA.ipynb"
+  },
+  "working/figures/Supplemental Figure 5 - Extended heatmaps/B/07-PL.ipynb": {
+    "file": "data/genomics/generated_tables/MG_LEV.json",
+    "complete": true,
+    "rows": 64,
+    "cells": [
+      0,
+      1,
+      3,
+      5,
+      6,
+      8,
+      9
+    ],
+    "notebook_sha256": "5c435c892a5289ca4cb94eff2bed7855defb3f85005b53c355c5493c38bce613",
+    "executed_notebook": "working/figures/Figure 2/F-H heatmaps/07-PL.ipynb"
+  },
+  "working/figures/Supplemental Figure 5 - Extended heatmaps/C/06-PC.ipynb": {
+    "file": "data/genomics/generated_tables/MG_CEF.json",
+    "complete": true,
+    "rows": 80,
+    "cells": [
+      0,
+      1,
+      3,
+      5,
+      6,
+      8,
+      12
+    ],
+    "notebook_sha256": "ebec32b0ec2b0408c2f11faab1d31f2383432b6a8e6d6518c860824e7f08624f",
+    "executed_notebook": "working/figures/Figure 2/F-H heatmaps/06-PC.ipynb"
+  },
+  "working/figures/Supplemental Figure 8 - extended traced alleles/02-PLAC.ipynb": {
+    "file": "data/genomics/generated_tables/PLAC.json",
+    "complete": true,
+    "rows": 601,
+    "cells": [
+      0,
+      1,
+      4,
+      6,
+      9,
+      13,
+      14,
+      27
+    ],
+    "notebook_sha256": "afe2484f9162240d98ee57a3a11cc2f96ddfd68f308db83c9a1d02809b39566a",
+    "executed_notebook": "working/figures/Figure 4/02-PLAC.ipynb"
+  }
+}

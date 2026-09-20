@@ -1,0 +1,65 @@
+position,freq,gene_name,gene_product,aa_ref_seq,aa_new_seq,aa_pos,gene_pos,mut_cat,new_seq,codon_ref_seq,label,last_freq,Pop
+1196220,"[0.0, 0.0, 1.0]",icd,isocitrate dehydrogenase,H,H,366.0,1098,snp_synonymous,T,CAC,icd H366H,1.0,1
+1447641,"[0.0, 0.0, 1.0]",feaB,phenylacetaldehyde dehydrogenase,D,E,41.0,123,snp_nonsynonymous,A,GAT,feaB D41E,1.0,1
+2339179,"[0.0, 0.0, 1.0]",gyrA,DNA gyrase subunit A,G,D,81.0,242,snp_nonsynonymous,T,GGT,gyrA G81D,1.0,1
+4180260,"[0.0, 0.0, 1.0]",rplJ,50S ribosomal subunit protein L10,P,S,89.0,265,snp_nonsynonymous,T,CCG,rplJ P89S,1.0,1
+4184435,"[0.0, 0.0, 1.0]",rpoB,RNA polymerase subunit beta,D,G,1064.0,3191,snp_nonsynonymous,G,GAC,rpoB D1064G,1.0,1
+1359616,"[0.0, 0.0, 0.15]",puuA,glutamate-putrescine ligase,D,D,431.0,1293,snp_synonymous,G,GAT,puuA D431D,0.15,2
+1458984,"[0.0, 0.0, 0.67]",paaG,"putative ring 1,2-epoxyphenylacetyl-CoA isomerase (oxepin-CoA forming)",S,C,241.0,721,snp_nonsynonymous,T,AGC,paaG S241C,0.67,2
+2311594,"[0.0, 0.15, 0.0]",ftp/ompC,FAD:protein FMN transferase/outer membrane porin C,,,,intergenic (-60/+52),snp_intergenic,G,,ftp/ompC snp_intergenic,0.0,2
+2339173,"[0.0, 0.0, 0.51]",gyrA,DNA gyrase subunit A,S,L,83.0,248,snp_nonsynonymous,A,TCG,gyrA S83L,0.51,2
+2339179,"[0.0, 0.0, 0.2]",gyrA,DNA gyrase subunit A,G,D,81.0,242,snp_nonsynonymous,T,GGT,gyrA G81D,0.2,2
+2383468,"[0.0, 0.0, 0.1]",elaD,protease ElaD,C,C,252.0,756,snp_synonymous,T,TGC,elaD C252C,0.1,2
+2722723,"[0.0, 0.0, 0.48]",pssL,protein PssL,,,,coding (22/42 nt),small_indel,,,pssL small_indel,0.48,2
+3880158,"[0.0, 0.0, 0.12]",recF,recombination mediator protein RecF,I,T,355.0,1064,snp_nonsynonymous,G,ATA,recF I355T,0.12,2
+4184434,"[0.0, 0.0, 0.24]",rpoB,RNA polymerase subunit beta,D,N,1064.0,3190,snp_nonsynonymous,A,GAC,rpoB D1064N,0.24,2
+4185043,"[0.0, 0.0, 0.77]",rpoB,RNA polymerase subunit beta,,,,coding (3799-3801/4029 nt),small_indel,,,rpoB small_indel,0.77,2
+1196220,"[0.0, 0.0, 1.0]",icd,isocitrate dehydrogenase,H,H,366.0,1098,snp_synonymous,T,CAC,icd H366H,1.0,3
+1502770,"[0.0, 0.28, 0.0]",ydcL,DUF3313 domain-containing lipoprotein YdcL,I,T,105.0,314,snp_nonsynonymous,C,ATA,ydcL I105T,0.0,3
+2339065,"[0.0, 0.0, 0.28]",gyrA,DNA gyrase subunit A,A,E,119.0,356,snp_nonsynonymous,T,GCA,gyrA A119E,0.28,3
+2339179,"[0.0, 0.0, 0.62]",gyrA,DNA gyrase subunit A,G,D,81.0,242,snp_nonsynonymous,T,GGT,gyrA G81D,0.62,3
+2972129,"[0.0, 0.0, 0.66]",tas,putative NADP(H)-dependent aldo-keto reductase Tas,,,,coding (533/1041 nt),small_indel,,,tas small_indel,0.66,3
+4184954,"[0.0, 0.0, 0.32]",rpoB,RNA polymerase subunit beta,H,L,1237.0,3710,snp_nonsynonymous,T,CAC,rpoB H1237L,0.32,3
+4185113,"[0.0, 0.0, 0.64]",rpoB,RNA polymerase subunit beta,M,R,1290.0,3869,snp_nonsynonymous,G,ATG,rpoB M129R,0.64,3
+4220506,"[0.0, 0.0, 0.15]",arpA,regulator of acetyl CoA synthetase,D,A,661.0,1982,snp_nonsynonymous,G,GAT,arpA D661A,0.15,3
+4640231,"[0.0, 0.0, 0.25]",arcA,DNA-binding transcriptional dual regulator ArcA,,,,coding (76/717 nt),small_indel,CGCTTCGAAAACATCATAGCCTTC,,arcA small_indel,0.25,3
+257908,"[0.0, 0.0, 1.0]",insB9–[crl],"insB9,insA9,[crl]",,,,,large_deletion,,,insB9–[crl] large_deletion,1.0,4
+584487,"[0.0, 0.0, 1.0]",appY/ompT,DNA-binding transcriptional activator AppY/omptin family outer membrane protease OmpT,,,,intergenic (+57/+193),small_indel,,,appY/ompT small_indel,1.0,4
+1196220,"[0.0, 0.0, 1.0]",icd,isocitrate dehydrogenase,H,H,366.0,1098,snp_synonymous,T,CAC,icd H366H,1.0,4
+2339179,"[0.0, 0.0, 0.95]",gyrA,DNA gyrase subunit A,G,D,81.0,242,snp_nonsynonymous,T,GGT,gyrA G81D,0.95,4
+3054894,"[0.0, 0.2, 0.0]",ygfB,PF03695 family protein YgfB,P,Q,184.0,551,snp_nonsynonymous,T,CCA,ygfB P184Q,0.0,4
+4184954,"[0.0, 0.0, 1.0]",rpoB,RNA polymerase subunit beta,H,L,1237.0,3710,snp_nonsynonymous,T,CAC,rpoB H1237L,1.0,4
+1087590,"[0.0, 0.0, 0.1]",pgaC,poly-N-acetyl-D-glucosamine synthase subunit PgaC,E,G,86.0,257,snp_nonsynonymous,C,GAG,pgaC E86G,0.1,5
+1196220,"[0.0, 0.0, 1.0]",icd,isocitrate dehydrogenase,H,H,366.0,1098,snp_synonymous,T,CAC,icd H366H,1.0,5
+2339162,"[0.0, 0.0, 0.2]",gyrA,DNA gyrase subunit A,D,Y,87.0,259,snp_nonsynonymous,A,GAC,gyrA D87Y,0.2,5
+2339173,"[0.0, 0.0, 0.63]",gyrA,DNA gyrase subunit A,S,L,83.0,248,snp_nonsynonymous,A,TCG,gyrA S83L,0.63,5
+3269943,"[0.0, 0.0, 0.13]",yhaC/rnpB,uncharacterized protein YhaC/RNase P catalytic RNA component,,,,intergenic (+341/+273),snp_intergenic,T,,yhaC/rnpB snp_intergenic,0.13,5
+3630489,"[0.0, 0.0, 0.12]",yhiI,putative membrane fusion protein YhiI,V,V,38.0,114,snp_synonymous,T,GTC,yhiI V38V,0.12,5
+4184954,"[0.0, 0.0, 1.0]",rpoB,RNA polymerase subunit beta,H,L,1237.0,3710,snp_nonsynonymous,T,CAC,rpoB H1237L,1.0,5
+4640112,"[0.0, 0.0, 0.18]",arcA,DNA-binding transcriptional dual regulator ArcA,L,F,65.0,195,snp_nonsynonymous,G,TTA,arcA L65F,0.18,5
+2339179,"[0.0, 0.0, 1.0]",gyrA,DNA gyrase subunit A,G,D,81.0,242,snp_nonsynonymous,T,GGT,gyrA G81D,1.0,6
+4184434,"[0.0, 0.0, 1.0]",rpoB,RNA polymerase subunit beta,D,N,1064.0,3190,snp_nonsynonymous,A,GAC,rpoB D1064N,1.0,6
+759127,"[0.0, 0.0, 0.31]",sucA,subunit of E1(0) component of 2-oxoglutarate dehydrogenase,V,A,141.0,422,snp_nonsynonymous,C,GTC,sucA V141A,0.31,7
+915226,"[0.0, 0.12, 0.0]",lysO/aqpZ,L-lysine/thialysine exporter/water channel AqpZ,,,,intergenic (-369/+126),snp_intergenic,C,,lysO/aqpZ snp_intergenic,0.0,7
+1196220,"[0.0, 0.0, 1.0]",icd,isocitrate dehydrogenase,H,H,366.0,1098,snp_synonymous,T,CAC,icd H366H,1.0,7
+2339173,"[0.0, 0.07, 1.0]",gyrA,DNA gyrase subunit A,S,L,83.0,248,snp_nonsynonymous,A,TCG,gyrA S83L,1.0,7
+3054894,"[0.0, 0.0, 0.19]",ygfB,PF03695 family protein YgfB,P,Q,184.0,551,snp_nonsynonymous,T,CCA,ygfB P184Q,0.19,7
+3758381,"[0.0, 0.0, 0.11]",selB,selenocysteyl-tRNA-specific translation elongation factor,,,,coding (1481/1845 nt),small_indel,T,,selB small_indel,0.11,7
+3862562,"[0.0, 0.0, 0.94]",glvC,putative PTS enzyme II component GlvC,,,,coding (1042/1107 nt),small_indel,,,glvC small_indel,0.94,7
+4033698,"[0.0, 0.0, 1.0]",trkH,K(+) transporter TrkH,L,Q,185.0,554,snp_nonsynonymous,A,CTG,trkH L185Q,1.0,7
+4296060,"[0.0, 0.23, 0.18]",gltP/yjcO,glutamate/aspartate : H(+) symporter GltP/Sel1 repeat-containing protein YjcO,,,,intergenic (+266/+376),snp_intergenic,T,,gltP/yjcO snp_intergenic,0.18,7
+4542020,"[0.0, 0.0, 0.13]",fimB/fimE,Type 1 fimbriae regulatory protein FimB/regulator for fimA,,,,intergenic (+461/-14),mobile_element_insertion,,,fimB/fimE mobile_element_insertion,0.13,7
+822959,"[0.0, 0.12, 0.0]",clsB,cardiolipin synthase B,P,S,261.0,781,snp_nonsynonymous,A,CCG,clsB P261S,0.0,8
+1196220,"[0.0, 0.0, 1.0]",icd,isocitrate dehydrogenase,H,H,366.0,1098,snp_synonymous,T,CAC,icd H366H,1.0,8
+2311562,"[0.0, 0.0, 0.13]",ftp/ompC,FAD:protein FMN transferase/outer membrane porin C,,,,intergenic (-28/+84),snp_intergenic,A,,ftp/ompC snp_intergenic,0.13,8
+2339173,"[0.0, 0.0, 0.74]",gyrA,DNA gyrase subunit A,S,W,83.0,248,snp_nonsynonymous,C,TCG,gyrA S83W,0.74,8
+3352254,"[0.0, 0.0, 0.69]",arcB,sensor histidine kinase ArcB,G,C,258.0,772,snp_nonsynonymous,A,GGT,arcB G258C,0.69,8
+4184954,"[0.0, 0.0, 1.0]",rpoB,RNA polymerase subunit beta,H,L,1237.0,3710,snp_nonsynonymous,T,CAC,rpoB H1237L,1.0,8
+1230269,"[0.0, 0.0, 0.1]",hlyE,hemolysin E,E,D,42.0,126,snp_nonsynonymous,A,GAA,hlyE E42D,0.1,9
+2339173,"[0.0, 0.0, 1.0]",gyrA,DNA gyrase subunit A,S,W,83.0,248,snp_nonsynonymous,C,TCG,gyrA S83W,1.0,9
+2562049,"[0.0, 0.0, 0.1]",yffN/yffO,uncharacterized protein YffN/uncharacterized protein YffO,,,,intergenic (+56/-62),snp_intergenic,C,,yffN/yffO snp_intergenic,0.1,9
+4182858,"[0.0, 0.0, 1.0]",rpoB,RNA polymerase subunit beta,,,,coding (1614-1625/4029 nt),small_indel,,,rpoB small_indel,1.0,9
+2339173,"[0.0, 0.0, 0.91]",gyrA,DNA gyrase subunit A,S,L,83.0,248,snp_nonsynonymous,A,TCG,gyrA S83L,0.91,10
+2755863,"[0.0, 0.11, 0.0]",ssrA,tmRNA,,,,noncoding (271/363 nt),snp_noncoding,A,,ssrA snp_noncoding,0.0,10
+3054894,"[0.0, 0.2, 0.0]",ygfB,PF03695 family protein YgfB,P,Q,184.0,551,snp_nonsynonymous,T,CCA,ygfB P184Q,0.0,10
+4182930,"[0.0, 0.0, 0.83]",rpoB,RNA polymerase subunit beta,E,D,562.0,1686,snp_nonsynonymous,C,GAA,rpoB E562D,0.83,10

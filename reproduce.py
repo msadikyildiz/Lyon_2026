@@ -72,6 +72,7 @@ def main():
                 list(pool.map(refit, DATASETS))
             run(root, ['scripts/compare_caches.py', str(root / 'reference-cache'), str(root / SCRIPTS / 'cache'), str(root / 'runs/refit-comparison.json')], logs / 'compare-refits.log')
         run(root, ['-m', 'unittest', 'discover', '-s', SCRIPTS / 'tests', '-v'], logs / 'tests.log')
+        run(root, ['scripts/reproduce_genomics.py'], logs / 'genomics.log')
         for step in STEPS:
             run(root, [SCRIPTS / step], logs / (step + '.log'))
             if step == 'final_stats.py':
@@ -84,7 +85,7 @@ def main():
         raise
     report = {'mode': 'raw-refit' if args.refit else 'cached', 'python': platform.python_version(),
               'platform': platform.platform(), 'seconds': round(time.time()-start, 2),
-              'steps': STEPS + ['scripts/reproduce_trajectories.py'], 'status': 'passed',
+              'steps': ['scripts/reproduce_genomics.py'] + STEPS + ['scripts/reproduce_trajectories.py'], 'status': 'passed',
               'coverage': 'docs/FIGURE_COVERAGE.md',
               'raw_inputs': {str(p.relative_to(root)): hashlib.sha256(p.read_bytes()).hexdigest()
                 for p in sorted((root / SCRIPTS / 'biohpc-pull/data').glob('*.xlsx'))}}

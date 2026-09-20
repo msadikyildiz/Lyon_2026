@@ -1,0 +1,246 @@
+{
+  "cached_rebuild": {
+    "mode": "cached",
+    "python": "3.11.14",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "seconds": 155.99,
+    "steps": [
+      "scripts/reproduce_genomics.py",
+      "validate.py",
+      "final_stats.py",
+      "mdk_source.py",
+      "supp11_mdk.py",
+      "manifest.py",
+      "report_results.py",
+      "survival.py",
+      "plot_final.py",
+      "source_data.py",
+      "print_panels.py",
+      "assemble_figures.py",
+      "scripts/reproduce_trajectories.py"
+    ],
+    "status": "passed",
+    "coverage": "docs/FIGURE_COVERAGE.md",
+    "raw_inputs": {
+      "working/analysis/stats-rework/biohpc-pull/data/ODFinal.xlsx": "3397561985b52d03209642b24148ca3d0ec226907b3133264675c5c611e49894",
+      "working/analysis/stats-rework/biohpc-pull/data/ODFinal_mutants.xlsx": "b079af1f8222b6d83c199d39be7f5d7f69b803b516dda66e69f5270761d68d30",
+      "working/analysis/stats-rework/biohpc-pull/data/ODFinal_unt.xlsx": "5de231a71c483b73242ef39b82a355fe9eb6e54c8f105803e7362c883c3f7ec7",
+      "working/analysis/stats-rework/biohpc-pull/data/PlateInfo.xlsx": "1638ee6b8bc5565bb6d9ae96e66a64f8f49b2655698e011974a504eca80e3c81",
+      "working/analysis/stats-rework/biohpc-pull/data/PlateInfo_mutants.xlsx": "e96cd342aeb1de80430089934733174bee01576859fc80fd3a4bcb77e55814ff",
+      "working/analysis/stats-rework/biohpc-pull/data/PlateInfo_mutants_norep.xlsx": "e48d82ddd3401d306f3fd444871c88fab564dcdce30179f9d9de3913923771c0",
+      "working/analysis/stats-rework/biohpc-pull/data/PlateInfo_unt.xlsx": "50acb499120695bf4ae3cdea114cf53323bf2f57d2228d3d1b6fa8627506fc56"
+    }
+  },
+  "regression": {
+    "status": "passed",
+    "png_files_identical_to_baseline": 126,
+    "unchanged_render_containers_preserved": 211,
+    "non_genomic_csv_outputs_unchanged": true
+  },
+  "determinism": {
+    "status": "passed",
+    "files_identical": 18,
+    "alternate_python_hash_seed": 71
+  },
+  "workbook": {
+    "sheets": 25,
+    "blocks": 89,
+    "numeric_cells": 147296,
+    "text_cells": 80279,
+    "blank_cells": 16220,
+    "all_cells_match_source_tables": true
+  },
+  "scope_preservation": [
+    {
+      "repository": "Lyon_2026",
+      "changed_sheets": [
+        "Read me",
+        "Figure 2",
+        "Figure 4",
+        "Supp Fig 3",
+        "Supp Fig 4",
+        "Supp Fig 5",
+        "Supp Fig 6",
+        "Supp Fig 8",
+        "Supp Fig 9"
+      ],
+      "unchanged_sheets": [
+        "Figure 1",
+        "Figure 3",
+        "Figure 5",
+        "Figure 6",
+        "Supp Fig 1",
+        "Supp Fig 2",
+        "Supp Fig 7",
+        "Supp Fig 10",
+        "Supp Fig 11",
+        "Supp Fig 12",
+        "Supp Fig 13",
+        "Supp Table 1",
+        "Supp Table 2",
+        "Supp Table 3",
+        "Supp Table 4",
+        "Sensitivity"
+      ],
+      "existing_non_genomic_blocks_unchanged": true,
+      "genomic_blocks": [
+        {
+          "sheet": "Figure 2",
+          "rows": 43,
+          "first_data_row": 679
+        },
+        {
+          "sheet": "Figure 2",
+          "rows": 64,
+          "first_data_row": 728
+        },
+        {
+          "sheet": "Figure 2",
+          "rows": 80,
+          "first_data_row": 798
+        },
+        {
+          "sheet": "Figure 4",
+          "rows": 601,
+          "first_data_row": 6
+        },
+        {
+          "sheet": "Supp Fig 3",
+          "rows": 56,
+          "first_data_row": 177
+        },
+        {
+          "sheet": "Supp Fig 4",
+          "rows": 83,
+          "first_data_row": 5582
+        },
+        {
+          "sheet": "Supp Fig 5",
+          "rows": 43,
+          "first_data_row": 6
+        },
+        {
+          "sheet": "Supp Fig 5",
+          "rows": 64,
+          "first_data_row": 55
+        },
+        {
+          "sheet": "Supp Fig 5",
+          "rows": 80,
+          "first_data_row": 125
+        },
+        {
+          "sheet": "Supp Fig 6",
+          "rows": 38,
+          "first_data_row": 57
+        },
+        {
+          "sheet": "Supp Fig 8",
+          "rows": 601,
+          "first_data_row": 6
+        },
+        {
+          "sheet": "Supp Fig 9",
+          "rows": 963,
+          "first_data_row": 6
+        }
+      ]
+    },
+    {
+      "repository": "Lyon-Yildiz (2026)",
+      "changed_sheets": [
+        "Read me",
+        "Figure 2",
+        "Figure 4",
+        "Supp Fig 3",
+        "Supp Fig 4",
+        "Supp Fig 5",
+        "Supp Fig 6",
+        "Supp Fig 8",
+        "Supp Fig 9"
+      ],
+      "unchanged_sheets": [
+        "Figure 1",
+        "Figure 3",
+        "Figure 5",
+        "Figure 6",
+        "Supp Fig 1",
+        "Supp Fig 2",
+        "Supp Fig 7",
+        "Supp Fig 10",
+        "Supp Fig 11",
+        "Supp Fig 12",
+        "Supp Fig 13",
+        "Supp Table 1",
+        "Supp Table 2",
+        "Supp Table 3",
+        "Supp Table 4",
+        "Sensitivity"
+      ],
+      "existing_non_genomic_blocks_unchanged": true,
+      "genomic_blocks": [
+        {
+          "sheet": "Figure 2",
+          "rows": 43,
+          "first_data_row": 679
+        },
+        {
+          "sheet": "Figure 2",
+          "rows": 64,
+          "first_data_row": 728
+        },
+        {
+          "sheet": "Figure 2",
+          "rows": 80,
+          "first_data_row": 798
+        },
+        {
+          "sheet": "Figure 4",
+          "rows": 601,
+          "first_data_row": 6
+        },
+        {
+          "sheet": "Supp Fig 3",
+          "rows": 56,
+          "first_data_row": 177
+        },
+        {
+          "sheet": "Supp Fig 4",
+          "rows": 83,
+          "first_data_row": 5582
+        },
+        {
+          "sheet": "Supp Fig 5",
+          "rows": 43,
+          "first_data_row": 6
+        },
+        {
+          "sheet": "Supp Fig 5",
+          "rows": 64,
+          "first_data_row": 55
+        },
+        {
+          "sheet": "Supp Fig 5",
+          "rows": 80,
+          "first_data_row": 125
+        },
+        {
+          "sheet": "Supp Fig 6",
+          "rows": 38,
+          "first_data_row": 57
+        },
+        {
+          "sheet": "Supp Fig 8",
+          "rows": 601,
+          "first_data_row": 6
+        },
+        {
+          "sheet": "Supp Fig 9",
+          "rows": 963,
+          "first_data_row": 6
+        }
+      ]
+    }
+  ],
+  "visual_qa": "Six representative genomic table views checked; full annotations wrap. Figure 4/8 and Figure 2/S5 share validated tables and formatting."
+}

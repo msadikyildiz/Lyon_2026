@@ -32,6 +32,13 @@ def compare(reference, rebuilt):
             if hashlib.sha256(a.read_bytes()).digest() != hashlib.sha256(b.read_bytes()).digest():
                 raise ValueError(f'PNG differs: {relative/name}')
         pngs[str(relative)] = len(files)
+    genomic = Path('data/genomics/generated_tables')
+    genomic_files = {p.name for p in (reference / genomic).glob('*') if p.is_file()}
+    if not genomic_files or genomic_files != {p.name for p in (rebuilt / genomic).glob('*') if p.is_file()}:
+        raise ValueError('Regenerated genomic file set differs or is empty')
+    for name in genomic_files:
+        if (reference / genomic / name).read_bytes() != (rebuilt / genomic / name).read_bytes():
+            raise ValueError(f'Regenerated genomic output differs: {name}')
     a=load_workbook(reference/'working/source-data/Source Data.xlsx',read_only=True,data_only=False)
     b=load_workbook(rebuilt/'working/source-data/Source Data.xlsx',read_only=True,data_only=False)
     if a.sheetnames != b.sheetnames:
@@ -57,7 +64,7 @@ def compare(reference, rebuilt):
                     np.testing.assert_allclose(xv,yv,rtol=RTOL,atol=ATOL)
                 cells += 1
     a.close();b.close()
-    return {'status':'passed','csv_tables':len(names),'pngs_identical':pngs,'workbook_cells_checked':cells,
+    return {'status':'passed','csv_tables':len(names),'pngs_identical':pngs,'workbook_cells_checked':cells,'genomic_files_identical':len(genomic_files),
             'workbook_numeric_cells':numeric,'rtol':RTOL,'atol':ATOL,
             'comparison':'CSV values, PNG bytes, workbook values and cell types; PDF/SVG/XLSX container timestamps ignored'}
 

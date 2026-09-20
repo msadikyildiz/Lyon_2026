@@ -1,0 +1,10 @@
+abs_position,freq,gene_name,gene_product,aa_ref_seq,aa_new_seq,aa_pos,gene_pos,mut_cat,new_seq,codon_ref_seq,label
+MR_Cli1_contig_36 136428,[0.  0.1],SEED:fig_6666666.487694.peg.3016,"H repeat-associated protein, YhhI family",H,H,304.0,912,snp_synonymous,A,CAC,SEED:fig_6666666.487694.peg.3016 H304H
+MR_Cli1_contig_28 80983,[0. 1.],GO:0004826,Phenylalanyl-tRNA synthetase alpha chain (EC 6.1.1.20),L,F,24.0,72,snp_nonsynonymous,C,TTA,GO:0004826 L24F
+MR_Cli1_contig_4 376208,[0.   0.34],SEED:fig_6666666.487694.rna.49,tRNA-Ala-TGC,,,,noncoding (43/77 nt),snp_noncoding,A,,SEED:fig_6666666.487694.rna.49 snp_noncoding
+MR_Cli1_contig_4 376194,[0.   0.37],SEED:fig_6666666.487694.rna.49,tRNA-Ala-TGC,,,,noncoding (29/77 nt),snp_noncoding,T,,SEED:fig_6666666.487694.rna.49 snp_noncoding
+MR_Cli1_contig_4 376200,[0.   0.36],SEED:fig_6666666.487694.rna.49,tRNA-Ala-TGC,,,,noncoding (35/77 nt),snp_noncoding,G,,SEED:fig_6666666.487694.rna.49 snp_noncoding
+MR_Cli1_contig_22 86211,[0.   0.17],SEED:fig_6666666.487694.rna.22,tRNA-Gln-TTG,,,,noncoding (63/75 nt),snp_noncoding,G,,SEED:fig_6666666.487694.rna.22 snp_noncoding
+MR_Cli1_contig_22 86212,[0.   0.17],SEED:fig_6666666.487694.rna.22,tRNA-Gln-TTG,,,,noncoding (62/75 nt),snp_noncoding,A,,SEED:fig_6666666.487694.rna.22 snp_noncoding
+MR_Cli1_contig_41 1807,[0.   0.18],GO:0004616/–,"6-phosphogluconate dehydrogenase, decarboxylating (EC 1.1.1.44)/–",,,,intergenic (+266/–),snp_intergenic,A,,GO:0004616/– snp_intergenic
+MR_Cli1_contig_35 50961,[0.   0.42],SEED:fig_6666666.487694.peg.2859/SEED:fig_6666666.487694.peg.2860,Uncharacterized radical SAM protein YjjW/hypothetical protein,,,,intergenic (+31/-65),large_substitution,AACCTGTAGGCATGATAAGACGCGTCAAGCGTCGCATCAGGCATTGTGCGCCAACTGCCGGATGCGGCGTGAACGCCTTATCCGGCCTACGGTTCGGCACAAACC,,SEED:fig_6666666.487694.peg.2859/SEED:fig_6666666.487694.peg.2860 large_substitution

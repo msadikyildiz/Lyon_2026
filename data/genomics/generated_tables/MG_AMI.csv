@@ -1,0 +1,44 @@
+position,freq,gene_name,gene_product,aa_ref_seq,aa_new_seq,aa_pos,gene_pos,mut_cat,new_seq,codon_ref_seq,label,Pop,last_freq
+547338,"[0.0, 0.1]",fdrA,putative oxamate carbamoyltransferase FdrA,I,T,220.0,659,snp_nonsynonymous,C,ATT,fdrA I220T,1,0.1
+3471686,"[0.0, 1.0]",fusA,elongation factor G,P,L,610.0,1829,snp_nonsynonymous,A,CCA,fusA P610L,1,1.0
+4033383,"[0.0, 0.66]",trkH,K(+) transporter TrkH,L,Q,80.0,239,snp_nonsynonymous,A,CTG,trkH L80Q,1,0.66
+3471686,"[0.0, 1.0]",fusA,elongation factor G,P,L,610.0,1829,snp_nonsynonymous,A,CCA,fusA P610L,2,1.0
+3996454,"[0.0, 0.38]",xerC,site-specific tyrosine recombinase,V,V,56.0,168,snp_synonymous,A,GTG,xerC V56V,2,0.38
+4033383,"[0.0, 0.95]",trkH,K(+) transporter TrkH,L,Q,80.0,239,snp_nonsynonymous,A,CTG,trkH L80Q,2,0.95
+4611988,"[0.0, 0.64]",osmY,periplasmic chaperone OsmY,L,Q,198.0,593,snp_nonsynonymous,A,CTG,osmY L198Q,2,0.64
+6305,"[0.0, 0.12]",yaaA,DNA binding and peroxide stress response protein YaaA,I,T,52.0,155,snp_nonsynonymous,G,ATC,yaaA I52T,3,0.12
+1424257,"[0.0, 0.27]",trkG,K(+) transporter TrkG,G,D,159.0,476,snp_nonsynonymous,A,GGT,trkG G159D,3,0.27
+3456540,"[0.0, 0.24]",gspD,Type II secretion system protein GspD,D,A,55.0,164,snp_nonsynonymous,C,GAC,gspD D55A,3,0.24
+3471686,"[0.0, 1.0]",fusA,elongation factor G,P,L,610.0,1829,snp_nonsynonymous,A,CCA,fusA P610L,3,1.0
+4033383,"[0.0, 0.13]",trkH,K(+) transporter TrkH,L,Q,80.0,239,snp_nonsynonymous,A,CTG,trkH L80Q,3,0.13
+4033608,"[0.0, 0.22]",trkH,K(+) transporter TrkH,V,E,155.0,464,snp_nonsynonymous,A,GTG,trkH V155E,3,0.22
+4131725,"[0.0, 0.22]",metL,fused aspartate kinase/homoserine dehydrogenase 2,S,T,631.0,1891,snp_nonsynonymous,A,TCC,metL S631T,3,0.22
+3471686,"[0.0, 1.0]",fusA,elongation factor G,P,L,610.0,1829,snp_nonsynonymous,A,CCA,fusA P610L,4,1.0
+4033610,"[0.0, 0.68]",trkH,K(+) transporter TrkH,G,C,156.0,466,snp_nonsynonymous,T,GGT,trkH G156C,4,0.68
+4033621,"[0.0, 0.15]",trkH,K(+) transporter TrkH,Q,H,159.0,477,snp_nonsynonymous,T,CAG,trkH Q159H,4,0.15
+129778,"[0.0, 0.14]",yacH,DUF3300 domain-containing protein YacH,A,T,495.0,1483,snp_nonsynonymous,T,GCG,yacH A495T,5,0.14
+3471686,"[0.0, 0.89]",fusA,elongation factor G,P,L,610.0,1829,snp_nonsynonymous,A,CCA,fusA P610L,5,0.89
+4033202,"[0.0, 0.87]",trkH,K(+) transporter TrkH,T,P,20.0,58,snp_nonsynonymous,C,ACC,trkH T20P,5,0.87
+4117936,"[0.0, 0.11]",glpF,glycerol facilitator,V,E,52.0,155,snp_nonsynonymous,T,GTG,glpF V52E,5,0.11
+6305,"[0.0, 0.11]",yaaA,DNA binding and peroxide stress response protein YaaA,I,T,52.0,155,snp_nonsynonymous,G,ATC,yaaA I52T,6,0.11
+845556,"[0.0, 0.11]",ybiO/glnQ,moderate conductance mechanosensitive channel YbiO/L-glutamine ABC transporter ATP binding subunit,,,,intergenic (-76/+185),snp_intergenic,C,,ybiO/glnQ snp_intergenic,6,0.11
+1992687,"[0.0, 1.0]",pgsA,CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltransferase,V,E,44.0,131,snp_nonsynonymous,T,GTG,pgsA V44E,6,1.0
+1992929,"[0.0, 1.0]",uvrC,UvrABC excision nuclease subunit C,V,E,593.0,1778,snp_nonsynonymous,T,GTG,uvrC V593E,6,1.0
+3471686,"[0.0, 1.0]",fusA,elongation factor G,P,L,610.0,1829,snp_nonsynonymous,A,CCA,fusA P610L,6,1.0
+2162882,"[0.0, 0.21]",baeS,sensor histidine kinase BaeS,F,L,3.0,7,snp_nonsynonymous,C,TTC,baeS F3L,7,0.21
+3471686,"[0.0, 1.0]",fusA,elongation factor G,P,L,610.0,1829,snp_nonsynonymous,A,CCA,fusA P610L,7,1.0
+4033383,"[0.0, 0.45]",trkH,K(+) transporter TrkH,L,Q,80.0,239,snp_nonsynonymous,A,CTG,trkH L80Q,7,0.45
+4033458,"[0.0, 0.15]",trkH,K(+) transporter TrkH,S,Y,105.0,314,snp_nonsynonymous,A,TCT,trkH S105Y,7,0.15
+4033698,"[0.0, 0.11]",trkH,K(+) transporter TrkH,L,Q,185.0,554,snp_nonsynonymous,A,CTG,trkH L185Q,7,0.11
+6305,"[0.0, 0.1]",yaaA,DNA binding and peroxide stress response protein YaaA,I,T,52.0,155,snp_nonsynonymous,G,ATC,yaaA I52T,8,0.1
+2775839,"[0.0, 0.11]",yfjW/yfjX,uncharacterized protein YfjW/putative antirestriction protein YfjX,,,,intergenic (+818/-80),snp_intergenic,G,,yfjW/yfjX snp_intergenic,8,0.11
+3471686,"[0.0, 1.0]",fusA,elongation factor G,P,L,610.0,1829,snp_nonsynonymous,A,CCA,fusA P610L,8,1.0
+4033383,"[0.0, 0.93]",trkH,K(+) transporter TrkH,L,Q,80.0,239,snp_nonsynonymous,A,CTG,trkH L80Q,8,0.93
+129778,"[0.0, 0.14]",yacH,DUF3300 domain-containing protein YacH,A,T,495.0,1483,snp_nonsynonymous,T,GCG,yacH A495T,9,0.14
+3471686,"[0.0, 0.7]",fusA,elongation factor G,P,L,610.0,1829,snp_nonsynonymous,A,CCA,fusA P610L,9,0.7
+4117936,"[0.0, 0.27]",glpF,glycerol facilitator,V,E,52.0,155,snp_nonsynonymous,T,GTG,glpF V52E,9,0.27
+1215361,"[0.0, 1.0]",bluF,blue light- and temperature-regulated antirepressor BluF,I,L,39.0,115,snp_nonsynonymous,G,ATC,bluF I39L,10,1.0
+1352163,"[0.0, 0.11]",sapF,putrescine ABC exporter ATP binding protein SapF,R,S,158.0,472,snp_nonsynonymous,T,CGT,sapF R158S,10,0.11
+3471686,"[0.0, 0.94]",fusA,elongation factor G,P,L,610.0,1829,snp_nonsynonymous,A,CCA,fusA P610L,10,0.94
+4034301,"[0.0, 0.2]",trkH,K(+) transporter TrkH,,,,coding (1157-1165/1452 nt),small_indel,,,trkH small_indel,10,0.2
+4176271,"[0.0, 0.35]",tufB,translation elongation factor Tu 2,D,Y,110.0,328,snp_nonsynonymous,T,GAC,tufB D110Y,10,0.35

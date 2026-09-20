@@ -1,0 +1,1585 @@
+{
+  "schema":{
+    "fields":[
+      {
+        "name":"position",
+        "type":"integer"
+      },
+      {
+        "name":"freq",
+        "type":"string"
+      },
+      {
+        "name":"gene_name",
+        "type":"string"
+      },
+      {
+        "name":"gene_product",
+        "type":"string"
+      },
+      {
+        "name":"aa_ref_seq",
+        "type":"string"
+      },
+      {
+        "name":"aa_new_seq",
+        "type":"string"
+      },
+      {
+        "name":"aa_pos",
+        "type":"string"
+      },
+      {
+        "name":"gene_pos",
+        "type":"string"
+      },
+      {
+        "name":"mut_cat",
+        "type":"string"
+      },
+      {
+        "name":"new_seq",
+        "type":"string"
+      },
+      {
+        "name":"codon_ref_seq",
+        "type":"string"
+      },
+      {
+        "name":"label",
+        "type":"string"
+      },
+      {
+        "name":"Pop",
+        "type":"integer"
+      },
+      {
+        "name":"last_freq",
+        "type":"number"
+      }
+    ],
+    "pandas_version":"1.4.0"
+  },
+  "data":[
+    {
+      "position":1904774,
+      "freq":[
+        0.0,
+        0.1
+      ],
+      "gene_name":"manZ\/yobD",
+      "gene_product":"mannose-specific PTS enzyme IID component\/DUF986 domain-containing inner membrane protein YobD",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"intergenic (+28\/-27)",
+      "mut_cat":"snp_intergenic",
+      "new_seq":"T",
+      "codon_ref_seq":null,
+      "label":"manZ\/yobD snp_intergenic",
+      "Pop":1,
+      "last_freq":0.1
+    },
+    {
+      "position":3269943,
+      "freq":[
+        0.0,
+        0.11
+      ],
+      "gene_name":"yhaC\/rnpB",
+      "gene_product":"uncharacterized protein YhaC\/RNase P catalytic RNA component",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"intergenic (+341\/+273)",
+      "mut_cat":"snp_intergenic",
+      "new_seq":"T",
+      "codon_ref_seq":null,
+      "label":"yhaC\/rnpB snp_intergenic",
+      "Pop":1,
+      "last_freq":0.11
+    },
+    {
+      "position":3638193,
+      "freq":[
+        0.0,
+        0.15
+      ],
+      "gene_name":"pitA",
+      "gene_product":"metal phosphate:H(+) symporter PitA",
+      "aa_ref_seq":"T",
+      "aa_new_seq":"T",
+      "aa_pos":184.0,
+      "gene_pos":"552",
+      "mut_cat":"snp_synonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"ACC",
+      "label":"pitA T184T",
+      "Pop":1,
+      "last_freq":0.15
+    },
+    {
+      "position":3817494,
+      "freq":[
+        0.0,
+        0.56
+      ],
+      "gene_name":"yicC",
+      "gene_product":"putative RNase adaptor protein YicC",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"coding (819-823\/864 nt)",
+      "mut_cat":"mobile_element_insertion",
+      "new_seq":null,
+      "codon_ref_seq":null,
+      "label":"yicC mobile_element_insertion",
+      "Pop":1,
+      "last_freq":0.56
+    },
+    {
+      "position":4001648,
+      "freq":[
+        0.0,
+        0.53
+      ],
+      "gene_name":"corA",
+      "gene_product":"Ni(2(+))\/Co(2(+))\/Mg(2(+)) transporter",
+      "aa_ref_seq":"H",
+      "aa_new_seq":"N",
+      "aa_pos":75.0,
+      "gene_pos":"223",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"CAC",
+      "label":"corA H75N",
+      "Pop":1,
+      "last_freq":0.53
+    },
+    {
+      "position":4220007,
+      "freq":[
+        0.0,
+        0.12
+      ],
+      "gene_name":"aceK",
+      "gene_product":"isocitrate dehydrogenase kinase\/phosphatase",
+      "aa_ref_seq":"V",
+      "aa_new_seq":"G",
+      "aa_pos":471.0,
+      "gene_pos":"1412",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"G",
+      "codon_ref_seq":"GTG",
+      "label":"aceK V471G",
+      "Pop":1,
+      "last_freq":0.12
+    },
+    {
+      "position":4467491,
+      "freq":[
+        0.0,
+        0.36
+      ],
+      "gene_name":"mgtL\/mgtA",
+      "gene_product":"leader peptide MgtL\/Mg(2(+)) importing P-type ATPase",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"intergenic (+7\/-102)",
+      "mut_cat":"small_indel",
+      "new_seq":null,
+      "codon_ref_seq":null,
+      "label":"mgtL\/mgtA small_indel",
+      "Pop":1,
+      "last_freq":0.36
+    },
+    {
+      "position":1645740,
+      "freq":[
+        0.0,
+        1.0
+      ],
+      "gene_name":"relB",
+      "gene_product":"antitoxin\/DNA-binding transcriptional repressor RelB",
+      "aa_ref_seq":"P",
+      "aa_new_seq":"S",
+      "aa_pos":45.0,
+      "gene_pos":"133",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"CCG",
+      "label":"relB P45S",
+      "Pop":2,
+      "last_freq":1.0
+    },
+    {
+      "position":2566930,
+      "freq":[
+        0.0,
+        0.16
+      ],
+      "gene_name":"eutH",
+      "gene_product":"putative ethanolamine permease EutH",
+      "aa_ref_seq":"P",
+      "aa_new_seq":"Q",
+      "aa_pos":393.0,
+      "gene_pos":"1178",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"CCA",
+      "label":"eutH P393Q",
+      "Pop":2,
+      "last_freq":0.16
+    },
+    {
+      "position":3054894,
+      "freq":[
+        0.0,
+        0.1
+      ],
+      "gene_name":"ygfB",
+      "gene_product":"PF03695 family protein YgfB",
+      "aa_ref_seq":"P",
+      "aa_new_seq":"Q",
+      "aa_pos":184.0,
+      "gene_pos":"551",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"CCA",
+      "label":"ygfB P184Q",
+      "Pop":2,
+      "last_freq":0.1
+    },
+    {
+      "position":3638193,
+      "freq":[
+        0.0,
+        0.11
+      ],
+      "gene_name":"pitA",
+      "gene_product":"metal phosphate:H(+) symporter PitA",
+      "aa_ref_seq":"T",
+      "aa_new_seq":"T",
+      "aa_pos":184.0,
+      "gene_pos":"552",
+      "mut_cat":"snp_synonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"ACC",
+      "label":"pitA T184T",
+      "Pop":2,
+      "last_freq":0.11
+    },
+    {
+      "position":4220007,
+      "freq":[
+        0.0,
+        0.16
+      ],
+      "gene_name":"aceK",
+      "gene_product":"isocitrate dehydrogenase kinase\/phosphatase",
+      "aa_ref_seq":"V",
+      "aa_new_seq":"G",
+      "aa_pos":471.0,
+      "gene_pos":"1412",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"G",
+      "codon_ref_seq":"GTG",
+      "label":"aceK V471G",
+      "Pop":2,
+      "last_freq":0.16
+    },
+    {
+      "position":6302,
+      "freq":[
+        0.0,
+        0.16
+      ],
+      "gene_name":"yaaA",
+      "gene_product":"DNA binding and peroxide stress response protein YaaA",
+      "aa_ref_seq":"S",
+      "aa_new_seq":"I",
+      "aa_pos":"53",
+      "gene_pos":"158",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"AGC",
+      "label":"yaaA S53I",
+      "Pop":3,
+      "last_freq":0.16
+    },
+    {
+      "position":166833,
+      "freq":[
+        0.0,
+        1.0
+      ],
+      "gene_name":"mrcB|mrcB",
+      "gene_product":"peptidoglycan glycosyltransferase\/peptidoglycan DD-transpeptidase MrcB|PBP1Bgamma",
+      "aa_ref_seq":"T|T",
+      "aa_new_seq":"S|S",
+      "aa_pos":"702|657",
+      "gene_pos":"2104|1969",
+      "mut_cat":"snp_nonsynonymous|nonsynonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"ACC|ACC",
+      "label":"mrcB|mrcB T|T702|657S|S",
+      "Pop":3,
+      "last_freq":1.0
+    },
+    {
+      "position":631067,
+      "freq":[
+        0.0,
+        0.16
+      ],
+      "gene_name":"cstA",
+      "gene_product":"pyruvate transporter CstA",
+      "aa_ref_seq":"A",
+      "aa_new_seq":"S",
+      "aa_pos":"392",
+      "gene_pos":"1174",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"GCC",
+      "label":"cstA A392S",
+      "Pop":3,
+      "last_freq":0.16
+    },
+    {
+      "position":1087565,
+      "freq":[
+        0.0,
+        0.14
+      ],
+      "gene_name":"pgaC",
+      "gene_product":"poly-N-acetyl-D-glucosamine synthase subunit PgaC",
+      "aa_ref_seq":"I",
+      "aa_new_seq":"I",
+      "aa_pos":"94",
+      "gene_pos":"282",
+      "mut_cat":"snp_synonymous",
+      "new_seq":"G",
+      "codon_ref_seq":"ATA",
+      "label":"pgaC I94I",
+      "Pop":3,
+      "last_freq":0.14
+    },
+    {
+      "position":1087606,
+      "freq":[
+        0.0,
+        0.11
+      ],
+      "gene_name":"pgaC",
+      "gene_product":"poly-N-acetyl-D-glucosamine synthase subunit PgaC",
+      "aa_ref_seq":"I",
+      "aa_new_seq":"L",
+      "aa_pos":"81",
+      "gene_pos":"241",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"G",
+      "codon_ref_seq":"ATT",
+      "label":"pgaC I81L",
+      "Pop":3,
+      "last_freq":0.11
+    },
+    {
+      "position":1189662,
+      "freq":[
+        0.0,
+        1.0
+      ],
+      "gene_name":"phoQ",
+      "gene_product":"sensor histidine kinase PhoQ",
+      "aa_ref_seq":"G",
+      "aa_new_seq":"C",
+      "aa_pos":"39",
+      "gene_pos":"115",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"GGT",
+      "label":"phoQ G39C",
+      "Pop":3,
+      "last_freq":1.0
+    },
+    {
+      "position":1400594,
+      "freq":[
+        0.0,
+        0.18
+      ],
+      "gene_name":"abgT",
+      "gene_product":"p-aminobenzoyl glutamate:H(+) symporter",
+      "aa_ref_seq":"L",
+      "aa_new_seq":"F",
+      "aa_pos":"394",
+      "gene_pos":"1180",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"CTT",
+      "label":"abgT L394F",
+      "Pop":3,
+      "last_freq":0.18
+    },
+    {
+      "position":2411241,
+      "freq":[
+        0.0,
+        0.12
+      ],
+      "gene_name":"yfbS",
+      "gene_product":"putative transporter YfbS",
+      "aa_ref_seq":"A",
+      "aa_new_seq":"S",
+      "aa_pos":"38",
+      "gene_pos":"112",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"GCA",
+      "label":"yfbS A38S",
+      "Pop":3,
+      "last_freq":0.12
+    },
+    {
+      "position":3054894,
+      "freq":[
+        0.0,
+        0.1
+      ],
+      "gene_name":"ygfB",
+      "gene_product":"PF03695 family protein YgfB",
+      "aa_ref_seq":"P",
+      "aa_new_seq":"Q",
+      "aa_pos":"184",
+      "gene_pos":"551",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"CCA",
+      "label":"ygfB P184Q",
+      "Pop":3,
+      "last_freq":0.1
+    },
+    {
+      "position":3638193,
+      "freq":[
+        0.0,
+        0.1
+      ],
+      "gene_name":"pitA",
+      "gene_product":"metal phosphate:H(+) symporter PitA",
+      "aa_ref_seq":"T",
+      "aa_new_seq":"T",
+      "aa_pos":"184",
+      "gene_pos":"552",
+      "mut_cat":"snp_synonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"ACC",
+      "label":"pitA T184T",
+      "Pop":3,
+      "last_freq":0.1
+    },
+    {
+      "position":4088086,
+      "freq":[
+        0.0,
+        0.1
+      ],
+      "gene_name":"yiiG\/frvR",
+      "gene_product":"DUF3829 domain-containing lipoprotein YiiG\/putative DNA-binding transcriptional regulator FrvR",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"intergenic (+29\/+21)",
+      "mut_cat":"snp_intergenic",
+      "new_seq":"G",
+      "codon_ref_seq":null,
+      "label":"yiiG\/frvR snp_intergenic",
+      "Pop":3,
+      "last_freq":0.1
+    },
+    {
+      "position":4439045,
+      "freq":[
+        0.0,
+        0.14
+      ],
+      "gene_name":"ytfJ",
+      "gene_product":"PF09695 family protein YtfJ",
+      "aa_ref_seq":"A",
+      "aa_new_seq":"E",
+      "aa_pos":"73",
+      "gene_pos":"218",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"GCA",
+      "label":"ytfJ A73E",
+      "Pop":3,
+      "last_freq":0.14
+    },
+    {
+      "position":61619,
+      "freq":[
+        0.0,
+        0.11
+      ],
+      "gene_name":"rapA",
+      "gene_product":"RNA polymerase-binding ATPase and RNAP recycling factor",
+      "aa_ref_seq":"W",
+      "aa_new_seq":"*",
+      "aa_pos":549.0,
+      "gene_pos":"1646",
+      "mut_cat":"snp_nonsense",
+      "new_seq":"T",
+      "codon_ref_seq":"TGG",
+      "label":"rapA W549*",
+      "Pop":4,
+      "last_freq":0.11
+    },
+    {
+      "position":1188509,
+      "freq":[
+        0.0,
+        0.47
+      ],
+      "gene_name":"phoQ",
+      "gene_product":"sensor histidine kinase PhoQ",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"coding (1265-1268\/1461 nt)",
+      "mut_cat":"mobile_element_insertion",
+      "new_seq":null,
+      "codon_ref_seq":null,
+      "label":"phoQ IS2 insertion",
+      "Pop":4,
+      "last_freq":0.47
+    },
+    {
+      "position":1189637,
+      "freq":[
+        0.0,
+        0.34
+      ],
+      "gene_name":"phoQ",
+      "gene_product":"sensor histidine kinase PhoQ",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"coding (136-140\/1461 nt)",
+      "mut_cat":"mobile_element_insertion",
+      "new_seq":null,
+      "codon_ref_seq":null,
+      "label":"phoQ IS5 insertion",
+      "Pop":4,
+      "last_freq":0.34
+    },
+    {
+      "position":1261649,
+      "freq":[
+        0.0,
+        0.77
+      ],
+      "gene_name":"prs",
+      "gene_product":"ribose-phosphate diphosphokinase",
+      "aa_ref_seq":"A",
+      "aa_new_seq":"V",
+      "aa_pos":76.0,
+      "gene_pos":"227",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"GCC",
+      "label":"prs A76V",
+      "Pop":4,
+      "last_freq":0.77
+    },
+    {
+      "position":2736240,
+      "freq":[
+        0.0,
+        0.1
+      ],
+      "gene_name":"bamD",
+      "gene_product":"outer membrane protein assembly factor BamD",
+      "aa_ref_seq":"P",
+      "aa_new_seq":"Q",
+      "aa_pos":32.0,
+      "gene_pos":"95",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"CCA",
+      "label":"bamD P32Q",
+      "Pop":4,
+      "last_freq":0.1
+    },
+    {
+      "position":3054894,
+      "freq":[
+        0.0,
+        0.13
+      ],
+      "gene_name":"ygfB",
+      "gene_product":"PF03695 family protein YgfB",
+      "aa_ref_seq":"P",
+      "aa_new_seq":"Q",
+      "aa_pos":184.0,
+      "gene_pos":"551",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"CCA",
+      "label":"ygfB P184Q",
+      "Pop":4,
+      "last_freq":0.13
+    },
+    {
+      "position":847955,
+      "freq":[
+        0.0,
+        0.29
+      ],
+      "gene_name":"glnH",
+      "gene_product":"L-glutamine ABC transporter periplasmic binding protein",
+      "aa_ref_seq":"A",
+      "aa_new_seq":"V",
+      "aa_pos":17.0,
+      "gene_pos":"50",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"GCG",
+      "label":"glnH A17V",
+      "Pop":5,
+      "last_freq":0.29
+    },
+    {
+      "position":1261535,
+      "freq":[
+        0.0,
+        1.0
+      ],
+      "gene_name":"prs",
+      "gene_product":"ribose-phosphate diphosphokinase",
+      "aa_ref_seq":"A",
+      "aa_new_seq":"V",
+      "aa_pos":114.0,
+      "gene_pos":"341",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"GCA",
+      "label":"prs A114V",
+      "Pop":5,
+      "last_freq":1.0
+    },
+    {
+      "position":1261845,
+      "freq":[
+        0.0,
+        0.19
+      ],
+      "gene_name":"prs",
+      "gene_product":"ribose-phosphate diphosphokinase",
+      "aa_ref_seq":"A",
+      "aa_new_seq":"S",
+      "aa_pos":11.0,
+      "gene_pos":"31",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"GCC",
+      "label":"prs A11S",
+      "Pop":5,
+      "last_freq":0.19
+    },
+    {
+      "position":2566930,
+      "freq":[
+        0.0,
+        0.16
+      ],
+      "gene_name":"eutH",
+      "gene_product":"putative ethanolamine permease EutH",
+      "aa_ref_seq":"P",
+      "aa_new_seq":"Q",
+      "aa_pos":393.0,
+      "gene_pos":"1178",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"CCA",
+      "label":"eutH P393Q",
+      "Pop":5,
+      "last_freq":0.16
+    },
+    {
+      "position":2751428,
+      "freq":[
+        0.0,
+        0.18
+      ],
+      "gene_name":"nadK",
+      "gene_product":"NAD kinase",
+      "aa_ref_seq":"T",
+      "aa_new_seq":"P",
+      "aa_pos":200.0,
+      "gene_pos":"598",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"C",
+      "codon_ref_seq":"ACC",
+      "label":"nadK T200P",
+      "Pop":5,
+      "last_freq":0.18
+    },
+    {
+      "position":3269943,
+      "freq":[
+        0.0,
+        0.12
+      ],
+      "gene_name":"yhaC\/rnpB",
+      "gene_product":"uncharacterized protein YhaC\/RNase P catalytic RNA component",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"intergenic (+341\/+273)",
+      "mut_cat":"snp_intergenic",
+      "new_seq":"T",
+      "codon_ref_seq":null,
+      "label":"yhaC\/rnpB snp_intergenic",
+      "Pop":5,
+      "last_freq":0.12
+    },
+    {
+      "position":4001574,
+      "freq":[
+        0.0,
+        0.18
+      ],
+      "gene_name":"corA",
+      "gene_product":"Ni(2(+))\/Co(2(+))\/Mg(2(+)) transporter",
+      "aa_ref_seq":"L",
+      "aa_new_seq":"Q",
+      "aa_pos":50.0,
+      "gene_pos":"149",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"CTG",
+      "label":"corA L50Q",
+      "Pop":5,
+      "last_freq":0.18
+    },
+    {
+      "position":4227771,
+      "freq":[
+        0.0,
+        0.68
+      ],
+      "gene_name":"yjbB",
+      "gene_product":"putative inorganic phosphate export protein YjbB",
+      "aa_ref_seq":"L",
+      "aa_new_seq":"Q",
+      "aa_pos":14.0,
+      "gene_pos":"41",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"CTG",
+      "label":"yjbB L14Q",
+      "Pop":5,
+      "last_freq":0.68
+    },
+    {
+      "position":88080,
+      "freq":[
+        0.0,
+        0.25
+      ],
+      "gene_name":"cra",
+      "gene_product":"DNA-binding transcriptional dual regulator Cra",
+      "aa_ref_seq":"S",
+      "aa_new_seq":"N",
+      "aa_pos":18.0,
+      "gene_pos":"53",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"AGC",
+      "label":"cra S18N",
+      "Pop":6,
+      "last_freq":0.25
+    },
+    {
+      "position":275203,
+      "freq":[
+        0.0,
+        0.12
+      ],
+      "gene_name":"insH1\/mmuP",
+      "gene_product":"IS5 family transposase and trans-activator\/S-methyl-L-methionine transporter",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"intergenic (-122\/-122)",
+      "mut_cat":"snp_intergenic",
+      "new_seq":"A",
+      "codon_ref_seq":null,
+      "label":"insH1\/mmuP snp_intergenic",
+      "Pop":6,
+      "last_freq":0.12
+    },
+    {
+      "position":555503,
+      "freq":[
+        0.0,
+        0.21
+      ],
+      "gene_name":"cysS",
+      "gene_product":"cysteine--tRNA ligase",
+      "aa_ref_seq":"Y",
+      "aa_new_seq":"S",
+      "aa_pos":298.0,
+      "gene_pos":"893",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"C",
+      "codon_ref_seq":"TAT",
+      "label":"cysS Y298S",
+      "Pop":6,
+      "last_freq":0.21
+    },
+    {
+      "position":631067,
+      "freq":[
+        0.0,
+        0.15
+      ],
+      "gene_name":"cstA",
+      "gene_product":"pyruvate transporter CstA",
+      "aa_ref_seq":"A",
+      "aa_new_seq":"S",
+      "aa_pos":392.0,
+      "gene_pos":"1174",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"GCC",
+      "label":"cstA A392S",
+      "Pop":6,
+      "last_freq":0.15
+    },
+    {
+      "position":1087606,
+      "freq":[
+        0.0,
+        0.13
+      ],
+      "gene_name":"pgaC",
+      "gene_product":"poly-N-acetyl-D-glucosamine synthase subunit PgaC",
+      "aa_ref_seq":"I",
+      "aa_new_seq":"L",
+      "aa_pos":81.0,
+      "gene_pos":"241",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"G",
+      "codon_ref_seq":"ATT",
+      "label":"pgaC I81L",
+      "Pop":6,
+      "last_freq":0.13
+    },
+    {
+      "position":1261535,
+      "freq":[
+        0.0,
+        0.68
+      ],
+      "gene_name":"prs",
+      "gene_product":"ribose-phosphate diphosphokinase",
+      "aa_ref_seq":"A",
+      "aa_new_seq":"V",
+      "aa_pos":114.0,
+      "gene_pos":"341",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"GCA",
+      "label":"prs A114V",
+      "Pop":6,
+      "last_freq":0.68
+    },
+    {
+      "position":1261845,
+      "freq":[
+        0.0,
+        0.19
+      ],
+      "gene_name":"prs",
+      "gene_product":"ribose-phosphate diphosphokinase",
+      "aa_ref_seq":"A",
+      "aa_new_seq":"S",
+      "aa_pos":11.0,
+      "gene_pos":"31",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"GCC",
+      "label":"prs A11S",
+      "Pop":6,
+      "last_freq":0.19
+    },
+    {
+      "position":1428767,
+      "freq":[
+        0.0,
+        0.12
+      ],
+      "gene_name":"insH5\/lomR",
+      "gene_product":"IS5 family transposase and trans-activator\/Rac prophage; protein LomR_1",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"intergenic (-41\/-29)",
+      "mut_cat":"snp_intergenic",
+      "new_seq":"C",
+      "codon_ref_seq":null,
+      "label":"insH5\/lomR snp_intergenic",
+      "Pop":6,
+      "last_freq":0.12
+    },
+    {
+      "position":1904774,
+      "freq":[
+        0.0,
+        0.1
+      ],
+      "gene_name":"manZ\/yobD",
+      "gene_product":"mannose-specific PTS enzyme IID component\/DUF986 domain-containing inner membrane protein YobD",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"intergenic (+28\/-27)",
+      "mut_cat":"snp_intergenic",
+      "new_seq":"T",
+      "codon_ref_seq":null,
+      "label":"manZ\/yobD snp_intergenic",
+      "Pop":6,
+      "last_freq":0.1
+    },
+    {
+      "position":2751428,
+      "freq":[
+        0.0,
+        0.18
+      ],
+      "gene_name":"nadK",
+      "gene_product":"NAD kinase",
+      "aa_ref_seq":"T",
+      "aa_new_seq":"P",
+      "aa_pos":200.0,
+      "gene_pos":"598",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"C",
+      "codon_ref_seq":"ACC",
+      "label":"nadK T200P",
+      "Pop":6,
+      "last_freq":0.18
+    },
+    {
+      "position":3054894,
+      "freq":[
+        0.0,
+        0.12
+      ],
+      "gene_name":"ygfB",
+      "gene_product":"PF03695 family protein YgfB",
+      "aa_ref_seq":"P",
+      "aa_new_seq":"Q",
+      "aa_pos":184.0,
+      "gene_pos":"551",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"CCA",
+      "label":"ygfB P184Q",
+      "Pop":6,
+      "last_freq":0.12
+    },
+    {
+      "position":3491706,
+      "freq":[
+        0.0,
+        0.14
+      ],
+      "gene_name":"yhfG\/ppiA",
+      "gene_product":"DUF2559 domain-containing protein YhfG\/peptidyl-prolyl cis-trans isomerase A",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"intergenic (-86\/+19)",
+      "mut_cat":"snp_intergenic",
+      "new_seq":"G",
+      "codon_ref_seq":null,
+      "label":"yhfG\/ppiA snp_intergenic",
+      "Pop":6,
+      "last_freq":0.14
+    },
+    {
+      "position":3544172,
+      "freq":[
+        0.0,
+        0.1
+      ],
+      "gene_name":"bioH",
+      "gene_product":"pimeloyl-acyl carrier protein methyl ester esterase",
+      "aa_ref_seq":"S",
+      "aa_new_seq":"C",
+      "aa_pos":225.0,
+      "gene_pos":"673",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"AGC",
+      "label":"bioH S225C",
+      "Pop":6,
+      "last_freq":0.1
+    },
+    {
+      "position":3794967,
+      "freq":[
+        0.0,
+        0.23
+      ],
+      "gene_name":"waaF",
+      "gene_product":"ADP-heptose--LPS heptosyltransferase 2",
+      "aa_ref_seq":"D",
+      "aa_new_seq":"E",
+      "aa_pos":13.0,
+      "gene_pos":"39",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"GAC",
+      "label":"waaF D13E",
+      "Pop":6,
+      "last_freq":0.23
+    },
+    {
+      "position":4001574,
+      "freq":[
+        0.0,
+        0.21
+      ],
+      "gene_name":"corA",
+      "gene_product":"Ni(2(+))\/Co(2(+))\/Mg(2(+)) transporter",
+      "aa_ref_seq":"L",
+      "aa_new_seq":"Q",
+      "aa_pos":50.0,
+      "gene_pos":"149",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"CTG",
+      "label":"corA L50Q",
+      "Pop":6,
+      "last_freq":0.21
+    },
+    {
+      "position":4227771,
+      "freq":[
+        0.0,
+        0.17
+      ],
+      "gene_name":"yjbB",
+      "gene_product":"putative inorganic phosphate export protein YjbB",
+      "aa_ref_seq":"L",
+      "aa_new_seq":"Q",
+      "aa_pos":14.0,
+      "gene_pos":"41",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"CTG",
+      "label":"yjbB L14Q",
+      "Pop":6,
+      "last_freq":0.17
+    },
+    {
+      "position":6305,
+      "freq":[
+        0.0,
+        0.13
+      ],
+      "gene_name":"yaaA",
+      "gene_product":"DNA binding and peroxide stress response protein YaaA",
+      "aa_ref_seq":"I",
+      "aa_new_seq":"T",
+      "aa_pos":52.0,
+      "gene_pos":"155",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"G",
+      "codon_ref_seq":"ATC",
+      "label":"yaaA I52T",
+      "Pop":7,
+      "last_freq":0.13
+    },
+    {
+      "position":847955,
+      "freq":[
+        0.0,
+        0.22
+      ],
+      "gene_name":"glnH",
+      "gene_product":"L-glutamine ABC transporter periplasmic binding protein",
+      "aa_ref_seq":"A",
+      "aa_new_seq":"V",
+      "aa_pos":17.0,
+      "gene_pos":"50",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"GCG",
+      "label":"glnH A17V",
+      "Pop":7,
+      "last_freq":0.22
+    },
+    {
+      "position":1189699,
+      "freq":[
+        0.0,
+        0.44
+      ],
+      "gene_name":"phoQ",
+      "gene_product":"sensor histidine kinase PhoQ",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"coding (78\/1461 nt)",
+      "mut_cat":"small_indel",
+      "new_seq":"AGCACC",
+      "codon_ref_seq":null,
+      "label":"phoQ small_indel",
+      "Pop":7,
+      "last_freq":0.44
+    },
+    {
+      "position":1190248,
+      "freq":[
+        0.0,
+        0.16
+      ],
+      "gene_name":"phoP",
+      "gene_product":"DNA-binding transcriptional dual regulator PhoP",
+      "aa_ref_seq":"R",
+      "aa_new_seq":"H",
+      "aa_pos":67.0,
+      "gene_pos":"200",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"CGT",
+      "label":"phoP R67H",
+      "Pop":7,
+      "last_freq":0.16
+    },
+    {
+      "position":1261649,
+      "freq":[
+        0.0,
+        0.21
+      ],
+      "gene_name":"prs",
+      "gene_product":"ribose-phosphate diphosphokinase",
+      "aa_ref_seq":"A",
+      "aa_new_seq":"V",
+      "aa_pos":76.0,
+      "gene_pos":"227",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"GCC",
+      "label":"prs A76V",
+      "Pop":7,
+      "last_freq":0.21
+    },
+    {
+      "position":1904774,
+      "freq":[
+        0.0,
+        0.11
+      ],
+      "gene_name":"manZ\/yobD",
+      "gene_product":"mannose-specific PTS enzyme IID component\/DUF986 domain-containing inner membrane protein YobD",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"intergenic (+28\/-27)",
+      "mut_cat":"snp_intergenic",
+      "new_seq":"T",
+      "codon_ref_seq":null,
+      "label":"manZ\/yobD snp_intergenic",
+      "Pop":7,
+      "last_freq":0.11
+    },
+    {
+      "position":3491701,
+      "freq":[
+        0.0,
+        0.1
+      ],
+      "gene_name":"yhfG\/ppiA",
+      "gene_product":"DUF2559 domain-containing protein YhfG\/peptidyl-prolyl cis-trans isomerase A",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"intergenic (-81\/+24)",
+      "mut_cat":"snp_intergenic",
+      "new_seq":"A",
+      "codon_ref_seq":null,
+      "label":"yhfG\/ppiA snp_intergenic",
+      "Pop":7,
+      "last_freq":0.1
+    },
+    {
+      "position":4220007,
+      "freq":[
+        0.0,
+        0.14
+      ],
+      "gene_name":"aceK",
+      "gene_product":"isocitrate dehydrogenase kinase\/phosphatase",
+      "aa_ref_seq":"V",
+      "aa_new_seq":"G",
+      "aa_pos":471.0,
+      "gene_pos":"1412",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"G",
+      "codon_ref_seq":"GTG",
+      "label":"aceK V471G",
+      "Pop":7,
+      "last_freq":0.14
+    },
+    {
+      "position":4409451,
+      "freq":[
+        0.0,
+        0.1
+      ],
+      "gene_name":"rlmB",
+      "gene_product":"23S rRNA 2'-O-ribose G2251 methyltransferase",
+      "aa_ref_seq":"D",
+      "aa_new_seq":"E",
+      "aa_pos":59.0,
+      "gene_pos":"177",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"GAC",
+      "label":"rlmB D59E",
+      "Pop":7,
+      "last_freq":0.1
+    },
+    {
+      "position":555503,
+      "freq":[
+        0.0,
+        1.0
+      ],
+      "gene_name":"cysS",
+      "gene_product":"cysteine--tRNA ligase",
+      "aa_ref_seq":"Y",
+      "aa_new_seq":"S",
+      "aa_pos":298.0,
+      "gene_pos":"893",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"C",
+      "codon_ref_seq":"TAT",
+      "label":"cysS Y298S",
+      "Pop":8,
+      "last_freq":1.0
+    },
+    {
+      "position":1619100,
+      "freq":[
+        0.0,
+        0.13
+      ],
+      "gene_name":"marC\/marR",
+      "gene_product":"inner membrane protein MarC\/DNA-binding transcriptional repressor MarR",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"intergenic (-192\/-1)",
+      "mut_cat":"small_indel",
+      "new_seq":null,
+      "codon_ref_seq":null,
+      "label":"marC\/marR small_indel",
+      "Pop":8,
+      "last_freq":0.13
+    },
+    {
+      "position":1619397,
+      "freq":[
+        0.0,
+        0.18
+      ],
+      "gene_name":"marR",
+      "gene_product":"DNA-binding transcriptional repressor MarR",
+      "aa_ref_seq":"",
+      "aa_new_seq":"",
+      "aa_pos":"",
+      "gene_pos":"coding (278\/435 nt)",
+      "mut_cat":"small_indel",
+      "new_seq":null,
+      "codon_ref_seq":null,
+      "label":"marR small_indel",
+      "Pop":8,
+      "last_freq":0.18
+    },
+    {
+      "position":1619468,
+      "freq":[
+        0.0,
+        0.13
+      ],
+      "gene_name":"marR",
+      "gene_product":"DNA-binding transcriptional repressor MarR",
+      "aa_ref_seq":"Q",
+      "aa_new_seq":"*",
+      "aa_pos":117.0,
+      "gene_pos":"349",
+      "mut_cat":"snp_nonsense",
+      "new_seq":"T",
+      "codon_ref_seq":"CAG",
+      "label":"marR Q117*",
+      "Pop":8,
+      "last_freq":0.13
+    },
+    {
+      "position":3638193,
+      "freq":[
+        0.0,
+        0.13
+      ],
+      "gene_name":"pitA",
+      "gene_product":"metal phosphate:H(+) symporter PitA",
+      "aa_ref_seq":"T",
+      "aa_new_seq":"T",
+      "aa_pos":184.0,
+      "gene_pos":"552",
+      "mut_cat":"snp_synonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"ACC",
+      "label":"pitA T184T",
+      "Pop":8,
+      "last_freq":0.13
+    },
+    {
+      "position":3794967,
+      "freq":[
+        0.0,
+        1.0
+      ],
+      "gene_name":"waaF",
+      "gene_product":"ADP-heptose--LPS heptosyltransferase 2",
+      "aa_ref_seq":"D",
+      "aa_new_seq":"E",
+      "aa_pos":13.0,
+      "gene_pos":"39",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"GAC",
+      "label":"waaF D13E",
+      "Pop":8,
+      "last_freq":1.0
+    },
+    {
+      "position":4220007,
+      "freq":[
+        0.0,
+        0.15
+      ],
+      "gene_name":"aceK",
+      "gene_product":"isocitrate dehydrogenase kinase\/phosphatase",
+      "aa_ref_seq":"V",
+      "aa_new_seq":"G",
+      "aa_pos":471.0,
+      "gene_pos":"1412",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"G",
+      "codon_ref_seq":"GTG",
+      "label":"aceK V471G",
+      "Pop":8,
+      "last_freq":0.15
+    },
+    {
+      "position":1087565,
+      "freq":[
+        0.0,
+        0.15
+      ],
+      "gene_name":"pgaC",
+      "gene_product":"poly-N-acetyl-D-glucosamine synthase subunit PgaC",
+      "aa_ref_seq":"I",
+      "aa_new_seq":"I",
+      "aa_pos":94.0,
+      "gene_pos":"282",
+      "mut_cat":"snp_synonymous",
+      "new_seq":"G",
+      "codon_ref_seq":"ATA",
+      "label":"pgaC I94I",
+      "Pop":9,
+      "last_freq":0.15
+    },
+    {
+      "position":1798903,
+      "freq":[
+        0.0,
+        1.0
+      ],
+      "gene_name":"pheS",
+      "gene_product":"phenylalanine--tRNA ligase subunit alpha",
+      "aa_ref_seq":"A",
+      "aa_new_seq":"P",
+      "aa_pos":14.0,
+      "gene_pos":"40",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"G",
+      "codon_ref_seq":"GCC",
+      "label":"pheS A14P",
+      "Pop":9,
+      "last_freq":1.0
+    },
+    {
+      "position":3054894,
+      "freq":[
+        0.0,
+        0.16
+      ],
+      "gene_name":"ygfB",
+      "gene_product":"PF03695 family protein YgfB",
+      "aa_ref_seq":"P",
+      "aa_new_seq":"Q",
+      "aa_pos":184.0,
+      "gene_pos":"551",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"CCA",
+      "label":"ygfB P184Q",
+      "Pop":9,
+      "last_freq":0.16
+    },
+    {
+      "position":6305,
+      "freq":[
+        0.0,
+        0.11
+      ],
+      "gene_name":"yaaA",
+      "gene_product":"DNA binding and peroxide stress response protein YaaA",
+      "aa_ref_seq":"I",
+      "aa_new_seq":"T",
+      "aa_pos":52.0,
+      "gene_pos":"155",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"G",
+      "codon_ref_seq":"ATC",
+      "label":"yaaA I52T",
+      "Pop":10,
+      "last_freq":0.11
+    },
+    {
+      "position":500131,
+      "freq":[
+        0.0,
+        0.11
+      ],
+      "gene_name":"gsk",
+      "gene_product":"inosine\/guanosine kinase",
+      "aa_ref_seq":"F",
+      "aa_new_seq":"I",
+      "aa_pos":3.0,
+      "gene_pos":"7",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"TTT",
+      "label":"gsk F3I",
+      "Pop":10,
+      "last_freq":0.11
+    },
+    {
+      "position":1261424,
+      "freq":[
+        0.0,
+        0.83
+      ],
+      "gene_name":"prs",
+      "gene_product":"ribose-phosphate diphosphokinase",
+      "aa_ref_seq":"I",
+      "aa_new_seq":"T",
+      "aa_pos":151.0,
+      "gene_pos":"452",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"G",
+      "codon_ref_seq":"ATC",
+      "label":"prs I151T",
+      "Pop":10,
+      "last_freq":0.83
+    },
+    {
+      "position":1261641,
+      "freq":[
+        0.0,
+        1.0
+      ],
+      "gene_name":"prs",
+      "gene_product":"ribose-phosphate diphosphokinase",
+      "aa_ref_seq":"R",
+      "aa_new_seq":"C",
+      "aa_pos":79.0,
+      "gene_pos":"235",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"A",
+      "codon_ref_seq":"CGT",
+      "label":"prs R79C",
+      "Pop":10,
+      "last_freq":1.0
+    },
+    {
+      "position":1622808,
+      "freq":[
+        0.0,
+        0.13
+      ],
+      "gene_name":"mgtT",
+      "gene_product":"protein MgtT",
+      "aa_ref_seq":"Y",
+      "aa_new_seq":"S",
+      "aa_pos":23.0,
+      "gene_pos":"68",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"C",
+      "codon_ref_seq":"TAT",
+      "label":"mgtT Y23S",
+      "Pop":10,
+      "last_freq":0.13
+    },
+    {
+      "position":3331544,
+      "freq":[
+        0.0,
+        0.11
+      ],
+      "gene_name":"obgE",
+      "gene_product":"GTPase ObgE",
+      "aa_ref_seq":"Q",
+      "aa_new_seq":"K",
+      "aa_pos":71.0,
+      "gene_pos":"211",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"T",
+      "codon_ref_seq":"CAG",
+      "label":"obgE Q71K",
+      "Pop":10,
+      "last_freq":0.11
+    },
+    {
+      "position":3934246,
+      "freq":[
+        0.0,
+        0.78
+      ],
+      "gene_name":"rbsA",
+      "gene_product":"ribose ABC transporter ATP binding subunit",
+      "aa_ref_seq":"S",
+      "aa_new_seq":"R",
+      "aa_pos":157.0,
+      "gene_pos":"469",
+      "mut_cat":"snp_nonsynonymous",
+      "new_seq":"C",
+      "codon_ref_seq":"AGC",
+      "label":"rbsA S157R",
+      "Pop":10,
+      "last_freq":0.78
+    }
+  ]
+}

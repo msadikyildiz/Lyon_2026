@@ -1,20 +1,40 @@
-# Genomic inputs
+# Genomic inputs and calculations
 
-`reference/metadata_complete.csv` is the available sample metadata. `recovered_tables/index.json` maps each saved notebook table to a portable JSON table with row counts, completeness and notebook cell provenance. Eight entries contain complete displayed tables, including repeated copies for the extended heatmaps; one contains only 50 of 83 rows. Displayed endpoint frequencies retain the precision printed by the original notebooks. Long annotation strings or frequency vectors may have been truncated in that display, so these exports cannot replace the original sequencing tables.
+The repository includes all 149 per-sample mutation-call TSVs referenced by `reference/metadata_complete.csv`, plus seven ATEC and ten PLAC processed CSV exports. These files were supplied by Erdal Toprak on 20 September 2026 in `Genomic_input_files.zip`. `input_manifest.json` records the archive checksum and each file's size, row count and SHA-256 checksum. Supplied files are preserved unchanged.
 
-The original plotting and processing code is retained in the notebooks listed in `notebook_inventory.json`. The first cell locates the repository root so paths work when a notebook is opened in its figure directory. The automated reproduction command uses recovered tables for Source Data and retains the existing genomic image panels in figure assemblies.
+## Reproduce the tables
 
-## Input requirements
+From the repository root, using the environment described in the main README:
 
-Genomic figure regeneration requires either the per-sample mutation tables below or the full processed frequency tables used by the plotting notebooks, with sample/culture/day and mutation identities. The processed tables should include full-precision frequencies and the full traced-allele vectors, particularly PLAC for Figure 4 and Supplementary Figures 8/9, and the missing 33 rows for the PbEc table in Supplementary Figure 4.
+```sh
+python scripts/reproduce_genomics.py
+```
 
-The original notebook input layout is:
+This also runs as part of `python reproduce.py`, before the Source Data workbook is built. The script executes the original notebooks' data-processing cells in temporary directories, so their CSV exports cannot overwrite the supplied files. Notebook-specific filtering, allele handling, annotation corrections and two-decimal frequency rounding are preserved. Raw TSVs retain the original frequency precision. The code reproduces downstream processing of existing mutation calls; it does not align reads or call mutations.
+
+| Output in `generated_tables/` | Rows | Figure coverage |
+|---|---:|---|
+| `MG_AMI` | 43 | Figure 2; Supplementary Figure 5 |
+| `MG_LEV` | 64 | Figure 2; Supplementary Figure 5 |
+| `MG_CEF` | 80 | Figure 2; Supplementary Figure 5 |
+| `MG_CEF_R` | 56 | Supplementary Figure 3 |
+| `PbEc_CEF` | 83 | Supplementary Figure 4 |
+| `MG_untreated` | 38 | Supplementary Figure 6 |
+| `PLAC` | 601 | Figure 4; Supplementary Figure 8 |
+| `combined_lineages` | 963 | Supplementary Figure 9 |
+
+Each table is exported as CSV and typed JSON. `generated_tables/index.json` maps all 12 figure notebooks to their output tables and records executed cell numbers and notebook hashes. The 17 supplied processed exports match the rerun calculations before the notebooks' later annotation/allele corrections. Every available saved endpoint row also matches after accounting for truncated display text, empty-field formatting and numerical serialization. `generated_tables/validation.json` records these checks. The full 83-row PbEc table replaces the earlier 50-row display recovery in Source Data.
+
+The original input layout is retained:
 
 ```text
 data/genomics/reference/metadata_complete.csv
 data/genomics/out/<FolderDate>/<source_file>/output/output.gd.tsv
+data/genomics/data/processed/traced_alleles/<lineage>/<population>.csv
 ```
 
-`FolderDate` and `source_file` are metadata columns. The tables require mutation-calling/reference provenance and the corresponding plotting notebook version. If rerunning the mutation calls is intended, reference genome, caller version/options and read accessions are also needed. The supplied notebooks cover plotting and downstream table processing, not a complete raw-read alignment/calling workflow.
+`recovered_tables/` preserves the historical notebook-display exports for comparison. They are no longer the Source Data input. The genomic plotting notebooks are included, but the automated figure assemblies still use their established image panels. Connecting regenerated genomic plots to those assemblies remains a separate task in the repository TODO table.
 
-Single-cell data are separate: Figure 6 and Supplementary Figures 12/13 need their expression/metadata objects, embeddings, differential-expression/enrichment tables and generating code from the Rosenthal analysis. These inputs are absent from the repository and remain to be obtained from the Rosenthal group.
+## Remaining inputs
+
+Reproducing the upstream mutation calls requires reference-genome files/version, caller version/options and sequencing-read accessions. These are not supplied by this archive. Single-cell expression objects, metadata, embeddings, complete differential-expression/enrichment tables and generating code are separate inputs still needed for Figure 6 and Supplementary Figures 12/13.

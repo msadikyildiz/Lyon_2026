@@ -1,0 +1,14 @@
+abs_position,freq,gene_name,gene_product,aa_ref_seq,aa_new_seq,aa_pos,gene_pos,mut_cat,new_seq,codon_ref_seq,label
+MR_Cli1_contig_36 136428,[0.   0.14],SEED:fig_6666666.487694.peg.3016,"H repeat-associated protein, YhhI family",H,H,304.0,912,snp_synonymous,A,CAC,SEED:fig_6666666.487694.peg.3016 H304H
+MR_Cli1_contig_7 362078,[0.  0.1],SEED:fig_6666666.487694.peg.4619,"H repeat-associated protein, YhhI family",N,T,167.0,500,snp_nonsynonymous,G,AAC,SEED:fig_6666666.487694.peg.4619 N167T
+MR_Cli1_contig_15 4596,[0.  0.1],SEED:fig_6666666.487694.peg.1025,hypothetical protein,N,S,83.0,248,snp_nonsynonymous,C,AAT,SEED:fig_6666666.487694.peg.1025 N83S
+MR_Cli1_contig_15 4588,[0.   0.11],SEED:fig_6666666.487694.peg.1025,hypothetical protein,G,S,86.0,256,snp_nonsynonymous,T,GGC,SEED:fig_6666666.487694.peg.1025 G86S
+MR_Cli1_contig_1 111058,[0. 1.],GO:0004017,Adenylate kinase (EC 2.7.4.3),D,Y,147.0,439,snp_nonsynonymous,T,GAC,GO:0004017 D147Y
+MR_Cli1_contig_4 376208,[0.   0.29],SEED:fig_6666666.487694.rna.49,tRNA-Ala-TGC,,,,noncoding (43/77 nt),snp_noncoding,A,,SEED:fig_6666666.487694.rna.49 snp_noncoding
+MR_Cli1_contig_4 376194,[0.  0.3],SEED:fig_6666666.487694.rna.49,tRNA-Ala-TGC,,,,noncoding (29/77 nt),snp_noncoding,T,,SEED:fig_6666666.487694.rna.49 snp_noncoding
+MR_Cli1_contig_4 376200,[0.  0.3],SEED:fig_6666666.487694.rna.49,tRNA-Ala-TGC,,,,noncoding (35/77 nt),snp_noncoding,G,,SEED:fig_6666666.487694.rna.49 snp_noncoding
+MR_Cli1_contig_22 86211,[0.   0.13],SEED:fig_6666666.487694.rna.22,tRNA-Gln-TTG,,,,noncoding (63/75 nt),snp_noncoding,G,,SEED:fig_6666666.487694.rna.22 snp_noncoding
+MR_Cli1_contig_22 86212,[0.   0.14],SEED:fig_6666666.487694.rna.22,tRNA-Gln-TTG,,,,noncoding (62/75 nt),snp_noncoding,A,,SEED:fig_6666666.487694.rna.22 snp_noncoding
+MR_Cli1_contig_41 1807,[0.   0.14],GO:0004616/–,"6-phosphogluconate dehydrogenase, decarboxylating (EC 1.1.1.44)/–",,,,intergenic (+266/–),snp_intergenic,A,,GO:0004616/– snp_intergenic
+MR_Cli1_contig_36 30819,[0.   0.26],SEED:fig_6666666.487694.peg.2908/GO:0046421,hypothetical protein/Methylisocitrate lyase (EC 4.1.3.30),,,,intergenic (+34/+101),large_substitution,GCGGTTGTCGGATGCGACGCTATGCGTCTTATCCGACCTACAGTTCAGTGCACCCCGTAGGCCTGATAAGTCGCGTCAGCGGCGCATCAGGCATCGGTTGTCGGATGCGACGCTATG,,SEED:fig_6666666.487694.peg.2908/GO:0046421 large_substitution
+MR_Cli1_contig_36 30633,[0. 1.],[SEED:fig_6666666.487694.peg.2908],[SEED:fig_6666666.487694.peg.2908],,,,,large_deletion,,,[SEED:fig_6666666.487694.peg.2908] large_deletion
