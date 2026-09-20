@@ -10,7 +10,7 @@ From the repository root, using the environment described in the main README:
 python scripts/reproduce_genomics.py
 ```
 
-This also runs as part of `python reproduce.py`, before the Source Data workbook is built. The script executes the original notebooks' data-processing cells in temporary directories, so their CSV exports cannot overwrite the supplied files. Notebook-specific filtering, allele handling, annotation corrections and two-decimal frequency rounding are preserved. Raw TSVs retain the original frequency precision. The code reproduces downstream processing of existing mutation calls; it does not align reads or call mutations.
+This also runs as part of `python reproduce.py`, before the Source Data workbook is built. The script executes the original notebooks' data-processing cells in temporary directories, so their CSV exports cannot overwrite the supplied files. Notebook-specific filtering, allele handling, corrections in the executed data-processing cells and two-decimal frequency rounding are preserved. Display-label changes confined to plotting cells are not applied to these tables; those mappings remain in the original plotting code. Raw TSVs retain the original frequency precision. The code reproduces downstream processing of existing mutation calls; it does not align reads or call mutations.
 
 | Output in `generated_tables/` | Rows | Figure coverage |
 |---|---:|---|

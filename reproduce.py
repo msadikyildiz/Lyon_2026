@@ -54,7 +54,8 @@ def main():
             parser.error('Within this checkout, place refit outputs under runs/')
         shutil.copytree(ROOT, root, ignore=shutil.ignore_patterns('.git', 'runs', '__pycache__', '.DS_Store', '.venv'))
         # Remove only generated directories inside the newly created refit copy.
-        for relative in [SCRIPTS / 'out', Path('working/source-data'), Path('working/figures-assembled')]:
+        for relative in [SCRIPTS / 'out', Path('working/source-data'), Path('working/figures-assembled'),
+                         Path('data/genomics/generated_tables')]:
             if (root / relative).exists():
                 shutil.rmtree(root / relative)
         cache = root / SCRIPTS / 'cache'

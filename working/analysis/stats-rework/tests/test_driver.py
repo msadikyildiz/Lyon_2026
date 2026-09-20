@@ -20,7 +20,8 @@ class DriverTests(unittest.TestCase):
     def test_refit_removes_only_copied_generated_outputs(self):
         with tempfile.TemporaryDirectory() as temp:
             source=Path(temp)/'source';source.mkdir()
-            generated=[driver.SCRIPTS/'out',Path('working/source-data'),Path('working/figures-assembled')]
+            generated=[driver.SCRIPTS/'out',Path('working/source-data'),Path('working/figures-assembled'),
+                       Path('data/genomics/generated_tables')]
             for folder in generated:
                 (source/folder).mkdir(parents=True);(source/folder/'sentinel').write_text('reference')
             cache=source/driver.SCRIPTS/'cache';cache.mkdir();(cache/'fit.pkl').write_text('reference cache')

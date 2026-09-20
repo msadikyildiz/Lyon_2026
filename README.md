@@ -44,7 +44,7 @@ Raw-refit runs automatically compare their rebuilt outputs with this checkout. T
 micromamba run -n lyon-2026 python scripts/compare_outputs.py /path/to/reference /path/to/rebuilt --report comparison.json
 ```
 
-The comparator checks all 26 CSV tables (including the panel manifest), 126 PNG files, and Source Data cell values/types. Numerical tolerance is 1e-8 relative and 1e-10 absolute. PNG bytes must match. PDF, SVG and XLSX containers include timestamps, so regeneration can change their file hashes without changing rendered content or values. The driver also checks the 36 primary contrasts against the committed numerical reference; each run records `running`, `failed` or `passed` explicitly.
+The comparator checks all 26 statistical/manifest CSV tables, 126 PNG files, Source Data cell values/types, and 18 genomic table/index/validation files. Numerical tolerance is 1e-8 relative and 1e-10 absolute for the statistical tables and workbook. PNG and genomic file bytes must match. PDF, SVG and XLSX containers include timestamps, so regeneration can change their file hashes without changing rendered content or values. The driver also checks the 36 primary contrasts against the committed numerical reference; each run records `running`, `failed` or `passed` explicitly.
 
 ## Results and source files
 
