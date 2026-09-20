@@ -1,0 +1,16 @@
+{
+  "Figure1_schematics.png": {
+    "sha256": "05aee3a46664146ea78c7170e461b25d0e898dc8ad98bca5564d9ce26c6e8372",
+    "source": "supplied manuscript image1.png; editable source working/figures/Figure 1/A-C/Figure 1 A-C.pptx"
+  },
+  "Supplementary_Figure_1_schematic.pdf": {
+    "source": "native Word render of supplied image28.emf; editable source working/figures/Supplemental Figure 1/cartoon - survival mechanisms.pptx",
+    "crop_pdf_points": [
+      86,
+      112,
+      524,
+      252
+    ],
+    "sha256": "a5fad25feb2bc65b4e8524013c1e7ca66a49669955b61e1fbfbb2605683d8fab"
+  }
+}

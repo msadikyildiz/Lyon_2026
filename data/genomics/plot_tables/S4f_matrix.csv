@@ -1,0 +1,25 @@
+matrix_label,1,2,3,4,5,6,7
+$\it{acrA}$ intergenic snp,0,0,0,0,0,0,1
+AcrB V127G,0,0,0,0,0,0,1
+AtpC Q25*,0,0,0,0,0,0,1
+ComR P16Q,0,0,0,0,0,0,1
+CpxA L30R,0,0,0,0,0,0,1
+FtsI V313M,0,0,0,0,0,0,1
+MarR R77C,0,0,0,0,0,0,1
+OmpC W93*,0,0,0,0,0,0,1
+WbaP P32fs,0,0,0,0,0,0,1
+AtpD S342R,0,0,0,0,0,0,0.43
+atpD indel,0,0,0,0,0,0,0.27
+$\it{gnd}$ snp intergenic,0,0,0.18,0.18,0,0.14,0.15
+GlnW snp [MR_Cli1_contig_22 86212],0.13,0,0.17,0,0,0.14,0.15
+GlnW snp [MR_Cli1_contig_22 86211],0.13,0,0.17,0,0,0.13,0.14
+$\it{aqpZ/lysO}$ snp intergenic,0.14,0,0,0,0.11,0,0.12
+$\it{mdtQ/dusC}$ snp intergenic,0,0,0,0,0,0,0.12
+Adk D147Y,0,0,0,0,0,1,0
+CysS V27G,0,0,0,0,0.26,0,0
+FhuE E619D,0,1,0,0,0,0,0
+HipA G118D,1,0,0,0,0,0,0
+MetG V583M,0,1,0,0,0,0,0
+PheS L24F,0,0,1,0,0,0,0
+PheT indel,0,0,0,1,0.81,0,0
+YgfB P184Q,0,0.12,0,0,0,0,0

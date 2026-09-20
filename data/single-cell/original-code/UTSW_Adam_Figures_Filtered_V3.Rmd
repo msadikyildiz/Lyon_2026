@@ -1,0 +1,1175 @@
+---
+title: "Adam Lyon UTSW Sample Processing and Figure Generation"
+author: "Samuel Cooke"
+date: "2025-04-17"
+output: html_document
+---
+
+### Single Cell Seurat Data Analysis
+## Load Necessary Packages
+```{r import, warning=FALSE,message=FALSE}
+library(reshape2)
+library(tidyverse)
+library(MASS)
+library(Matrix)
+library(MatrixGenerics)
+library(edgeR)
+library(mltools)
+library(pheatmap)
+library(data.table)
+library(Seurat)
+library(SeuratData)
+library(knitr)
+library(dplyr)
+library(patchwork)
+```
+                      
+## Check Working Directory
+```{r Working Directory}
+print(getwd())
+```
+
+## Load the data
+```{r load_data, warning=FALSE,message=FALSE}
+
+filtered_h5 <- "./data/Filtered_Features/aggr_5removed_filtered_feature_bc_matrix.h5"
+
+counts <- Read10X_h5(filtered_h5)
+
+UTSW_seurat <- CreateSeuratObject(counts = counts, project = "UTSW Aggregated Samples")
+
+```
+
+## Extract sample information into meta.data
+```{r, sample names}
+
+# 1. Define mapping from suffix number → sample name
+sample_levels <- c("3a","3b","4a","4b","7a","7b")
+
+# 2. Grab your cell barcodes
+barcodes <- colnames(UTSW_seurat)
+
+# 3. Extract the numeric suffix after the dash
+#    e.g. "AACAACCCAGCTATAC‑1" → "1", coerced to integer 1
+suffix_nums <- as.integer(sub(".*-(\\d+)$", "\\1", barcodes))
+
+# 4. Map those numbers to your sample names
+sample_names <- sample_levels[suffix_nums]
+
+# 5. Add to meta.data (as a factor, keeping the proper order)
+UTSW_seurat$sample <- factor(sample_names, levels = sample_levels)
+
+# 6. (Optional) Check it
+before_filtering <- table(UTSW_seurat$sample)
+before_filtering
+```
+
+## Sample Filtering
+```{r, filter}
+
+umi_cutoffs <- list(
+  "3a" = 27,
+  "3b" = 27,
+  "4a" = 60,
+  "4b" = 70,
+  "7a" = 65,
+  "7b" = 35
+)
+
+# 1. compute per‐cell UMI counts (if you haven’t already)
+umi_counts <- Matrix::colSums(
+  GetAssayData(UTSW_seurat, assay = "RNA", slot = "counts")
+)
+
+# 2. grab your cell‐by‐cell sample assignments
+samples     <- UTSW_seurat$sample
+
+# 3. build the “keep?” logical vector using your named umi_cutoffs
+keep <- umi_counts >= umi_cutoffs[samples]
+
+# 4. extract the cell barcodes that pass
+cells_to_keep <- names(keep)[keep]
+
+# 5. subset in one go
+UTSW_filtered <- subset(UTSW_seurat, cells = cells_to_keep)
+after_filtering <- table(UTSW_filtered$sample)
+
+```
+
+## Sample Filtering Report
+```{r, filtering table}
+
+# 1. build the two tables
+before_filtering <- table(UTSW_seurat$sample)
+after_filtering  <- table(UTSW_filtered$sample)
+
+# 2. coerce the “before” table to a data.frame
+df <- as.data.frame(before_filtering)
+colnames(df) <- c("sample", "before_filtering")
+
+# 3. add the “after” counts by looking them up by sample name
+df$after_filtering <- as.integer(after_filtering[ as.character(df$sample) ])
+
+# 4. compute percent filtered out
+df$percent_filtered_out <- 
+  (df$before_filtering - df$after_filtering) / df$before_filtering * 100
+
+# 5. (optional) round to one decimal place
+df$percent_filtered_out <- round(df$percent_filtered_out, 1)
+
+# 6. view
+print(df)
+
+```
+
+## Visualize data Before Filtering
+```{r, visualize QC}
+
+# 1. Add complexity metric to your Seurat object
+UTSW_seurat$log10GenesPerUMI <- 
+  log10(UTSW_seurat$nFeature_RNA) / log10(UTSW_seurat$nCount_RNA)
+
+# 2. Extract & rename metadata columns
+metadata <- UTSW_seurat@meta.data
+metadata$cells <- rownames(metadata)
+
+metadata <- metadata %>%
+  dplyr::rename(seq_folder = orig.ident,
+                nUMI = nCount_RNA,
+                nGene = nFeature_RNA)
+
+# 3. QC plots
+
+## UMI Count Distribution per Sample
+ggplot(metadata, aes(x = nUMI, color = sample, fill = sample)) + 
+  geom_density(alpha = 0.2) + 
+  scale_x_log10() + 
+  theme_classic() +
+  ylab("Cell density") +
+  ggtitle("UMI Count Distribution per Sample") +
+  geom_vline(xintercept = 1000, linetype = "dashed") +
+  geom_vline(xintercept =   25, linetype = "dashed")
+
+## Gene Count Distribution per Sample
+ggplot(metadata, aes(x = nGene, color = sample, fill = sample)) + 
+  geom_density(alpha = 0.2) + 
+  scale_x_log10() + 
+  theme_classic() +
+  ggtitle("Gene Count Distribution per Sample") +
+  geom_vline(xintercept =   6, linetype = "dashed") +
+  geom_vline(xintercept = 100, linetype = "dashed")
+
+## Boxplot of Genes per Cell (log10 scaled)
+ggplot(metadata, aes(x = sample, y = log10(nGene), fill = sample)) + 
+  geom_boxplot() + 
+  theme_classic() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  ggtitle("Genes per Cell (log10 scaled)")
+
+## Correlation nUMI vs nGene by Sample (faceted)
+ggplot(metadata, aes(x = nUMI, y = nGene, color = sample)) + 
+  geom_point(alpha = 0.4, size = 0.5) + 
+  stat_smooth(method = "lm", se = FALSE, color = "black") +
+  scale_x_log10() + 
+  scale_y_log10() + 
+  theme_classic() +
+  geom_vline(xintercept = 500, linetype = "dashed") +
+  geom_hline(yintercept = 250, linetype = "dashed") +
+  facet_wrap(~ sample)
+
+## nUMI vs nGene Across All Samples (overlay)
+ggplot(metadata, aes(x = nUMI, y = nGene, color = sample)) + 
+  geom_point(alpha = 0.4, size = 0.5) + 
+  stat_smooth(method = "lm", se = FALSE, color = "black") +
+  scale_x_log10() + 
+  scale_y_log10() + 
+  theme_classic() +
+  ggtitle("nUMI vs nGene Across All Samples (Overlayed)") +
+  theme(plot.title = element_text(hjust = 0.5))
+
+## Gene Complexity per Sample
+ggplot(metadata, aes(x = log10GenesPerUMI, color = sample, fill = sample)) +
+  geom_density(alpha = 0.2) +
+  theme_classic() +
+  geom_vline(xintercept = 0.8, linetype = "dashed") +
+  ggtitle("Gene Complexity per Sample")
+
+## Histogram of Gene Complexity (faceted)
+ggplot(metadata, aes(x = log10GenesPerUMI, fill = sample)) +
+  geom_histogram(binwidth = 0.02, color = "black", alpha = 0.6) +
+  theme_classic() +
+  facet_wrap(~ sample, scales = "free_y") +
+  scale_x_continuous(limits = c(0.8, NA)) +
+  labs(
+    title = "Histogram of log10(Genes) / log10(UMIs)", 
+    x     = "log10(Genes) / log10(UMIs)", 
+    y     = "Cell Count"
+  )
+
+## Violin Plot of Genes per Cell (log10 scaled)
+ggplot(metadata, aes(x = sample, y = log10(nGene), fill = sample)) + 
+  geom_violin(trim = FALSE, scale = "width") +
+  theme_classic() +
+  theme(
+    axis.text.x  = element_text(angle = 45, hjust = 1),
+    plot.title   = element_text(hjust = 0.5, face = "bold")
+  ) +
+  ggtitle("Genes per Cell (log10 scaled)") +
+  ylab("log10(nGene)")
+
+```
+
+## Visualize Data After Filtering
+```{r, visualize QC after filtering}
+
+# 1. Add complexity metric to your Seurat object
+UTSW_filtered$log10GenesPerUMI <- 
+  log10(UTSW_filtered$nFeature_RNA) / log10(UTSW_filtered$nCount_RNA)
+
+# 2. Extract & rename metadata columns
+metadata_filtered <- UTSW_filtered@meta.data
+metadata_filtered$cells <- rownames(metadata_filtered)
+
+metadata_filtered <- metadata_filtered %>%
+  dplyr::rename(seq_folder = orig.ident,
+                nUMI = nCount_RNA,
+                nGene = nFeature_RNA)
+
+# 3. QC plots
+
+## UMI Count Distribution per Sample
+ggplot(metadata_filtered, aes(x = nUMI, color = sample, fill = sample)) + 
+  geom_density(alpha = 0.2) + 
+  scale_x_log10() + 
+  theme_classic() +
+  ylab("Cell density") +
+  ggtitle("UMI Count Distribution per Sample") +
+  geom_vline(xintercept = 1000, linetype = "dashed") +
+  geom_vline(xintercept =   25, linetype = "dashed")
+
+## Gene Count Distribution per Sample
+ggplot(metadata_filtered, aes(x = nGene, color = sample, fill = sample)) + 
+  geom_density(alpha = 0.2) + 
+  scale_x_log10() + 
+  theme_classic() +
+  ggtitle("Gene Count Distribution per Sample") +
+  geom_vline(xintercept =   6, linetype = "dashed") +
+  geom_vline(xintercept = 100, linetype = "dashed")
+
+## Boxplot of Genes per Cell (log10 scaled)
+ggplot(metadata_filtered, aes(x = sample, y = log10(nGene), fill = sample)) + 
+  geom_boxplot() + 
+  theme_classic() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  ggtitle("Genes per Cell (log10 scaled)")
+
+## Correlation nUMI vs nGene by Sample (faceted)
+ggplot(metadata_filtered, aes(x = nUMI, y = nGene, color = sample)) + 
+  geom_point(alpha = 0.4, size = 0.5) + 
+  stat_smooth(method = "lm", se = FALSE, color = "black") +
+  scale_x_log10() + 
+  scale_y_log10() + 
+  theme_classic() +
+  geom_vline(xintercept = 500, linetype = "dashed") +
+  geom_hline(yintercept = 250, linetype = "dashed") +
+  facet_wrap(~ sample)
+
+## nUMI vs nGene Across All Samples (overlay)
+ggplot(metadata_filtered, aes(x = nUMI, y = nGene, color = sample)) + 
+  geom_point(alpha = 0.4, size = 0.5) + 
+  stat_smooth(method = "lm", se = FALSE, color = "black") +
+  scale_x_log10() + 
+  scale_y_log10() + 
+  theme_classic() +
+  ggtitle("nUMI vs nGene Across All Samples (Overlayed)") +
+  theme(plot.title = element_text(hjust = 0.5))
+
+## Gene Complexity per Sample
+ggplot(metadata_filtered, aes(x = log10GenesPerUMI, color = sample, fill = sample)) +
+  geom_density(alpha = 0.2) +
+  theme_classic() +
+  geom_vline(xintercept = 0.8, linetype = "dashed") +
+  ggtitle("Gene Complexity per Sample")
+
+## Histogram of Gene Complexity (faceted)
+ggplot(metadata_filtered, aes(x = log10GenesPerUMI, fill = sample)) +
+  geom_histogram(binwidth = 0.02, color = "black", alpha = 0.6) +
+  theme_classic() +
+  facet_wrap(~ sample, scales = "free_y") +
+  scale_x_continuous(limits = c(0.8, NA)) +
+  labs(
+    title = "Histogram of log10(Genes) / log10(UMIs)", 
+    x     = "log10(Genes) / log10(UMIs)", 
+    y     = "Cell Count"
+  )
+
+## Violin Plot of Genes per Cell (log10 scaled)
+ggplot(metadata_filtered, aes(x = sample, y = log10(nGene), fill = sample)) + 
+  geom_violin(trim = FALSE, scale = "width") +
+  theme_classic() +
+  theme(
+    axis.text.x  = element_text(angle = 45, hjust = 1),
+    plot.title   = element_text(hjust = 0.5, face = "bold")
+  ) +
+  ggtitle("Genes per Cell (log10 scaled)") +
+  ylab("log10(nGene)")
+
+```
+
+## Collapse Samples
+```{r, collapse samples}
+
+# ──────────────────────────────────────────────────────────────
+# Collapse the sample labels: 3a+3b → 3, 4a+4b → 4, 7a+7b → 7
+# ──────────────────────────────────────────────────────────────
+
+# Collapse 3a→3, 3b→3, etc. by removing the final letter
+UTSW_filtered$sample_collapsed <- factor(
+  sub("[ab]$", "",               # regex: drop last a or b
+      as.character(UTSW_filtered$sample)),
+  levels = c("3","4","7")        # keep desired order
+)
+
+# sanity-check
+table(original  = UTSW_filtered$sample,
+      collapsed = UTSW_filtered$sample_collapsed)
+
+UTSW_filtered$sample <- UTSW_filtered$sample_collapsed
+
+UTSW_filtered$sample_collapsed <- NULL
+
+```
+
+## Convert 3 to Parent
+```{r, convert to parent}
+
+# ── Change "3" → "parent" in metadata$sample ──
+# 1) If the column is a factor, convert to character so we can alter the values
+UTSW_filtered$sample <- as.character(UTSW_filtered$sample)
+
+# 2) Replace every "3" with "parent"
+UTSW_filtered$sample[UTSW_filtered$sample == "3"] <- "parent"
+
+# 3) (Optional) Convert back to a factor and set the level order you want
+UTSW_filtered$sample <- factor(UTSW_filtered$sample,
+                             levels = c("parent", "4", "7"))
+
+```
+
+## Probe collapse based on max counts
+```{r, Seurat_Probe_Collapse, message=FALSE, warning=FALSE}
+
+# Ensure RNA is active assay
+DefaultAssay(UTSW_filtered) <- "RNA"
+
+# 1. Get the raw (counts) assay data
+counts_mat <- GetAssayData(object = UTSW_filtered, slot = "counts")
+
+# 2. Sum counts per feature (rowSums is efficient for dgCMatrix objects)
+feature_sums <- Matrix::rowSums(counts_mat)
+
+# 3. Create a data frame of features and their summed counts
+
+feature_counts_df <- data.frame(
+  Feature       = names(feature_sums), 
+  Summed_Counts = feature_sums
+)
+
+# 4. Split the Feature Names into Gene and Probe
+## 'Feature' is something like "CD79A-1".
+## strsplit(...) will return a list of character vectors, one per row.
+
+split_list <- strsplit(feature_counts_df$Feature, split = "-")
+feature_counts_df$Gene  <- sapply(split_list, `[`, 1)
+feature_counts_df$Probe <- sapply(split_list, `[`, 2)
+
+# 5. Reorder the matrix to Feature, Gene, Probe, Summed_Counts
+feature_counts_df <- feature_counts_df[, c("Feature", "Gene", "Probe", "Summed_Counts")]
+
+# 6. Extract each probe with the max Summed_Counts compared
+
+max_probe_df <- feature_counts_df %>%
+  group_by(Gene) %>%
+  slice_max(
+    order_by  = Summed_Counts,
+    n         = 1,
+    with_ties = FALSE
+  ) %>%
+  ungroup()
+
+# 7. Extract all the probe names to keep
+## The 'Feature' column here names the rows (probes) to keep for each Gene
+keep_features <- max_probe_df$Feature
+
+# 8. Makes a copy of the original counts matrix extracted from the seurat object
+new_mat <- counts_mat
+
+# 9. Zeros out all probes not in the keep_features list
+## For all rows not in 'keep_features', set them to zero
+not_keep <- setdiff(rownames(new_mat), keep_features)
+new_mat[not_keep, ] <- 0
+
+# 10. Create a new Assay object
+new_assay <- CreateAssayObject(counts = new_mat)
+
+# 11. Add this assay to the existing Seurat object under a chosen name (e.g., "ProbeCollapseAssay")
+UTSW_filtered[["ProbeCollapseAssay"]] <- new_assay
+
+```
+
+## Seurat Standard Processing
+```{r, seurat processing}
+
+DefaultAssay(UTSW_filtered) <- "ProbeCollapseAssay"
+
+# Standard Seurat Processing
+UTSW_filtered <- NormalizeData(UTSW_filtered)
+UTSW_filtered <- FindVariableFeatures(UTSW_filtered)
+UTSW_filtered <- ScaleData(UTSW_filtered)
+UTSW_filtered <- RunPCA(UTSW_filtered, verbose = FALSE)
+UTSW_filtered <- FindNeighbors(UTSW_filtered, dims = 1:7)
+UTSW_filtered <- FindClusters(UTSW_filtered, resolution = 0.7, verbose = FALSE)
+UTSW_filtered <- RunUMAP(UTSW_filtered, dims = 1:7)
+UTSW_filtered_UMAP <- DimPlot(UTSW_filtered, label = TRUE)
+UTSW_filtered_UMAP_Sample <- DimPlot(UTSW_filtered, label = TRUE, group.by = "sample")
+# Display UMAP
+UTSW_filtered_UMAP
+UTSW_filtered_UMAP_Sample
+
+
+# export figure
+ggsave(
+  filename = "figures/UTSW_UMAP.pdf",
+  plot     = UTSW_filtered_UMAP,      # the object you created
+  width    = 6,                # ← 20 inches wide
+  height   = 4,                 # ← 25 inches tall
+  units    = "in",              # "in", "cm", or "mm"
+  device   = cairo_pdf          # good font embedding on most systems
+)
+
+ggsave(
+  filename = "figures/UTSW_UMAP_Sample.pdf",
+  plot     = UTSW_filtered_UMAP_Sample,      # the object you created
+  width    = 6,                # ← 20 inches wide
+  height   = 4,                 # ← 25 inches tall
+  units    = "in",              # "in", "cm", or "mm"
+  device   = cairo_pdf          # good font embedding on most systems
+)
+
+```
+
+## Split UMAP
+```{r, split umap, fig.width = 20, fig.height = 6}
+
+UTSW_UMAP_Split<- DimPlot(
+  UTSW_filtered,
+  reduction = "umap",
+  # colour however you like:
+  group.by = "seurat_clusters",   # or "sample", "celltype", etc.
+  # ← this is the key line:
+  split.by = "sample",            # one facet per sample, only its cells are shown
+  ncol     = 3,                   # arrange the tiles 3-across (tweak as desired)
+  pt.size  = 0.2                  # keep the dots small when faceting
+) + NoLegend()
+
+UTSW_UMAP_Split
+
+ggsave(
+  filename = "figures/UTSW_UMAP_Split.pdf",
+  plot     = UTSW_UMAP_Split,      # the object you created
+  width    = 20,                # ← 20 inches wide
+  height   = 6,                 # ← 25 inches tall
+  units    = "in",              # "in", "cm", or "mm"
+  device   = cairo_pdf          # good font embedding on most systems
+)
+
+```
+
+## Gene Distribution Graphs
+```{r, dstribution graphs, fig.width = 12, fig.height = 3.5, fig.keep = 'all'}
+
+# ---------------------------------------------------------------
+#  1) Make list containing genes of interest
+# ---------------------------------------------------------------
+
+genes <- c(
+  "hipA","hipB","gatA","glvC","selB","rpoZ","ftsH","fimE","fimA","lpxC",
+  "kdtA","gyrA","rpoB","icd","fusA","trkH","phoQ","phoP","prs","cpxA",
+  "relA","spoT","lon","sulA","yqgE","ompC","acrA","pgaC","ygfB","sbmA",
+  "rpoH","sucA","priA","dnaC","dnaT","cysK","mdtK","yhaM","rmf","oxyR",
+  "rpoS","dksA","gsk","nadC","purF","ahpF","katG","poxB","acs","lsrA",
+  "ptsG","aceK","rplJ","feaB","puuA","elaD","recF","paaG","pssL","arcA",
+  "arpA","tas","yhiI","arcB","hlyE","xerC","osmY","yaaA","yacH","glpF",
+  "uvrC","pgsA","baeS","tufB","bluF","pitA","corA","yicC","eutH","relB",
+  "yfbS","cstA","abgT","glnH","yjbB","nadK","waaF","cysS","marR","pheS",
+  "rbsA","glcB","yqeF","yieK","thiP","ptsI","fadB","eutQ","torC","dnaQ",
+  "topA","rpoD","nikA","aroG","mutL","rihB","serW","speE","clsB","rnb",
+  "mscM","cyaA","thpR","yagN","mltB","ydcL","ydgI","glpT","yebK","yfjH",
+  "tyrR","hns","tdk","ppa","ytfQ","ampH","narU","yddK","appY","yjcO",
+  "gltP","ompT","ftp","yffN","yffO","mrcB","mcrB","symE","yohP","dusC",
+  "rssB","galU","gadF","mdtE","rnpB","yhaC","manZ","yobD","yhfG","ppiA",
+  "adiY","adiA","iscR","trmJ","mgtL","mgtA"
+)
+
+# ---------------------------------------------------------------
+#  2) Identify the retained probe (gene-#) for each gene of interest
+# ---------------------------------------------------------------
+
+# Make sure the collapsed assay is active
+DefaultAssay(UTSW_filtered) <- "ProbeCollapseAssay"
+
+# Pull the counts matrix from the collapsed assay
+collapsed_mat <- GetAssayData(UTSW_filtered, slot = "counts")
+
+# Helper: given a gene root (e.g. "hipA"), return the probe that still has counts
+kept_probe <- function(gene_name, mat) {
+  
+  # Rows that start with "gene-" (all probes for that gene)
+  probe_rows <- grep(paste0("^", gene_name, "-"), rownames(mat), value = TRUE)
+  
+  if (length(probe_rows) == 0) return(NA_character_)   # gene absent
+  
+  # Sum counts across all cells for every probe
+  totals <- Matrix::rowSums(mat[probe_rows, , drop = FALSE])
+  
+  # After collapsing, exactly one probe should have non-zero counts
+  nz <- probe_rows[totals > 0]
+  
+  if (length(nz) == 0) {
+    NA_character_                         # none retained
+  } else if (length(nz) == 1) {
+    nz                                    # one retained
+  } else {
+    # Rare tie: keep the probe with the *largest* total counts
+    nz[which.max(totals[probe_rows %in% nz])]
+  }
+}
+
+# Build a tidy data frame: Gene  |  SelectedProbe  |  ProbeID
+kept_probe_df <- data.frame(
+  Gene          = genes,
+  SelectedProbe = vapply(genes, kept_probe, character(1), mat = collapsed_mat),
+  stringsAsFactors = FALSE
+)
+
+# Extract just the numeric part after the dash
+kept_probe_df$ProbeID <- sub(".*-(\\d+)$", "\\1", kept_probe_df$SelectedProbe)
+
+# ---------------------------------------------------------------
+# 3) Plot genes of interest distribution on UMAP
+# ---------------------------------------------------------------
+
+# probes that were actually retained in the collapsed assay
+genes_probes <- as.character(na.omit(kept_probe_df$SelectedProbe))
+
+n_samples <- length(levels(UTSW_filtered$sample))   # panels per figure
+
+# pre-allocate named list
+plot_list <- vector("list", length(genes_probes))
+names(plot_list) <- genes_probes
+
+for (i in seq_along(genes_probes)) {
+  
+  gene_id <- genes_probes[i]
+  
+  p <- FeaturePlot(
+        object    = UTSW_filtered,
+        features  = gene_id,          # one probe at a time
+        reduction = "umap",
+        split.by  = "sample",
+        ncol      = n_samples,        # all sample tiles in one row
+        pt.size   = 0.25,
+        order     = TRUE,
+        raster    = FALSE
+      ) &
+      plot_annotation(title = gene_id) &
+      theme(plot.title = element_text(hjust = 0.5, face = "bold"))
+  
+  plot_list[[i]] <- p          # save into list, no printing
+}
+
+# Display all plots
+#plot_list
+
+```
+
+## Save Distribution Plots
+```{r, dis plots save}
+
+# 1) Make sure the output folder exists
+output_dir <- "figures/gene_distribution"
+if (!dir.exists(output_dir)) dir.create(output_dir)
+
+# 2) Iterate over the named list and save each plot
+for (probe_id in names(plot_list)) {
+  
+  p <- plot_list[[probe_id]]
+  
+  # Sanitise the filename in case probe_id has characters like "/"
+  safe_name <- gsub("[^A-Za-z0-9_\\-]", "_", probe_id)
+  file_out  <- file.path(output_dir, paste0(safe_name, ".pdf"))
+  
+  ggsave(
+    filename = file_out,
+    plot     = p,
+    device   = "pdf",
+    dpi      = 300,
+    width    = 20,   # adjust if you want larger/smaller files
+    height   = 6,
+    units    = "in"
+  )
+}
+
+cat("Saved", length(plot_list), "plots to", output_dir, "\n")
+
+```
+## Annotated Charts
+```{r, annotated distribution DGE}
+
+## ──────────────────────────────────────────────────────────────
+## Compute DGE for Parent, 4, and 7 using shared parameters
+## Restrict to `genes_probes` only
+## ──────────────────────────────────────────────────────────────
+
+# Parameters
+logfc_threshold <- 0
+min_pct         <- 0
+only_pos        <- FALSE
+
+# Samples to compare (against all others)
+sample_ids <- c("parent", "4", "7")
+names(sample_ids) <- c("Parent", "Sample 4", "Sample 7")  # pretty names
+
+# Compute DGE and store in a named list
+dge_list <- lapply(sample_ids, function(smpl) {
+  FindMarkers(
+    UTSW_filtered,
+    ident.1         = smpl,
+    group.by        = "sample",
+    assay           = "ProbeCollapseAssay",
+    features        = genes_probes,
+    logfc.threshold = logfc_threshold,
+    min.pct         = min_pct,
+    only.pos        = only_pos
+  )
+})
+
+# Add names to the list
+names(dge_list) <- names(sample_ids)
+
+
+
+```
+
+## Distribution Plots with DGE Data Chart
+```{r, Annotated Distribution Plots}
+
+## ──────────────────────────────────────────────────────────────
+## Combine FeaturePlot + gene regulation summary table
+## ──────────────────────────────────────────────────────────────
+
+library(gridExtra)
+library(grid)
+library(patchwork)
+
+# Helper: Generate regulation table per gene
+get_gene_status_table <- function(probe_id, dge_list) {
+  
+  # Build one row per sample
+  res <- lapply(names(dge_list), function(smpl_name) {
+    dge <- dge_list[[smpl_name]]
+    
+    if (!probe_id %in% rownames(dge)) {
+      return(data.frame(
+        Sample    = smpl_name,
+        Direction = "NA",
+        Log2FC    = "NA",
+        p_val_adj = "NA",
+        stringsAsFactors = FALSE
+      ))
+    }
+    
+    logfc <- dge[probe_id, "avg_log2FC"]
+    padj  <- dge[probe_id, "p_val_adj"]
+    dir   <- ifelse(logfc > 0, "Up", "Down")
+    
+    data.frame(
+      Sample    = smpl_name,
+      Direction = dir,
+      Log2FC    = sprintf("%.2f", logfc),
+      p_val_adj = formatC(padj, format = "e", digits = 2),
+      stringsAsFactors = FALSE
+    )
+  })
+  
+  # Combine rows into a data frame
+  df <- do.call(rbind, res)
+  
+  # Create table grob for plotting
+  tableGrob(df, rows = NULL, theme = ttheme_default(base_size = 8))
+}
+
+# Initialize Plot List
+plot_list <- vector("list", length(genes_probes))
+names(plot_list) <- genes_probes
+
+# Combine UMAP plot with annotation table
+for (i in seq_along(genes_probes)) {
+  
+  gene_id <- genes_probes[i]
+  
+  # UMAP split-by-sample
+  p <- FeaturePlot(
+    object    = UTSW_filtered,
+    features  = gene_id,
+    reduction = "umap",
+    split.by  = "sample",
+    ncol      = length(levels(UTSW_filtered$sample)),
+    pt.size   = 0.25,
+    order     = TRUE,
+    raster    = FALSE
+  ) &
+  plot_annotation(title = gene_id) &
+  theme(plot.title = element_text(hjust = 0.5, face = "bold"))
+  
+  # Table of Up/Down + log2FC
+  table_grob <- get_gene_status_table(gene_id, dge_list)
+  
+  # Combine vertically: UMAP on top, table on bottom
+  combined <- p / wrap_elements(table_grob) + plot_layout(heights = c(4, 1))
+  
+  # Store
+  plot_list[[i]] <- combined
+}
+
+```
+
+## Save Distribution Plots 2
+```{r, dis plots save 2}
+
+# 1) Make sure the output folder exists
+output_dir <- "figures/gene_distribution_charts"
+if (!dir.exists(output_dir)) dir.create(output_dir)
+
+# 2) Iterate over the named list and save each plot
+for (probe_id in names(plot_list)) {
+  
+  p <- plot_list[[probe_id]]
+  
+  # Sanitise the filename in case probe_id has characters like "/"
+  safe_name <- gsub("[^A-Za-z0-9_\\-]", "_", probe_id)
+  file_out  <- file.path(output_dir, paste0(safe_name,"_chartDis", ".pdf"))
+  
+  ggsave(
+    filename = file_out,
+    plot     = p,
+    device   = "pdf",
+    dpi      = 300,
+    width    = 20,   # adjust if you want larger/smaller files
+    height   = 6,
+    units    = "in"
+  )
+}
+
+cat("Saved", length(plot_list), "plots to", output_dir, "\n")
+
+```
+
+## Heatmap
+```{r, Heatmaps, message=FALSE, warning=FALSE, fig.width = 20, fig.height = 25}
+
+# ------------------------------------------------------------------
+# 1)  Parameters
+# ------------------------------------------------------------------
+cells_per_group <- 3000    # max cells to keep *per cluster / sample* for heatmaps
+
+# ---- by CLUSTER ---------------------------------------------------
+Idents(UTSW_filtered) <- "seurat_clusters"
+
+UTSW_ds_cluster <- subset(
+  UTSW_filtered,
+  downsample = cells_per_group   # Seurat takes ≤ N cells *per identity*
+)
+
+# ---- by SAMPLE ----------------------------------------------------
+Idents(UTSW_filtered) <- "sample"
+
+UTSW_ds_sample <- subset(
+  UTSW_filtered,
+  downsample = cells_per_group
+)
+
+# ------------------------------------------------------------------
+# 2)  Find marker genes (same settings as before)
+# ------------------------------------------------------------------
+
+# --- cluster markers
+Idents(UTSW_ds_cluster) <- "seurat_clusters"
+cluster_markers <- FindAllMarkers(
+  UTSW_ds_cluster,
+  assay           = "ProbeCollapseAssay",
+  only.pos        = TRUE,
+  min.pct         = 0.10,
+  logfc.threshold = 0.25
+)
+
+top_cluster_genes <- cluster_markers %>%
+  group_by(cluster) %>%
+  slice_max(order_by = avg_log2FC, n = 10) %>%
+  pull(gene) %>%
+  unique()
+
+# --- sample markers
+Idents(UTSW_ds_sample) <- "sample"
+sample_markers <- FindAllMarkers(
+  UTSW_ds_sample,
+  assay           = "ProbeCollapseAssay",
+  only.pos        = TRUE,
+  min.pct         = 0.10,
+  logfc.threshold = 0.25
+)
+
+top_sample_genes <- sample_markers %>%
+  group_by(cluster) %>%
+  slice_max(order_by = avg_log2FC, n = 10) %>%
+  pull(gene) %>%
+  unique()
+
+# ------------------------------------------------------------------
+# 3)  (Re)scale the genes to plot – still z-scores
+# ------------------------------------------------------------------
+heat_feats <- unique(c(top_cluster_genes, top_sample_genes))
+
+UTSW_ds_cluster <- ScaleData(
+  UTSW_ds_cluster,
+  assay    = "ProbeCollapseAssay",
+  features = heat_feats,
+  verbose  = FALSE
+)
+
+UTSW_ds_sample <- ScaleData(
+  UTSW_ds_sample,
+  assay    = "ProbeCollapseAssay",
+  features = heat_feats,
+  verbose  = FALSE
+)
+
+# ------------------------------------------------------------------
+# 4)  Draw heat-maps (now with far fewer columns → displays correctly)
+# ------------------------------------------------------------------
+heat_cluster <- DoHeatmap(
+  UTSW_ds_cluster,
+  features = top_cluster_genes,
+  group.by = "seurat_clusters",
+  slot     = "scale.data"
+) +
+  ggtitle("Top DE Genes per Cluster (down-sampled, z-scores)") +
+  theme(plot.title = element_text(hjust = 0.5, face = "bold"))
+
+heat_sample <- DoHeatmap(
+  UTSW_ds_sample,
+  features = top_sample_genes,
+  group.by = "sample",
+  slot     = "scale.data"
+) +
+  ggtitle("Top DE Genes per Sample (down-sampled, z-scores)") +
+  theme(plot.title = element_text(hjust = 0.5, face = "bold"))
+
+# ------------------------------------------------------------------
+# 5)  Display
+# ------------------------------------------------------------------
+
+heat_cluster <- heat_cluster +
+  theme(
+    axis.text.y = element_text(
+      size   = 6,              # smaller font
+      margin = margin(r = 2)   # 2-pt right margin → label–tile gap
+    )
+)
+
+heat_sample  <- heat_sample +
+  theme(
+    axis.text.y = element_text(size = 6, margin = margin(r = 2))
+)
+
+heat_cluster
+heat_sample
+
+
+## save figure
+# save as PDF (vector) ──────────────
+ggsave(
+  filename = "figures/heat_cluster.pdf",
+  plot     = heat_cluster,      # the object you created
+  width    = 20,                # ← 20 inches wide
+  height   = 25,                 # ← 25 inches tall
+  units    = "in",              # "in", "cm", or "mm"
+  device   = cairo_pdf          # good font embedding on most systems
+)
+
+ggsave(
+  filename = "figures/heat_sample.pdf",
+  plot     = heat_sample,      # the object you created
+  width    = 20,                # ← 20 inches wide
+  height   = 25,                 # ← 25 inches tall
+  units    = "in",              # "in", "cm", or "mm"
+  device   = cairo_pdf          # good font embedding on most systems
+)
+
+```
+
+## Volcano Plots
+```{r, volcano plots}
+
+# ------------------------------------------------------------
+# 0)  Parameters you might tweak
+# ------------------------------------------------------------
+logfc_cutoff <- 0.6   # |log2FC| threshold for "big" effect
+padj_cutoff  <- 0.05  # FDR threshold
+label_top    <- 10    # annotate this many most-sig genes per plot
+save_plots   <- TRUE  # set FALSE if you don’t want files on disk
+
+# ------------------------------------------------------------
+# 1)  Prepare Seurat object and helper pkgs
+# ------------------------------------------------------------
+DefaultAssay(UTSW_filtered) <- "ProbeCollapseAssay"
+Idents(UTSW_filtered)       <- "sample"
+
+library(Seurat)
+library(dplyr)
+library(ggplot2)
+library(ggrepel)    # nicer text labels
+library(patchwork)  # just in case
+library(purrr)      # iterate/keep tidy (map())
+
+# ------------------------------------------------------------
+# 2)  Iterate over samples → DE test vs. all others
+# ------------------------------------------------------------
+sample_levels <- levels(UTSW_filtered$sample)
+
+volcano_list <- map(sample_levels, function(smpl) {
+  
+  message("Finding markers for ", smpl, " vs rest …")
+  
+  deg <- FindMarkers(
+    object      = UTSW_filtered,
+    ident.1     = smpl,
+    group.by    = "sample",
+    assay       = "ProbeCollapseAssay",
+    only.pos    = FALSE
+  ) %>%
+    rownames_to_column("gene") %>%
+    mutate(
+      sign      = case_when(
+                    p_val_adj < padj_cutoff & avg_log2FC >  logfc_cutoff ~ "Up",
+                    p_val_adj < padj_cutoff & avg_log2FC < -logfc_cutoff ~ "Down",
+                    TRUE                                                     ~ "NS"
+                  ),
+      negLog10P = -log10(p_val_adj + 1e-300)   # +tiny to avoid Inf
+    )
+  
+  ## Top genes to label (most significant)
+  lab_genes <- deg %>%
+    filter(sign != "NS") %>%
+    arrange(p_val_adj) %>%
+    slice_head(n = label_top) %>%
+    pull(gene)
+  
+  ## Volcano plot
+  p <- ggplot(deg, aes(x = avg_log2FC, y = negLog10P)) +
+    geom_point(aes(color = sign), alpha = 0.6, size = 1) +
+    scale_color_manual(values = c(Up = "#D62728", Down = "#1F77B4", NS = "grey70")) +
+    geom_vline(xintercept =  c(-logfc_cutoff, logfc_cutoff), linetype = 2) +
+    geom_hline(yintercept = -log10(padj_cutoff), linetype = 2) +
+    geom_text_repel(
+      data  = filter(deg, gene %in% lab_genes),
+      aes(label = gene),
+      max.overlaps = Inf,
+      size  = 3
+    ) +
+    labs(
+      title    = paste("Volcano:", smpl, "vs all other samples"),
+      x        = "avg log2 Fold-Change",
+      y        = "-log10(adj. P value)",
+      color    = ""
+    ) +
+    theme_classic() +
+    theme(plot.title = element_text(hjust = 0.5, face = "bold"))
+  
+  p
+})
+
+names(volcano_list) <- sample_levels
+
+# ------------------------------------------------------------
+# 3)  Optional: save each plot to disk
+# ------------------------------------------------------------
+if (save_plots) {
+  dir.create("volcano_plots", showWarnings = FALSE)
+  
+  walk2(volcano_list, names(volcano_list), function(p, nm) {
+    ggsave(
+      filename = file.path("volcano_plots", paste0("volcano_reg_", nm, ".pdf")),
+      plot     = p,
+      width    = 6, height = 5, units = "in", dpi = 300
+    )
+  })
+  message("Saved ", length(volcano_list), " volcano plots to volcano_plots/")
+}
+
+# ------------------------------------------------------------
+# 4)  Preview: show first plot inline
+# ------------------------------------------------------------
+volcano_list
+
+```
+
+## Volcano Plots Genes of Interest
+```{r, GOI Volcano Plots}
+
+# ──────────────────────────────────────────────────────────────
+# Volcano plots (genes of interest) + SAVE as vector files
+# ──────────────────────────────────────────────────────────────
+# prerequisites: UTSW_filtered, genes_probes, logfc_cutoff, padj_cutoff
+# returns: named list `volcano_list` and writes PDF/SVG to disk
+# ----------------------------------------------------------------
+DefaultAssay(UTSW_filtered) <- "ProbeCollapseAssay"
+Idents(UTSW_filtered)       <- "sample"
+
+library(Seurat)
+library(dplyr)
+library(ggplot2)
+library(ggrepel)
+library(purrr)
+library(svglite)   # for SVG output
+
+sample_levels <- levels(UTSW_filtered$sample)
+
+volcano_list <- map(sample_levels, function(smpl) {
+
+  ## 1) Differential expression
+  deg <- FindMarkers(
+           UTSW_filtered,
+           ident.1  = smpl,
+           group.by = "sample",
+           assay    = "ProbeCollapseAssay",
+           only.pos = FALSE
+         ) %>%
+         rownames_to_column("gene") %>%
+         mutate(
+           sign      = case_when(
+                          p_val_adj < padj_cutoff & avg_log2FC >  logfc_cutoff ~ "Up",
+                          p_val_adj < padj_cutoff & avg_log2FC < -logfc_cutoff ~ "Down",
+                          TRUE                                                      ~ "NS"
+                        ),
+           negLog10P = -log10(p_val_adj + 1e-300)
+         )
+
+  ## 2) Label genes of interest that are significant
+  label_df <- deg %>%
+                filter(
+                  gene %in% genes_probes,
+                  sign != "NS"
+                )
+
+  ## 3) Plot
+  ggplot(deg, aes(avg_log2FC, negLog10P)) +
+    geom_point(aes(color = sign), alpha = 0.6, size = 1) +
+    scale_color_manual(values = c(Up = "#D62728", Down = "#1F77B4", NS = "grey70")) +
+    geom_vline(xintercept = c(-logfc_cutoff, logfc_cutoff), linetype = 2) +
+    geom_hline(yintercept = -log10(padj_cutoff),            linetype = 2) +
+    geom_text_repel(
+      data  = label_df,
+      aes(label = gene),
+      max.overlaps = Inf,
+      size = 3
+    ) +
+    labs(
+      title = paste("Volcano – Genes of Interest:", smpl, "vs rest"),
+      x     = "avg log2 Fold-Change",
+      y     = "-log10(adj. P value)",
+      color = ""
+    ) +
+    theme_classic() +
+    theme(plot.title = element_text(hjust = 0.5, face = "bold"))
+})
+
+names(volcano_list) <- sample_levels
+
+# ──────────────────────────────────────────────────────────────
+# Save each volcano plot as PDF
+# ──────────────────────────────────────────────────────────────
+out_dir <- "volcano_GOI_plots"
+dir.create(out_dir, showWarnings = FALSE)
+
+plot_w <- 6   # inches
+plot_h <- 5
+
+walk2(volcano_list, names(volcano_list), function(p, nm) {
+  safe_nm <- gsub("[^A-Za-z0-9_\\-]", "_", nm)
+  
+  ggsave(
+    filename = file.path(out_dir, paste0("volcano_GOI_", safe_nm, ".pdf")),
+    plot     = p,
+    device   = cairo_pdf,
+    width    = plot_w, height = plot_h, units = "in"
+  )
+})
+
+message("Saved ", length(volcano_list) * 2,
+        " vector files to ", normalizePath(out_dir))
+```
+
+## Full‐dataset DGE and export
+```{r full_DGE_export, message=FALSE, warning=FALSE}
+# ensure you’re using your collapsed probe assay
+DefaultAssay(UTSW_filtered) <- "ProbeCollapseAssay"
+
+# make output folder if needed
+if (!dir.exists("results")) dir.create("results")
+
+# 1) Cluster‐level DGE on full data
+Idents(UTSW_filtered) <- "seurat_clusters"
+cluster_markers_full <- FindAllMarkers(
+  object          = UTSW_filtered,
+  assay           = "ProbeCollapseAssay"
+)
+write.csv(
+  cluster_markers_full,
+  file      = "results/cluster_DGE_full.csv",
+  row.names = FALSE
+)
+
+# 2) Sample‐level DGE on full data
+Idents(UTSW_filtered) <- "sample"
+sample_markers_full <- FindAllMarkers(
+  object          = UTSW_filtered,
+  assay           = "ProbeCollapseAssay"
+)
+write.csv(
+  sample_markers_full,
+  file      = "results/sample_DGE_full.csv",
+  row.names = FALSE
+)
+
+message("Wrote cluster_DGE_full.csv and sample_DGE_full.csv to results/") 
+```
+
+## Export as loupe file
+```{r eval=FALSE, include=FALSE}
+
+library(loupeR)
+output_dir = '/users/c/o/cookesf/008_R-Studio_Projects/2025-04-15_UTSW_Figures'
+# Generate Loupe Browser file using create_loupe_from_seurat
+create_loupe_from_seurat(
+  obj = UTSW_filtered,
+  output_dir = output_dir,
+  output_name = "UTSW_Adam_Figures_ProbeCollapsed_5_Removed_filtered",
+  dedup_clusters = FALSE,
+  feature_ids = NULL,
+  executable_path = NULL,
+  force = FALSE
+)
+
+```
+

@@ -1,0 +1,132 @@
+{
+  "mode": "cached",
+  "python": "3.11.14",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "seconds": 208.17,
+  "steps": [
+    "scripts/reproduce_genomics.py",
+    "scripts/reproduce_genomic_plots.py",
+    "scripts/reproduce_single_cell.py",
+    "scripts/reproduce_schematic_figures.py",
+    "validate.py",
+    "final_stats.py",
+    "mdk_source.py",
+    "supp11_mdk.py",
+    "manifest.py",
+    "report_results.py",
+    "survival.py",
+    "plot_final.py",
+    "source_data.py",
+    "print_panels.py",
+    "assemble_figures.py",
+    "scripts/assemble_additional_figures.py",
+    "scripts/reproduce_trajectories.py"
+  ],
+  "status": "passed",
+  "coverage": "docs/FIGURE_COVERAGE.md",
+  "single_cell_from_counts": false,
+  "raw_inputs": {
+    "working/analysis/stats-rework/biohpc-pull/data/ODFinal.xlsx": "3397561985b52d03209642b24148ca3d0ec226907b3133264675c5c611e49894",
+    "working/analysis/stats-rework/biohpc-pull/data/ODFinal_mutants.xlsx": "b079af1f8222b6d83c199d39be7f5d7f69b803b516dda66e69f5270761d68d30",
+    "working/analysis/stats-rework/biohpc-pull/data/ODFinal_unt.xlsx": "5de231a71c483b73242ef39b82a355fe9eb6e54c8f105803e7362c883c3f7ec7",
+    "working/analysis/stats-rework/biohpc-pull/data/PlateInfo.xlsx": "1638ee6b8bc5565bb6d9ae96e66a64f8f49b2655698e011974a504eca80e3c81",
+    "working/analysis/stats-rework/biohpc-pull/data/PlateInfo_mutants.xlsx": "e96cd342aeb1de80430089934733174bee01576859fc80fd3a4bcb77e55814ff",
+    "working/analysis/stats-rework/biohpc-pull/data/PlateInfo_mutants_norep.xlsx": "e48d82ddd3401d306f3fd444871c88fab564dcdce30179f9d9de3913923771c0",
+    "working/analysis/stats-rework/biohpc-pull/data/PlateInfo_unt.xlsx": "50acb499120695bf4ae3cdea114cf53323bf2f57d2228d3d1b6fa8627506fc56"
+  },
+  "invariance_tests": 13,
+  "analysis_checks": 369,
+  "primary_contrasts": 36,
+  "unchanged_inferential_tables": [
+    "final_statistics.csv",
+    "group_summaries.csv",
+    "sensitivity_all.csv",
+    "fig5_descriptive.csv",
+    "fig5a_descriptive.csv"
+  ],
+  "figures": 19,
+  "figure_pdf_pages": 26,
+  "print_panel_placements": 50,
+  "single_cell": {
+    "cells": 48883,
+    "cluster_sizes": [
+      9335,
+      7034,
+      6008,
+      5989,
+      5092,
+      4967,
+      4961,
+      3052,
+      2445
+    ],
+    "input_files_verified": 31,
+    "cluster_DGE": {
+      "rows": 6543,
+      "avg_log2FC_max_absolute_difference": 1.021405182655144e-14,
+      "pct.1_max_absolute_difference": 0.0,
+      "pct.2_max_absolute_difference": 0.0,
+      "p_val_max_log10_difference": 3.9124259387790516e-13,
+      "p_val_adj_max_log10_difference": 4.134470543704083e-13
+    },
+    "DGE 4 vs parent": {
+      "rows": 1222,
+      "avg_log2FC_max_absolute_difference": 1.0269562977782698e-15,
+      "pct.1_max_absolute_difference": 0.0,
+      "pct.2_max_absolute_difference": 0.0,
+      "p_val_max_log10_difference": 7.600107210237184e-09,
+      "p_val_adj_max_log10_difference": 7.600107210237184e-09
+    },
+    "DGE 7 vs parent": {
+      "rows": 863,
+      "avg_log2FC_max_absolute_difference": 1.0130785099704553e-15,
+      "pct.1_max_absolute_difference": 0.0,
+      "pct.2_max_absolute_difference": 0.0,
+      "p_val_max_log10_difference": 1.987643827305874e-09,
+      "p_val_adj_max_log10_difference": 1.987643827305874e-09
+    },
+    "sample_DGE": {
+      "rows": 2513,
+      "avg_log2FC_max_absolute_difference": 9.992007221626409e-15,
+      "pct.1_max_absolute_difference": 0.0,
+      "pct.2_max_absolute_difference": 0.0,
+      "p_val_max_log10_difference": 1.7763568394002505e-15,
+      "p_val_adj_max_log10_difference": 7.105427357601002e-15
+    },
+    "supplementary_table_3": {
+      "sheets": [
+        "Sample statistics",
+        "cluster_DGE",
+        "up in 1 and gsea w benj hoch",
+        "up seurat clstr2 and gsea ",
+        "up seurat clstr9 and gsea",
+        "up seurat clstr4 and gsea"
+      ],
+      "original_cells_preserved": true
+    },
+    "supplementary_table_4": {
+      "sheets": [
+        "DGE 4 vs parent",
+        "DGE 7 vs parent",
+        "up in 4 and 7 vs WT GSEA",
+        "up in WT vs 4 and 7 GSEA"
+      ],
+      "original_cells_preserved": true
+    },
+    "supplementary_points": {
+      "1": 674,
+      "2": 427,
+      "4": 734,
+      "9": 1175
+    },
+    "enrichment": "Supplied result tables preserved; generating method, database version and tested background are not in the supplied Rmd files."
+  },
+  "source_data": {
+    "sheets": 25,
+    "blocks": 111,
+    "numeric_cells": 499906,
+    "text_cells": 273910,
+    "blank_cells": 30072,
+    "all_cells_match_source_tables": true
+  }
+}

@@ -1,0 +1,170 @@
+matrix_label,label,display_label,coordinate,mutation_id
+RpoB E562D,RpoB E562D,RpoB E562D,4182930,4182930|C|D
+RpoB H1237L,RpoB H1237L,RpoB H1237L,4184954,4184954|T|L
+RpoB M1290R,RpoB M1290R,RpoB M1290R,4185113,4185113|G|R
+$\it{rpoB}$ indel [4185043],$\it{rpoB}$ indel,rpoB indel (2),4185043,4185043||
+RpoB D1064N,RpoB D1064N,RpoB D1064N,4184434,4184434|A|N
+RpoB D1064G,RpoB D1064G,RpoB D1064G,4184435,4184435|G|G
+RpoB T563A,RpoB T563A,RpoB T563A,4182931,4182931|G|A
+$\it{rpoB}$ indel [4182858],$\it{rpoB}$ indel,rpoB indel (1),4182858,4182858||
+GyrA D87Y,GyrA D87Y,GyrA D87Y,2339162,2339162|A|Y
+GyrA S83L,GyrA S83L,GyrA S83L,2339173,2339173|A|L
+GyrA G81D,GyrA G81D,GyrA G81D,2339179,2339179|T|D
+GyrA S83W,GyrA S83W,GyrA S83W,2339173,2339173|C|W
+GyrA A119E,GyrA A119E,GyrA A119E,2339065,2339065|T|E
+Icd H366H,Icd H366H,Icd H366H,1196220,1196220|T|H
+Icd T370T,Icd T370T,Icd T370T,1196232,1196232|T|T
+RplJ P89S,RplJ P89S,RplJ P89S,4180260,4180260|T|S
+FeaB D41E,FeaB D41E,FeaB D41E,1447641,1447641|A|E
+PuuA D431D,PuuA D431D,PuuA D431D,1359616,1359616|G|D
+ElaD C252C,ElaD C252C,ElaD C252C,2383468,2383468|T|C
+RecF I355T,RecF I355T,RecF I355T,3880158,3880158|G|T
+PaaG S241C,PaaG S241C,PaaG S241C,1458984,1458984|T|C
+$\it{pssL}$ indel,$\it{pssL}$ indel,pssL indel,2722723,2722723||
+Arca L65F,Arca L65F,Arca L65F,4640112,4640112|G|F
+$\it{arcA}$ indel,$\it{arcA}$ indel,arcA indel,4640231,4640231|CGCTTCGAAAACATCATAGCCTTC|
+ArpA D661A,ArpA D661A,ArpA D661A,4220506,4220506|G|A
+$\it{tas}$ indel,$\it{tas}$ indel,tas indel,2972129,2972129||
+$\it{appY/ompT}$ indel,$\it{appY/ompT}$ indel,appY/ompT indel,584487,584487||
+$\it{insB9–[crl]}$ deletion,$\it{insB9–[crl]}$ deletion,insB9–[crl] deletion,257908,257908||
+YhiI V38V,YhiI V38V,YhiI V38V,3630489,3630489|T|V
+$\it{yhaC/rnpB}$ snp intergenic [3270068],$\it{yhaC/rnpB}$ snp intergenic,yhaC/rnpB snp intergenic (2),3270068,3270068|A|
+$\it{yhaC/rnpB}$ snp intergenic [3269943],$\it{yhaC/rnpB}$ snp intergenic,yhaC/rnpB snp intergenic (1),3269943,3269943|T|
+SucA V141A,SucA V141A,SucA V141A,759127,759127|C|A
+YgfB P184Q,YgfB P184Q,YgfB P184Q,3054894,3054894|T|Q
+$\it{gltP/yjcO}$ snp intergenic,$\it{gltP/yjcO}$ snp intergenic,gltP/yjcO snp intergenic,4296060,4296060|T|
+$\it{selB}$ indel,$\it{selB}$ indel,selB indel,3758381,3758381|T|
+$\it{glvC}$ indel,$\it{glvC}$ indel,glvC indel,3862562,3862562||
+$\it{fimB/fimE}$ insertion,$\it{fimB/fimE}$ insertion,fimB/fimE insertion,4542020,4542020||
+$\it{ftp/ompC}$ snp intergenic [2311562],$\it{ftp/ompC}$ snp intergenic,ftp/ompC snp intergenic (1),2311562,2311562|A|
+$\it{ftp/ompC}$ snp intergenic [2311594],$\it{ftp/ompC}$ snp intergenic,ftp/ompC snp intergenic (2),2311594,2311594|G|
+ArcB G258C,ArcB G258C,ArcB G258C,3352254,3352254|A|C
+HlyE E42D,HlyE E42D,HlyE E42D,1230269,1230269|A|D
+$\it{yffN/yffO}$ snp intergenic,$\it{yffN/yffO}$ snp intergenic,yffN/yffO snp intergenic,2562049,2562049|C|
+TrkH L185Q,TrkH L185Q,TrkH L185Q,4033698,4033698|A|Q
+TrkH T20I,TrkH T20I,TrkH T20I,4033203,4033203|T|I
+$\it{trkH}$ indel,$\it{trkH}$ indel,trkH indel,4034301,4034301||
+TrkH L80Q,TrkH L80Q,TrkH L80Q,4033383,4033383|A|Q
+TrkH G156C,TrkH G156C,TrkH G156C,4033610,4033610|T|C
+TrkH V155E,TrkH V155E,TrkH V155E,4033608,4033608|A|E
+TrkH Q159H,TrkH Q159H,TrkH Q159H,4033621,4033621|T|H
+TrkH S105Y,TrkH S105Y,TrkH S105Y,4033458,4033458|A|Y
+TrkH T20P,TrkH T20P,TrkH T20P,4033202,4033202|C|P
+FusA I61M,FusA I61M,FusA I61M,3473332,3473332|C|M
+FusA F605L,FusA F605L,FusA F605L,3471700,3471700|C|L
+FusA P610L,FusA P610L,FusA P610L,3471686,3471686|A|L
+FusA P610T,FusA P610T,FusA P610T,3471687,3471687|T|T
+FusA F593L [3471736],FusA F593L,FusA F593L (1),3471736,3471736|C|L
+FusA G60C,FusA G60C,FusA G60C,3473337,3473337|A|C
+FusA R59H,FusA R59H,FusA R59H,3473339,3473339|T|H
+FusA T668A,FusA T668A,FusA T668A,3471513,3471513|C|A
+FusA A678V,FusA A678V,FusA A678V,3471482,3471482|A|V
+FusA V116F,FusA V116F,FusA V116F,3473169,3473169|A|F
+FusA F593L [3471738],FusA F593L,FusA F593L (2),3471738,3471738|G|L
+FusA G46C,FusA G46C,FusA G46C,3473379,3473379|A|C
+FusA G117C,FusA G117C,FusA G117C,3473166,3473166|A|C
+XerC V56V,XerC V56V,XerC V56V,3996454,3996454|A|V
+OsmY L198Q,OsmY L198Q,OsmY L198Q,4611988,4611988|A|Q
+Yaaa S53I,Yaaa S53I,Yaaa S53I,6302,6302|A|I
+YaaA I52T,YaaA I52T,YaaA I52T,6305,6305|G|T
+YacH A495T,YacH A495T,YacH A495T,129778,129778|T|T
+GlpF V52E,GlpF V52E,GlpF V52E,4117936,4117936|T|E
+UvrC V593E,UvrC V593E,UvrC V593E,1992929,1992929|T|E
+PgsA V44E,PgsA V44E,PgsA V44E,1992687,1992687|T|E
+BaeS F3L,BaeS F3L,BaeS F3L,2162882,2162882|C|L
+TufB D110Y,TufB D110Y,TufB D110Y,4176271,4176271|T|Y
+BluF I39L,BluF I39L,BluF I39L,1215361,1215361|G|L
+PitA T184T,PitA T184T,PitA T184T,3638193,3638193|A|T
+$\it{manZ/yobD}$ snp intergenic,$\it{manZ/yobD}$ snp intergenic,manZ/yobD snp intergenic,1904774,1904774|T|
+AceK V471G,AceK V471G,AceK V471G,4220007,4220007|G|G
+CorA L50Q,CorA L50Q,CorA L50Q,4001574,4001574|A|Q
+CorA H75N,CorA H75N,CorA H75N,4001648,4001648|A|N
+$\it{mgtL/mgtA}$ indel,$\it{mgtL/mgtA}$ indel,mgtL/mgtA indel,4467491,4467491||
+$\it{yicC}$ insertion,$\it{yicC}$ insertion,yicC insertion,3817494,3817494||
+EutH P393Q,EutH P393Q,EutH P393Q,2566930,2566930|T|Q
+RelB P45S,RelB P45S,RelB P45S,1645740,1645740|A|S
+$\it{mrcB}$ snp,$\it{mrcB}$ snp,mrcB snp,166833,166833|T|S|S
+YfbS A38S,YfbS A38S,YfbS A38S,2411241,2411241|A|S
+phoQ IS2 insertion,phoQ IS2 insertion,phoQ IS2 insertion,1188509,1188509||
+phoQ IS5 insertion,phoQ IS5 insertion,phoQ IS5 insertion,1189637,1189637||
+PhoQ G39C,PhoQ G39C,PhoQ G39C,1189662,1189662|A|C
+$\it{phoQ}$ indel,$\it{phoQ}$ indel,phoQ indel,1189699,1189699|AGCACC|
+CstA A392S,CstA A392S,CstA A392S,631067,631067|T|S
+AbgT L394F,AbgT L394F,AbgT L394F,1400594,1400594|A|F
+PgaC I94I,PgaC I94I,PgaC I94I,1087565,1087565|G|I
+PgaC E86G,PgaC E86G,PgaC E86G,1087590,1087590|C|G
+PgaC I81L,PgaC I81L,PgaC I81L,1087606,1087606|G|L
+Prs A76V,Prs A76V,Prs A76V,1261649,1261649|A|V
+Prs A11S,Prs A11S,Prs A11S,1261845,1261845|A|S
+Prs R79C,Prs R79C,Prs R79C,1261641,1261641|A|C
+Prs I151T,Prs I151T,Prs I151T,1261424,1261424|G|T
+Prs A114V,Prs A114V,Prs A114V,1261535,1261535|A|V
+GlnH A17V,GlnH A17V,GlnH A17V,847955,847955|A|V
+YjbB L14Q,YjbB L14Q,YjbB L14Q,4227771,4227771|A|Q
+NadK T200P,NadK T200P,NadK T200P,2751428,2751428|C|P
+$\it{yhfG/ppiA}$ snp intergenic [3491706],$\it{yhfG/ppiA}$ snp intergenic,yhfG/ppiA snp intergenic (2),3491706,3491706|G|
+$\it{yhfG/ppiA}$ snp intergenic [3491701],$\it{yhfG/ppiA}$ snp intergenic,yhfG/ppiA snp intergenic (1),3491701,3491701|A|
+WaaF D13E,WaaF D13E,WaaF D13E,3794967,3794967|A|E
+CysS Y298S,CysS Y298S,CysS Y298S,555503,555503|C|S
+$\it{marR}$ indel,$\it{marR}$ indel,marR indel,1619397,1619397||
+MarR Q117*,MarR Q117*,MarR Q117*,1619468,1619468|T|*
+PheS A14P,PheS A14P,PheS A14P,1798903,1798903|G|P
+RbsA S157R,RbsA S157R,RbsA S157R,3934246,3934246|C|R
+Lon L83L,Lon L83L,Lon L83L,459136,459136|A|L
+GlcB S8S,GlcB S8S,GlcB S8S,3123782,3123782|A|S
+YqeF A246V,YqeF A246V,YqeF A246V,2984856,2984856|A|V
+YieK V227A,YieK V227A,YieK V227A,3898714,3898714|G|A
+ThiP G119D,ThiP G119D,ThiP G119D,74166,74166|T|D
+PtsI L199P,PtsI L199P,PtsI L199P,2534661,2534661|C|P
+FadB K305R,FadB K305R,FadB K305R,4030058,4030058|C|R
+EutQ V181A,EutQ V181A,EutQ V181A,2574462,2574462|G|A
+$\it{yohP/dusC}$ snp intergenic,$\it{yohP/dusC}$ snp intergenic,yohP/dusC snp intergenic,2229176,2229176|G|
+$\it{mcrB/symE}$ snp intergenic,$\it{mcrB/symE}$ snp intergenic,mcrB/symE snp intergenic,4579346,4579346|T|
+$\it{adiY/adiA}$ snp intergenic,$\it{adiY/adiA}$ snp intergenic,adiY/adiA snp intergenic,4338198,4338198|T|
+$\it{torC}$ IS insertion,$\it{torC}$ IS insertion,torC IS insertion,1058165,1058165||
+DnaQ I97I,DnaQ I97I,DnaQ I97I,236357,236357|T|I
+TopA F780L,TopA F780L,TopA F780L,1333385,1333385|C|L
+RpoD V454A,RpoD V454A,RpoD V454A,3214407,3214407|C|A
+NikA Y322C,NikA Y322C,NikA Y322C,3614631,3614631|G|C
+AroG V171A,AroG V171A,AroG V171A,786144,786144|C|A
+$\it{rssB/galU}$ snp intergenic,$\it{rssB/galU}$ snp intergenic,rssB/galU snp intergenic,1291338,1291338|C|
+$\it{iscR/trmJ}$ snp intergenic,$\it{iscR/trmJ}$ snp intergenic,iscR/trmJ snp intergenic,2662334,2662334|A|
+$\it{mutL}$ indel,$\it{mutL}$ indel,mutL indel,4397612,4397612||
+$\it{gadF/mdtE}$ snp intergenic [3659164],$\it{gadF/mdtE}$ snp intergenic,gadF/mdtE snp intergenic (2),3659164,3659164|G|
+$\it{gadF/mdtE}$ snp intergenic [3659163],$\it{gadF/mdtE}$ snp intergenic,gadF/mdtE snp intergenic (1),3659163,3659163|G|
+$\it{rihB}$ IS insertion,$\it{rihB}$ IS insertion,rihB IS insertion,2254940,2254940||
+$\it{metR/ysgA}$ large_deletion,$\it{metR/ysgA}$ large_deletion,metR/ysgA large_deletion,4012779,4012779||
+$\it{serW}$ IS insertion,$\it{serW}$ IS insertion,serW IS insertion,925901,925901||
+$\it{fimE/fimA}$ indel,$\it{fimE/fimA}$ indel,fimE/fimA indel,4542987,4542987||
+$\it{speE}$ indel,$\it{speE}$ indel,speE indel,135606,135606|G|
+ClsB G277G,ClsB G277G,ClsB G277G,822909,822909|A|G
+$\it{cpxA}$ indel [4104926],$\it{cpxA}$ indel,cpxA indel (1),4104926,4104926||
+$\it{cpxA}$ indel [4104929],$\it{cpxA}$ indel,cpxA indel (2),4104929,4104929||
+CpxA I12L,CpxA I12L,CpxA I12L,4104942,4104942|G|L
+$\it{cpxA}$ indel [4104944],$\it{cpxA}$ indel,cpxA indel (3),4104944,4104944||
+SbmA V163E,SbmA V163E,SbmA V163E,397126,397126|A|E
+$\it{sbmA}$ indel [397585],$\it{sbmA}$ indel,sbmA indel (1),397585,397585||
+$\it{sbmA}$ indel [397774],$\it{sbmA}$ indel,sbmA indel (2),397774,397774||
+$\it{ampH/sbmA}$ IS insertion [396624],$\it{ampH/sbmA}$ IS insertion,ampH/sbmA IS insertion (2),396624,396624||
+$\it{ampH/sbmA}$ IS insertion [396591],$\it{ampH/sbmA}$ IS insertion,ampH/sbmA IS insertion (1),396591,396591||
+Rnb R279H,Rnb R279H,Rnb R279H,1348077,1348077|T|H
+MscM G160V,MscM G160V,MscM G160V,4388892,4388892|A|V
+$\it{narU/yddK}$ indel,$\it{narU/yddK}$ indel,narU/yddK indel,1544571,1544571||
+$\it{cyaA}$ large deletion,$\it{cyaA}$ large deletion,cyaA large deletion,3993186,3993186||
+ThpR A148V,ThpR A148V,ThpR A148V,161589,161589|A|V
+$\it{ppa/ytfQ}$ snp intergenic,$\it{ppa/ytfQ}$ snp intergenic,ppa/ytfQ snp intergenic,4449870,4449870|T|
+$\it{yagN}$ IS insertion,$\it{yagN}$ IS insertion,yagN IS insertion,295280,295280||
+HipA P86L,HipA P86L,HipA P86L,1591920,1591920|A|L
+$\it{rpoZ}$ indel,$\it{rpoZ}$ indel,rpoZ indel,3822173,3822173||
+$\it{ftsH}$ indel,$\it{ftsH}$ indel,ftsH indel,3326144,3326144||
+ftsH small_ins,ftsH small_ins,ftsH small_ins,3326602,3326602|CAG|
+$\it{gatA}$ insertion,$\it{gatA}$ insertion,gatA insertion,2174844,2174844||
+MltB C19*,MltB C19*,MltB C19*,2825520,2825520|T|*
+YdcL A106T,YdcL A106T,YdcL A106T,1502772,1502772|A|T
+$\it{hns/tdk}$ insertion,$\it{hns/tdk}$ insertion,hns/tdk insertion,1293196,1293196||
+YdgI G84D,YdgI G84D,YdgI G84D,1679807,1679807|A|D
+PtsG T335R,PtsG T335R,PtsG T335R,1158872,1158872|G|R
+GlpT D88E,GlpT D88E,GlpT D88E,2352111,2352111|T|E
+$\it{yebK}$ insertion,$\it{yebK}$ insertion,yebK insertion,1937499,1937499||
+YfjH N8K,YfjH N8K,YfjH N8K,2758577,2758577|T|K
+$\it{tyrR}$ indel,$\it{tyrR}$ indel,tyrR indel,1388114,1388114|C|

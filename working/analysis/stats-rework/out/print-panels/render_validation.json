@@ -1,6 +1,126 @@
 [
   {
     "figure": "Figure_2",
+    "panel": "a",
+    "print_width_pt": 177.06884000000002,
+    "print_height_pt": 160.82000000000002,
+    "text_bounds": [
+      [
+        "IC50: 0.0238 \u03bcg/mL",
+        107.72246320000002,
+        145.9826,
+        169.34746320000002,
+        152.9826
+      ],
+      [
+        "MIC: 0.0567 \u03bcg/mL",
+        108.5349632,
+        131.3078,
+        169.34746320000002,
+        138.3078
+      ],
+      [
+        "0.0078",
+        32.500475175134525,
+        22.770330566447896,
+        54.730144608686615,
+        44.999999999999986
+      ],
+      [
+        "0.031",
+        59.93284772442434,
+        25.775534386490726,
+        79.15731333793362,
+        44.999999999999986
+      ],
+      [
+        "0.12",
+        87.36522027371419,
+        28.780738206533552,
+        103.58448206718063,
+        44.999999999999986
+      ],
+      [
+        "0.5",
+        114.79759282300404,
+        31.78594202657638,
+        128.01165079642763,
+        44.999999999999986
+      ],
+      [
+        "2",
+        143.7767614561394,
+        36.33794193046478,
+        152.4388195256746,
+        44.999999999999986
+      ],
+      [
+        "8",
+        168.20393018538647,
+        36.33794193046478,
+        176.86598825492166,
+        44.999999999999986
+      ],
+      [
+        "0.00",
+        16.0625,
+        46.02764705882352,
+        30.999999999999996,
+        54.02764705882352
+      ],
+      [
+        "0.25",
+        16.0625,
+        71.71882352941174,
+        30.999999999999996,
+        79.71882352941175
+      ],
+      [
+        "0.50",
+        16.0625,
+        97.41,
+        30.999999999999996,
+        105.41
+      ],
+      [
+        "0.75",
+        16.0625,
+        123.10117647058823,
+        30.999999999999996,
+        131.10117647058823
+      ],
+      [
+        "1.00",
+        16.0625,
+        148.79235294117643,
+        30.999999999999996,
+        156.79235294117643
+      ],
+      [
+        "Levofloxacin (\u03bcg/mL)",
+        61.59692000000001,
+        10.6843930664479,
+        146.47192,
+        19.7703305664479
+      ],
+      [
+        "OD$_{600}$",
+        2.9124999999999996,
+        90.15674804687498,
+        13.062500000000002,
+        114.663251953125
+      ]
+    ],
+    "boundary_issues": [],
+    "kind": "numerical_reconstruction",
+    "asset": "original_image5",
+    "source_records": 36,
+    "tick_pt": 8.5,
+    "axis_pt": 9.5,
+    "spine_pt": 0.75
+  },
+  {
+    "figure": "Figure_2",
     "panel": "e",
     "print_width_pt": 244.24000000000004,
     "print_height_pt": 160.82000000000002,
@@ -218,462 +338,462 @@
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "P1",
         "Time": 1.0,
         "median": 3.349031920460493e-05,
         "mad": 2.090849282507901e-05,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "P1",
         "Time": 2.0,
         "median": 1.1248966087675766e-06,
         "mad": 2.923328638795196e-07,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "P1",
         "Time": 3.0,
         "median": 3.367346938775511e-07,
         "mad": 4.5806020923217314e-08,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "P1",
         "Time": 5.0,
         "median": 4.0816326530612253e-08,
         "mad": 1.1249467382695564e-08,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "P1",
         "Time": 7.0,
         "median": 5.1020408163265317e-08,
         "mad": 2.3662151382502456e-08,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC1",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC1",
         "Time": 1.0,
         "median": 7.5e-05,
         "mad": 2.7961357629710905e-05,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC1",
         "Time": 2.0,
         "median": 1.0701754385964912e-05,
         "mad": 2.662018785968117e-06,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC1",
         "Time": 3.0,
         "median": 6.140350877192982e-06,
         "mad": 3.007471605521223e-07,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC1",
         "Time": 5.0,
         "median": 2.96875e-06,
         "mad": 7.599962030168522e-07,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC1",
         "Time": 7.0,
         "median": 1.5789473684210526e-06,
         "mad": 2.4384904909631427e-08,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC2",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC2",
         "Time": 1.0,
         "median": 0.1115384615384615,
         "mad": 0.0,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC2",
         "Time": 2.0,
         "median": 0.0538461538461538,
         "mad": 0.011404632450043,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC2",
         "Time": 3.0,
         "median": 0.0111538461538461,
         "mad": 0.0011404632450043,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC2",
         "Time": 5.0,
         "median": 0.0002076923076923,
         "mad": 1.1404632450043106e-05,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC2",
         "Time": 7.0,
         "median": 1.6923076923076924e-05,
         "mad": 5.702316225021553e-07,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC3",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC3",
         "Time": 1.0,
         "median": 0.0001465116279069,
         "mad": 4.131650644396772e-05,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC3",
         "Time": 2.0,
         "median": 5.813953488372094e-05,
         "mad": 5.582333934572595e-06,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC3",
         "Time": 3.0,
         "median": 3.80952380952381e-05,
         "mad": 2.1344217985130533e-06,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC3",
         "Time": 5.0,
         "median": 3.095238095238096e-05,
         "mad": 5.828613372862551e-06,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC3",
         "Time": 7.0,
         "median": 1.558139534883721e-05,
         "mad": 1.2560251352788362e-06,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC4",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC4",
         "Time": 1.0,
         "median": 0.5357142857142857,
         "mad": 0.3260610142202169,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC4",
         "Time": 2.0,
         "median": 0.2894736842105263,
         "mad": 0.0055736925507729,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC4",
         "Time": 3.0,
         "median": 0.1107142857142857,
         "mad": 0.0967927448367228,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC4",
         "Time": 5.0,
         "median": 0.0763157894736842,
         "mad": 0.0178358161624734,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC4",
         "Time": 7.0,
         "median": 0.0107142857142857,
         "mad": 0.0019062028523643,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC5",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC5",
         "Time": 1.0,
         "median": 0.1142857142857142,
         "mad": 0.0105900158464685,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC5",
         "Time": 2.0,
         "median": 0.0428571428571428,
         "mad": 0.0042360063385874,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC5",
         "Time": 3.0,
         "median": 0.01,
         "mad": 0.0008472012677174,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC5",
         "Time": 5.0,
         "median": 0.004,
         "mad": 0.0008472012677174,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC5",
         "Time": 7.0,
         "median": 0.0021142857142857,
         "mad": 0.0004165406232944,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC6",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC6",
         "Time": 1.0,
         "median": 0.1866666666666666,
         "mad": 0.0472236262190673,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC6",
         "Time": 2.0,
         "median": 0.1266666666666666,
         "mad": 0.0373396114290299,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC6",
         "Time": 3.0,
         "median": 0.0533333333333333,
         "mad": 0.0142769102522761,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC6",
         "Time": 5.0,
         "median": 0.0166666666666666,
         "mad": 0.0049420073950186,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC6",
         "Time": 7.0,
         "median": 0.0056,
         "mad": 0.001142152820182,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC7",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC7",
         "Time": 1.0,
         "median": 0.006875,
         "mad": 0.0029224370653235,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC7",
         "Time": 2.0,
         "median": 0.0053124999999999,
         "mad": 0.0028219985409055,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC7",
         "Time": 3.0,
         "median": 0.00153125,
         "mad": 0.0001247381674223,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC7",
         "Time": 5.0,
         "median": 0.001,
         "mad": 0.0002779879159698,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC7",
         "Time": 7.0,
         "median": 0.0005,
         "mad": 0.0001710694867506,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC8",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC8",
         "Time": 1.0,
         "median": 0.0138461538461538,
         "mad": 0.00193533156728,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC8",
         "Time": 2.0,
         "median": 0.0005,
         "mad": 0.0003611466942513,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC8",
         "Time": 3.0,
         "median": 0.0041025641025641,
         "mad": 0.0002073569536371,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC8",
         "Time": 5.0,
         "median": 0.000195,
         "mad": 1.9543392880301167e-05,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC8",
         "Time": 7.0,
         "median": 1.7500000000000002e-05,
         "mad": 1.2355018487546649e-06,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC9",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC9",
         "Time": 1.0,
         "median": 0.0002297297297297,
         "mad": 2.8049231160916823e-05,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC9",
         "Time": 2.0,
         "median": 0.00013,
         "mad": 1.162039576666552e-05,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC9",
         "Time": 3.0,
         "median": 0.0001,
         "mad": 0.0,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC9",
         "Time": 5.0,
         "median": 6.756756756756758e-05,
         "mad": 1.0017582557470309e-07,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC9",
         "Time": 7.0,
         "median": 5.135135135135136e-05,
         "mad": 0.0,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC10",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC10",
         "Time": 1.0,
         "median": 0.0854166666666666,
         "mad": 0.0119470697639012,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC10",
         "Time": 2.0,
         "median": 0.0208333333333333,
         "mad": 0.0085086448074613,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC10",
         "Time": 3.0,
         "median": 0.0458333333333333,
         "mad": 0.0061775092437733,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC10",
         "Time": 5.0,
         "median": 0.0170833333333333,
         "mad": 0.0043242564706413,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PC10",
         "Time": 7.0,
         "median": 0.0090566037735849,
         "mad": 0.0001456959727305,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       }
     ],
     "end_labels": {
@@ -757,14 +877,14 @@
     "figure": "Figure_2",
     "panel": "b",
     "print_width_pt": 141.88796000000002,
-    "print_height_pt": 149.68386,
+    "print_height_pt": 132.48386,
     "text_bounds": [
       [
         "p < 0.0001",
         54.26489818181818,
-        111.40188346484881,
+        100.67734571032808,
         88.76489818181818,
-        119.4018834648488
+        108.67734571032808
       ],
       [
         "MG",
@@ -804,30 +924,30 @@
       [
         "$\\mathdefault{10^{1}}$",
         30.122260937500002,
-        68.93983875,
+        63.20650541666665,
         41.99999999999999,
-        80.84940125
+        75.11606791666664
       ],
       [
         "$\\mathdefault{10^{2}}$",
         29.630073437500002,
-        102.83445875000001,
+        91.36779208333333,
         41.99999999999999,
-        114.74402124999999
+        103.2773545833333
       ],
       [
         "$\\mathdefault{10^{3}}$",
         29.872260937500002,
-        136.72907875,
+        119.52907874999998,
         41.99999999999999,
-        148.63864124999998
+        131.43864125
       ],
       [
         "Amikacin\nIC$_{50}$ (\u03bcg/mL)",
         5.441010937500003,
-        67.10339972656251,
+        58.50339972656249,
         26.630073437500002,
-        118.58046027343748
+        109.9804602734375
       ]
     ],
     "boundary_issues": [],
@@ -1036,21 +1156,21 @@
     "figure": "Figure_2",
     "panel": "c",
     "print_width_pt": 144.05602000000002,
-    "print_height_pt": 149.68386,
+    "print_height_pt": 132.48386,
     "text_bounds": [
       [
         "p = 0.010",
         56.85618727272728,
-        109.45920927480145,
+        99.06327820445671,
         87.35618727272727,
-        117.45920927480145
+        107.06327820445671
       ],
       [
         "p < 0.0001",
         65.31709863636364,
-        120.45920927480145,
+        110.06327820445671,
         99.81709863636364,
-        128.45920927480145
+        118.06327820445671
       ],
       [
         "MG",
@@ -1090,37 +1210,37 @@
       [
         "$\\mathdefault{10^{-1}}$",
         26.766670117187502,
-        60.46618374999999,
+        56.16618375,
         41.99999999999999,
-        72.37574624999998
+        68.07574625
       ],
       [
         "$\\mathdefault{10^{0}}$",
         29.645698437500002,
-        85.88714875000001,
+        77.28714874999999,
         41.99999999999999,
-        97.79671124999999
+        89.19671124999999
       ],
       [
         "$\\mathdefault{10^{1}}$",
         30.122260937500002,
-        111.30811375000002,
+        98.40811374999998,
         41.99999999999999,
-        123.21767625000001
+        110.31767624999999
       ],
       [
         "$\\mathdefault{10^{2}}$",
         29.630073437500002,
-        136.72907875,
+        119.52907874999998,
         41.99999999999999,
-        148.63864124999998
+        131.43864125
       ],
       [
         "Levofloxacin\nIC$_{50}$ (\u03bcg/mL)",
         2.0854201171875033,
-        67.10339972656251,
+        58.50339972656249,
         23.274482617187505,
-        118.58046027343748
+        109.9804602734375
       ]
     ],
     "boundary_issues": [],
@@ -1330,28 +1450,28 @@
     "figure": "Figure_2",
     "panel": "d",
     "print_width_pt": 144.05602000000002,
-    "print_height_pt": 149.68386,
+    "print_height_pt": 132.48386,
     "text_bounds": [
       [
         "p = 0.032",
         56.85618727272728,
-        104.58133731566951,
+        93.48385999999999,
         87.35618727272727,
-        112.58133731566951
+        101.48385999999999
       ],
       [
         "p = 0.0005",
         65.31709863636364,
-        115.5813373156695,
+        104.48385999999999,
         99.81709863636364,
-        123.5813373156695
+        112.48385999999998
       ],
       [
         "p = 0.026",
         77.77801000000001,
-        126.58133731566951,
+        115.48385999999999,
         108.27801000000001,
-        134.58133731566951
+        123.48385999999999
       ],
       [
         "MG",
@@ -1391,23 +1511,23 @@
       [
         "$\\mathdefault{10^{-1}}$",
         26.766670117187502,
-        85.88714875000001,
+        75.91535961196553,
         41.99999999999999,
-        97.79671124999999
+        87.8249221119655
       ],
       [
         "$\\mathdefault{10^{0}}$",
         29.645698437500002,
-        136.72907875,
+        116.78550047393105,
         41.99999999999999,
-        148.63864124999998
+        128.69506297393104
       ],
       [
         "Cefepime\nIC$_{50}$ (\u03bcg/mL)",
         2.0854201171875033,
-        67.10339972656251,
+        58.50339972656249,
         23.274482617187505,
-        118.58046027343748
+        109.9804602734375
       ]
     ],
     "boundary_issues": [],
@@ -1608,8 +1728,482 @@
     ],
     "ylim": [
       0.01,
-      1.0
+      1.1671566834016498
     ],
+    "tick_pt": 8.5,
+    "axis_pt": 9.5,
+    "spine_pt": 0.75
+  },
+  {
+    "figure": "Figure_2",
+    "panel": "f",
+    "print_width_pt": 133.63454000000002,
+    "print_height_pt": 165.50614000000002,
+    "text_bounds": [
+      [
+        "FusA P610L",
+        8.425613244825476,
+        5.569270271900861,
+        43.451717958791356,
+        43.120000000000005
+      ],
+      [
+        "TrkH L80Q",
+        20.888715706183138,
+        7.441995232103902,
+        54.2286112921247,
+        43.120000000000005
+      ],
+      [
+        "TrkH T20P",
+        32.80982237639012,
+        8.712772883670246,
+        65.00550462545803,
+        43.120000000000005
+      ],
+      [
+        "TrkH G156C",
+        39.37119288966265,
+        4.030960483162653,
+        75.78239795879136,
+        43.120000000000005
+      ],
+      [
+        "TrkH V155E",
+        50.56963850500206,
+        4.499141723213413,
+        86.5592912921247,
+        43.120000000000005
+      ],
+      [
+        "trkH indel",
+        67.48915080470972,
+        11.321211221095899,
+        97.33618462545803,
+        43.120000000000005
+      ],
+      [
+        "TrkH S105Y",
+        72.30409043538562,
+        4.699790826092309,
+        108.11307795879137,
+        43.120000000000005
+      ],
+      [
+        "TrkH Q159H",
+        82.11743569556222,
+        3.6296622774048624,
+        118.8899712921247,
+        43.120000000000005
+      ],
+      [
+        "TrkH L185Q",
+        93.49654657461852,
+        4.298492620334518,
+        129.66686462545803,
+        43.120000000000005
+      ],
+      [
+        "Culture",
+        8.542499999999999,
+        78.95807,
+        17.1825,
+        107.66807
+      ],
+      [
+        "0.0",
+        67.90954000000002,
+        148.80614,
+        77.35954000000002,
+        156.00614000000002
+      ],
+      [
+        "0.5",
+        95.90954000000004,
+        148.80614,
+        105.35954000000002,
+        156.00614000000002
+      ],
+      [
+        "1.0",
+        123.90954000000004,
+        148.80614,
+        133.35954000000004,
+        156.00614000000002
+      ],
+      [
+        "Frequency",
+        3.0000000000000004,
+        153.86614000000003,
+        38.730000000000004,
+        162.50614000000002
+      ]
+    ],
+    "boundary_issues": [],
+    "kind": "genomic",
+    "matrix": "Fig2f",
+    "mutation_identity_preserved": true,
+    "tick_pt": 8.5
+  },
+  {
+    "figure": "Figure_2",
+    "panel": "g",
+    "print_width_pt": 162.91926,
+    "print_height_pt": 165.50614000000002,
+    "text_bounds": [
+      [
+        "GyrA G81D",
+        8.32304079054845,
+        17.4861006148305,
+        42.74692795879136,
+        54.36799999999999
+      ],
+      [
+        "GyrA S83L",
+        20.46211974276151,
+        19.225059506447604,
+        53.320241292124685,
+        54.36799999999999
+      ],
+      [
+        "GyrA S83W",
+        29.168558684353638,
+        17.15168544336568,
+        63.89355462545802,
+        54.36799999999999
+      ],
+      [
+        "GyrA A119E",
+        38.35677166252413,
+        15.61337565462747,
+        74.46686795879135,
+        54.36799999999999
+      ],
+      [
+        "GyrA D87Y",
+        50.61629412388179,
+        17.4861006148305,
+        85.04018129212469,
+        54.36799999999999
+      ],
+      [
+        "RpoB H1237L",
+        55.52876252741918,
+        11.199095391291744,
+        95.61349462545802,
+        54.36799999999999
+      ],
+      [
+        "rpoB indel (1)",
+        67.48717621591534,
+        12.714822022065341,
+        106.21188909665122,
+        54.36799999999999
+      ],
+      [
+        "rpoB indel (2)",
+        78.06048954924867,
+        12.714822022065341,
+        116.78520242998455,
+        54.36799999999999
+      ],
+      [
+        "RpoB D1064N",
+        86.58626322712391,
+        10.463382014069127,
+        127.33343462545803,
+        54.36799999999999
+      ],
+      [
+        "RpoB D1064G",
+        97.15957656045723,
+        10.463382014069127,
+        137.90674795879136,
+        54.36799999999999
+      ],
+      [
+        "RpoB E562D",
+        111.1655299044115,
+        14.27571496876816,
+        148.48006129212467,
+        54.36799999999999
+      ],
+      [
+        "RpoB M129R",
+        120.5344081462989,
+        12.938054282908848,
+        159.05337462545805,
+        54.36799999999999
+      ],
+      [
+        "Culture",
+        7.939500000000004,
+        84.58207,
+        16.579500000000007,
+        113.29207
+      ],
+      [
+        "0.0",
+        97.19426000000001,
+        148.80614,
+        106.64426000000002,
+        156.00614000000002
+      ],
+      [
+        "0.5",
+        125.19426,
+        148.80614,
+        134.64426,
+        156.00614000000002
+      ],
+      [
+        "1.0",
+        153.19426,
+        148.80614,
+        162.64426000000003,
+        156.00614000000002
+      ],
+      [
+        "Frequency",
+        3.0000000000000004,
+        153.86614000000003,
+        38.730000000000004,
+        162.50614000000002
+      ]
+    ],
+    "boundary_issues": [],
+    "kind": "genomic",
+    "matrix": "Fig2g",
+    "mutation_identity_preserved": true,
+    "tick_pt": 8.5
+  },
+  {
+    "figure": "Figure_2",
+    "panel": "h",
+    "print_width_pt": 133.44620000000003,
+    "print_height_pt": 165.50614000000002,
+    "text_bounds": [
+      [
+        "Prs A114V",
+        9.96720518582998,
+        32.07825232947878,
+        41.38000462545803,
+        65.61599999999999
+      ],
+      [
+        "Prs R79C",
+        23.856316071966916,
+        35.28863797554112,
+        52.37847129212469,
+        65.61599999999999
+      ],
+      [
+        "Prs A76V",
+        34.613895720344395,
+        35.02110583836926,
+        63.37693795879137,
+        65.61599999999999
+      ],
+      [
+        "Prs A11S",
+        46.69635396931242,
+        36.22500045564263,
+        74.37540462545802,
+        65.61599999999999
+      ],
+      [
+        "Prs I151T",
+        56.36994203538855,
+        34.75357370119739,
+        85.37387129212469,
+        65.61599999999999
+      ],
+      [
+        "PhoQ G39C",
+        61.88822903597617,
+        28.667217580537528,
+        96.37233795879138,
+        65.61599999999999
+      ],
+      [
+        "phoQ IS2 insertion",
+        57.34948302299013,
+        11.411394732952445,
+        107.37080462545802,
+        65.61599999999999
+      ],
+      [
+        "phoQ indel",
+        86.35425430677368,
+        31.409421986549123,
+        118.36927129212468,
+        65.61599999999999
+      ],
+      [
+        "phoQ IS5 insertion",
+        79.34641635632347,
+        11.411394732952445,
+        129.36773795879137,
+        65.61599999999999
+      ],
+      [
+        "Culture",
+        6.360000000000003,
+        90.20607,
+        15.000000000000005,
+        118.91606999999999
+      ],
+      [
+        "0.0",
+        67.72120000000004,
+        148.80614,
+        77.17120000000003,
+        156.00614000000002
+      ],
+      [
+        "0.5",
+        95.72120000000002,
+        148.80614,
+        105.17120000000003,
+        156.00614000000002
+      ],
+      [
+        "1.0",
+        123.72120000000004,
+        148.80614,
+        133.17120000000003,
+        156.00614000000002
+      ],
+      [
+        "Frequency",
+        3.0000000000000004,
+        153.86614000000003,
+        38.730000000000004,
+        162.50614000000002
+      ]
+    ],
+    "boundary_issues": [],
+    "kind": "genomic",
+    "matrix": "Fig2h",
+    "mutation_identity_preserved": true,
+    "tick_pt": 8.5
+  },
+  {
+    "figure": "Figure_3",
+    "panel": "a",
+    "print_width_pt": 288.57386,
+    "print_height_pt": 123.41516000000001,
+    "text_bounds": [
+      [
+        "0",
+        49.11013213243547,
+        16.0,
+        53.36013213243546,
+        24.0
+      ],
+      [
+        "15",
+        87.4857819640853,
+        16.0,
+        95.9857819640853,
+        24.0
+      ],
+      [
+        "30",
+        127.98643179573513,
+        16.0,
+        136.48643179573514,
+        24.0
+      ],
+      [
+        "45",
+        168.48708162738495,
+        16.0,
+        176.98708162738498,
+        24.0
+      ],
+      [
+        "60",
+        208.9877314590348,
+        16.0,
+        217.48773145903482,
+        24.0
+      ],
+      [
+        "75",
+        249.48838129068463,
+        16.0,
+        257.98838129068463,
+        24.0
+      ],
+      [
+        "$\\mathdefault{10^{-3}}$",
+        22.516670117187502,
+        25.971896430720655,
+        38.0,
+        37.881458930720655
+      ],
+      [
+        "$\\mathdefault{10^{-2}}$",
+        22.274482617187502,
+        39.016037337873726,
+        38.0,
+        50.92559983787371
+      ],
+      [
+        "$\\mathdefault{10^{-1}}$",
+        22.766670117187502,
+        52.06017824502679,
+        38.0,
+        63.96974074502679
+      ],
+      [
+        "$\\mathdefault{10^{0}}$",
+        25.6456984375,
+        65.10431915217987,
+        38.0,
+        77.01388165217986
+      ],
+      [
+        "$\\mathdefault{10^{1}}$",
+        26.1222609375,
+        78.14846005933292,
+        38.0,
+        90.05802255933293
+      ],
+      [
+        "$\\mathdefault{10^{2}}$",
+        25.6300734375,
+        91.19260096648601,
+        38.0,
+        103.10216346648599
+      ],
+      [
+        "$\\mathdefault{10^{3}}$",
+        25.8722609375,
+        104.23674187363908,
+        38.0,
+        116.14630437363905
+      ],
+      [
+        "Day",
+        155.38068,
+        4.0,
+        171.19317999999998,
+        13.0
+      ],
+      [
+        "Survival (%)",
+        10.1885451171875,
+        48.89508,
+        19.274482617187502,
+        97.52008000000001
+      ]
+    ],
+    "boundary_issues": [],
+    "kind": "numerical_reconstruction",
+    "asset": "original_image15",
+    "source_records": 820,
     "tick_pt": 8.5,
     "axis_pt": 9.5,
     "spine_pt": 0.75
@@ -1826,462 +2420,462 @@
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "P1",
         "Time": 1.0,
         "median": 5.8680555555555566e-05,
         "mad": 8.236678991697784e-06,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "P1",
         "Time": 2.0,
         "median": 1.5311355311355317e-06,
         "mad": 1.731399706180648e-07,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "P1",
         "Time": 3.0,
         "median": 4.807692307692308e-07,
         "mad": 1.1840226050565573e-07,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "P1",
         "Time": 5.0,
         "median": 1.2770833333333336e-07,
         "mad": 1.4708355342317476e-08,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "P1",
         "Time": 7.0,
         "median": 7.500000000000002e-08,
         "mad": 4.0985397867342366e-08,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC1",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC1",
         "Time": 1.0,
         "median": 0.0061538461538461,
         "mad": 0.0028147603493723,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC1",
         "Time": 2.0,
         "median": 0.0016410256410256,
         "mad": 0.0005915202697422,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC1",
         "Time": 3.0,
         "median": 0.0002589743589743,
         "mad": 8.112656983966823e-05,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC1",
         "Time": 5.0,
         "median": 8.461538461538463e-05,
         "mad": 1.504440876388663e-05,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC1",
         "Time": 7.0,
         "median": 5.641025641025642e-05,
         "mad": 3.0007933609687862e-05,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC2",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC2",
         "Time": 1.0,
         "median": 0.1596153846153846,
         "mad": 0.0126084547642143,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC2",
         "Time": 2.0,
         "median": 0.0557692307692307,
         "mad": 0.0036114669425136,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC2",
         "Time": 3.0,
         "median": 0.0133333333333333,
         "mad": 0.0003801544150014,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC2",
         "Time": 5.0,
         "median": 0.0046153846153846,
         "mad": 0.0003894264739039,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC2",
         "Time": 7.0,
         "median": 0.0002307692307692,
         "mad": 2.2555828623418548e-05,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC3",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC3",
         "Time": 1.0,
         "median": 0.0499999999999999,
         "mad": 0.0043605947603105,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC3",
         "Time": 2.0,
         "median": 0.0077777777777777,
         "mad": 0.0023741015917246,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC3",
         "Time": 3.0,
         "median": 0.00225,
         "mad": 0.0002834386594201,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC3",
         "Time": 5.0,
         "median": 0.0002375,
         "mad": 4.687639367333887e-05,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC3",
         "Time": 7.0,
         "median": 0.0001058823529411,
         "mad": 2.371073400918884e-05,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC4",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC4",
         "Time": 1.0,
         "median": 0.0012777777777777,
         "mad": 0.0002190606114813,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC4",
         "Time": 2.0,
         "median": 0.0004468085106382,
         "mad": 3.218849801358259e-06,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC4",
         "Time": 3.0,
         "median": 0.0001531914893617,
         "mad": 8.996089111499694e-06,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC4",
         "Time": 5.0,
         "median": 7.962962962962964e-05,
         "mad": 1.5072562236508204e-05,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC4",
         "Time": 7.0,
         "median": 2e-05,
         "mad": 3.4699200858641777e-06,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC5",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC5",
         "Time": 1.0,
         "median": 0.1391304347826087,
         "mad": 0.0096691449032973,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC5",
         "Time": 2.0,
         "median": 0.0978723404255319,
         "mad": 6.857549576808468e-05,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC5",
         "Time": 3.0,
         "median": 0.0425531914893617,
         "mad": 0.0013715099153613,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC5",
         "Time": 5.0,
         "median": 0.0117021276595744,
         "mad": 0.0032779086977135,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC5",
         "Time": 7.0,
         "median": 0.0060869565217391,
         "mad": 0.0006446096602198,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC6",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC6",
         "Time": 1.0,
         "median": 0.0069230769230769,
         "mad": 0.0026265214127371,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC6",
         "Time": 2.0,
         "median": 0.0016666666666666,
         "mad": 4.4927339954714795e-05,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC6",
         "Time": 3.0,
         "median": 0.0005,
         "mad": 9.884014790037334e-05,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC6",
         "Time": 5.0,
         "median": 0.000230303030303,
         "mad": 7.681125863225524e-06,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC6",
         "Time": 7.0,
         "median": 8.205128205128206e-05,
         "mad": 2.6610809050100543e-05,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC7",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC7",
         "Time": 1.0,
         "median": 0.0035483870967741,
         "mad": 0.001236640560136,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC7",
         "Time": 2.0,
         "median": 0.0023225806451612,
         "mad": 0.0002630423290897,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC7",
         "Time": 3.0,
         "median": 0.000774193548387,
         "mad": 0.0003429798680598,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC7",
         "Time": 5.0,
         "median": 0.0002096774193548,
         "mad": 4.399980777500491e-05,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC7",
         "Time": 7.0,
         "median": 0.0001,
         "mad": 8.472012677174876e-06,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC8",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC8",
         "Time": 1.0,
         "median": 0.0567567567567567,
         "mad": 0.0132406308585694,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC8",
         "Time": 2.0,
         "median": 0.0075,
         "mad": 0.0007012307790229,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC8",
         "Time": 3.0,
         "median": 0.002027027027027,
         "mad": 0.0001689922622738,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC8",
         "Time": 5.0,
         "median": 0.0006756756756756,
         "mad": 0.0001263086496376,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC8",
         "Time": 7.0,
         "median": 0.0001135135135135,
         "mad": 2.3258213416039693e-05,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC9",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC9",
         "Time": 1.0,
         "median": 0.0026363636363636,
         "mad": 0.0005803878814558,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC9",
         "Time": 2.0,
         "median": 0.0011219512195121,
         "mad": 2.1367881197974355e-05,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC9",
         "Time": 3.0,
         "median": 0.0027045454545454,
         "mad": 7.643126736198521e-05,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC9",
         "Time": 5.0,
         "median": 0.0001045454545454,
         "mad": 1.8573619810546894e-05,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC9",
         "Time": 7.0,
         "median": 2.931818181818182e-05,
         "mad": 4.265357823749487e-06,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC10",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC10",
         "Time": 1.0,
         "median": 0.0011351351351351,
         "mad": 0.0001046998951167,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC10",
         "Time": 2.0,
         "median": 0.0003692307692307,
         "mad": 1.6923002990386432e-05,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC10",
         "Time": 3.0,
         "median": 0.0016774193548387,
         "mad": 0.0005352819424133,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC10",
         "Time": 5.0,
         "median": 9.032258064516129e-05,
         "mad": 2.005007962991449e-05,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC10",
         "Time": 7.0,
         "median": 3.4230769230769234e-05,
         "mad": 9.013338549227592e-07,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       }
     ],
     "end_labels": {
@@ -8157,9 +8751,115 @@
   },
   {
     "figure": "Supplementary_Figure_3",
+    "panel": "a",
+    "print_width_pt": 184.14148000000003,
+    "print_height_pt": 122.98000000000002,
+    "text_bounds": [
+      [
+        "1",
+        55.654158181818175,
+        16.0,
+        59.904158181818175,
+        24.0
+      ],
+      [
+        "3",
+        72.16603870129869,
+        16.0,
+        76.4160387012987,
+        24.0
+      ],
+      [
+        "5",
+        88.67791922077923,
+        16.0,
+        92.92791922077924,
+        24.0
+      ],
+      [
+        "7",
+        105.18979974025974,
+        16.0,
+        109.43979974025976,
+        24.0
+      ],
+      [
+        "9",
+        121.70168025974029,
+        16.0,
+        125.9516802597403,
+        24.0
+      ],
+      [
+        "11",
+        136.2448107792208,
+        16.0,
+        144.4323107792208,
+        24.0
+      ],
+      [
+        "13",
+        152.60044129870136,
+        16.0,
+        161.10044129870136,
+        24.0
+      ],
+      [
+        "15",
+        169.11232181818187,
+        16.0,
+        177.61232181818184,
+        24.0
+      ],
+      [
+        "$\\mathdefault{10^{-1}}$",
+        31.766670117187502,
+        34.15326459288352,
+        47.0,
+        46.0628270928835
+      ],
+      [
+        "$\\mathdefault{10^{0}}$",
+        34.6456984375,
+        61.09062980762467,
+        47.0,
+        73.00019230762467
+      ],
+      [
+        "$\\mathdefault{10^{1}}$",
+        35.1222609375,
+        88.02799502236584,
+        47.0,
+        99.93755752236582
+      ],
+      [
+        "Day",
+        107.66449000000001,
+        4.0,
+        123.47699000000003,
+        13.0
+      ],
+      [
+        "Maximum concentration\n(\u03bcg/mL)",
+        9.2807326171875,
+        26.33375000000001,
+        28.766670117187502,
+        119.64625000000001
+      ]
+    ],
+    "boundary_issues": [],
+    "kind": "numerical_reconstruction",
+    "asset": "original_image32",
+    "source_records": 90,
+    "tick_pt": 8.5,
+    "axis_pt": 9.5,
+    "spine_pt": 0.75
+  },
+  {
+    "figure": "Supplementary_Figure_3",
     "panel": "b",
     "print_width_pt": 190.60266000000004,
-    "print_height_pt": 153.14794000000003,
+    "print_height_pt": 122.98000000000002,
     "text_bounds": [
       [
         "MG",
@@ -8185,23 +8885,23 @@
       [
         "$\\mathdefault{10^{1}}$",
         30.122260937500002,
-        77.61918875000002,
+        62.53521875000001,
         41.99999999999999,
-        89.52875125000001
+        74.44478124999999
       ],
       [
         "$\\mathdefault{10^{2}}$",
         29.630073437500002,
-        140.19315875000004,
+        110.02521875,
         41.99999999999999,
-        152.10272125
+        121.93478124999999
       ],
       [
         "Amikacin\nIC$_{50}$ (\u03bcg/mL)",
         5.441010937500003,
-        58.83543972656252,
+        43.751469726562505,
         26.630073437500002,
-        110.3125002734375
+        95.2285302734375
       ]
     ],
     "boundary_issues": [],
@@ -8284,14 +8984,14 @@
     "figure": "Supplementary_Figure_3",
     "panel": "c",
     "print_width_pt": 193.51548000000003,
-    "print_height_pt": 153.14708,
+    "print_height_pt": 114.38000000000001,
     "text_bounds": [
       [
         "p = 0.003",
         102.50774000000001,
-        115.4862665023042,
+        88.3854576588526,
         133.00774,
-        123.48626650230419
+        96.3854576588526
       ],
       [
         "MG",
@@ -8317,23 +9017,23 @@
       [
         "$\\mathdefault{10^{-1}}$",
         26.766670117187502,
-        77.61875875,
+        58.23521875,
         41.99999999999999,
-        89.52832124999999
+        70.14478125
       ],
       [
         "$\\mathdefault{10^{0}}$",
         29.645698437500002,
-        140.19229875,
+        101.42521875000001,
         41.99999999999999,
-        152.10186124999996
+        113.33478125
       ],
       [
         "Levofloxacin\nIC$_{50}$ (\u03bcg/mL)",
         2.0854201171875033,
-        58.8350097265625,
+        39.45146972656249,
         23.274482617187505,
-        110.31207027343747
+        90.9285302734375
       ]
     ],
     "boundary_issues": [],
@@ -8418,14 +9118,14 @@
     "figure": "Supplementary_Figure_3",
     "panel": "d",
     "print_width_pt": 193.51548,
-    "print_height_pt": 153.14708,
+    "print_height_pt": 114.38000000000001,
     "text_bounds": [
       [
         "p = 0.002",
         102.50774000000001,
-        115.48599083040185,
+        88.38526738242804,
         133.00774,
-        123.48599083040185
+        96.38526738242804
       ],
       [
         "MG",
@@ -8451,44 +9151,44 @@
       [
         "$\\mathdefault{10^{-1}}$",
         26.766670117187502,
-        40.07463475,
+        32.32121875,
         41.99999999999999,
-        51.98419724999999
+        44.23078125000001
       ],
       [
         "$\\mathdefault{10^{0}}$",
         29.645698437500002,
-        65.10405075,
+        49.59721875,
         41.99999999999999,
-        77.01361324999999
+        61.50678125
       ],
       [
         "$\\mathdefault{10^{1}}$",
         30.122260937500002,
-        90.13346674999998,
+        66.87321875,
         41.99999999999999,
-        102.04302924999999
+        78.78278124999999
       ],
       [
         "$\\mathdefault{10^{2}}$",
         29.630073437500002,
-        115.16288275,
+        84.14921875,
         41.99999999999999,
-        127.07244524999997
+        96.05878125000001
       ],
       [
         "$\\mathdefault{10^{3}}$",
         29.872260937500002,
-        140.19229875,
+        101.42521875000003,
         41.99999999999999,
-        152.10186124999996
+        113.33478125000002
       ],
       [
         "Cefepime\nIC$_{50}$ (\u03bcg/mL)",
         2.0854201171875033,
-        58.8350097265625,
+        39.45146972656249,
         23.274482617187505,
-        110.31207027343747
+        90.9285302734375
       ]
     ],
     "boundary_issues": [],
@@ -8570,100 +9270,513 @@
     "spine_pt": 0.75
   },
   {
-    "figure": "Supplementary_Figure_4",
+    "figure": "Supplementary_Figure_3",
     "panel": "e",
-    "print_width_pt": 165.81488000000002,
-    "print_height_pt": 178.22898,
+    "print_width_pt": 443.76000000000005,
+    "print_height_pt": 221.45000000000002,
     "text_bounds": [
       [
-        "Pb-1",
-        122.81488000000003,
-        48.96605344974843,
-        137.81488000000002,
-        56.96605344974843
+        "acrR IS5 insertion",
+        9.024333714758185,
+        30.423651830327334,
+        57.11855917091256,
+        82.48799999999999
       ],
       [
-        "Pb$^{\\mathrm{CEF}}$-2",
-        122.81488000000003,
-        70.44139566935036,
-        149.20534875000004,
-        79.44139566935036
+        "acrR IS1 insertion (1)",
+        12.955216114218407,
+        21.52820826936292,
+        69.05893492848833,
+        82.48799999999999
       ],
       [
-        "Pb$^{\\mathrm{CEF}}$-3",
-        122.81488000000003,
-        81.04139566935035,
-        148.81472375000004,
-        90.04139566935035
+        "acrR IS1 insertion (2)",
+        24.895591871794167,
+        21.52820826936292,
+        80.99931068606409,
+        82.48799999999999
       ],
       [
-        "Pb$^{\\mathrm{CEF}}$-4",
-        122.81488000000003,
-        91.64139566935035,
-        149.25222375000004,
-        100.64139566935035
+        "AcrB Q569L",
+        56.58870312908343,
+        43.465843517455596,
+        92.93968644363986,
+        82.48799999999999
       ],
       [
-        "Pb$^{\\mathrm{CEF}}$-6",
-        122.81488000000003,
-        121.42925108234556,
-        149.18972375000004,
-        130.42925108234556
+        "AcrB I626F",
+        71.17883608784025,
+        46.408697026346076,
+        104.8800622012156,
+        82.48799999999999
       ],
       [
-        "Pb$^{\\mathrm{CEF}}$-5",
-        122.81488000000003,
-        132.02925108234555,
-        148.96316125,
-        141.02925108234555
+        "AcrB N68D",
+        82.69765956340994,
+        45.94051578629532,
+        116.82043795879136,
+        82.48799999999999
       ],
       [
-        "Pb$^{\\mathrm{CEF}}$-1",
-        122.81488000000003,
-        142.62925108234555,
-        148.48659875000004,
-        151.62925108234552
+        "AcrB A916G",
+        92.1689433835215,
+        43.198311380283734,
+        128.76081371636712,
+        82.48799999999999
       ],
+      [
+        "FtsI Q536L",
+        107.8430679245797,
+        47.34505950644759,
+        140.7011894739429,
+        82.48799999999999
+      ],
+      [
+        "FtsI A317V",
+        119.54255666386626,
+        47.07752736927573,
+        152.64156523151865,
+        82.48799999999999
+      ],
+      [
+        "FtsI I336S",
+        134.31335488634002,
+        50.22102998104512,
+        164.5819409890944,
+        82.48799999999999
+      ],
+      [
+        "FtsI L376X",
+        143.72441695187925,
+        47.41194254074057,
+        176.52231674667016,
+        82.48799999999999
+      ],
+      [
+        "FtsI D409X",
+        155.00235340915975,
+        46.676229163517945,
+        188.46269250424595,
+        82.48799999999999
+      ],
+      [
+        "ompC IS1 insertion (1)",
+        141.1678182097923,
+        18.0277073281641,
+        200.42814939968153,
+        82.48799999999999
+      ],
+      [
+        "ompC IS1 insertion (2)",
+        153.10819396736807,
+        18.0277073281641,
+        212.3685251572573,
+        82.48799999999999
+      ],
+      [
+        "ompC indel",
+        191.06436770017623,
+        46.9437613006898,
+        224.28381977697316,
+        82.48799999999999
+      ],
+      [
+        "CpxA T252P",
+        200.1140992382817,
+        43.73337565462746,
+        236.22419553454895,
+        82.48799999999999
+      ],
+      [
+        "CpxA G96S",
+        214.10201465131556,
+        46.007398820588286,
+        248.1645712921247,
+        82.48799999999999
+      ],
+      [
+        "EnvZ N278Y",
+        222.85063741655958,
+        42.46259800306112,
+        260.10494704970046,
+        82.48799999999999
+      ],
+      [
+        "EnvZ V241G",
+        234.91145668327997,
+        42.596364071647045,
+        272.04532280727625,
+        82.48799999999999
+      ],
+      [
+        "EnvZ P148S",
+        248.53804156888,
+        44.469089031850075,
+        283.985698564852,
+        82.48799999999999
+      ],
+      [
+        "MarR R94H",
+        261.2010783813233,
+        45.27168544336567,
+        295.9260743224277,
+        82.48799999999999
+      ],
+      [
+        "MarR R27P",
+        274.04478045748357,
+        46.27493095776015,
+        307.8664500800035,
+        82.48799999999999
+      ],
+      [
+        "marR indel",
+        287.79180885222826,
+        48.28142198654911,
+        319.8068258375793,
+        82.48799999999999
+      ],
+      [
+        "YnfE T387A",
+        295.5768835443155,
+        43.66649262033449,
+        331.74720159515505,
+        82.48799999999999
+      ],
+      [
+        "FliI E290D",
+        311.4316733490906,
+        48.01388984937725,
+        343.6875773527307,
+        82.48799999999999
+      ],
+      [
+        "LdtA R133H",
+        319.5780785686116,
+        43.80025868892044,
+        355.62795311030646,
+        82.48799999999999
+      ],
+      [
+        "RpoB G536V",
+        329.7118016890185,
+        41.79376766013146,
+        367.5683288678823,
+        82.48799999999999
+      ],
+      [
+        "RpoC T1310A",
+        339.60463779113604,
+        39.51974449417063,
+        379.508704625458,
+        82.48799999999999
+      ],
+      [
+        "aroK indel",
+        360.8191637528456,
+        49.81973177528732,
+        391.4490803830338,
+        82.48799999999999
+      ],
+      [
+        "FtsH W106R",
+        366.8578075623362,
+        43.265194414576705,
+        403.38945614060947,
+        82.48799999999999
+      ],
+      [
+        "YgfB P184Q",
+        378.978848583629,
+        43.465843517455596,
+        415.3298318981853,
+        82.48799999999999
+      ],
+      [
+        "lysO/aqpZ snp intergenic",
+        363.2774389925203,
+        12.766530776984446,
+        427.27020765576106,
+        82.48799999999999
+      ],
+      [
+        "insG/nanX snp intergenic",
+        374.4349319406561,
+        11.897051331175893,
+        439.21058341333685,
+        82.48799999999999
+      ],
+      [
+        "Culture",
+        25.8576,
+        126.61400000000003,
+        34.4976,
+        155.32400000000004
+      ],
+      [
+        "0.0",
+        378.03499999999997,
+        204.75,
+        387.48499999999996,
+        211.95000000000002
+      ],
+      [
+        "0.5",
+        406.035,
+        204.75,
+        415.485,
+        211.95000000000002
+      ],
+      [
+        "1.0",
+        434.035,
+        204.75,
+        443.485,
+        211.95000000000002
+      ],
+      [
+        "Frequency",
+        3.0000000000000004,
+        209.81,
+        38.730000000000004,
+        218.45
+      ]
+    ],
+    "boundary_issues": [],
+    "kind": "genomic",
+    "matrix": "S3e",
+    "mutation_identity_preserved": true,
+    "tick_pt": 8.5
+  },
+  {
+    "figure": "Supplementary_Figure_4",
+    "panel": "a",
+    "print_width_pt": 184.04000000000002,
+    "print_height_pt": 139.32000000000002,
+    "text_bounds": [
       [
         "0",
-        34.09340242090784,
+        40.87499999999999,
         16.0,
-        38.343402420907836,
-        24.0
-      ],
-      [
-        "1",
-        44.246755928473185,
-        16.0,
-        48.49675592847318,
+        45.12499999999999,
         24.0
       ],
       [
         "2",
-        54.40010943603852,
+        58.20493630573249,
         16.0,
-        58.65010943603852,
+        62.45493630573249,
+        24.0
+      ],
+      [
+        "4",
+        75.53487261146498,
+        16.0,
+        79.78487261146498,
+        24.0
+      ],
+      [
+        "6",
+        92.86480891719746,
+        16.0,
+        97.11480891719745,
+        24.0
+      ],
+      [
+        "8",
+        110.19474522292994,
+        16.0,
+        114.44474522292995,
+        24.0
+      ],
+      [
+        "10",
+        125.39968152866241,
+        16.0,
+        133.89968152866243,
+        24.0
+      ],
+      [
+        "12",
+        142.72961783439493,
+        16.0,
+        151.22961783439493,
+        24.0
+      ],
+      [
+        "14",
+        160.0595541401274,
+        16.0,
+        168.55955414012743,
+        24.0
+      ],
+      [
+        "$\\mathdefault{10^{-3}}$",
+        22.516670117187502,
+        26.678259233699606,
+        38.0,
+        38.58782173369961
+      ],
+      [
+        "$\\mathdefault{10^{-2}}$",
+        22.274482617187502,
+        42.06888658125187,
+        38.0,
+        53.97844908125187
+      ],
+      [
+        "$\\mathdefault{10^{-1}}$",
+        22.766670117187502,
+        57.45951392880413,
+        38.0,
+        69.36907642880412
+      ],
+      [
+        "$\\mathdefault{10^{0}}$",
+        25.6456984375,
+        72.85014127635638,
+        38.0,
+        84.75970377635636
+      ],
+      [
+        "$\\mathdefault{10^{1}}$",
+        26.1222609375,
+        88.24076862390862,
+        38.0,
+        100.15033112390861
+      ],
+      [
+        "$\\mathdefault{10^{2}}$",
+        25.6300734375,
+        103.63139597146088,
+        38.0,
+        115.54095847146088
+      ],
+      [
+        "$\\mathdefault{10^{3}}$",
+        25.8722609375,
+        119.02202331901314,
+        38.0,
+        130.93158581901315
+      ],
+      [
+        "Day",
+        103.11375,
+        4.0,
+        118.92625,
+        13.0
+      ],
+      [
+        "Survival (%)",
+        10.1885451171875,
+        56.847500000000004,
+        19.274482617187502,
+        105.47250000000001
+      ]
+    ],
+    "boundary_issues": [],
+    "kind": "numerical_reconstruction",
+    "asset": "original_image38",
+    "source_records": 90,
+    "tick_pt": 8.5,
+    "axis_pt": 9.5,
+    "spine_pt": 0.75
+  },
+  {
+    "figure": "Supplementary_Figure_4",
+    "panel": "e",
+    "print_width_pt": 184.04000000000002,
+    "print_height_pt": 177.16000000000003,
+    "text_bounds": [
+      [
+        "Pb-1",
+        141.04000000000002,
+        48.787184398131146,
+        156.04000000000002,
+        56.78718439813114
+      ],
+      [
+        "Pb$^{\\mathrm{CEF}}$-2",
+        141.04000000000002,
+        70.01940270994633,
+        167.43046875000002,
+        79.01940270994633
+      ],
+      [
+        "Pb$^{\\mathrm{CEF}}$-3",
+        141.04000000000002,
+        80.61940270994631,
+        167.03984375000002,
+        89.61940270994631
+      ],
+      [
+        "Pb$^{\\mathrm{CEF}}$-4",
+        141.04000000000002,
+        91.21940270994632,
+        167.47734375000002,
+        100.21940270994632
+      ],
+      [
+        "Pb$^{\\mathrm{CEF}}$-6",
+        141.04000000000002,
+        120.62671364319043,
+        167.41484375000002,
+        129.62671364319044
+      ],
+      [
+        "Pb$^{\\mathrm{CEF}}$-5",
+        141.04000000000002,
+        131.2267136431904,
+        167.18828125,
+        140.2267136431904
+      ],
+      [
+        "Pb$^{\\mathrm{CEF}}$-1",
+        141.04000000000002,
+        141.82671364319043,
+        166.71171875000002,
+        150.82671364319043
+      ],
+      [
+        "0",
+        34.394229711141676,
+        16.0,
+        38.644229711141676,
+        24.0
+      ],
+      [
+        "1",
+        47.05447730398899,
+        16.0,
+        51.30447730398899,
+        24.0
+      ],
+      [
+        "2",
+        59.71472489683631,
+        16.0,
+        63.96472489683631,
         24.0
       ],
       [
         "3",
-        64.55346294360386,
+        72.37497248968361,
         16.0,
-        68.80346294360386,
+        76.62497248968363,
         24.0
       ],
       [
         "5",
-        84.86016995873453,
+        97.69546767537827,
         16.0,
-        89.11016995873455,
+        101.94546767537827,
         24.0
       ],
       [
         "7",
-        105.1668769738652,
+        123.01596286107291,
         16.0,
-        109.41687697386521,
+        127.2659628610729,
         24.0
       ],
       [
@@ -8676,72 +9789,72 @@
       [
         "$\\mathdefault{10^{-7}}$",
         14.3291701171875,
-        39.299581169460616,
+        39.17080437904326,
         29.999999999999996,
-        51.209143669460616
+        51.08036687904325
       ],
       [
         "$\\mathdefault{10^{-6}}$",
         14.266670117187498,
-        56.55394358892126,
+        56.29639000808651,
         29.999999999999996,
-        68.46350608892125
+        68.20595250808651
       ],
       [
         "$\\mathdefault{10^{-5}}$",
         14.4541701171875,
-        73.80830600838188,
+        73.42197563712976,
         29.999999999999996,
-        85.71786850838188
+        85.33153813712975
       ],
       [
         "$\\mathdefault{10^{-4}}$",
         14.2354201171875,
-        91.06266842784251,
+        90.547561266173,
         29.999999999999996,
-        102.97223092784249
+        102.457123766173
       ],
       [
         "$\\mathdefault{10^{-3}}$",
         14.5166701171875,
-        108.31703084730313,
+        107.67314689521628,
         29.999999999999996,
-        120.22659334730311
+        119.58270939521627
       ],
       [
         "$\\mathdefault{10^{-2}}$",
         14.274482617187498,
-        125.57139326676376,
+        124.79873252425952,
         29.999999999999996,
-        137.48095576676377
+        136.7082950242595
       ],
       [
         "$\\mathdefault{10^{-1}}$",
         14.766670117187498,
-        142.8257556862244,
+        141.92431815330275,
         29.999999999999996,
-        154.7353181862244
+        153.83388065330277
       ],
       [
         "$\\mathdefault{10^{0}}$",
         17.645698437500002,
-        160.080118105685,
+        159.049903782346,
         29.999999999999996,
-        171.989680605685
+        170.95946628234603
       ],
       [
         "Time (h)",
-        55.40744,
+        64.52000000000001,
         3.9140625,
-        88.40744000000001,
+        97.52000000000001,
         13.0
       ],
       [
         "Survivor fraction",
         2.2354201171874983,
-        68.14574,
+        67.61125000000003,
         11.235420117187502,
-        133.08324
+        132.54875000000004
       ]
     ],
     "boundary_issues": [],
@@ -8753,294 +9866,294 @@
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATEC1",
         "Time": 1.0,
         "median": 0.0001717391304347,
         "mad": 2.466618597779947e-05,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATEC1",
         "Time": 2.0,
         "median": 1e-05,
         "mad": 3.5453531312090476e-06,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATEC1",
         "Time": 3.0,
         "median": 2.448979591836735e-06,
         "mad": 1.1346445549787764e-06,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATEC1",
         "Time": 5.0,
         "median": 3.586956521739131e-07,
         "mad": 1.7430771424311648e-08,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATEC1",
         "Time": 7.0,
         "median": 2.448979591836735e-07,
         "mad": 7.37518960736204e-08,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc1",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc1",
         "Time": 1.0,
         "median": 0.1054054054054054,
         "mad": 0.0027190581227419,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc1",
         "Time": 2.0,
         "median": 0.0714285714285714,
         "mad": 0.0176500264107809,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc1",
         "Time": 3.0,
         "median": 0.0621621621621621,
         "mad": 0.0032056264183904,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc1",
         "Time": 5.0,
         "median": 0.0229999999999999,
         "mad": 0.0024357036446877,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc1",
         "Time": 7.0,
         "median": 0.0189999999999999,
         "mad": 0.0025416038031524,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc2",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc2",
         "Time": 1.0,
         "median": 0.0009555555555555,
         "mad": 2.5823101703701315e-05,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc2",
         "Time": 2.0,
         "median": 0.00018,
         "mad": 9.616879255171498e-06,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc2",
         "Time": 3.0,
         "median": 6.444444444444446e-05,
         "mad": 1.2620267472025103e-05,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc2",
         "Time": 5.0,
         "median": 7.777777777777778e-05,
         "mad": 1.2911550851850596e-05,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc2",
         "Time": 7.0,
         "median": 1.2666666666666668e-05,
         "mad": 1.4407207999037515e-06,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc3",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc3",
         "Time": 1.0,
         "median": 0.000178431372549,
         "mad": 8.721189520621187e-06,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc3",
         "Time": 2.0,
         "median": 8.627450980392158e-05,
         "mad": 5.814126347080798e-06,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc3",
         "Time": 3.0,
         "median": 5.8823529411764714e-05,
         "mad": 1.1628252694161588e-05,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc3",
         "Time": 5.0,
         "median": 5.490196078431373e-05,
         "mad": 1.8435034759036597e-06,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc3",
         "Time": 7.0,
         "median": 2.254901960784314e-05,
         "mad": 8.721189520621188e-07,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc4",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc4",
         "Time": 1.0,
         "median": 0.0021142857142857,
         "mad": 0.0003697919046929,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc4",
         "Time": 2.0,
         "median": 0.0007142857142857,
         "mad": 0.0002976653102791,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc4",
         "Time": 3.0,
         "median": 0.0001571428571428,
         "mad": 3.663573049589131e-05,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc4",
         "Time": 5.0,
         "median": 5.7142857142857155e-05,
         "mad": 1.2593532357962652e-05,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc4",
         "Time": 7.0,
         "median": 2.3714285714285717e-05,
         "mad": 8.296729656267796e-06,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc5",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc5",
         "Time": 1.0,
         "median": 0.2297297297297297,
         "mad": 0.0498207772524855,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc5",
         "Time": 2.0,
         "median": 0.1702702702702702,
         "mad": 0.0193673262777758,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc5",
         "Time": 3.0,
         "median": 0.1108108108108108,
         "mad": 0.0321433735974481,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc5",
         "Time": 5.0,
         "median": 0.0599999999999999,
         "mad": 0.0112196924643667,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc5",
         "Time": 7.0,
         "median": 0.0175675675675675,
         "mad": 0.0060628151826081,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc6",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc6",
         "Time": 1.0,
         "median": 0.0595744680851063,
         "mad": 0.0020773357498521,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc6",
         "Time": 2.0,
         "median": 0.0382978723404255,
         "mad": 0.0083093429994086,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc6",
         "Time": 3.0,
         "median": 0.0319148936170212,
         "mad": 0.0003077534444225,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc6",
         "Time": 5.0,
         "median": 0.0148780487804878,
         "mad": 0.0007232205943929,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc6",
         "Time": 7.0,
         "median": 0.0148780487804878,
         "mad": 0.0003616102971964,
-        "basis": "original workbook summary"
+        "basis": "confirmed records; censored median and normal-scaled MAD"
       }
     ],
     "end_labels": {
@@ -9054,38 +10167,38 @@
         {
           "label": "Pb$^{\\mathrm{CEF}}$-2",
           "endpoint_y": 1.2666666666666668e-05,
-          "label_y_axes": 0.3207548896134732,
-          "displacement_pt": -7.593064842955478
+          "label_y_axes": 0.3201983870986657,
+          "displacement_pt": -7.615506904221135
         },
         {
           "label": "Pb$^{\\mathrm{CEF}}$-3",
           "endpoint_y": 2.254901960784314e-05,
-          "label_y_axes": 0.3947622587925318,
-          "displacement_pt": -1.3146842884365455
+          "label_y_axes": 0.3947622587925317,
+          "displacement_pt": -1.3048722293780273
         },
         {
           "label": "Pb$^{\\mathrm{CEF}}$-4",
           "endpoint_y": 2.3714285714285717e-05,
-          "label_y_axes": 0.4687696279715904,
-          "displacement_pt": 8.907749131392023
+          "label_y_axes": 0.4693261304863978,
+          "displacement_pt": 8.920379133599148
         },
         {
           "label": "Pb$^{\\mathrm{CEF}}$-6",
           "endpoint_y": 0.0148780487804878,
-          "label_y_axes": 0.6767432895378125,
-          "displacement_pt": -9.57409427787205
+          "label_y_axes": 0.676186787023005,
+          "displacement_pt": -9.581751057239174
         },
         {
           "label": "Pb$^{\\mathrm{CEF}}$-5",
           "endpoint_y": 0.0175675675675675,
           "label_y_axes": 0.7507506587168711,
-          "displacement_pt": -0.21926663113997336
+          "displacement_pt": -0.21763014916993484
         },
         {
           "label": "Pb$^{\\mathrm{CEF}}$-1",
           "endpoint_y": 0.0189999999999999,
-          "label_y_axes": 0.8247580278959297,
-          "displacement_pt": 9.793360909012023
+          "label_y_axes": 0.8253145304107371,
+          "displacement_pt": 9.799381206409123
         }
       ],
       "minimum_text_gap_pt": 1.5999999999999943,
@@ -9100,7 +10213,7 @@
     "figure": "Supplementary_Figure_4",
     "panel": "b",
     "print_width_pt": 141.88796000000002,
-    "print_height_pt": 111.68218000000002,
+    "print_height_pt": 142.33,
     "text_bounds": [
       [
         "Pb",
@@ -9133,23 +10246,23 @@
       [
         "$\\mathdefault{10^{1}}$",
         30.122260937500002,
-        66.88630875000001,
+        82.21021875,
         41.99999999999999,
-        78.79587125
+        94.11978125
       ],
       [
         "$\\mathdefault{10^{2}}$",
         29.630073437500002,
-        98.72739875000002,
+        129.37521875,
         41.99999999999999,
-        110.63696125
+        141.28478125
       ],
       [
         "Amikacin\nIC$_{50}$ (\u03bcg/mL)",
         5.441010937500003,
-        48.10255972656251,
+        63.4264697265625,
         26.630073437500002,
-        99.57962027343751
+        114.9035302734375
       ]
     ],
     "boundary_issues": [],
@@ -9242,7 +10355,7 @@
     "figure": "Supplementary_Figure_4",
     "panel": "c",
     "print_width_pt": 144.05602000000002,
-    "print_height_pt": 111.68218000000002,
+    "print_height_pt": 142.33,
     "text_bounds": [
       [
         "Pb",
@@ -9275,16 +10388,16 @@
       [
         "$\\mathdefault{10^{-1}}$",
         26.766670117187502,
-        98.72739875000002,
+        129.37521875,
         41.99999999999999,
-        110.63696125
+        141.28478125
       ],
       [
         "Levofloxacin\nIC$_{50}$ (\u03bcg/mL)",
         2.0854201171875033,
-        48.10255972656251,
+        63.4264697265625,
         23.274482617187505,
-        99.57962027343751
+        114.9035302734375
       ]
     ],
     "boundary_issues": [],
@@ -9377,7 +10490,7 @@
     "figure": "Supplementary_Figure_4",
     "panel": "d",
     "print_width_pt": 144.05602000000002,
-    "print_height_pt": 111.68218000000002,
+    "print_height_pt": 142.33,
     "text_bounds": [
       [
         "Pb",
@@ -9410,30 +10523,30 @@
       [
         "$\\mathdefault{10^{-1}}$",
         26.766670117187502,
-        56.272612083333335,
+        66.48855208333333,
         41.99999999999999,
-        68.18217458333334
+        78.39811458333331
       ],
       [
         "$\\mathdefault{10^{0}}$",
         29.645698437500002,
-        77.50000541666668,
+        97.93188541666667,
         41.99999999999999,
-        89.40956791666667
+        109.84144791666665
       ],
       [
         "$\\mathdefault{10^{1}}$",
         30.122260937500002,
-        98.72739875000002,
+        129.37521875,
         41.99999999999999,
-        110.63696125
+        141.28478125
       ],
       [
         "Cefepime\nIC$_{50}$ (\u03bcg/mL)",
         2.0854201171875033,
-        48.10255972656251,
+        63.4264697265625,
         23.274482617187505,
-        99.57962027343751
+        114.9035302734375
       ]
     ],
     "boundary_issues": [],
@@ -9521,6 +10634,103 @@
     "tick_pt": 8.5,
     "axis_pt": 9.5,
     "spine_pt": 0.75
+  },
+  {
+    "figure": "Supplementary_Figure_4",
+    "panel": "f",
+    "print_width_pt": 252.84000000000003,
+    "print_height_pt": 335.40000000000003,
+    "text_bounds": [
+      [
+        "1",
+        104.31285714285717,
+        18.360000000000003,
+        108.54285714285717,
+        27.000000000000004
+      ],
+      [
+        "2",
+        126.06857142857145,
+        18.360000000000003,
+        130.29857142857145,
+        27.000000000000004
+      ],
+      [
+        "3",
+        147.82428571428574,
+        18.360000000000003,
+        152.05428571428575,
+        27.000000000000004
+      ],
+      [
+        "4",
+        169.58000000000004,
+        18.360000000000003,
+        173.81000000000006,
+        27.000000000000004
+      ],
+      [
+        "5",
+        191.33571428571435,
+        18.360000000000003,
+        195.56571428571434,
+        27.000000000000004
+      ],
+      [
+        "6",
+        213.09142857142865,
+        18.360000000000003,
+        217.32142857142867,
+        27.000000000000004
+      ],
+      [
+        "7",
+        234.84714285714296,
+        18.360000000000003,
+        239.07714285714295,
+        27.000000000000004
+      ],
+      [
+        "Culture",
+        157.34000000000003,
+        6.720000000000004,
+        186.05000000000004,
+        15.360000000000005
+      ],
+      [
+        "0.0",
+        187.11500000000004,
+        318.70000000000005,
+        196.56500000000005,
+        325.90000000000003
+      ],
+      [
+        "0.5",
+        215.11500000000004,
+        318.70000000000005,
+        224.56500000000005,
+        325.90000000000003
+      ],
+      [
+        "1.0",
+        243.11500000000007,
+        318.70000000000005,
+        252.56500000000005,
+        325.90000000000003
+      ],
+      [
+        "Frequency",
+        3.0000000000000004,
+        323.7600000000001,
+        38.730000000000004,
+        332.4000000000001
+      ]
+    ],
+    "boundary_issues": [],
+    "kind": "genomic",
+    "matrix": "S4f",
+    "mutation_identity_preserved": true,
+    "tick_pt": 8.5
   },
   {
     "figure": "Supplementary_Figure_6",
@@ -9854,6 +11064,194 @@
     "tick_pt": 8.5,
     "axis_pt": 9.5,
     "spine_pt": 0.75
+  },
+  {
+    "figure": "Supplementary_Figure_6",
+    "panel": "d",
+    "print_width_pt": 294.43906000000004,
+    "print_height_pt": 365.73736,
+    "text_bounds": [
+      [
+        "Day 0",
+        118.26738250000001,
+        20.332071600000003,
+        138.78738250000004,
+        28.972071600000007
+      ],
+      [
+        "Day 16",
+        162.1271475,
+        20.332071600000003,
+        186.87714750000004,
+        28.972071600000007
+      ],
+      [
+        "Day 31",
+        208.10191250000003,
+        20.332071600000003,
+        232.85191250000003,
+        28.972071600000007
+      ],
+      [
+        "Day 82",
+        254.07667750000002,
+        20.332071600000003,
+        278.8266775,
+        28.972071600000007
+      ],
+      [
+        "1",
+        109.17184562500002,
+        36.36000000000001,
+        113.401845625,
+        45.00000000000001
+      ],
+      [
+        "2",
+        120.665536875,
+        36.36000000000001,
+        124.895536875,
+        45.00000000000001
+      ],
+      [
+        "3",
+        132.159228125,
+        36.36000000000001,
+        136.38922812500002,
+        45.00000000000001
+      ],
+      [
+        "4",
+        143.652919375,
+        36.36000000000001,
+        147.88291937500003,
+        45.00000000000001
+      ],
+      [
+        "1",
+        155.14661062500002,
+        36.36000000000001,
+        159.376610625,
+        45.00000000000001
+      ],
+      [
+        "2",
+        166.64030187500003,
+        36.36000000000001,
+        170.87030187500002,
+        45.00000000000001
+      ],
+      [
+        "3",
+        178.13399312500002,
+        36.36000000000001,
+        182.363993125,
+        45.00000000000001
+      ],
+      [
+        "4",
+        189.627684375,
+        36.36000000000001,
+        193.857684375,
+        45.00000000000001
+      ],
+      [
+        "1",
+        201.12137562500004,
+        36.36000000000001,
+        205.35137562500003,
+        45.00000000000001
+      ],
+      [
+        "2",
+        212.61506687500002,
+        36.36000000000001,
+        216.84506687500001,
+        45.00000000000001
+      ],
+      [
+        "3",
+        224.108758125,
+        36.36000000000001,
+        228.33875812500003,
+        45.00000000000001
+      ],
+      [
+        "4",
+        235.60244937500005,
+        36.36000000000001,
+        239.832449375,
+        45.00000000000001
+      ],
+      [
+        "1",
+        247.09614062500003,
+        36.36000000000001,
+        251.32614062500002,
+        45.00000000000001
+      ],
+      [
+        "2",
+        258.589831875,
+        36.36000000000001,
+        262.81983187500003,
+        45.00000000000001
+      ],
+      [
+        "3",
+        270.08352312500006,
+        36.36000000000001,
+        274.313523125,
+        45.00000000000001
+      ],
+      [
+        "4",
+        281.57721437500004,
+        36.36000000000001,
+        285.80721437500006,
+        45.00000000000001
+      ],
+      [
+        "Culture",
+        183.13453,
+        7.720000000000005,
+        211.84453000000002,
+        16.360000000000007
+      ],
+      [
+        "0.0",
+        228.71406000000005,
+        349.03736000000004,
+        238.16406000000003,
+        356.23736
+      ],
+      [
+        "0.5",
+        256.71406,
+        349.03736000000004,
+        266.16406,
+        356.23736
+      ],
+      [
+        "1.0",
+        284.71406,
+        349.03736000000004,
+        294.16406,
+        356.23736
+      ],
+      [
+        "Frequency",
+        3.0000000000000004,
+        354.09736,
+        38.730000000000004,
+        362.73735999999997
+      ]
+    ],
+    "boundary_issues": [],
+    "kind": "genomic",
+    "matrix": "S6d",
+    "mutation_identity_preserved": true,
+    "tick_pt": 8.5
   },
   {
     "figure": "Supplementary_Figure_10",

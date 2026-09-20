@@ -1,0 +1,34 @@
+matrix_label,label,display_label,coordinate,mutation_id
+ftsI I336S,ftsI I336S,FtsI I336S,92419,92419|G|S
+ftsI|ftsO D|NA409|NAG|NA,ftsI|ftsO D|NA409|NAG|NA,FtsI D409X,92638,92638|G|G|NA
+ftsI Q536L,ftsI Q536L,FtsI Q536L,93019,93019|T|L
+acrB A916G,acrB A916G,AcrB A916G,481657,481657|C|G
+acrR IS1 insertion [485997],acrR IS1 insertion,acrR IS1 insertion (1),485997,485997||
+marR R27P,marR R27P,MarR R27P,1619199,1619199|C|P
+fliI E290D,fliI E290D,FliI E290D,2017423,2017423|C|D
+ompC mobile_element_insertion [2312301],ompC mobile_element_insertion,ompC IS1 insertion (1),2312301,2312301||
+envZ N278Y,envZ N278Y,EnvZ N278Y,3535037,3535037|A|Y
+insG/nanX snp_intergenic,insG/nanX snp_intergenic,insG/nanX snp intergenic,4503456,4503456|C|
+ftsI|ftsO L|NA376|NAS|NA,ftsI|ftsO L|NA376|NAS|NA,FtsI L376X,92539,92539|C|S|NA
+acrB I626F,acrB I626F,AcrB I626F,482528,482528|A|F
+acrB Q569L,acrB Q569L,AcrB Q569L,482698,482698|A|L
+acrR IS5 insertion,acrR IS5 insertion,acrR IS5 insertion,486025,486025||
+lysO/aqpZ snp_intergenic,lysO/aqpZ snp_intergenic,lysO/aqpZ snp intergenic,915226,915226|C|
+marR R94H,marR R94H,MarR R94H,1619400,1619400|A|H
+ompC mobile_element_insertion [2312396],ompC mobile_element_insertion,ompC IS1 insertion (2),2312396,2312396||
+envZ V241G,envZ V241G,EnvZ V241G,3535147,3535147|C|G
+cpxA T252P,cpxA T252P,CpxA T252P,4104222,4104222|G|P
+envZ P148S,envZ P148S,EnvZ P148S,3535427,3535427|A|S
+acrR IS1 insertion [486164],acrR IS1 insertion,acrR IS1 insertion (2),486164,486164||
+marR small_indel,marR small_indel,marR indel,1619202,1619202||
+ldtA R133H,ldtA R133H,LdtA R133H,2062926,2062926|T|H
+ompC small_indel,ompC small_indel,ompC indel,2312004,2312004||
+ygfB P184Q,ygfB P184Q,YgfB P184Q,3054894,3054894|T|Q
+cpxA G96S,cpxA G96S,CpxA G96S,4104690,4104690|T|S
+rpoB G536V,rpoB G536V,RpoB G536V,4182851,4182851|T|V
+ftsI A317V,ftsI A317V,FtsI A317V,92362,92362|T|V
+ynfE T387A,ynfE T387A,YnfE T387A,1659227,1659227|G|A
+acrB N68D,acrB N68D,AcrB N68D,484202,484202|C|D
+ftsH W106R,ftsH W106R,FtsH W106R,3326620,3326620|T|R
+aroK small_indel,aroK small_indel,aroK indel,3518721,3518721||
+rpoC T1310A,rpoC T1310A,RpoC T1310A,4189277,4189277|G|A

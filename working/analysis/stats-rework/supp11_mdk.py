@@ -2,13 +2,13 @@
 
 Why: the workbook MDK_double_mutant.xlsx computes the time-zero CFU per mL
 (count / dilution / 0.01 mL) but stores the 3 h and 7 h CFU as count / dilution
-only. The correction factor is conditional on the actual plating volumes.
+only. The confirmed plated volume was 10 uL at every measured time point.
 Adam's Figure 5e workbook normalises every time point the same way and puts
 hipA at 8.4e-5 (3 h) and 1.4e-5 (7 h); the double-mutant workbook has the same
 strain at 1.3e-6 and 1.1e-7.
 
 Fix: survivor fraction = (count_t / dilution_t) / (count_0 / dilution_0), with
-the same plated volume at every time point (Methods: 20 uL), so the volume
+the same 10 uL plated volume at every time point (confirmed 19 September 2026), so the volume
 cancels. A count of zero is a detection-limit observation and is kept, plotted
 at the fraction one colony would give, and flagged. Replicate spread is the
 scaled MAD (scipy median_abs_deviation, scale='normal'), which is what both
@@ -59,7 +59,7 @@ def main():
     d['fraction_lower'] = measured
     d['fraction_upper'] = np.where(d.below_detection, d.detection_limit, measured)
     d['fraction_plot'] = d.fraction_upper
-    d['normalization_assumption'] = 'equal plated volumes across time; awaiting Adam confirmation'
+    d['normalization_assumption'] = '10 uL at every measured time point; confirmed 19 September 2026'
     d['concentration_assumption'] = 'Factor follows recorded dilution, including concentration when Factor > 1'
     d['censoring'] = np.where(d.below_detection, 'below one-colony detection limit', 'measured')
     d["fraction_workbook"] = d["Fraction"]

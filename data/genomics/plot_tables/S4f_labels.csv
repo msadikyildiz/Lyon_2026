@@ -1,0 +1,25 @@
+matrix_label,label,display_label,coordinate,mutation_id
+GlnW snp [MR_Cli1_contig_22 86211],GlnW snp,GlnW snp (1),MR_Cli1_contig_22 86211,MR_Cli1_contig_22 86211|G|
+GlnW snp [MR_Cli1_contig_22 86212],GlnW snp,GlnW snp (2),MR_Cli1_contig_22 86212,MR_Cli1_contig_22 86212|A|
+HipA G118D,HipA G118D,HipA G118D,MR_Cli1_contig_26 20100,MR_Cli1_contig_26 20100|T|D
+$\it{aqpZ/lysO}$ snp intergenic,$\it{aqpZ/lysO}$ snp intergenic,aqpZ/lysO snp intergenic,MR_Cli1_contig_7 178265,MR_Cli1_contig_7 178265|G|
+YgfB P184Q,YgfB P184Q,YgfB P184Q,MR_Cli1_contig_13 235928,MR_Cli1_contig_13 235928|A|Q
+FhuE E619D,FhuE E619D,FhuE E619D,MR_Cli1_contig_30 158989,MR_Cli1_contig_30 158989|T|D
+MetG V583M,MetG V583M,MetG V583M,MR_Cli1_contig_4 64087,MR_Cli1_contig_4 64087|A|M
+PheS L24F,PheS L24F,PheS L24F,MR_Cli1_contig_28 80983,MR_Cli1_contig_28 80983|C|F
+$\it{gnd}$ snp intergenic,$\it{gnd}$ snp intergenic,gnd snp intergenic,MR_Cli1_contig_41 1807,MR_Cli1_contig_41 1807|A|
+PheT indel,PheT indel,PheT indel,MR_Cli1_contig_28 84108,MR_Cli1_contig_28 84108||
+CysS V27G,CysS V27G,CysS V27G,MR_Cli1_contig_45 30200,MR_Cli1_contig_45 30200|C|G
+Adk D147Y,Adk D147Y,Adk D147Y,MR_Cli1_contig_1 111058,MR_Cli1_contig_1 111058|T|Y
+AcrB V127G,AcrB V127G,AcrB V127G,MR_Cli1_contig_1 97469,MR_Cli1_contig_1 97469|C|G
+$\it{acrA}$ intergenic snp,$\it{acrA}$ intergenic snp,acrA intergenic snp,MR_Cli1_contig_1 99159,MR_Cli1_contig_1 99159|G|
+CpxA L30R,CpxA L30R,CpxA L30R,MR_Cli1_contig_2 61433,MR_Cli1_contig_2 61433|G|R
+MarR R77C,MarR R77C,MarR R77C,MR_Cli1_contig_26 47567,MR_Cli1_contig_26 47567|T|C
+ComR P16Q,ComR P16Q,ComR P16Q,MR_Cli1_contig_30 149898,MR_Cli1_contig_30 149898|A|Q
+AtpD S342R,AtpD S342R,AtpD S342R,MR_Cli1_contig_39 25113,MR_Cli1_contig_39 25113|A|R
+atpD indel,atpD indel,atpD indel,MR_Cli1_contig_39 25321,MR_Cli1_contig_39 25321||
+AtpC Q25*,AtpC Q25*,AtpC Q25*,MR_Cli1_contig_39 25563,MR_Cli1_contig_39 25563|T|*
+OmpC W93*,OmpC W93*,OmpC W93*,MR_Cli1_contig_4 179221,MR_Cli1_contig_4 179221|T|*
+$\it{mdtQ/dusC}$ snp intergenic,$\it{mdtQ/dusC}$ snp intergenic,mdtQ/dusC snp intergenic,MR_Cli1_contig_4 97218,MR_Cli1_contig_4 97218|G|
+WbaP P32fs,WbaP P32fs,WbaP P32fs,MR_Cli1_contig_40 9333,MR_Cli1_contig_40 9333||
+FtsI V313M,FtsI V313M,FtsI V313M,MR_Cli1_contig_5 72850,MR_Cli1_contig_5 72850|A|M

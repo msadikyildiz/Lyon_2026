@@ -1,0 +1,54 @@
+matrix_label,label,display_label,coordinate,mutation_id
+manZ/yobD snp_intergenic,manZ/yobD snp_intergenic,manZ/yobD snp intergenic,1904774,1904774|T|
+yhaC/rnpB snp_intergenic,yhaC/rnpB snp_intergenic,yhaC/rnpB snp intergenic,3269943,3269943|T|
+pitA T184T,pitA T184T,PitA T184T,3638193,3638193|A|T
+yicC mobile_element_insertion,yicC mobile_element_insertion,yicC IS insertion,3817494,3817494||
+corA H75N,corA H75N,CorA H75N,4001648,4001648|A|N
+aceK V471G,aceK V471G,AceK V471G,4220007,4220007|G|G
+mgtL/mgtA small_indel,mgtL/mgtA small_indel,mgtL/mgtA indel,4467491,4467491||
+relB P45S,relB P45S,RelB P45S,1645740,1645740|A|S
+eutH P393Q,eutH P393Q,EutH P393Q,2566930,2566930|T|Q
+ygfB P184Q,ygfB P184Q,YgfB P184Q,3054894,3054894|T|Q
+yaaA S53I,yaaA S53I,YaaA S53I,6302,6302|A|I
+mrcB|mrcB T|T702|657S|S,mrcB|mrcB T|T702|657S|S,MrcB T702S,166833,166833|T|S|S
+cstA A392S,cstA A392S,CstA A392S,631067,631067|T|S
+pgaC I94I,pgaC I94I,PgaC I94I,1087565,1087565|G|I
+pgaC I81L,pgaC I81L,PgaC I81L,1087606,1087606|G|L
+phoQ G39C,phoQ G39C,PhoQ G39C,1189662,1189662|A|C
+abgT L394F,abgT L394F,AbgT L394F,1400594,1400594|A|F
+yfbS A38S,yfbS A38S,YfbS A38S,2411241,2411241|A|S
+yiiG/frvR snp_intergenic,yiiG/frvR snp_intergenic,yiiG/frvR snp intergenic,4088086,4088086|G|
+ytfJ A73E,ytfJ A73E,YtfJ A73E,4439045,4439045|T|E
+rapA W549*,rapA W549*,RapA W549*,61619,61619|T|*
+phoQ IS2 insertion,phoQ IS2 insertion,phoQ IS2 insertion,1188509,1188509||
+phoQ IS5 insertion,phoQ IS5 insertion,phoQ IS5 insertion,1189637,1189637||
+prs A76V,prs A76V,Prs A76V,1261649,1261649|A|V
+bamD P32Q,bamD P32Q,BamD P32Q,2736240,2736240|A|Q
+glnH A17V,glnH A17V,GlnH A17V,847955,847955|A|V
+prs A114V,prs A114V,Prs A114V,1261535,1261535|A|V
+prs A11S,prs A11S,Prs A11S,1261845,1261845|A|S
+nadK T200P,nadK T200P,NadK T200P,2751428,2751428|C|P
+corA L50Q,corA L50Q,CorA L50Q,4001574,4001574|A|Q
+yjbB L14Q,yjbB L14Q,YjbB L14Q,4227771,4227771|A|Q
+cra S18N,cra S18N,Cra S18N,88080,88080|A|N
+insH1/mmuP snp_intergenic,insH1/mmuP snp_intergenic,insH1/mmuP snp intergenic,275203,275203|A|
+cysS Y298S,cysS Y298S,CysS Y298S,555503,555503|C|S
+insH5/lomR snp_intergenic,insH5/lomR snp_intergenic,insH5/lomR snp intergenic,1428767,1428767|C|
+yhfG/ppiA snp_intergenic [3491706],yhfG/ppiA snp_intergenic,yhfG/ppiA snp intergenic (2),3491706,3491706|G|
+bioH S225C,bioH S225C,BioH S225C,3544172,3544172|A|C
+waaF D13E,waaF D13E,WaaF D13E,3794967,3794967|A|E
+yaaA I52T,yaaA I52T,YaaA I52T,6305,6305|G|T
+phoQ small_indel,phoQ small_indel,phoQ indel,1189699,1189699|AGCACC|
+phoP R67H,phoP R67H,PhoP R67H,1190248,1190248|T|H
+yhfG/ppiA snp_intergenic [3491701],yhfG/ppiA snp_intergenic,yhfG/ppiA snp intergenic (1),3491701,3491701|A|
+rlmB D59E,rlmB D59E,RlmB D59E,4409451,4409451|A|E
+marC/marR small_indel,marC/marR small_indel,marC/marR indel,1619100,1619100||
+marR small_indel,marR small_indel,marR indel,1619397,1619397||
+marR Q117*,marR Q117*,MarR Q117*,1619468,1619468|T|*
+pheS A14P,pheS A14P,PheS A14P,1798903,1798903|G|P
+gsk F3I,gsk F3I,Gsk F3I,500131,500131|A|I
+prs I151T,prs I151T,Prs I151T,1261424,1261424|G|T
+prs R79C,prs R79C,Prs R79C,1261641,1261641|A|C
+mgtT Y23S,mgtT Y23S,MgtT Y23S,1622808,1622808|C|S
+obgE Q71K,obgE Q71K,ObgE Q71K,3331544,3331544|T|K
+rbsA S157R,rbsA S157R,RbsA S157R,3934246,3934246|C|R

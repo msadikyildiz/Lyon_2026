@@ -1,0 +1,41 @@
+matrix_label,label,display_label,coordinate,mutation_id
+icd H366H,icd H366H,Icd H366H,1196220,1196220|T|H
+feaB D41E,feaB D41E,FeaB D41E,1447641,1447641|A|E
+gyrA G81D,gyrA G81D,GyrA G81D,2339179,2339179|T|D
+rplJ P89S,rplJ P89S,RplJ P89S,4180260,4180260|T|S
+rpoB D1064G,rpoB D1064G,RpoB D1064G,4184435,4184435|G|G
+puuA D431D,puuA D431D,PuuA D431D,1359616,1359616|G|D
+paaG S241C,paaG S241C,PaaG S241C,1458984,1458984|T|C
+ftp/ompC snp_intergenic [2311594],ftp/ompC snp_intergenic,ftp/ompC snp intergenic (2),2311594,2311594|G|
+gyrA S83L,gyrA S83L,GyrA S83L,2339173,2339173|A|L
+elaD C252C,elaD C252C,ElaD C252C,2383468,2383468|T|C
+pssL small_indel,pssL small_indel,pssL indel,2722723,2722723||
+recF I355T,recF I355T,RecF I355T,3880158,3880158|G|T
+rpoB D1064N,rpoB D1064N,RpoB D1064N,4184434,4184434|A|N
+rpoB small_indel [4185043],rpoB small_indel,rpoB indel (2),4185043,4185043||
+gyrA A119E,gyrA A119E,GyrA A119E,2339065,2339065|T|E
+tas small_indel,tas small_indel,tas indel,2972129,2972129||
+rpoB H1237L,rpoB H1237L,RpoB H1237L,4184954,4184954|T|L
+rpoB M129R,rpoB M129R,RpoB M129R,4185113,4185113|G|R
+arpA D661A,arpA D661A,ArpA D661A,4220506,4220506|G|A
+arcA small_indel,arcA small_indel,arcA indel,4640231,4640231|CGCTTCGAAAACATCATAGCCTTC|
+appY/ompT small_indel,appY/ompT small_indel,appY/ompT indel,584487,584487||
+ygfB P184Q,ygfB P184Q,YgfB P184Q,3054894,3054894|T|Q
+pgaC E86G,pgaC E86G,PgaC E86G,1087590,1087590|C|G
+gyrA D87Y,gyrA D87Y,GyrA D87Y,2339162,2339162|A|Y
+yhaC/rnpB snp_intergenic,yhaC/rnpB snp_intergenic,yhaC/rnpB snp intergenic,3269943,3269943|T|
+yhiI V38V,yhiI V38V,YhiI V38V,3630489,3630489|T|V
+arcA L65F,arcA L65F,ArcA L65F,4640112,4640112|G|F
+sucA V141A,sucA V141A,SucA V141A,759127,759127|C|A
+selB small_indel,selB small_indel,selB indel,3758381,3758381|T|
+glvC small_indel,glvC small_indel,glvC indel,3862562,3862562||
+trkH L185Q,trkH L185Q,TrkH L185Q,4033698,4033698|A|Q
+gltP/yjcO snp_intergenic,gltP/yjcO snp_intergenic,gltP/yjcO snp intergenic,4296060,4296060|T|
+fimB/fimE mobile_element_insertion,fimB/fimE mobile_element_insertion,fimB/fimE IS5 insertion,4542020,4542020||
+ftp/ompC snp_intergenic [2311562],ftp/ompC snp_intergenic,ftp/ompC snp intergenic (1),2311562,2311562|A|
+gyrA S83W,gyrA S83W,GyrA S83W,2339173,2339173|C|W
+arcB G258C,arcB G258C,ArcB G258C,3352254,3352254|A|C
+hlyE E42D,hlyE E42D,HlyE E42D,1230269,1230269|A|D
+yffN/yffO snp_intergenic,yffN/yffO snp_intergenic,yffN/yffO snp intergenic,2562049,2562049|C|
+rpoB small_indel [4182858],rpoB small_indel,rpoB indel (1),4182858,4182858||
+rpoB E562D,rpoB E562D,RpoB E562D,4182930,4182930|C|D

@@ -1,0 +1,12 @@
+{
+  "source": "data/figure-assets/Figure4_original.png",
+  "sha256": "704844a09e844756b22b4eef555b449364dd4803c68900071952556fce9cb1bb",
+  "crop": [
+    806,
+    435,
+    1925,
+    1294
+  ],
+  "panel": "d",
+  "status": "Supplied BioRender panel; editable updated export remains pending"
+}

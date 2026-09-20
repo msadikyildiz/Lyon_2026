@@ -56,16 +56,16 @@ FIT_PANELS = [
 ]
 MDK = {
     'Figure 2': ('e', 'Figure 2/E - MDK/mdk.P.PC.cultures-3days.xlsx', 'Fig2e_MDK',
-                 '40 uL entries require confirmation; day 1 omitted by original notebook'),
+                 'Recorded volumes, including 40 uL concentrated samples, confirmed 19 September 2026; day 1 omitted by original notebook'),
     'Figure 3': ('e', 'Figure 3/E - MDK/mdk.P.PLAC.cultures-2days.xlsx', 'Fig3e_MDK',
-                 '40 uL entries and two blank counts require confirmation'),
+                 'Recorded volumes and two zero-colony counts confirmed 19 September 2026; day 2 at 3 h has an unconfirmed handling concern'),
     'Figure 5': ('e', 'Figure 5 - mutants/E - MDK/MDK_mutants_correct.xlsx', 'Fig5e_MDK', ''),
     'Supplementary Figure 4': ('e', 'Supplemental Figure 4 - Pb/E - MDK/mdk.ATECc.cultures.xlsx',
-                               'SuppFig4e_MDK', '40 uL entries require confirmation'),
+                               'SuppFig4e_MDK', 'Recorded 40 uL concentrated samples confirmed 19 September 2026'),
     'Supplementary Figure 10': ('d', 'Supplemental Figure 10 - mutant prs and other/D - prs_hipA mdk/MDK_prs_mutant.xlsx',
                                 'SuppFig10d_MDK', ''),
     'Supplementary Figure 11': ('all', 'Supplemental Figure 11 - double mutants/MDK_double_mutant.xlsx',
-                                'SuppFig11_MDK_double_mutants', 'Equal plating volume provisional; one censored count; 1/2 h not measured, 5 h excluded for dilution error'),
+                                'SuppFig11_MDK_double_mutants', '10 uL throughout, confirmed 19 September 2026; one censored count; 1/2 h not measured, 5 h excluded for dilution error'),
 }
 
 
@@ -120,11 +120,11 @@ def panel_manifest():
         for panel in ([panels] if panels == 'all' else panels):
             add(fig, panel, 'mutation frequency', 'working/figures/' + path,
                 units='fraction', unit='population sequencing sample',
-                status='table regenerated from mutation calls; assembly retains image',
+                status='table and plot regenerated from mutation calls',
                 note='Supp 5 b/c corrected to notebook identities' if fig == 'Supplementary Figure 5' else '')
     for fig, panels, source in [
         ('Figure 1', 'abc', 'working/figures/Figure 1/A-C/Figure 1 A-C.pptx'),
-        ('Figure 4', 'd', 'working/figures/Figure 4/Figure4D-Cartoon.pptx'),
+        ('Figure 4', 'd', 'data/figure-assets/Figure4_schematic.json'),
         ('Supplementary Figure 1', 'all', 'working/figures/Supplemental Figure 1/cartoon - survival mechanisms.pptx'),
     ]:
         add(fig, panels, 'schematic', source, status='retain schematic', unit='not applicable', units='not applicable')
@@ -132,12 +132,12 @@ def panel_manifest():
         'working/figures/Figure 2/A-D - MIC/B-D/241011_Adam_mic_PAPLPC.ipynb',
         status='recovered PA5 levofloxacin, original notebook cell 29', units='OD and ug/mL', unit='dose-response series')
     for fig in ['Figure 6', 'Supplementary Figure 12', 'Supplementary Figure 13']:
-        add(fig, 'all', 'single-cell RNA analysis', 'working/figures/Figure 6 -scRNA',
-            status='existing Rosenthal analysis; source-data dependency', unit='cell; sample provenance to document')
+        add(fig, 'all', 'single-cell RNA analysis', 'data/single-cell/input_manifest.json',
+            status='count-matrix reconstruction and supplied-table validation', unit='cell; two technical libraries per culture')
     for i in [1, 2, 3, 4]:
         add(f'Supplementary Table {i}', 'all', 'table',
-            'data/supplementary_tables.json',
-            status='table extracted in Source Data workbook' if i < 4 else 'Rosenthal source-table dependency')
+            'data/supplementary_tables.json' if i<3 else 'data/single-cell/original-tables/Single Cell Analysis Supp Tables.xlsx',
+            status='original table in Source Data' if i<3 else 'complete supplied expression/enrichment tables; generating enrichment method pending')
     d = pd.DataFrame(rows).fillna('')
     if d.duplicated(['figure', 'panel', 'measure', 'drug']).any():
         raise ValueError('Duplicate panel identity')

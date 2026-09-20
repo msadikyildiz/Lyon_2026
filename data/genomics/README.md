@@ -33,8 +33,8 @@ data/genomics/out/<FolderDate>/<source_file>/output/output.gd.tsv
 data/genomics/data/processed/traced_alleles/<lineage>/<population>.csv
 ```
 
-`recovered_tables/` preserves the historical notebook-display exports for comparison. They are no longer the Source Data input. The genomic plotting notebooks are included, but the automated figure assemblies still use their established image panels. Connecting regenerated genomic plots to those assemblies remains a separate task in the repository TODO table.
+`recovered_tables/` preserves the historical notebook-display exports for comparison. They are no longer the Source Data input. The genomic plotting notebooks supply the selections and aliases used by scripts/reproduce_genomic_plots.py. All genomic numerical panels are rendered automatically. Plot matrices and coordinate/allele crosswalks are in plot_tables/. Distinct mutation sites remain separate even when they share a short label; historical averaging corrections are documented in docs/DATA_CORRECTIONS.md.
 
 ## Remaining inputs
 
-Reproducing the upstream mutation calls requires reference-genome files/version, caller version/options and sequencing-read accessions. These are not supplied by this archive. Single-cell expression objects, metadata, embeddings, complete differential-expression/enrichment tables and generating code are separate inputs still needed for Figure 6 and Supplementary Figures 12/13.
+Reproducing the upstream mutation calls requires reference-genome files/version, caller version/options and sequencing-read accessions. These are not supplied by this archive. Single-cell inputs and the count-matrix reconstruction are documented in ../single-cell/README.md.

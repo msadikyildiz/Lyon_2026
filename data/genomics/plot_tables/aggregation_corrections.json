@@ -1,0 +1,156 @@
+[
+  {
+    "panel": "S4f",
+    "population": "1",
+    "source_label": "GlnW snp",
+    "coordinates": [
+      "MR_Cli1_contig_22 86211",
+      "MR_Cli1_contig_22 86212"
+    ],
+    "frequencies": [
+      0.13,
+      0.13
+    ],
+    "historical_mean": 0.13
+  },
+  {
+    "panel": "S4f",
+    "population": "3",
+    "source_label": "GlnW snp",
+    "coordinates": [
+      "MR_Cli1_contig_22 86211",
+      "MR_Cli1_contig_22 86212"
+    ],
+    "frequencies": [
+      0.17,
+      0.17
+    ],
+    "historical_mean": 0.17
+  },
+  {
+    "panel": "S4f",
+    "population": "6",
+    "source_label": "GlnW snp",
+    "coordinates": [
+      "MR_Cli1_contig_22 86211",
+      "MR_Cli1_contig_22 86212"
+    ],
+    "frequencies": [
+      0.13,
+      0.14
+    ],
+    "historical_mean": 0.135
+  },
+  {
+    "panel": "S4f",
+    "population": "7",
+    "source_label": "GlnW snp",
+    "coordinates": [
+      "MR_Cli1_contig_22 86211",
+      "MR_Cli1_contig_22 86212"
+    ],
+    "frequencies": [
+      0.14,
+      0.15
+    ],
+    "historical_mean": 0.14500000000000002
+  },
+  {
+    "panel": "S6d",
+    "population": "2_Day0",
+    "source_label": "yhaC/rnpB snp_intergenic",
+    "coordinates": [
+      "3269943",
+      "3270068"
+    ],
+    "frequencies": [
+      0.0,
+      0.0
+    ],
+    "historical_mean": 0.0
+  },
+  {
+    "panel": "S6d",
+    "population": "2_Day16",
+    "source_label": "yhaC/rnpB snp_intergenic",
+    "coordinates": [
+      "3269943",
+      "3270068"
+    ],
+    "frequencies": [
+      0.0,
+      0.1
+    ],
+    "historical_mean": 0.05
+  },
+  {
+    "panel": "S6d",
+    "population": "2_Day31",
+    "source_label": "yhaC/rnpB snp_intergenic",
+    "coordinates": [
+      "3269943",
+      "3270068"
+    ],
+    "frequencies": [
+      0.0,
+      0.0
+    ],
+    "historical_mean": 0.0
+  },
+  {
+    "panel": "S6d",
+    "population": "2_Day82",
+    "source_label": "yhaC/rnpB snp_intergenic",
+    "coordinates": [
+      "3269943",
+      "3270068"
+    ],
+    "frequencies": [
+      0.12,
+      0.0
+    ],
+    "historical_mean": 0.06
+  },
+  {
+    "panel": "S9",
+    "population": "PLAC_01",
+    "source_label": "$\\it{cpxA}$ indel",
+    "coordinates": [
+      "4104926",
+      "4104944"
+    ],
+    "frequencies": [
+      0.4,
+      0.0
+    ],
+    "historical_mean": 0.2
+  },
+  {
+    "panel": "S9",
+    "population": "PLAC_07",
+    "source_label": "$\\it{ampH/sbmA}$ IS insertion",
+    "coordinates": [
+      "396624",
+      "396591"
+    ],
+    "frequencies": [
+      0.0,
+      0.0
+    ],
+    "historical_mean": 0.0
+  },
+  {
+    "panel": "S9",
+    "population": "PLA_07",
+    "source_label": "$\\it{ampH/sbmA}$ IS insertion",
+    "coordinates": [
+      "396624",
+      "396591"
+    ],
+    "frequencies": [
+      0.13,
+      0.66
+    ],
+    "historical_mean": 0.395
+  }
+]

@@ -1,0 +1,7 @@
+technical_sample,before_filtering,after_filtering,percent_filtered_out,culture,replicate,replication
+3a,10220,7827,23.4,parent,1,same culture sampling; separately probed and microfluidically processed
+3b,12263,10774,12.1,parent,2,same culture sampling; separately probed and microfluidically processed
+4a,6796,4764,29.9,4,1,same culture sampling; separately probed and microfluidically processed
+4b,3851,2764,28.2,4,2,same culture sampling; separately probed and microfluidically processed
+7a,12263,9619,21.6,7,1,same culture sampling; separately probed and microfluidically processed
+7b,15874,13135,17.3,7,2,same culture sampling; separately probed and microfluidically processed

@@ -1,0 +1,1100 @@
+panel,population,mutation_id,coordinate,source_label,display_label,matrix_label,frequency
+Fig2f,1,3471686|A|L,3471686,fusA P610L,FusA P610L,fusA P610L,1
+Fig2f,1,4033383|A|Q,4033383,trkH L80Q,TrkH L80Q,trkH L80Q,0.66
+Fig2f,2,3471686|A|L,3471686,fusA P610L,FusA P610L,fusA P610L,1
+Fig2f,2,4033383|A|Q,4033383,trkH L80Q,TrkH L80Q,trkH L80Q,0.95
+Fig2f,3,3471686|A|L,3471686,fusA P610L,FusA P610L,fusA P610L,1
+Fig2f,3,4033383|A|Q,4033383,trkH L80Q,TrkH L80Q,trkH L80Q,0.13
+Fig2f,3,4033608|A|E,4033608,trkH V155E,TrkH V155E,trkH V155E,0.22
+Fig2f,4,3471686|A|L,3471686,fusA P610L,FusA P610L,fusA P610L,1
+Fig2f,4,4033610|T|C,4033610,trkH G156C,TrkH G156C,trkH G156C,0.68
+Fig2f,4,4033621|T|H,4033621,trkH Q159H,TrkH Q159H,trkH Q159H,0.15
+Fig2f,5,3471686|A|L,3471686,fusA P610L,FusA P610L,fusA P610L,0.89
+Fig2f,5,4033202|C|P,4033202,trkH T20P,TrkH T20P,trkH T20P,0.87
+Fig2f,6,3471686|A|L,3471686,fusA P610L,FusA P610L,fusA P610L,1
+Fig2f,7,3471686|A|L,3471686,fusA P610L,FusA P610L,fusA P610L,1
+Fig2f,7,4033383|A|Q,4033383,trkH L80Q,TrkH L80Q,trkH L80Q,0.45
+Fig2f,7,4033458|A|Y,4033458,trkH S105Y,TrkH S105Y,trkH S105Y,0.15
+Fig2f,7,4033698|A|Q,4033698,trkH L185Q,TrkH L185Q,trkH L185Q,0.11
+Fig2f,8,3471686|A|L,3471686,fusA P610L,FusA P610L,fusA P610L,1
+Fig2f,8,4033383|A|Q,4033383,trkH L80Q,TrkH L80Q,trkH L80Q,0.93
+Fig2f,9,3471686|A|L,3471686,fusA P610L,FusA P610L,fusA P610L,0.7
+Fig2f,10,3471686|A|L,3471686,fusA P610L,FusA P610L,fusA P610L,0.94
+Fig2f,10,4034301||,4034301,trkH small_indel,trkH indel,trkH small_indel,0.2
+Fig2g,1,2339179|T|D,2339179,gyrA G81D,GyrA G81D,gyrA G81D,1
+Fig2g,1,4184435|G|G,4184435,rpoB D1064G,RpoB D1064G,rpoB D1064G,1
+Fig2g,2,2339173|A|L,2339173,gyrA S83L,GyrA S83L,gyrA S83L,0.51
+Fig2g,2,2339179|T|D,2339179,gyrA G81D,GyrA G81D,gyrA G81D,0.2
+Fig2g,2,4184434|A|N,4184434,rpoB D1064N,RpoB D1064N,rpoB D1064N,0.24
+Fig2g,2,4185043||,4185043,rpoB small_indel,rpoB indel (2),rpoB small_indel [4185043],0.77
+Fig2g,3,2339065|T|E,2339065,gyrA A119E,GyrA A119E,gyrA A119E,0.28
+Fig2g,3,2339179|T|D,2339179,gyrA G81D,GyrA G81D,gyrA G81D,0.62
+Fig2g,3,4184954|T|L,4184954,rpoB H1237L,RpoB H1237L,rpoB H1237L,0.32
+Fig2g,3,4185113|G|R,4185113,rpoB M129R,RpoB M129R,rpoB M129R,0.64
+Fig2g,4,2339179|T|D,2339179,gyrA G81D,GyrA G81D,gyrA G81D,0.95
+Fig2g,4,4184954|T|L,4184954,rpoB H1237L,RpoB H1237L,rpoB H1237L,1
+Fig2g,5,2339162|A|Y,2339162,gyrA D87Y,GyrA D87Y,gyrA D87Y,0.2
+Fig2g,5,2339173|A|L,2339173,gyrA S83L,GyrA S83L,gyrA S83L,0.63
+Fig2g,5,4184954|T|L,4184954,rpoB H1237L,RpoB H1237L,rpoB H1237L,1
+Fig2g,6,2339179|T|D,2339179,gyrA G81D,GyrA G81D,gyrA G81D,1
+Fig2g,6,4184434|A|N,4184434,rpoB D1064N,RpoB D1064N,rpoB D1064N,1
+Fig2g,7,2339173|A|L,2339173,gyrA S83L,GyrA S83L,gyrA S83L,1
+Fig2g,8,2339173|C|W,2339173,gyrA S83W,GyrA S83W,gyrA S83W,0.74
+Fig2g,8,4184954|T|L,4184954,rpoB H1237L,RpoB H1237L,rpoB H1237L,1
+Fig2g,9,2339173|C|W,2339173,gyrA S83W,GyrA S83W,gyrA S83W,1
+Fig2g,9,4182858||,4182858,rpoB small_indel,rpoB indel (1),rpoB small_indel [4182858],1
+Fig2g,10,2339173|A|L,2339173,gyrA S83L,GyrA S83L,gyrA S83L,0.91
+Fig2g,10,4182930|C|D,4182930,rpoB E562D,RpoB E562D,rpoB E562D,0.83
+Fig2h,3,1189662|A|C,1189662,phoQ G39C,PhoQ G39C,phoQ G39C,1
+Fig2h,4,1188509||,1188509,phoQ IS2 insertion,phoQ IS2 insertion,phoQ IS2 insertion,0.47
+Fig2h,4,1189637||,1189637,phoQ IS5 insertion,phoQ IS5 insertion,phoQ IS5 insertion,0.34
+Fig2h,4,1261649|A|V,1261649,prs A76V,Prs A76V,prs A76V,0.77
+Fig2h,5,1261535|A|V,1261535,prs A114V,Prs A114V,prs A114V,1
+Fig2h,5,1261845|A|S,1261845,prs A11S,Prs A11S,prs A11S,0.19
+Fig2h,6,1261535|A|V,1261535,prs A114V,Prs A114V,prs A114V,0.68
+Fig2h,6,1261845|A|S,1261845,prs A11S,Prs A11S,prs A11S,0.19
+Fig2h,7,1189699|AGCACC|,1189699,phoQ small_indel,phoQ indel,phoQ small_indel,0.44
+Fig2h,7,1261649|A|V,1261649,prs A76V,Prs A76V,prs A76V,0.21
+Fig2h,10,1261424|G|T,1261424,prs I151T,Prs I151T,prs I151T,0.83
+Fig2h,10,1261641|A|C,1261641,prs R79C,Prs R79C,prs R79C,1
+S5a,1,547338|C|T,547338,fdrA I220T,FdrA I220T,fdrA I220T,0.1
+S5a,1,3471686|A|L,3471686,fusA P610L,FusA P610L,fusA P610L,1
+S5a,1,4033383|A|Q,4033383,trkH L80Q,TrkH L80Q,trkH L80Q,0.66
+S5a,2,3471686|A|L,3471686,fusA P610L,FusA P610L,fusA P610L,1
+S5a,2,3996454|A|V,3996454,xerC V56V,XerC V56V,xerC V56V,0.38
+S5a,2,4033383|A|Q,4033383,trkH L80Q,TrkH L80Q,trkH L80Q,0.95
+S5a,2,4611988|A|Q,4611988,osmY L198Q,OsmY L198Q,osmY L198Q,0.64
+S5a,3,6305|G|T,6305,yaaA I52T,YaaA I52T,yaaA I52T,0.12
+S5a,3,1424257|A|D,1424257,trkG G159D,TrkG G159D,trkG G159D,0.27
+S5a,3,3456540|C|A,3456540,gspD D55A,GspD D55A,gspD D55A,0.24
+S5a,3,3471686|A|L,3471686,fusA P610L,FusA P610L,fusA P610L,1
+S5a,3,4033383|A|Q,4033383,trkH L80Q,TrkH L80Q,trkH L80Q,0.13
+S5a,3,4033608|A|E,4033608,trkH V155E,TrkH V155E,trkH V155E,0.22
+S5a,3,4131725|A|T,4131725,metL S631T,MetL S631T,metL S631T,0.22
+S5a,4,3471686|A|L,3471686,fusA P610L,FusA P610L,fusA P610L,1
+S5a,4,4033610|T|C,4033610,trkH G156C,TrkH G156C,trkH G156C,0.68
+S5a,4,4033621|T|H,4033621,trkH Q159H,TrkH Q159H,trkH Q159H,0.15
+S5a,5,129778|T|T,129778,yacH A495T,YacH A495T,yacH A495T,0.14
+S5a,5,3471686|A|L,3471686,fusA P610L,FusA P610L,fusA P610L,0.89
+S5a,5,4033202|C|P,4033202,trkH T20P,TrkH T20P,trkH T20P,0.87
+S5a,5,4117936|T|E,4117936,glpF V52E,GlpF V52E,glpF V52E,0.11
+S5a,6,6305|G|T,6305,yaaA I52T,YaaA I52T,yaaA I52T,0.11
+S5a,6,845556|C|,845556,ybiO/glnQ snp_intergenic,ybiO/glnQ snp intergenic,ybiO/glnQ snp_intergenic,0.11
+S5a,6,1992687|T|E,1992687,pgsA V44E,PgsA V44E,pgsA V44E,1
+S5a,6,1992929|T|E,1992929,uvrC V593E,UvrC V593E,uvrC V593E,1
+S5a,6,3471686|A|L,3471686,fusA P610L,FusA P610L,fusA P610L,1
+S5a,7,2162882|C|L,2162882,baeS F3L,BaeS F3L,baeS F3L,0.21
+S5a,7,3471686|A|L,3471686,fusA P610L,FusA P610L,fusA P610L,1
+S5a,7,4033383|A|Q,4033383,trkH L80Q,TrkH L80Q,trkH L80Q,0.45
+S5a,7,4033458|A|Y,4033458,trkH S105Y,TrkH S105Y,trkH S105Y,0.15
+S5a,7,4033698|A|Q,4033698,trkH L185Q,TrkH L185Q,trkH L185Q,0.11
+S5a,8,6305|G|T,6305,yaaA I52T,YaaA I52T,yaaA I52T,0.1
+S5a,8,2775839|G|,2775839,yfjW/yfjX snp_intergenic,yfjW/yfjX snp intergenic,yfjW/yfjX snp_intergenic,0.11
+S5a,8,3471686|A|L,3471686,fusA P610L,FusA P610L,fusA P610L,1
+S5a,8,4033383|A|Q,4033383,trkH L80Q,TrkH L80Q,trkH L80Q,0.93
+S5a,9,129778|T|T,129778,yacH A495T,YacH A495T,yacH A495T,0.14
+S5a,9,3471686|A|L,3471686,fusA P610L,FusA P610L,fusA P610L,0.7
+S5a,9,4117936|T|E,4117936,glpF V52E,GlpF V52E,glpF V52E,0.27
+S5a,10,1215361|G|L,1215361,bluF I39L,BluF I39L,bluF I39L,1
+S5a,10,1352163|T|S,1352163,sapF R158S,SapF R158S,sapF R158S,0.11
+S5a,10,3471686|A|L,3471686,fusA P610L,FusA P610L,fusA P610L,0.94
+S5a,10,4034301||,4034301,trkH small_indel,trkH indel,trkH small_indel,0.2
+S5a,10,4176271|T|Y,4176271,tufB D110Y,TufB D110Y,tufB D110Y,0.35
+S5b,1,1196220|T|H,1196220,icd H366H,Icd H366H,icd H366H,1
+S5b,1,1447641|A|E,1447641,feaB D41E,FeaB D41E,feaB D41E,1
+S5b,1,2339179|T|D,2339179,gyrA G81D,GyrA G81D,gyrA G81D,1
+S5b,1,4180260|T|S,4180260,rplJ P89S,RplJ P89S,rplJ P89S,1
+S5b,1,4184435|G|G,4184435,rpoB D1064G,RpoB D1064G,rpoB D1064G,1
+S5b,2,1359616|G|D,1359616,puuA D431D,PuuA D431D,puuA D431D,0.15
+S5b,2,1458984|T|C,1458984,paaG S241C,PaaG S241C,paaG S241C,0.67
+S5b,2,2311594|G|,2311594,ftp/ompC snp_intergenic,ftp/ompC snp intergenic (2),ftp/ompC snp_intergenic [2311594],0
+S5b,2,2339173|A|L,2339173,gyrA S83L,GyrA S83L,gyrA S83L,0.51
+S5b,2,2339179|T|D,2339179,gyrA G81D,GyrA G81D,gyrA G81D,0.2
+S5b,2,2383468|T|C,2383468,elaD C252C,ElaD C252C,elaD C252C,0.1
+S5b,2,2722723||,2722723,pssL small_indel,pssL indel,pssL small_indel,0.48
+S5b,2,3880158|G|T,3880158,recF I355T,RecF I355T,recF I355T,0.12
+S5b,2,4184434|A|N,4184434,rpoB D1064N,RpoB D1064N,rpoB D1064N,0.24
+S5b,2,4185043||,4185043,rpoB small_indel,rpoB indel (2),rpoB small_indel [4185043],0.77
+S5b,3,1196220|T|H,1196220,icd H366H,Icd H366H,icd H366H,1
+S5b,3,2339065|T|E,2339065,gyrA A119E,GyrA A119E,gyrA A119E,0.28
+S5b,3,2339179|T|D,2339179,gyrA G81D,GyrA G81D,gyrA G81D,0.62
+S5b,3,2972129||,2972129,tas small_indel,tas indel,tas small_indel,0.66
+S5b,3,4184954|T|L,4184954,rpoB H1237L,RpoB H1237L,rpoB H1237L,0.32
+S5b,3,4185113|G|R,4185113,rpoB M129R,RpoB M129R,rpoB M129R,0.64
+S5b,3,4220506|G|A,4220506,arpA D661A,ArpA D661A,arpA D661A,0.15
+S5b,3,4640231|CGCTTCGAAAACATCATAGCCTTC|,4640231,arcA small_indel,arcA indel,arcA small_indel,0.25
+S5b,4,584487||,584487,appY/ompT small_indel,appY/ompT indel,appY/ompT small_indel,1
+S5b,4,1196220|T|H,1196220,icd H366H,Icd H366H,icd H366H,1
+S5b,4,2339179|T|D,2339179,gyrA G81D,GyrA G81D,gyrA G81D,0.95
+S5b,4,3054894|T|Q,3054894,ygfB P184Q,YgfB P184Q,ygfB P184Q,0
+S5b,4,4184954|T|L,4184954,rpoB H1237L,RpoB H1237L,rpoB H1237L,1
+S5b,5,1087590|C|G,1087590,pgaC E86G,PgaC E86G,pgaC E86G,0.1
+S5b,5,1196220|T|H,1196220,icd H366H,Icd H366H,icd H366H,1
+S5b,5,2339162|A|Y,2339162,gyrA D87Y,GyrA D87Y,gyrA D87Y,0.2
+S5b,5,2339173|A|L,2339173,gyrA S83L,GyrA S83L,gyrA S83L,0.63
+S5b,5,3269943|T|,3269943,yhaC/rnpB snp_intergenic,yhaC/rnpB snp intergenic,yhaC/rnpB snp_intergenic,0.13
+S5b,5,3630489|T|V,3630489,yhiI V38V,YhiI V38V,yhiI V38V,0.12
+S5b,5,4184954|T|L,4184954,rpoB H1237L,RpoB H1237L,rpoB H1237L,1
+S5b,5,4640112|G|F,4640112,arcA L65F,ArcA L65F,arcA L65F,0.18
+S5b,6,2339179|T|D,2339179,gyrA G81D,GyrA G81D,gyrA G81D,1
+S5b,6,4184434|A|N,4184434,rpoB D1064N,RpoB D1064N,rpoB D1064N,1
+S5b,7,759127|C|A,759127,sucA V141A,SucA V141A,sucA V141A,0.31
+S5b,7,1196220|T|H,1196220,icd H366H,Icd H366H,icd H366H,1
+S5b,7,2339173|A|L,2339173,gyrA S83L,GyrA S83L,gyrA S83L,1
+S5b,7,3054894|T|Q,3054894,ygfB P184Q,YgfB P184Q,ygfB P184Q,0.19
+S5b,7,3758381|T|,3758381,selB small_indel,selB indel,selB small_indel,0.11
+S5b,7,3862562||,3862562,glvC small_indel,glvC indel,glvC small_indel,0.94
+S5b,7,4033698|A|Q,4033698,trkH L185Q,TrkH L185Q,trkH L185Q,1
+S5b,7,4296060|T|,4296060,gltP/yjcO snp_intergenic,gltP/yjcO snp intergenic,gltP/yjcO snp_intergenic,0.18
+S5b,7,4542020||,4542020,fimB/fimE mobile_element_insertion,fimB/fimE IS5 insertion,fimB/fimE mobile_element_insertion,0.13
+S5b,8,1196220|T|H,1196220,icd H366H,Icd H366H,icd H366H,1
+S5b,8,2311562|A|,2311562,ftp/ompC snp_intergenic,ftp/ompC snp intergenic (1),ftp/ompC snp_intergenic [2311562],0.13
+S5b,8,2339173|C|W,2339173,gyrA S83W,GyrA S83W,gyrA S83W,0.74
+S5b,8,3352254|A|C,3352254,arcB G258C,ArcB G258C,arcB G258C,0.69
+S5b,8,4184954|T|L,4184954,rpoB H1237L,RpoB H1237L,rpoB H1237L,1
+S5b,9,1230269|A|D,1230269,hlyE E42D,HlyE E42D,hlyE E42D,0.1
+S5b,9,2339173|C|W,2339173,gyrA S83W,GyrA S83W,gyrA S83W,1
+S5b,9,2562049|C|,2562049,yffN/yffO snp_intergenic,yffN/yffO snp intergenic,yffN/yffO snp_intergenic,0.1
+S5b,9,4182858||,4182858,rpoB small_indel,rpoB indel (1),rpoB small_indel [4182858],1
+S5b,10,2339173|A|L,2339173,gyrA S83L,GyrA S83L,gyrA S83L,0.91
+S5b,10,3054894|T|Q,3054894,ygfB P184Q,YgfB P184Q,ygfB P184Q,0
+S5b,10,4182930|C|D,4182930,rpoB E562D,RpoB E562D,rpoB E562D,0.83
+S5c,1,1904774|T|,1904774,manZ/yobD snp_intergenic,manZ/yobD snp intergenic,manZ/yobD snp_intergenic,0.1
+S5c,1,3269943|T|,3269943,yhaC/rnpB snp_intergenic,yhaC/rnpB snp intergenic,yhaC/rnpB snp_intergenic,0.11
+S5c,1,3638193|A|T,3638193,pitA T184T,PitA T184T,pitA T184T,0.15
+S5c,1,3817494||,3817494,yicC mobile_element_insertion,yicC IS insertion,yicC mobile_element_insertion,0.56
+S5c,1,4001648|A|N,4001648,corA H75N,CorA H75N,corA H75N,0.53
+S5c,1,4220007|G|G,4220007,aceK V471G,AceK V471G,aceK V471G,0.12
+S5c,1,4467491||,4467491,mgtL/mgtA small_indel,mgtL/mgtA indel,mgtL/mgtA small_indel,0.36
+S5c,2,1645740|A|S,1645740,relB P45S,RelB P45S,relB P45S,1
+S5c,2,2566930|T|Q,2566930,eutH P393Q,EutH P393Q,eutH P393Q,0.16
+S5c,2,3054894|T|Q,3054894,ygfB P184Q,YgfB P184Q,ygfB P184Q,0.1
+S5c,2,3638193|A|T,3638193,pitA T184T,PitA T184T,pitA T184T,0.11
+S5c,2,4220007|G|G,4220007,aceK V471G,AceK V471G,aceK V471G,0.16
+S5c,3,6302|A|I,6302,yaaA S53I,YaaA S53I,yaaA S53I,0.16
+S5c,3,166833|T|S|S,166833,mrcB|mrcB T|T702|657S|S,MrcB T702S,mrcB|mrcB T|T702|657S|S,1
+S5c,3,631067|T|S,631067,cstA A392S,CstA A392S,cstA A392S,0.16
+S5c,3,1087565|G|I,1087565,pgaC I94I,PgaC I94I,pgaC I94I,0.14
+S5c,3,1087606|G|L,1087606,pgaC I81L,PgaC I81L,pgaC I81L,0.11
+S5c,3,1189662|A|C,1189662,phoQ G39C,PhoQ G39C,phoQ G39C,1
+S5c,3,1400594|A|F,1400594,abgT L394F,AbgT L394F,abgT L394F,0.18
+S5c,3,2411241|A|S,2411241,yfbS A38S,YfbS A38S,yfbS A38S,0.12
+S5c,3,3054894|T|Q,3054894,ygfB P184Q,YgfB P184Q,ygfB P184Q,0.1
+S5c,3,3638193|A|T,3638193,pitA T184T,PitA T184T,pitA T184T,0.1
+S5c,3,4088086|G|,4088086,yiiG/frvR snp_intergenic,yiiG/frvR snp intergenic,yiiG/frvR snp_intergenic,0.1
+S5c,3,4439045|T|E,4439045,ytfJ A73E,YtfJ A73E,ytfJ A73E,0.14
+S5c,4,61619|T|*,61619,rapA W549*,RapA W549*,rapA W549*,0.11
+S5c,4,1188509||,1188509,phoQ IS2 insertion,phoQ IS2 insertion,phoQ IS2 insertion,0.47
+S5c,4,1189637||,1189637,phoQ IS5 insertion,phoQ IS5 insertion,phoQ IS5 insertion,0.34
+S5c,4,1261649|A|V,1261649,prs A76V,Prs A76V,prs A76V,0.77
+S5c,4,2736240|A|Q,2736240,bamD P32Q,BamD P32Q,bamD P32Q,0.1
+S5c,4,3054894|T|Q,3054894,ygfB P184Q,YgfB P184Q,ygfB P184Q,0.13
+S5c,5,847955|A|V,847955,glnH A17V,GlnH A17V,glnH A17V,0.29
+S5c,5,1261535|A|V,1261535,prs A114V,Prs A114V,prs A114V,1
+S5c,5,1261845|A|S,1261845,prs A11S,Prs A11S,prs A11S,0.19
+S5c,5,2566930|T|Q,2566930,eutH P393Q,EutH P393Q,eutH P393Q,0.16
+S5c,5,2751428|C|P,2751428,nadK T200P,NadK T200P,nadK T200P,0.18
+S5c,5,3269943|T|,3269943,yhaC/rnpB snp_intergenic,yhaC/rnpB snp intergenic,yhaC/rnpB snp_intergenic,0.12
+S5c,5,4001574|A|Q,4001574,corA L50Q,CorA L50Q,corA L50Q,0.18
+S5c,5,4227771|A|Q,4227771,yjbB L14Q,YjbB L14Q,yjbB L14Q,0.68
+S5c,6,88080|A|N,88080,cra S18N,Cra S18N,cra S18N,0.25
+S5c,6,275203|A|,275203,insH1/mmuP snp_intergenic,insH1/mmuP snp intergenic,insH1/mmuP snp_intergenic,0.12
+S5c,6,555503|C|S,555503,cysS Y298S,CysS Y298S,cysS Y298S,0.21
+S5c,6,631067|T|S,631067,cstA A392S,CstA A392S,cstA A392S,0.15
+S5c,6,1087606|G|L,1087606,pgaC I81L,PgaC I81L,pgaC I81L,0.13
+S5c,6,1261535|A|V,1261535,prs A114V,Prs A114V,prs A114V,0.68
+S5c,6,1261845|A|S,1261845,prs A11S,Prs A11S,prs A11S,0.19
+S5c,6,1428767|C|,1428767,insH5/lomR snp_intergenic,insH5/lomR snp intergenic,insH5/lomR snp_intergenic,0.12
+S5c,6,1904774|T|,1904774,manZ/yobD snp_intergenic,manZ/yobD snp intergenic,manZ/yobD snp_intergenic,0.1
+S5c,6,2751428|C|P,2751428,nadK T200P,NadK T200P,nadK T200P,0.18
+S5c,6,3054894|T|Q,3054894,ygfB P184Q,YgfB P184Q,ygfB P184Q,0.12
+S5c,6,3491706|G|,3491706,yhfG/ppiA snp_intergenic,yhfG/ppiA snp intergenic (2),yhfG/ppiA snp_intergenic [3491706],0.14
+S5c,6,3544172|A|C,3544172,bioH S225C,BioH S225C,bioH S225C,0.1
+S5c,6,3794967|A|E,3794967,waaF D13E,WaaF D13E,waaF D13E,0.23
+S5c,6,4001574|A|Q,4001574,corA L50Q,CorA L50Q,corA L50Q,0.21
+S5c,6,4227771|A|Q,4227771,yjbB L14Q,YjbB L14Q,yjbB L14Q,0.17
+S5c,7,6305|G|T,6305,yaaA I52T,YaaA I52T,yaaA I52T,0.13
+S5c,7,847955|A|V,847955,glnH A17V,GlnH A17V,glnH A17V,0.22
+S5c,7,1189699|AGCACC|,1189699,phoQ small_indel,phoQ indel,phoQ small_indel,0.44
+S5c,7,1190248|T|H,1190248,phoP R67H,PhoP R67H,phoP R67H,0.16
+S5c,7,1261649|A|V,1261649,prs A76V,Prs A76V,prs A76V,0.21
+S5c,7,1904774|T|,1904774,manZ/yobD snp_intergenic,manZ/yobD snp intergenic,manZ/yobD snp_intergenic,0.11
+S5c,7,3491701|A|,3491701,yhfG/ppiA snp_intergenic,yhfG/ppiA snp intergenic (1),yhfG/ppiA snp_intergenic [3491701],0.1
+S5c,7,4220007|G|G,4220007,aceK V471G,AceK V471G,aceK V471G,0.14
+S5c,7,4409451|A|E,4409451,rlmB D59E,RlmB D59E,rlmB D59E,0.1
+S5c,8,555503|C|S,555503,cysS Y298S,CysS Y298S,cysS Y298S,1
+S5c,8,1619100||,1619100,marC/marR small_indel,marC/marR indel,marC/marR small_indel,0.13
+S5c,8,1619397||,1619397,marR small_indel,marR indel,marR small_indel,0.18
+S5c,8,1619468|T|*,1619468,marR Q117*,MarR Q117*,marR Q117*,0.13
+S5c,8,3638193|A|T,3638193,pitA T184T,PitA T184T,pitA T184T,0.13
+S5c,8,3794967|A|E,3794967,waaF D13E,WaaF D13E,waaF D13E,1
+S5c,8,4220007|G|G,4220007,aceK V471G,AceK V471G,aceK V471G,0.15
+S5c,9,1087565|G|I,1087565,pgaC I94I,PgaC I94I,pgaC I94I,0.15
+S5c,9,1798903|G|P,1798903,pheS A14P,PheS A14P,pheS A14P,1
+S5c,9,3054894|T|Q,3054894,ygfB P184Q,YgfB P184Q,ygfB P184Q,0.16
+S5c,10,6305|G|T,6305,yaaA I52T,YaaA I52T,yaaA I52T,0.11
+S5c,10,500131|A|I,500131,gsk F3I,Gsk F3I,gsk F3I,0.11
+S5c,10,1261424|G|T,1261424,prs I151T,Prs I151T,prs I151T,0.83
+S5c,10,1261641|A|C,1261641,prs R79C,Prs R79C,prs R79C,1
+S5c,10,1622808|C|S,1622808,mgtT Y23S,MgtT Y23S,mgtT Y23S,0.13
+S5c,10,3331544|T|K,3331544,obgE Q71K,ObgE Q71K,obgE Q71K,0.11
+S5c,10,3934246|C|R,3934246,rbsA S157R,RbsA S157R,rbsA S157R,0.78
+S3e,1,92419|G|S,92419,ftsI I336S,FtsI I336S,ftsI I336S,1
+S3e,1,92638|G|G|NA,92638,ftsI|ftsO D|NA409|NAG|NA,FtsI D409X,ftsI|ftsO D|NA409|NAG|NA,1
+S3e,1,93019|T|L,93019,ftsI Q536L,FtsI Q536L,ftsI Q536L,1
+S3e,1,481657|C|G,481657,acrB A916G,AcrB A916G,acrB A916G,1
+S3e,1,485997||,485997,acrR IS1 insertion,acrR IS1 insertion (1),acrR IS1 insertion [485997],1
+S3e,1,1619199|C|P,1619199,marR R27P,MarR R27P,marR R27P,1
+S3e,1,2017423|C|D,2017423,fliI E290D,FliI E290D,fliI E290D,1
+S3e,1,2312301||,2312301,ompC mobile_element_insertion,ompC IS1 insertion (1),ompC mobile_element_insertion [2312301],1
+S3e,1,3535037|A|Y,3535037,envZ N278Y,EnvZ N278Y,envZ N278Y,1
+S3e,1,4503456|C|,4503456,insG/nanX snp_intergenic,insG/nanX snp intergenic,insG/nanX snp_intergenic,0.11
+S3e,2,92539|C|S|NA,92539,ftsI|ftsO L|NA376|NAS|NA,FtsI L376X,ftsI|ftsO L|NA376|NAS|NA,1
+S3e,2,93019|T|L,93019,ftsI Q536L,FtsI Q536L,ftsI Q536L,1
+S3e,2,482528|A|F,482528,acrB I626F,AcrB I626F,acrB I626F,0.94
+S3e,2,482698|A|L,482698,acrB Q569L,AcrB Q569L,acrB Q569L,1
+S3e,2,486025||,486025,acrR IS5 insertion,acrR IS5 insertion,acrR IS5 insertion,1
+S3e,2,915226|C|,915226,lysO/aqpZ snp_intergenic,lysO/aqpZ snp intergenic,lysO/aqpZ snp_intergenic,0.12
+S3e,2,1619400|A|H,1619400,marR R94H,MarR R94H,marR R94H,1
+S3e,2,2312396||,2312396,ompC mobile_element_insertion,ompC IS1 insertion (2),ompC mobile_element_insertion [2312396],1
+S3e,2,3535147|C|G,3535147,envZ V241G,EnvZ V241G,envZ V241G,1
+S3e,2,4104222|G|P,4104222,cpxA T252P,CpxA T252P,cpxA T252P,1
+S3e,3,92539|C|S|NA,92539,ftsI|ftsO L|NA376|NAS|NA,FtsI L376X,ftsI|ftsO L|NA376|NAS|NA,1
+S3e,3,93019|T|L,93019,ftsI Q536L,FtsI Q536L,ftsI Q536L,1
+S3e,3,482698|A|L,482698,acrB Q569L,AcrB Q569L,acrB Q569L,1
+S3e,3,486025||,486025,acrR IS5 insertion,acrR IS5 insertion,acrR IS5 insertion,1
+S3e,3,1619400|A|H,1619400,marR R94H,MarR R94H,marR R94H,1
+S3e,3,2312396||,2312396,ompC mobile_element_insertion,ompC IS1 insertion (2),ompC mobile_element_insertion [2312396],1
+S3e,3,3535427|A|S,3535427,envZ P148S,EnvZ P148S,envZ P148S,1
+S3e,3,4104222|G|P,4104222,cpxA T252P,CpxA T252P,cpxA T252P,1
+S3e,4,93019|T|L,93019,ftsI Q536L,FtsI Q536L,ftsI Q536L,1
+S3e,4,482698|A|L,482698,acrB Q569L,AcrB Q569L,acrB Q569L,1
+S3e,4,486164||,486164,acrR IS1 insertion,acrR IS1 insertion (2),acrR IS1 insertion [486164],1
+S3e,4,915226|C|,915226,lysO/aqpZ snp_intergenic,lysO/aqpZ snp intergenic,lysO/aqpZ snp_intergenic,0.13
+S3e,4,1619202||,1619202,marR small_indel,marR indel,marR small_indel,1
+S3e,4,2062926|T|H,2062926,ldtA R133H,LdtA R133H,ldtA R133H,1
+S3e,4,2312004||,2312004,ompC small_indel,ompC indel,ompC small_indel,1
+S3e,4,3054894|T|Q,3054894,ygfB P184Q,YgfB P184Q,ygfB P184Q,0.21
+S3e,4,4104690|T|S,4104690,cpxA G96S,CpxA G96S,cpxA G96S,1
+S3e,4,4182851|T|V,4182851,rpoB G536V,RpoB G536V,rpoB G536V,1
+S3e,5,92362|T|V,92362,ftsI A317V,FtsI A317V,ftsI A317V,1
+S3e,5,93019|T|L,93019,ftsI Q536L,FtsI Q536L,ftsI Q536L,1
+S3e,5,482698|A|L,482698,acrB Q569L,AcrB Q569L,acrB Q569L,1
+S3e,5,486025||,486025,acrR IS5 insertion,acrR IS5 insertion,acrR IS5 insertion,1
+S3e,5,1619400|A|H,1619400,marR R94H,MarR R94H,marR R94H,1
+S3e,5,1659227|G|A,1659227,ynfE T387A,YnfE T387A,ynfE T387A,1
+S3e,5,2312396||,2312396,ompC mobile_element_insertion,ompC IS1 insertion (2),ompC mobile_element_insertion [2312396],1
+S3e,5,4104222|G|P,4104222,cpxA T252P,CpxA T252P,cpxA T252P,1
+S3e,6,93019|T|L,93019,ftsI Q536L,FtsI Q536L,ftsI Q536L,1
+S3e,6,482698|A|L,482698,acrB Q569L,AcrB Q569L,acrB Q569L,1
+S3e,6,484202|C|D,484202,acrB N68D,AcrB N68D,acrB N68D,0.21
+S3e,6,486025||,486025,acrR IS5 insertion,acrR IS5 insertion,acrR IS5 insertion,1
+S3e,6,1619400|A|H,1619400,marR R94H,MarR R94H,marR R94H,1
+S3e,6,2312396||,2312396,ompC mobile_element_insertion,ompC IS1 insertion (2),ompC mobile_element_insertion [2312396],1
+S3e,6,3326620|T|R,3326620,ftsH W106R,FtsH W106R,ftsH W106R,0.39
+S3e,6,3518721||,3518721,aroK small_indel,aroK indel,aroK small_indel,0.49
+S3e,6,4104222|G|P,4104222,cpxA T252P,CpxA T252P,cpxA T252P,1
+S3e,6,4189277|G|A,4189277,rpoC T1310A,RpoC T1310A,rpoC T1310A,0.53
+S4f,1,MR_Cli1_contig_22 86211|G|,MR_Cli1_contig_22 86211,GlnW snp,GlnW snp (1),GlnW snp [MR_Cli1_contig_22 86211],0.13
+S4f,1,MR_Cli1_contig_22 86212|A|,MR_Cli1_contig_22 86212,GlnW snp,GlnW snp (2),GlnW snp [MR_Cli1_contig_22 86212],0.13
+S4f,1,MR_Cli1_contig_26 20100|T|D,MR_Cli1_contig_26 20100,HipA G118D,HipA G118D,HipA G118D,1
+S4f,1,MR_Cli1_contig_7 178265|G|,MR_Cli1_contig_7 178265,$\it{aqpZ/lysO}$ snp intergenic,aqpZ/lysO snp intergenic,$\it{aqpZ/lysO}$ snp intergenic,0.14
+S4f,2,MR_Cli1_contig_13 235928|A|Q,MR_Cli1_contig_13 235928,YgfB P184Q,YgfB P184Q,YgfB P184Q,0.12
+S4f,2,MR_Cli1_contig_30 158989|T|D,MR_Cli1_contig_30 158989,FhuE E619D,FhuE E619D,FhuE E619D,1
+S4f,2,MR_Cli1_contig_4 64087|A|M,MR_Cli1_contig_4 64087,MetG V583M,MetG V583M,MetG V583M,1
+S4f,3,MR_Cli1_contig_22 86211|G|,MR_Cli1_contig_22 86211,GlnW snp,GlnW snp (1),GlnW snp [MR_Cli1_contig_22 86211],0.17
+S4f,3,MR_Cli1_contig_22 86212|A|,MR_Cli1_contig_22 86212,GlnW snp,GlnW snp (2),GlnW snp [MR_Cli1_contig_22 86212],0.17
+S4f,3,MR_Cli1_contig_28 80983|C|F,MR_Cli1_contig_28 80983,PheS L24F,PheS L24F,PheS L24F,1
+S4f,3,MR_Cli1_contig_41 1807|A|,MR_Cli1_contig_41 1807,$\it{gnd}$ snp intergenic,gnd snp intergenic,$\it{gnd}$ snp intergenic,0.18
+S4f,4,MR_Cli1_contig_28 84108||,MR_Cli1_contig_28 84108,PheT indel,PheT indel,PheT indel,1
+S4f,4,MR_Cli1_contig_41 1807|A|,MR_Cli1_contig_41 1807,$\it{gnd}$ snp intergenic,gnd snp intergenic,$\it{gnd}$ snp intergenic,0.18
+S4f,5,MR_Cli1_contig_28 84108||,MR_Cli1_contig_28 84108,PheT indel,PheT indel,PheT indel,0.81
+S4f,5,MR_Cli1_contig_45 30200|C|G,MR_Cli1_contig_45 30200,CysS V27G,CysS V27G,CysS V27G,0.26
+S4f,5,MR_Cli1_contig_7 178265|G|,MR_Cli1_contig_7 178265,$\it{aqpZ/lysO}$ snp intergenic,aqpZ/lysO snp intergenic,$\it{aqpZ/lysO}$ snp intergenic,0.11
+S4f,6,MR_Cli1_contig_1 111058|T|Y,MR_Cli1_contig_1 111058,Adk D147Y,Adk D147Y,Adk D147Y,1
+S4f,6,MR_Cli1_contig_22 86211|G|,MR_Cli1_contig_22 86211,GlnW snp,GlnW snp (1),GlnW snp [MR_Cli1_contig_22 86211],0.13
+S4f,6,MR_Cli1_contig_22 86212|A|,MR_Cli1_contig_22 86212,GlnW snp,GlnW snp (2),GlnW snp [MR_Cli1_contig_22 86212],0.14
+S4f,6,MR_Cli1_contig_41 1807|A|,MR_Cli1_contig_41 1807,$\it{gnd}$ snp intergenic,gnd snp intergenic,$\it{gnd}$ snp intergenic,0.14
+S4f,7,MR_Cli1_contig_1 97469|C|G,MR_Cli1_contig_1 97469,AcrB V127G,AcrB V127G,AcrB V127G,1
+S4f,7,MR_Cli1_contig_1 99159|G|,MR_Cli1_contig_1 99159,$\it{acrA}$ intergenic snp,acrA intergenic snp,$\it{acrA}$ intergenic snp,1
+S4f,7,MR_Cli1_contig_2 61433|G|R,MR_Cli1_contig_2 61433,CpxA L30R,CpxA L30R,CpxA L30R,1
+S4f,7,MR_Cli1_contig_22 86211|G|,MR_Cli1_contig_22 86211,GlnW snp,GlnW snp (1),GlnW snp [MR_Cli1_contig_22 86211],0.14
+S4f,7,MR_Cli1_contig_22 86212|A|,MR_Cli1_contig_22 86212,GlnW snp,GlnW snp (2),GlnW snp [MR_Cli1_contig_22 86212],0.15
+S4f,7,MR_Cli1_contig_26 47567|T|C,MR_Cli1_contig_26 47567,MarR R77C,MarR R77C,MarR R77C,1
+S4f,7,MR_Cli1_contig_30 149898|A|Q,MR_Cli1_contig_30 149898,ComR P16Q,ComR P16Q,ComR P16Q,1
+S4f,7,MR_Cli1_contig_39 25113|A|R,MR_Cli1_contig_39 25113,AtpD S342R,AtpD S342R,AtpD S342R,0.43
+S4f,7,MR_Cli1_contig_39 25321||,MR_Cli1_contig_39 25321,atpD indel,atpD indel,atpD indel,0.27
+S4f,7,MR_Cli1_contig_39 25563|T|*,MR_Cli1_contig_39 25563,AtpC Q25*,AtpC Q25*,AtpC Q25*,1
+S4f,7,MR_Cli1_contig_4 179221|T|*,MR_Cli1_contig_4 179221,OmpC W93*,OmpC W93*,OmpC W93*,1
+S4f,7,MR_Cli1_contig_4 97218|G|,MR_Cli1_contig_4 97218,$\it{mdtQ/dusC}$ snp intergenic,mdtQ/dusC snp intergenic,$\it{mdtQ/dusC}$ snp intergenic,0.12
+S4f,7,MR_Cli1_contig_40 9333||,MR_Cli1_contig_40 9333,WbaP P32fs,WbaP P32fs,WbaP P32fs,1
+S4f,7,MR_Cli1_contig_41 1807|A|,MR_Cli1_contig_41 1807,$\it{gnd}$ snp intergenic,gnd snp intergenic,$\it{gnd}$ snp intergenic,0.15
+S4f,7,MR_Cli1_contig_5 72850|A|M,MR_Cli1_contig_5 72850,FtsI V313M,FtsI V313M,FtsI V313M,1
+S4f,7,MR_Cli1_contig_7 178265|G|,MR_Cli1_contig_7 178265,$\it{aqpZ/lysO}$ snp intergenic,aqpZ/lysO snp intergenic,$\it{aqpZ/lysO}$ snp intergenic,0.12
+Fig4c,1,1591920|G|A|L,1591920,hipA P86L,HipA P86L,hipA P86L,0.53
+Fig4c,1,2174844|TTAG||,2174844,gatA mobile_element_insertion,gatA IS5 insertion,gatA mobile_element_insertion,0.59
+Fig4c,1,2339173|G|A|L,2339173,gyrA S83L,GyrA S83L,gyrA S83L,1
+Fig4c,1,3326144|CAGACCAGCGCC||,3326144,ftsH small_indel,ftsH indel,ftsH small_indel,0.61
+Fig4c,1,3758381|A|TG|,3758381,selB small_indel,selB indel,selB small_indel,0.93
+Fig4c,1,3822173|CCGCGCG||,3822173,rpoZ small_indel,rpoZ indel,rpoZ small_indel,0.61
+Fig4c,1,3862562|A||,3862562,glvC small_indel,glvC indel,glvC small_indel,1
+Fig4c,1,4033698|T|A|Q,4033698,trkH L185Q,TrkH L185Q,trkH L185Q,1
+Fig4c,1,4542020|TTAG||,4542020,fimB/fimE mobile_element_insertion,fimB/E IS5 insertion,fimB/fimE mobile_element_insertion,1
+Fig4c,2,1591920|G|A|L,1591920,hipA P86L,HipA P86L,hipA P86L,0.15
+Fig4c,2,2174844|TTAG||,2174844,gatA mobile_element_insertion,gatA IS5 insertion,gatA mobile_element_insertion,0.17
+Fig4c,2,2339173|G|A|L,2339173,gyrA S83L,GyrA S83L,gyrA S83L,1
+Fig4c,2,3326144|CAGACCAGCGCC||,3326144,ftsH small_indel,ftsH indel,ftsH small_indel,0.19
+Fig4c,2,3758381|A|TG|,3758381,selB small_indel,selB indel,selB small_indel,0.18
+Fig4c,2,3822173|CCGCGCG||,3822173,rpoZ small_indel,rpoZ indel,rpoZ small_indel,0.24
+Fig4c,2,3862562|A||,3862562,glvC small_indel,glvC indel,glvC small_indel,0.21
+Fig4c,2,4033698|T|A|Q,4033698,trkH L185Q,TrkH L185Q,trkH L185Q,0.22
+Fig4c,2,4542020|TTAG||,4542020,fimB/fimE mobile_element_insertion,fimB/E IS5 insertion,fimB/fimE mobile_element_insertion,0.18
+Fig4c,3,1591920|G|A|L,1591920,hipA P86L,HipA P86L,hipA P86L,0.41
+Fig4c,3,2174844|TTAG||,2174844,gatA mobile_element_insertion,gatA IS5 insertion,gatA mobile_element_insertion,0.48
+Fig4c,3,2339173|G|A|L,2339173,gyrA S83L,GyrA S83L,gyrA S83L,1
+Fig4c,3,3326144|CAGACCAGCGCC||,3326144,ftsH small_indel,ftsH indel,ftsH small_indel,0.49
+Fig4c,3,3758381|A|TG|,3758381,selB small_indel,selB indel,selB small_indel,0.41
+Fig4c,3,3822173|CCGCGCG||,3822173,rpoZ small_indel,rpoZ indel,rpoZ small_indel,0.49
+Fig4c,3,3862562|A||,3862562,glvC small_indel,glvC indel,glvC small_indel,0.46
+Fig4c,3,4033698|T|A|Q,4033698,trkH L185Q,TrkH L185Q,trkH L185Q,0.48
+Fig4c,3,4542020|TTAG||,4542020,fimB/fimE mobile_element_insertion,fimB/E IS5 insertion,fimB/fimE mobile_element_insertion,0.46
+Fig4c,4,1591920|G|A|L,1591920,hipA P86L,HipA P86L,hipA P86L,1
+Fig4c,4,2174844|TTAG||,2174844,gatA mobile_element_insertion,gatA IS5 insertion,gatA mobile_element_insertion,1
+Fig4c,4,2339173|G|A|L,2339173,gyrA S83L,GyrA S83L,gyrA S83L,1
+Fig4c,4,3326144|CAGACCAGCGCC||,3326144,ftsH small_indel,ftsH indel,ftsH small_indel,1
+Fig4c,4,3758381|A|TG|,3758381,selB small_indel,selB indel,selB small_indel,0.92
+Fig4c,4,3822173|CCGCGCG||,3822173,rpoZ small_indel,rpoZ indel,rpoZ small_indel,1
+Fig4c,4,3862562|A||,3862562,glvC small_indel,glvC indel,glvC small_indel,1
+Fig4c,4,4033698|T|A|Q,4033698,trkH L185Q,TrkH L185Q,trkH L185Q,1
+Fig4c,4,4542020|TTAG||,4542020,fimB/fimE mobile_element_insertion,fimB/E IS5 insertion,fimB/fimE mobile_element_insertion,1
+Fig4c,5,1591920|G|A|L,1591920,hipA P86L,HipA P86L,hipA P86L,1
+Fig4c,5,2174844|TTAG||,2174844,gatA mobile_element_insertion,gatA IS5 insertion,gatA mobile_element_insertion,1
+Fig4c,5,2339173|G|A|L,2339173,gyrA S83L,GyrA S83L,gyrA S83L,1
+Fig4c,5,3326144|CAGACCAGCGCC||,3326144,ftsH small_indel,ftsH indel,ftsH small_indel,1
+Fig4c,5,3758381|A|TG|,3758381,selB small_indel,selB indel,selB small_indel,0.93
+Fig4c,5,3822173|CCGCGCG||,3822173,rpoZ small_indel,rpoZ indel,rpoZ small_indel,1
+Fig4c,5,3862562|A||,3862562,glvC small_indel,glvC indel,glvC small_indel,1
+Fig4c,5,4033698|T|A|Q,4033698,trkH L185Q,TrkH L185Q,trkH L185Q,1
+Fig4c,5,4542020|TTAG||,4542020,fimB/fimE mobile_element_insertion,fimB/E IS5 insertion,fimB/fimE mobile_element_insertion,1
+Fig4c,6,1591920|G|A|L,1591920,hipA P86L,HipA P86L,hipA P86L,0.45
+Fig4c,6,2174844|TTAG||,2174844,gatA mobile_element_insertion,gatA IS5 insertion,gatA mobile_element_insertion,0.49
+Fig4c,6,2339173|G|A|L,2339173,gyrA S83L,GyrA S83L,gyrA S83L,1
+Fig4c,6,3326144|CAGACCAGCGCC||,3326144,ftsH small_indel,ftsH indel,ftsH small_indel,0.47
+Fig4c,6,3758381|A|TG|,3758381,selB small_indel,selB indel,selB small_indel,0.46
+Fig4c,6,3822173|CCGCGCG||,3822173,rpoZ small_indel,rpoZ indel,rpoZ small_indel,0.47
+Fig4c,6,3862562|A||,3862562,glvC small_indel,glvC indel,glvC small_indel,1
+Fig4c,6,4033698|T|A|Q,4033698,trkH L185Q,TrkH L185Q,trkH L185Q,1
+Fig4c,6,4542020|TTAG||,4542020,fimB/fimE mobile_element_insertion,fimB/E IS5 insertion,fimB/fimE mobile_element_insertion,0.49
+Fig4c,7,1591920|G|A|L,1591920,hipA P86L,HipA P86L,hipA P86L,1
+Fig4c,7,2174844|TTAG||,2174844,gatA mobile_element_insertion,gatA IS5 insertion,gatA mobile_element_insertion,1
+Fig4c,7,2339173|G|A|L,2339173,gyrA S83L,GyrA S83L,gyrA S83L,1
+Fig4c,7,3326144|CAGACCAGCGCC||,3326144,ftsH small_indel,ftsH indel,ftsH small_indel,1
+Fig4c,7,3758381|A|TG|,3758381,selB small_indel,selB indel,selB small_indel,0.92
+Fig4c,7,3822173|CCGCGCG||,3822173,rpoZ small_indel,rpoZ indel,rpoZ small_indel,1
+Fig4c,7,3862562|A||,3862562,glvC small_indel,glvC indel,glvC small_indel,1
+Fig4c,7,4033698|T|A|Q,4033698,trkH L185Q,TrkH L185Q,trkH L185Q,1
+Fig4c,7,4542020|TTAG||,4542020,fimB/fimE mobile_element_insertion,fimB/E IS5 insertion,fimB/fimE mobile_element_insertion,1
+Fig4c,8,1591920|G|A|L,1591920,hipA P86L,HipA P86L,hipA P86L,0.64
+Fig4c,8,2174844|TTAG||,2174844,gatA mobile_element_insertion,gatA IS5 insertion,gatA mobile_element_insertion,0.69
+Fig4c,8,2339173|G|A|L,2339173,gyrA S83L,GyrA S83L,gyrA S83L,1
+Fig4c,8,3326144|CAGACCAGCGCC||,3326144,ftsH small_indel,ftsH indel,ftsH small_indel,0.69
+Fig4c,8,3758381|A|TG|,3758381,selB small_indel,selB indel,selB small_indel,0.62
+Fig4c,8,3822173|CCGCGCG||,3822173,rpoZ small_indel,rpoZ indel,rpoZ small_indel,0.7
+Fig4c,8,3862562|A||,3862562,glvC small_indel,glvC indel,glvC small_indel,0.72
+Fig4c,8,4033698|T|A|Q,4033698,trkH L185Q,TrkH L185Q,trkH L185Q,0.74
+Fig4c,8,4542020|TTAG||,4542020,fimB/fimE mobile_element_insertion,fimB/E IS5 insertion,fimB/fimE mobile_element_insertion,0.68
+Fig4c,9,1591920|G|A|L,1591920,hipA P86L,HipA P86L,hipA P86L,1
+Fig4c,9,2339173|G|A|L,2339173,gyrA S83L,GyrA S83L,gyrA S83L,1
+Fig4c,9,3758381|A|TG|,3758381,selB small_indel,selB indel,selB small_indel,0.84
+Fig4c,9,3822173|CCGCGCG||,3822173,rpoZ small_indel,rpoZ indel,rpoZ small_indel,0.93
+Fig4c,9,3862562|A||,3862562,glvC small_indel,glvC indel,glvC small_indel,1
+Fig4c,9,4033698|T|A|Q,4033698,trkH L185Q,TrkH L185Q,trkH L185Q,0.94
+Fig4c,9,4542020|TTAG||,4542020,fimB/fimE mobile_element_insertion,fimB/E IS5 insertion,fimB/fimE mobile_element_insertion,0.93
+Fig4c,10,1591920|G|A|L,1591920,hipA P86L,HipA P86L,hipA P86L,1
+Fig4c,10,2339173|G|A|L,2339173,gyrA S83L,GyrA S83L,gyrA S83L,1
+Fig4c,10,3758381|A|TG|,3758381,selB small_indel,selB indel,selB small_indel,0.92
+Fig4c,10,3822173|CCGCGCG||,3822173,rpoZ small_indel,rpoZ indel,rpoZ small_indel,1
+Fig4c,10,3862562|A||,3862562,glvC small_indel,glvC indel,glvC small_indel,1
+Fig4c,10,4033698|T|A|Q,4033698,trkH L185Q,TrkH L185Q,trkH L185Q,1
+Fig4c,10,4542020|TTAG||,4542020,fimB/fimE mobile_element_insertion,fimB/E IS5 insertion,fimB/fimE mobile_element_insertion,1
+S6d,1_Day0,458894||,458894,lon small_indel,lon indel,lon small_indel,0
+S6d,1_Day16,458894||,458894,lon small_indel,lon indel,lon small_indel,0
+S6d,1_Day31,458894||,458894,lon small_indel,lon indel,lon small_indel,0.11
+S6d,1_Day82,458894||,458894,lon small_indel,lon indel,lon small_indel,0
+S6d,1_Day0,1293017||,1293017,hns/tdk mobile_element_insertion,hns/tdk IS insertion (1),hns/tdk mobile_element_insertion [1293017],0
+S6d,1_Day16,1293017||,1293017,hns/tdk mobile_element_insertion,hns/tdk IS insertion (1),hns/tdk mobile_element_insertion [1293017],0.44
+S6d,1_Day31,1293017||,1293017,hns/tdk mobile_element_insertion,hns/tdk IS insertion (1),hns/tdk mobile_element_insertion [1293017],0
+S6d,1_Day82,1293017||,1293017,hns/tdk mobile_element_insertion,hns/tdk IS insertion (1),hns/tdk mobile_element_insertion [1293017],0
+S6d,1_Day0,2017423|C|D,2017423,fliI E290D,FliI E290D,fliI E290D,0
+S6d,1_Day16,2017423|C|D,2017423,fliI E290D,FliI E290D,fliI E290D,0.14
+S6d,1_Day31,2017423|C|D,2017423,fliI E290D,FliI E290D,fliI E290D,0
+S6d,1_Day82,2017423|C|D,2017423,fliI E290D,FliI E290D,fliI E290D,0
+S6d,1_Day0,2025263||,2025263,dsrA mobile_element_insertion,dsrA IS insertion,dsrA mobile_element_insertion,0
+S6d,1_Day16,2025263||,2025263,dsrA mobile_element_insertion,dsrA IS insertion,dsrA mobile_element_insertion,0
+S6d,1_Day31,2025263||,2025263,dsrA mobile_element_insertion,dsrA IS insertion,dsrA mobile_element_insertion,0.11
+S6d,1_Day82,2025263||,2025263,dsrA mobile_element_insertion,dsrA IS insertion,dsrA mobile_element_insertion,0
+S6d,1_Day0,2407045|C|,2407045,lrhA/alaA snp_intergenic,lrhA/alaA snp intergenic,lrhA/alaA snp_intergenic,0
+S6d,1_Day16,2407045|C|,2407045,lrhA/alaA snp_intergenic,lrhA/alaA snp intergenic,lrhA/alaA snp_intergenic,0
+S6d,1_Day31,2407045|C|,2407045,lrhA/alaA snp_intergenic,lrhA/alaA snp intergenic,lrhA/alaA snp_intergenic,0.19
+S6d,1_Day82,2407045|C|,2407045,lrhA/alaA snp_intergenic,lrhA/alaA snp intergenic,lrhA/alaA snp_intergenic,0
+S6d,1_Day0,2411250|A|F,2411250,yfbS V35F,YfbS V35F,yfbS V35F,0
+S6d,1_Day16,2411250|A|F,2411250,yfbS V35F,YfbS V35F,yfbS V35F,0.15
+S6d,1_Day31,2411250|A|F,2411250,yfbS V35F,YfbS V35F,yfbS V35F,0
+S6d,1_Day82,2411250|A|F,2411250,yfbS V35F,YfbS V35F,yfbS V35F,0
+S6d,1_Day0,2566930|T|Q,2566930,eutH P393Q,EutH P393Q,eutH P393Q,0
+S6d,1_Day16,2566930|T|Q,2566930,eutH P393Q,EutH P393Q,eutH P393Q,0
+S6d,1_Day31,2566930|T|Q,2566930,eutH P393Q,EutH P393Q,eutH P393Q,0
+S6d,1_Day82,2566930|T|Q,2566930,eutH P393Q,EutH P393Q,eutH P393Q,0.15
+S6d,1_Day0,3054894|T|Q,3054894,ygfB P184Q,YgfB P184Q,ygfB P184Q,0
+S6d,1_Day16,3054894|T|Q,3054894,ygfB P184Q,YgfB P184Q,ygfB P184Q,0
+S6d,1_Day31,3054894|T|Q,3054894,ygfB P184Q,YgfB P184Q,ygfB P184Q,0
+S6d,1_Day82,3054894|T|Q,3054894,ygfB P184Q,YgfB P184Q,ygfB P184Q,0.18
+S6d,1_Day0,4465843|T|E,4465843,treB V113E,TreB V113E,treB V113E,0
+S6d,1_Day16,4465843|T|E,4465843,treB V113E,TreB V113E,treB V113E,0
+S6d,1_Day31,4465843|T|E,4465843,treB V113E,TreB V113E,treB V113E,0.16
+S6d,1_Day82,4465843|T|E,4465843,treB V113E,TreB V113E,treB V113E,0
+S6d,1_Day0,4542831||,4542831,fimE/fimA mobile_element_insertion,fimE/fimA IS insertion,fimE/fimA mobile_element_insertion,0
+S6d,1_Day16,4542831||,4542831,fimE/fimA mobile_element_insertion,fimE/fimA IS insertion,fimE/fimA mobile_element_insertion,0.1
+S6d,1_Day31,4542831||,4542831,fimE/fimA mobile_element_insertion,fimE/fimA IS insertion,fimE/fimA mobile_element_insertion,0
+S6d,1_Day82,4542831||,4542831,fimE/fimA mobile_element_insertion,fimE/fimA IS insertion,fimE/fimA mobile_element_insertion,0
+S6d,2_Day0,915226|C|,915226,lysO/aqpZ snp_intergenic,lysO/aqpZ snp intergenic,lysO/aqpZ snp_intergenic,0
+S6d,2_Day16,915226|C|,915226,lysO/aqpZ snp_intergenic,lysO/aqpZ snp intergenic,lysO/aqpZ snp_intergenic,0
+S6d,2_Day31,915226|C|,915226,lysO/aqpZ snp_intergenic,lysO/aqpZ snp intergenic,lysO/aqpZ snp_intergenic,0
+S6d,2_Day82,915226|C|,915226,lysO/aqpZ snp_intergenic,lysO/aqpZ snp intergenic,lysO/aqpZ snp_intergenic,0.14
+S6d,2_Day0,1293028||,1293028,hns/tdk mobile_element_insertion,hns/tdk IS insertion (2),hns/tdk mobile_element_insertion [1293028],0
+S6d,2_Day16,1293028||,1293028,hns/tdk mobile_element_insertion,hns/tdk IS insertion (2),hns/tdk mobile_element_insertion [1293028],0.35
+S6d,2_Day31,1293028||,1293028,hns/tdk mobile_element_insertion,hns/tdk IS insertion (2),hns/tdk mobile_element_insertion [1293028],0
+S6d,2_Day82,1293028||,1293028,hns/tdk mobile_element_insertion,hns/tdk IS insertion (2),hns/tdk mobile_element_insertion [1293028],0
+S6d,2_Day0,2229177|G|,2229177,yohP/dusC snp_intergenic,yohP/dusC snp intergenic,yohP/dusC snp_intergenic,0
+S6d,2_Day16,2229177|G|,2229177,yohP/dusC snp_intergenic,yohP/dusC snp intergenic,yohP/dusC snp_intergenic,0
+S6d,2_Day31,2229177|G|,2229177,yohP/dusC snp_intergenic,yohP/dusC snp intergenic,yohP/dusC snp_intergenic,0
+S6d,2_Day82,2229177|G|,2229177,yohP/dusC snp_intergenic,yohP/dusC snp intergenic,yohP/dusC snp_intergenic,0.23
+S6d,2_Day0,2316477||,2316477,rcsB mobile_element_insertion,rcsB IS insertion,rcsB mobile_element_insertion,0
+S6d,2_Day16,2316477||,2316477,rcsB mobile_element_insertion,rcsB IS insertion,rcsB mobile_element_insertion,0
+S6d,2_Day31,2316477||,2316477,rcsB mobile_element_insertion,rcsB IS insertion,rcsB mobile_element_insertion,0.72
+S6d,2_Day82,2316477||,2316477,rcsB mobile_element_insertion,rcsB IS insertion,rcsB mobile_element_insertion,0
+S6d,2_Day0,2585793|T|L,2585793,narQ L21L,NarQ L21L,narQ L21L,0
+S6d,2_Day16,2585793|T|L,2585793,narQ L21L,NarQ L21L,narQ L21L,0
+S6d,2_Day31,2585793|T|L,2585793,narQ L21L,NarQ L21L,narQ L21L,0
+S6d,2_Day82,2585793|T|L,2585793,narQ L21L,NarQ L21L,narQ L21L,0.11
+S6d,2_Day0,2867126||,2867126,rpoS small_indel,rpoS indel,rpoS small_indel,0
+S6d,2_Day16,2867126||,2867126,rpoS small_indel,rpoS indel,rpoS small_indel,0.16
+S6d,2_Day31,2867126||,2867126,rpoS small_indel,rpoS indel,rpoS small_indel,0
+S6d,2_Day82,2867126||,2867126,rpoS small_indel,rpoS indel,rpoS small_indel,0
+S6d,2_Day0,2867169|T|N,2867169,rpoS I128N,RpoS I128N,rpoS I128N,0
+S6d,2_Day16,2867169|T|N,2867169,rpoS I128N,RpoS I128N,rpoS I128N,0.13
+S6d,2_Day31,2867169|T|N,2867169,rpoS I128N,RpoS I128N,rpoS I128N,0
+S6d,2_Day82,2867169|T|N,2867169,rpoS I128N,RpoS I128N,rpoS I128N,0
+S6d,2_Day0,3269943|T|,3269943,yhaC/rnpB snp_intergenic,yhaC/rnpB snp intergenic (1),yhaC/rnpB snp_intergenic [3269943],0
+S6d,2_Day16,3269943|T|,3269943,yhaC/rnpB snp_intergenic,yhaC/rnpB snp intergenic (1),yhaC/rnpB snp_intergenic [3269943],0
+S6d,2_Day31,3269943|T|,3269943,yhaC/rnpB snp_intergenic,yhaC/rnpB snp intergenic (1),yhaC/rnpB snp_intergenic [3269943],0
+S6d,2_Day82,3269943|T|,3269943,yhaC/rnpB snp_intergenic,yhaC/rnpB snp intergenic (1),yhaC/rnpB snp_intergenic [3269943],0.12
+S6d,2_Day0,3270068|A|,3270068,yhaC/rnpB snp_intergenic,yhaC/rnpB snp intergenic (2),yhaC/rnpB snp_intergenic [3270068],0
+S6d,2_Day16,3270068|A|,3270068,yhaC/rnpB snp_intergenic,yhaC/rnpB snp intergenic (2),yhaC/rnpB snp_intergenic [3270068],0.1
+S6d,2_Day31,3270068|A|,3270068,yhaC/rnpB snp_intergenic,yhaC/rnpB snp intergenic (2),yhaC/rnpB snp_intergenic [3270068],0
+S6d,2_Day82,3270068|A|,3270068,yhaC/rnpB snp_intergenic,yhaC/rnpB snp intergenic (2),yhaC/rnpB snp_intergenic [3270068],0
+S6d,2_Day0,3331535|T|T,3331535,obgE A74T,ObgE A74T,obgE A74T,0
+S6d,2_Day16,3331535|T|T,3331535,obgE A74T,ObgE A74T,obgE A74T,0
+S6d,2_Day31,3331535|T|T,3331535,obgE A74T,ObgE A74T,obgE A74T,0.1
+S6d,2_Day82,3331535|T|T,3331535,obgE A74T,ObgE A74T,obgE A74T,0
+S6d,2_Day0,3638150|T|V,3638150,pitA A170V,PitA A170V,pitA A170V,0
+S6d,2_Day16,3638150|T|V,3638150,pitA A170V,PitA A170V,pitA A170V,0
+S6d,2_Day31,3638150|T|V,3638150,pitA A170V,PitA A170V,pitA A170V,0.13
+S6d,2_Day82,3638150|T|V,3638150,pitA A170V,PitA A170V,pitA A170V,0
+S6d,2_Day0,4465843|T|E,4465843,treB V113E,TreB V113E,treB V113E,0
+S6d,2_Day16,4465843|T|E,4465843,treB V113E,TreB V113E,treB V113E,0
+S6d,2_Day31,4465843|T|E,4465843,treB V113E,TreB V113E,treB V113E,0.75
+S6d,2_Day82,4465843|T|E,4465843,treB V113E,TreB V113E,treB V113E,0
+S6d,2_Day0,4640190|T|I,4640190,arcA M39I,ArcA M39I,arcA M39I,0
+S6d,2_Day16,4640190|T|I,4640190,arcA M39I,ArcA M39I,arcA M39I,0
+S6d,2_Day31,4640190|T|I,4640190,arcA M39I,ArcA M39I,arcA M39I,0.16
+S6d,2_Day82,4640190|T|I,4640190,arcA M39I,ArcA M39I,arcA M39I,0
+S6d,3_Day0,6305|G|T,6305,yaaA I52T,YaaA I52T,yaaA I52T,0
+S6d,3_Day16,6305|G|T,6305,yaaA I52T,YaaA I52T,yaaA I52T,0
+S6d,3_Day31,6305|G|T,6305,yaaA I52T,YaaA I52T,yaaA I52T,0
+S6d,3_Day82,6305|G|T,6305,yaaA I52T,YaaA I52T,yaaA I52T,0.11
+S6d,3_Day0,1293028||,1293028,hns/tdk mobile_element_insertion,hns/tdk IS insertion (2),hns/tdk mobile_element_insertion [1293028],0
+S6d,3_Day16,1293028||,1293028,hns/tdk mobile_element_insertion,hns/tdk IS insertion (2),hns/tdk mobile_element_insertion [1293028],0.48
+S6d,3_Day31,1293028||,1293028,hns/tdk mobile_element_insertion,hns/tdk IS insertion (2),hns/tdk mobile_element_insertion [1293028],0
+S6d,3_Day82,1293028||,1293028,hns/tdk mobile_element_insertion,hns/tdk IS insertion (2),hns/tdk mobile_element_insertion [1293028],0
+S6d,3_Day0,1904774|T|,1904774,manZ/yobD snp_intergenic,manZ/yobD snp intergenic,manZ/yobD snp_intergenic,0
+S6d,3_Day16,1904774|T|,1904774,manZ/yobD snp_intergenic,manZ/yobD snp intergenic,manZ/yobD snp_intergenic,0
+S6d,3_Day31,1904774|T|,1904774,manZ/yobD snp_intergenic,manZ/yobD snp intergenic,manZ/yobD snp_intergenic,0
+S6d,3_Day82,1904774|T|,1904774,manZ/yobD snp_intergenic,manZ/yobD snp intergenic,manZ/yobD snp_intergenic,0.12
+S6d,3_Day0,2316477||,2316477,rcsB mobile_element_insertion,rcsB IS insertion,rcsB mobile_element_insertion,0
+S6d,3_Day16,2316477||,2316477,rcsB mobile_element_insertion,rcsB IS insertion,rcsB mobile_element_insertion,0
+S6d,3_Day31,2316477||,2316477,rcsB mobile_element_insertion,rcsB IS insertion,rcsB mobile_element_insertion,0.88
+S6d,3_Day82,2316477||,2316477,rcsB mobile_element_insertion,rcsB IS insertion,rcsB mobile_element_insertion,0
+S6d,3_Day0,3054894|T|Q,3054894,ygfB P184Q,YgfB P184Q,ygfB P184Q,0
+S6d,3_Day16,3054894|T|Q,3054894,ygfB P184Q,YgfB P184Q,ygfB P184Q,0
+S6d,3_Day31,3054894|T|Q,3054894,ygfB P184Q,YgfB P184Q,ygfB P184Q,0.17
+S6d,3_Day82,3054894|T|Q,3054894,ygfB P184Q,YgfB P184Q,ygfB P184Q,0
+S6d,3_Day0,3491706|G|,3491706,yhfG/ppiA snp_intergenic,yhfG/ppiA snp intergenic,yhfG/ppiA snp_intergenic,0
+S6d,3_Day16,3491706|G|,3491706,yhfG/ppiA snp_intergenic,yhfG/ppiA snp intergenic,yhfG/ppiA snp_intergenic,0.17
+S6d,3_Day31,3491706|G|,3491706,yhfG/ppiA snp_intergenic,yhfG/ppiA snp intergenic,yhfG/ppiA snp_intergenic,0
+S6d,3_Day82,3491706|G|,3491706,yhfG/ppiA snp_intergenic,yhfG/ppiA snp intergenic,yhfG/ppiA snp_intergenic,0.16
+S6d,3_Day0,3638193|A|T,3638193,pitA T184T,PitA T184T,pitA T184T,0
+S6d,3_Day16,3638193|A|T,3638193,pitA T184T,PitA T184T,pitA T184T,0.11
+S6d,3_Day31,3638193|A|T,3638193,pitA T184T,PitA T184T,pitA T184T,0
+S6d,3_Day82,3638193|A|T,3638193,pitA T184T,PitA T184T,pitA T184T,0
+S6d,3_Day0,4294366|T|,4294366,nrfG/gltP snp_intergenic,nrfG/gltP snp intergenic,nrfG/gltP snp_intergenic,0
+S6d,3_Day16,4294366|T|,4294366,nrfG/gltP snp_intergenic,nrfG/gltP snp intergenic,nrfG/gltP snp_intergenic,0
+S6d,3_Day31,4294366|T|,4294366,nrfG/gltP snp_intergenic,nrfG/gltP snp intergenic,nrfG/gltP snp_intergenic,0
+S6d,3_Day82,4294366|T|,4294366,nrfG/gltP snp_intergenic,nrfG/gltP snp intergenic,nrfG/gltP snp_intergenic,0.23
+S6d,3_Day0,4410044|T|,4410044,rlmB/yjfI snp_intergenic,rlmB/yjfI snp intergenic,rlmB/yjfI snp_intergenic,0
+S6d,3_Day16,4410044|T|,4410044,rlmB/yjfI snp_intergenic,rlmB/yjfI snp intergenic,rlmB/yjfI snp_intergenic,0.21
+S6d,3_Day31,4410044|T|,4410044,rlmB/yjfI snp_intergenic,rlmB/yjfI snp intergenic,rlmB/yjfI snp_intergenic,0
+S6d,3_Day82,4410044|T|,4410044,rlmB/yjfI snp_intergenic,rlmB/yjfI snp intergenic,rlmB/yjfI snp_intergenic,0
+S6d,3_Day0,4465843|T|E,4465843,treB V113E,TreB V113E,treB V113E,0
+S6d,3_Day16,4465843|T|E,4465843,treB V113E,TreB V113E,treB V113E,0
+S6d,3_Day31,4465843|T|E,4465843,treB V113E,TreB V113E,treB V113E,0.95
+S6d,3_Day82,4465843|T|E,4465843,treB V113E,TreB V113E,treB V113E,0
+S6d,4_Day0,257908||,257908,insB9–[crl] large_deletion,ΔinsB9-crl,insB9–[crl] large_deletion,0
+S6d,4_Day16,257908||,257908,insB9–[crl] large_deletion,ΔinsB9-crl,insB9–[crl] large_deletion,0
+S6d,4_Day31,257908||,257908,insB9–[crl] large_deletion,ΔinsB9-crl,insB9–[crl] large_deletion,1
+S6d,4_Day82,257908||,257908,insB9–[crl] large_deletion,ΔinsB9-crl,insB9–[crl] large_deletion,1
+S6d,4_Day0,458899|A|E,458899,lon E4E,Lon E4E,lon E4E,0
+S6d,4_Day16,458899|A|E,458899,lon E4E,Lon E4E,lon E4E,0
+S6d,4_Day31,458899|A|E,458899,lon E4E,Lon E4E,lon E4E,0.43
+S6d,4_Day82,458899|A|E,458899,lon E4E,Lon E4E,lon E4E,0
+S6d,4_Day0,2867178|C|R,2867178,rpoS L125R,RpoS L125R,rpoS L125R,0
+S6d,4_Day16,2867178|C|R,2867178,rpoS L125R,RpoS L125R,rpoS L125R,0.15
+S6d,4_Day31,2867178|C|R,2867178,rpoS L125R,RpoS L125R,rpoS L125R,0
+S6d,4_Day82,2867178|C|R,2867178,rpoS L125R,RpoS L125R,rpoS L125R,0
+S6d,4_Day0,3491706|G|,3491706,yhfG/ppiA snp_intergenic,yhfG/ppiA snp intergenic,yhfG/ppiA snp_intergenic,0
+S6d,4_Day16,3491706|G|,3491706,yhfG/ppiA snp_intergenic,yhfG/ppiA snp intergenic,yhfG/ppiA snp_intergenic,0.13
+S6d,4_Day31,3491706|G|,3491706,yhfG/ppiA snp_intergenic,yhfG/ppiA snp intergenic,yhfG/ppiA snp_intergenic,0
+S6d,4_Day82,3491706|G|,3491706,yhfG/ppiA snp_intergenic,yhfG/ppiA snp intergenic,yhfG/ppiA snp_intergenic,0
+S6d,4_Day0,4294366|T|,4294366,nrfG/gltP snp_intergenic,nrfG/gltP snp intergenic,nrfG/gltP snp_intergenic,0
+S6d,4_Day16,4294366|T|,4294366,nrfG/gltP snp_intergenic,nrfG/gltP snp intergenic,nrfG/gltP snp_intergenic,0
+S6d,4_Day31,4294366|T|,4294366,nrfG/gltP snp_intergenic,nrfG/gltP snp intergenic,nrfG/gltP snp_intergenic,0
+S6d,4_Day82,4294366|T|,4294366,nrfG/gltP snp_intergenic,nrfG/gltP snp intergenic,nrfG/gltP snp_intergenic,0.15
+S9,PL_10,4182930|C|D,4182930,RpoB E562D,RpoB E562D,RpoB E562D,0.83
+S9,PL_04,4184954|T|L,4184954,RpoB H1237L,RpoB H1237L,RpoB H1237L,1
+S9,PL_03,4185113|G|R,4185113,RpoB M1290R,RpoB M1290R,RpoB M1290R,0.64
+S9,PL_03,4184954|T|L,4184954,RpoB H1237L,RpoB H1237L,RpoB H1237L,0.32
+S9,PL_02,4185043||,4185043,$\it{rpoB}$ indel,rpoB indel (2),$\it{rpoB}$ indel [4185043],0.77
+S9,PL_02,4184434|A|N,4184434,RpoB D1064N,RpoB D1064N,RpoB D1064N,0.24
+S9,PL_01,4184435|G|G,4184435,RpoB D1064G,RpoB D1064G,RpoB D1064G,1
+S9,PLA_10,4182930|C|D,4182930,RpoB E562D,RpoB E562D,RpoB E562D,0
+S9,PLA_09,4182931|G|A,4182931,RpoB T563A,RpoB T563A,RpoB T563A,1
+S9,PLA_09,4182858||,4182858,$\it{rpoB}$ indel,rpoB indel (1),$\it{rpoB}$ indel [4182858],0
+S9,PLA_08,4184954|T|L,4184954,RpoB H1237L,RpoB H1237L,RpoB H1237L,0
+S9,PLA_06,4184434|A|N,4184434,RpoB D1064N,RpoB D1064N,RpoB D1064N,0
+S9,PLA_05,4184954|T|L,4184954,RpoB H1237L,RpoB H1237L,RpoB H1237L,0
+S9,PLA_04,4184954|T|L,4184954,RpoB H1237L,RpoB H1237L,RpoB H1237L,0
+S9,PLAC_04,4184954|T|L,4184954,RpoB H1237L,RpoB H1237L,RpoB H1237L,0
+S9,PLA_03,4185113|G|R,4185113,RpoB M1290R,RpoB M1290R,RpoB M1290R,0
+S9,PLAC_05,4184954|T|L,4184954,RpoB H1237L,RpoB H1237L,RpoB H1237L,0
+S9,PLA_03,4184954|T|L,4184954,RpoB H1237L,RpoB H1237L,RpoB H1237L,0
+S9,PLA_02,4185043||,4185043,$\it{rpoB}$ indel,rpoB indel (2),$\it{rpoB}$ indel [4185043],1
+S9,PLA_02,4184954|T|L,4184954,RpoB H1237L,RpoB H1237L,RpoB H1237L,0
+S9,PLA_02,4184434|A|N,4184434,RpoB D1064N,RpoB D1064N,RpoB D1064N,0
+S9,PLAC_06,4184434|A|N,4184434,RpoB D1064N,RpoB D1064N,RpoB D1064N,0
+S9,PLA_01,4184435|G|G,4184435,RpoB D1064G,RpoB D1064G,RpoB D1064G,0
+S9,PLAC_09,4182858||,4182858,$\it{rpoB}$ indel,rpoB indel (1),$\it{rpoB}$ indel [4182858],0
+S9,PLAC_09,4182931|G|A,4182931,RpoB T563A,RpoB T563A,RpoB T563A,0
+S9,PLAC_10,4182930|C|D,4182930,RpoB E562D,RpoB E562D,RpoB E562D,0
+S9,PL_05,4184954|T|L,4184954,RpoB H1237L,RpoB H1237L,RpoB H1237L,1
+S9,PL_06,4184434|A|N,4184434,RpoB D1064N,RpoB D1064N,RpoB D1064N,1
+S9,PLAC_01,4184435|G|G,4184435,RpoB D1064G,RpoB D1064G,RpoB D1064G,0
+S9,PL_08,4184954|T|L,4184954,RpoB H1237L,RpoB H1237L,RpoB H1237L,1
+S9,PL_09,4182858||,4182858,$\it{rpoB}$ indel,rpoB indel (1),$\it{rpoB}$ indel [4182858],1
+S9,PLA_05,2339162|A|Y,2339162,GyrA D87Y,GyrA D87Y,GyrA D87Y,0
+S9,PLAC_06,2339173|A|L,2339173,GyrA S83L,GyrA S83L,GyrA S83L,1
+S9,PLA_03,2339179|T|D,2339179,GyrA G81D,GyrA G81D,GyrA G81D,0
+S9,PLAC_05,2339173|A|L,2339173,GyrA S83L,GyrA S83L,GyrA S83L,1
+S9,PLAC_05,2339162|A|Y,2339162,GyrA D87Y,GyrA D87Y,GyrA D87Y,0
+S9,PL_02,2339179|T|D,2339179,GyrA G81D,GyrA G81D,GyrA G81D,0.2
+S9,PL_02,2339173|A|L,2339173,GyrA S83L,GyrA S83L,GyrA S83L,0.51
+S9,PLA_04,2339173|A|L,2339173,GyrA S83L,GyrA S83L,GyrA S83L,1
+S9,PLA_04,2339179|T|D,2339179,GyrA G81D,GyrA G81D,GyrA G81D,0
+S9,PLAC_04,2339179|T|D,2339179,GyrA G81D,GyrA G81D,GyrA G81D,0
+S9,PL_01,2339179|T|D,2339179,GyrA G81D,GyrA G81D,GyrA G81D,1
+S9,PLAC_04,2339173|A|L,2339173,GyrA S83L,GyrA S83L,GyrA S83L,1
+S9,PLA_05,2339173|A|L,2339173,GyrA S83L,GyrA S83L,GyrA S83L,1
+S9,PL_08,2339173|C|W,2339173,GyrA S83W,GyrA S83W,GyrA S83W,0.74
+S9,PLAC_10,2339173|A|L,2339173,GyrA S83L,GyrA S83L,GyrA S83L,1
+S9,PLA_06,2339173|A|L,2339173,GyrA S83L,GyrA S83L,GyrA S83L,1
+S9,PLA_10,2339173|A|L,2339173,GyrA S83L,GyrA S83L,GyrA S83L,1
+S9,PLA_06,2339179|T|D,2339179,GyrA G81D,GyrA G81D,GyrA G81D,0
+S9,PLA_07,2339173|A|L,2339173,GyrA S83L,GyrA S83L,GyrA S83L,1
+S9,PLAC_01,2339179|T|D,2339179,GyrA G81D,GyrA G81D,GyrA G81D,0
+S9,PLAC_01,2339173|A|L,2339173,GyrA S83L,GyrA S83L,GyrA S83L,1
+S9,PLA_09,2339173|A|L,2339173,GyrA S83L,GyrA S83L,GyrA S83L,1
+S9,PLAC_06,2339179|T|D,2339179,GyrA G81D,GyrA G81D,GyrA G81D,0
+S9,PL_03,2339065|T|E,2339065,GyrA A119E,GyrA A119E,GyrA A119E,0.28
+S9,PLA_08,2339173|A|L,2339173,GyrA S83L,GyrA S83L,GyrA S83L,1
+S9,PLA_03,2339173|A|L,2339173,GyrA S83L,GyrA S83L,GyrA S83L,1
+S9,PL_05,2339162|A|Y,2339162,GyrA D87Y,GyrA D87Y,GyrA D87Y,0.2
+S9,PL_03,2339179|T|D,2339179,GyrA G81D,GyrA G81D,GyrA G81D,0.62
+S9,PLAC_09,2339173|A|L,2339173,GyrA S83L,GyrA S83L,GyrA S83L,1
+S9,PLA_01,2339173|A|L,2339173,GyrA S83L,GyrA S83L,GyrA S83L,0.24
+S9,PL_10,2339173|A|L,2339173,GyrA S83L,GyrA S83L,GyrA S83L,0.91
+S9,PL_04,2339179|T|D,2339179,GyrA G81D,GyrA G81D,GyrA G81D,0.95
+S9,PLA_01,2339179|T|D,2339179,GyrA G81D,GyrA G81D,GyrA G81D,0.75
+S9,PLA_02,2339173|A|L,2339173,GyrA S83L,GyrA S83L,GyrA S83L,1
+S9,PLAC_07,2339173|A|L,2339173,GyrA S83L,GyrA S83L,GyrA S83L,1
+S9,PL_06,2339179|T|D,2339179,GyrA G81D,GyrA G81D,GyrA G81D,1
+S9,PL_07,2339173|A|L,2339173,GyrA S83L,GyrA S83L,GyrA S83L,1
+S9,PL_09,2339173|C|W,2339173,GyrA S83W,GyrA S83W,GyrA S83W,1
+S9,PLA_03,2339065|T|E,2339065,GyrA A119E,GyrA A119E,GyrA A119E,0
+S9,PLA_02,2339179|T|D,2339179,GyrA G81D,GyrA G81D,GyrA G81D,0
+S9,PL_05,2339173|A|L,2339173,GyrA S83L,GyrA S83L,GyrA S83L,0.63
+S9,PLAC_10,1196220|T|H,1196220,Icd H366H,Icd H366H,Icd H366H,1
+S9,PLA_07,1196220|T|H,1196220,Icd H366H,Icd H366H,Icd H366H,1
+S9,PLA_01,1196220|T|H,1196220,Icd H366H,Icd H366H,Icd H366H,1
+S9,PLAC_01,1196232|T|T,1196232,Icd T370T,Icd T370T,Icd T370T,0
+S9,PLAC_01,1196220|T|H,1196220,Icd H366H,Icd H366H,Icd H366H,1
+S9,PLAC_10,1196232|T|T,1196232,Icd T370T,Icd T370T,Icd T370T,1
+S9,PLA_06,1196220|T|H,1196220,Icd H366H,Icd H366H,Icd H366H,1
+S9,PLA_05,1196220|T|H,1196220,Icd H366H,Icd H366H,Icd H366H,1
+S9,PLAC_04,1196232|T|T,1196232,Icd T370T,Icd T370T,Icd T370T,0
+S9,PLAC_09,1196232|T|T,1196232,Icd T370T,Icd T370T,Icd T370T,0
+S9,PLAC_09,1196220|T|H,1196220,Icd H366H,Icd H366H,Icd H366H,0
+S9,PLAC_05,1196220|T|H,1196220,Icd H366H,Icd H366H,Icd H366H,0
+S9,PLAC_05,1196232|T|T,1196232,Icd T370T,Icd T370T,Icd T370T,0
+S9,PLA_04,1196220|T|H,1196220,Icd H366H,Icd H366H,Icd H366H,1
+S9,PLAC_07,1196232|T|T,1196232,Icd T370T,Icd T370T,Icd T370T,0
+S9,PLAC_07,1196220|T|H,1196220,Icd H366H,Icd H366H,Icd H366H,0
+S9,PLA_08,1196220|T|H,1196220,Icd H366H,Icd H366H,Icd H366H,1
+S9,PLAC_06,1196232|T|T,1196232,Icd T370T,Icd T370T,Icd T370T,0
+S9,PLA_03,1196220|T|H,1196220,Icd H366H,Icd H366H,Icd H366H,1
+S9,PLAC_04,1196220|T|H,1196220,Icd H366H,Icd H366H,Icd H366H,0
+S9,PLAC_06,1196220|T|H,1196220,Icd H366H,Icd H366H,Icd H366H,0
+S9,PL_07,1196220|T|H,1196220,Icd H366H,Icd H366H,Icd H366H,1
+S9,PL_03,1196220|T|H,1196220,Icd H366H,Icd H366H,Icd H366H,1
+S9,PL_01,1196220|T|H,1196220,Icd H366H,Icd H366H,Icd H366H,1
+S9,PLA_10,1196220|T|H,1196220,Icd H366H,Icd H366H,Icd H366H,0
+S9,PL_05,1196220|T|H,1196220,Icd H366H,Icd H366H,Icd H366H,1
+S9,PLA_09,1196220|T|H,1196220,Icd H366H,Icd H366H,Icd H366H,1
+S9,PL_08,1196220|T|H,1196220,Icd H366H,Icd H366H,Icd H366H,1
+S9,PL_04,1196220|T|H,1196220,Icd H366H,Icd H366H,Icd H366H,1
+S9,PLA_01,4180260|T|S,4180260,RplJ P89S,RplJ P89S,RplJ P89S,0.71
+S9,PL_01,4180260|T|S,4180260,RplJ P89S,RplJ P89S,RplJ P89S,1
+S9,PLAC_01,4180260|T|S,4180260,RplJ P89S,RplJ P89S,RplJ P89S,0
+S9,PL_01,1447641|A|E,1447641,FeaB D41E,FeaB D41E,FeaB D41E,1
+S9,PLA_01,1447641|A|E,1447641,FeaB D41E,FeaB D41E,FeaB D41E,0.76
+S9,PLAC_01,1447641|A|E,1447641,FeaB D41E,FeaB D41E,FeaB D41E,0
+S9,PLA_02,1359616|G|D,1359616,PuuA D431D,PuuA D431D,PuuA D431D,0
+S9,PL_02,1359616|G|D,1359616,PuuA D431D,PuuA D431D,PuuA D431D,0.15
+S9,PLA_02,2383468|T|C,2383468,ElaD C252C,ElaD C252C,ElaD C252C,0
+S9,PL_02,2383468|T|C,2383468,ElaD C252C,ElaD C252C,ElaD C252C,0.1
+S9,PL_02,3880158|G|T,3880158,RecF I355T,RecF I355T,RecF I355T,0.12
+S9,PLA_02,3880158|G|T,3880158,RecF I355T,RecF I355T,RecF I355T,0
+S9,PLA_02,1458984|T|C,1458984,PaaG S241C,PaaG S241C,PaaG S241C,1
+S9,PL_02,1458984|T|C,1458984,PaaG S241C,PaaG S241C,PaaG S241C,0.67
+S9,PLA_02,2722723||,2722723,$\it{pssL}$ indel,pssL indel,$\it{pssL}$ indel,1
+S9,PL_02,2722723||,2722723,$\it{pssL}$ indel,pssL indel,$\it{pssL}$ indel,0.48
+S9,PL_05,4640112|G|F,4640112,Arca L65F,Arca L65F,Arca L65F,0.18
+S9,PLAC_05,4640112|G|F,4640112,Arca L65F,Arca L65F,Arca L65F,0
+S9,PL_03,4640231|CGCTTCGAAAACATCATAGCCTTC|,4640231,$\it{arcA}$ indel,arcA indel,$\it{arcA}$ indel,0.25
+S9,PLA_05,4640112|G|F,4640112,Arca L65F,Arca L65F,Arca L65F,0
+S9,PLA_03,4640231|CGCTTCGAAAACATCATAGCCTTC|,4640231,$\it{arcA}$ indel,arcA indel,$\it{arcA}$ indel,0
+S9,PLA_03,4220506|G|A,4220506,ArpA D661A,ArpA D661A,ArpA D661A,0
+S9,PL_03,4220506|G|A,4220506,ArpA D661A,ArpA D661A,ArpA D661A,0.15
+S9,PL_03,2972129||,2972129,$\it{tas}$ indel,tas indel,$\it{tas}$ indel,0.66
+S9,PLA_03,2972129||,2972129,$\it{tas}$ indel,tas indel,$\it{tas}$ indel,0
+S9,PLAC_04,584487||,584487,$\it{appY/ompT}$ indel,appY/ompT indel,$\it{appY/ompT}$ indel,0
+S9,PLA_04,584487||,584487,$\it{appY/ompT}$ indel,appY/ompT indel,$\it{appY/ompT}$ indel,0
+S9,PL_04,584487||,584487,$\it{appY/ompT}$ indel,appY/ompT indel,$\it{appY/ompT}$ indel,1
+S9,PLAC_04,257908||,257908,$\it{insB9–[crl]}$ deletion,insB9–[crl] deletion,$\it{insB9–[crl]}$ deletion,1
+S9,PLA_04,257908||,257908,$\it{insB9–[crl]}$ deletion,insB9–[crl] deletion,$\it{insB9–[crl]}$ deletion,1
+S9,PL_04,257908||,257908,$\it{insB9–[crl]}$ deletion,insB9–[crl] deletion,$\it{insB9–[crl]}$ deletion,1
+S9,PL_05,3630489|T|V,3630489,YhiI V38V,YhiI V38V,YhiI V38V,0.12
+S9,PLAC_05,3630489|T|V,3630489,YhiI V38V,YhiI V38V,YhiI V38V,0
+S9,PLA_05,3630489|T|V,3630489,YhiI V38V,YhiI V38V,YhiI V38V,0
+S9,PLA_06,3270068|A|,3270068,$\it{yhaC/rnpB}$ snp intergenic,yhaC/rnpB snp intergenic (2),$\it{yhaC/rnpB}$ snp intergenic [3270068],0
+S9,PLAC_10,3269943|T|,3269943,$\it{yhaC/rnpB}$ snp intergenic,yhaC/rnpB snp intergenic (1),$\it{yhaC/rnpB}$ snp intergenic [3269943],0
+S9,PLAC_01,3269943|T|,3269943,$\it{yhaC/rnpB}$ snp intergenic,yhaC/rnpB snp intergenic (1),$\it{yhaC/rnpB}$ snp intergenic [3269943],0.1
+S9,PC_05,3269943|T|,3269943,$\it{yhaC/rnpB}$ snp intergenic,yhaC/rnpB snp intergenic (1),$\it{yhaC/rnpB}$ snp intergenic [3269943],0.12
+S9,PC_01,3269943|T|,3269943,$\it{yhaC/rnpB}$ snp intergenic,yhaC/rnpB snp intergenic (1),$\it{yhaC/rnpB}$ snp intergenic [3269943],0.11
+S9,PLA_05,3269943|T|,3269943,$\it{yhaC/rnpB}$ snp intergenic,yhaC/rnpB snp intergenic (1),$\it{yhaC/rnpB}$ snp intergenic [3269943],0
+S9,PL_05,3269943|T|,3269943,$\it{yhaC/rnpB}$ snp intergenic,yhaC/rnpB snp intergenic (1),$\it{yhaC/rnpB}$ snp intergenic [3269943],0.13
+S9,PLAC_05,3269943|T|,3269943,$\it{yhaC/rnpB}$ snp intergenic,yhaC/rnpB snp intergenic (1),$\it{yhaC/rnpB}$ snp intergenic [3269943],0
+S9,PLA_02,3269943|T|,3269943,$\it{yhaC/rnpB}$ snp intergenic,yhaC/rnpB snp intergenic (1),$\it{yhaC/rnpB}$ snp intergenic [3269943],0
+S9,PLAC_06,3270068|A|,3270068,$\it{yhaC/rnpB}$ snp intergenic,yhaC/rnpB snp intergenic (2),$\it{yhaC/rnpB}$ snp intergenic [3270068],0
+S9,PL_07,759127|C|A,759127,SucA V141A,SucA V141A,SucA V141A,0.31
+S9,PLAC_10,759127|C|A,759127,SucA V141A,SucA V141A,SucA V141A,0
+S9,PLA_05,759127|C|A,759127,SucA V141A,SucA V141A,SucA V141A,1
+S9,PLAC_01,759127|C|A,759127,SucA V141A,SucA V141A,SucA V141A,0
+S9,PLAC_05,759127|C|A,759127,SucA V141A,SucA V141A,SucA V141A,0
+S9,PLAC_07,759127|C|A,759127,SucA V141A,SucA V141A,SucA V141A,0
+S9,PLA_07,759127|C|A,759127,SucA V141A,SucA V141A,SucA V141A,0
+S9,PLAC_09,759127|C|A,759127,SucA V141A,SucA V141A,SucA V141A,0
+S9,PLA_10,759127|C|A,759127,SucA V141A,SucA V141A,SucA V141A,0.47
+S9,PLAC_06,759127|C|A,759127,SucA V141A,SucA V141A,SucA V141A,0
+S9,PLA_06,759127|C|A,759127,SucA V141A,SucA V141A,SucA V141A,0
+S9,PC_03,3054894|T|Q,3054894,YgfB P184Q,YgfB P184Q,YgfB P184Q,0.1
+S9,PL_07,3054894|T|Q,3054894,YgfB P184Q,YgfB P184Q,YgfB P184Q,0.19
+S9,PLAC_09,3054894|T|Q,3054894,YgfB P184Q,YgfB P184Q,YgfB P184Q,0.09
+S9,PLAC_07,3054894|T|Q,3054894,YgfB P184Q,YgfB P184Q,YgfB P184Q,0.15
+S9,PC_04,3054894|T|Q,3054894,YgfB P184Q,YgfB P184Q,YgfB P184Q,0.13
+S9,PLAC_05,3054894|T|Q,3054894,YgfB P184Q,YgfB P184Q,YgfB P184Q,0
+S9,PL_10,3054894|T|Q,3054894,YgfB P184Q,YgfB P184Q,YgfB P184Q,0
+S9,PLA_01,3054894|T|Q,3054894,YgfB P184Q,YgfB P184Q,YgfB P184Q,0
+S9,PL_04,3054894|T|Q,3054894,YgfB P184Q,YgfB P184Q,YgfB P184Q,0
+S9,PLA_04,3054894|T|Q,3054894,YgfB P184Q,YgfB P184Q,YgfB P184Q,0
+S9,PC_02,3054894|T|Q,3054894,YgfB P184Q,YgfB P184Q,YgfB P184Q,0.1
+S9,PLAC_10,3054894|T|Q,3054894,YgfB P184Q,YgfB P184Q,YgfB P184Q,0
+S9,PC_06,3054894|T|Q,3054894,YgfB P184Q,YgfB P184Q,YgfB P184Q,0.12
+S9,PLA_05,3054894|T|Q,3054894,YgfB P184Q,YgfB P184Q,YgfB P184Q,0.18
+S9,PLA_10,3054894|T|Q,3054894,YgfB P184Q,YgfB P184Q,YgfB P184Q,0
+S9,PLA_07,3054894|T|Q,3054894,YgfB P184Q,YgfB P184Q,YgfB P184Q,0
+S9,PLAC_01,3054894|T|Q,3054894,YgfB P184Q,YgfB P184Q,YgfB P184Q,0
+S9,PLA_08,3054894|T|Q,3054894,YgfB P184Q,YgfB P184Q,YgfB P184Q,0.19
+S9,PC_09,3054894|T|Q,3054894,YgfB P184Q,YgfB P184Q,YgfB P184Q,0.16
+S9,PLAC_04,3054894|T|Q,3054894,YgfB P184Q,YgfB P184Q,YgfB P184Q,0
+S9,PL_07,4296060|T|,4296060,$\it{gltP/yjcO}$ snp intergenic,gltP/yjcO snp intergenic,$\it{gltP/yjcO}$ snp intergenic,0.18
+S9,PLA_07,4296060|T|,4296060,$\it{gltP/yjcO}$ snp intergenic,gltP/yjcO snp intergenic,$\it{gltP/yjcO}$ snp intergenic,0.22
+S9,PLAC_07,4296060|T|,4296060,$\it{gltP/yjcO}$ snp intergenic,gltP/yjcO snp intergenic,$\it{gltP/yjcO}$ snp intergenic,0.23
+S9,PLAC_05,3758381|T|,3758381,$\it{selB}$ indel,selB indel,$\it{selB}$ indel,0.93
+S9,PLAC_06,3758381|T|,3758381,$\it{selB}$ indel,selB indel,$\it{selB}$ indel,0.46
+S9,PL_07,3758381|T|,3758381,$\it{selB}$ indel,selB indel,$\it{selB}$ indel,0.11
+S9,PLA_01,3758381|T|,3758381,$\it{selB}$ indel,selB indel,$\it{selB}$ indel,0.25
+S9,PLA_03,3758381|T|,3758381,$\it{selB}$ indel,selB indel,$\it{selB}$ indel,0.93
+S9,PLA_07,3758381|T|,3758381,$\it{selB}$ indel,selB indel,$\it{selB}$ indel,0.94
+S9,PLAC_07,3758381|T|,3758381,$\it{selB}$ indel,selB indel,$\it{selB}$ indel,0.92
+S9,PLA_08,3758381|T|,3758381,$\it{selB}$ indel,selB indel,$\it{selB}$ indel,0.91
+S9,PLA_06,3758381|T|,3758381,$\it{selB}$ indel,selB indel,$\it{selB}$ indel,0.82
+S9,PLAC_01,3758381|T|,3758381,$\it{selB}$ indel,selB indel,$\it{selB}$ indel,0.93
+S9,PLAC_09,3758381|T|,3758381,$\it{selB}$ indel,selB indel,$\it{selB}$ indel,0.84
+S9,PLAC_10,3758381|T|,3758381,$\it{selB}$ indel,selB indel,$\it{selB}$ indel,0.92
+S9,PLAC_04,3758381|T|,3758381,$\it{selB}$ indel,selB indel,$\it{selB}$ indel,0.92
+S9,PLA_04,3758381|T|,3758381,$\it{selB}$ indel,selB indel,$\it{selB}$ indel,0.92
+S9,PLA_08,3862562||,3862562,$\it{glvC}$ indel,glvC indel,$\it{glvC}$ indel,1
+S9,PLA_03,3862562||,3862562,$\it{glvC}$ indel,glvC indel,$\it{glvC}$ indel,1
+S9,PL_07,3862562||,3862562,$\it{glvC}$ indel,glvC indel,$\it{glvC}$ indel,0.94
+S9,PLAC_06,3862562||,3862562,$\it{glvC}$ indel,glvC indel,$\it{glvC}$ indel,1
+S9,PLAC_09,3862562||,3862562,$\it{glvC}$ indel,glvC indel,$\it{glvC}$ indel,1
+S9,PLA_06,3862562||,3862562,$\it{glvC}$ indel,glvC indel,$\it{glvC}$ indel,1
+S9,PLAC_04,3862562||,3862562,$\it{glvC}$ indel,glvC indel,$\it{glvC}$ indel,1
+S9,PLA_07,3862562||,3862562,$\it{glvC}$ indel,glvC indel,$\it{glvC}$ indel,1
+S9,PLAC_05,3862562||,3862562,$\it{glvC}$ indel,glvC indel,$\it{glvC}$ indel,1
+S9,PLA_10,3862562||,3862562,$\it{glvC}$ indel,glvC indel,$\it{glvC}$ indel,1
+S9,PLAC_07,3862562||,3862562,$\it{glvC}$ indel,glvC indel,$\it{glvC}$ indel,1
+S9,PLAC_01,3862562||,3862562,$\it{glvC}$ indel,glvC indel,$\it{glvC}$ indel,1
+S9,PLA_04,3862562||,3862562,$\it{glvC}$ indel,glvC indel,$\it{glvC}$ indel,1
+S9,PLA_05,3862562||,3862562,$\it{glvC}$ indel,glvC indel,$\it{glvC}$ indel,1
+S9,PLAC_10,3862562||,3862562,$\it{glvC}$ indel,glvC indel,$\it{glvC}$ indel,1
+S9,PLA_01,3862562||,3862562,$\it{glvC}$ indel,glvC indel,$\it{glvC}$ indel,0.32
+S9,PLAC_09,4542020||,4542020,$\it{fimB/fimE}$ insertion,fimB/fimE insertion,$\it{fimB/fimE}$ insertion,0.93
+S9,PLA_06,4542020||,4542020,$\it{fimB/fimE}$ insertion,fimB/fimE insertion,$\it{fimB/fimE}$ insertion,0.93
+S9,PLAC_04,4542020||,4542020,$\it{fimB/fimE}$ insertion,fimB/fimE insertion,$\it{fimB/fimE}$ insertion,1
+S9,PLA_01,4542020||,4542020,$\it{fimB/fimE}$ insertion,fimB/fimE insertion,$\it{fimB/fimE}$ insertion,0.24
+S9,PLA_07,4542020||,4542020,$\it{fimB/fimE}$ insertion,fimB/fimE insertion,$\it{fimB/fimE}$ insertion,1
+S9,PLAC_06,4542020||,4542020,$\it{fimB/fimE}$ insertion,fimB/fimE insertion,$\it{fimB/fimE}$ insertion,0.49
+S9,PL_07,4542020||,4542020,$\it{fimB/fimE}$ insertion,fimB/fimE insertion,$\it{fimB/fimE}$ insertion,0.13
+S9,PLA_08,4542020||,4542020,$\it{fimB/fimE}$ insertion,fimB/fimE insertion,$\it{fimB/fimE}$ insertion,1
+S9,PLAC_05,4542020||,4542020,$\it{fimB/fimE}$ insertion,fimB/fimE insertion,$\it{fimB/fimE}$ insertion,1
+S9,PLAC_10,4542020||,4542020,$\it{fimB/fimE}$ insertion,fimB/fimE insertion,$\it{fimB/fimE}$ insertion,1
+S9,PLA_03,4542020||,4542020,$\it{fimB/fimE}$ insertion,fimB/fimE insertion,$\it{fimB/fimE}$ insertion,1
+S9,PLAC_01,4542020||,4542020,$\it{fimB/fimE}$ insertion,fimB/fimE insertion,$\it{fimB/fimE}$ insertion,1
+S9,PLAC_07,4542020||,4542020,$\it{fimB/fimE}$ insertion,fimB/fimE insertion,$\it{fimB/fimE}$ insertion,1
+S9,PLA_04,4542020||,4542020,$\it{fimB/fimE}$ insertion,fimB/fimE insertion,$\it{fimB/fimE}$ insertion,1
+S9,PLA_09,2311562|A|,2311562,$\it{ftp/ompC}$ snp intergenic,ftp/ompC snp intergenic (1),$\it{ftp/ompC}$ snp intergenic [2311562],0
+S9,PLA_02,2311594|G|,2311594,$\it{ftp/ompC}$ snp intergenic,ftp/ompC snp intergenic (2),$\it{ftp/ompC}$ snp intergenic [2311594],0
+S9,PL_02,2311594|G|,2311594,$\it{ftp/ompC}$ snp intergenic,ftp/ompC snp intergenic (2),$\it{ftp/ompC}$ snp intergenic [2311594],0
+S9,PLAC_01,2311562|A|,2311562,$\it{ftp/ompC}$ snp intergenic,ftp/ompC snp intergenic (1),$\it{ftp/ompC}$ snp intergenic [2311562],0
+S9,PLA_01,2311562|A|,2311562,$\it{ftp/ompC}$ snp intergenic,ftp/ompC snp intergenic (1),$\it{ftp/ompC}$ snp intergenic [2311562],0
+S9,PL_08,2311562|A|,2311562,$\it{ftp/ompC}$ snp intergenic,ftp/ompC snp intergenic (1),$\it{ftp/ompC}$ snp intergenic [2311562],0.13
+S9,PLAC_09,2311562|A|,2311562,$\it{ftp/ompC}$ snp intergenic,ftp/ompC snp intergenic (1),$\it{ftp/ompC}$ snp intergenic [2311562],0.08
+S9,PLA_04,2311562|A|,2311562,$\it{ftp/ompC}$ snp intergenic,ftp/ompC snp intergenic (1),$\it{ftp/ompC}$ snp intergenic [2311562],0
+S9,PLA_08,2311562|A|,2311562,$\it{ftp/ompC}$ snp intergenic,ftp/ompC snp intergenic (1),$\it{ftp/ompC}$ snp intergenic [2311562],0
+S9,PLAC_04,2311562|A|,2311562,$\it{ftp/ompC}$ snp intergenic,ftp/ompC snp intergenic (1),$\it{ftp/ompC}$ snp intergenic [2311562],0
+S9,PL_08,3352254|A|C,3352254,ArcB G258C,ArcB G258C,ArcB G258C,0.69
+S9,PLA_08,3352254|A|C,3352254,ArcB G258C,ArcB G258C,ArcB G258C,0
+S9,PL_09,1230269|A|D,1230269,HlyE E42D,HlyE E42D,HlyE E42D,0.1
+S9,PLAC_09,1230269|A|D,1230269,HlyE E42D,HlyE E42D,HlyE E42D,0
+S9,PLA_09,1230269|A|D,1230269,HlyE E42D,HlyE E42D,HlyE E42D,0
+S9,PLA_09,2562049|C|,2562049,$\it{yffN/yffO}$ snp intergenic,yffN/yffO snp intergenic,$\it{yffN/yffO}$ snp intergenic,0
+S9,PL_09,2562049|C|,2562049,$\it{yffN/yffO}$ snp intergenic,yffN/yffO snp intergenic,$\it{yffN/yffO}$ snp intergenic,0.1
+S9,PLAC_09,2562049|C|,2562049,$\it{yffN/yffO}$ snp intergenic,yffN/yffO snp intergenic,$\it{yffN/yffO}$ snp intergenic,0
+S9,PLA_08,4033698|A|Q,4033698,TrkH L185Q,TrkH L185Q,TrkH L185Q,1
+S9,PA_07,4033698|A|Q,4033698,TrkH L185Q,TrkH L185Q,TrkH L185Q,0.11
+S9,PLA_01,4033203|T|I,4033203,TrkH T20I,TrkH T20I,TrkH T20I,0.67
+S9,PA_10,4034301||,4034301,$\it{trkH}$ indel,trkH indel,$\it{trkH}$ indel,0.2
+S9,PLAC_10,4033698|A|Q,4033698,TrkH L185Q,TrkH L185Q,TrkH L185Q,1
+S9,PLA_01,4033698|A|Q,4033698,TrkH L185Q,TrkH L185Q,TrkH L185Q,0.31
+S9,PA_01,4033383|A|Q,4033383,TrkH L80Q,TrkH L80Q,TrkH L80Q,0.66
+S9,PLAC_09,4033383|A|Q,4033383,TrkH L80Q,TrkH L80Q,TrkH L80Q,0
+S9,PLAC_09,4033698|A|Q,4033698,TrkH L185Q,TrkH L185Q,TrkH L185Q,0.94
+S9,PLA_04,4033698|A|Q,4033698,TrkH L185Q,TrkH L185Q,TrkH L185Q,1
+S9,PLAC_07,4033698|A|Q,4033698,TrkH L185Q,TrkH L185Q,TrkH L185Q,1
+S9,PLAC_05,4033698|A|Q,4033698,TrkH L185Q,TrkH L185Q,TrkH L185Q,1
+S9,PA_04,4033610|T|C,4033610,TrkH G156C,TrkH G156C,TrkH G156C,0.68
+S9,PA_08,4033383|A|Q,4033383,TrkH L80Q,TrkH L80Q,TrkH L80Q,0.93
+S9,PA_03,4033608|A|E,4033608,TrkH V155E,TrkH V155E,TrkH V155E,0.22
+S9,PA_02,4033383|A|Q,4033383,TrkH L80Q,TrkH L80Q,TrkH L80Q,0.95
+S9,PL_07,4033698|A|Q,4033698,TrkH L185Q,TrkH L185Q,TrkH L185Q,1
+S9,PLA_03,4033698|A|Q,4033698,TrkH L185Q,TrkH L185Q,TrkH L185Q,1
+S9,PLAC_01,4033698|A|Q,4033698,TrkH L185Q,TrkH L185Q,TrkH L185Q,1
+S9,PLA_05,4033698|A|Q,4033698,TrkH L185Q,TrkH L185Q,TrkH L185Q,1
+S9,PLAC_01,4033203|T|I,4033203,TrkH T20I,TrkH T20I,TrkH T20I,0
+S9,PA_04,4033621|T|H,4033621,TrkH Q159H,TrkH Q159H,TrkH Q159H,0.15
+S9,PA_07,4033383|A|Q,4033383,TrkH L80Q,TrkH L80Q,TrkH L80Q,0.45
+S9,PA_07,4033458|A|Y,4033458,TrkH S105Y,TrkH S105Y,TrkH S105Y,0.15
+S9,PA_03,4033383|A|Q,4033383,TrkH L80Q,TrkH L80Q,TrkH L80Q,0.13
+S9,PLAC_06,4033698|A|Q,4033698,TrkH L185Q,TrkH L185Q,TrkH L185Q,1
+S9,PLA_06,4033698|A|Q,4033698,TrkH L185Q,TrkH L185Q,TrkH L185Q,1
+S9,PA_05,4033202|C|P,4033202,TrkH T20P,TrkH T20P,TrkH T20P,0.87
+S9,PLA_09,4033383|A|Q,4033383,TrkH L80Q,TrkH L80Q,TrkH L80Q,1
+S9,PLA_07,4033698|A|Q,4033698,TrkH L185Q,TrkH L185Q,TrkH L185Q,1
+S9,PLAC_04,4033698|A|Q,4033698,TrkH L185Q,TrkH L185Q,TrkH L185Q,1
+S9,PLA_10,4033698|A|Q,4033698,TrkH L185Q,TrkH L185Q,TrkH L185Q,1
+S9,PLAC_10,3473332|C|M,3473332,FusA I61M,FusA I61M,FusA I61M,0
+S9,PLA_04,3471700|C|L,3471700,FusA F605L,FusA F605L,FusA F605L,0.26
+S9,PLAC_10,3471686|A|L,3471686,FusA P610L,FusA P610L,FusA P610L,0
+S9,PLA_05,3471687|T|T,3471687,FusA P610T,FusA P610T,FusA P610T,0.66
+S9,PLA_04,3471736|C|L,3471736,FusA F593L,FusA F593L (1),FusA F593L [3471736],0.52
+S9,PLA_08,3473337|A|C,3473337,FusA G60C,FusA G60C,FusA G60C,0.17
+S9,PLA_08,3473339|T|H,3473339,FusA R59H,FusA R59H,FusA R59H,0.16
+S9,PLA_10,3473332|C|M,3473332,FusA I61M,FusA I61M,FusA I61M,0.39
+S9,PLA_10,3471686|A|L,3471686,FusA P610L,FusA P610L,FusA P610L,0.54
+S9,PLA_08,3471513|C|A,3471513,FusA T668A,FusA T668A,FusA T668A,0.13
+S9,PLA_08,3471482|A|V,3471482,FusA A678V,FusA A678V,FusA A678V,0.23
+S9,PLA_03,3473169|A|F,3473169,FusA V116F,FusA V116F,FusA V116F,1
+S9,PLA_06,3473332|C|M,3473332,FusA I61M,FusA I61M,FusA I61M,0.85
+S9,PLA_01,3471738|G|L,3471738,FusA F593L,FusA F593L (2),FusA F593L [3471738],0.65
+S9,PLA_09,3473379|A|C,3473379,FusA G46C,FusA G46C,FusA G46C,0.22
+S9,PLA_05,3473166|A|C,3473166,FusA G117C,FusA G117C,FusA G117C,0.21
+S9,PLA_02,3471738|G|L,3471738,FusA F593L,FusA F593L (2),FusA F593L [3471738],0.75
+S9,PA_01,3471686|A|L,3471686,FusA P610L,FusA P610L,FusA P610L,1
+S9,PLAC_09,3473379|A|C,3473379,FusA G46C,FusA G46C,FusA G46C,0
+S9,PLAC_06,3473339|T|H,3473339,FusA R59H,FusA R59H,FusA R59H,0
+S9,PLAC_09,3473332|C|M,3473332,FusA I61M,FusA I61M,FusA I61M,0
+S9,PLAC_06,3473332|C|M,3473332,FusA I61M,FusA I61M,FusA I61M,0
+S9,PA_03,3471686|A|L,3471686,FusA P610L,FusA P610L,FusA P610L,1
+S9,PA_04,3471686|A|L,3471686,FusA P610L,FusA P610L,FusA P610L,1
+S9,PA_05,3471686|A|L,3471686,FusA P610L,FusA P610L,FusA P610L,0.89
+S9,PLAC_05,3473166|A|C,3473166,FusA G117C,FusA G117C,FusA G117C,0
+S9,PLAC_05,3471687|T|T,3471687,FusA P610T,FusA P610T,FusA P610T,0
+S9,PA_06,3471686|A|L,3471686,FusA P610L,FusA P610L,FusA P610L,1
+S9,PLAC_04,3471736|C|L,3471736,FusA F593L,FusA F593L (1),FusA F593L [3471736],0
+S9,PA_02,3471686|A|L,3471686,FusA P610L,FusA P610L,FusA P610L,1
+S9,PA_07,3471686|A|L,3471686,FusA P610L,FusA P610L,FusA P610L,1
+S9,PA_10,3471686|A|L,3471686,FusA P610L,FusA P610L,FusA P610L,0.94
+S9,PA_08,3471686|A|L,3471686,FusA P610L,FusA P610L,FusA P610L,1
+S9,PLAC_01,3471738|G|L,3471738,FusA F593L,FusA F593L (2),FusA F593L [3471738],0
+S9,PLAC_04,3471700|C|L,3471700,FusA F605L,FusA F605L,FusA F605L,0
+S9,PA_09,3471686|A|L,3471686,FusA P610L,FusA P610L,FusA P610L,0.7
+S9,PA_02,3996454|A|V,3996454,XerC V56V,XerC V56V,XerC V56V,0.38
+S9,PA_02,4611988|A|Q,4611988,OsmY L198Q,OsmY L198Q,OsmY L198Q,0.64
+S9,PC_03,6302|A|I,6302,Yaaa S53I,Yaaa S53I,Yaaa S53I,0.16
+S9,PC_07,6305|G|T,6305,YaaA I52T,YaaA I52T,YaaA I52T,0.13
+S9,PA_03,6305|G|T,6305,YaaA I52T,YaaA I52T,YaaA I52T,0.12
+S9,PA_06,6305|G|T,6305,YaaA I52T,YaaA I52T,YaaA I52T,0.11
+S9,PA_08,6305|G|T,6305,YaaA I52T,YaaA I52T,YaaA I52T,0.1
+S9,PC_10,6305|G|T,6305,YaaA I52T,YaaA I52T,YaaA I52T,0.11
+S9,PA_09,129778|T|T,129778,YacH A495T,YacH A495T,YacH A495T,0.14
+S9,PA_05,129778|T|T,129778,YacH A495T,YacH A495T,YacH A495T,0.14
+S9,PA_05,4117936|T|E,4117936,GlpF V52E,GlpF V52E,GlpF V52E,0.11
+S9,PLAC_05,4117936|T|E,4117936,GlpF V52E,GlpF V52E,GlpF V52E,0
+S9,PLAC_06,4117936|T|E,4117936,GlpF V52E,GlpF V52E,GlpF V52E,0.49
+S9,PLAC_04,4117936|T|E,4117936,GlpF V52E,GlpF V52E,GlpF V52E,0
+S9,PLAC_01,4117936|T|E,4117936,GlpF V52E,GlpF V52E,GlpF V52E,0
+S9,PA_09,4117936|T|E,4117936,GlpF V52E,GlpF V52E,GlpF V52E,0.27
+S9,PLAC_09,4117936|T|E,4117936,GlpF V52E,GlpF V52E,GlpF V52E,0
+S9,PLAC_10,4117936|T|E,4117936,GlpF V52E,GlpF V52E,GlpF V52E,0
+S9,PA_06,1992929|T|E,1992929,UvrC V593E,UvrC V593E,UvrC V593E,1
+S9,PA_06,1992687|T|E,1992687,PgsA V44E,PgsA V44E,PgsA V44E,1
+S9,PLA_04,2162882|C|L,2162882,BaeS F3L,BaeS F3L,BaeS F3L,0
+S9,PLAC_04,2162882|C|L,2162882,BaeS F3L,BaeS F3L,BaeS F3L,0
+S9,PA_07,2162882|C|L,2162882,BaeS F3L,BaeS F3L,BaeS F3L,0.21
+S9,PA_10,4176271|T|Y,4176271,TufB D110Y,TufB D110Y,TufB D110Y,0.35
+S9,PA_10,1215361|G|L,1215361,BluF I39L,BluF I39L,BluF I39L,1
+S9,PLAC_01,3638193|A|T,3638193,PitA T184T,PitA T184T,PitA T184T,0
+S9,PC_08,3638193|A|T,3638193,PitA T184T,PitA T184T,PitA T184T,0.13
+S9,PLAC_09,3638193|A|T,3638193,PitA T184T,PitA T184T,PitA T184T,0
+S9,PC_03,3638193|A|T,3638193,PitA T184T,PitA T184T,PitA T184T,0.1
+S9,PLAC_04,3638193|A|T,3638193,PitA T184T,PitA T184T,PitA T184T,0
+S9,PC_01,3638193|A|T,3638193,PitA T184T,PitA T184T,PitA T184T,0.15
+S9,PLAC_07,3638193|A|T,3638193,PitA T184T,PitA T184T,PitA T184T,0
+S9,PC_02,3638193|A|T,3638193,PitA T184T,PitA T184T,PitA T184T,0.11
+S9,PC_06,1904774|T|,1904774,$\it{manZ/yobD}$ snp intergenic,manZ/yobD snp intergenic,$\it{manZ/yobD}$ snp intergenic,0.1
+S9,PC_01,1904774|T|,1904774,$\it{manZ/yobD}$ snp intergenic,manZ/yobD snp intergenic,$\it{manZ/yobD}$ snp intergenic,0.1
+S9,PLAC_05,1904774|T|,1904774,$\it{manZ/yobD}$ snp intergenic,manZ/yobD snp intergenic,$\it{manZ/yobD}$ snp intergenic,0
+S9,PC_07,1904774|T|,1904774,$\it{manZ/yobD}$ snp intergenic,manZ/yobD snp intergenic,$\it{manZ/yobD}$ snp intergenic,0.11
+S9,PC_01,4220007|G|G,4220007,AceK V471G,AceK V471G,AceK V471G,0.12
+S9,PC_08,4220007|G|G,4220007,AceK V471G,AceK V471G,AceK V471G,0.15
+S9,PC_07,4220007|G|G,4220007,AceK V471G,AceK V471G,AceK V471G,0.14
+S9,PLAC_10,4220007|G|G,4220007,AceK V471G,AceK V471G,AceK V471G,0
+S9,PC_02,4220007|G|G,4220007,AceK V471G,AceK V471G,AceK V471G,0.16
+S9,PC_06,4001574|A|Q,4001574,CorA L50Q,CorA L50Q,CorA L50Q,0.21
+S9,PC_01,4001648|A|N,4001648,CorA H75N,CorA H75N,CorA H75N,0.53
+S9,PC_05,4001574|A|Q,4001574,CorA L50Q,CorA L50Q,CorA L50Q,0.18
+S9,PC_01,4467491||,4467491,$\it{mgtL/mgtA}$ indel,mgtL/mgtA indel,$\it{mgtL/mgtA}$ indel,0.36
+S9,PC_01,3817494||,3817494,$\it{yicC}$ insertion,yicC insertion,$\it{yicC}$ insertion,0.56
+S9,PC_05,2566930|T|Q,2566930,EutH P393Q,EutH P393Q,EutH P393Q,0.16
+S9,PLAC_01,2566930|T|Q,2566930,EutH P393Q,EutH P393Q,EutH P393Q,0
+S9,PLAC_04,2566930|T|Q,2566930,EutH P393Q,EutH P393Q,EutH P393Q,0
+S9,PC_02,2566930|T|Q,2566930,EutH P393Q,EutH P393Q,EutH P393Q,0.16
+S9,PC_02,1645740|A|S,1645740,RelB P45S,RelB P45S,RelB P45S,1
+S9,PC_03,166833|T|S|S,166833,$\it{mrcB}$ snp,mrcB snp,$\it{mrcB}$ snp,1
+S9,PC_03,2411241|A|S,2411241,YfbS A38S,YfbS A38S,YfbS A38S,0.12
+S9,PC_04,1188509||,1188509,phoQ IS2 insertion,phoQ IS2 insertion,phoQ IS2 insertion,0.47
+S9,PC_04,1189637||,1189637,phoQ IS5 insertion,phoQ IS5 insertion,phoQ IS5 insertion,0.34
+S9,PC_03,1189662|A|C,1189662,PhoQ G39C,PhoQ G39C,PhoQ G39C,1
+S9,PC_07,1189699|AGCACC|,1189699,$\it{phoQ}$ indel,phoQ indel,$\it{phoQ}$ indel,0.44
+S9,PC_03,631067|T|S,631067,CstA A392S,CstA A392S,CstA A392S,0.16
+S9,PC_06,631067|T|S,631067,CstA A392S,CstA A392S,CstA A392S,0.15
+S9,PC_03,1400594|A|F,1400594,AbgT L394F,AbgT L394F,AbgT L394F,0.18
+S9,PLAC_01,1087565|G|I,1087565,PgaC I94I,PgaC I94I,PgaC I94I,0
+S9,PLA_08,1087590|C|G,1087590,PgaC E86G,PgaC E86G,PgaC E86G,0.11
+S9,PLA_05,1087590|C|G,1087590,PgaC E86G,PgaC E86G,PgaC E86G,0
+S9,PC_09,1087565|G|I,1087565,PgaC I94I,PgaC I94I,PgaC I94I,0.15
+S9,PC_06,1087606|G|L,1087606,PgaC I81L,PgaC I81L,PgaC I81L,0.13
+S9,PC_03,1087606|G|L,1087606,PgaC I81L,PgaC I81L,PgaC I81L,0.11
+S9,PC_03,1087565|G|I,1087565,PgaC I94I,PgaC I94I,PgaC I94I,0.14
+S9,PL_05,1087590|C|G,1087590,PgaC E86G,PgaC E86G,PgaC E86G,0.1
+S9,PLAC_09,1087565|G|I,1087565,PgaC I94I,PgaC I94I,PgaC I94I,0.12
+S9,PLAC_06,1087565|G|I,1087565,PgaC I94I,PgaC I94I,PgaC I94I,0.1
+S9,PLAC_05,1087590|C|G,1087590,PgaC E86G,PgaC E86G,PgaC E86G,0
+S9,PC_04,1261649|A|V,1261649,Prs A76V,Prs A76V,Prs A76V,0.77
+S9,PC_05,1261845|A|S,1261845,Prs A11S,Prs A11S,Prs A11S,0.19
+S9,PC_10,1261641|A|C,1261641,Prs R79C,Prs R79C,Prs R79C,1
+S9,PC_10,1261424|G|T,1261424,Prs I151T,Prs I151T,Prs I151T,0.83
+S9,PC_07,1261649|A|V,1261649,Prs A76V,Prs A76V,Prs A76V,0.21
+S9,PC_05,1261535|A|V,1261535,Prs A114V,Prs A114V,Prs A114V,1
+S9,PC_06,1261845|A|S,1261845,Prs A11S,Prs A11S,Prs A11S,0.19
+S9,PC_06,1261535|A|V,1261535,Prs A114V,Prs A114V,Prs A114V,0.68
+S9,PLAC_01,847955|A|V,847955,GlnH A17V,GlnH A17V,GlnH A17V,0
+S9,PLA_09,847955|A|V,847955,GlnH A17V,GlnH A17V,GlnH A17V,0.43
+S9,PC_05,847955|A|V,847955,GlnH A17V,GlnH A17V,GlnH A17V,0.29
+S9,PLA_01,847955|A|V,847955,GlnH A17V,GlnH A17V,GlnH A17V,0.35
+S9,PC_07,847955|A|V,847955,GlnH A17V,GlnH A17V,GlnH A17V,0.22
+S9,PLAC_09,847955|A|V,847955,GlnH A17V,GlnH A17V,GlnH A17V,0
+S9,PLAC_10,847955|A|V,847955,GlnH A17V,GlnH A17V,GlnH A17V,0.34
+S9,PC_05,4227771|A|Q,4227771,YjbB L14Q,YjbB L14Q,YjbB L14Q,0.68
+S9,PC_06,4227771|A|Q,4227771,YjbB L14Q,YjbB L14Q,YjbB L14Q,0.17
+S9,PC_06,2751428|C|P,2751428,NadK T200P,NadK T200P,NadK T200P,0.18
+S9,PC_05,2751428|C|P,2751428,NadK T200P,NadK T200P,NadK T200P,0.18
+S9,PC_06,3491706|G|,3491706,$\it{yhfG/ppiA}$ snp intergenic,yhfG/ppiA snp intergenic (2),$\it{yhfG/ppiA}$ snp intergenic [3491706],0.14
+S9,PC_07,3491701|A|,3491701,$\it{yhfG/ppiA}$ snp intergenic,yhfG/ppiA snp intergenic (1),$\it{yhfG/ppiA}$ snp intergenic [3491701],0.1
+S9,PLAC_05,3491706|G|,3491706,$\it{yhfG/ppiA}$ snp intergenic,yhfG/ppiA snp intergenic (2),$\it{yhfG/ppiA}$ snp intergenic [3491706],0
+S9,PC_08,3794967|A|E,3794967,WaaF D13E,WaaF D13E,WaaF D13E,1
+S9,PC_06,3794967|A|E,3794967,WaaF D13E,WaaF D13E,WaaF D13E,0.23
+S9,PC_08,555503|C|S,555503,CysS Y298S,CysS Y298S,CysS Y298S,1
+S9,PC_06,555503|C|S,555503,CysS Y298S,CysS Y298S,CysS Y298S,0.21
+S9,PC_08,1619397||,1619397,$\it{marR}$ indel,marR indel,$\it{marR}$ indel,0.18
+S9,PC_08,1619468|T|*,1619468,MarR Q117*,MarR Q117*,MarR Q117*,0.13
+S9,PC_09,1798903|G|P,1798903,PheS A14P,PheS A14P,PheS A14P,1
+S9,PC_10,3934246|C|R,3934246,RbsA S157R,RbsA S157R,RbsA S157R,0.78
+S9,PLA_01,459136|A|L,459136,Lon L83L,Lon L83L,Lon L83L,0.67
+S9,PLAC_01,459136|A|L,459136,Lon L83L,Lon L83L,Lon L83L,0
+S9,PLAC_01,3123782|A|S,3123782,GlcB S8S,GlcB S8S,GlcB S8S,0
+S9,PLA_01,3123782|A|S,3123782,GlcB S8S,GlcB S8S,GlcB S8S,0.77
+S9,PLAC_01,2984856|A|V,2984856,YqeF A246V,YqeF A246V,YqeF A246V,0
+S9,PLA_01,2984856|A|V,2984856,YqeF A246V,YqeF A246V,YqeF A246V,0.72
+S9,PLAC_01,3898714|G|A,3898714,YieK V227A,YieK V227A,YieK V227A,0
+S9,PLA_01,3898714|G|A,3898714,YieK V227A,YieK V227A,YieK V227A,0.57
+S9,PLA_01,74166|T|D,74166,ThiP G119D,ThiP G119D,ThiP G119D,0.69
+S9,PLAC_01,74166|T|D,74166,ThiP G119D,ThiP G119D,ThiP G119D,0
+S9,PLAC_01,2534661|C|P,2534661,PtsI L199P,PtsI L199P,PtsI L199P,0
+S9,PLA_01,2534661|C|P,2534661,PtsI L199P,PtsI L199P,PtsI L199P,0.71
+S9,PLAC_01,4030058|C|R,4030058,FadB K305R,FadB K305R,FadB K305R,0
+S9,PLA_01,4030058|C|R,4030058,FadB K305R,FadB K305R,FadB K305R,0.72
+S9,PLA_01,2574462|G|A,2574462,EutQ V181A,EutQ V181A,EutQ V181A,0.69
+S9,PLAC_01,2574462|G|A,2574462,EutQ V181A,EutQ V181A,EutQ V181A,0
+S9,PLAC_04,2229176|G|,2229176,$\it{yohP/dusC}$ snp intergenic,yohP/dusC snp intergenic,$\it{yohP/dusC}$ snp intergenic,0
+S9,PLA_01,2229176|G|,2229176,$\it{yohP/dusC}$ snp intergenic,yohP/dusC snp intergenic,$\it{yohP/dusC}$ snp intergenic,0.13
+S9,PLAC_01,2229176|G|,2229176,$\it{yohP/dusC}$ snp intergenic,yohP/dusC snp intergenic,$\it{yohP/dusC}$ snp intergenic,0
+S9,PLAC_01,4579346|T|,4579346,$\it{mcrB/symE}$ snp intergenic,mcrB/symE snp intergenic,$\it{mcrB/symE}$ snp intergenic,0
+S9,PLA_01,4579346|T|,4579346,$\it{mcrB/symE}$ snp intergenic,mcrB/symE snp intergenic,$\it{mcrB/symE}$ snp intergenic,0.62
+S9,PLA_01,4338198|T|,4338198,$\it{adiY/adiA}$ snp intergenic,adiY/adiA snp intergenic,$\it{adiY/adiA}$ snp intergenic,0.56
+S9,PLAC_01,4338198|T|,4338198,$\it{adiY/adiA}$ snp intergenic,adiY/adiA snp intergenic,$\it{adiY/adiA}$ snp intergenic,0
+S9,PLAC_01,1058165||,1058165,$\it{torC}$ IS insertion,torC IS insertion,$\it{torC}$ IS insertion,0
+S9,PLA_01,1058165||,1058165,$\it{torC}$ IS insertion,torC IS insertion,$\it{torC}$ IS insertion,0.71
+S9,PLA_02,236357|T|I,236357,DnaQ I97I,DnaQ I97I,DnaQ I97I,1
+S9,PLA_02,1333385|C|L,1333385,TopA F780L,TopA F780L,TopA F780L,0.27
+S9,PLA_02,3214407|C|A,3214407,RpoD V454A,RpoD V454A,RpoD V454A,1
+S9,PLA_02,3614631|G|C,3614631,NikA Y322C,NikA Y322C,NikA Y322C,0.71
+S9,PLA_02,786144|C|A,786144,AroG V171A,AroG V171A,AroG V171A,0.23
+S9,PLA_02,1291338|C|,1291338,$\it{rssB/galU}$ snp intergenic,rssB/galU snp intergenic,$\it{rssB/galU}$ snp intergenic,0.74
+S9,PLA_02,2662334|A|,2662334,$\it{iscR/trmJ}$ snp intergenic,iscR/trmJ snp intergenic,$\it{iscR/trmJ}$ snp intergenic,1
+S9,PLA_02,4397612||,4397612,$\it{mutL}$ indel,mutL indel,$\it{mutL}$ indel,1
+S9,PLAC_09,3659164|G|,3659164,$\it{gadF/mdtE}$ snp intergenic,gadF/mdtE snp intergenic (2),$\it{gadF/mdtE}$ snp intergenic [3659164],0
+S9,PLA_09,3659164|G|,3659164,$\it{gadF/mdtE}$ snp intergenic,gadF/mdtE snp intergenic (2),$\it{gadF/mdtE}$ snp intergenic [3659164],0
+S9,PLA_03,3659163|G|,3659163,$\it{gadF/mdtE}$ snp intergenic,gadF/mdtE snp intergenic (1),$\it{gadF/mdtE}$ snp intergenic [3659163],0.27
+S9,PLA_03,2254940||,2254940,$\it{rihB}$ IS insertion,rihB IS insertion,$\it{rihB}$ IS insertion,0.26
+S9,PLA_03,4012779||,4012779,$\it{metR/ysgA}$ large_deletion,metR/ysgA large_deletion,$\it{metR/ysgA}$ large_deletion,1
+S9,PLAC_04,925901||,925901,$\it{serW}$ IS insertion,serW IS insertion,$\it{serW}$ IS insertion,0
+S9,PLA_04,925901||,925901,$\it{serW}$ IS insertion,serW IS insertion,$\it{serW}$ IS insertion,0.14
+S9,PLAC_05,4542987||,4542987,$\it{fimE/fimA}$ indel,fimE/fimA indel,$\it{fimE/fimA}$ indel,0
+S9,PLAC_10,4542987||,4542987,$\it{fimE/fimA}$ indel,fimE/fimA indel,$\it{fimE/fimA}$ indel,0
+S9,PLAC_09,4542987||,4542987,$\it{fimE/fimA}$ indel,fimE/fimA indel,$\it{fimE/fimA}$ indel,0
+S9,PLA_10,4542987||,4542987,$\it{fimE/fimA}$ indel,fimE/fimA indel,$\it{fimE/fimA}$ indel,0.14
+S9,PLA_05,4542987||,4542987,$\it{fimE/fimA}$ indel,fimE/fimA indel,$\it{fimE/fimA}$ indel,0.18
+S9,PLAC_01,4542987||,4542987,$\it{fimE/fimA}$ indel,fimE/fimA indel,$\it{fimE/fimA}$ indel,0
+S9,PLA_06,135606|G|,135606,$\it{speE}$ indel,speE indel,$\it{speE}$ indel,0.75
+S9,PLAC_09,135606|G|,135606,$\it{speE}$ indel,speE indel,$\it{speE}$ indel,0
+S9,PLAC_06,135606|G|,135606,$\it{speE}$ indel,speE indel,$\it{speE}$ indel,0
+S9,PLA_07,822909|A|G,822909,ClsB G277G,ClsB G277G,ClsB G277G,0.81
+S9,PLAC_07,822909|A|G,822909,ClsB G277G,ClsB G277G,ClsB G277G,0
+S9,PLAC_01,822909|A|G,822909,ClsB G277G,ClsB G277G,ClsB G277G,0.41
+S9,PLAC_07,4104926||,4104926,$\it{cpxA}$ indel,cpxA indel (1),$\it{cpxA}$ indel [4104926],0
+S9,PLAC_10,4104929||,4104929,$\it{cpxA}$ indel,cpxA indel (2),$\it{cpxA}$ indel [4104929],0
+S9,PLA_07,4104926||,4104926,$\it{cpxA}$ indel,cpxA indel (1),$\it{cpxA}$ indel [4104926],0.81
+S9,PLAC_01,4104926||,4104926,$\it{cpxA}$ indel,cpxA indel (1),$\it{cpxA}$ indel [4104926],0.4
+S9,PLAC_01,4104942|G|L,4104942,CpxA I12L,CpxA I12L,CpxA I12L,0.16
+S9,PLAC_01,4104944||,4104944,$\it{cpxA}$ indel,cpxA indel (3),$\it{cpxA}$ indel [4104944],0
+S9,PLAC_07,397126|A|E,397126,SbmA V163E,SbmA V163E,SbmA V163E,0
+S9,PLA_07,397126|A|E,397126,SbmA V163E,SbmA V163E,SbmA V163E,0.15
+S9,PLAC_10,397585||,397585,$\it{sbmA}$ indel,sbmA indel (1),$\it{sbmA}$ indel [397585],0
+S9,PLAC_01,397126|A|E,397126,SbmA V163E,SbmA V163E,SbmA V163E,0
+S9,PLAC_01,397774||,397774,$\it{sbmA}$ indel,sbmA indel (2),$\it{sbmA}$ indel [397774],0.37
+S9,PLAC_07,396624||,396624,$\it{ampH/sbmA}$ IS insertion,ampH/sbmA IS insertion (2),$\it{ampH/sbmA}$ IS insertion [396624],0
+S9,PLAC_07,396591||,396591,$\it{ampH/sbmA}$ IS insertion,ampH/sbmA IS insertion (1),$\it{ampH/sbmA}$ IS insertion [396591],0
+S9,PLA_07,396624||,396624,$\it{ampH/sbmA}$ IS insertion,ampH/sbmA IS insertion (2),$\it{ampH/sbmA}$ IS insertion [396624],0.13
+S9,PLA_07,396591||,396591,$\it{ampH/sbmA}$ IS insertion,ampH/sbmA IS insertion (1),$\it{ampH/sbmA}$ IS insertion [396591],0.66
+S9,PLAC_01,396591||,396591,$\it{ampH/sbmA}$ IS insertion,ampH/sbmA IS insertion (1),$\it{ampH/sbmA}$ IS insertion [396591],0
+S9,PLA_09,1348077|T|H,1348077,Rnb R279H,Rnb R279H,Rnb R279H,0.13
+S9,PLAC_09,1348077|T|H,1348077,Rnb R279H,Rnb R279H,Rnb R279H,0
+S9,PLAC_09,4388892|A|V,4388892,MscM G160V,MscM G160V,MscM G160V,0
+S9,PLA_09,4388892|A|V,4388892,MscM G160V,MscM G160V,MscM G160V,1
+S9,PLA_09,1544571||,1544571,$\it{narU/yddK}$ indel,narU/yddK indel,$\it{narU/yddK}$ indel,1
+S9,PLAC_09,1544571||,1544571,$\it{narU/yddK}$ indel,narU/yddK indel,$\it{narU/yddK}$ indel,0
+S9,PLA_09,3993186||,3993186,$\it{cyaA}$ large deletion,cyaA large deletion,$\it{cyaA}$ large deletion,1
+S9,PLAC_09,3993186||,3993186,$\it{cyaA}$ large deletion,cyaA large deletion,$\it{cyaA}$ large deletion,0
+S9,PLAC_10,161589|A|V,161589,ThpR A148V,ThpR A148V,ThpR A148V,0
+S9,PLA_10,161589|A|V,161589,ThpR A148V,ThpR A148V,ThpR A148V,0.1
+S9,PLAC_10,4449870|T|,4449870,$\it{ppa/ytfQ}$ snp intergenic,ppa/ytfQ snp intergenic,$\it{ppa/ytfQ}$ snp intergenic,0
+S9,PLA_10,4449870|T|,4449870,$\it{ppa/ytfQ}$ snp intergenic,ppa/ytfQ snp intergenic,$\it{ppa/ytfQ}$ snp intergenic,0.43
+S9,PLAC_04,295280||,295280,$\it{yagN}$ IS insertion,yagN IS insertion,$\it{yagN}$ IS insertion,0
+S9,PLA_10,295280||,295280,$\it{yagN}$ IS insertion,yagN IS insertion,$\it{yagN}$ IS insertion,0.46
+S9,PLAC_10,295280||,295280,$\it{yagN}$ IS insertion,yagN IS insertion,$\it{yagN}$ IS insertion,0
+S9,PLAC_10,1591920|A|L,1591920,HipA P86L,HipA P86L,HipA P86L,1
+S9,PLAC_09,1591920|A|L,1591920,HipA P86L,HipA P86L,HipA P86L,1
+S9,PLAC_01,1591920|A|L,1591920,HipA P86L,HipA P86L,HipA P86L,0.53
+S9,PLAC_04,1591920|A|L,1591920,HipA P86L,HipA P86L,HipA P86L,1
+S9,PLAC_05,1591920|A|L,1591920,HipA P86L,HipA P86L,HipA P86L,1
+S9,PLAC_07,1591920|A|L,1591920,HipA P86L,HipA P86L,HipA P86L,1
+S9,PLAC_06,1591920|A|L,1591920,HipA P86L,HipA P86L,HipA P86L,0.45
+S9,PLAC_01,3822173||,3822173,$\it{rpoZ}$ indel,rpoZ indel,$\it{rpoZ}$ indel,0.61
+S9,PLAC_10,3822173||,3822173,$\it{rpoZ}$ indel,rpoZ indel,$\it{rpoZ}$ indel,1
+S9,PLAC_05,3822173||,3822173,$\it{rpoZ}$ indel,rpoZ indel,$\it{rpoZ}$ indel,1
+S9,PLAC_06,3822173||,3822173,$\it{rpoZ}$ indel,rpoZ indel,$\it{rpoZ}$ indel,0.47
+S9,PLAC_07,3822173||,3822173,$\it{rpoZ}$ indel,rpoZ indel,$\it{rpoZ}$ indel,1
+S9,PLAC_09,3822173||,3822173,$\it{rpoZ}$ indel,rpoZ indel,$\it{rpoZ}$ indel,0.93
+S9,PLAC_04,3822173||,3822173,$\it{rpoZ}$ indel,rpoZ indel,$\it{rpoZ}$ indel,1
+S9,PLAC_01,3326144||,3326144,$\it{ftsH}$ indel,ftsH indel,$\it{ftsH}$ indel,0.61
+S9,PLAC_04,3326144||,3326144,$\it{ftsH}$ indel,ftsH indel,$\it{ftsH}$ indel,1
+S9,PLAC_07,3326144||,3326144,$\it{ftsH}$ indel,ftsH indel,$\it{ftsH}$ indel,1
+S9,PLAC_05,3326144||,3326144,$\it{ftsH}$ indel,ftsH indel,$\it{ftsH}$ indel,1
+S9,PLAC_06,3326602|CAG|,3326602,ftsH small_ins,ftsH small_ins,ftsH small_ins,0
+S9,PLAC_06,3326144||,3326144,$\it{ftsH}$ indel,ftsH indel,$\it{ftsH}$ indel,0.47
+S9,PLAC_04,2174844||,2174844,$\it{gatA}$ insertion,gatA insertion,$\it{gatA}$ insertion,1
+S9,PLAC_05,2174844||,2174844,$\it{gatA}$ insertion,gatA insertion,$\it{gatA}$ insertion,1
+S9,PLAC_01,2174844||,2174844,$\it{gatA}$ insertion,gatA insertion,$\it{gatA}$ insertion,0.59
+S9,PLAC_07,2174844||,2174844,$\it{gatA}$ insertion,gatA insertion,$\it{gatA}$ insertion,1
+S9,PLAC_06,2174844||,2174844,$\it{gatA}$ insertion,gatA insertion,$\it{gatA}$ insertion,0.49
+S9,PLAC_01,2825520|T|*,2825520,MltB C19*,MltB C19*,MltB C19*,0.27
+S9,PLAC_04,1502772|A|T,1502772,YdcL A106T,YdcL A106T,YdcL A106T,0.18
+S9,PLAC_04,1293196||,1293196,$\it{hns/tdk}$ insertion,hns/tdk insertion,$\it{hns/tdk}$ insertion,0.48
+S9,PLAC_05,1679807|A|D,1679807,YdgI G84D,YdgI G84D,YdgI G84D,0.11
+S9,PLAC_06,1158872|G|R,1158872,PtsG T335R,PtsG T335R,PtsG T335R,0.46
+S9,PLAC_05,1158872|G|R,1158872,PtsG T335R,PtsG T335R,PtsG T335R,0
+S9,PLAC_06,2352111|T|E,2352111,GlpT D88E,GlpT D88E,GlpT D88E,0.49
+S9,PLAC_06,1937499||,1937499,$\it{yebK}$ insertion,yebK insertion,$\it{yebK}$ insertion,0.47
+S9,PLAC_07,2758577|T|K,2758577,YfjH N8K,YfjH N8K,YfjH N8K,0.63
+S9,PLAC_10,1388114|C|,1388114,$\it{tyrR}$ indel,tyrR indel,$\it{tyrR}$ indel,0.89

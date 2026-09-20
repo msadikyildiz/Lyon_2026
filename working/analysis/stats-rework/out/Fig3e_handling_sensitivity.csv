@@ -1,0 +1,3 @@
+scenario,n,median,mad_scaled
+primary; retain confirmed zero with possible handling failure,6,4.807692307692308e-07,1.1840226050565571e-07
+omit day 2 replicate 1 at 3 h,5,5.000000000000001e-07,8.236678991697786e-08

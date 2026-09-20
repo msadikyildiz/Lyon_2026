@@ -1,0 +1,10 @@
+matrix_label,label,display_label,coordinate,mutation_id
+hipA P86L,hipA P86L,HipA P86L,1591920,1591920|G|A|L
+gatA mobile_element_insertion,gatA mobile_element_insertion,gatA IS5 insertion,2174844,2174844|TTAG||
+gyrA S83L,gyrA S83L,GyrA S83L,2339173,2339173|G|A|L
+ftsH small_indel,ftsH small_indel,ftsH indel,3326144,3326144|CAGACCAGCGCC||
+selB small_indel,selB small_indel,selB indel,3758381,3758381|A|TG|
+rpoZ small_indel,rpoZ small_indel,rpoZ indel,3822173,3822173|CCGCGCG||
+glvC small_indel,glvC small_indel,glvC indel,3862562,3862562|A||
+trkH L185Q,trkH L185Q,TrkH L185Q,4033698,4033698|T|A|Q
+fimB/fimE mobile_element_insertion,fimB/fimE mobile_element_insertion,fimB/E IS5 insertion,4542020,4542020|TTAG||

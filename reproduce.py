@@ -36,6 +36,7 @@ def run(root, args, log):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--single-cell', action='store_true', help='Recompute single-cell analysis from H5 counts with the locked R environment, including DGE.')
     parser.add_argument('--refit', action='store_true', help='Refit all six datasets in an isolated copy, then run the full pipeline there.')
     parser.add_argument('--jobs', type=int, default=2, help='Concurrent datasets during refitting (default: 2).')
     parser.add_argument('--output', type=Path, help='New directory for the isolated refit run; must not exist.')
@@ -55,7 +56,7 @@ def main():
         shutil.copytree(ROOT, root, ignore=shutil.ignore_patterns('.git', 'runs', '__pycache__', '.DS_Store', '.venv'))
         # Remove only generated directories inside the newly created refit copy.
         for relative in [SCRIPTS / 'out', Path('working/source-data'), Path('working/figures-assembled'),
-                         Path('data/genomics/generated_tables')]:
+                         Path('data/genomics/generated_tables'), Path('data/genomics/plot_tables')]:
             if (root / relative).exists():
                 shutil.rmtree(root / relative)
         cache = root / SCRIPTS / 'cache'
@@ -74,10 +75,18 @@ def main():
             run(root, ['scripts/compare_caches.py', str(root / 'reference-cache'), str(root / SCRIPTS / 'cache'), str(root / 'runs/refit-comparison.json')], logs / 'compare-refits.log')
         run(root, ['-m', 'unittest', 'discover', '-s', SCRIPTS / 'tests', '-v'], logs / 'tests.log')
         run(root, ['scripts/reproduce_genomics.py'], logs / 'genomics.log')
+        run(root, ['scripts/reproduce_genomic_plots.py'], logs / 'genomic-plots.log')
+        if args.single_cell:
+            with (logs/'single-cell-R.log').open('w') as stream:
+                result=subprocess.run(['Rscript',str(root/'scripts/reproduce_single_cell.R'),'--dge'],cwd=root,stdout=stream,stderr=subprocess.STDOUT)
+            if result.returncode:raise RuntimeError('Single-cell R calculation failed; see runs/logs/single-cell-R.log')
+        run(root, ['scripts/reproduce_single_cell.py'], logs/'single-cell-plots.log')
+        run(root, ['scripts/reproduce_schematic_figures.py'], logs/'schematic-figures.log')
         for step in STEPS:
             run(root, [SCRIPTS / step], logs / (step + '.log'))
             if step == 'final_stats.py':
                 run(root, ['scripts/check_primary.py'], logs / 'primary-regression.log')
+        run(root, ['scripts/assemble_additional_figures.py'], logs/'additional-figures.log')
         run(root, ['scripts/reproduce_trajectories.py'], logs / 'trajectories.log')
         if args.refit:
             run(root, ['scripts/compare_outputs.py', str(ROOT), str(root), '--report', str(root/'runs/output-comparison.json')], logs/'compare-outputs.log')
@@ -86,8 +95,8 @@ def main():
         raise
     report = {'mode': 'raw-refit' if args.refit else 'cached', 'python': platform.python_version(),
               'platform': platform.platform(), 'seconds': round(time.time()-start, 2),
-              'steps': ['scripts/reproduce_genomics.py'] + STEPS + ['scripts/reproduce_trajectories.py'], 'status': 'passed',
-              'coverage': 'docs/FIGURE_COVERAGE.md',
+              'steps': ['scripts/reproduce_genomics.py', 'scripts/reproduce_genomic_plots.py', 'scripts/reproduce_single_cell.py','scripts/reproduce_schematic_figures.py'] + STEPS + ['scripts/assemble_additional_figures.py','scripts/reproduce_trajectories.py'], 'status': 'passed',
+              'coverage': 'docs/FIGURE_COVERAGE.md', 'single_cell_from_counts':args.single_cell,
               'raw_inputs': {str(p.relative_to(root)): hashlib.sha256(p.read_bytes()).hexdigest()
                 for p in sorted((root / SCRIPTS / 'biohpc-pull/data').glob('*.xlsx'))}}
     (root / 'runs/reproduction.json').write_text(json.dumps(report, indent=2)+'\n')

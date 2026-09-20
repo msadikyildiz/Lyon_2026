@@ -21,7 +21,7 @@ class DriverTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temp:
             source=Path(temp)/'source';source.mkdir()
             generated=[driver.SCRIPTS/'out',Path('working/source-data'),Path('working/figures-assembled'),
-                       Path('data/genomics/generated_tables')]
+                       Path('data/genomics/generated_tables'),Path('data/genomics/plot_tables')]
             for folder in generated:
                 (source/folder).mkdir(parents=True);(source/folder/'sentinel').write_text('reference')
             cache=source/driver.SCRIPTS/'cache';cache.mkdir();(cache/'fit.pkl').write_text('reference cache')

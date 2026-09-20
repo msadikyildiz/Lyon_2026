@@ -16,4 +16,35 @@ The double-mutant median ratios and qualified SelB interpretation were confirmed
 
 The complete genomic input set is now included: 149 mutation-call TSVs and 17 processed CSVs supplied by Erdal Toprak. All 83 PbEc rows are regenerated from the calls, replacing the partial 50-row saved-display export in Source Data. The regenerated PLAC and combined-lineage tables also replace their previous dependency placeholders. Existing endpoint values agree with the regenerated tables, and all 17 processed exports agree before the notebooks' later annotation and allele corrections.
 
-The Culture 2 endpoint calls confirm GyrA S83L at 1.000000, HipA at 0.154478, selB at 0.183824, fimB/fimE at 0.178571, ftsH at 0.187417 and gatA at 0.165929. These support describing the latter alleles as present at low frequency. Full reference-genome/caller provenance and sequencing accessions remain needed for reproduction from reads. Single-cell inputs remain separate and outstanding.
+The Culture 2 endpoint calls confirm GyrA S83L at 1.000000, HipA at 0.154478, selB at 0.183824, fimB/fimE at 0.178571, ftsH at 0.187417 and gatA at 0.165929. These support describing the latter alleles as present at low frequency. Full reference-genome/caller provenance and sequencing accessions remain needed for reproduction from reads. Single-cell inputs and their subsequent reconstruction are documented in data/single-cell/README.md.
+
+## Confirmed records and genomic plotting, 20 September 2026
+
+The Supplementary Figure 11 plates all used a single 10 µL volume. This confirmation removes the provisional volume assumption without changing the normalized fractions. Recorded 40 µL concentrated-sample exceptions were intentional. Earlier MDK assays used two 10 µL platings; later assays used one 20 µL plating. Calculations retain each recorded schedule and the tenfold concentration where applicable.
+
+Figure 3 cells H62 and H146 were confirmed zero-colony plates. The original workbook remains unchanged; derived fields record zero counts, dilution exponent −1, factor 10, and 20 µL plating. Their one-colony fraction thresholds are 2.38095238e-8 and 2.22222222e-8. Zero and missing observations have separate status/count fields. Both records remain in the primary summaries. Parent medians and MADs are invariant over the censored intervals. Omitting the possibly mishandled second-day 3-hour record raises the median from 4.80769231e-7 to 5.00000000e-7 (4%); the scaled MAD changes from 1.18402261e-7 to 8.23667899e-8. Pellet loss remains unconfirmed.
+
+The ATEC-C3 experiment-2 triplicate was reported to have no bacteria and was repeated in experiment 3. ATEC1/2/4 experiment-2 errors were also repeated in experiment 3. This is the experimenter's clarification; the available screenshot alone does not establish the cause.
+
+Genomic plotting now keys variants by coordinate and allele, preserving distinct sites under shared labels. The original mean-based pivot merged different mutations. Corrections include:
+
+| Plot | Historical aggregation | Separate source frequencies |
+|---|---|---|
+| S4f, culture 7 | A gene-product alias labeled both atpD variants S342R and averaged them to 0.35 | S342R at contig 39:25113, 0.43; indel at contig 39:25321, 0.27 |
+| S4f, GlnW | Adjacent positions 86211/86212 shared a row; culture-6/7 means were 0.135/0.145 | Culture 6: 0.13/0.14; culture 7: 0.14/0.15; contig 22 |
+| S6d, culture 2 | Two yhaC/rnpB positions averaged to 0.05 at day 16 and 0.06 at day 82 | Day 16: 0/0.10; day 82: 0.12/0; positions 3269943/3270068 |
+| S9, PLAC_01 | cpxA variants averaged to 0.20 | 0.40 and 0, positions 4104926/4104944 |
+| S9, PLAC_06 | Distinct ftsH variants averaged to 0.235 | 0.47 and 0, positions 3326144/3326602; the insertion retains its own label |
+| S9, PLA_07 | ampH/sbmA variants averaged to 0.395 | 0.66 and 0.13, positions 396591/396624 |
+
+The full [crosswalk](../data/genomics/plot_tables/panel_source_crosswalk.csv) records all 1,099 plotted population/variant entries, original labels, displayed aliases and coordinates. Different sites found only in different cultures also receive distinct rows. The GlnW sites remain separate because raw frequencies differ and phasing is not established by these tables. Source table inputs and historical matrix calculations remain available. Figure 4a now labels GyrA G81D correctly; Figure 4c phenotype colors follow the existing Figure 3 MDK classifications. Figure 4d retains the supplied schematic pending the final export. Trajectory plots retain the original notebook convention of equally spaced sampled days; Figure 4 and Supplementary Figure 8 captions state this convention.
+
+## Single-cell reconstruction and interpretation, 20 September 2026
+
+The supplied matrices and original Rmd reproduce all 48,883 retained cells, all nine cluster sizes, 6,543 cluster DGE rows, 2,513 sample-versus-rest rows, and 1,222/863 culture-versus-parent rows. The source cluster IDs 0–8 are shifted to the published 1–9. Six samples are technical libraries, two from each of three culture samplings, separately probed and processed through microfluidics.
+
+The full supplied tables replace missing-data entries in Source Data. Supplementary Table 3 now contains sample/cluster results, while Table 4 contains culture comparisons and separately identified targeted marker checks. The original workbook remains unchanged. S12/13 point annotations are read directly from the Excel charts and matched uniquely to the recomputed DGE rows, preserving manually assigned display labels and colors. The default significance/absolute-log2-fold-change thresholds are unchanged. Values below 10^-304 share a display floor.
+
+The reconstruction resolves two interpretation errors. rplJ is higher in the parent than in either evolved culture, but its cluster-1 and cluster-2 comparisons have Bonferroni-adjusted P = 1. hipA is higher in cluster 9; cluster 4 has a small negative log2 fold change (−0.136). The culture-7 hipA omission was caused by the 1% detection-frequency filter, not by a nonsignificant test. A targeted check without that filter gives log2 fold change 0.721 and adjusted P = 0.00377. These checks are reported separately from the default DGE and plotted gene set.
+
+Enrichment worksheets include full result tables and gene memberships. Their generating tool/settings, database version and tested background are still required. The public GSE314756 endpoint reported a 21 December 2026 release date on 20 September 2026, despite the accompanying description that the counts were public. No reviewer credential is published.

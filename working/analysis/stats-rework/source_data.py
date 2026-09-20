@@ -126,6 +126,7 @@ def main():
     block(wb['Figure 1'], 'Panel f: daily mean and sample SD',
           survival.groupby('day').survival_percent.agg(n='count', mean='mean', sd='std').reset_index(),
           'Panel f paired survival percentages')
+    block(wb['Figure 1'],'Panels d–f: paired survival percentages',pd.read_csv(HERE/'out/fig1_all_survival_records.csv'),'out/fig1_all_survival_records.csv')
     raw = pd.read_pickle(HERE / 'cache/fig2_paplpc__df_analysis.pkl')
     example = raw[(raw.Strain == 'PA5') & (raw.Antibiotic == 'Levofloxacin')]
     block(wb['Figure 2'], 'Panel a: representative PA5 levofloxacin dose response', example,
@@ -151,21 +152,53 @@ def main():
             block(ws, f'Panel {panels}: regenerated mutation-frequency table', table,
                   item['file'] + '; notebook: ' + source, note)
 
+    genomic_repo = ROOT
+    crosswalk = pd.read_csv(genomic_repo/'data/genomics/plot_tables/panel_source_crosswalk.csv')
+    figure_map={'Fig2':'Figure 2','Fig4':'Figure 4','S3':'Supp Fig 3','S4':'Supp Fig 4','S5':'Supp Fig 5','S6':'Supp Fig 6','S9':'Supp Fig 9'}
+    for prefix,sheet in figure_map.items():
+        selected=crosswalk[crosswalk.panel.str.startswith(prefix)]
+        block(wb[sheet], 'Plotted mutation frequencies and source crosswalk', selected,
+              'data/genomics/plot_tables/panel_source_crosswalk.csv',
+              'Distinct mutation identities are separate; short labels are not averaged. Coordinates refer to the source reference, including contig IDs for PbEc.')
+    block(wb['Figure 4'], 'Mutation trajectories used in Figure 4 and Supplementary Figure 8',
+          pd.read_csv(genomic_repo/'data/genomics/plot_tables/PLAC_trajectories.csv'),
+          'data/genomics/plot_tables/PLAC_trajectories.csv')
+    block(wb['Sensitivity'],'Figure 3e possible handling failure',pd.read_csv(HERE/'out/Fig3e_handling_sensitivity.csv'),
+          'out/Fig3e_handling_sensitivity.csv','Primary analysis retains the confirmed zero. Omission is a sensitivity analysis because pellet loss is not confirmed.')
     tables = json.loads(SOURCE.read_text())
-    for i, rows in enumerate(tables, 1):
+    for i, rows in enumerate(tables[:2], 1):
         block(wb[f'Supp Table {i}'], f'Supplementary Table {i}', pd.DataFrame(rows[1:], columns=rows[0]),
               str(SOURCE.relative_to(ROOT)), 'Table values and column headings from the source manuscript.')
-    for fig in ['Figure 6', 'Supplementary Figure 12', 'Supplementary Figure 13']:
-        block(wb[sheet_name(fig)], 'Single-cell analysis',
-              pd.DataFrame({'status':['Source matrices and full differential-expression tables are unavailable']}),
-              'GSE314756 and manuscript', 'Source objects, sample metadata and table mappings are required for reproduction.')
-    block(wb['Supp Table 4'], 'Single-cell source-table dependency',
-          pd.DataFrame({'status':['Full differential-expression/enrichment table and figure mapping are unavailable']}), 'Manuscript')
+    single = genomic_repo/'data/single-cell'
+    mapping = json.loads((single/'plot_tables/table_mapping.json').read_text())
+    book = single/'original-tables/Single Cell Analysis Supp Tables.xlsx'
+    for number,sheets in mapping.items():
+        for name in sheets:
+            frame=pd.read_excel(book,sheet_name=name,header=None)
+            frame.columns=[f'Original column {i+1}' for i in range(frame.shape[1])]
+            block(wb[f'Supp Table {number}'],name,frame,
+                  'data/single-cell/original-tables/Single Cell Analysis Supp Tables.xlsx; '+name,
+                  'Original cell contents and gene-set membership retained. Enrichment calculation method, database version and tested background remain to be documented.')
+    for name,title in [('sample_metadata.csv','Technical sample metadata'),('cluster_composition.csv','Panel c: cluster composition'),('figure6_volcano_points.csv','Panels d/e: volcano points')]:
+        block(wb['Figure 6'],title,pd.read_csv(single/'plot_tables'/name),'data/single-cell/plot_tables/'+name)
+    cells=pd.read_csv(single/'generated/cells_and_embeddings.csv')
+    expression=pd.read_csv(single/'generated/figure6_expression.csv')
+    cells=cells[['barcode','sample','technical_sample','cluster_published','umap_1','umap_2']].merge(expression,on='barcode',validate='one_to_one')
+    block(wb['Figure 6'],'Panels a/b/f/g: cell embeddings and normalized expression',cells,
+          'data/single-cell/generated/cells_and_embeddings.csv; figure6_expression.csv',
+          '48,883 cells from six technical samples, two per culture. Each technical sample was probed and processed through microfluidics separately.')
+    targeted=pd.concat([pd.read_csv(single/f'generated/marker_claim_check_{culture}.csv') for culture in [4,7]])
+    block(wb['Supp Table 4'],'Targeted marker checks',targeted,'data/single-cell/generated/marker_claim_check_4.csv; marker_claim_check_7.csv','Targeted hipA and rplJ comparisons use min.pct=0 and logfc.threshold=0, with Bonferroni correction over all assay features.')
+    points=pd.read_csv(single/'plot_tables/supplementary_volcano_points.csv')
+    for number,clusters in [(12,[1,2]),(13,[4,9])]:
+        block(wb[f'Supp Fig {number}'],'Volcano points and original chart annotations',points[points.cluster.isin(clusters)],
+              'data/single-cell/plot_tables/supplementary_volcano_points.csv',
+              'Every point matched uniquely to the recomputed full DGE table. Colors retained from the supplied Excel chart point annotations; zero P-values capped at 10^-304 for display.')
     for filename in ['sensitivity_all.csv', 'what_changes_vs_published.csv', 'what_changes_vs_17aug_report.csv', 'experimental_units.csv']:
         block(wb['Sensitivity'], filename, pd.read_csv(HERE / 'out' / filename), 'out/' + filename,
               'Sensitivity p-values identify their family. Fit-perturbation bounds are empirical sensitivity ranges.')
     block(wb['Read me'], 'Source Data', manifest, 'out/panel_manifest.csv',
-          'Conditional MDK records and single-cell source-data gaps are identified in their sheets. Genomic tables are regenerated from the supplied mutation calls. '
+          'Censored MDK records and single-cell technical sample identities are identified in their sheets. Genomic tables are regenerated from the supplied mutation calls. '
           'One sheet per figure; full-precision numerical cells and source paths retained.')
     for ws in wb:
         ws.freeze_panes = 'C6'

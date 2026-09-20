@@ -1,0 +1,440 @@
+---
+title: "Adam Lyon UTSW Sample Processing and Figure Generation"
+author: "Samuel Cooke"
+date: "2025-04-15"
+output: html_document
+---
+
+### Single Cell Seurat Data Analysis
+## Load Necessary Packages
+```{r import, warning=FALSE,message=FALSE}
+library(reshape2)
+library(tidyverse)
+library(MASS)
+library(Matrix)
+library(MatrixGenerics)
+library(edgeR)
+library(mltools)
+library(pheatmap)
+library(data.table)
+library(Seurat)
+library(SeuratData)
+library(knitr)
+library(dplyr)
+library(DropletUtils)
+library(ggplot2)
+library(purrr)
+```
+                      
+## Check Working Directory
+```{r Working Directory}
+print(getwd())
+```
+
+## Load the data
+```{r load_data, message=FALSE, warning=FALSE}
+
+# List of .h5 files and sample names
+h5_files <- c("./data/Raw_Features/3a_raw_feature_bc_matrix.h5",
+             "./data/Raw_Features/3b_raw_feature_bc_matrix.h5",
+             "./data/Raw_Features/4a_raw_feature_bc_matrix.h5",
+             "./data/Raw_Features/4b_raw_feature_bc_matrix.h5",
+             "./data/Raw_Features/5a_raw_feature_bc_matrix.h5",
+             "./data/Raw_Features/5b_raw_feature_bc_matrix.h5",
+             "./data/Raw_Features/7a_raw_feature_bc_matrix.h5",
+             "./data/Raw_Features/7b_raw_feature_bc_matrix.h5")
+sample_names <- c("Sample3a", "Sample3b", "Sample4a", "Sample4b", "Sample5a", "Sample5b", "Sample7a", "Sample7b")
+
+# Create a list to store individual Seurat objects
+seurat_list <- list()
+
+# Loop through files and create Seurat objects
+for (i in seq_along(h5_files)) {
+  # Read the H5 matrix
+  counts <- Read10X_h5(h5_files[i])
+  
+  # Create Seurat object with sample tag
+  seu <- CreateSeuratObject(counts = counts, project = sample_names[i])
+  
+  # Add sample ID to metadata and to barcode names
+  seu$sample <- sample_names[i]
+  colnames(seu) <- paste(sample_names[i], colnames(seu), sep = "_")
+
+  # Store in list
+  seurat_list[[i]] <- seu
+}
+
+# Merge all Seurat objects into one
+combined_seurat <- merge(seurat_list[[1]], 
+                         y = seurat_list[-1], 
+                         add.cell.ids = sample_names)
+
+```
+
+## Generate Rank Plots for each sample
+```{r, rank plots}
+
+# Loop through each sample and plot
+for (i in seq_along(h5_files)) {
+  # Read raw matrix (not filtered)
+  raw_counts <- Read10X_h5(h5_files[i])
+  
+  # Run DropletUtils barcodeRanks
+  br <- barcodeRanks(raw_counts)
+  
+  # Extract data
+  df <- data.frame(rank = br$rank, total = br$total)
+  
+  # Remove NA values
+  df <- df[complete.cases(df), ]
+  
+  # Log-log plot
+  p <- ggplot(df, aes(x = rank, y = total)) +
+    geom_line(color = "blue") +
+    scale_x_log10() +
+    scale_y_log10() +
+    labs(title = paste0("Barcode Rank Plot: ", sample_names[i]),
+         x = "Barcode Rank",
+         y = "Total UMI Counts") +
+    geom_vline(xintercept = metadata(br)$knee, color = "red", linetype = "dashed") +
+    geom_vline(xintercept = metadata(br)$inflection, color = "green", linetype = "dashed") +
+    theme_minimal()
+  
+  print(p)
+}
+
+```
+
+## Sample QC Metrics Visualization
+```{r, sample QC Visualization}
+
+# Add QC metric to combined Seurat object
+combined_seurat$log10GenesPerUMI <- log10(combined_seurat$nFeature_RNA) / log10(combined_seurat$nCount_RNA)
+
+# Extract metadata
+metadata <- combined_seurat@meta.data
+metadata$cells <- rownames(metadata)
+
+# Rename columns for consistency
+metadata <- metadata %>%
+  dplyr::rename(seq_folder = orig.ident,
+                nUMI = nCount_RNA,
+                nGene = nFeature_RNA)
+
+# UMI Distribution
+ggplot(metadata, aes(color = sample, x = nUMI, fill = sample)) + 
+  geom_density(alpha = 0.2) + 
+  scale_x_log10() + 
+  theme_classic() +
+  ylab("Cell density") +
+  ggtitle("UMI Count Distribution per Sample") +
+  geom_vline(xintercept = 90, linetype = "dashed") +
+  geom_vline(xintercept = 400, linetype = "dashed")
+
+# Gene Distribution
+ggplot(metadata, aes(color = sample, x = nGene, fill = sample)) + 
+  geom_density(alpha = 0.2) + 
+  scale_x_log10() + 
+  theme_classic() +
+  ggtitle("Gene Count Distribution per Sample") +
+  geom_vline(xintercept = 6, linetype = "dashed") +
+  geom_vline(xintercept = 100, linetype = "dashed")
+
+# Boxplot of log10(nGene)
+ggplot(metadata, aes(x = sample, y = log10(nGene), fill = sample)) + 
+  geom_boxplot() + 
+  theme_classic() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  ggtitle("Genes per Cell (log10 scaled)")
+
+# Correlation nUMI vs nGene by Sample
+ggplot(metadata, aes(x = nUMI, y = nGene)) + 
+  geom_point(aes(color = sample), alpha = 0.4, size = 0.5) + 
+  stat_smooth(method = lm, se = FALSE, color = "black") +
+  scale_x_log10() + 
+  scale_y_log10() + 
+  theme_classic() +
+  geom_vline(xintercept = 500, linetype = "dashed") +
+  geom_hline(yintercept = 250, linetype = "dashed") +
+  facet_wrap(~sample)
+
+# Correlation nUMI vs nGene by Sample no facet
+ggplot(metadata, aes(x = nUMI, y = nGene, color = sample)) + 
+  geom_point(alpha = 0.4, size = 0.5) + 
+  stat_smooth(method = lm, se = FALSE, color = "black") +
+  scale_x_log10() + 
+  scale_y_log10() + 
+  theme_classic() +
+  #geom_vline(xintercept = 500, linetype = "dashed") +
+  #geom_hline(yintercept = 250, linetype = "dashed") +
+  ggtitle("nUMI vs nGene Across All Samples (Overlayed)") +
+  theme(plot.title = element_text(hjust = 0.5))
+
+#log10GenesPerUMI Complexity (Density)
+ggplot(metadata, aes(x = log10GenesPerUMI, color = sample, fill = sample)) +
+  geom_density(alpha = 0.2) +
+  theme_classic() +
+  geom_vline(xintercept = 0.8, linetype = "dashed") +
+  ggtitle("Gene Complexity per Sample")
+
+# Histogram per Sample (split by facet)
+ggplot(metadata, aes(x = log10GenesPerUMI, fill = sample)) +
+  geom_histogram(binwidth = 0.02, color = "black", alpha = 0.6) +
+  theme_classic() +
+  facet_wrap(~sample, scales = "free_y") +
+  scale_x_continuous(limits = c(0.8, NA)) +
+  labs(title = "Histogram of log10(Genes) / log10(UMIs)", x = "log10(Genes) / log10(UMIs)", y = "Cell Count")
+
+# Violin plot of log10(nGene)
+ggplot(metadata, aes(x = sample, y = log10(nGene), fill = sample)) + 
+  geom_violin(trim = FALSE, scale = "width") +
+  theme_classic() +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    plot.title = element_text(hjust = 0.5, face = "bold")
+  ) +
+  ggtitle("Genes per Cell (log10 scaled)") +
+  ylab("log10(nGene)")
+
+```
+
+## Remove sample 5B
+```{r, 5b removal}
+
+# sample table before removal
+table(combined_seurat$sample)
+
+# remove Sample5b
+combined_seurat_no5b <- subset(combined_seurat, subset = sample != "Sample5b")
+
+# sample table after removal
+table(combined_seurat_no5b$sample)
+
+seurat_list[[6]] <- NULL
+
+sample_names <- c("Sample3a", "Sample3b", "Sample4a", "Sample4b", "Sample5a", "Sample7a", "Sample7b")
+
+```
+
+## Use EmptyDrops to filter samples
+```{r, emptydrops loop}
+
+# ── 0. Pre‑define things
+library(DropletUtils)   # for emptyDrops
+pval_cutoff <- 0.01
+set.seed(123)
+
+# Assume seurat_list and sample_names are exactly as you created them:
+#   seurat_list[[i]] has project = sample_names[i],
+#   and the counts live in the default "RNA" assay, slot = "counts"
+
+# ── 1. Filter each Seurat object in the list ─────────────────────────────────
+filtered_seurat_list <- vector("list", length(seurat_list))
+names(filtered_seurat_list) <- sample_names
+
+for (i in seq_along(seurat_list)) {
+  sample_id <- sample_names[i]
+  seu       <- seurat_list[[i]]
+  
+  # pull raw counts matrix
+  counts_mat <- GetAssayData(seu, assay = "RNA", slot = "counts")
+  cat("→ Processing sample:", sample_id, "(", ncol(counts_mat), "barcodes )\n")
+  
+  # run EmptyDrops
+  edr <- emptyDrops(
+    counts_mat,
+    lower = 8
+  )
+  
+  # pick barcodes with PValue <= cutoff (dropping NAs)
+  keep <- rownames(edr)[!is.na(edr$PValue) & edr$PValue <= pval_cutoff]
+  cat("   Retained", length(keep), "of", ncol(counts_mat), "barcodes\n\n")
+  
+  # subset the Seurat object to those barcodes
+  filtered_seu <- subset(seu, cells = keep)
+  
+  # store back
+  filtered_seurat_list[[sample_id]] <- filtered_seu
+}
+
+# ── 2. (Optionally) merge your filtered list into one object ──────────────────
+combined_filtered <- merge(
+  filtered_seurat_list[[1]],
+  y           = filtered_seurat_list[-1],
+  add.cell.ids = sample_names
+)
+
+```
+
+## Sample QC Metrics Visualization after EmptyDrops Filtering
+```{r, sample QC Visualization after filtering}
+
+# Add QC metric to combined Seurat object
+combined_filtered$log10GenesPerUMI <- log10(combined_filtered$nFeature_RNA) / log10(combined_filtered$nCount_RNA)
+
+# Extract metadata
+metadata <- combined_filtered@meta.data
+metadata$cells <- rownames(metadata)
+
+# Rename columns for consistency
+metadata <- metadata %>%
+  dplyr::rename(seq_folder = orig.ident,
+                nUMI = nCount_RNA,
+                nGene = nFeature_RNA)
+
+# UMI Distribution
+ggplot(metadata, aes(color = sample, x = nUMI, fill = sample)) + 
+  geom_density(alpha = 0.2) + 
+  scale_x_log10() + 
+  theme_classic() +
+  ylab("Cell density") +
+  ggtitle("UMI Count Distribution per Sample") +
+  geom_vline(xintercept = 100, linetype = "dashed") +
+  geom_vline(xintercept = 12, linetype = "dashed")
+
+# Gene Distribution
+ggplot(metadata, aes(color = sample, x = nGene, fill = sample)) + 
+  geom_density(alpha = 0.2) + 
+  scale_x_log10() + 
+  theme_classic() +
+  ggtitle("Gene Count Distribution per Sample") +
+  geom_vline(xintercept = 12, linetype = "dashed") +
+  geom_vline(xintercept = 100, linetype = "dashed")
+
+# Boxplot of log10(nGene)
+ggplot(metadata, aes(x = sample, y = log10(nGene), fill = sample)) + 
+  geom_boxplot() + 
+  theme_classic() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  ggtitle("Genes per Cell (log10 scaled)")
+
+# Correlation nUMI vs nGene by Sample
+ggplot(metadata, aes(x = nUMI, y = nGene)) + 
+  geom_point(aes(color = sample), alpha = 0.4, size = 0.5) + 
+  stat_smooth(method = lm, se = FALSE, color = "black") +
+  scale_x_log10() + 
+  scale_y_log10() + 
+  theme_classic() +
+  geom_vline(xintercept = 500, linetype = "dashed") +
+  geom_hline(yintercept = 250, linetype = "dashed") +
+  facet_wrap(~sample)
+
+# Correlation nUMI vs nGene by Sample no facet
+ggplot(metadata, aes(x = nUMI, y = nGene, color = sample)) + 
+  geom_point(alpha = 0.4, size = 0.5) + 
+  stat_smooth(method = lm, se = FALSE, color = "black") +
+  scale_x_log10() + 
+  scale_y_log10() + 
+  theme_classic() +
+  #geom_vline(xintercept = 500, linetype = "dashed") +
+  #geom_hline(yintercept = 250, linetype = "dashed") +
+  ggtitle("nUMI vs nGene Across All Samples (Overlayed)") +
+  theme(plot.title = element_text(hjust = 0.5))
+
+#log10GenesPerUMI Complexity (Density)
+ggplot(metadata, aes(x = log10GenesPerUMI, color = sample, fill = sample)) +
+  geom_density(alpha = 0.2) +
+  theme_classic() +
+  geom_vline(xintercept = 0.8, linetype = "dashed") +
+  ggtitle("Gene Complexity per Sample")
+
+# Histogram per Sample (split by facet)
+ggplot(metadata, aes(x = log10GenesPerUMI, fill = sample)) +
+  geom_histogram(binwidth = 0.02, color = "black", alpha = 0.6) +
+  theme_classic() +
+  facet_wrap(~sample, scales = "free_y") +
+  scale_x_continuous(limits = c(0.8, NA)) +
+  labs(title = "Histogram of log10(Genes) / log10(UMIs)", x = "log10(Genes) / log10(UMIs)", y = "Cell Count")
+
+# Violin plot of log10(nGene)
+ggplot(metadata, aes(x = sample, y = log10(nGene), fill = sample)) + 
+  geom_violin(trim = FALSE, scale = "width") +
+  theme_classic() +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    plot.title = element_text(hjust = 0.5, face = "bold")
+  ) +
+  ggtitle("Genes per Cell (log10 scaled)") +
+  ylab("log10(nGene)")
+
+```
+
+## Filter out low nCount barcodes
+```{r, filter low umi counts}
+
+# Filter out cells with total UMI < 12
+combined_filtered_lowUMI <- subset(combined_filtered, subset = nCount_RNA >= 12)
+
+```
+
+```{r, integrate data}
+# make object name more concise
+cflu_SCT <- combined_filtered_lowUMI
+cflu_Norm <- combined_filtered_lowUMI
+# perform SCTransform normalization
+cflu_SCT <- SCTransform(object = cflu_SCT) %>%
+  RunPCA() %>%
+  FindNeighbors(dims = 1:30, reduction = "pca") %>%
+  FindClusters(cluster.name = "unintegrated_clusters") %>%
+  RunUMAP(dims = 1:30, reduction = "pca", reduction.name = "umap.unintegrated")
+
+
+# perform normalizedata normalization
+cflu_Norm <- NormalizeData(object = cflu_Norm)
+cflu_Norm <- FindVariableFeatures(object = cflu_Norm)
+cflu_Norm <- ScaleData(object = cflu_Norm)
+cflu_Norm <- RunPCA(object = cflu_Norm)
+cflu_Norm <- FindNeighbors(object = cflu_Norm, dims = 1:30)
+cflu_Norm <- FindClusters(object = cflu_Norm, cluster.name = "unintegrated_clusters")
+cflu_Norm <- RunUMAP(object = cflu_Norm, dims = 1:30, reduction = "pca", reduction.name = "umap.unintegrated")
+
+
+DimPlot(cflu_SCT, reduction = "umap.unintegrated", group.by = c("sample"))
+DimPlot(cflu_SCT, reduction = "umap.unintegrated")
+DimPlot(cflu_Norm, reduction = "umap.unintegrated", group.by = c("sample"))
+DimPlot(cflu_Norm, reduction = "umap.unintegrated")
+
+
+# Integrate layers
+options(future.globals.maxSize = 2 * 1024^3)
+cflu_SCT <- IntegrateLayers(object = cflu_SCT, method = RPCAIntegration, normalization.method = "SCT", verbose = FALSE)
+
+#UMAP of Integrated Data
+DimPlot(
+  cflu_SCT,
+  reduction = "integrated.dr",
+  group.by = c("sample"),
+  combine = FALSE, label.size = 2
+)
+DimPlot(
+  cflu_SCT,
+  reduction = "umap.unintegrated",
+  group.by = c("sample"),
+  combine = FALSE, label.size = 2
+)
+DimPlot(
+  cflu_SCT,
+  reduction = "pca",
+  group.by = c("sample"),
+  combine = FALSE, label.size = 2
+)
+
+```
+
+## Export as loupe file
+```{r eval=FALSE, include=FALSE}
+
+library(loupeR)
+output_dir = '/users/c/o/cookesf/008_R-Studio_Projects/2025-04-15_UTSW_Figures'
+# Generate Loupe Browser file using create_loupe_from_seurat
+create_loupe_from_seurat(
+  obj = integrated,
+  output_dir = output_dir,
+  output_name = "UTSW_Adam_Figures_raw_integrated",
+  dedup_clusters = FALSE,
+  feature_ids = NULL,
+  executable_path = NULL,
+  force = FALSE
+)
+
+```

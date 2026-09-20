@@ -1,0 +1,17 @@
+{
+  "source": "Regenerated genomic tables; original notebook selections and aliases",
+  "mutation_identity": "coordinate plus source alleles; distinct variants are not averaged",
+  "files": {
+    "data/genomics/generated_tables/MG_AMI.json": "38b320a13831744265c0afdfdbe995c0f9dfcd8b101818118176fc41d2626574",
+    "data/genomics/generated_tables/MG_CEF.json": "a7b306f72b0cc26aef2db780961439757fc6dd45c9a820313d626eabbd6fd918",
+    "data/genomics/generated_tables/MG_CEF_R.json": "bd8a728f6130ef189b938a0efb72059cf5f4f12754f5521cf8a6d031a9ad0e34",
+    "data/genomics/generated_tables/MG_LEV.json": "ca6cb6d41b4820faf291787b4b739e8baf90334cd983b12ecc5a06a34c3692a7",
+    "data/genomics/generated_tables/MG_untreated.json": "1b3e7df15af191413a477721b7cd09c17b4b9a2c55e3460a3c47d83c7c3ce48e",
+    "data/genomics/generated_tables/PLAC.json": "1020c340e31fee0a5ad0d959b886bc999fa55a69afe9bce803e19e5b45685c0d",
+    "data/genomics/generated_tables/PbEc_CEF.json": "f726c632300ef166ef5d50ef126f02dbdd4d0b6e8210fff2cc7d5be11e8cb54a",
+    "data/genomics/generated_tables/combined_lineages.json": "ff400751a7d3fbca4d390c000ee3fe169399161227ba8540e67ab02a5948e8e6",
+    "data/genomics/generated_tables/index.json": "9750aea9dce0d9615503975ec90418bf4515a6467ec86ef28b1d46d0b04f2876",
+    "data/genomics/generated_tables/validation.json": "cd7c6a622527514fad2c80a08f80958ee4b0bfe75e5230066924ed5133aeb8db"
+  },
+  "plot_script_sha256": "a977e708ed407eb19abd5082cf19555b175845e86436b4fc161c5aaa067273ea"
+}

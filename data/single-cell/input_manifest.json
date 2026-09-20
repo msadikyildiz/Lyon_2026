@@ -1,0 +1,195 @@
+{
+  "archive_name": "UTSW extended run.zip",
+  "archive_sha256": "a4b70deae4e2665bee63c4951077cafb08759877d2a4ea3afa262b5afef3c77d",
+  "archive_bytes": 6207846227,
+  "source": "Samuel Cooke analysis files supplied by Adam Rosenthal, 20 September 2026",
+  "duplicate_copies_verified": 23,
+  "files": [
+    {
+      "path": "original-code/UTSW_Adam_Figures_raw_V3.Rmd",
+      "archive_path": "UTSW_Adam_Figures_raw_V3.Rmd",
+      "bytes": 13914,
+      "sha256": "88357a5558003b41245c07b6f3e1dc621c3edaa5fffa3540c113944b6cba29ce"
+    },
+    {
+      "path": "metadata-original/Geo_metafile_20251221.xlsx",
+      "archive_path": "GEO/Geo_metafile_20251221.xlsx",
+      "bytes": 361112,
+      "sha256": "272b2f5167ff2fba7cfd9437cd8f0fdfcadbf6e7f536445b47726a8f8c364482"
+    },
+    {
+      "path": "original-tables/sample_DGE_full.csv",
+      "archive_path": "DGE_results/sample_DGE_full.csv",
+      "bytes": 211758,
+      "sha256": "3572e27ecc9af6219f1bc4f8a583044e583e61146351d9ab22bb2d8aef637f50"
+    },
+    {
+      "path": "original-tables/cluster_DGE_full.csv",
+      "archive_path": "DGE_results/cluster_DGE_full.csv",
+      "bytes": 533530,
+      "sha256": "6d1358921ad7dba4985066f4ff5ba43c8d0403ad928fe43a23ebac79f0b5293e"
+    },
+    {
+      "path": "original-code/UTSW_Adam_Figures_Filtered_V3.Rmd",
+      "archive_path": "UTSW_Adam_Figures_Filtered_V3.Rmd",
+      "bytes": 37544,
+      "sha256": "04e05031cfc364ef046ba492a7221573f90d1d98799e6d2b4e677c09dd197c9a"
+    },
+    {
+      "path": "metadata-original/USTW_EVO_Geo_metafile_20251221.xlsx",
+      "archive_path": "GEO/USTW_EVO_Geo_metafile_20251221.xlsx",
+      "bytes": 361078,
+      "sha256": "85bcf6781c5ef45dc611a311ccead5e646af8fba9c5361d99b4e8fe8c9f334e5"
+    },
+    {
+      "path": "counts/Raw_Features/3a_raw_feature_bc_matrix.h5",
+      "archive_path": "data/Raw_Features/3a_raw_feature_bc_matrix.h5",
+      "bytes": 9192099,
+      "sha256": "ce32fe24134504dc74d9735642d66622e77ca184e6b3273befd9bdc1ccdfee47"
+    },
+    {
+      "path": "counts/Raw_Features/3b_raw_feature_bc_matrix.h5",
+      "archive_path": "data/Raw_Features/3b_raw_feature_bc_matrix.h5",
+      "bytes": 9243715,
+      "sha256": "326b6fa951f1bfbe9474f7bcb5a0d861fd805f3295e6d590f2ba4ba077dabd6a"
+    },
+    {
+      "path": "counts/Raw_Features/4a_raw_feature_bc_matrix.h5",
+      "archive_path": "data/Raw_Features/4a_raw_feature_bc_matrix.h5",
+      "bytes": 12661750,
+      "sha256": "87c555c564d425ee7ca943e1ebe72cd010597078bd3b5ec0d23a87583153bcc4"
+    },
+    {
+      "path": "counts/Raw_Features/4b_raw_feature_bc_matrix.h5",
+      "archive_path": "data/Raw_Features/4b_raw_feature_bc_matrix.h5",
+      "bytes": 11940575,
+      "sha256": "37635f4add7484afb4d678eb4a9fb5340aeba4c96e7d800f86dfeaab63327e61"
+    },
+    {
+      "path": "counts/Raw_Features/5a_raw_feature_bc_matrix.h5",
+      "archive_path": "data/Raw_Features/5a_raw_feature_bc_matrix.h5",
+      "bytes": 10856071,
+      "sha256": "4c2d39aeea9528df07071e4b07de8f33f4c903932b023fe18432b1e124fb7841"
+    },
+    {
+      "path": "counts/Raw_Features/5b_raw_feature_bc_matrix.h5",
+      "archive_path": "data/Raw_Features/5b_raw_feature_bc_matrix.h5",
+      "bytes": 34057258,
+      "sha256": "6f7b662c36ef370d49d2895d2cd59ccfe40863bff62f8a9e2f1d339eb4055dcf"
+    },
+    {
+      "path": "counts/Raw_Features/7b_raw_feature_bc_matrix.h5",
+      "archive_path": "data/Raw_Features/7b_raw_feature_bc_matrix.h5",
+      "bytes": 11349758,
+      "sha256": "b0c6f862726225b11521ea28b186b3e90f4215397c927b951201122997e592a3"
+    },
+    {
+      "path": "counts/Raw_Features/7a_raw_feature_bc_matrix.h5",
+      "archive_path": "data/Raw_Features/7a_raw_feature_bc_matrix.h5",
+      "bytes": 13339249,
+      "sha256": "aee9d50718be29436a7dd111be3e5cd25fdd9e71ac8e99a167f745be0ed1dfbd"
+    },
+    {
+      "path": "original-tables/finalized wt vs 7.xlsx",
+      "archive_path": "Files from Sam Analysis/finalized wt vs 7.xlsx",
+      "bytes": 345018,
+      "sha256": "57306d2a913d584d1ff245e04c347e58395e445d89138bd651bf0a2f3f409cc4"
+    },
+    {
+      "path": "counts/Filtered_Features/3a_filtered_feature_bc_matrix.h5",
+      "archive_path": "data/Filtered_Features/3a_filtered_feature_bc_matrix.h5",
+      "bytes": 953932,
+      "sha256": "4387001f238a58d7caf10ec52270499d45e1a135f1074d5f1f877aff31709e14"
+    },
+    {
+      "path": "counts/Filtered_Features/3b_filtered_feature_bc_matrix.h5",
+      "archive_path": "data/Filtered_Features/3b_filtered_feature_bc_matrix.h5",
+      "bytes": 1171421,
+      "sha256": "219f5fe889f1c3fcc488c505803e4cdf105b183e32740e56e6b0e6dd368d64c3"
+    },
+    {
+      "path": "counts/Filtered_Features/4a_filtered_feature_bc_matrix.h5",
+      "archive_path": "data/Filtered_Features/4a_filtered_feature_bc_matrix.h5",
+      "bytes": 1324235,
+      "sha256": "0900321bcdbf8cae1dfc944fbfa2077a0397da3219f368ee5d923b8bf5a84765"
+    },
+    {
+      "path": "counts/Filtered_Features/4b_filtered_feature_bc_matrix.h5",
+      "archive_path": "data/Filtered_Features/4b_filtered_feature_bc_matrix.h5",
+      "bytes": 1029142,
+      "sha256": "04332278eca1d62ab222e5f7bd606983608b84570bfc55d65f89b216ff6c7706"
+    },
+    {
+      "path": "counts/Filtered_Features/5a_filtered_feature_bc_matrix.h5",
+      "archive_path": "data/Filtered_Features/5a_filtered_feature_bc_matrix.h5",
+      "bytes": 1747524,
+      "sha256": "9d0e103e7120f83cfc48b320d158288677128487e8db95e6f0553dda63375948"
+    },
+    {
+      "path": "counts/Filtered_Features/5b_filtered_feature_bc_matrix.h5",
+      "archive_path": "data/Filtered_Features/5b_filtered_feature_bc_matrix.h5",
+      "bytes": 23075672,
+      "sha256": "0e770b5288755d8d2182858a94c61c43fac35fb95313bb018087fe4cf0af7a01"
+    },
+    {
+      "path": "counts/Filtered_Features/7a_filtered_feature_bc_matrix.h5",
+      "archive_path": "data/Filtered_Features/7a_filtered_feature_bc_matrix.h5",
+      "bytes": 2296038,
+      "sha256": "239c27316339a803ea73722173adf4e62101bfe54cc092412670e263996e03c3"
+    },
+    {
+      "path": "counts/Filtered_Features/7b_filtered_feature_bc_matrix.h5",
+      "archive_path": "data/Filtered_Features/7b_filtered_feature_bc_matrix.h5",
+      "bytes": 1573562,
+      "sha256": "9b8ffecd492d5179bf2b30f753e86669b76fc436d2cd53ae3f82ed70c428b0f4"
+    },
+    {
+      "path": "counts/Filtered_Features/aggr_filtered_feature_bc_matrix.h5",
+      "archive_path": "data/Filtered_Features/aggr_filtered_feature_bc_matrix.h5",
+      "bytes": 30701800,
+      "sha256": "e1340d86f350d04853a41d4bc7d289388340a427f651c5ee7f984ddb181b7e22"
+    },
+    {
+      "path": "original-tables/volcanos cutoff supp figures.xlsx",
+      "archive_path": "Files from Sam Analysis/volcanos cutoff supp figures.xlsx",
+      "bytes": 303891,
+      "sha256": "31af2c66d68e9ce191a4f6c0dcdfd1b90b7a465bd27ada75e53f6b13e4876361"
+    },
+    {
+      "path": "original-tables/Single Cell Analysis Supp Tables.xlsx",
+      "archive_path": "Files from Sam Analysis/Single Cell Analysis Supp Tables.xlsx",
+      "bytes": 806301,
+      "sha256": "d34f9363eeb82a06fbdd6161510acc8ff430ce2dbee354c385e360fc337df898"
+    },
+    {
+      "path": "original-tables/volcanos supp figures high cutoffs.xlsx",
+      "archive_path": "Files from Sam Analysis/volcanos supp figures high cutoffs.xlsx",
+      "bytes": 112198,
+      "sha256": "24f83262a2e6976170955712250796baa2e775d4c888aa0aaef2565e78a5e472"
+    },
+    {
+      "path": "counts/Filtered_Features/aggr_5removed_filtered_feature_bc_matrix.h5",
+      "archive_path": "data/Filtered_Features/aggr_5removed_filtered_feature_bc_matrix.h5",
+      "bytes": 7173118,
+      "sha256": "1aaa42554a4cb2fde58ce12a6a0d1800ce26ffa421ad7bcf1d5df6ae3fe106e6"
+    },
+    {
+      "path": "counts/Filtered_Features/aggr_5b_Removed_filtered_feature_bc_matrix.h5",
+      "archive_path": "data/Filtered_Features/aggr_5b_Removed_filtered_feature_bc_matrix.h5",
+      "bytes": 8684770,
+      "sha256": "e8ccfed3114bcfec8d4a4aad0174d372390452d809152e8bc014c366b82fe8f1"
+    },
+    {
+      "path": "original-tables/sample4_vs_parent_DGE_sharedDir.csv",
+      "archive_path": "Files from Sam Analysis/DGE_results/sample4_vs_parent_DGE_sharedDir.csv",
+      "bytes": 37259,
+      "sha256": "97af7b6a8b5429742b69fd18e3d4cbcfb2dea2e1fe0263efc36d9671f3d554ba"
+    },
+    {
+      "path": "original-tables/sample7_vs_parent_DGE_sharedDir.csv",
+      "archive_path": "Files from Sam Analysis/DGE_results/sample7_vs_parent_DGE_sharedDir.csv",
+      "bytes": 25930,
+      "sha256": "d494166e38bcd57e2a7678e7f563430716ee429742ea7aabeb8a3fbc6e155be0"
+    }
+  ]
+}
