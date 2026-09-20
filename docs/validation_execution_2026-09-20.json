@@ -128,5 +128,10 @@
     "text_cells": 273910,
     "blank_cells": 30072,
     "all_cells_match_source_tables": true
+  },
+  "input_checksum_chain": {
+    "top_level_verified": 95,
+    "genomic_manifest_files": 166,
+    "single_cell_manifest_files": 31
   }
 }
