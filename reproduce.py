@@ -73,8 +73,8 @@ def main():
             with ThreadPoolExecutor(max_workers=args.jobs) as pool:
                 list(pool.map(refit, DATASETS))
             run(root, ['scripts/compare_caches.py', str(root / 'reference-cache'), str(root / SCRIPTS / 'cache'), str(root / 'runs/refit-comparison.json')], logs / 'compare-refits.log')
-        run(root, ['-m', 'unittest', 'discover', '-s', SCRIPTS / 'tests', '-v'], logs / 'tests.log')
         run(root, ['scripts/reproduce_genomics.py'], logs / 'genomics.log')
+        run(root, ['-m', 'unittest', 'discover', '-s', SCRIPTS / 'tests', '-v'], logs / 'tests.log')
         run(root, ['scripts/reproduce_genomic_plots.py'], logs / 'genomic-plots.log')
         if args.single_cell:
             with (logs/'single-cell-R.log').open('w') as stream:

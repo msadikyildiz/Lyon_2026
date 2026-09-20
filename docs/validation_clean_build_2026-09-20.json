@@ -1,0 +1,139 @@
+{
+  "date": "2026-09-20",
+  "clean_build": {
+    "mode": "cached",
+    "python": "3.11.14",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "seconds": 214.33,
+    "steps": [
+      "scripts/reproduce_genomics.py",
+      "scripts/reproduce_genomic_plots.py",
+      "scripts/reproduce_single_cell.py",
+      "scripts/reproduce_schematic_figures.py",
+      "validate.py",
+      "final_stats.py",
+      "mdk_source.py",
+      "supp11_mdk.py",
+      "manifest.py",
+      "report_results.py",
+      "survival.py",
+      "plot_final.py",
+      "source_data.py",
+      "print_panels.py",
+      "assemble_figures.py",
+      "scripts/assemble_additional_figures.py",
+      "scripts/reproduce_trajectories.py"
+    ],
+    "status": "passed",
+    "coverage": "docs/FIGURE_COVERAGE.md",
+    "single_cell_from_counts": false,
+    "raw_inputs": {
+      "working/analysis/stats-rework/biohpc-pull/data/ODFinal.xlsx": "3397561985b52d03209642b24148ca3d0ec226907b3133264675c5c611e49894",
+      "working/analysis/stats-rework/biohpc-pull/data/ODFinal_mutants.xlsx": "b079af1f8222b6d83c199d39be7f5d7f69b803b516dda66e69f5270761d68d30",
+      "working/analysis/stats-rework/biohpc-pull/data/ODFinal_unt.xlsx": "5de231a71c483b73242ef39b82a355fe9eb6e54c8f105803e7362c883c3f7ec7",
+      "working/analysis/stats-rework/biohpc-pull/data/PlateInfo.xlsx": "1638ee6b8bc5565bb6d9ae96e66a64f8f49b2655698e011974a504eca80e3c81",
+      "working/analysis/stats-rework/biohpc-pull/data/PlateInfo_mutants.xlsx": "e96cd342aeb1de80430089934733174bee01576859fc80fd3a4bcb77e55814ff",
+      "working/analysis/stats-rework/biohpc-pull/data/PlateInfo_mutants_norep.xlsx": "e48d82ddd3401d306f3fd444871c88fab564dcdce30179f9d9de3913923771c0",
+      "working/analysis/stats-rework/biohpc-pull/data/PlateInfo_unt.xlsx": "50acb499120695bf4ae3cdea114cf53323bf2f57d2228d3d1b6fa8627506fc56"
+    },
+    "source_snapshot": "ab0d235 plus verified reproduce.py ordering correction",
+    "empty_output_directories": [
+      "working/analysis/stats-rework/out",
+      "working/source-data",
+      "working/figures-assembled",
+      "data/genomics/generated_tables",
+      "data/genomics/plot_tables",
+      "data/single-cell/plot_tables"
+    ]
+  },
+  "clean_output_comparison": {
+    "status": "passed",
+    "csv_tables": 28,
+    "pngs_identical": {
+      "working/analysis/stats-rework/out/figures-final": 59,
+      "working/analysis/stats-rework/out/print-panels": 50,
+      "working/analysis/stats-rework/out/trajectories": 7,
+      "working/analysis/stats-rework/out/genomic-panels": 18,
+      "working/figures-assembled": 52
+    },
+    "workbook_cells_checked": 1322761,
+    "generated_files_identical": {
+      "data/genomics/generated_tables": 18,
+      "data/genomics/plot_tables": 28,
+      "data/single-cell/plot_tables": 6
+    },
+    "workbook_numeric_cells": 499906,
+    "rtol": 1e-08,
+    "atol": 1e-10,
+    "comparison": "CSV values, PNG bytes, workbook values and cell types; PDF/SVG/XLSX container timestamps ignored"
+  },
+  "single_cell_independent_check": {
+    "source_h5_sha256": "1aaa42554a4cb2fde58ce12a6a0d1800ce26ffa421ad7bcf1d5df6ae3fe106e6",
+    "cells": 48883,
+    "retained_probe_count": 4200,
+    "bonferroni_test_count": 21701,
+    "method": "Direct H5 count normalization and SciPy tie-corrected two-sided Mann-Whitney with continuity correction; independent of Seurat assay/test functions. Cluster assignments are the validated reconstructed assignments, not independently reclustered.",
+    "matching_comparisons": [
+      {
+        "gene": "hipA",
+        "comparison": "cluster 4 vs rest",
+        "source_match": true
+      },
+      {
+        "gene": "hipA",
+        "comparison": "cluster 9 vs rest",
+        "source_match": true
+      },
+      {
+        "gene": "hipA",
+        "comparison": "culture 4 vs parent",
+        "source_match": true
+      },
+      {
+        "gene": "hipA",
+        "comparison": "culture 7 vs parent",
+        "source_match": true
+      },
+      {
+        "gene": "rplJ",
+        "comparison": "cluster 1 vs rest",
+        "source_match": true
+      },
+      {
+        "gene": "rplJ",
+        "comparison": "cluster 2 vs rest",
+        "source_match": true
+      },
+      {
+        "gene": "rplJ",
+        "comparison": "culture 4 vs parent",
+        "source_match": true
+      },
+      {
+        "gene": "rplJ",
+        "comparison": "culture 7 vs parent",
+        "source_match": true
+      }
+    ]
+  },
+  "figure6_highlights": {
+    "shared_total": 91,
+    "up": 82,
+    "down": 9,
+    "rule": "Both default culture-versus-parent comparisons: abs(log2FC)>0.6, Bonferroni-adjusted P<0.05 and matching signs.",
+    "exact_match_to_both_workbook_annotations": true,
+    "source_Rmd_cutoff_line": 927,
+    "figure_points_cutoff": 0.5,
+    "targeted_checks_do_not_change_highlights": true
+  },
+  "final_checks": {
+    "tests": 13,
+    "numerical_csv_tables_byte_identical": 28,
+    "source_data_byte_identical": true,
+    "supplementary_table_cells_unchanged": 82275,
+    "pngs_byte_identical": 184,
+    "pngs_with_legend_only_changes": 2,
+    "Seurat_5_2_1_return_threshold_verified": true,
+    "worksheet_dimensions_and_display_gene_checks_passed": true
+  }
+}

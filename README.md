@@ -46,7 +46,7 @@ Rscript -e 'renv::restore(lockfile="single-cell-renv.lock", library="runs/R-libr
 R_LIBS_USER="$PWD/runs/R-library" micromamba run -n lyon-2026 python reproduce.py --single-cell
 ```
 
-The R step executes the supplied filtered-analysis Rmd calculations with portable input paths and exports cell identities, embeddings, selected probes, normalized expression and differential-expression results. It reproduces 48,883 cells and the exact nine cluster sizes. All 6,543 cluster DGE rows and the 1,222/863 culture-versus-parent rows agree with the final supplied tables within the recorded numerical tolerances. The [single-cell record](data/single-cell/README.md) explains the sample mapping, table numbering, targeted marker checks and remaining enrichment dependency.
+This command replaces the generated single-cell tables in the checkout. Use a separate checkout to compare a different R environment. The R step executes the supplied filtered-analysis Rmd calculations with portable input paths and exports cell identities, embeddings, selected probes, normalized expression and differential-expression results. It reproduces 48,883 cells and the exact nine cluster sizes. All 6,543 cluster DGE rows and the 1,222/863 culture-versus-parent rows agree with the final supplied tables within the recorded numerical tolerances. The [single-cell record](data/single-cell/README.md) explains the sample mapping, table numbering, targeted marker checks and remaining enrichment dependency.
 
 ## Outputs and inputs
 
@@ -55,7 +55,7 @@ The R step executes the supplied filtered-analysis Rmd calculations with portabl
 - [Final statistics](working/analysis/stats-rework/out/final_statistics.csv), [analysis code](working/analysis/stats-rework), [original workbooks/notebooks](working/figures), [genomic inputs](data/genomics) and [single-cell inputs](data/single-cell).
 - [Source corrections](docs/DATA_CORRECTIONS.md), [figure coverage](docs/FIGURE_COVERAGE.md) and [verification](docs/VALIDATION.md).
 
-The 6.2 GB single-cell delivery contained many duplicate project copies and figure exports. The repository retains one verified copy of each required input and original code/table file, approximately 196 MB, with an archive checksum and per-file provenance. It does not require the original workstation or a manuscript DOCX.
+The 6.2 GB single-cell delivery contained many duplicate project copies and figure exports. The repository retains one verified copy of the supplied count matrices, original code and final tables, approximately 196 MB. This includes alternative aggregates and excluded sample-5 matrices for provenance, with archive and per-file checksums. It does not require the original workstation or a manuscript DOCX.
 
 ## Analysis conventions
 

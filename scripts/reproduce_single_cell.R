@@ -48,7 +48,7 @@ if (full_dge) {
  DefaultAssay(UTSW_filtered) <- 'ProbeCollapseAssay'
  for (group in c('cluster_published','sample')) {
   Idents(UTSW_filtered) <- group
-  markers <- FindAllMarkers(UTSW_filtered,assay='ProbeCollapseAssay',logfc.threshold=.1,min.pct=.01)
+  markers <- FindAllMarkers(UTSW_filtered,assay='ProbeCollapseAssay',logfc.threshold=.1,min.pct=.01,return.thresh=.01)
   write.csv(markers,file.path(out,paste0(group,'_DGE_recomputed.csv')),row.names=FALSE)
  }
  for (culture in c('4','7')) {

@@ -9,7 +9,7 @@ import json
 import os
 import re
 from pathlib import Path
-os.environ.setdefault('MPLCONFIGDIR', '/Users/wak/micromamba/mpl_cache')
+os.environ.setdefault('MPLCONFIGDIR', str(Path.home() / '.cache' / 'matplotlib'))
 os.environ['MPLBACKEND'] = 'Agg'
 import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap

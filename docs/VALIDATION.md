@@ -41,3 +41,11 @@ The final statistics, group summaries, sensitivity results and Figure 5 descript
 The independent R count-matrix execution reproduces 48,883 cells and every cluster count, followed by complete cluster/sample differential-expression calculations. All 31 selected source-file hashes are verified. The 6,543 cluster DGE rows agree within 1.1e-14 in log2 fold changes; the largest culture-comparison discrepancy is 7.61e-9 log10-P units. Targeted hipA/rplJ checks were also executed from the saved Seurat object. The full package lock and R session record are included. The enrichment generating method remains the stated external dependency.
 
 [Execution measurements](validation_execution_2026-09-20.json) record the completed checks. The earlier raw dose-response refit validation still applies to the unchanged source OD/plate-layout workbooks and fitted caches.
+
+## Clean output build and additional checks, 20 September 2026
+
+A separate checkout with empty generated-output directories passed in 214.33 seconds after correcting the build order: genomic inputs are now regenerated before the tests that consume them. The build reproduced all 28 numerical CSV tables, 186 PNGs, 52 generated data files and 1,322,761 Source Data worksheet cells, including 499,906 numeric cells. The worksheet-cell total includes empty spacers outside the explicitly exported blocks.
+
+An independent calculation directly from the H5 matrix verified all 48,883 retained cell identities, the 4,200 selected probes and eight available marker comparisons using SciPy rank-sum tests rather than Seurat marker functions. It retained the original Bonferroni denominator of 21,701 assay rows.
+
+The final Figure 6 legend distinguishes the 0.5 plotting cutoff from the original 0.6 shared-gene cutoff. An executable check exactly recovers all 91 Shared annotations from the two culture comparisons. Both Figure 6 PNG changes are confined to the legend; the other 184 PNGs, all 28 numerical CSV tables and Source Data are unchanged. All 82,275 cells in Supplementary Tables 3/4 are unchanged. The added worksheet-dimension and gene-name checks pass, as do all 13 failure/invariance tests. [Measurements](validation_clean_build_2026-09-20.json) record the results.

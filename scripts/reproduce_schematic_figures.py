@@ -1,7 +1,7 @@
 """Assemble Figure 1 and Supplementary Figure 1 with supplied schematic artwork."""
 from pathlib import Path
 import os,sys,json,hashlib
-os.environ.setdefault('MPLCONFIGDIR','/Users/wak/micromamba/mpl_cache');os.environ['MPLBACKEND']='Agg'
+os.environ.setdefault('MPLCONFIGDIR',str(Path.home()/'.cache'/'matplotlib'));os.environ['MPLBACKEND']='Agg'
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt

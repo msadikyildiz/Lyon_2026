@@ -1,9 +1,9 @@
 """Validate the supplied single-cell analysis and render its numerical figures."""
 from pathlib import Path
 from zipfile import ZipFile
-import hashlib,json,os
+import hashlib,json,os,re
 import xml.etree.ElementTree as E
-os.environ.setdefault('MPLCONFIGDIR','/Users/wak/micromamba/mpl_cache')
+os.environ.setdefault('MPLCONFIGDIR',str(Path.home()/'.cache'/'matplotlib'))
 os.environ['MPLBACKEND']='Agg'
 import numpy as np
 import pandas as pd
@@ -46,6 +46,12 @@ def verify():
  for file,sheet,keys in [('cluster_published_DGE_recomputed.csv','cluster_DGE',['cluster','gene']),('sample4_vs_parent_recomputed.csv','DGE 4 vs parent',['gene']),('sample7_vs_parent_recomputed.csv','DGE 7 vs parent',['gene'])]:
   CHECKS[sheet]=compare(pd.read_csv(GEN/file),pd.read_excel(BOOK,sheet_name=sheet),keys)
  CHECKS['sample_DGE']=compare(pd.read_csv(GEN/'sample_DGE_recomputed.csv'),pd.read_csv(TABLES/'sample_DGE_full.csv'),['cluster','gene'])
+ a=pd.read_excel(BOOK,sheet_name='DGE 4 vs parent').set_index('gene');b=pd.read_excel(BOOK,sheet_name='DGE 7 vs parent').set_index('gene')
+ common=a.index.intersection(b.index);x=a.loc[common];y=b.loc[common]
+ shared=(x.avg_log2FC.abs()>.6)&(y.avg_log2FC.abs()>.6)&(x.p_val_adj<.05)&(y.p_val_adj<.05)&(np.sign(x.avg_log2FC)==np.sign(y.avg_log2FC))
+ expected=set(common[shared])
+ assert expected==set(a.index[a.shared_status.str.lower().eq('shared')])==set(b.index[b.shared_status.str.lower().eq('shared')]),'Shared-gene annotations differ from the 0.6 fold-change rule'
+ CHECKS['figure6_highlights']={'absolute_log2FC_threshold_in_both':.6,'adjusted_P_threshold_in_both':.05,'concordant_genes':len(expected),'original_annotations_preserved':True}
  return cells
 
 def export_tables():
@@ -65,6 +71,7 @@ def export_tables():
   path=dest/f'Supplementary Table {number}.xlsx';wb.save(path)
   original=load_workbook(BOOK,data_only=False);check=load_workbook(path,data_only=False)
   for sheet in sheets:
+   assert (original[sheet].max_row,original[sheet].max_column)==(check[sheet].max_row,check[sheet].max_column),(sheet,'worksheet dimensions changed')
    for row_a,row_b in zip(original[sheet].values,check[sheet].values):
     for a,b in zip(row_a,row_b):
      if isinstance(a,(float,int)):assert np.isclose(a,b,rtol=1e-14,atol=1e-300),(sheet,a,b)
@@ -95,6 +102,8 @@ def supplement_points():
     matched=sub[np.isclose(sub.avg_log2FC,float(row.avg_log2FC),rtol=1e-10,atol=1e-12)]
     assert len(matched)==1,(cluster,row.gene,len(matched))
     r=matched.iloc[0]
+    root=r.gene.split('-')[0]
+    assert re.fullmatch(re.escape(root)+r'(?:-?\d+)?',str(row.gene)),(cluster,row.gene,r.gene)
     assert abs(r.avg_log2FC)>.25 and r.p_val_adj<.05
     rows.append(dict(cluster=cluster,source_excel_row=idx+2,display_gene=row.gene,probe=r.gene,avg_log2FC=r.avg_log2FC,p_val_adj=r.p_val_adj,neg_log10_p_adj=-np.log10(max(r.p_val_adj,1e-304)),color=styles.get(idx,'other')))
  points=pd.DataFrame(rows);points.to_csv(EXPORT/'supplementary_volcano_points.csv',index=False)
@@ -154,7 +163,7 @@ def singlecell_figure(cells):
   ax=fig.add_axes([.10+i*.50,.09,.35,.205]);fig.text(.02+i*.50,.315,['d','e'][i],weight='bold',fontsize=12)
   for color,g in d.groupby('color'):ax.scatter(g.avg_log2FC,g.neg_log10_p_adj,c=color,s=6,linewidths=0,rasterized=False)
   ax.axvline(0,color='.7',lw=.5);ax.set_ylim(0,320);ax.set_yticks([0,100,200,300]);ax.set_xlabel(r'Log$_2$ fold change',fontsize=9.5);ax.set_ylabel(r'$-\log_{10}$ adjusted P',fontsize=9.5);ax.set_title(f'Culture {culture} versus parent',fontsize=9.5,pad=5);style(ax);plotted.append(d)
- fig.legend(handles=[Line2D([],[],marker='o',ls='',ms=3,color='#2369a0',label='Higher in both evolved cultures'),Line2D([],[],marker='o',ls='',ms=3,color='#cf2b35',label='Higher in parent in both comparisons')],loc='lower center',bbox_to_anchor=(.51,.008),ncol=1,fontsize=8,frameon=False,labelspacing=.3)
+ fig.legend(handles=[Line2D([],[],marker='o',ls='',ms=3,color='#2369a0',label=r'Shared: log$_2$FC > 0.6 in both cultures'),Line2D([],[],marker='o',ls='',ms=3,color='#cf2b35',label=r'Shared: log$_2$FC < −0.6 in both cultures')],loc='lower center',bbox_to_anchor=(.51,.008),ncol=1,fontsize=8,frameon=False,labelspacing=.3)
  pd.concat(plotted).to_csv(EXPORT/'figure6_volcano_points.csv',index=False);save(fig,'Figure_6')
 
 

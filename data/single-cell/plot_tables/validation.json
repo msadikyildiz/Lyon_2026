@@ -44,6 +44,12 @@
     "p_val_max_log10_difference": 1.7763568394002505e-15,
     "p_val_adj_max_log10_difference": 7.105427357601002e-15
   },
+  "figure6_highlights": {
+    "absolute_log2FC_threshold_in_both": 0.6,
+    "adjusted_P_threshold_in_both": 0.05,
+    "concordant_genes": 91,
+    "original_annotations_preserved": true
+  },
   "supplementary_table_3": {
     "sheets": [
       "Sample statistics",
