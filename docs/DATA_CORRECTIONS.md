@@ -10,13 +10,13 @@ The final sequential-evolution and sequencing time point is day 82. Fourteen ter
 
 Every strain–antibiotic combination in the six fitted datasets contains zero-dose wells. These are the no-antibiotic growth controls, in addition to media-only background wells. No dose-response measurements or fits changed.
 
-The double-mutant median ratios and qualified SelB interpretation were confirmed. Supplementary Figure 11 plated volumes and concentration factors remain unresolved. Complete genomic exports and the Rosenthal group's single-cell data and code are still required, as listed in the README.
+The double-mutant median ratios and qualified SelB interpretation were confirmed. Plating schedules, genomic exports and single-cell inputs were subsequently supplied; their integration is recorded below.
 
 ## 20 September 2026
 
 The complete genomic input set is now included: 149 mutation-call TSVs and 17 processed CSVs supplied by Erdal Toprak. All 83 PbEc rows are regenerated from the calls, replacing the partial 50-row saved-display export in Source Data. The regenerated PLAC and combined-lineage tables also replace their previous dependency placeholders. Existing endpoint values agree with the regenerated tables, and all 17 processed exports agree before the notebooks' later annotation and allele corrections.
 
-The Culture 2 endpoint calls confirm GyrA S83L at 1.000000, HipA at 0.154478, selB at 0.183824, fimB/fimE at 0.178571, ftsH at 0.187417 and gatA at 0.165929. These support describing the latter alleles as present at low frequency. Full reference-genome/caller provenance and sequencing accessions remain needed for reproduction from reads. Single-cell inputs and their subsequent reconstruction are documented in data/single-cell/README.md.
+The Culture 2 endpoint calls confirm GyrA S83L at 1.000000, HipA at 0.154478, selB at 0.183824, fimB/fimE at 0.178571, ftsH at 0.187417 and gatA at 0.165929. These support describing the latter alleles as present at low frequency. References, command lines and saved options were subsequently recovered for all 149 runs. The exact breseq executable version and WGS accession remain needed for reproduction from reads. Single-cell inputs and their subsequent reconstruction are documented in data/single-cell/README.md.
 
 ## Confirmed records and genomic plotting, 20 September 2026
 
@@ -49,4 +49,4 @@ The reconstruction agrees with the supplied expression tables and clarifies the 
 
 The culture-7 hipA omission was caused by the 1% detection-frequency filter. A targeted check without that filter gives log2 fold change 0.721 and adjusted P = 0.00377. These checks retain the supplied correction over 21,701 assay features and are reported separately from the default DGE and plotted gene set. An independent calculation directly from H5 counts reproduces the selected fold changes and P-values. No source counts, clustering or default DGE calculations were changed.
 
-Enrichment worksheets include full result tables and gene memberships. Their generating tool/settings, database version and tested background are still required. The public GSE314756 endpoint reported a 21 December 2026 release date on 20 September 2026, despite the accompanying description that the counts were public. No reviewer credential is published.
+Rosenthal identified EcoCyc and supplied five original result exports plus a screenshot of his usual Fisher Exact/BH/P < 0.1 settings. The mapped exports agree with every existing term, P-value and matched-gene list. The parent-up export adds 114 rows to the 19-row worksheet; all 133 are now included in generated Table 4 and Source Data. The original workbook remains unchanged. The historical EcoCyc version and reference sets are not recorded in the exports; see data/single-cell/enrichment/README.md. GSE314756 is scheduled for public release on 21 December 2026. No reviewer credential is published.

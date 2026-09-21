@@ -1,0 +1,14 @@
+{
+  "study_runs": 149,
+  "archive_files_verified": 600,
+  "unique_files_verified": 453,
+  "unique_run_fastas": 2,
+  "reference_runs": {
+    "sequence-4.gb": 141,
+    "all_ATEC_annotated_contigs_w_locustag_w_genetags.gbk": 8
+  },
+  "all_reference_sequences_match": true,
+  "both_summaries_identical_for_every_run": true,
+  "breseq_executable_version": null,
+  "reference_provenance": "Archived GenBank copies match per-run FASTA sequence content. Original /work paths are unavailable; original annotation-file byte identity is not established."
+}

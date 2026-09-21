@@ -38,7 +38,7 @@ The completed workflow passes all 13 failure/invariance tests, 369 analysis chec
 
 The final statistics, group summaries, sensitivity results and Figure 5 descriptive tables are byte-identical to the preceding committed analysis. Figure 3 zero-count handling and S11 provenance are updated as documented in DATA_CORRECTIONS.md. Source Data verifies 499,906 numeric cells, 273,910 text cells and 30,072 blank cells across 25 sheets and 111 blocks.
 
-The independent R count-matrix execution reproduces 48,883 cells and every cluster count, followed by complete cluster/sample differential-expression calculations. All 31 selected source-file hashes are verified. The 6,543 cluster DGE rows agree within 1.1e-14 in log2 fold changes; the largest culture-comparison discrepancy is 7.61e-9 log10-P units. Targeted hipA/rplJ checks were also executed from the saved Seurat object. The full package lock and R session record are included. The enrichment generating method remains the stated external dependency.
+The independent R count-matrix execution reproduces 48,883 cells and every cluster count, followed by complete cluster/sample differential-expression calculations. All 31 selected source-file hashes are verified. The 6,543 cluster DGE rows agree within 1.1e-14 in log2 fold changes; the largest culture-comparison discrepancy is 7.61e-9 log10-P units. Targeted hipA/rplJ checks were also executed from the saved Seurat object. The full package lock and R session record are included. EcoCyc method provenance was subsequently supplied and is recorded below.
 
 [Execution measurements](validation_execution_2026-09-20.json) record the completed checks. The earlier raw dose-response refit validation still applies to the unchanged source OD/plate-layout workbooks and fitted caches.
 
@@ -49,3 +49,11 @@ A separate checkout with empty generated-output directories passed in 214.33 sec
 An independent calculation directly from the H5 matrix verified all 48,883 retained cell identities, the 4,200 selected probes and eight available marker comparisons using SciPy rank-sum tests rather than Seurat marker functions. It retained the original Bonferroni denominator of 21,701 assay rows.
 
 The final Figure 6 legend distinguishes the 0.5 plotting cutoff from the original 0.6 shared-gene cutoff. An executable check exactly recovers all 91 Shared annotations from the two culture comparisons. Both Figure 6 PNG changes are confined to the legend; the other 184 PNGs, all 28 numerical CSV tables and Source Data are unchanged. All 82,275 cells in Supplementary Tables 3/4 are unchanged. The added worksheet-dimension and gene-name checks pass, as do all 13 failure/invariance tests. [Measurements](validation_clean_build_2026-09-20.json) record the results.
+
+## Reference and EcoCyc records, 21 September 2026
+
+The reference/run-record verifier checks all 600 archive members across 453 distinct stored files and all 149 study-run identities. Archived GenBank sequences match every saved FASTA: 141 U00096.3 runs and eight ATEC runs. Both saved summaries agree for every run. The exact executable version is unrecorded.
+
+All five original EcoCyc export hashes pass. The 746 rows overlapping the source workbook agree in term, P-value and matched genes. The complete parent-up export adds 114 rows, yielding 133 results in Table 4 and Source Data. Existing worksheet cells remain unchanged. No enrichment tests were recalculated.
+
+The full cached workflow passed in 210.01 seconds, including all 13 tests, the primary regression and historical checks. All 201 tracked PNG files and 28 numerical CSV outputs are byte-identical to the preceding commit. Source Data validates 500,020 numeric, 274,137 text and 31,099 blank exported cells across 25 sheets and 111 blocks. All 97 top-level input checksums pass. Unchanged figure containers are retained to avoid changes solely from export timestamps and generated object identifiers.

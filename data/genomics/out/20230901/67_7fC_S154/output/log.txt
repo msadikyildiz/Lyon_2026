@@ -1,0 +1,4 @@
+Tue Nov  7 06:58:37 2023
+
+breseq --polymorphism-prediction --num-processors 16 -r /work/greencenter/s434226/plac/reference/data/sequence-4.gb /work/greencenter/s434226/plac/data/fastq/67_7fC_S154_R1_001.fastq
+

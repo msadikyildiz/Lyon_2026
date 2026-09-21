@@ -73,6 +73,7 @@ def main():
             with ThreadPoolExecutor(max_workers=args.jobs) as pool:
                 list(pool.map(refit, DATASETS))
             run(root, ['scripts/compare_caches.py', str(root / 'reference-cache'), str(root / SCRIPTS / 'cache'), str(root / 'runs/refit-comparison.json')], logs / 'compare-refits.log')
+        run(root, ['scripts/verify_breseq_records.py'], logs / 'breseq-records.log')
         run(root, ['scripts/reproduce_genomics.py'], logs / 'genomics.log')
         run(root, ['-m', 'unittest', 'discover', '-s', SCRIPTS / 'tests', '-v'], logs / 'tests.log')
         run(root, ['scripts/reproduce_genomic_plots.py'], logs / 'genomic-plots.log')
@@ -95,7 +96,7 @@ def main():
         raise
     report = {'mode': 'raw-refit' if args.refit else 'cached', 'python': platform.python_version(),
               'platform': platform.platform(), 'seconds': round(time.time()-start, 2),
-              'steps': ['scripts/reproduce_genomics.py', 'scripts/reproduce_genomic_plots.py', 'scripts/reproduce_single_cell.py','scripts/reproduce_schematic_figures.py'] + STEPS + ['scripts/assemble_additional_figures.py','scripts/reproduce_trajectories.py'], 'status': 'passed',
+              'steps': ['scripts/verify_breseq_records.py', 'scripts/reproduce_genomics.py', 'scripts/reproduce_genomic_plots.py', 'scripts/reproduce_single_cell.py','scripts/reproduce_schematic_figures.py'] + STEPS + ['scripts/assemble_additional_figures.py','scripts/reproduce_trajectories.py'], 'status': 'passed',
               'coverage': 'docs/FIGURE_COVERAGE.md', 'single_cell_from_counts':args.single_cell,
               'raw_inputs': {str(p.relative_to(root)): hashlib.sha256(p.read_bytes()).hexdigest()
                 for p in sorted((root / SCRIPTS / 'biohpc-pull/data').glob('*.xlsx'))}}

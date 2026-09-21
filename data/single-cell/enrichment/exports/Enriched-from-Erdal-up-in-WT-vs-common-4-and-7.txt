@@ -1,0 +1,134 @@
+(Gene-Ontology-Terms All-Genes Pathways DNA-Segments)	p-values	Matches
+response to antibiotic	4.70202e-5	efeO // rplV // rplD // tufB
+translation	7.170392e-5	rplV // rplJ // rplD // tufB
+cytosolic large ribosomal subunit	8.7004446e-5	rplV // rplJ // rplD
+large ribosomal subunit	8.7004446e-5	rplV // rplJ // rplD
+ribosome assembly	1.2823477e-4	rplV // rplD
+cytoplasmic translation	1.3963462e-4	rplV // rplJ // rplD
+structural constituent of ribosome	1.554203e-4	rplJ // rplV // rplD
+ribosome	1.7232896e-4	rplJ // rplV // rplD
+large ribosomal subunit rRNA binding	1.9550599e-4	rplV // rplJ
+RNA binding	2.3212068e-4	rplJ // truB // rplV // rplD // tufB
+rplD	2.3436261e-4	rplD // rplV
+rRNA binding	2.4085927e-4	rplV // rplJ // rplD
+protein metabolic process	3.300864e-4	rplJ // phoR // rplV // rplD // tufB
+structural molecule activity	3.3844908e-4	rplJ // rplV // rplD
+ribosomal subunit	3.8075983e-4	rplV // rplJ // rplD
+ribonucleoprotein complex	4.753568e-4	rplV // rplJ // rplD
+intracellular membraneless organelle	7.74992e-4	rplJ // rplV // rplD
+intracellular organelle	7.983987e-4	rplJ // rplV // rplD
+macromolecule metabolic process	9.934364e-4	mltD // rplJ // truB // phoR // rplV // rplD // tufB
+GTPase activity	0.0014163393	tufB // rplJ
+translation regulator activity	0.0016187794	tufB // rplD
+membraneless organelle	0.0017255478	rplJ // rplV // rplD
+organelle	0.0017645087	rplJ // rplV // rplD
+membraneless organelle assembly	0.001946873	rplV // rplD
+organelle assembly	0.001946873	rplV // rplD
+mRNA pseudouridine synthesis	0.0020089287	truB
+tRNA pseudouridine(55) synthase activity	0.0020089287	truB
+mRNA modification	0.0020089287	truB
+RNA-binding transcription regulator activity	0.0020089287	rplD
+negative regulation of translation	0.002062711	rplD // rplJ
+negative regulation of protein metabolic process	0.00268998	rplD // rplJ
+nucleic acid binding	0.0027532505	rplJ // truB // rplV // cspG // rplD // tufB
+response to chemical	0.0030881355	efeO // rplV // rplD // tufB
+dksA	0.003320052	rplD // rplV // rplJ
+response to stimulus	0.0038179967	efeO // phoR // rplV // cspG // rplD // tufB
+tRNA folding	0.004014269	truB
+PhoRB Two-Component Signal Transduction System, phosphate-dependent	0.004014269	phoR
+negative regulation of cytoplasmic translation	0.0060160267	rplD
+guanyl-nucleotide exchange factor complex	0.0060160267	tufB
+cytosolic ribosome assembly	0.0060160267	rplV
+alpA	0.0060160267	phoR
+assembly of large subunit precursor of preribosome	0.0060160267	rplV
+endoribonuclease inhibitor activity	0.008014208	rplD
+ribonuclease inhibitor activity	0.008014208	rplD
+nuclease inhibitor activity	0.008014208	rplD
+regulation of translation	0.009953328	rplD // rplJ
+organelle organization	0.009953328	rplV // rplD
+RNA folding	0.010008818	truB
+macromolecule biosynthetic process	0.010408023	rplJ // rplV // rplD // tufB
+tRNA pseudouridine synthesis	0.011999861	truB
+DNA-templated transcription termination	0.011999861	rplD
+rplA	0.011999861	rplJ
+regulation of cytoplasmic translation	0.011999861	rplD
+tRNA pseudouridine synthase activity	0.011999861	truB
+organic cyclic compound binding	0.013516291	rplJ // truB // phoR // rplV // cspG // rplD // tufB
+molecular function regulator activity	0.013672718	rplD // phoR
+lytic endotransglycosylase activity	0.013987345	mltD
+regulation of gene expression	0.014491825	rplJ // phoR // cspG // rplD
+negative regulation of gene expression	0.014538327	rplD // rplJ
+regulation of protein metabolic process	0.014538327	rplD // rplJ
+regulation of macromolecule biosynthetic process	0.014686136	rplJ // phoR // cspG // rplD
+regulation of biosynthetic process	0.01558209	rplJ // phoR // cspG // rplD
+translation elongation factor activity	0.015971273	tufB
+regulation of macromolecule metabolic process	0.017812593	rplJ // phoR // cspG // rplD
+carbon-oxygen lyase activity, acting on polysaccharides	0.017951652	mltD
+lytic transglycosylase activity	0.017951652	mltD
+regulation of metabolic process	0.019411284	rplJ // phoR // cspG // rplD
+transcriptional attenuation	0.019928489	rplD
+translation repressor activity	0.019928489	rplD
+post-transcriptional regulation of gene expression	0.020901538	rplD // rplJ
+positive regulation of termination of DNA-templated transcription	0.021901788	rplD
+pseudouridine synthase activity	0.021901788	truB
+positive regulation of protein-containing complex disassembly	0.021901788	rplD
+cellular response to phosphate starvation	0.023871554	phoR
+pseudouridine synthesis	0.023871554	truB
+phosphate ion transport	0.025837792	phoR
+translational elongation	0.029759713	tufB
+translation factor activity, RNA binding	0.037561473	tufB
+peptidoglycan muralytic activity	0.037561473	mltD
+mRNA metabolic process	0.037561473	truB
+response to cold	0.039503176	cspG
+peptidoglycan recycling I	0.039503176	mltD
+regulation of cellular process	0.040935636	rplJ // phoR // cspG // rplD
+positive regulation of cellular component organization	0.0414414	rplD
+cytoplasm	0.042138778	tufB // cspG // rplV // rplJ // rplD
+phosphoprotein phosphatase activity	0.043376144	phoR
+enzyme inhibitor activity	0.043376144	rplD
+molecular function inhibitor activity	0.045307416	rplD
+Degradation/Utilization/Assimilation - Other	0.047235224	mltD
+response to UV	0.047235224	efeO
+translation regulator activity, nucleic acid binding	0.049159568	tufB
+mRNA 5'-UTR binding	0.049159568	rplD
+peptidyl-histidine phosphorylation	0.051080458	phoR
+peptidyl-histidine modification	0.051080458	phoR
+regulation of biological process	0.053546924	rplJ // phoR // cspG // rplD
+cellular component organization	0.05369257	mltD // rplV // rplD
+response to toxic substance	0.054911893	efeO
+response to light stimulus	0.054911893	efeO
+ribonucleoside triphosphate phosphatase activity	0.054953042	rplJ // tufB
+cellular component organization or biogenesis	0.058312554	mltD // rplV // rplD
+phosphorelay sensor kinase activity	0.05872957	phoR
+protein histidine kinase activity	0.05872957	phoR
+regulation of termination of DNA-templated transcription	0.06063326	rplD
+biological regulation	0.062467877	rplJ // phoR // cspG // rplD
+protein autophosphorylation	0.062533535	phoR
+regulation of protein-containing complex disassembly	0.062533535	rplD
+macromolecule modification	0.06334474	truB // phoR
+intramolecular transferase activity	0.064430386	truB
+guanosine tetraphosphate binding	0.06821386	tufB
+phosphotransferase activity, nitrogenous group as acceptor	0.06821386	phoR
+molecular sensor activity	0.07010049	phoR
+metabolic process	0.07122732	mltD // rplJ // truB // phoR // rplV // rplD // tufB
+pyrophosphatase activity	0.073868304	rplJ // tufB
+hydrolase activity, acting on acid anhydrides	0.07443812	rplJ // tufB
+hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides	0.07443812	rplJ // tufB
+protein binding	0.075478286	rplJ // phoR // rplV // cspG // rplD // tufB
+regulation of primary metabolic process	0.07729772	rplJ // phoR // rplD
+All-Genes	0.07783468	
+arcA	0.07788922	rplD // rplV
+negative regulation of macromolecule biosynthetic process	0.0813945	rplJ // rplD
+negative regulation of biosynthetic process	0.08198388	rplJ // rplD
+primary metabolic process	0.08317098	rplJ // truB // phoR // rplV // rplD // tufB
+protein phosphorylation	0.08507172	phoR
+fis	0.08555052	tufB // truB
+protein kinase activity	0.08692797	phoR
+inorganic anion transport	0.08692797	phoR
+cellular response to starvation	0.09063045	phoR
+negative regulation of macromolecule metabolic process	0.09099576	rplJ // rplD
+negative regulation of metabolic process	0.09222093	rplJ // rplD
+cellular response to nutrient levels	0.09615914	phoR
+protein-RNA complex assembly	0.09615914	rplV
+protein-RNA complex organization	0.09615914	rplV
+enzyme regulator activity	0.097995386	rplD

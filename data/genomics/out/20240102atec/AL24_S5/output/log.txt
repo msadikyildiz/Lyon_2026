@@ -1,0 +1,4 @@
+Wed Apr 24 10:37:00 2024
+
+breseq --polymorphism-prediction --num-processors 16 -r /work/greencenter/s434226/plac/reference/data/all_ATEC_annotated_contigs_w_locustag_w_genetags.gbk /work/greencenter/s434226/plac/data/20240418/fastq/AL24_S5_R1_001.fastq
+

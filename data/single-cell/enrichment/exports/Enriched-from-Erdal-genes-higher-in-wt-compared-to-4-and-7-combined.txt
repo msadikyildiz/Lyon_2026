@@ -1,0 +1,75 @@
+(Gene-Ontology-Terms Pathways)	p-values	Matches
+RNA binding	8.846071e-6	rplD // rplV // rplJ // truB
+rRNA binding	1.59636e-5	rplJ // rplV // rplD
+structural constituent of ribosome	4.435007e-5	rplV // rplD // rplJ
+ribosome	4.6512352e-5	rplV // rplD // rplJ
+ribonucleoprotein complex	4.874317e-5	rplV // rplJ // rplD
+structural molecule activity	6.362497e-5	rplV // rplD // rplJ
+intracellular membraneless organelle	9.8145094e-5	rplV // rplD // rplJ
+intracellular organelle	1.574434e-4	rplV // rplD // rplJ
+membraneless organelle	1.7262468e-4	rplV // rplD // rplJ
+translation	2.1171724e-4	rplV // rplD // rplJ
+organelle	2.6303128e-4	rplD // rplV // rplJ
+macromolecule metabolic process	3.044867e-4	rplD // rplV // rplJ // phoR // truB
+protein metabolic process	3.3271906e-4	rplD // rplV // rplJ // phoR
+cytosolic large ribosomal subunit	4.5790646e-4	rplV // rplJ
+large ribosomal subunit	4.9427385e-4	rplV // rplJ
+mRNA pseudouridine synthesis	0.0013354701	truB
+tRNA pseudouridine(55) synthase activity	0.0013354701	truB
+mRNA modification	0.0013354701	truB
+ribosomal subunit	0.0017724382	rplV // rplJ
+nucleic acid binding	0.002371839	rplD // rplV // rplJ // truB
+tRNA pseudouridine synthesis	0.002669513	truB
+ribosome assembly	0.002669513	rplV
+PhoPR two-component signal transduction pathway	0.002669513	phoR
+tRNA pseudouridine synthase activity	0.002669513	truB
+macromolecule biosynthetic process	0.0039285785	rplD // rplV // rplJ
+histidine phosphotransfer kinase activity	0.00400213	phoR
+large ribosomal subunit rRNA binding	0.00400213	rplJ
+primary metabolic process	0.0046284376	rplD // rplV // rplJ // phoR // truB
+protein-containing complex	0.006353063	rplD // rplV // rplJ
+protein autophosphorylation	0.00666309	phoR
+pseudouridine synthesis	0.007991436	truB
+pseudouridine synthase activity	0.007991436	truB
+cellular response to phosphate starvation	0.013290616	phoR
+mRNA metabolic process	0.014611865	truB
+cellular response to starvation	0.0159317	phoR
+phosphate ion transport	0.0159317	phoR
+metabolic process	0.016871667	rplD // rplV // rplJ // phoR // truB
+response to starvation	0.017250119	phoR
+macromolecule modification	0.019572474	phoR // truB
+binding	0.02033911	rplD // rplV // rplJ // phoR // truB
+cellular response to nutrient levels	0.021196902	phoR
+response to nutrient levels	0.027746685	phoR
+intramolecular transferase activity	0.03035676	truB
+inorganic anion transport	0.032961227	phoR
+membraneless organelle assembly	0.035560094	rplV
+organelle assembly	0.035560094	rplV
+phosphoprotein phosphatase activity	0.040741064	phoR
+molecular transducer activity	0.043323185	phoR
+peptidyl-histidine phosphorylation	0.047185943	phoR
+peptidyl-histidine modification	0.047185943	phoR
+Signal transduction pathways	0.047185943	phoR
+phosphorelay sensor kinase activity	0.049754173	phoR
+spore germination	0.049754173	phoR
+cellular developmental process	0.05103621	phoR
+tRNA modification	0.05103621	truB
+protein histidine kinase activity	0.05103621	phoR
+phosphotransferase activity, nitrogenous group as acceptor	0.05359613	phoR
+tRNA processing	0.058699407	truB
+molecular sensor activity	0.06251239	phoR
+protein phosphorylation	0.06883991	phoR
+protein kinase activity	0.071361326	phoR
+biosynthetic process	0.07157498	rplD // rplV // rplJ
+RNA modification	0.075133204	truB
+peptidyl-amino acid modification	0.07638777	phoR
+membrane microdomain	0.07764098	phoR
+membrane raft	0.07764098	phoR
+catalytic activity, acting on a tRNA	0.07889282	truB
+molecular function regulator activity	0.08139244	phoR
+organelle organization	0.0826402	rplV
+cellular process	0.08583378	rplD // rplV // rplJ // phoR // truB
+phosphatase activity	0.087617725	phoR
+tRNA metabolic process	0.09504348	truB
+phosphorelay signal transduction system	0.09996706	phoR
+intracellular signal transduction	0.09996706	phoR

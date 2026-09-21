@@ -174,11 +174,11 @@ def main():
     book = single/'original-tables/Single Cell Analysis Supp Tables.xlsx'
     for number,sheets in mapping.items():
         for name in sheets:
-            frame=pd.read_excel(book,sheet_name=name,header=None)
+            frame=pd.read_excel(genomic_repo/f'working/source-data/Supplementary Table {number}.xlsx',sheet_name=name,header=None)
             frame.columns=[f'Original column {i+1}' for i in range(frame.shape[1])]
             block(wb[f'Supp Table {number}'],name,frame,
-                  'data/single-cell/original-tables/Single Cell Analysis Supp Tables.xlsx; '+name,
-                  'Original cell contents and gene-set membership retained. Enrichment calculation method, database version and tested background remain to be documented.')
+                  f'working/source-data/Supplementary Table {number}.xlsx; '+name,
+                  'Original cells and gene memberships retained; parent-up enrichment extended from the matching EcoCyc text export to all 133 rows. EcoCyc method and historical-version limitations: data/single-cell/enrichment/README.md.')
     for name,title in [('sample_metadata.csv','Technical sample metadata'),('cluster_composition.csv','Panel c: cluster composition'),('figure6_volcano_points.csv','Panels d/e: volcano points')]:
         block(wb['Figure 6'],title,pd.read_csv(single/'plot_tables'/name),'data/single-cell/plot_tables/'+name)
     cells=pd.read_csv(single/'generated/cells_and_embeddings.csv')

@@ -10,6 +10,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 from openpyxl import load_workbook
+from verify_enrichment import verify as verify_enrichment, extend_parent_results
 ROOT=Path(__file__).resolve().parents[1]
 BASE=ROOT/'data/single-cell'; GEN=BASE/'generated'; TABLES=BASE/'original-tables'
 OUT=ROOT/'working/figures-assembled'; EXPORT=BASE/'plot_tables'
@@ -63,6 +64,7 @@ def export_tables():
    if sheet not in sheets:del wb[sheet]
   assert wb.sheetnames==sheets
   if number==4:
+   extend_parent_results(wb)
    sheet=wb.create_sheet('Targeted marker checks')
    targeted=pd.concat([pd.read_csv(GEN/f'marker_claim_check_{culture}.csv') for culture in [4,7]])
    sheet.append(['Targeted checks of hipA and rplJ with min.pct=0 and logfc.threshold=0; Bonferroni correction uses all assay features.'])
@@ -71,7 +73,8 @@ def export_tables():
   path=dest/f'Supplementary Table {number}.xlsx';wb.save(path)
   original=load_workbook(BOOK,data_only=False);check=load_workbook(path,data_only=False)
   for sheet in sheets:
-   assert (original[sheet].max_row,original[sheet].max_column)==(check[sheet].max_row,check[sheet].max_column),(sheet,'worksheet dimensions changed')
+   expected_rows = 134 if sheet == 'up in WT vs 4 and 7 GSEA' else original[sheet].max_row
+   assert (expected_rows,original[sheet].max_column)==(check[sheet].max_row,check[sheet].max_column),(sheet,'unexpected worksheet dimensions')
    for row_a,row_b in zip(original[sheet].values,check[sheet].values):
     for a,b in zip(row_a,row_b):
      if isinstance(a,(float,int)):assert np.isclose(a,b,rtol=1e-14,atol=1e-300),(sheet,a,b)
@@ -183,7 +186,6 @@ def supplementary_figures(points):
 
 def main():
  EXPORT.mkdir(exist_ok=True);plt.rcParams.update({'font.family':'Times New Roman','font.size':9.5,'pdf.fonttype':42,'svg.fonttype':'none','mathtext.fontset':'stix'})
- cells=verify();export_tables();points=supplement_points();singlecell_figure(cells);supplementary_figures(points)
- CHECKS['enrichment']='Supplied result tables preserved; generating method, database version and tested background are not in the supplied Rmd files.'
+ CHECKS['enrichment']=verify_enrichment();cells=verify();export_tables();points=supplement_points();singlecell_figure(cells);supplementary_figures(points)
  (EXPORT/'validation.json').write_text(json.dumps(CHECKS,indent=2)+'\n');print(json.dumps(CHECKS,indent=2))
 if __name__=='__main__':main()

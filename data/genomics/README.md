@@ -35,6 +35,14 @@ data/genomics/data/processed/traced_alleles/<lineage>/<population>.csv
 
 `recovered_tables/` preserves the historical notebook-display exports for comparison. They are no longer the Source Data input. The genomic plotting notebooks supply the selections and aliases used by scripts/reproduce_genomic_plots.py. All genomic numerical panels are rendered automatically. Plot matrices and coordinate/allele crosswalks are in plot_tables/. Distinct mutation sites remain separate even when they share a short label; historical averaging corrections are documented in docs/DATA_CORRECTIONS.md.
 
+## References and run records
+
+`Breseq_reference_and_run_records.zip`, supplied by Erdal Toprak on 20 September 2026, provides all four requested records for all 149 study runs. The original log and both summary JSON files remain under each dated run/sample directory. Two byte-distinct FASTAs are stored once under `reference/fasta/`; `run_records/manifest.json` maps every original archive path to its retained file and SHA-256. `run_records/runs.csv` maps each run to its command, options and archived GenBank reference.
+
+All 141 MG1655 runs used `sequence-4.gb` (U00096.3); eight ATEC runs used `all_ATEC_annotated_contigs_w_locustag_w_genetags.gbk`. Both requested ATEC GenBanks are retained. For every run, the archived GenBank sequence matches the saved FASTA sequence, and the sequence length matches the summary JSON. Original `/work` reference paths no longer exist; sequence agreement does not establish byte identity of the original annotation files. The recorded commands used breseq polymorphism prediction with 16 processors. Saved options are retained in full, including the caller's 0.05 polymorphism-frequency cutoff; downstream notebook frequency filters remain separate.
+
+Run `python scripts/verify_breseq_records.py` to verify every archive member, study-run identity and sequence match. This check also runs at the start of `reproduce.py`. The import option `--import-archive /path/to/Breseq_reference_and_run_records.zip` recreates the deduplicated storage from the original archive without overwriting differing inputs.
+
 ## Remaining inputs
 
-Reproducing the upstream mutation calls requires reference-genome files/version, caller version/options and sequencing-read accessions. These are not supplied by this archive. Single-cell inputs and the count-matrix reconstruction are documented in ../single-cell/README.md.
+The WGS read accession and exact breseq executable version are not present in the supplied records. No standalone job scripts were recovered; the command lines and saved run options are available. Read alignment and mutation calling are not rerun by this repository. Single-cell inputs and count-matrix reconstruction are documented in ../single-cell/README.md.

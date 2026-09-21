@@ -1,0 +1,377 @@
+(Pathways All-Genes Gene-Ontology-Terms DNA-Segments)	p-values	Matches
+superpathway of glycolysis, pyruvate dehydrogenase, TCA, and glyoxylate bypass	2.7653953e-6	pgk // pgi // yidA // ptsG // sdhA // sdhB // acnA // gltA
+bluR	2.0064328e-5	ycgZ // ymgA // ariR
+NADH binding	2.0064328e-5	gltA // serA // ldhA
+Generation of Precursor Metabolites and Energy	2.6262489e-5	acnA // gltA // nuoC // yidA // pgk // adhE // ldhA // dld // pgi // ptsG // sdhA // sdhB
+lactate metabolic process	1.3205629e-4	ydiJ // ldhA // adhE // dld
+lactate dehydrogenase activity	2.670701e-4	ldhA // ydiJ // dld
+<i>N</i>-acetylglucosamine degradation I	2.9931345e-4	nagA // nagB
+TCA cycle I (prokaryotic)	4.0644113e-4	sdhA // sdhB // acnA // gltA
+generation of precursor metabolites and energy	5.819983e-4	sdhA // ldhA // ratA // nuoC // pgi // acnA // pgk // adhE // dld // sdhB
+superpathway of glyoxylate bypass and TCA	5.856483e-4	sdhA // sdhB // acnA // gltA
+amino acid binding	8.1482285e-4	serA // tcyJ // carB
+Pathways	8.169002e-4	dld // yidA // pgk // glpK // gshB // carB // nuoC // ldhA // patA // otsA // pgi // sdhA // sdhB // acnA // gltA // alaA // nagA // folK // waaC // moeA // ydfG // epd // nagB // adhE // serA // ydiJ // gltB // ptsG // cysS // frmA // frmB // arsC // evgS // amn
+energy derivation by oxidation of organic compounds	8.6776185e-4	ldhA // adhE // sdhA // sdhB // dld // acnA // ratA
+formaldehyde catabolic process	8.8778057e-4	frmA // frmB
+formaldehyde metabolic process	8.8778057e-4	frmA // frmB
+C1 Compound Utilization and Assimilation	8.8778057e-4	frmA // frmB
+D-lactate dehydrogenase (cytochrome) activity	8.8778057e-4	ydiJ // dld
+formaldehyde oxidation II (glutathione-dependent)	8.8778057e-4	frmA // frmB
+D-lactate dehydrogenase activity	8.8778057e-4	ldhA // ydiJ
+oxidoreductase activity, acting on the CH-OH group of donors, cytochrome as acceptor	8.8778057e-4	ydiJ // dld
+frmR	8.8778057e-4	frmB // frmA
+Degradation/Utilization/Assimilation	0.0012064913	patA // adhE // dld // yidA // pgk // nuoC // nagA // nagB // glpK // ydfG // carB // gltB // amn // serA // ydiJ // frmA // frmB
+response to pH	0.0012177632	ariR // ycgZ // evgS // nhaA // ybaT
+glycolysis I (from glucose 6-phosphate)	0.0012676556	pgk // pgi // yidA // ptsG
+Glycolysis	0.0014512172	yidA // pgk // pgi // ptsG
+glucose metabolic process	0.0014733605	pgk // pgi // ldhA // adhE // epd
+Aerobic Respiration	0.001652555	nuoC // dld // sdhA // sdhB
+L-serine biosynthesis	0.0017554968	serA // ydiJ
+respiratory chain complex II (succinate dehydrogenase)	0.0017554968	sdhA // sdhB
+N-acetylglucosamine catabolic process	0.0017554968	nagA // nagB
+tricarboxylic acid cycle	0.0018725435	sdhA // sdhB // acnA // gltA
+Sugar Derivative Degradation	0.001987109	nagA // nagB // adhE
+superpathway of glycolysis and the Entner-Doudoroff pathway	0.0021120512	pgk // pgi // yidA // ptsG
+response to oxidative stress	0.0023866373	pgi // cnoX // bcp // ariR // azoR // adhE // acnA
+oxidoreductase activity, acting on CH-OH group of donors	0.0023866373	frmA // ldhA // ydiJ // adhE // ydfG // serA // dld
+NAD binding	0.002684622	gltA // serA // ldhA // epd // nuoC
+superpathway of L-serine and glycine biosynthesis I	0.0028928074	serA // ydiJ
+ethanol metabolic process	0.0028928074	adhE // ldhA
+succinate dehydrogenase (quinone) activity	0.0028928074	sdhB // sdhA
+N-acetylglucosamine metabolic process	0.0028928074	nagA // nagB
+mixed acid fermentation	0.0028928074	ldhA // adhE
+protein complex oligomerization	0.0031736542	nagA // ydfG // gshB // ldhA // gltA // adhE
+aerobic respiration	0.0032823463	sdhA // sdhB // dld
+anion binding	0.0034276282	gltA // sdhA // ybhF // ldhA // dgcJ // folK // nhaA // azoR // carB // gshB // pgk // serA // phr // patA // alaA // evgS // ydiJ // glpK // dld // cyaA // cysS // zapE
+small molecule binding	0.0042407243	nagE // gltA // frmA // sdhA // ybhF // ldhA // dgcJ // folK // ratA // nhaA // nuoC // pgi // azoR // carB // acnA // gshB // epd // pgk // nagA // moeA // serA // yidA // adhE // phr // rcnR // patA // alaA // evgS // ydiJ // glpK // dld // cyaA // gltB // cysS // sdhB // zapE
+cellular detoxification of aldehyde	0.0042903014	frmA // frmB
+glucosamine-containing compound catabolic process	0.0042903014	nagB // nagA
+protein homooligomerization	0.0051408634	nagA // ydfG // gshB // ldhA // adhE
+oxidoreductase activity, acting on the CH-OH group of donors, NAD or NADP as acceptor	0.00525957	frmA // ldhA // ydiJ // adhE // ydfG // serA
+glucosamine-containing compound metabolic process	0.0059388075	nagB // nagA
+glyoxylate cycle	0.0059388075	acnA // gltA
+superpathway of <i>N</i>-acetylneuraminate, <i>N</i>-acetylglucosamine, and <i>N</i>-acetylmannosamine degradation to &beta;-D-fructofuranose 6-phosphate	0.0059388075	nagA // nagB
+2-oxoglutarate metabolic process	0.0059388075	ldhA // adhE
+glycolytic fermentation	0.0059388075	ldhA // adhE
+oxidoreductase activity, acting on the CH-CH group of donors, quinone or related compound as acceptor	0.0059388075	sdhB // sdhA
+alcohol dehydrogenase (NAD+) activity	0.0059388075	adhE // frmA
+gluconeogenesis I	0.006161618	pgk // yidA // pgi
+oxidoreductase activity	0.0064953864	frmA // sdhA // bcp // ldhA // nuoC // azoR // ydfG // epd // serA // adhE // arsC // ydiJ // dld // gltB // sdhB
+cellular respiration	0.0067819464	sdhA // sdhB // dld // acnA // ratA
+nagC	0.0068107327	nagB // nagA // nagC // nagE
+succinate dehydrogenase activity	0.007829387	sdhB // sdhA
+succinate to cytochrome <i>bo</i> oxidase electron transfer	0.007829387	sdhA // sdhB
+succinate to cytochrome <i>bd</i> oxidase electron transfer	0.007829387	sdhA // sdhB
+3 iron, 4 sulfur cluster binding	0.007829387	sdhB // gltB
+ribonucleotide metabolic process	0.008393563	pgi // pgk // cyaA // amn // carB
+quinone binding	0.008864627	ratA // nuoC // dld
+nucleotide binding	0.010005826	gltA // sdhA // ybhF // ldhA // dgcJ // folK // nuoC // azoR // carB // gshB // epd // pgk // serA // phr // evgS // ydiJ // glpK // dld // cyaA // cysS // zapE
+heterocyclic compound binding	0.010021949	gltA // sdhA // ybhF // ldhA // dgcJ // folK // nuoC // azoR // carB // gshB // epd // pgk // serA // phr // patA // alaA // evgS // ydiJ // glpK // dld // cyaA // cysS // zapE
+catalytic activity	0.01030965	nagE // ptsG // gltA // frmA // sdhA // ybhF // bcp // ldhA // dgcJ // folK // yceF // yafE // nuoC // nagB // pgi // uvrC // azoR // rssA // carB // elbB // frmB // acnA // gshB // amn // ydfG // epd // pgk // nagA // moeA // serA // yidA // adhE // phr // patA // waaC // alaA // evgS // arsC // ydiJ // glpK // dld // cyaA // gltB // cysS // sdhB // otsA // zapE
+nucleoside phosphate binding	0.010320997	gltA // sdhA // ybhF // ldhA // dgcJ // folK // nuoC // azoR // carB // gshB // epd // pgk // serA // phr // evgS // ydiJ // glpK // dld // cyaA // cysS // zapE
+aerobic electron transport chain	0.010996417	sdhA // sdhB
+hexose metabolic process	0.011030366	pgk // pgi // ldhA // adhE // epd
+ion binding	0.011261693	nagE // gltA // frmA // sdhA // ybhF // ldhA // dgcJ // folK // nhaA // azoR // carB // acnA // gshB // pgk // nagA // moeA // serA // yidA // adhE // phr // rcnR // patA // alaA // evgS // ydiJ // glpK // dld // cyaA // gltB // cysS // sdhB // zapE
+ribose phosphate metabolic process	0.01161859	carB // cyaA // amn // pgi // pgk
+protein homotetramerization	0.01223399	nagA // ydfG // gshB // ldhA
+acetate metabolic process	0.012302147	ldhA // adhE
+N-acetylneuraminate catabolic process	0.012302147	nagB // nagA
+protein tetramerization	0.013061224	nagA // ydfG // gshB // ldhA
+cellular response to oxidative stress	0.013399944	pgi // cnoX // bcp
+FAD binding	0.013399944	ydiJ // dld // phr
+Alcohol Degradation	0.013923434	glpK // yidA // pgk // adhE
+Amide, Amidine, Amine, and Polyamine Degradation	0.014821098	nagA // nagB // adhE // patA
+purine ribonucleotide metabolic process	0.014821098	pgi // pgk // cyaA // amn
+succinate metabolic process	0.014867572	ldhA // adhE
+phospholipid binding	0.014867572	nhaA // zapE
+N-acetylneuraminate metabolic process	0.014867572	nagB // nagA
+Inorganic Nutrient Metabolism	0.014882703	nuoC // serA // ydiJ // carB // gltB
+marA	0.016724592	acnA // ycgZ // ymgA // ariR
+Carbohydrate Degradation	0.016777579	glpK // nagA // nagB // yidA // pgk // adhE
+cyclic nucleotide metabolic process	0.017410714	cyaA
+phosphoglycerate dehydrogenase activity	0.017410714	serA
+3-hydroxyisobutyrate dehydrogenase activity	0.017410714	ydfG
+azobenzene reductase activity	0.017410714	azoR
+S-(hydroxymethyl)glutathione dehydrogenase [NAD(P)+] activity	0.017410714	frmA
+phosphoglycerate kinase activity	0.017410714	pgk
+pyruvate fermentation to (<i>R</i>)-lactate	0.017410714	ldhA
+S-nitrosoglutathione reductase (NADH) activity	0.017410714	frmA
+DNA photolyase activity	0.017410714	phr
+cyclic nucleotide biosynthetic process	0.017410714	cyaA
+iron-responsive element binding	0.017410714	acnA
+carbamoyl-phosphate synthase (ammonia) activity	0.017410714	carB
+glutathione synthase activity	0.017410714	gshB
+putrescine--2-oxoglutarate transaminase activity	0.017410714	patA
+phototransduction, visible light	0.017410714	phr
+regulation of isoprenoid metabolic process	0.017410714	elbB
+phosphatidylcholine metabolic process	0.017410714	rssA
+alpha,alpha-trehalose-phosphate synthase (UDP-forming) activity	0.017410714	otsA
+cAMP biosynthetic process	0.017410714	cyaA
+pyrimidine dimer repair	0.017410714	phr
+protein-N(pi)-phosphohistidine--N-acetyl-D-glucosamine phosphotransferase activity	0.017410714	nagE
+diamine transaminase activity	0.017410714	patA
+positive regulation of isoprenoid metabolic process	0.017410714	elbB
+S-(hydroxymethyl)glutathione dehydrogenase (NADP+) activity	0.017410714	frmA
+protein-phosphocysteine-glucosamine phosphotransferase system transporter activity	0.017410714	nagE
+cAMP metabolic process	0.017410714	cyaA
+molybdenum incorporation into molybdenum-molybdopterin complex	0.017410714	moeA
+S-(hydroxymethyl)glutathione dehydrogenase (NAD+) activity	0.017410714	frmA
+deoxyribodipyrimidine photo-lyase activity	0.017410714	phr
+adenylate cyclase activity	0.017410714	cyaA
+protein-phosphocysteine-N-acetylglucosamine phosphotransferase system transporter activity	0.017410714	nagE
+cyclic purine nucleotide metabolic process	0.017410714	cyaA
+protein destabilization	0.017410714	rssB
+D-lactate dehydrogenase (quinone) activity	0.017410714	dld
+organelle membrane	0.017410714	nagE
+photoreactive repair	0.017410714	phr
+metal incorporation into metallo-molybdopterin complex	0.017410714	moeA
+erythrose-4-phosphate dehydrogenase activity	0.017410714	epd
+cysteinyl-tRNA aminoacylation	0.017410714	cysS
+molybdopterin molybdotransferase activity	0.017410714	moeA
+cysteine-tRNA ligase activity	0.017410714	cysS
+ethanol biosynthetic process	0.017410714	adhE
+non-ribosomal peptide synthetase activity	0.017410714	gshB
+serine 3-dehydrogenase activity	0.017410714	ydfG
+organelle inner membrane	0.017410714	nagE
+detection of visible light	0.017410714	phr
+phototransduction	0.017410714	phr
+N-acetylglucosamine-6-phosphate deacetylase activity	0.017410714	nagA
+2-amino-4-hydroxy-6-hydroxymethyldihydropteridine diphosphokinase activity	0.017410714	folK
+glutamine metabolic process	0.01764155	gltB // carB
+regulation of protein stability	0.01764155	rssB // cnoX
+Sugar Biosynthesis	0.017731266	pgi // pgk // yidA // otsA
+organophosphate metabolic process	0.018976022	yceF // nagB // pgi // rssA // carB // amn // epd // pgk // moeA // glpK // cyaA
+cellular detoxification	0.01904043	frmA // frmB // bcp
+Carbohydrate Biosynthesis	0.020413198	pgi // pgk // yidA // waaC // otsA
+pyruvate metabolic process	0.020626305	alaA // pgi // pgk
+Fermentation to Short-Chain Fatty Acids	0.020626305	adhE // ldhA // gltA
+mixed acid fermentation	0.020626305	adhE // ldhA // gltA
+aldehyde metabolic process	0.022132965	frmA // frmB // acnA // epd
+electron transfer activity	0.022211062	nuoC // sdhB // sdhA // dld // azoR
+Fermentation of Pyruvate	0.022282872	adhE // ldhA // gltA
+Pyruvate Fermentation to Ethanol	0.022282872	adhE // ldhA // gltA
+Fermentation to Alcohols	0.022282872	adhE // ldhA // gltA
+carboxylic acid metabolic process	0.02280388	ldhA // folK // nagB // pgi // carB // acnA // pgk // nagA // serA // adhE // patA // alaA // ydiJ // dld // gltB
+response to stress	0.023918139	nagE // ybaT // bcp // ldhA // nhaA // pgi // uvrC // azoR // ariR // acnA // adhE // phr // alaA // cnoX // arsC // glpK // otsA // apaG
+organic hydroxy compound metabolic process	0.024820147	ldhA // epd // adhE // ydiJ // glpK // dld
+response to acidic pH	0.025808254	ariR // ycgZ // evgS
+respiratory chain complex	0.025808254	nuoC // sdhA // sdhB
+small molecule metabolic process	0.026636533	frmA // ldhA // folK // yceF // nagB // pgi // carB // frmB // acnA // amn // ydfG // epd // pgk // nagA // serA // adhE // patA // alaA // ydiJ // glpK // dld // cyaA // gltB
+L-glutamine degradation I	0.027137343	carB // gltB
+superpathway of sulfate assimilation and cysteine biosynthesis	0.027137343	serA // ydiJ
+alcohol dehydrogenase [NAD(P)+] activity	0.027137343	adhE // frmA
+amino sugar catabolic process	0.027137343	nagB // nagA
+hexose biosynthetic process	0.027137343	pgk // pgi
+gluconeogenesis	0.027137343	pgk // pgi
+Electron Transfer Chains	0.02714987	nuoC // dld // sdhA // sdhB
+cytosol	0.027226578	gshB // adhE // glpK // gltA // frmA // pgi // cysS // cyaA // amn // bcp // moeA // phr // uvrC // gcvR // rssB // epd // nagC // serA // otsA // patA // cnoX // yccJ // gltB // carB // sgrR // folK // yafE // frmB // nagA // nagB // ybgA // bssR // yceF // ariR // ychJ // rssA // acnA // ldhA // azoR // ydfG // yeaR // yecJ // rcnR // alaA // yfiE // pgk // elbB // zapE // yidA // arsC // evgS // ydiJ // waaC
+Fermentation	0.027676975	adhE // ldhA // gltA
+Sugar Degradation	0.028502183	nagA // nagB // yidA // adhE
+Ammonia Assimilation	0.030669078	carB // gltB
+sodium ion transmembrane transport	0.030669078	ybhF // nhaA
+ammonia assimilation cycle III	0.030669078	carB // gltB
+Respiration	0.032797687	nuoC // dld // sdhA // sdhB
+Alditol Degradation	0.033705316	glpK // yidA // pgk
+phosphate-containing compound metabolic process	0.033874128	yceF // nagB // pgi // rssA // carB // amn // epd // pgk // moeA // evgS // glpK // cyaA
+adenyl nucleotide binding	0.034229152	gltA // ybhF // ldhA // folK // nuoC // carB // gshB // epd // pgk // serA // evgS // glpK // cyaA // cysS // zapE
+purine ribonucleoside diphosphate catabolic process	0.034372125	pgi // pgk
+glycolytic process	0.034372125	pgi // pgk
+cell redox homeostasis	0.034372125	bcp // cnoX
+ADP catabolic process	0.034372125	pgi // pgk
+ribonucleoside diphosphate catabolic process	0.034372125	pgi // pgk
+cyclase activity	0.034522116	cyaA
+serine binding	0.034522116	serA
+glutamate synthase (NADPH) activity	0.034522116	gltB
+adenosine nucleotides degradation III	0.034522116	amn
+L-alanine biosynthetic process from pyruvate	0.034522116	alaA
+error-free translesion synthesis	0.034522116	apaG
+glyceraldehyde-3-phosphate dehydrogenase (NAD+) (phosphorylating) activity	0.034522116	epd
+glutamate synthase complex	0.034522116	gltB
+trehalose biosynthetic process	0.034522116	otsA
+glutathione biosynthesis	0.034522116	gshB
+glucose-6-phosphate isomerase activity	0.034522116	pgi
+glyceraldehyde-3-phosphate dehydrogenase [NAD(P)+] (phosphorylating) activity	0.034522116	epd
+AMP nucleosidase activity	0.034522116	amn
+oxidoreductase activity, acting on NAD(P)H as acceptor	0.034522116	azoR
+L-alanine biosynthesis II	0.034522116	alaA
+glycine binding	0.034522116	
+protein-phosphocysteine-glucose phosphotransferase system transporter activity	0.034522116	ptsG
+micF	0.034522116	tcyJ
+L-glutamate biosynthetic process	0.034522116	gltB
+arsenate reductase (glutaredoxin) activity	0.034522116	arsC
+glutamate synthase activity	0.034522116	gltB
+citrate synthase activity	0.034522116	gltA
+glutamate synthase complex (NADPH)	0.034522116	gltB
+S-formylglutathione hydrolase activity	0.034522116	frmB
+citrate (Si)-synthase activity	0.034522116	gltA
+oxidoreductase activity, acting on phosphorus or arsenic in donors, disulfide as acceptor	0.034522116	arsC
+3-hydroxypropionate dehydrogenase (NADP+) activity	0.034522116	ydfG
+EvgSA Two-Component Signal Transduction System	0.034522116	evgS
+carbamoyl-phosphate synthase complex	0.034522116	carB
+positive regulation of lipid metabolic process	0.034522116	elbB
+Nucleoside and Nucleotide Degradation	0.035854597	adhE // amn // ydfG
+nucleotide metabolic process	0.036177665	yceF // pgi // carB // amn // pgk // cyaA
+purine nucleoside diphosphate catabolic process	0.038239613	pgi // pgk
+nucleoside diphosphate catabolic process	0.038239613	pgi // pgk
+purine ribonucleotide catabolic process	0.038239613	pgi // pgk
+ADP metabolic process	0.038239613	pgi // pgk
+pyridine nucleotide catabolic process	0.038239613	pgi // pgk
+phosphorus metabolic process	0.040122885	yceF // nagB // pgi // rssA // carB // amn // epd // pgk // moeA // evgS // glpK // cyaA
+Proteinogenic Amino Acid Biosynthesis	0.040343363	carB // gltB // serA // ydiJ // alaA
+detoxification	0.040360697	frmA // frmB // bcp
+oxoacid metabolic process	0.04074423	ldhA // folK // nagB // pgi // carB // acnA // pgk // nagA // serA // adhE // patA // alaA // ydiJ // dld // gltB
+aldehyde catabolic process	0.042264853	frmA // frmB
+purine ribonucleoside diphosphate metabolic process	0.042264853	pgi // pgk
+flavin adenine dinucleotide binding	0.042473324	ydiJ // dld // phr // sdhA
+purine nucleotide binding	0.044020638	gltA // ybhF // ldhA // dgcJ // folK // nuoC // carB // gshB // epd // pgk // serA // evgS // glpK // cyaA // cysS // zapE
+Amino Acid Biosynthesis	0.044517413	serA // ydiJ // carB // gltB // alaA
+respiratory electron transport chain	0.046021752	sdhA // sdhB // dld // nuoC
+purine nucleoside diphosphate metabolic process	0.046441328	pgi // pgk
+pyridine-containing compound catabolic process	0.046441328	pgi // pgk
+protein binding	0.04816349	nagE // ptsG // gltA // frmA // sdhA // ybhF // ldhA // dgcJ // nuoC // nagB // ydgA // ychJ // pgi // rssB // azoR // ariR // carB // gshB // ycgZ // amn // ydfG // nagA // moeA // serA // adhE // phr // patA // waaC // ymgA // alaA // cnoX // glpK // cyaA // gltB // sdhB // zapE
+response to abiotic stimulus	0.048773676	ybaT // ldhA // nhaA // uvrC // ariR // ycgZ // phr // evgS // otsA
+monosaccharide metabolic process	0.048943106	ldhA // pgi // epd // pgk // adhE
+organic acid metabolic process	0.04943878	ldhA // folK // nagB // pgi // carB // acnA // pgk // nagA // serA // adhE // patA // alaA // ydiJ // dld // gltB
+nucleoside phosphate metabolic process	0.049471512	yceF // nagB // pgi // carB // amn // pgk // cyaA
+monosaccharide biosynthetic process	0.050762706	pgk // pgi
+fermentation	0.050762706	ldhA // adhE
+glucosamine catabolic process	0.051339284	nagB
+glutamate dehydrogenase [NAD(P)+] activity	0.051339284	gltB
+lithium ion transmembrane transport	0.051339284	ybhF
+lithium ion transport	0.051339284	ybhF
+detection of abiotic stimulus	0.051339284	phr
+trehalose biosynthesis I	0.051339284	otsA
+ammonia assimilation cycle	0.051339284	gltB
+excinuclease ABC activity	0.051339284	uvrC
+disaccharide biosynthetic process	0.051339284	otsA
+detection of light stimulus	0.051339284	phr
+glycerol kinase activity	0.051339284	glpK
+lactate catabolic process	0.051339284	ydiJ
+arsenate reductase activity	0.051339284	arsC
+diaminopimelate transport	0.051339284	tcyJ
+glucosamine-6-phosphate deaminase activity	0.051339284	nagB
+oxidoreductase activity, acting on phosphorus or arsenic in donors	0.051339284	arsC
+alanine-oxo-acid transaminase activity	0.051339284	alaA
+carbamoyl-phosphate synthase (glutamine-hydrolyzing) activity	0.051339284	carB
+acetaldehyde dehydrogenase (acetylating) activity	0.051339284	adhE
+L-alanine biosynthetic process	0.051339284	alaA
+glucosamine metabolic process	0.051339284	nagB
+AMP salvage	0.051339284	amn
+tetracycline transmembrane transport	0.051339284	ybhF
+rcnR	0.051339284	rcnR
+extrinsic component of cytoplasmic side of plasma membrane	0.051339284	dld
+2-hydroxyglutarate dehydrogenase activity	0.051339284	serA
+response to alkaline pH	0.051339284	nhaA
+positive regulation of proteolysis	0.051339284	rssB
+glutathione biosynthetic process	0.051339284	gshB
+arsR	0.051339284	arsC
+Disaccharide Biosynthesis	0.051339284	otsA
+glutamate dehydrogenase (NADP+) activity	0.051339284	gltB
+detection of external stimulus	0.051339284	phr
+L-alanine:2-oxoglutarate aminotransferase activity	0.051339284	alaA
+putrescine degradation I	0.051339284	patA
+oxidoreductase activity, acting on the CH-NH2 group of donors, NAD or NADP as acceptor	0.051339284	gltB
+pepA	0.051339284	carB
+fatty acid derivative transport	0.051339284	tcyJ
+amide metabolic process	0.053602964	nagB // nagA // folK // gshB
+glycolysis II (from fructose 6-phosphate)	0.055222813	yidA // pgk
+purine nucleotide catabolic process	0.055222813	pgi // pgk
+ribonucleotide biosynthetic process	0.05550234	carB // cyaA // amn
+anaerobic respiration	0.055598773	dld // sdhA // acnA
+carbohydrate derivative catabolic process	0.055598773	pgi // pgk // nagB // nagA
+soxS	0.05825616	ptsG // pgi // acnA
+monocarboxylic acid metabolic process	0.05903334	ldhA // pgi // acnA // pgk // adhE // alaA // ydiJ // dld
+nucleobase-containing small molecule metabolic process	0.05903334	yceF // nagB // pgi // carB // amn // ydfG // pgk // cyaA
+cellular response to stimulus	0.059530303	nagE // bcp // pgi // uvrC // ariR // ycgZ // phr // alaA // cnoX // arsC // glpK // otsA // apaG
+Pyrimidine Nucleotide Degradation	0.059815653	adhE // ydfG
+Sulfur Compound Metabolism	0.059815653	serA // ydiJ
+ribonucleotide catabolic process	0.059815653	pgi // pgk
+nsrR	0.06182562	yoaG // yeaR // tcyJ // moeA
+ribose phosphate biosynthetic process	0.0639546	carB // cyaA // amn
+Nitrogen Compound Metabolism	0.0639546	nuoC // carB // gltB
+glutamine family amino acid biosynthetic process	0.06453538	carB // gltB
+cellular response to acidic pH	0.06453538	ariR // ycgZ
+formate metabolic process	0.06453538	ldhA // adhE
+amino sugar metabolic process	0.06453538	nagB // nagA
+ribonucleoside diphosphate metabolic process	0.06453538	pgi // pgk
+narL	0.06552604	adhE // moeA // nuoC // yoaG // yeaR
+electron transport chain	0.06617483	sdhA // sdhB // dld // nuoC
+fis	0.066231176	apaG // carB // ptsG // adhE // nuoC // patA // yoaG // yeaR
+maintenance of unfolded protein	0.06786721	cnoX
+lysophospholipase activity	0.06786721	rssA
+thioredoxin peroxidase activity	0.06786721	bcp
+D-glucose import across plasma membrane	0.06786721	ptsG
+hydroperoxide reductase activity	0.06786721	bcp
+ligand-gated monoatomic ion channel activity	0.06786721	tcyJ
+6-hydroxymethyl-dihydropterin diphosphate biosynthesis I	0.06786721	folK
+UDP-N-acetylglucosamine biosynthetic process	0.06786721	nagB
+L-threonine degradation IV	0.06786721	adhE
+oxidoreductase activity, acting on other nitrogenous compounds as donors, with NAD or NADP as acceptor	0.06786721	azoR
+thioredoxin-dependent peroxiredoxin activity	0.06786721	bcp
+cardiolipin binding	0.06786721	nhaA
+L-cystine transport	0.06786721	tcyJ
+ADP-heptose-lipopolysaccharide heptosyltransferase activity	0.06786721	waaC
+excinuclease repair complex	0.06786721	uvrC
+N-acetylglucosamine transmembrane transporter activity	0.06786721	nagE
+L-cystine transmembrane transporter activity	0.06786721	tcyJ
+aconitate hydratase activity	0.06786721	acnA
+ethanol degradation I	0.06786721	adhE
+mRNA 3'-UTR binding	0.06786721	acnA
+lipopolysaccharide heptosyltransferase activity	0.06786721	waaC
+purine nucleotide metabolic process	0.06840829	cyaA // pgi // pgk // amn
+Other Biosynthesis	0.06937631	folK // gshB
+sodium ion transport	0.06937631	ybhF // nhaA
+protein-containing complex assembly	0.07428479	nagA // ydfG // gshB // ldhA // gltA // adhE
+ATP metabolic process	0.07433293	pgi // pgk
+cellular response to pH	0.07433293	ariR // ycgZ
+transaminase activity	0.07433293	alaA // patA
+response to stimulus	0.07457531	nagE // ybaT // bcp // ldhA // nhaA // pgi // uvrC // azoR // ariR // acnA // ycgZ // adhE // phr // alaA // cnoX // evgS // arsC // glpK // tcyJ // gltB // otsA // apaG
+crp	0.075012885	nagB // nagA // nagC // cyaA // acnA // sdhA // sdhB // gltB // epd // pgk // glpK // gltA // nagE // serA // ptsG
+Proteinogenic Amino Acid Degradation	0.0753415	adhE // patA // carB // gltB
+All-Genes	0.07850681	
+pyridine-containing compound metabolic process	0.07927483	pgi // pgk // epd
+transferase activity, transferring nitrogenous groups	0.079399854	alaA // patA
+modified amino acid biosynthetic process	0.079399854	folK // gshB
+cra	0.0808137	adhE // acnA // epd // pgk // nuoC
+cellular process	0.083374195	ybaT // nagE // ptsG // ygaZ // gltA // frmA // sdhA // ybhF // bcp // gcvR // yidE // ldhA // dgcJ // folK // ratA // nhaA // yceF // nuoC // nagB // ydgA // yfiE // pgi // uvrC // rssB // rssA // ariR // carB // elbB // frmB // acnA // gshB // ydhK // ycgZ // amn // ydfG // epd // pgk // nagA // moeA // serA // adhE // phr // tyrP // patA // waaC // alaA // cnoX // evgS // arsC // ydiJ // glpK // sgrR // tcyJ // dld // cyaA // gltB // cysS // sdhB // otsA // zapE // apaG
+glycerol degradation I	0.08411081	glpK
+stress response to copper ion	0.08411081	ybaT
+xenobiotic transmembrane transport	0.08411081	ybhF
+L-alanine Biosynthesis	0.08411081	alaA
+UDP-<i>N</i>-acetyl-D-glucosamine biosynthesis I	0.08411081	pgi
+superpathway of L-alanine biosynthesis	0.08411081	alaA
+D-lactate to cytochrome <i>bo</i> oxidase electron transfer	0.08411081	dld
+L-serine biosynthetic process	0.08411081	serA
+glutamate biosynthetic process	0.08411081	gltB
+UDP-N-acetylglucosamine metabolic process	0.08411081	nagB
+Organic Solute Biosynthesis	0.08411081	otsA
+D-amino acid biosynthetic process	0.08411081	alaA
+D-alanine biosynthetic process	0.08411081	alaA
+L-lysine metabolic process	0.08411081	patA
+GDP-mannose biosynthesis	0.08411081	pgi
+phospholipase activity	0.08411081	rssA
+extrinsic component of plasma membrane	0.08411081	dld
+phosphatidylglycerol binding	0.08411081	nhaA
+L-lysine catabolic process	0.08411081	patA
+AMP metabolic process	0.08411081	amn
+AMP biosynthetic process	0.08411081	amn
+phosphorus-oxygen lyase activity	0.08411081	cyaA
+L-alanine metabolic process	0.08411081	alaA
+2-deoxy-&alpha;-D-ribose 1-phosphate degradation	0.08411081	adhE
+diphosphotransferase activity	0.08411081	folK
+methylglyoxal degradation I	0.08411081	dld
+sulfur utilization	0.08411081	tcyJ
+cellular response to cold	0.08411081	otsA
+response to arsenic-containing substance	0.08411081	arsC
+purine ribonucleoside triphosphate metabolic process	0.08457185	pgi // pgk
+oligosaccharide biosynthetic process	0.08457185	otsA // waaC
+csgD	0.08457185	yccJ // tcyJ
+small molecule biosynthetic process	0.08501194	folK // pgi // carB // epd // pgk // serA // adhE // alaA // gltB
+Amino Acid Degradation	0.085119754	adhE // patA // carB // gltB
+cellular response to chemical stress	0.08581376	pgi // cnoX // bcp
+protein-containing complex organization	0.08644772	gltA // ldhA // gshB // ydfG // nagA // adhE
+cation binding	0.08954092	nagE // frmA // dgcJ // folK // carB // acnA // gshB // nagA // moeA // serA // yidA // adhE // rcnR // ydiJ // glpK // gltB // cysS // sdhB
+nucleoside diphosphate metabolic process	0.08984385	pgi // pgk
+amino acid transport	0.090232655	ybaT // ygaZ // tyrP // tcyJ
+kinase activity	0.0919816	nagE // ptsG // folK // pgk // evgS // glpK
+superpathway of hexitol degradation (bacteria)	0.09521089	yidA // pgk

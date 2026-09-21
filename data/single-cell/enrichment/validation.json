@@ -1,0 +1,42 @@
+{
+  "exports_verified": 5,
+  "comparisons": [
+    {
+      "export": "exports/Enriched-from-Erdal-common-up-in-4-and-7-vs-wt.txt",
+      "rows": 376,
+      "worksheet": "up in 4 and 7 vs WT GSEA",
+      "existing_rows_matched": 376,
+      "rows_added": 0
+    },
+    {
+      "export": "exports/Enriched-from-Erdal-final-up-in-cluster-4.txt",
+      "rows": 188,
+      "worksheet": "up seurat clstr4 and gsea",
+      "existing_rows_matched": 188,
+      "rows_added": 0
+    },
+    {
+      "export": "exports/Enriched-from-Erdal-final-up-in-cluster-9.txt",
+      "rows": 163,
+      "worksheet": "up seurat clstr9 and gsea",
+      "existing_rows_matched": 163,
+      "rows_added": 0
+    },
+    {
+      "export": "exports/Enriched-from-Erdal-up-in-WT-vs-common-4-and-7.txt",
+      "rows": 133,
+      "worksheet": "up in WT vs 4 and 7 GSEA",
+      "existing_rows_matched": 19,
+      "rows_added": 114
+    },
+    {
+      "export": "exports/Enriched-from-Erdal-genes-higher-in-wt-compared-to-4-and-7-combined.txt",
+      "rows": 74,
+      "worksheet": null,
+      "existing_rows_matched": 0,
+      "rows_added": 0
+    }
+  ],
+  "original_workbook_unchanged": true,
+  "enrichment_recalculated": false
+}

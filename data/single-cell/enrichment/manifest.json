@@ -1,0 +1,52 @@
+{
+  "supplied_by": "Adam Rosenthal",
+  "received": "2026-09-20",
+  "source": "Original EcoCyc SmartTable downloads supplied by the analyst",
+  "files": [
+    {
+      "path": "exports/Enriched-from-Erdal-common-up-in-4-and-7-vs-wt.txt",
+      "sha256": "913d8874a4fca631ab376862d95e7d62213f666139067a11e27bfa5922d00231",
+      "bytes": 27288,
+      "rows": 376,
+      "worksheet": "up in 4 and 7 vs WT GSEA",
+      "first_data_row": 2,
+      "first_column": 10
+    },
+    {
+      "path": "exports/Enriched-from-Erdal-final-up-in-cluster-4.txt",
+      "sha256": "c4e294be9b9e896c9dd12742ae9a41bc6daca07044cf429e94d381258b6a7336",
+      "bytes": 128597,
+      "rows": 188,
+      "worksheet": "up seurat clstr4 and gsea",
+      "first_data_row": 2,
+      "first_column": 4
+    },
+    {
+      "path": "exports/Enriched-from-Erdal-final-up-in-cluster-9.txt",
+      "sha256": "4567ab90bbe9caaa90149a3dbbab804f95aa1343a238b3827279de6f0a9f7d02",
+      "bytes": 159230,
+      "rows": 163,
+      "worksheet": "up seurat clstr9 and gsea",
+      "first_data_row": 3,
+      "first_column": 4
+    },
+    {
+      "path": "exports/Enriched-from-Erdal-up-in-WT-vs-common-4-and-7.txt",
+      "sha256": "31b9fbdfd3e3cb5da4782c173507c2452f6275e896304f60fa140205391244ff",
+      "bytes": 7691,
+      "rows": 133,
+      "worksheet": "up in WT vs 4 and 7 GSEA",
+      "first_data_row": 2,
+      "first_column": 10
+    },
+    {
+      "path": "exports/Enriched-from-Erdal-genes-higher-in-wt-compared-to-4-and-7-combined.txt",
+      "sha256": "3b960fb2ceef797b9b78a3914096030ca01b2928af401e1428b875fb4c32e50f",
+      "bytes": 3782,
+      "rows": 74,
+      "worksheet": null,
+      "first_data_row": null,
+      "first_column": null
+    }
+  ]
+}
