@@ -6,9 +6,7 @@ Data and analysis code for *Recurrent Extinction of Resistance Mutations Leads t
 
 | Task | Input or work remaining | Affected outputs |
 |---|---|---|
-| Complete sequencing provenance | Add the WGS accession and exact breseq executable version. All 149 runs now include command lines, saved options and sequence-verified references; downstream mutation tables and processed exports are included. | Reproduction from sequencing reads |
-| Complete enrichment reproduction | Recover the historical EcoCyc database snapshot and analysis-specific reference sets if available. The analyst identified EcoCyc and supplied usual Fisher/BH settings and original exports; exact reruns remain distinct from reproducing the supplied tables. | Enrichment tables in Supplementary Tables 3 and 4 |
-| Resolve the handling record | Establish whether pellet loss was documented for the day-2 parent sample at 3 hours. Both zero-colony records are confirmed and retained; omission sensitivity is supplied. | Figure 3e source annotation |
+| Add the sequencing accession | Add the WGS accession. All 149 runs include commands, saved options and sequence-verified references. Date-based software-version assumptions are documented with the run records. | Access to sequencing reads |
 | Update the schematic | Replace the supplied Figure 4d BioRender panel with its final editable artwork/export. Numerical panels and phenotype labels are regenerated. | Figure 4d |
 | Specify reuse terms | Add licenses for study code and data. | Repository license files |
 
@@ -62,7 +60,7 @@ Primary IC50 comparisons use log10 values, culture-ID pairing for Figures 2/3 an
 
 Confirmed zero-colony plates are distinguished from missing counts. Figure 3 parent medians and MADs are invariant over the two censored intervals; omitting the potentially mishandled 3-hour record raises the median by 4%. Supplementary Figure 11 uses the confirmed single 10 µL schedule, so equal volume cancels in normalized fractions and detection limits. The recorded 40 µL exceptions and ATEC repeat/exclusion reasons are documented in the source-correction record.
 
-Genomic plots use coordinate/allele identity rather than averaging different variants under the same short label. Each plotted entry has a source crosswalk. Single-cell tests use cells as observations; the six libraries comprise two technical replicates from each of three cultures. Four of the six enrichment worksheets have matching EcoCyc text exports; the cluster-1/2 results remain supplied workbook inputs. The [enrichment record](data/single-cell/enrichment/README.md) describes the full parent-up export and historical database/reference-set limitations. GSE314756 is scheduled for public release on 21 December 2026.
+Genomic plots use coordinate/allele identity rather than averaging different variants under the same short label. Each plotted entry has a source crosswalk. Single-cell tests use cells as observations; the six libraries comprise two technical replicates from each of three cultures. Four of the six enrichment worksheets have matching EcoCyc text exports; the cluster-1/2 results remain supplied workbook inputs. The [enrichment record](data/single-cell/enrichment/README.md) describes the full parent-up export and database-version and default-background assumptions. GSE314756 is scheduled for public release on 21 December 2026.
 
 ## Compare outputs
 

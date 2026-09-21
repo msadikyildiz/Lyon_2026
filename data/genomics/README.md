@@ -45,4 +45,16 @@ Run `python scripts/verify_breseq_records.py` to verify every archive member, st
 
 ## Remaining inputs
 
-The WGS read accession and exact breseq executable version are not present in the supplied records. No standalone job scripts were recovered; the command lines and saved run options are available. Read alignment and mutation calling are not rerun by this repository. Single-cell inputs and count-matrix reconstruction are documented in ../single-cell/README.md.
+The WGS read accession remains to be added. No standalone job scripts were recovered; the command lines and saved run options are available. Read alignment and mutation calling are not rerun by this repository. Single-cell inputs and count-matrix reconstruction are documented in ../single-cell/README.md.
+
+## Software-version assumption
+
+Version documentation assumes the latest public breseq release available on each recorded run date. The dates come from the original log entries, rather than file-copy timestamps. The [official release history](https://github.com/barricklab/breseq/releases) gives the following assignments:
+
+| Recorded run dates | Runs | Assumed version | Release date |
+|---|---:|---|---|
+| 6–7 November 2023 and 2 January 2024 | 76 | [0.38.1](https://github.com/barricklab/breseq/releases/tag/v0.38.1) | 14 April 2023 |
+| 16/24 April and 11 June 2024 | 30 | [0.38.3](https://github.com/barricklab/breseq/releases/tag/v0.38.3) | 4 February 2024 |
+| 5 August and 22 October 2024 | 43 | [0.39.0](https://github.com/barricklab/breseq/releases/tag/v0.39.0) | 10 July 2024 |
+
+Version 0.38.2 was released on 7 January 2024, after the January study runs. These date-based assignments are assumptions, not versions recovered from the executable. The original records and the verifier's unrecorded-version field remain unchanged.
