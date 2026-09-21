@@ -1,4 +1,4 @@
-"""Verify original EcoCyc exports and recover the complete parent-up result table."""
+"""Verify original EcoCyc exports and include the complete parent-up result table."""
 import csv
 from copy import copy
 import hashlib
@@ -56,7 +56,7 @@ def verify():
 
 
 def extend_parent_results(wb):
-    """Append missing export rows, preserving every existing workbook cell."""
+    """Append additional export rows, preserving every existing workbook cell."""
     sheet = wb['up in WT vs 4 and 7 GSEA']
     assert sheet.max_row == 20
     for item, rows in exports():
@@ -69,7 +69,7 @@ def extend_parent_results(wb):
                 sheet.cell(row_index, col).value = value
         sheet['J1'].comment = Comment(
             'All 133 rows from the matching original EcoCyc export are retained. '
-            'The first 19 match the original workbook; rows 21–134 restore the remaining results. '
+            'The first 19 match the original workbook and are exactly the P < 0.001 subset; rows 21–134 add the remaining export rows. '
             'Exported P-values extend to <0.1, not all <0.05. See data/single-cell/enrichment/README.md.',
             'Muhammed Sadik Yildiz')
 

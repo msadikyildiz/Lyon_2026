@@ -124,6 +124,9 @@ def verify():
         options = summary['options']
         assert options['mutation_identification']['polymorphism_prediction'] is True
         assert options['workflow']['num_processors'] == 16
+        assert options['mutation_identification']['polymorphism_frequency_cutoff'] == 0.05
+        read_files = list(summary['reads']['read_file'])
+        assert len(read_files) == 1 and read_files[0].endswith('_R1_001'), run
         rows.append({'run': run, 'recorded_date': log.splitlines()[0],
                      'recorded_reference_path': original_ref, 'archived_genbank': reference,
                      'reference_fasta': fasta, 'reference_length': expected_length,
@@ -138,6 +141,8 @@ def verify():
               'unique_files_verified': len(checked), 'unique_run_fastas': len(set(fasta_by_run.values())),
               'reference_runs': dict(Counter(Path(r['archived_genbank']).name for r in rows)),
               'all_reference_sequences_match': True, 'both_summaries_identical_for_every_run': True,
+              'runs_with_one_R1_labelled_input': len(rows),
+              'polymorphism_frequency_cutoff': 0.05,
               'breseq_executable_version': None,
               'reference_provenance': 'Archived GenBank copies match per-run FASTA sequence content. Original /work paths are unavailable; original annotation-file byte identity is not established.'}
     (RECORDS / 'validation.json').write_text(json.dumps(report, indent=2) + '\n')

@@ -9,6 +9,8 @@
   },
   "all_reference_sequences_match": true,
   "both_summaries_identical_for_every_run": true,
+  "runs_with_one_R1_labelled_input": 149,
+  "polymorphism_frequency_cutoff": 0.05,
   "breseq_executable_version": null,
   "reference_provenance": "Archived GenBank copies match per-run FASTA sequence content. Original /work paths are unavailable; original annotation-file byte identity is not established."
 }

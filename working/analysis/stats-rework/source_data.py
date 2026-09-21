@@ -171,14 +171,17 @@ def main():
               str(SOURCE.relative_to(ROOT)), 'Table values and column headings from the source manuscript.')
     single = genomic_repo/'data/single-cell'
     mapping = json.loads((single/'plot_tables/table_mapping.json').read_text())
-    book = single/'original-tables/Single Cell Analysis Supp Tables.xlsx'
     for number,sheets in mapping.items():
         for name in sheets:
             frame=pd.read_excel(genomic_repo/f'working/source-data/Supplementary Table {number}.xlsx',sheet_name=name,header=None)
             frame.columns=[f'Original column {i+1}' for i in range(frame.shape[1])]
-            block(wb[f'Supp Table {number}'],name,frame,
-                  f'working/source-data/Supplementary Table {number}.xlsx; '+name,
-                  'Original cells and gene memberships retained; parent-up enrichment extended from the matching EcoCyc text export to all 133 rows. EcoCyc method and historical-version limitations: data/single-cell/enrichment/README.md.')
+            source = ('data/single-cell/original-tables/Single Cell Analysis Supp Tables.xlsx; '
+                      f'{name}; via working/source-data/Supplementary Table {number}.xlsx')
+            note = 'Original worksheet cells retained.'
+            if name == 'up in WT vs 4 and 7 GSEA':
+                source += '; data/single-cell/enrichment/exports/Enriched-from-Erdal-up-in-WT-vs-common-4-and-7.txt'
+                note += ' All 133 export rows are included; the original 19 are the P < 0.001 subset. See data/single-cell/enrichment/README.md.'
+            block(wb[f'Supp Table {number}'],name,frame,source,note)
     for name,title in [('sample_metadata.csv','Technical sample metadata'),('cluster_composition.csv','Panel c: cluster composition'),('figure6_volcano_points.csv','Panels d/e: volcano points')]:
         block(wb['Figure 6'],title,pd.read_csv(single/'plot_tables'/name),'data/single-cell/plot_tables/'+name)
     cells=pd.read_csv(single/'generated/cells_and_embeddings.csv')
