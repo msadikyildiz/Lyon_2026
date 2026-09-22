@@ -78,7 +78,7 @@ def import_archive(archive):
         if not p.exists():
             p.write_bytes(data)
     manifest = {'archive_name': archive.name, 'archive_sha256': digest(archive.read_bytes()),
-                'received': '2026-09-20', 'supplied_by': 'Erdal Toprak',
+                'source': 'Breseq_reference_and_run_records.zip',
                 'storage': 'Original bytes retained; identical per-run FASTA files share one physical copy.',
                 'files': files}
     RECORDS.mkdir(exist_ok=True)

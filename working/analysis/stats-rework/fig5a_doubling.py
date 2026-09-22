@@ -1,9 +1,8 @@
 """Growth-data loader for the descriptive growth analysis.
 
-Adam confirmed six technical wells from one culture per strain (biological
-n=1). Use final_stats.py for current summaries. The inferential main routine
-below is historical and is disabled; its earlier output remains in Git.
-Doubling times are minutes despite the original notebook's hour label.
+Measurements are six technical wells from one culture per strain (biological
+n=1). final_stats.py produces descriptive summaries. The reference inferential
+routine below is disabled. Doubling times are expressed in minutes.
 """
 
 import warnings

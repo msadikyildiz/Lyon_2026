@@ -68,9 +68,9 @@ def extend_parent_results(wb):
             for col, value in zip([10, 11, 12], [row[0], float(row[1]), row[2] or None]):
                 sheet.cell(row_index, col).value = value
         sheet['J1'].comment = Comment(
-            'All 133 rows from the matching original EcoCyc export are retained. '
-            'The first 19 match the original workbook and are exactly the P < 0.001 subset; rows 21–134 add the remaining export rows. '
-            'Exported P-values extend to <0.1, not all <0.05. See data/single-cell/enrichment/README.md.',
+            'All 133 EcoCyc parent-up results with P < 0.1 are included. '
+            'The first 19 meet P < 0.001. '
+            'The reporting cutoff includes results above P = 0.05. See data/single-cell/enrichment/README.md.',
             'Muhammed Sadik Yildiz')
 
 

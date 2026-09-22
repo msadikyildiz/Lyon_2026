@@ -1,8 +1,8 @@
 # Numerical results
 
-36 primary IC50 comparisons; 369/369 acceptance checks passed. Source Data retain full precision.
+36 primary IC50 comparisons; 368/368 acceptance checks passed. Source Data retain full precision.
 
-IC50 comparisons use log10 measurements, culture-ID-aligned paired t-tests for Figures 2/3 and Supplementary Figures 3/6, and Welch tests where matching is unconfirmed. Holm correction is applied within panel and drug (three comparisons in Figure 2, six in Figure 3, one in each other tested panel). Ratios compare Group2 with Group1; confidence intervals are pointwise. MIC ratio intervals estimate uncertainty using the stated log-scale t method, without multiplicity adjustment; MIC has no hypothesis tests or significance calls. Figure 5a-d and Supplementary Figure 10a-c are technical replicates of one culture per strain.
+IC50 comparisons use log10 measurements, culture-ID-aligned paired t-tests for Figures 2/3 and Supplementary Figures 3/6, and Welch tests for Supplementary Figure 4. Holm correction is applied within panel and drug (three comparisons in Figure 2, six in Figure 3, one in each other tested panel). Ratios compare Group2 with Group1; confidence intervals are pointwise. MIC ratio intervals estimate uncertainty using the stated log-scale t method, without multiplicity adjustment; MIC has no hypothesis tests or significance calls. Figure 5a-d and Supplementary Figure 10a-c are technical replicates of one culture per strain.
 
 The fit-perturbation sensitivity reports empirical 2.5th-97.5th percentiles from 4,000 culture/fit resamples (seed 20260915); primary inference uses the t-tests and t-based intervals. Other sensitivity p-values have explicitly identified adjustment families.
 
@@ -54,7 +54,7 @@ Figure 2 cefepime PC/P: primary Holm p = 0.026, per-drug Bonferroni p = 0.040, f
 
 The Figure 3 cefepime PL-versus-PLA comparison has a primary adjusted p-value of 0.025. All adjusted values, including nonsignificant comparisons, are available in the tables.
 
-Supplementary Figure 4 cefepime changes from the historical significant call to a nonsignificant log-scale comparison. Untreated passage changes IC50 in all three drugs, as quantified by the reported ratios.
+Supplementary Figure 4 cefepime has a geometric-mean ratio of 0.811 (95% CI, 0.597–1.10; p = 0.159). Untreated passage changes IC50 in all three drugs, as quantified by the reported ratios.
 
 ## Mutant IC50, descriptive
 
@@ -84,9 +84,9 @@ Supplementary Figure 4 cefepime changes from the historical significant call to 
 
 Figure 5a reports six technical wells per strain, with doubling times in minutes.
 
-## Supplementary Figure 11, conditional normalization
+## Supplementary Figure 11, survivor fractions
 
-The calculation assumes equal plated volumes across time. If the actual schedule was 10 microlitres at baseline and 20 microlitres later, absolute fractions would be half these values. Relative strain comparisons are unchanged under a common volume schedule. The workbook and written account specify inconsistent volume normalization.
+All samples used 10 microlitres at each measured time point. Equal volume cancels in survivor fractions and detection limits. Measurements are available at 0, 3 and 7 hours; 1 and 2 hours were not measured, and 5-hour measurements were excluded for a dilution error.
 
 | Strain | Time (h) | Median fraction | Ratio to hipA |
 |---|---|---|---|
@@ -101,6 +101,6 @@ The calculation assumes equal plated volumes across time. If the actual schedule
 | MG | 3 | 1.59e-05 | 0.122 |
 | MG | 7 | 8.8e-08 | 0.00808 |
 
-The recorded zero is retained as censored (n = 4), with a separate plotted detection-limit marker. The WT 7 h median is 8.7971e-08; normal-scaled MAD ranges from 7.27104e-08 to 8.5948e-08 over the censored interval. The displayed MAD uses the one-colony upper bound. Missing Figure 3 counts are recorded separately from this observed zero.
+The recorded zero is retained as censored (n = 4), with a separate plotted detection-limit marker. The WT 7 h median is 8.7971e-08; normal-scaled MAD ranges from 7.27104e-08 to 8.5948e-08 over the censored interval. The displayed MAD uses the one-colony upper bound. Zero counts and missing observations are distinguished in Source Data.
 
 Unresolved records and figure coverage are listed in the repository README and `docs/FIGURE_COVERAGE.md`.

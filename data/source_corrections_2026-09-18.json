@@ -29,5 +29,5 @@
     "working/figures/Figure 1/D-F/SurvivalData.xlsx",
     "working/figures/Figure 3/A - survival/SurvivalData.xlsx"
   ],
-  "scope": "Only the missing PC row was restored; other cells preserved."
+  "scope": "Source record for cefepime culture 10 at day 20; matched pre/post counts define survival."
 }

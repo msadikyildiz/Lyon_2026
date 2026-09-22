@@ -26,7 +26,7 @@ def read_records(figure):
             assert (record.Day, record.Name, record.Replicate, record.Time) == (day, 'P1', 1, hour)
             assert pd.isna(record.Count) and pd.isna(record.Dilution)
             d.loc[mask, ['count_effective', 'dilution_effective', 'factor_effective']] = [0, -1, 10]
-            d.loc[mask, 'clarification'] = 'Confirmed 19 September 2026: zero colonies, tenfold-concentrated sample; original blank cells retained'
+            d.loc[mask, 'clarification'] = 'Zero-colony observation; tenfold-concentrated sample; source workbook count cell is blank'
             d.loc[mask, 'possible_handling_failure'] = row == 146
     d['count_status'] = np.where(d.count_effective.isna(), 'missing',
                                 np.where(d.count_effective == 0, 'observed zero; below detection', 'measured'))
@@ -98,7 +98,7 @@ def main():
             without = subset.loc[~subset.possible_handling_failure, 'fraction_observed'].dropna()
             primary = s[(s.Name == 'P1') & (s.Time == 3)].iloc[0]
             pd.DataFrame([
-                dict(scenario='primary; retain confirmed zero with possible handling failure', n=len(subset), median=primary['median'], mad_scaled=primary.mad_scaled),
+                dict(scenario='primary; zero-colony observation included', n=len(subset), median=primary['median'], mad_scaled=primary.mad_scaled),
                 dict(scenario='omit day 2 replicate 1 at 3 h', n=len(without), median=without.median(), mad_scaled=median_abs_deviation(without, scale='normal'))
             ]).to_csv(HERE / 'out/Fig3e_handling_sensitivity.csv', index=False)
         print(f'{figure}: {len(d)} records; {selected.below_detection.sum()} zeros; {selected.count_effective.isna().sum()} missing')

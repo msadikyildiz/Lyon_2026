@@ -1,7 +1,6 @@
 {
   "source_archive": "Genomic_input_files.zip",
   "archive_sha256": "7b008bb74f4b24d21f999af625ddf7e62192a9e773aaf59de37d44993e7e499d",
-  "received": "2026-09-20",
   "provided_by": "Erdal Toprak",
   "files": [
     {

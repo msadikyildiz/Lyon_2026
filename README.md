@@ -7,7 +7,7 @@ Data and analysis code for *Recurrent Extinction of Resistance Mutations Leads t
 | Task | Input or work remaining | Affected outputs |
 |---|---|---|
 | Add the sequencing accession | Add the WGS accession. All 149 runs include commands, saved options and sequence-verified references. Date-based software-version assumptions are documented with the run records. | Access to sequencing reads |
-| Update the schematic | Replace the supplied Figure 4d BioRender panel with its final editable artwork/export. Numerical panels and phenotype labels are regenerated. | Figure 4d |
+| Update the schematic | Add the final editable Figure 4d BioRender artwork and export. | Figure 4d |
 | Specify reuse terms | Add licenses for study code and data. | Repository license files |
 
 The repository includes the experimental workbooks, mutation calls, single-cell count matrices and original analysis code. One command regenerates the numerical analyses, Source Data, Supplementary Tables 3 and 4, and all 19 figures. Schematic artwork is retained explicitly; every numerical panel is generated from included data. See the [figure map](docs/FIGURE_COVERAGE.md).
@@ -22,7 +22,7 @@ micromamba run -n lyon-2026 python -m pip install -r requirements-pip.txt
 micromamba run -n lyon-2026 python reproduce.py
 ```
 
-The default run uses the included dose-response fits and computed single-cell embeddings/DGE tables, checks them against supplied source tables, and rebuilds the statistics, data exports and figures. Genomic tables are recalculated from mutation calls on every run. Logs and an explicit passed/failed record are written under `runs/`.
+The default run uses the included dose-response fits and computed single-cell embeddings/DGE tables, checks them against the source tables, and rebuilds the statistics, data exports and figures. Genomic tables are recalculated from mutation calls on every run. Logs and an explicit passed/failed record are written under `runs/`.
 
 The native-library lock controls numerical and font-rendering dependencies. `environment.yml` specifies versions for other platforms, which have not been validated. The pinned plategig source is imported directly; its separate upstream installation is unnecessary. Install Times New Roman separately to reproduce the reference typography. Fonts are not redistributed.
 
@@ -43,22 +43,22 @@ Rscript -e 'renv::restore(lockfile="single-cell-renv.lock", library="runs/R-libr
 R_LIBS_USER="$PWD/runs/R-library" micromamba run -n lyon-2026 python reproduce.py --single-cell
 ```
 
-This command replaces the generated single-cell tables in the checkout. Use a separate checkout to compare a different R environment. The R step executes the supplied filtered-analysis Rmd calculations with portable input paths and exports cell identities, embeddings, selected probes, normalized expression and differential-expression results. It reproduces 48,883 cells and the exact nine cluster sizes. All 6,543 cluster DGE rows and the 1,222/863 culture-versus-parent rows agree with the final supplied tables within the recorded numerical tolerances. The [single-cell record](data/single-cell/README.md) explains the sample mapping, table numbering, targeted marker checks and remaining enrichment dependency.
+This command replaces the generated single-cell tables in the checkout. Use a separate checkout to compare a different R environment. The R step executes the supplied filtered-analysis Rmd calculations with portable input paths and exports cell identities, embeddings, selected probes, normalized expression and differential-expression results. It reproduces 48,883 cells and the exact nine cluster sizes. All 6,543 cluster DGE rows and the 1,222/863 culture-versus-parent rows agree with the reference expression tables within the recorded numerical tolerances. The [single-cell record](data/single-cell/README.md) explains the sample mapping, table numbering, targeted marker checks and enrichment inputs and assumptions.
 
 ## Outputs and inputs
 
 - [All figures](working/figures-assembled/All_figures.pdf), with individual PDF and PNG files alongside it. Larger genomic figures use multiple pages at readable type sizes.
 - [Source Data](working/source-data/Source%20Data.xlsx), [Supplementary Table 3](working/source-data/Supplementary%20Table%203.xlsx) and [Supplementary Table 4](working/source-data/Supplementary%20Table%204.xlsx).
 - [Final statistics](working/analysis/stats-rework/out/final_statistics.csv), [analysis code](working/analysis/stats-rework), [original workbooks/notebooks](working/figures), [genomic inputs](data/genomics) and [single-cell inputs](data/single-cell).
-- [Source corrections](docs/DATA_CORRECTIONS.md), [figure coverage](docs/FIGURE_COVERAGE.md) and [verification](docs/VALIDATION.md).
+- [Data processing and source records](docs/DATA_CORRECTIONS.md), [figure coverage](docs/FIGURE_COVERAGE.md) and [verification](docs/VALIDATION.md).
 
-The 6.2 GB single-cell delivery contained many duplicate project copies and figure exports. The repository retains one verified copy of the supplied count matrices, original code and final tables, approximately 196 MB. This includes alternative aggregates and excluded sample-5 matrices for provenance, with archive and per-file checksums. It does not require the original workstation or a manuscript DOCX.
+The single-cell inputs occupy approximately 196 MB and include count matrices, analysis code, expression tables, alternative aggregates and excluded sample-5 matrices. Archive paths and per-file checksums identify each source file.
 
 ## Analysis conventions
 
-Primary IC50 comparisons use log10 values, culture-ID pairing for Figures 2/3 and Supplementary Figures 3/6, Welch tests for Supplementary Figure 4, and Holm adjustment within each panel and antibiotic. MIC and biological-n=1 mutant measurements are descriptive. Fit-perturbation ranges are sensitivity summaries. Fixed seeds and complete paired IDs are checked. The historical p-value gate verifies 49 notebook results, including six expected NaNs, separately from the primary analysis.
+Primary IC50 comparisons use log10 values, culture-ID pairing for Figures 2/3 and Supplementary Figures 3/6, Welch tests for Supplementary Figure 4, and Holm adjustment within each panel and antibiotic. MIC and biological-n=1 mutant measurements are descriptive. Fit-perturbation ranges are sensitivity summaries. Fixed seeds and complete paired IDs are checked. A separate reference check verifies 49 notebook results, including six expected NaNs, separately from the primary analysis.
 
-Confirmed zero-colony plates are distinguished from missing counts. Figure 3 parent medians and MADs are invariant over the two censored intervals; omitting the potentially mishandled 3-hour record raises the median by 4%. Supplementary Figure 11 uses the confirmed single 10 µL schedule, so equal volume cancels in normalized fractions and detection limits. The recorded 40 µL exceptions and ATEC repeat/exclusion reasons are documented in the source-correction record.
+Zero-colony plates are distinguished from missing counts. Figure 3 parent medians and MADs are invariant over the two censored intervals; omitting the potentially mishandled 3-hour record raises the median by 4%. Supplementary Figure 11 uses a single 10 µL plating at every time point, so equal volume cancels in normalized fractions and detection limits. The recorded 40 µL exceptions and ATEC repeat/exclusion reasons are documented in the data-processing record.
 
 Genomic plots use coordinate/allele identity rather than averaging different variants under the same short label. Each plotted entry has a source crosswalk. Single-cell tests use cells as observations; the six libraries comprise two technical replicates from each of three cultures. Four of the six enrichment worksheets have matching EcoCyc text exports; the cluster-1/2 results remain supplied workbook inputs. The [enrichment record](data/single-cell/enrichment/README.md) describes the full parent-up export and database-version and default-background assumptions. GSE314756 is scheduled for public release on 21 December 2026.
 

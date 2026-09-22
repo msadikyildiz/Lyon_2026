@@ -21,7 +21,7 @@ def main():
              f'{len(ic)} primary IC50 comparisons; {len(checks)}/{len(checks)} acceptance checks passed. '
              'Source Data retain full precision.', '',
              'IC50 comparisons use log10 measurements, culture-ID-aligned paired t-tests for Figures 2/3 and Supplementary Figures 3/6, '
-             'and Welch tests where matching is unconfirmed. Holm correction is applied within panel and drug '
+             'and Welch tests for Supplementary Figure 4. Holm correction is applied within panel and drug '
              '(three comparisons in Figure 2, six in Figure 3, one in each other tested panel). '
              'Ratios compare Group2 with Group1; confidence intervals are pointwise. MIC ratio intervals '
              'estimate uncertainty using the stated log-scale t method, without multiplicity adjustment; '
@@ -45,19 +45,18 @@ def main():
     lines += ['', 'The Figure 3 cefepime PL-versus-PLA comparison has a primary adjusted '
               'p-value of 0.025. All adjusted values, including '
               'nonsignificant comparisons, are available in the tables.', '',
-              'Supplementary Figure 4 cefepime changes from the historical significant call to '
-              'a nonsignificant log-scale comparison. Untreated passage changes IC50 in all three '
+              'Supplementary Figure 4 cefepime has a geometric-mean ratio of 0.811 '
+              '(95% CI, 0.597–1.10; p = 0.159). Untreated passage changes IC50 in all three '
               'drugs, as quantified by the reported ratios.', '',
               '## Mutant IC50, descriptive', '',
               '| Strain | Drug | Ratio to MG | Technical range / MG geometric mean |', '|---|---|---|---|']
     for _, r in f5[f5.Strain != 'MG'].iterrows():
         lines.append(f'| {r.Strain} | {r.Antibiotic} | {r.ratio_vs_MG:.3g} | {r.ratio_min:.3g}-{r.ratio_max:.3g} |')
     lines += ['', 'Figure 5a reports six technical wells per strain, with doubling times in minutes.', '',
-              '## Supplementary Figure 11, conditional normalization', '',
-              'The calculation assumes equal plated volumes across time. If the actual schedule '
-              'was 10 microlitres at baseline and 20 microlitres later, absolute fractions would '
-              'be half these values. Relative strain comparisons are unchanged under a common '
-              'volume schedule. The workbook and written account specify inconsistent volume normalization.', '',
+              '## Supplementary Figure 11, survivor fractions', '',
+              'All samples used 10 microlitres at each measured time point. Equal volume cancels '
+              'in survivor fractions and detection limits. Measurements are available at 0, 3 and 7 hours; '
+              '1 and 2 hours were not measured, and 5-hour measurements were excluded for a dilution error.', '',
               '| Strain | Time (h) | Median fraction | Ratio to hipA |', '|---|---|---|---|']
     for _, r in m[m.Time > 0].iterrows():
         lines.append(f'| {r.strain} | {r.Time} | {r["median"]:.3g} | {r.ratio_to_hipA_median:.3g} |')
@@ -65,8 +64,8 @@ def main():
     lines += ['', f'The recorded zero is retained as censored (n = 4), with a separate plotted '
               f'detection-limit marker. The WT 7 h median is {r["median"]:.6g}; normal-scaled MAD '
               f'ranges from {r.mad_scaled_min:.6g} to {r.mad_scaled_max:.6g} over the censored interval. '
-              'The displayed MAD uses the one-colony upper bound. Missing Figure 3 counts are '
-              'recorded separately from this observed zero.', '',
+              'The displayed MAD uses the one-colony upper bound. Zero counts and missing observations '
+              'are distinguished in Source Data.', '',
               'Unresolved records and figure coverage are listed in the repository README and '
               '`docs/FIGURE_COVERAGE.md`.', '']
     (HERE / 'RESULTS_v2.md').write_text('\n'.join(lines))

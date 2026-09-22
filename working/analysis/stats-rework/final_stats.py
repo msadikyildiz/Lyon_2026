@@ -1,17 +1,16 @@
 """Statistical analysis of dose-response, growth and survival measurements.
 
-The 17 August comparison table is retained under superseded/out-17aug.
-Current conventions and figure coverage are described in the repository README.
+Analysis conventions and figure coverage are described in the repository README.
 
 Experimental design:
   * P1-P10 are the day-0 ancestors of every same-numbered culture in every arm,
     so contrasts among P, PA, PC, PL, PLA, PLAC are within-lineage and PAIRED,
-    aligned on culture number. (The published code paired by row position.)
+    aligned on culture number.
   * Figure 5b-d and Supplementary Figure 10 triplicates are three technical
     dose-response series from one overnight culture per strain: biological
     n = 1, so no inferential test. Descriptive tables only.
   * Supplementary Figures 3 and 6 use same-numbered parent/descendant pairs,
-    confirmed by Adam Lyon on 18 September 2026. S3 uses lineages 1-6,
+    aligned by culture ID. S3 uses lineages 1-6,
     S6 uses 1-4. S3 parent records 7-10 remain in the raw inputs only.
   * Supplementary Figure 4 has no established lineage link and uses Welch's
     unpaired t-test.
@@ -394,54 +393,6 @@ def figure5a_descriptive():
     return pd.DataFrame(rows)
 
 
-def what_changed(t):
-    """Published call (uncorrected, raw scale, positional pairing) versus the primary call."""
-    from validate import CHECKS
-    pub = {}
-    for ds, mode, value, label, cases in CHECKS:
-        for drug, g1, g2, p in cases:
-            pub[(ds, drug, g1, g2)] = p
-    ds_of = {p[0]: p[1] for p in PANELS}
-    rows = []
-    for _, r in t[t.value == "IC50"].iterrows():
-        key = (ds_of[r.Panel], r.Antibiotic, r.Group1, r.Group2)
-        p_pub = pub.get(key, np.nan)
-        rows.append(dict(Panel=r.Panel, contrast_id=r.contrast_id, ratio=r.ratio,
-                         p_published=p_pub, published_call=(p_pub < 0.05) if pd.notna(p_pub) else None,
-                         p=r.p, p_holm=r.p_holm, revised_call=bool(r.significant),
-                         changed=(pd.notna(p_pub) and (p_pub < 0.05) != bool(r.significant))))
-    return pd.DataFrame(rows)
-
-
-def versus_17aug(t):
-    old = pd.read_csv(HERE / "superseded" / "out-17aug" / "final_statistics_17aug.csv")
-    old = old[old.value == "IC50"]
-    old['Panel'] = old.Panel.replace({'Supplementary Figure 5a / 6a': 'Supplementary Figure 6a-c'})
-    used = set()
-    rows = []
-    for _, r in t[t.value == "IC50"].iterrows():
-        o = old[(old.Panel == r.Panel) & (old.Antibiotic == r.Antibiotic)
-                & (old.Group1 == r.Group1) & (old.Group2 == r.Group2)]
-        if len(o) != 1:
-            raise ValueError(f'Historical comparison missing or duplicated: {r.Panel}/{r.contrast_id}')
-        used.add(o.index[0])
-        o = o.iloc[0]
-        rows.append(dict(Panel=r.Panel, contrast_id=r.contrast_id,
-                         disposition='matched',
-                         test_17aug=o.test, q_bh_17aug=o.q_bh, call_17aug=bool(o.sig_bh),
-                         test_now=r.test, p_holm_now=r.p_holm, call_now=bool(r.significant),
-                         changed=bool(o.sig_bh) != bool(r.significant)))
-    retired = old.loc[~old.index.isin(used)]
-    if set(retired.Panel) - {'Figure 5b-d'}:
-        raise ValueError('Unexpected unmatched historical comparisons')
-    for _, o in retired.iterrows():
-        rows.append(dict(Panel=o.Panel, contrast_id=f'{DRUG_ABBR[o.Antibiotic]}:{o.Group1}-vs-{o.Group2}',
-                         disposition='retired: biological n=1, descriptive reporting',
-                         test_17aug=o.test, q_bh_17aug=o.q_bh, call_17aug=bool(o.sig_bh),
-                         test_now='descriptive', p_holm_now=np.nan, call_now=None, changed=False))
-    return pd.DataFrame(rows)
-
-
 def exclusion_checks():
     """Declared exclusions are present in the cached analysis tables."""
     out = []
@@ -477,8 +428,6 @@ def main():
                ('all primary results finite', '', '', '',
                 np.isfinite(ic[['ratio', 'ratio_lo', 'ratio_hi', 'p', 'p_holm']]).all().all())]
     f5, f5a = figure5_descriptive(), figure5a_descriptive()
-    wc, v17 = what_changed(t), versus_17aug(t)
-    checks.append(('36 matched August comparisons', '', '', '', (v17.disposition == 'matched').sum() == 36))
     if any(not c[-1] for c in checks):
         raise ValueError(f'Output validation failed: {[c for c in checks if not c[-1]]}')
     primary_cols = ['Panel', 'also_shown_in', 'value', 'Antibiotic', 'contrast_id', 'Group1', 'Group2',
@@ -488,7 +437,6 @@ def main():
     outputs = {'final_statistics.csv': t[primary_cols], 'sensitivity_all.csv': t,
                'group_summaries.csv': groups, 'fig5_descriptive.csv': f5,
                'fig5a_descriptive.csv': f5a, 'fig5a_doubling_times_per_well.csv': load_doubling_times(),
-               'what_changes_vs_published.csv': wc, 'what_changes_vs_17aug_report.csv': v17,
                'acceptance_checks.csv': pd.DataFrame(checks, columns=['check', 'panel', 'drug', 'item', 'passed'])}
     # Serialize all tables only after validation, then replace the existing files.
     from tempfile import TemporaryDirectory

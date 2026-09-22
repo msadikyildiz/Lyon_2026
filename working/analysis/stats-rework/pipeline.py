@@ -1,4 +1,4 @@
-"""Faithful re-implementation of Adam's plategig IC50 pipeline.
+"""Dose-response fitting with the pinned plategig pipeline.
 
 Reproduces cells 1-26 of ``241011_Adam_mic_*.ipynb`` so growth features can be
 regenerated outside Jupyter. Historical numerical agreement is checked by ``validate.py`` against the saved notebook values.
@@ -34,10 +34,8 @@ class _SerialPool:
 
     ``robust_phenotyper`` opens a fresh 8-process pool for every strain-drug
     combination, 1000 bootstrap fits each. Python on macOS spawns rather than
-    forks, so each pool costs eight fresh interpreters that re-import the whole
-    stack, and the parent spends its time asleep waiting on them; a single
-    dataset did not finish in three and a half minutes. Serially the same
-    dataset takes about five.
+    forks, so each pool starts eight interpreters that re-import dependencies.
+    Serial inner execution avoids this process-startup overhead.
 
     This changes no result. ``bootstrap_resample`` is called as
     ``[(x, y, p0, seed) for seed in range(n_bootstrap)]``, so every draw is
@@ -72,8 +70,8 @@ plategig.plategig.mp.Pool = _SerialPool
 PLATE_ID_OFFSET = {1: 0, 2: 99, 3: 148}
 PLATE_ID_OFFSET_UNT = {4: 0, 2: 99, 3: 148}
 
-# Cell 18. Failed experiments, keyed on the string Experiment column. Adam's
-# own comment gives the reasons:
+# Cell 18 exclusions, keyed on the string Experiment column.
+# Recorded reasons:
 #   PAC exp 1        not used
 #   PCr exp 1        dose range too small
 #   PLAC7, PLAC10    bad curve in exp 1, remeasured in exp 2
@@ -92,9 +90,9 @@ PLATE_ID_OFFSET_UNT = {4: 0, 2: 99, 3: 148}
 #                                      plating-error cultures for CEFEPIME ONLY.
 #   Supplementary 5a, 6a, Figure 5     no exclusions at all.
 #
-# Plate-map review verified that experiment-2 plates 39-41 are cefepime-only.
-# Retain their drug-specific exclusions. ATEC-C3's reason remains unconfirmed;
-# retain the recorded exclusion and document the unresolved source record.
+# Experiment-2 plates 39-41 are cefepime-only, so exclusions are drug-specific.
+# The experimental account attributes the failed ATEC-C3 technical series to
+# inoculation error; the available screenshot alone does not establish cause.
 #
 # Note also that ('2', 'ATEC-C-R', 'Cefepime') never matches anything: the group
 # is spelled 'ATEC-C-r' in the data, and the filter is applied to Strain, which

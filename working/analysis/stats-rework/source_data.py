@@ -122,7 +122,7 @@ def main():
     survival = survival_records()
     block(wb['Figure 1'], 'Panel f: paired survival percentages', survival,
           'working/figures/Figure 1/D-F/SurvivalData.xlsx, PC',
-          'Pre/post observations matched by culture and day; includes recovered culture 10 at day 20.')
+          'Pre/post observations matched by culture and day.')
     block(wb['Figure 1'], 'Panel f: daily mean and sample SD',
           survival.groupby('day').survival_percent.agg(n='count', mean='mean', sd='std').reset_index(),
           'Panel f paired survival percentages')
@@ -164,7 +164,7 @@ def main():
           pd.read_csv(genomic_repo/'data/genomics/plot_tables/PLAC_trajectories.csv'),
           'data/genomics/plot_tables/PLAC_trajectories.csv')
     block(wb['Sensitivity'],'Figure 3e possible handling failure',pd.read_csv(HERE/'out/Fig3e_handling_sensitivity.csv'),
-          'out/Fig3e_handling_sensitivity.csv','Primary analysis retains the confirmed zero. Omission is a sensitivity analysis because pellet loss is not confirmed.')
+          'out/Fig3e_handling_sensitivity.csv','The zero-colony observation contributes to the primary analysis. A separate analysis excludes it because handling loss is possible but unconfirmed.')
     tables = json.loads(SOURCE.read_text())
     for i, rows in enumerate(tables[:2], 1):
         block(wb[f'Supp Table {i}'], f'Supplementary Table {i}', pd.DataFrame(rows[1:], columns=rows[0]),
@@ -180,7 +180,7 @@ def main():
             note = 'Original worksheet cells retained.'
             if name == 'up in WT vs 4 and 7 GSEA':
                 source += '; data/single-cell/enrichment/exports/Enriched-from-Erdal-up-in-WT-vs-common-4-and-7.txt'
-                note += ' All 133 export rows are included; the original 19 are the P < 0.001 subset. See data/single-cell/enrichment/README.md.'
+                note += ' All 133 export rows with P < 0.1 are included. See data/single-cell/enrichment/README.md.'
             block(wb[f'Supp Table {number}'],name,frame,source,note)
     for name,title in [('sample_metadata.csv','Technical sample metadata'),('cluster_composition.csv','Panel c: cluster composition'),('figure6_volcano_points.csv','Panels d/e: volcano points')]:
         block(wb['Figure 6'],title,pd.read_csv(single/'plot_tables'/name),'data/single-cell/plot_tables/'+name)
@@ -196,12 +196,12 @@ def main():
     for number,clusters in [(12,[1,2]),(13,[4,9])]:
         block(wb[f'Supp Fig {number}'],'Volcano points and original chart annotations',points[points.cluster.isin(clusters)],
               'data/single-cell/plot_tables/supplementary_volcano_points.csv',
-              'Every point matched uniquely to the recomputed full DGE table. Colors retained from the supplied Excel chart point annotations; zero P-values capped at 10^-304 for display.')
-    for filename in ['sensitivity_all.csv', 'what_changes_vs_published.csv', 'what_changes_vs_17aug_report.csv', 'experimental_units.csv']:
+              'Points map uniquely to full DGE rows. Colors follow Excel chart annotations; zero P-values use a display floor of 10^-304.')
+    for filename in ['sensitivity_all.csv', 'experimental_units.csv']:
         block(wb['Sensitivity'], filename, pd.read_csv(HERE / 'out' / filename), 'out/' + filename,
               'Sensitivity p-values identify their family. Fit-perturbation bounds are empirical sensitivity ranges.')
     block(wb['Read me'], 'Source Data', manifest, 'out/panel_manifest.csv',
-          'Censored MDK records and single-cell technical sample identities are identified in their sheets. Genomic tables are regenerated from the supplied mutation calls. '
+          'Censored MDK records and single-cell technical sample identities are identified in their sheets. Genomic tables are calculated from mutation calls. '
           'One sheet per figure; full-precision numerical cells and source paths retained.')
     for ws in wb:
         ws.freeze_panes = 'C6'

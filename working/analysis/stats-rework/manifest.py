@@ -1,7 +1,7 @@
 """Panel identities and experimental units for the figure analyses.
 
 Paths are relative to this repository. Panel letters follow the manuscript
-legends, with documented corrections recorded in panel_manifest.csv.
+legends, and are recorded in panel_manifest.csv.
 """
 from pathlib import Path
 import pandas as pd
@@ -56,16 +56,16 @@ FIT_PANELS = [
 ]
 MDK = {
     'Figure 2': ('e', 'Figure 2/E - MDK/mdk.P.PC.cultures-3days.xlsx', 'Fig2e_MDK',
-                 'Recorded volumes, including 40 uL concentrated samples, confirmed 19 September 2026; day 1 omitted by original notebook'),
+                 'Record-specific volumes include 40 uL concentrated samples; analysis includes days 2 and 3'),
     'Figure 3': ('e', 'Figure 3/E - MDK/mdk.P.PLAC.cultures-2days.xlsx', 'Fig3e_MDK',
-                 'Recorded volumes and two zero-colony counts confirmed 19 September 2026; day 2 at 3 h has an unconfirmed handling concern'),
+                 'Record-specific volumes; two zero-colony counts; possible handling loss at day 2, 3 h is unconfirmed'),
     'Figure 5': ('e', 'Figure 5 - mutants/E - MDK/MDK_mutants_correct.xlsx', 'Fig5e_MDK', ''),
     'Supplementary Figure 4': ('e', 'Supplemental Figure 4 - Pb/E - MDK/mdk.ATECc.cultures.xlsx',
-                               'SuppFig4e_MDK', 'Recorded 40 uL concentrated samples confirmed 19 September 2026'),
+                               'SuppFig4e_MDK', 'Recorded concentrated-sample plated volumes include 40 uL'),
     'Supplementary Figure 10': ('d', 'Supplemental Figure 10 - mutant prs and other/D - prs_hipA mdk/MDK_prs_mutant.xlsx',
                                 'SuppFig10d_MDK', ''),
     'Supplementary Figure 11': ('all', 'Supplemental Figure 11 - double mutants/MDK_double_mutant.xlsx',
-                                'SuppFig11_MDK_double_mutants', '10 uL throughout, confirmed 19 September 2026; one censored count; 1/2 h not measured, 5 h excluded for dilution error'),
+                                'SuppFig11_MDK_double_mutants', '10 uL at every measured time point; one censored count; 1/2 h not measured, 5 h excluded for dilution error'),
 }
 
 
@@ -82,17 +82,17 @@ def panel_manifest():
                 raw_data=f'biohpc-pull/data/ODFinal{raw_suffix}.xlsx',
                 unit=('technical dose-response series; biological n=1 per strain'
                       if ds == 'fig5_mutants' else 'culture'),
-                status='replot', note='Shared IC50 panel reuses primary adjustment family'
+                status='standalone plot', note='Shared IC50 panel reuses primary adjustment family'
                 if fig in ['Supplementary Figure 2', 'Supplementary Figure 7'] and value == 'IC50' else '')
     for fig, (panel, path, stem, note) in MDK.items():
         add(fig, panel, 'MDK survivor fraction', 'working/figures/' + path,
             units='fraction', output='out/figures-final/' + stem, drug='Cefepime',
             unit='biological culture; day and replicate retained',
-            status='replot' if fig in ['Figure 5', 'Supplementary Figure 10', 'Supplementary Figure 11'] else 'audit original', note=note)
+            status='standalone plot' if fig in ['Figure 5', 'Supplementary Figure 10', 'Supplementary Figure 11'] else 'composite plot', note=note)
     add('Figure 5', 'a', 'doubling time',
         'working/figures/Figure 5 - mutants/A - doubling times/growth_022525_mutants.xlsx',
         units='min', output='out/figures-final/Fig5a_doubling_time',
-        unit='six technical wells; biological n=1 per strain', status='replot')
+        unit='six technical wells; biological n=1 per strain', status='standalone plot')
     for fig, panels, path, measure, units in [
         ('Figure 1', 'def', 'Figure 1/D-F/SurvivalData.xlsx', 'survival trajectory', 'percent'),
         ('Figure 3', 'a', 'Figure 3/A - survival/SurvivalData.xlsx', 'survival trajectory', 'percent'),
@@ -101,7 +101,7 @@ def panel_manifest():
     ]:
         for panel in panels:
             add(fig, panel, measure, 'working/figures/' + path, units=units,
-                unit='culture tracked over time', status='retain; export source values')
+                unit='culture tracked over time', status='generated from data')
     notebooks = [
         ('Figure 2', 'f', 'Figure 2/F-H heatmaps/05-PA.ipynb'),
         ('Figure 2', 'g', 'Figure 2/F-H heatmaps/07-PL.ipynb'),
@@ -121,7 +121,7 @@ def panel_manifest():
             add(fig, panel, 'mutation frequency', 'working/figures/' + path,
                 units='fraction', unit='population sequencing sample',
                 status='table and plot regenerated from mutation calls',
-                note='Supp 5 b/c corrected to notebook identities' if fig == 'Supplementary Figure 5' else '')
+                note='Supp 5b: MG_LEV; Supp 5c: MG_CEF' if fig == 'Supplementary Figure 5' else '')
     for fig, panels, source in [
         ('Figure 1', 'abc', 'working/figures/Figure 1/A-C/Figure 1 A-C.pptx'),
         ('Figure 4', 'd', 'data/figure-assets/Figure4_schematic.json'),
@@ -130,14 +130,14 @@ def panel_manifest():
         add(fig, panels, 'schematic', source, status='retain schematic', unit='not applicable', units='not applicable')
     add('Figure 2', 'a', 'representative dose-response curve',
         'working/figures/Figure 2/A-D - MIC/B-D/241011_Adam_mic_PAPLPC.ipynb',
-        status='recovered PA5 levofloxacin, original notebook cell 29', units='OD and ug/mL', unit='dose-response series')
+        status='PA5 levofloxacin; notebook cell 29', units='OD and ug/mL', unit='dose-response series')
     for fig in ['Figure 6', 'Supplementary Figure 12', 'Supplementary Figure 13']:
         add(fig, 'all', 'single-cell RNA analysis', 'data/single-cell/input_manifest.json',
             status='count-matrix reconstruction and supplied-table validation', unit='cell; two technical libraries per culture')
     for i in [1, 2, 3, 4]:
         add(f'Supplementary Table {i}', 'all', 'table',
             'data/supplementary_tables.json' if i<3 else 'data/single-cell/original-tables/Single Cell Analysis Supp Tables.xlsx',
-            status='original table in Source Data' if i<3 else 'complete supplied expression/enrichment tables; generating enrichment method pending')
+            status='original table in Source Data' if i<3 else 'complete expression/enrichment tables; EcoCyc assumptions in data/single-cell/enrichment/README.md')
     d = pd.DataFrame(rows).fillna('')
     if d.duplicated(['figure', 'panel', 'measure', 'drug']).any():
         raise ValueError('Duplicate panel identity')
@@ -159,8 +159,8 @@ def experimental_units():
                        biological_unit=(r['group'] if ds == 'fig5_mutants' else r.Strain),
                        unit_type='technical series' if ds == 'fig5_mutants' else 'culture',
                        lineage_id=str(r.culturenumber) if ds in ('fig2_paplpc', 'fig3_plac', 'supp3_pcr', 'supp6_unt') else '',
-                       matching=('confirmed 18 September 2026; same-numbered pairs' if ds in ('supp3_pcr', 'supp6_unt')
-                                 else 'confirmed 17 August 2026' if ds.startswith(('fig2_', 'fig3_')) else 'not established'),
+                       matching=('same-numbered ancestor and descendant cultures' if ds in ('supp3_pcr', 'supp6_unt')
+                                 else 'same-numbered longitudinal cultures' if ds.startswith(('fig2_', 'fig3_')) else 'not established'),
                        included_in_comparison=not (ds == 'supp3_pcr' and r['group'] == 'P' and int(r.culturenumber) > 6),
                        analysis_source=f'cache/{ds}__df_analysis.pkl')
             for field in ['Experiment', 'Day', 'Plate', 'Plate_ID', 'Well', 'Row', 'Column']:

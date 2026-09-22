@@ -1,14 +1,12 @@
-"""Shared helpers and superseded August statistics for historical reproduction.
+"""Statistical helpers and reference calculations for notebook validation.
 
-The current primary analysis is final_stats.py: Figures 2/3 use culture-ID-paired
-log10 IC50 tests; Supplementary Figures 3/4/6 use Welch tests; Holm adjustment is
-by panel and drug. See RESULTS_v2.md and the repository README.
+The primary analysis is final_stats.py: paired log10 IC50 tests for Figures
+2/3 and Supplementary Figures 3/6, Welch tests for Supplementary Figure 4,
+and Holm adjustment by panel and drug. See RESULTS_v2.md and the README.
 
-compare() retains the old raw-scale modes for validate.py. panel_tests() and
-its design_mode() reproduce the superseded August exploratory analysis only;
-they do not select the current study design. The August all-Welch decision
-predated the incorporation of Adam's culture-matching clarification and is
-superseded. Its raw arithmetic means and exploratory corrections are historical.
+compare(), panel_tests() and design_mode() retain the notebook reference
+calculations for reproducibility checks. They do not select the primary
+study design or its comparison families.
 """
 
 import itertools
@@ -82,7 +80,7 @@ def compare(a, b, mode, keys_a=None, keys_b=None):
 
 def panel_tests(gf, comparisons, value="IC50", group_col="group",
                 modes=("welch", "paired_fixed", "paired_published")):
-    """Reproduce historical August comparisons; not a current-analysis entry point.
+    """Compute reference raw-scale comparisons for notebook validation.
 
     ``comparisons`` is a list of (group1, group2) tuples in the order the panel
     reports them.
@@ -106,7 +104,7 @@ def panel_tests(gf, comparisons, value="IC50", group_col="group",
                 row[f"p_{mode}"] = p
                 if mode == "paired_fixed":
                     row["n_pairs"] = npair
-            # Superseded August selection, retained for historical reproduction.
+            # Reference calculation uses Welch tests.
             dm = design_mode(g1, g2)
             dm = dm if f"p_{dm}" in row else "welch"
             row["design_test"] = "paired" if dm == "paired_fixed" else "unpaired Welch"
@@ -159,13 +157,13 @@ def all_pairs(groups):
     return list(itertools.combinations(groups, 2))
 
 
-# Preserve the superseded August all-Welch choice for historical callers only.
-# This set does not describe the current experiment. See final_stats.py.
+# Welch selector for reference raw-scale comparisons.
+# Primary study designs are specified in final_stats.py.
 PAIRED_COHORTS = set()
 
 
 def design_mode(group1, group2):
-    """Historical August selector; current design decisions live in final_stats.py."""
+    """Reference selector; primary study designs are specified in final_stats.py."""
     return ("paired_fixed"
             if group1 in PAIRED_COHORTS and group2 in PAIRED_COHORTS
             else "welch")

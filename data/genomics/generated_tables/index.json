@@ -102,7 +102,7 @@
       14,
       27
     ],
-    "notebook_sha256": "afe2484f9162240d98ee57a3a11cc2f96ddfd68f308db83c9a1d02809b39566a"
+    "notebook_sha256": "fea0de8defcca78a46661dbbc50543008c3dceec1c641c97e1300d399fe3062d"
   },
   "working/figures/Supplemental Figure 9 - big heatmap/13-bigheatmap.ipynb": {
     "file": "data/genomics/generated_tables/combined_lineages.json",
@@ -180,7 +180,7 @@
       14,
       27
     ],
-    "notebook_sha256": "afe2484f9162240d98ee57a3a11cc2f96ddfd68f308db83c9a1d02809b39566a",
+    "notebook_sha256": "fea0de8defcca78a46661dbbc50543008c3dceec1c641c97e1300d399fe3062d",
     "executed_notebook": "working/figures/Figure 4/02-PLAC.ipynb"
   }
 }

@@ -304,7 +304,7 @@ def draw_mdk(rep, summ, order, col, lab, stem, conditional=False):
     ax.legend(fontsize=24, frameon=False, loc='lower center', bbox_to_anchor=(.5, 1.02), ncol=2)
     notes = ['Horizontal offsets separate strains and replicates.']
     if conditional:
-        notes += ['Equal plated volumes assumed across time.',
+        notes += ['10 µL plated at every measured time.',
                   'Open triangle: below detection. Dashed bar: allowed MAD range.']
     if omitted:
         notes += ['Lower MAD arms reaching zero are omitted on the log axis.']
@@ -344,7 +344,7 @@ def main():
     final = pd.read_csv(HERE / "out" / "final_statistics.csv")
     n = tested_panels(final) + figure5a() + mdk_panels()
     manifest = panel_manifest()
-    expected = {Path(x).name for x in manifest[manifest.status == 'replot'].output}
+    expected = {Path(x).name for x in manifest[manifest.status == 'standalone plot'].output}
     actual = {x.removesuffix('_labels') for x in RENDERED}
     if expected != actual:
         raise ValueError(f'Render coverage mismatch: missing {expected-actual}, extra {actual-expected}')

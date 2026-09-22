@@ -200,7 +200,7 @@ def legacy_mdk(asset,width,height):
                     elinewidth=ERROR,capsize=1.5,capthick=ERROR,alpha=.8,zorder=3)
         label=base+'-1' if name==parent else base+rf'$^{{\mathrm{{{exponent}}}}}$-'+name[len(prefix):]
         entries.append(dict(label=label,y=med[-1],color=colors[name]))
-        payload.extend(dict(Name=name,Time=float(t),median=float(m),mad=float(a),basis='confirmed records; censored median and normal-scaled MAD') for t,m,a in zip(s.Time,med,mad))
+        payload.extend(dict(Name=name,Time=float(t),median=float(m),mad=float(a),basis='censored median and normal-scaled MAD') for t,m,a in zip(s.Time,med,mad))
     style(ax);ax.spines['top'].set_visible(False);ax.spines['right'].set_visible(False)
     ax.set_ylim(1e-8,2);ax.set_xlim(-.12,7.15);ax.set_xticks([0,1,2,3,5,7]);ax.set_xlabel('Time (h)');ax.set_ylabel('Survivor fraction')
     if prefix=='PLAC':

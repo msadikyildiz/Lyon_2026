@@ -1,8 +1,6 @@
 {
   "archive_name": "Breseq_reference_and_run_records.zip",
   "archive_sha256": "589d99bebd7eaaea265b368156fef3090b3376ce7956483ae34d2fa5f9b4b83e",
-  "received": "2026-09-20",
-  "supplied_by": "Erdal Toprak",
   "storage": "Original bytes retained; identical per-run FASTA files share one physical copy.",
   "files": [
     {

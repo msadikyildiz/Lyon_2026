@@ -1,7 +1,5 @@
 {
-  "supplied_by": "Adam Rosenthal",
-  "received": "2026-09-20",
-  "source": "Original EcoCyc SmartTable downloads supplied by the analyst",
+  "source": "EcoCyc SmartTable text exports",
   "files": [
     {
       "path": "exports/Enriched-from-Erdal-common-up-in-4-and-7-vs-wt.txt",

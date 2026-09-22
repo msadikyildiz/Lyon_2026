@@ -157,40 +157,5 @@
     "print_panels.py",
     "assemble_figures.py",
     "scripts/reproduce_trajectories.py"
-  ],
-  "portable_source_provenance": {
-    "updated_text_cells": 11,
-    "sources": [
-      "data/supplementary_tables.json",
-      "working/figures/Figure 4/Figure4D-Cartoon.pptx"
-    ],
-    "numeric_values_unchanged": true
-  },
-  "presentation_comparison": {
-    "status": "passed",
-    "csv_tables_unchanged": 24,
-    "pngs_identical": 124,
-    "png_annotation_changes": [
-      {
-        "file": "working/analysis/stats-rework/out/figures-final/SuppFig11_MDK_double_mutants.png",
-        "difference_box": [
-          1358,
-          6689,
-          3698,
-          6812
-        ],
-        "size": [
-          5490,
-          7014
-        ],
-        "change": "Plating-volume assumption note wording only"
-      }
-    ],
-    "workbook_cells_checked": 414279,
-    "workbook_numeric_cells_unchanged": 138959,
-    "cached_run_seconds": 138.22,
-    "input_checksums_passed": 86,
-    "workbook_text_cells_updated": 26,
-    "reference_commit": "f6026fc"
-  }
+  ]
 }

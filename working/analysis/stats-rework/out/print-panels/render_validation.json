@@ -338,462 +338,462 @@
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "P1",
         "Time": 1.0,
         "median": 3.349031920460493e-05,
         "mad": 2.090849282507901e-05,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "P1",
         "Time": 2.0,
         "median": 1.1248966087675766e-06,
         "mad": 2.923328638795196e-07,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "P1",
         "Time": 3.0,
         "median": 3.367346938775511e-07,
         "mad": 4.5806020923217314e-08,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "P1",
         "Time": 5.0,
         "median": 4.0816326530612253e-08,
         "mad": 1.1249467382695564e-08,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "P1",
         "Time": 7.0,
         "median": 5.1020408163265317e-08,
         "mad": 2.3662151382502456e-08,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC1",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC1",
         "Time": 1.0,
         "median": 7.5e-05,
         "mad": 2.7961357629710905e-05,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC1",
         "Time": 2.0,
         "median": 1.0701754385964912e-05,
         "mad": 2.662018785968117e-06,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC1",
         "Time": 3.0,
         "median": 6.140350877192982e-06,
         "mad": 3.007471605521223e-07,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC1",
         "Time": 5.0,
         "median": 2.96875e-06,
         "mad": 7.599962030168522e-07,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC1",
         "Time": 7.0,
         "median": 1.5789473684210526e-06,
         "mad": 2.4384904909631427e-08,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC2",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC2",
         "Time": 1.0,
         "median": 0.1115384615384615,
         "mad": 0.0,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC2",
         "Time": 2.0,
         "median": 0.0538461538461538,
         "mad": 0.011404632450043,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC2",
         "Time": 3.0,
         "median": 0.0111538461538461,
         "mad": 0.0011404632450043,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC2",
         "Time": 5.0,
         "median": 0.0002076923076923,
         "mad": 1.1404632450043106e-05,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC2",
         "Time": 7.0,
         "median": 1.6923076923076924e-05,
         "mad": 5.702316225021553e-07,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC3",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC3",
         "Time": 1.0,
         "median": 0.0001465116279069,
         "mad": 4.131650644396772e-05,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC3",
         "Time": 2.0,
         "median": 5.813953488372094e-05,
         "mad": 5.582333934572595e-06,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC3",
         "Time": 3.0,
         "median": 3.80952380952381e-05,
         "mad": 2.1344217985130533e-06,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC3",
         "Time": 5.0,
         "median": 3.095238095238096e-05,
         "mad": 5.828613372862551e-06,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC3",
         "Time": 7.0,
         "median": 1.558139534883721e-05,
         "mad": 1.2560251352788362e-06,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC4",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC4",
         "Time": 1.0,
         "median": 0.5357142857142857,
         "mad": 0.3260610142202169,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC4",
         "Time": 2.0,
         "median": 0.2894736842105263,
         "mad": 0.0055736925507729,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC4",
         "Time": 3.0,
         "median": 0.1107142857142857,
         "mad": 0.0967927448367228,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC4",
         "Time": 5.0,
         "median": 0.0763157894736842,
         "mad": 0.0178358161624734,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC4",
         "Time": 7.0,
         "median": 0.0107142857142857,
         "mad": 0.0019062028523643,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC5",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC5",
         "Time": 1.0,
         "median": 0.1142857142857142,
         "mad": 0.0105900158464685,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC5",
         "Time": 2.0,
         "median": 0.0428571428571428,
         "mad": 0.0042360063385874,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC5",
         "Time": 3.0,
         "median": 0.01,
         "mad": 0.0008472012677174,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC5",
         "Time": 5.0,
         "median": 0.004,
         "mad": 0.0008472012677174,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC5",
         "Time": 7.0,
         "median": 0.0021142857142857,
         "mad": 0.0004165406232944,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC6",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC6",
         "Time": 1.0,
         "median": 0.1866666666666666,
         "mad": 0.0472236262190673,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC6",
         "Time": 2.0,
         "median": 0.1266666666666666,
         "mad": 0.0373396114290299,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC6",
         "Time": 3.0,
         "median": 0.0533333333333333,
         "mad": 0.0142769102522761,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC6",
         "Time": 5.0,
         "median": 0.0166666666666666,
         "mad": 0.0049420073950186,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC6",
         "Time": 7.0,
         "median": 0.0056,
         "mad": 0.001142152820182,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC7",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC7",
         "Time": 1.0,
         "median": 0.006875,
         "mad": 0.0029224370653235,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC7",
         "Time": 2.0,
         "median": 0.0053124999999999,
         "mad": 0.0028219985409055,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC7",
         "Time": 3.0,
         "median": 0.00153125,
         "mad": 0.0001247381674223,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC7",
         "Time": 5.0,
         "median": 0.001,
         "mad": 0.0002779879159698,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC7",
         "Time": 7.0,
         "median": 0.0005,
         "mad": 0.0001710694867506,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC8",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC8",
         "Time": 1.0,
         "median": 0.0138461538461538,
         "mad": 0.00193533156728,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC8",
         "Time": 2.0,
         "median": 0.0005,
         "mad": 0.0003611466942513,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC8",
         "Time": 3.0,
         "median": 0.0041025641025641,
         "mad": 0.0002073569536371,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC8",
         "Time": 5.0,
         "median": 0.000195,
         "mad": 1.9543392880301167e-05,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC8",
         "Time": 7.0,
         "median": 1.7500000000000002e-05,
         "mad": 1.2355018487546649e-06,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC9",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC9",
         "Time": 1.0,
         "median": 0.0002297297297297,
         "mad": 2.8049231160916823e-05,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC9",
         "Time": 2.0,
         "median": 0.00013,
         "mad": 1.162039576666552e-05,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC9",
         "Time": 3.0,
         "median": 0.0001,
         "mad": 0.0,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC9",
         "Time": 5.0,
         "median": 6.756756756756758e-05,
         "mad": 1.0017582557470309e-07,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC9",
         "Time": 7.0,
         "median": 5.135135135135136e-05,
         "mad": 0.0,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC10",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC10",
         "Time": 1.0,
         "median": 0.0854166666666666,
         "mad": 0.0119470697639012,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC10",
         "Time": 2.0,
         "median": 0.0208333333333333,
         "mad": 0.0085086448074613,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC10",
         "Time": 3.0,
         "median": 0.0458333333333333,
         "mad": 0.0061775092437733,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC10",
         "Time": 5.0,
         "median": 0.0170833333333333,
         "mad": 0.0043242564706413,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PC10",
         "Time": 7.0,
         "median": 0.0090566037735849,
         "mad": 0.0001456959727305,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       }
     ],
     "end_labels": {
@@ -2420,462 +2420,462 @@
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "P1",
         "Time": 1.0,
         "median": 5.8680555555555566e-05,
         "mad": 8.236678991697784e-06,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "P1",
         "Time": 2.0,
         "median": 1.5311355311355317e-06,
         "mad": 1.731399706180648e-07,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "P1",
         "Time": 3.0,
         "median": 4.807692307692308e-07,
         "mad": 1.1840226050565573e-07,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "P1",
         "Time": 5.0,
         "median": 1.2770833333333336e-07,
         "mad": 1.4708355342317476e-08,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "P1",
         "Time": 7.0,
         "median": 7.500000000000002e-08,
         "mad": 4.0985397867342366e-08,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC1",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC1",
         "Time": 1.0,
         "median": 0.0061538461538461,
         "mad": 0.0028147603493723,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC1",
         "Time": 2.0,
         "median": 0.0016410256410256,
         "mad": 0.0005915202697422,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC1",
         "Time": 3.0,
         "median": 0.0002589743589743,
         "mad": 8.112656983966823e-05,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC1",
         "Time": 5.0,
         "median": 8.461538461538463e-05,
         "mad": 1.504440876388663e-05,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC1",
         "Time": 7.0,
         "median": 5.641025641025642e-05,
         "mad": 3.0007933609687862e-05,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC2",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC2",
         "Time": 1.0,
         "median": 0.1596153846153846,
         "mad": 0.0126084547642143,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC2",
         "Time": 2.0,
         "median": 0.0557692307692307,
         "mad": 0.0036114669425136,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC2",
         "Time": 3.0,
         "median": 0.0133333333333333,
         "mad": 0.0003801544150014,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC2",
         "Time": 5.0,
         "median": 0.0046153846153846,
         "mad": 0.0003894264739039,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC2",
         "Time": 7.0,
         "median": 0.0002307692307692,
         "mad": 2.2555828623418548e-05,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC3",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC3",
         "Time": 1.0,
         "median": 0.0499999999999999,
         "mad": 0.0043605947603105,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC3",
         "Time": 2.0,
         "median": 0.0077777777777777,
         "mad": 0.0023741015917246,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC3",
         "Time": 3.0,
         "median": 0.00225,
         "mad": 0.0002834386594201,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC3",
         "Time": 5.0,
         "median": 0.0002375,
         "mad": 4.687639367333887e-05,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC3",
         "Time": 7.0,
         "median": 0.0001058823529411,
         "mad": 2.371073400918884e-05,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC4",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC4",
         "Time": 1.0,
         "median": 0.0012777777777777,
         "mad": 0.0002190606114813,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC4",
         "Time": 2.0,
         "median": 0.0004468085106382,
         "mad": 3.218849801358259e-06,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC4",
         "Time": 3.0,
         "median": 0.0001531914893617,
         "mad": 8.996089111499694e-06,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC4",
         "Time": 5.0,
         "median": 7.962962962962964e-05,
         "mad": 1.5072562236508204e-05,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC4",
         "Time": 7.0,
         "median": 2e-05,
         "mad": 3.4699200858641777e-06,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC5",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC5",
         "Time": 1.0,
         "median": 0.1391304347826087,
         "mad": 0.0096691449032973,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC5",
         "Time": 2.0,
         "median": 0.0978723404255319,
         "mad": 6.857549576808468e-05,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC5",
         "Time": 3.0,
         "median": 0.0425531914893617,
         "mad": 0.0013715099153613,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC5",
         "Time": 5.0,
         "median": 0.0117021276595744,
         "mad": 0.0032779086977135,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC5",
         "Time": 7.0,
         "median": 0.0060869565217391,
         "mad": 0.0006446096602198,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC6",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC6",
         "Time": 1.0,
         "median": 0.0069230769230769,
         "mad": 0.0026265214127371,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC6",
         "Time": 2.0,
         "median": 0.0016666666666666,
         "mad": 4.4927339954714795e-05,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC6",
         "Time": 3.0,
         "median": 0.0005,
         "mad": 9.884014790037334e-05,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC6",
         "Time": 5.0,
         "median": 0.000230303030303,
         "mad": 7.681125863225524e-06,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC6",
         "Time": 7.0,
         "median": 8.205128205128206e-05,
         "mad": 2.6610809050100543e-05,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC7",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC7",
         "Time": 1.0,
         "median": 0.0035483870967741,
         "mad": 0.001236640560136,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC7",
         "Time": 2.0,
         "median": 0.0023225806451612,
         "mad": 0.0002630423290897,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC7",
         "Time": 3.0,
         "median": 0.000774193548387,
         "mad": 0.0003429798680598,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC7",
         "Time": 5.0,
         "median": 0.0002096774193548,
         "mad": 4.399980777500491e-05,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC7",
         "Time": 7.0,
         "median": 0.0001,
         "mad": 8.472012677174876e-06,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC8",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC8",
         "Time": 1.0,
         "median": 0.0567567567567567,
         "mad": 0.0132406308585694,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC8",
         "Time": 2.0,
         "median": 0.0075,
         "mad": 0.0007012307790229,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC8",
         "Time": 3.0,
         "median": 0.002027027027027,
         "mad": 0.0001689922622738,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC8",
         "Time": 5.0,
         "median": 0.0006756756756756,
         "mad": 0.0001263086496376,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC8",
         "Time": 7.0,
         "median": 0.0001135135135135,
         "mad": 2.3258213416039693e-05,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC9",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC9",
         "Time": 1.0,
         "median": 0.0026363636363636,
         "mad": 0.0005803878814558,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC9",
         "Time": 2.0,
         "median": 0.0011219512195121,
         "mad": 2.1367881197974355e-05,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC9",
         "Time": 3.0,
         "median": 0.0027045454545454,
         "mad": 7.643126736198521e-05,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC9",
         "Time": 5.0,
         "median": 0.0001045454545454,
         "mad": 1.8573619810546894e-05,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC9",
         "Time": 7.0,
         "median": 2.931818181818182e-05,
         "mad": 4.265357823749487e-06,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC10",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC10",
         "Time": 1.0,
         "median": 0.0011351351351351,
         "mad": 0.0001046998951167,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC10",
         "Time": 2.0,
         "median": 0.0003692307692307,
         "mad": 1.6923002990386432e-05,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC10",
         "Time": 3.0,
         "median": 0.0016774193548387,
         "mad": 0.0005352819424133,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC10",
         "Time": 5.0,
         "median": 9.032258064516129e-05,
         "mad": 2.005007962991449e-05,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "PLAC10",
         "Time": 7.0,
         "median": 3.4230769230769234e-05,
         "mad": 9.013338549227592e-07,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       }
     ],
     "end_labels": {
@@ -9866,294 +9866,294 @@
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATEC1",
         "Time": 1.0,
         "median": 0.0001717391304347,
         "mad": 2.466618597779947e-05,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATEC1",
         "Time": 2.0,
         "median": 1e-05,
         "mad": 3.5453531312090476e-06,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATEC1",
         "Time": 3.0,
         "median": 2.448979591836735e-06,
         "mad": 1.1346445549787764e-06,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATEC1",
         "Time": 5.0,
         "median": 3.586956521739131e-07,
         "mad": 1.7430771424311648e-08,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATEC1",
         "Time": 7.0,
         "median": 2.448979591836735e-07,
         "mad": 7.37518960736204e-08,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc1",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc1",
         "Time": 1.0,
         "median": 0.1054054054054054,
         "mad": 0.0027190581227419,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc1",
         "Time": 2.0,
         "median": 0.0714285714285714,
         "mad": 0.0176500264107809,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc1",
         "Time": 3.0,
         "median": 0.0621621621621621,
         "mad": 0.0032056264183904,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc1",
         "Time": 5.0,
         "median": 0.0229999999999999,
         "mad": 0.0024357036446877,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc1",
         "Time": 7.0,
         "median": 0.0189999999999999,
         "mad": 0.0025416038031524,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc2",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc2",
         "Time": 1.0,
         "median": 0.0009555555555555,
         "mad": 2.5823101703701315e-05,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc2",
         "Time": 2.0,
         "median": 0.00018,
         "mad": 9.616879255171498e-06,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc2",
         "Time": 3.0,
         "median": 6.444444444444446e-05,
         "mad": 1.2620267472025103e-05,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc2",
         "Time": 5.0,
         "median": 7.777777777777778e-05,
         "mad": 1.2911550851850596e-05,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc2",
         "Time": 7.0,
         "median": 1.2666666666666668e-05,
         "mad": 1.4407207999037515e-06,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc3",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc3",
         "Time": 1.0,
         "median": 0.000178431372549,
         "mad": 8.721189520621187e-06,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc3",
         "Time": 2.0,
         "median": 8.627450980392158e-05,
         "mad": 5.814126347080798e-06,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc3",
         "Time": 3.0,
         "median": 5.8823529411764714e-05,
         "mad": 1.1628252694161588e-05,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc3",
         "Time": 5.0,
         "median": 5.490196078431373e-05,
         "mad": 1.8435034759036597e-06,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc3",
         "Time": 7.0,
         "median": 2.254901960784314e-05,
         "mad": 8.721189520621188e-07,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc4",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc4",
         "Time": 1.0,
         "median": 0.0021142857142857,
         "mad": 0.0003697919046929,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc4",
         "Time": 2.0,
         "median": 0.0007142857142857,
         "mad": 0.0002976653102791,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc4",
         "Time": 3.0,
         "median": 0.0001571428571428,
         "mad": 3.663573049589131e-05,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc4",
         "Time": 5.0,
         "median": 5.7142857142857155e-05,
         "mad": 1.2593532357962652e-05,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc4",
         "Time": 7.0,
         "median": 2.3714285714285717e-05,
         "mad": 8.296729656267796e-06,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc5",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc5",
         "Time": 1.0,
         "median": 0.2297297297297297,
         "mad": 0.0498207772524855,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc5",
         "Time": 2.0,
         "median": 0.1702702702702702,
         "mad": 0.0193673262777758,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc5",
         "Time": 3.0,
         "median": 0.1108108108108108,
         "mad": 0.0321433735974481,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc5",
         "Time": 5.0,
         "median": 0.0599999999999999,
         "mad": 0.0112196924643667,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc5",
         "Time": 7.0,
         "median": 0.0175675675675675,
         "mad": 0.0060628151826081,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc6",
         "Time": 0.0,
         "median": 1.0,
         "mad": 0.0,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc6",
         "Time": 1.0,
         "median": 0.0595744680851063,
         "mad": 0.0020773357498521,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc6",
         "Time": 2.0,
         "median": 0.0382978723404255,
         "mad": 0.0083093429994086,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc6",
         "Time": 3.0,
         "median": 0.0319148936170212,
         "mad": 0.0003077534444225,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc6",
         "Time": 5.0,
         "median": 0.0148780487804878,
         "mad": 0.0007232205943929,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       },
       {
         "Name": "ATECc6",
         "Time": 7.0,
         "median": 0.0148780487804878,
         "mad": 0.0003616102971964,
-        "basis": "confirmed records; censored median and normal-scaled MAD"
+        "basis": "censored median and normal-scaled MAD"
       }
     ],
     "end_labels": {

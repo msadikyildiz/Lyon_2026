@@ -5,8 +5,7 @@
   "acceptance_checks_passed": 369,
   "primary_contrasts_checked": 36,
   "independent_primary_check": {
-    "unchanged_primary_contrasts": 30,
-    "independently_verified_changes": [
+    "independently_verified_contrasts": [
       {
         "panel": "Supplementary Figure 3b-d",
         "drug": "Amikacin",
@@ -96,11 +95,5 @@
     "rtol": 1e-08,
     "atol": 1e-10,
     "comparison": "CSV values, PNG bytes, workbook values and cell types; PDF/SVG/XLSX container timestamps ignored"
-  },
-  "s6_terminal_label_correction": {
-    "old_day": 81,
-    "new_day": 82,
-    "data_pixels_unchanged": true,
-    "assembly_validation": "passed"
   }
 }
