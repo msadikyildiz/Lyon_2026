@@ -8,7 +8,7 @@ Data and analysis code for *Recurrent Extinction of Resistance Mutations Leads t
 |---|---|---|
 | Add the sequencing accession | Add the WGS accession. All 149 runs include commands, saved options and sequence-verified references. Date-based software-version assumptions are documented with the run records. | Access to sequencing reads |
 | Update the schematic | Add the final editable Figure 4d BioRender artwork and export. | Figure 4d |
-| Specify reuse terms | Add licenses for study code and data. | Repository license files |
+| Specify data reuse terms | Select a license for study data and original figures. | Data and figure reuse |
 
 The repository includes the experimental workbooks, mutation calls, single-cell count matrices and original analysis code. One command regenerates the numerical analyses, Source Data, Supplementary Tables 3 and 4, and all 19 figures. Schematic artwork is retained explicitly; every numerical panel is generated from included data. See the [figure map](docs/FIGURE_COVERAGE.md).
 
@@ -70,4 +70,6 @@ micromamba run -n lyon-2026 python scripts/compare_outputs.py /path/to/reference
 
 The comparator checks CSV values, PNG bytes, generated genomic/single-cell plotting tables, and Source Data cell values/types. Statistical/workbook tolerances are 1e-8 relative and 1e-10 absolute. PDF, SVG and XLSX containers may differ in timestamps. R reconstruction is validated separately against the original expression tables, including exact row identities and cluster counts.
 
-The vendored plategig source retains its [MIT license](working/analysis/stats-rework/plategig-88839a2/LICENSE).
+## License
+
+Project-authored analysis and reproduction code is available under the [MIT license](LICENSE). This grant covers code and its documentation; study data and figure artwork require separate reuse terms. Third-party components and BioRender artwork retain their existing terms. The vendored plategig source retains its [MIT license](working/analysis/stats-rework/plategig-88839a2/LICENSE).
