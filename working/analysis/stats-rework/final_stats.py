@@ -432,7 +432,7 @@ def main():
         raise ValueError(f'Output validation failed: {[c for c in checks if not c[-1]]}')
     primary_cols = ['Panel', 'also_shown_in', 'value', 'Antibiotic', 'contrast_id', 'Group1', 'Group2',
                     'n1', 'n2', 'n_pairs', 'geomean1', 'geomean2', 'ratio', 'ratio_lo', 'ratio_hi',
-                    'test', 'interval_method', 'p', 'k', 'p_holm', 'significant', 'p_bh',
+                    'test', 'interval_method', 't', 'df', 'p', 'k', 'p_holm', 'significant', 'p_bh',
                     'p_bonferroni', 'p_holm_figure']
     outputs = {'final_statistics.csv': t[primary_cols], 'sensitivity_all.csv': t,
                'group_summaries.csv': groups, 'fig5_descriptive.csv': f5,
