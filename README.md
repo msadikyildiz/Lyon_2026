@@ -7,7 +7,6 @@ Data and analysis code for *Recurrent Extinction of Resistance Mutations Leads t
 | Task | Input or work remaining | Affected outputs |
 |---|---|---|
 | Add the sequencing accession | Add the WGS accession. All 149 runs include commands, saved options and sequence-verified references. Date-based software-version assumptions are documented with the run records. | Access to sequencing reads |
-| Update the schematic | Add the final editable Figure 4d BioRender artwork and export. | Figure 4d |
 
 The repository includes the experimental workbooks, mutation calls, single-cell count matrices and original analysis code. One command regenerates the numerical analyses, Source Data, Supplementary Tables 3 and 4, and all 19 figures. Schematic artwork is retained explicitly; every numerical panel is generated from included data. See the [figure map](docs/FIGURE_COVERAGE.md).
 

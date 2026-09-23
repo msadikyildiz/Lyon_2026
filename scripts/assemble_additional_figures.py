@@ -1,8 +1,7 @@
 """Compose numerical genomic figures and retain the supplied schematic explicitly."""
 from pathlib import Path
-import json,hashlib,io,shutil
+import json,hashlib
 import fitz
-from PIL import Image
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'working/figures-assembled';PANELS=ROOT/'working/analysis/stats-rework/out/genomic-panels'
 RECORD=[]
@@ -28,10 +27,12 @@ def main():
  place(p,PANELS/'Fig4c.pdf',[8,377,755.2,567],'c')
  asset=json.loads((ROOT/'data/figure-assets/Figure4_schematic.json').read_text());source=ROOT/asset['source']
  assert hashlib.sha256(source.read_bytes()).hexdigest()==asset['sha256']
- image=Image.open(source).crop(asset['crop']);stream=io.BytesIO();image.save(stream,format='PNG')
- h=464.4*image.height/image.width;p=doc.new_page(width=480.4,height=h+42)
+ clip=fitz.Rect(asset['crop'])
+ h=464.4*clip.height/clip.width;p=doc.new_page(width=480.4,height=h+58)
  p.insert_text((8,16),'Figure 4 (continued)',fontsize=12,fontname='hebo');p.insert_text((8,34),'d',fontsize=12,fontname='hebo')
- p.insert_image(fitz.Rect(8,40,472.4,h+40),stream=stream.getvalue())
+ with fitz.open(source) as schematic:
+  p.show_pdf_page(fitz.Rect(8,40,472.4,h+40),schematic,pno=asset['page'],clip=clip,keep_proportion=True)
+ p.insert_text((8,h+52),asset['credit'],fontsize=8,fontname='helv')
  RECORD.append({**asset,'figure':'Figure 4','page':2,'retained_schematic':True});finish(doc,'Figure_4')
  # Complete endpoint heatmaps retain a fixed physical label size across three pages.
  doc=fitz.open()

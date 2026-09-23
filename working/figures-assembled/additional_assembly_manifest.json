@@ -18,18 +18,28 @@
     "label": "c"
   },
   {
-    "source": "data/figure-assets/Figure4_original.png",
-    "sha256": "704844a09e844756b22b4eef555b449364dd4803c68900071952556fce9cb1bb",
-    "crop": [
-      806,
-      435,
-      1925,
-      1294
-    ],
-    "panel": "d",
-    "status": "BioRender schematic; final editable export pending",
-    "figure": "Figure 4",
+    "source": "data/figure-assets/Figure4d_BioRender.pdf",
+    "sha256": "e696904c7287824dab5713526fff425c37a33491461799fd8ed5993e004bea44",
     "page": 2,
+    "crop": [
+      0,
+      2,
+      573,
+      440
+    ],
+    "crop_units": "PDF points",
+    "panel": "d",
+    "format": "vector PDF",
+    "editor_url": "https://app.biorender.com/illustrations/68b9c614df10bff4eff8a6d3?slideId=4dbf021f-15f4-4349-8652-ccb2906bb51a",
+    "source_title": "Final-Figure 4- new-Adam",
+    "source_slide": 2,
+    "exported": "2026-09-23",
+    "credit": "Created in BioRender. Toprak, E. (2026) https://BioRender.com/lgurs80",
+    "license": "BioRender assets retain their existing terms.",
+    "citation_url": "https://BioRender.com/lgurs80",
+    "publication_license": "Open-access publication license issued 23 September 2026",
+    "public_link_date": "2026-12-21",
+    "figure": "Figure 4",
     "retained_schematic": true
   },
   {
