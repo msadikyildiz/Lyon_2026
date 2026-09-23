@@ -1,26 +1,26 @@
 [
   {
     "source": "working/analysis/stats-rework/out/genomic-panels/Fig4a.pdf",
-    "sha256": "191ec8feb297f50b4d324f669bd57b3ca98fa2db6ef615f977aa2996fe15fac9",
-    "scale": 0.9999999586482698,
+    "sha256": "356b59f13bf8ba1f9bfa7985737636d16d004c22e227084a48969b240f52cb75",
+    "scale": 1.0,
     "label": "a"
   },
   {
     "source": "working/analysis/stats-rework/out/genomic-panels/Fig4b.pdf",
-    "sha256": "46457dcfed2c0abd7a0752168d422f2d98b78a1b24d3bfc0ea9be99681fb4133",
+    "sha256": "b433a70b439fbd95e2b8a82c913123c4491c383fa7777c149aeb9fc147399519",
     "scale": 1.0,
     "label": "b"
   },
   {
     "source": "working/analysis/stats-rework/out/genomic-panels/Fig4c.pdf",
-    "sha256": "21504145605f4072d50d1ed526bd481838bdbe89a915774cba6cc4dd655f1132",
-    "scale": 0.999999983662967,
+    "sha256": "a658db92263e9637814af5f63c031957078bee221317e8c71c7df81751de6fa5",
+    "scale": 1.0,
     "label": "c"
   },
   {
     "source": "data/figure-assets/Figure4d_BioRender.pdf",
     "sha256": "e696904c7287824dab5713526fff425c37a33491461799fd8ed5993e004bea44",
-    "page": 2,
+    "page": 1,
     "crop": [
       0,
       2,
@@ -40,6 +40,12 @@
     "publication_license": "Open-access publication license issued 23 September 2026",
     "public_link_date": "2026-12-21",
     "figure": "Figure 4",
+    "rect": [
+      65.44001464843751,
+      415,
+      529.8400146484375,
+      769.9863874345549
+    ],
     "retained_schematic": true
   },
   {

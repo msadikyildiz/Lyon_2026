@@ -157,7 +157,7 @@ def s9():
  m.to_csv(OUT/'S9_matrix.csv',float_format='%.15g')
  return m,labels,'viridis'
 
-def heatmap(m,labels,cmap,width,height,transpose=False,annot=False,bottom_override=None):
+def heatmap(m,labels,cmap,width,height,transpose=False,annot=False,bottom_override=None,top_override=None):
  """Dimensions and text sizes are physical points, independent of saved DPI."""
  plt.rcParams.update({'font.family':'Times New Roman','font.size':8.5,'pdf.fonttype':42,'svg.fonttype':'none'})
  arr=m.T if transpose else m
@@ -177,7 +177,7 @@ def heatmap(m,labels,cmap,width,height,transpose=False,annot=False,bottom_overri
  plt.close(temp)
  bottom=(max(len(str(s)) for s in x)*3.8*.74+18) if transpose else 30
  if bottom_override is not None:bottom=bottom_override
- top=25;right=5
+ top=25 if top_override is None else top_override;right=5
  if not transpose and any('Day' in str(s) for s in x):bottom=48
  if width-left-right<60 or height-bottom-top<50:raise ValueError(f'Panel too small: {width,height,left,bottom}')
  fig=plt.figure(figsize=(width/72,height/72))
@@ -247,12 +247,17 @@ def trajectories():
   from matplotlib.lines import Line2D
   return [Line2D([0],[0],color=pal[group][l],lw=1,label=plain(aliases.get(l,l))) for l in groups[group] if pop is None or l in set(d.loc[d.Pop==pop,'label'])]
  # Main panel: culture 4, four selected mutation groups, consistent with caption.
- fig,axes=plt.subplots(2,2,figsize=(4.1,4.4));fig.subplots_adjust(left=.12,right=.99,bottom=.29,top=.87,hspace=1.25,wspace=.4)
- fig.text(.12,.975,r'MG$^{\mathrm{LEV,AMI,CEF}}$-4 (persistent)',fontsize=9.5,va='top')
+ fig,axes=plt.subplots(2,2,figsize=(240/72,220/72))
+ fig.subplots_adjust(left=.135,right=.985,bottom=.37,top=.85,hspace=1.5,wspace=.48)
+ fig.text(.135,.985,r'MG$^{\mathrm{LEV,AMI,CEF}}$-4 (persistent)',fontsize=9,va='top')
  for i,(ax,group) in enumerate(zip(axes.flat,['gyrA','fusA','trkH','clade'])):
-  plot(ax,4,group);ax.set_title(['i  gyrA','ii  fusA','iii  trkH','iv  Convergent alleles'][i],loc='left',fontsize=10)
-  if i<2:ax.legend(handles=legend(ax,group,4),loc='upper left',bbox_to_anchor=(-.12,-.34),ncol=1,fontsize=8.5,frameon=False,handlelength=1.0,columnspacing=.5,labelspacing=.2)
- fig.legend(handles=legend(None,'clade',4),loc='lower left',bbox_to_anchor=(.07,.015),ncol=2,fontsize=8.5,frameon=False,handlelength=1.2,columnspacing=1.0,labelspacing=.25)
+  plot(ax,4,group);ax.set_title(['i  gyrA','ii  fusA','iii  trkH','iv  Convergent alleles'][i],loc='left',fontsize=9)
+  ax.set_xticks([0,2,4,6,9],[0,16,31,47,82])
+  ax.set_xlabel('Day' if i>=2 else '',fontsize=9,labelpad=2)
+  ax.set_ylabel('Frequency' if i%2==0 else '',fontsize=9,labelpad=2)
+  if i%2:ax.tick_params(labelleft=False)
+  if i<2:ax.legend(handles=legend(ax,group,4),loc='upper left',bbox_to_anchor=(-.06,-.27),ncol=1,fontsize=8.5,frameon=False,handlelength=1.0,columnspacing=.5,labelspacing=.05,borderpad=0)
+ fig.legend(handles=legend(None,'clade',4),loc='lower left',bbox_to_anchor=(.07,.005),ncol=2,fontsize=8.5,frameon=False,handlelength=1.2,columnspacing=.65,labelspacing=.1)
  save(fig,'Fig4a')
  # Supplementary trajectories split by culture into two readable, matching grids.
  with PdfPages(FIG/'Supp_Figure_8.pdf',metadata={'CreationDate':None}) as pdf:
@@ -272,8 +277,8 @@ def trajectories():
    validate_bounds(fig,f'S8 page {page}')
    pdf.savefig(fig);fig.savefig(FIG/f'Supp_Figure_8_page{page}.png',dpi=300);plt.close(fig)
  # Presence from first to last observed nonzero sampling day, as in the notebook.
- clade=groups['clade'];fig,axes=plt.subplots(2,5,figsize=(437/72,4.4),sharey=True)
- fig.subplots_adjust(left=.23,right=.99,bottom=.13,top=.93,wspace=.15,hspace=.32)
+ clade=groups['clade'];fig,axes=plt.subplots(2,5,figsize=(322/72,220/72),sharey=True)
+ fig.subplots_adjust(left=.30,right=.99,bottom=.13,top=.93,wspace=.18,hspace=.32)
  emergence=[]
  for pop,ax in enumerate(axes.flat,1):
   for j,label in enumerate(clade):
@@ -284,7 +289,7 @@ def trajectories():
     if len(nonzero):
      start,end=int(nonzero[0]),int(nonzero[-1]);ax.plot([start,end],[j,j],lw=4,color=pal['clade'][label],solid_capstyle='butt')
      ax.scatter([start,end],[j,j],s=6,color=pal['clade'][label]);emergence.append(dict(culture=pop,label=label,first_observed_day=days[start],last_observed_day=days[end]))
-  ax.set_title(f'Culture {pop}',fontsize=9);ax.set_xlim(-.5,9.5);ax.set_ylim(8.5,-.5);ax.set_xticks([0,2,4,6,9],[0,16,31,47,82]);ax.tick_params(labelsize=8.5,length=2,width=.65)
+  ax.set_title(f'Culture {pop}',fontsize=8.5);ax.set_xlim(-.5,9.5);ax.set_ylim(8.5,-.5);ax.set_xticks([0,4,9],[0,31,82]);ax.tick_params(labelsize=8.5,length=2,width=.65)
   ax.set_yticks(range(9),[plain(aliases.get(l,l)) for l in clade]);ax.set_xlabel('Day',fontsize=8.5)
   if pop<=5:ax.set_xlabel('');ax.set_xticklabels([])
   for s in ax.spines.values():s.set_linewidth(.65)
@@ -299,12 +304,14 @@ def main():
  plt.rcParams.update({'font.family':'Times New Roman','font.size':8.5,'pdf.fonttype':42,'svg.fonttype':'none'})
  for panel in ENDPOINTS:
   m,labels,cmap=endpoint(panel)
-  fig=heatmap(m,labels,cmap,747.2 if panel=='Fig4c' else 464.4,190 if panel=='Fig4c' else max(180,len(m)*10+45),annot=len(m)<16,bottom_override=50 if panel=='Fig4c' else None)
+  fig=heatmap(m,labels,cmap,579 if panel=='Fig4c' else 464.4,125 if panel=='Fig4c' else max(180,len(m)*10+45),annot=len(m)<16,bottom_override=18 if panel=='Fig4c' else None,top_override=20 if panel=='Fig4c' else None)
   if panel=='Fig4c':
    from matplotlib.lines import Line2D
    for culture,label in enumerate(fig.axes[0].get_xticklabels(),1):
     label.set_color('teal' if culture in [2,5] else 'maroon' if culture in [3,8] else '#bb40bb');label.set_weight('bold')
-   fig.legend(handles=[Line2D([],[],marker='s',ls='',ms=4,color=color,label=label) for color,label in [('teal','Tolerant'),('#bb40bb','Persistent'),('maroon','Intermediate')]],loc='lower center',bbox_to_anchor=(.58,0),ncol=3,fontsize=8.5,frameon=False,handlelength=.6,columnspacing=1)
+   fig.axes[0].set_xlabel('')
+   fig.text(.105,.015,'Culture',fontsize=9,ha='right',va='bottom')
+   fig.legend(handles=[Line2D([],[],marker='s',ls='',ms=4,color=color,label=label) for color,label in [('teal','Tolerant'),('#bb40bb','Persistent'),('maroon','Intermediate')]],loc='upper center',bbox_to_anchor=(.55,1.02),ncol=3,fontsize=8.5,frameon=False,handlelength=.6,columnspacing=1)
   save(fig,panel)
  m,labels,cmap=s6();save(heatmap(m,labels,cmap,464.4,len(m)*10+70),'S6d')
  m,labels,cmap=s9()

@@ -19,21 +19,21 @@ def finish(doc,name):
   page.get_pixmap(dpi=300).save(OUT/f'{name}{suffix}.png');page.get_pixmap(dpi=100).save(OUT/f'{name}{suffix}_preview.png')
  doc.close()
 def main():
- # Numerical Figure 4 panels on a landscape page, the supplied schematic on page 2.
- doc=fitz.open();p=doc.new_page(width=763.2,height=574)
+ # Numerical panels use their final physical sizes; retain the vector schematic.
+ doc=fitz.open();p=doc.new_page(width=595.28,height=782.36)
  p.insert_text((8,16),'Figure 4',fontsize=12,fontname='hebo')
- place(p,PANELS/'Fig4a.pdf',[8,40,303.2,356.8],'a')
- place(p,PANELS/'Fig4b.pdf',[321,40,758,356.8],'b')
- place(p,PANELS/'Fig4c.pdf',[8,377,755.2,567],'c')
+ place(p,PANELS/'Fig4a.pdf',[8,36,248,256],'a')
+ place(p,PANELS/'Fig4b.pdf',[265,36,587,256],'b')
+ place(p,PANELS/'Fig4c.pdf',[8,274,587,399],'c')
  asset=json.loads((ROOT/'data/figure-assets/Figure4_schematic.json').read_text());source=ROOT/asset['source']
  assert hashlib.sha256(source.read_bytes()).hexdigest()==asset['sha256']
  clip=fitz.Rect(asset['crop'])
- h=464.4*clip.height/clip.width;p=doc.new_page(width=480.4,height=h+58)
- p.insert_text((8,16),'Figure 4 (continued)',fontsize=12,fontname='hebo');p.insert_text((8,34),'d',fontsize=12,fontname='hebo')
+ width=464.4;h=width*clip.height/clip.width;x=(p.rect.width-width)/2;y=415
+ p.insert_text((8,y-3),'d',fontsize=12,fontname='hebo')
  with fitz.open(source) as schematic:
-  p.show_pdf_page(fitz.Rect(8,40,472.4,h+40),schematic,pno=asset['page'],clip=clip,keep_proportion=True)
- p.insert_text((8,h+52),asset['credit'],fontsize=8,fontname='helv')
- RECORD.append({**asset,'figure':'Figure 4','page':2,'retained_schematic':True});finish(doc,'Figure_4')
+  p.show_pdf_page(fitz.Rect(x,y,x+width,y+h),schematic,pno=asset['page'],clip=clip,keep_proportion=True)
+ p.insert_text((8,777),asset['credit'],fontsize=8,fontname='helv')
+ RECORD.append({**asset,'figure':'Figure 4','page':1,'rect':[x,y,x+width,y+h],'retained_schematic':True});finish(doc,'Figure_4')
  # Complete endpoint heatmaps retain a fixed physical label size across three pages.
  doc=fitz.open()
  for letter in 'abc':

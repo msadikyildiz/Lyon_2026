@@ -7,7 +7,7 @@
 | 1 | Paired survival trajectories d–f | Schematics a–c; editable PPTX included |
 | 2 | Representative dose response a, IC50 b–d, MDK e, genomic f–h | None |
 | 3 | Survival a, IC50 b–d, censored MDK e | Unconfirmed handling loss documented; primary and omission-sensitivity results retained |
-| 4 | Mutation trajectories a, observed time spans b, endpoint frequencies and phenotypes c | BioRender d as a vector PDF with selectable text; two-page figure |
+| 4 | Mutation trajectories a, observed time spans b, endpoint frequencies and phenotypes c | BioRender d as a vector PDF with selectable text; single-page figure |
 | 5 | Growth a, IC50 b–d, MDK e | Technical replicates for growth and IC50 |
 | 6 | Combined/split UMAP, cluster composition, culture DGE, rplJ/hipA expression | EcoCyc exports and reported method included; version/background assumptions documented |
 | Supplementary 1 | Schematic assembly | Original illustration and editable PPTX retained |
