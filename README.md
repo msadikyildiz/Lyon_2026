@@ -8,7 +8,6 @@ Data and analysis code for *Recurrent Extinction of Resistance Mutations Leads t
 |---|---|---|
 | Add the sequencing accession | Add the WGS accession. All 149 runs include commands, saved options and sequence-verified references. Date-based software-version assumptions are documented with the run records. | Access to sequencing reads |
 | Update the schematic | Add the final editable Figure 4d BioRender artwork and export. | Figure 4d |
-| Specify data reuse terms | Select a license for study data and original figures. | Data and figure reuse |
 
 The repository includes the experimental workbooks, mutation calls, single-cell count matrices and original analysis code. One command regenerates the numerical analyses, Source Data, Supplementary Tables 3 and 4, and all 19 figures. Schematic artwork is retained explicitly; every numerical panel is generated from included data. See the [figure map](docs/FIGURE_COVERAGE.md).
 
@@ -72,4 +71,12 @@ The comparator checks CSV values, PNG bytes, generated genomic/single-cell plott
 
 ## License
 
-Project-authored analysis and reproduction code is available under the [MIT license](LICENSE). This grant covers code and its documentation; study data and figure artwork require separate reuse terms. Third-party components and BioRender artwork retain their existing terms. The vendored plategig source retains its [MIT license](working/analysis/stats-rework/plategig-88839a2/LICENSE).
+Project-authored analysis and reproduction code and its documentation are available under the [MIT license](LICENSE).
+
+Study-generated experimental data, derived result tables and original figure elements are licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE-DATA). Reuse requires appropriate credit, a link to the license and an indication of modifications, where applicable. Academic and commercial reuse are permitted. Credit Lyon et al. (2026) and link to this repository.
+
+Third-party software, reference sequences, database annotations and BioRender assets retain their existing terms and are excluded from these grants. For composite figures, CC BY 4.0 covers only the original study content. The vendored plategig source retains its [MIT license](working/analysis/stats-rework/plategig-88839a2/LICENSE).
+
+## Citation
+
+Please cite the associated study and this repository when using the data or code, and include the Git commit identifier for the version used. [CITATION.cff](CITATION.cff) provides the repository citation metadata. This citation guidance does not add conditions to the MIT license.

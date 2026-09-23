@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "Please cite the associated study and this repository when using the data or code. Include the Git commit identifier for the version used."
+type: software
+title: "Lyon et al. (2026): data, analysis and figures"
+authors:
+  - family-names: Lyon
+    given-names: Adam
+  - family-names: Yildiz
+    given-names: Muhammed Sadik
+  - family-names: Cooke
+    given-names: Samuel
+  - family-names: Ahmed
+    given-names: Ayesha
+  - family-names: Coskun
+    given-names: Fatma
+  - family-names: Saunders
+    given-names: Scott H.
+  - family-names: Rosenthal
+    given-names: Adam
+  - family-names: Toprak
+    given-names: Erdal
+repository-code: "https://github.com/msadikyildiz/Lyon_2026"
+url: "https://github.com/msadikyildiz/Lyon_2026"
+license:
+  - MIT
+  - CC-BY-4.0
+abstract: >-
+  Data, analysis code and figure-reproduction workflows for Recurrent Extinction
+  of Resistance Mutations Leads to Convergent Multidrug Resistance in Sequential
+  Antibiotic Treatment. Code and its documentation use MIT; study-generated data,
+  derived result tables and original figure elements use CC BY 4.0. Third-party
+  components retain their existing terms as described in README.md.
