@@ -16,7 +16,7 @@ rpoB small_indel [4185043],rpoB small_indel,rpoB indel (2),4185043,4185043||
 gyrA A119E,gyrA A119E,GyrA A119E,2339065,2339065|T|E
 tas small_indel,tas small_indel,tas indel,2972129,2972129||
 rpoB H1237L,rpoB H1237L,RpoB H1237L,4184954,4184954|T|L
-rpoB M129R,rpoB M129R,RpoB M129R,4185113,4185113|G|R
+rpoB M1290R,rpoB M1290R,RpoB M1290R,4185113,4185113|G|R
 arpA D661A,arpA D661A,ArpA D661A,4220506,4220506|G|A
 arcA small_indel,arcA small_indel,arcA indel,4640231,4640231|CGCTTCGAAAACATCATAGCCTTC|
 appY/ompT small_indel,appY/ompT small_indel,appY/ompT indel,584487,584487||

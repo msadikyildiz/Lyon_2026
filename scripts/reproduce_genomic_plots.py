@@ -1,6 +1,7 @@
 """Render genomic panels from regenerated tables, preserving mutation identity.
 
-Notebook selections and display aliases are retained. A short label is never an
+Notebook selections are retained; source-verified annotation corrections are
+applied to labels. A short label is never an
 aggregation key: variants at distinct coordinates remain separate rows.
 """
 import ast
@@ -69,6 +70,15 @@ def plain(label):
 
 def matrix(d,panel,order,aliases,pop='Pop',value='last_freq'):
  d=d.copy()
+ d['source_label']=d.label
+ # U00096.3:4185113 is codon 1290 (ATG→AGG) in the original breseq call.
+ # Keep the notebook label in the crosswalk, but use the correct residue in outputs.
+ corrected=d.coordinate.eq('4185113') & d.label.eq('rpoB M129R')
+ if corrected.any():
+  assert d.loc[corrected,'aa_pos'].astype(float).eq(1290).all()
+  d.loc[corrected,'label']='rpoB M1290R'
+  order=['rpoB M1290R' if label=='rpoB M129R' else label for label in order]
+  aliases={**aliases,'rpoB M1290R':'RpoB M1290R'}
  if d.duplicated([pop,'mutation_id']).any():
   raise ValueError(f'{panel}: repeated population/mutation identity')
  # Resolve all site differences, even if they occur in different cultures.
@@ -97,7 +107,7 @@ def matrix(d,panel,order,aliases,pop='Pop',value='last_freq'):
    coordinates=g.coordinate.tolist(),frequencies=g[value].tolist(),historical_mean=float(old.loc[label,population])))
  for _,r in d.iterrows():
   CROSSWALK.append(dict(panel=panel,population=str(r[pop]),mutation_id=r.mutation_id,coordinate=r.coordinate,
-   source_label=r.label,display_label=r.display_label,matrix_label=r.matrix_label,frequency=float(r[value])))
+   source_label=r.source_label,display_label=r.display_label,matrix_label=r.matrix_label,frequency=float(r[value])))
  m.to_csv(OUT/f'{panel}_matrix.csv',float_format='%.15g')
  labels[['label','display_label','coordinate','mutation_id']].to_csv(OUT/f'{panel}_labels.csv')
  return m,labels.loc[m.index,'display_label'].tolist()

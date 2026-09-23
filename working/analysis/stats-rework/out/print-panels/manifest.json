@@ -80,7 +80,7 @@
     },
     "Figure_2::original_image13": {
       "source": "working/analysis/stats-rework/out/print-panels/Figure_2__original_image13.pdf",
-      "sha256": "883a908d55d5e152b8b8cddf851f1419390edf41143594b44d57a067f602ed9c",
+      "sha256": "27aa33ca551592ec89e846c8aa6d08aeda9d3e395504c1f2dd88db655a94b099",
       "native_width": 162.9192657470703,
       "native_height": 165.50613403320312,
       "content_box": [
@@ -654,7 +654,7 @@
   "layout_sha256": "d34e26cdea3fbce1650be468d3b95ac729c1caf1be223500b5fb78aa8ddb8500",
   "inputs": {
     "working/analysis/stats-rework/print_panels.py": "5137f746a57d0229c1a90f1ab1f2b7960127f5e19b61fa658a7c4ce7aa0de2e3",
-    "scripts/reproduce_genomic_plots.py": "826a0b04c35587a57f692a1df64f692c434673b40cf5ab6ac835c702acfab67d",
+    "scripts/reproduce_genomic_plots.py": "6f72cd92490994799e5864120e1688db9c19de50e8abef4152af215aaa1d503b",
     "data/genomics/generated_tables/MG_AMI.json": "38b320a13831744265c0afdfdbe995c0f9dfcd8b101818118176fc41d2626574",
     "data/genomics/generated_tables/MG_CEF.json": "a7b306f72b0cc26aef2db780961439757fc6dd45c9a820313d626eabbd6fd918",
     "data/genomics/generated_tables/MG_CEF_R.json": "bd8a728f6130ef189b938a0efb72059cf5f4f12754f5521cf8a6d031a9ad0e34",
@@ -724,7 +724,7 @@
     "working/analysis/stats-rework/out/fig5_descriptive.csv": "20f0b14c28d2adc47ff92b4ac6c0aac524d21148f65d9ae03630fd47e5a37481",
     "working/analysis/stats-rework/out/fig5a_descriptive.csv": "daaceb357ee55fee5061dcf6cdfbd88dac8ad8978346f611e4bdd1f88a330d94",
     "working/analysis/stats-rework/out/fig5a_doubling_times_per_well.csv": "79dca0b4b4eaa8fe7c95fcd426ddda4915f11889eefcba67101e0fda14e27da2",
-    "working/analysis/stats-rework/out/final_statistics.csv": "350fbab20940a1d31d08527f0bacff6fde7af5083d29eb8905774d0d60fb707d",
+    "working/analysis/stats-rework/out/final_statistics.csv": "182f5abaca0f770a6bba5ac63348ddecee07ba827e07ab2e7a00b321d2caa488",
     "working/analysis/stats-rework/out/group_summaries.csv": "9155bbf52d1adf753074dfed801cc39b3552b5aa428a69bc9a1899e5831f9780",
     "working/analysis/stats-rework/out/panel_manifest.csv": "e511dc1e7fa7730633f410c0a9d281ad446bed93ec0bea85d4cca591909dda30",
     "working/analysis/stats-rework/out/render_manifest.csv": "225fe4afc41c09a8df1eca4ce747dc4640acfa5991ecf09720cbc28ac6d9fc00",

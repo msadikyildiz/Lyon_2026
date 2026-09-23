@@ -2,6 +2,8 @@
 
 ## Experimental units and survival
 
+The amikacin–cefepime (PAC) lineages were excluded because they were compromised.
+
 IC50 comparisons in Supplementary Figure 3 pair P1–P6 with PCr1–PCr6; Supplementary Figure 6 pairs P1–P4 with P-unt1–P-unt4. Each evolved or passaged culture is matched to its measured ancestor by culture number. P7–P10 remain in the Supplementary Figure 3 source data but have no evolved partners and are excluded from its comparison and plotted parent summary. Tests use log10 values and Holm adjustment within panel and antibiotic. Supplementary Figure 4 uses Welch tests because culture matching is not established.
 
 For cefepime culture 10 at day 20, SurvivalData_26.xlsx (PC row 401) and bigcfu070523_26.xlsx (singleDrug row 401) record 16 colonies at dilution 10^-5 and 20 µL plated volume, giving 80,000,000 CFU/mL. The matched pre-treatment value is 150,000,000 CFU/mL, giving 53.333333% survival. The ten-culture mean is 34.7224000558%, with sample SD 30.5038182291%. The [source record](../data/source_corrections_2026-09-18.json) identifies the workbook hashes and values.
@@ -21,6 +23,8 @@ ATEC1/2/4 experiment-2 measurements and the failed ATEC-C3 technical series were
 Inputs comprise 149 mutation-call TSVs and 17 processed CSVs. The complete PbEc table contains 83 rows. The 17 processed exports agree with the notebook calculations before the annotation and allele transformations applied in later data-processing cells. Reference sequences, commands and saved options cover all 149 runs; date-based breseq version assumptions are documented in `data/genomics/README.md`.
 
 Culture 2 endpoint frequencies are GyrA S83L, 1.000000; HipA, 0.154478; selB, 0.183824; fimB/fimE, 0.178571; ftsH, 0.187417; and gatA, 0.165929. The latter alleles are present at low frequency.
+
+The RpoB substitution at U00096.3 position 4185113 is M1290R (codon ATG to AGG). Figures and Source Data use this annotation; notebook-derived tables and the crosswalk’s `source_label` retain the source alias M129R.
 
 Plots identify variants by coordinate and allele. Distinct mutations remain separate even when they share a short label:
 

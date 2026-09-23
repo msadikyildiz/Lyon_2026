@@ -59,6 +59,11 @@ def notebook_table(rel):
     table = pd.read_json(genomic_repo / item['file'], orient='table', precise_float=True)
     if len(table) != item['rows']:
         raise ValueError(f"Genomic table row count differs: {rel}")
+    if 'position' in table and 'label' in table:
+        corrected = table.position.astype(int).eq(4185113) & table.label.eq('rpoB M129R')
+        if corrected.any():
+            assert table.loc[corrected, 'aa_pos'].astype(float).eq(1290).all()
+            table.loc[corrected, 'label'] = 'rpoB M1290R'
     return table, item
 
 
@@ -159,7 +164,7 @@ def main():
         selected=crosswalk[crosswalk.panel.str.startswith(prefix)]
         block(wb[sheet], 'Plotted mutation frequencies and source crosswalk', selected,
               'data/genomics/plot_tables/panel_source_crosswalk.csv',
-              'Distinct mutation identities are separate; short labels are not averaged. Coordinates refer to the source reference, including contig IDs for PbEc.')
+              'Distinct mutation identities are separate; short labels are not averaged. Coordinates refer to the source reference, including contig IDs for PbEc. source_label retains notebook wording; display_label gives the plotted annotation, including RpoB M1290R at 4185113.')
     block(wb['Figure 4'], 'Mutation trajectories used in Figure 4 and Supplementary Figure 8',
           pd.read_csv(genomic_repo/'data/genomics/plot_tables/PLAC_trajectories.csv'),
           'data/genomics/plot_tables/PLAC_trajectories.csv')
@@ -202,7 +207,7 @@ def main():
               'Sensitivity p-values identify their family. Fit-perturbation bounds are empirical sensitivity ranges.')
     block(wb['Read me'], 'Source Data', manifest, 'out/panel_manifest.csv',
           'Censored MDK records and single-cell technical sample identities are identified in their sheets. Genomic tables are calculated from mutation calls. '
-          'One sheet per figure; full-precision numerical cells and source paths retained.')
+          'One sheet per figure; full-precision numerical cells and source paths retained. PAC lineages were excluded because they were compromised.')
     for ws in wb:
         ws.freeze_panes = 'C6'
         ws.sheet_view.zoomScale = 85
