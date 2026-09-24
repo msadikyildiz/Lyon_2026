@@ -11,7 +11,8 @@
     "data/genomics/generated_tables/PbEc_CEF.json": "f726c632300ef166ef5d50ef126f02dbdd4d0b6e8210fff2cc7d5be11e8cb54a",
     "data/genomics/generated_tables/combined_lineages.json": "ff400751a7d3fbca4d390c000ee3fe169399161227ba8540e67ab02a5948e8e6",
     "data/genomics/generated_tables/index.json": "8a36f6d38a00e40d6c950d9fd9a5ec5454d4d537f160793e52761868569fa47a",
-    "data/genomics/generated_tables/validation.json": "cd7c6a622527514fad2c80a08f80958ee4b0bfe75e5230066924ed5133aeb8db"
+    "data/genomics/generated_tables/validation.json": "cd7c6a622527514fad2c80a08f80958ee4b0bfe75e5230066924ed5133aeb8db",
+    "data/figure-assets/S9_order.json": "28fd5a5304a2ff78a084c56405b7daf8dbedefb7d110feec510a94459e3bf2a6"
   },
-  "plot_script_sha256": "6f72cd92490994799e5864120e1688db9c19de50e8abef4152af215aaa1d503b"
+  "plot_script_sha256": "c38abb4b414ca2662157e66caa9d506ae19fcf97593be8092ec1069a108cbd20"
 }

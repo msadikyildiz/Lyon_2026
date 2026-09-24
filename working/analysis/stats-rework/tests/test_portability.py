@@ -10,6 +10,7 @@ from unittest.mock import patch
 
 from openpyxl import Workbook
 from PIL import Image
+import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[4]
 sys.path.insert(0, str(ROOT / 'scripts'))
@@ -17,6 +18,7 @@ sys.path.insert(0, str(ROOT))
 from compare_outputs import compare, OUT
 from plot_style import figure_font
 import reproduce
+import reproduce_genomic_plots as genomic_plots
 
 
 class PortabilityTests(unittest.TestCase):
@@ -49,6 +51,18 @@ class PortabilityTests(unittest.TestCase):
     def test_font_has_bundled_fallback(self):
         with patch.dict('os.environ', {'LYON_PLOT_FONT': 'Absent Font 123456789'}):
             self.assertEqual(figure_font(), 'STIXGeneral')
+
+    def test_s9_order_is_independent_of_tied_input_rows(self):
+        source = genomic_plots.table('combined_lineages')
+        results = []
+        for seed in [17, 83]:
+            with patch.object(genomic_plots, 'OUT', Path(self.temp.name)), \
+                 patch.object(genomic_plots, 'CROSSWALK', []), patch.object(genomic_plots, 'CHANGES', []), \
+                 patch.object(genomic_plots, 'table', return_value=source.sample(frac=1, random_state=seed)):
+                matrix, labels, _ = genomic_plots.s9()
+                results.append((matrix, labels, list(genomic_plots.CROSSWALK)))
+        pd.testing.assert_frame_equal(results[0][0], results[1][0], check_exact=True)
+        self.assertEqual(results[0][1:], results[1][1:])
 
     def test_render_change_is_reported_and_strict_mode_rejects_it(self):
         Image.new('RGB', (12, 10), 'red').save(self.rebuilt/OUT/'figures-final/panel.png')

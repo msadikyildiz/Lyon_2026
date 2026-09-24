@@ -6,7 +6,7 @@ The reference validation uses Python 3.11.14 on Apple Silicon macOS with `enviro
 
 Numerical validation is separate from rendering validation. PNG file sets and assembled-figure/print-panel dimensions must match; byte differences from fonts or native rendering libraries are listed explicitly. `--strict-images` additionally requires identical PNG bytes. See [Reproduction](REPRODUCING.md) for environment and comparison commands.
 
-The cached workflow runs 21 failure/invariance tests, 368 analysis checks, a 49-value notebook reference check and a 36-contrast primary regression check. It generates all 19 figures across 26 PDF pages, numerical plotting tables, Source Data and Supplementary Tables 3 and 4. Figure checks cover panel identity, aspect ratios, placement, source hashes and content. Clean-output builds verify regeneration without pre-existing outputs.
+The cached workflow runs 22 failure/invariance tests, 368 analysis checks, a 49-value notebook reference check and a 36-contrast primary regression check. It generates all 19 figures across 26 PDF pages, numerical plotting tables, Source Data and Supplementary Tables 3 and 4. Figure checks cover panel identity, aspect ratios, placement, source hashes and content. Clean-output builds verify regeneration without pre-existing outputs.
 
 ## Dose-response and statistical checks
 
@@ -16,7 +16,7 @@ Primary tests verify matched culture IDs, adjustment families and all 36 IC50 co
 
 ## Genomic checks
 
-All 149 mutation-call TSVs and 17 processed exports are checked against input hashes. Eight tables are regenerated from notebook data-processing cells. Endpoint row counts are 43, 64, 80, 56, 83 and 38; PLAC contains 601 rows and the combined-lineage table 963. All 17 processed exports agree before subsequent notebook annotation/allele transformations. All 331 available notebook-display rows agree in variant identity, frequencies and full annotations after normalizing display truncation and serialization. A different Python hash seed produces identical genomic outputs.
+All 149 mutation-call TSVs and 17 processed exports are checked against input hashes. Eight tables are regenerated from notebook data-processing cells. Endpoint row counts are 43, 64, 80, 56, 83 and 38; PLAC contains 601 rows and the combined-lineage table 963. All 17 processed exports agree before subsequent notebook annotation/allele transformations. All 331 available notebook-display rows agree in variant identity, frequencies and full annotations after normalizing display truncation and serialization. A different Python hash seed produces identical genomic outputs. Supplementary Figure 9 uses an explicit display specification so equal gene ranks retain the same order across CPU sorting implementations; shuffled-input tests verify both the matrix and source crosswalk.
 
 The run-record verifier checks 600 archive entries stored as 453 distinct files and all 149 run identities. Archived GenBank sequences match every saved FASTA: 141 U00096.3 runs and eight ATEC runs. Both saved summaries agree for each run. Executable versions are unrecorded; date-based assumptions are documented separately.
 

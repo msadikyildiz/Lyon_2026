@@ -25,6 +25,7 @@ DATA = ROOT/'data/genomics/generated_tables'
 OUT = ROOT/'data/genomics/plot_tables'
 FIG = ROOT/'working/analysis/stats-rework/out/genomic-panels'
 NB = ROOT/'working/figures'
+S9_ORDER = ROOT/'data/figure-assets/S9_order.json'
 ENDPOINTS = {
  'Fig2f': ('MG_AMI','Figure 2/F-H heatmaps/05-PA.ipynb',13,'Blues'),
  'Fig2g': ('MG_LEV','Figure 2/F-H heatmaps/07-PL.ipynb',14,'Reds'),
@@ -157,6 +158,16 @@ def s9():
  code=code.split(marker)[0]+'\n    return combined_df, heatmap_data\n'
  ns={'np':np,'pd':pd,'plt':plt};exec(compile(code,path+':cell7-selection','exec'),ns)
  d,historical=ns['plot_combined_heatmap'](table('combined_lineages'),None)
+ # Equal gene ranks have no intrinsic order in the notebook's quicksort.
+ # Preserve the figure's explicit display order across CPU implementations.
+ layout=json.loads(S9_ORDER.read_text())
+ keys=['population','mutation_id']
+ record_order=pd.MultiIndex.from_tuples(layout['record_keys'],names=keys)
+ keyed=d.set_index(keys,drop=False)
+ assert keyed.index.is_unique and set(keyed.index)==set(record_order),'S9 mutation identities differ from display specification'
+ assert set(historical.columns)==set(layout['historical_labels']),'S9 labels differ from display specification'
+ d=keyed.loc[record_order].reset_index(drop=True)
+ historical=historical.loc[:,layout['historical_labels']]
  historical.to_csv(OUT/'S9_historical_matrix.csv',float_format='%.15g')
  order=historical.columns.tolist()
  # Notebook PLAC cell 14 distinguishes the insertion from the clade deletion.
@@ -164,6 +175,7 @@ def s9():
  d.loc[(d.position.astype(int)==3326602)&(d.gene_name=='ftsH'),'label']='ftsH small_ins'
  aliases={label:plain(label) for label in d.label.unique()}
  m,labels=matrix(d,'S9',order,aliases,pop='population')
+ assert m.index.tolist()==layout['matrix_labels'],'S9 variant display order differs'
  m=m.reindex(columns=historical.index)
  m.to_csv(OUT/'S9_matrix.csv',float_format='%.15g')
  return m,labels,'viridis'
@@ -347,7 +359,7 @@ def main():
  (OUT/'aggregation_corrections.json').write_text(json.dumps(CHANGES,indent=2)+'\n')
  (OUT/'manifest.json').write_text(json.dumps({'source':'Regenerated genomic tables; original notebook selections and aliases',
    'mutation_identity':'coordinate plus source alleles; distinct variants are not averaged',
-   'files':{p.relative_to(ROOT).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(DATA.glob('*.json'))},
+   'files':{p.relative_to(ROOT).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in [*sorted(DATA.glob('*.json')),S9_ORDER]},
    'plot_script_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()},indent=2)+'\n')
  print(f'Rendered genomic plots; {len(CROSSWALK)} matrix entries; {len(CHANGES)} historical duplicate groups.')
 
