@@ -33,11 +33,11 @@ micromamba run -n lyon-2026 python reproduce.py --refit
 
 Exact raw-refit validation uses the recorded Apple Silicon environment. Windows/Linux refits can fail strict numerical comparisons; the default workflow above passes on all three systems ([details](docs/REPRODUCING.md#raw-refits)).
 
-To also recompute single-cell results from counts, install **R 4.4.2** and its build prerequisites ([setup guide](docs/REPRODUCING.md#single-cell-analysis)), then run:
+To recompute single-cell results from counts, install **R 4.4.2** and its build prerequisites ([setup guide](docs/REPRODUCING.md#single-cell-analysis)), then run:
 
 ```sh
 Rscript scripts/setup_single_cell.R
-micromamba run -n lyon-2026 python reproduce.py --refit --single-cell
+micromamba run -n lyon-2026 python reproduce.py --single-cell
 ```
 
 Supplied EcoCyc enrichment results are validated and exported; enrichment tests and raw-read alignment are not rerun. Schematics use included artwork. Figures use Times New Roman when installed, otherwise the bundled STIX serif font. Numerical checks remain strict across platforms; font rendering can differ.
