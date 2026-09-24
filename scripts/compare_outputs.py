@@ -11,6 +11,26 @@ from PIL import Image
 RTOL, ATOL = 1e-8, 1e-10
 OUT = Path('working/analysis/stats-rework/out')
 
+
+def checked_single_cell_report(value):
+    """Check per-run discrepancy measurements against the single-cell tolerances."""
+    if isinstance(value, list):
+        return [checked_single_cell_report(item) for item in value]
+    if not isinstance(value, dict):
+        return value
+    checked = {}
+    for key, item in value.items():
+        limit = (1e-7 if key.endswith('_max_log10_difference') else
+                 1e-12 if key.endswith('_max_absolute_difference') else None)
+        if limit is not None:
+            if not np.isfinite(item) or not 0 <= item < limit:
+                raise ValueError(f'Single-cell validation exceeds tolerance: {key}={item}')
+            checked[key] = 'within tolerance'
+        else:
+            checked[key] = checked_single_cell_report(item)
+    return checked
+
+
 def compare(reference, rebuilt, strict_images=False):
     if reference.resolve() == rebuilt.resolve():
         raise ValueError('Reference and rebuilt directories must differ')
@@ -49,7 +69,12 @@ def compare(reference, rebuilt, strict_images=False):
         assert files and files=={p.name for p in (rebuilt/relative).iterdir() if p.is_file()},folder
         for name in files:
             a, b = reference/relative/name, rebuilt/relative/name
-            if folder == 'data/genomics/plot_tables' and name == 'manifest.json':
+            if folder == 'data/single-cell/plot_tables' and name.endswith('.csv'):
+                pd.testing.assert_frame_equal(pd.read_csv(a), pd.read_csv(b),
+                    check_exact=False, rtol=1e-12, atol=1e-12, obj=str(relative/name))
+            elif folder == 'data/single-cell/plot_tables' and name == 'validation.json':
+                assert checked_single_cell_report(json.loads(a.read_text())) == checked_single_cell_report(json.loads(b.read_text()))
+            elif folder == 'data/genomics/plot_tables' and name == 'manifest.json':
                 # Script versions and byte hashes are provenance, not numerical results.
                 expected, actual = json.loads(a.read_text()), json.loads(b.read_text())
                 assert set(expected['files']) == set(actual['files'])

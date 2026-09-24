@@ -15,7 +15,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[4]
 sys.path.insert(0, str(ROOT / 'scripts'))
 sys.path.insert(0, str(ROOT))
-from compare_outputs import compare, OUT
+from compare_outputs import compare, OUT, checked_single_cell_report
 from plot_style import figure_font
 import reproduce
 import reproduce_genomic_plots as genomic_plots
@@ -92,6 +92,22 @@ class PortabilityTests(unittest.TestCase):
     def test_line_endings_do_not_change_results(self):
         (self.rebuilt/'data/single-cell/plot_tables/values.csv').write_bytes(b'name,value\r\na,1.25\r\n')
         self.assertEqual(compare(self.reference, self.rebuilt)['status'], 'passed')
+
+    def test_single_cell_roundoff_uses_existing_numerical_tolerance(self):
+        file = self.rebuilt/'data/single-cell/plot_tables/values.csv'
+        file.write_text('name,value\na,1.2500000000000002\n')
+        self.assertEqual(compare(self.reference, self.rebuilt)['status'], 'passed')
+        file.write_text('name,value\na,1.2501\n')
+        with self.assertRaises(AssertionError):
+            compare(self.reference, self.rebuilt)
+
+    def test_single_cell_validation_requires_small_errors_and_exact_counts(self):
+        good = {'rows': 20, 'p_val_max_log10_difference': 1e-10}
+        bad = {**good, 'p_val_max_log10_difference': 1e-5}
+        with self.assertRaisesRegex(ValueError, 'exceeds tolerance'):
+            checked_single_cell_report(bad)
+        self.assertNotEqual(checked_single_cell_report(good),
+                            checked_single_cell_report({**good, 'rows': 21}))
 
     def test_invalid_provenance_hash_fails(self):
         (self.rebuilt/'scripts/reproduce_genomic_plots.py').write_text('# changed\n')

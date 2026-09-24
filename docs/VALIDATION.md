@@ -6,7 +6,7 @@ The reference validation uses Python 3.11.14 on Apple Silicon macOS with `enviro
 
 Numerical validation is separate from rendering validation. PNG file sets and assembled-figure/print-panel dimensions must match; byte differences from fonts or native rendering libraries are listed explicitly. `--strict-images` additionally requires identical PNG bytes. See [Reproduction](REPRODUCING.md) for environment and comparison commands.
 
-The cached workflow runs 22 failure/invariance tests, 368 analysis checks, a 49-value notebook reference check and a 36-contrast primary regression check. It generates all 19 figures across 26 PDF pages, numerical plotting tables, Source Data and Supplementary Tables 3 and 4. Figure checks cover panel identity, aspect ratios, placement, source hashes and content. Clean-output builds verify regeneration without pre-existing outputs.
+The cached workflow runs 24 failure/invariance tests, 368 analysis checks, a 49-value notebook reference check and a 36-contrast primary regression check. It generates all 19 figures across 26 PDF pages, numerical plotting tables, Source Data and Supplementary Tables 3 and 4. Figure checks cover panel identity, aspect ratios, placement, source hashes and content. Clean-output builds verify regeneration without pre-existing outputs.
 
 ## Dose-response and statistical checks
 

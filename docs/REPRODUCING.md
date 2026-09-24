@@ -53,7 +53,7 @@ To compare two builds:
 micromamba run -n lyon-2026 python scripts/compare_outputs.py PATH_TO_REFERENCE PATH_TO_BUILD --report comparison.json
 ```
 
-The comparison requires matching table identities and values, workbook cells/types, PNG file sets, and the dimensions of assembled figures and print panels. Statistical values and cache fits use relative tolerance 1e-8 and absolute tolerance 1e-10. Genomic plotting tables remain exact apart from line endings. Input checksums and primary statistical tests are unchanged by the rendering environment. Full scientific checks are described in [Validation](VALIDATION.md).
+The comparison requires matching table identities and values, workbook cells/types, PNG file sets, and the dimensions of assembled figures and print panels. Statistical values and cache fits use relative tolerance 1e-8 and absolute tolerance 1e-10. Genomic plotting tables remain exact apart from line endings. Single-cell plotting values use 1e-12 relative/absolute tolerance; their per-run error summaries must satisfy the documented single-cell limits. Input checksums and primary statistical tests are unchanged by the rendering environment. Full scientific checks are described in [Validation](VALIDATION.md).
 
 PNG byte differences and font-dependent crop sizes of intermediate plots are listed without failing numerical reproduction. Add `--strict-images` to the comparator or `reproduce.py --refit` to require identical PNG bytes. Times New Roman must be installed separately to match reference typography; otherwise plots use Matplotlib's bundled STIXGeneral. `LYON_PLOT_FONT` can select an installed font. Inspect regenerated figures when changing fonts or rendering libraries.
 
