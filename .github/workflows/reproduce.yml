@@ -51,6 +51,7 @@ jobs:
           path: |
             runs/**/*.json
             runs/**/*.log
+            runs/refit-*/working/analysis/stats-rework/cache/*.pkl
             data/genomics/plot_tables/*.csv
             data/genomics/plot_tables/*.json
           retention-days: 14
