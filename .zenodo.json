@@ -1,0 +1,18 @@
+{
+  "title": "Lyon et al. (2026): data, analysis and figures",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "mit",
+  "description": "<p>Data, analysis code and figure-reproduction workflows for <em>Recurrent Extinction of Resistance Mutations Leads to Convergent Multidrug Resistance in Sequential Antibiotic Treatment</em>.</p><p>Code and documentation are licensed under MIT. Study-generated data, derived tables and original figure elements are licensed under CC BY 4.0. Third-party components retain their own terms, as detailed in the repository README and license files.</p>",
+  "creators": [
+    {"name": "Lyon, Adam"},
+    {"name": "Yildiz, Muhammed Sadik"},
+    {"name": "Cooke, Samuel"},
+    {"name": "Ahmed, Ayesha"},
+    {"name": "Coskun, Fatma"},
+    {"name": "Saunders, Scott H."},
+    {"name": "Rosenthal, Adam"},
+    {"name": "Toprak, Erdal"}
+  ],
+  "keywords": ["antibiotic resistance", "experimental evolution", "reproducible analysis", "Escherichia coli"]
+}
