@@ -2,7 +2,7 @@
 
 ## Environment and workflow
 
-The reference validation uses Python 3.11.14 on Apple Silicon macOS with `environment-osx-arm64.lock` and `requirements-pip.txt`, installed independently of the analysis workstation environment. Times New Roman is installed separately. The portable setup uses `environment.yml` and `requirements-lock.txt`; [GitHub Actions](https://github.com/msadikyildiz/Lyon_2026/actions/workflows/reproduce.yml) records full Python workflow checks on Windows, Linux and macOS. R count-matrix reconstruction has been validated on Apple Silicon macOS with R 4.4.2 and `single-cell-renv.lock`.
+The reference validation uses Python 3.11.14 on Apple Silicon macOS with `environment-osx-arm64.lock` and `requirements-pip.txt`, installed independently of the analysis workstation environment. Times New Roman is installed separately. The portable setup in `environment.yml` pins OpenBLAS as well as the Python packages; [GitHub Actions](https://github.com/msadikyildiz/Lyon_2026/actions/workflows/reproduce.yml) records full Python workflow checks on Windows, Linux and macOS. R count-matrix reconstruction has been validated on Apple Silicon macOS with R 4.4.2 and `single-cell-renv.lock`.
 
 Numerical validation is separate from rendering validation. PNG file sets and assembled-figure/print-panel dimensions must match; byte differences from fonts or native rendering libraries are listed explicitly. `--strict-images` additionally requires identical PNG bytes. See [Reproduction](REPRODUCING.md) for environment and comparison commands.
 

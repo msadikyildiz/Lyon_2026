@@ -4,9 +4,9 @@ Run commands from the repository root. The [README](../README.md) gives the stan
 
 ## Python environment
 
-`environment.yml` installs Python 3.11.14 and the same pinned Python packages on Windows, Linux and macOS. Micromamba runs the environment directly, so shell activation is unnecessary. Windows on ARM can use x64 Python under emulation; native ARM Windows builds are not tested.
+`environment.yml` pins Python 3.11.14, OpenBLAS 0.3.29 and the analysis packages on Windows, Linux and macOS. Micromamba runs the environment directly, so shell activation is unnecessary. Windows on ARM can use x64 Python under emulation; native ARM Windows builds are not tested.
 
-Alternatively, use a Python 3.11 virtual environment and install `requirements-lock.txt`:
+For the default workflow using included fits, a Python 3.11 virtual environment with `requirements-lock.txt` is also supported. Use micromamba for raw refits: pip wheels can use different numerical libraries and fail the strict fit comparisons.
 
 | Step | Windows PowerShell | Linux / macOS |
 |---|---|---|
