@@ -54,7 +54,7 @@ def read_records(figure):
     d['fraction_upper'] = d.fraction_observed.where(~zeros, d.detection_limit)
     d['fraction_plot'] = d.fraction_upper
     d['record_note'] = note
-    d['source_workbook'] = str(path.relative_to(ROOT))
+    d['source_workbook'] = path.relative_to(ROOT).as_posix()
     d['figure'] = figure
     return d
 

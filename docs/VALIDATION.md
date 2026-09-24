@@ -2,9 +2,11 @@
 
 ## Environment and workflow
 
-Validation uses Python 3.11.14 on Apple Silicon macOS with `environment-osx-arm64.lock` and `requirements-pip.txt`, in an environment installed independently of the analysis workstation environment. Times New Roman is installed separately. Native FreeType and numerical-library builds affect glyph rendering and optimizer results; the native-library lock controls these dependencies. Cross-platform builds from `environment.yml` have not been validated.
+The reference validation uses Python 3.11.14 on Apple Silicon macOS with `environment-osx-arm64.lock` and `requirements-pip.txt`, installed independently of the analysis workstation environment. Times New Roman is installed separately. The portable setup uses `environment.yml` and `requirements-lock.txt`; [GitHub Actions](https://github.com/msadikyildiz/Lyon_2026/actions/workflows/reproduce.yml) records full Python workflow checks on Windows, Linux and macOS. R count-matrix reconstruction has been validated on Apple Silicon macOS with R 4.4.2 and `single-cell-renv.lock`.
 
-The cached workflow runs 13 failure/invariance tests, 368 analysis checks, a 49-value notebook reference check and a 36-contrast primary regression check. It generates all 19 figures across 26 PDF pages, numerical plotting tables, Source Data and Supplementary Tables 3 and 4. Figure checks cover panel identity, aspect ratios, placement, source hashes and content. Clean-output builds verify regeneration without pre-existing outputs.
+Numerical validation is separate from rendering validation. PNG file sets and dimensions must match; byte differences from fonts or native rendering libraries are listed explicitly. `--strict-images` additionally requires identical PNG bytes. See [Reproduction](REPRODUCING.md) for environment and comparison commands.
+
+The cached workflow runs 20 failure/invariance tests, 368 analysis checks, a 49-value notebook reference check and a 36-contrast primary regression check. It generates all 19 figures across 26 PDF pages, numerical plotting tables, Source Data and Supplementary Tables 3 and 4. Figure checks cover panel identity, aspect ratios, placement, source hashes and content. Clean-output builds verify regeneration without pre-existing outputs.
 
 ## Dose-response and statistical checks
 

@@ -1,6 +1,7 @@
 """Recalculate Figure 1f from paired pre/post counts and render its print panel."""
 from pathlib import Path
 import os
+import sys
 os.environ.setdefault('MPLCONFIGDIR', str(Path.home() / '.cache/matplotlib'))
 import matplotlib
 matplotlib.use('Agg')
@@ -10,6 +11,8 @@ import numpy as np
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
+sys.path.insert(0, str(ROOT / 'scripts'))
+from plot_style import figure_font
 OUT = HERE / 'out'
 
 
@@ -37,7 +40,7 @@ def main():
     summary = d.groupby('day').survival_percent.agg(n='count', mean='mean', sd='std').reset_index()
     d.to_csv(OUT / 'fig1f_survival_records.csv', index=False)
     summary.to_csv(OUT / 'fig1f_survival_summary.csv', index=False)
-    plt.rcParams.update({'font.family': 'Times New Roman', 'pdf.fonttype': 42, 'svg.fonttype': 'none'})
+    plt.rcParams.update({'font.family': figure_font(), 'pdf.fonttype': 42, 'svg.fonttype': 'none'})
     fig = plt.figure(figsize=(5.06, 3.91))
     ax = fig.add_axes([.17, .145, .8, .78])
     for _, group in d.groupby('culture'):

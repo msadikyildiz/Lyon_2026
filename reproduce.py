@@ -23,6 +23,7 @@ def run(root, args, log):
     env = os.environ.copy()
     env.setdefault('MPLCONFIGDIR', str(Path.home() / '.cache' / 'matplotlib'))
     env['MPLBACKEND'] = 'Agg'
+    env['PYTHONUTF8'] = '1'
     for name in ['OMP_NUM_THREADS', 'OPENBLAS_NUM_THREADS', 'MKL_NUM_THREADS',
                  'VECLIB_MAXIMUM_THREADS', 'NUMEXPR_NUM_THREADS']:
         env[name] = '1'
@@ -40,9 +41,13 @@ def main():
     parser.add_argument('--refit', action='store_true', help='Refit all six datasets in an isolated copy, then run the full pipeline there.')
     parser.add_argument('--jobs', type=int, default=2, help='Concurrent datasets during refitting (default: 2).')
     parser.add_argument('--output', type=Path, help='New directory for the isolated refit run; must not exist.')
+    parser.add_argument('--r-library', type=Path, default=ROOT / 'runs/R-library', help='R package library restored by scripts/setup_single_cell.R.')
+    parser.add_argument('--strict-images', action='store_true', help='Also require byte-identical PNGs when comparing a refit with the reference checkout.')
     args = parser.parse_args()
     if args.jobs < 1 or (args.output and not args.refit):
         parser.error('--jobs must be positive; --output requires --refit')
+    if args.single_cell and not shutil.which('Rscript'):
+        parser.error('Rscript is not on PATH. Install R 4.4.2; see docs/REPRODUCING.md.')
     start = time.time()
     root = ROOT
     if args.refit:
@@ -78,8 +83,13 @@ def main():
         run(root, ['-m', 'unittest', 'discover', '-s', SCRIPTS / 'tests', '-v'], logs / 'tests.log')
         run(root, ['scripts/reproduce_genomic_plots.py'], logs / 'genomic-plots.log')
         if args.single_cell:
+            env = os.environ.copy()
+            env['R_LIBS_USER'] = str(args.r_library.resolve())
+            for name in ['OMP_NUM_THREADS', 'OPENBLAS_NUM_THREADS', 'MKL_NUM_THREADS',
+                         'VECLIB_MAXIMUM_THREADS', 'NUMEXPR_NUM_THREADS']:
+                env[name] = '1'
             with (logs/'single-cell-R.log').open('w') as stream:
-                result=subprocess.run(['Rscript',str(root/'scripts/reproduce_single_cell.R'),'--dge'],cwd=root,stdout=stream,stderr=subprocess.STDOUT)
+                result=subprocess.run(['Rscript',str(root/'scripts/reproduce_single_cell.R'),'--dge'],cwd=root,env=env,stdout=stream,stderr=subprocess.STDOUT)
             if result.returncode:raise RuntimeError('Single-cell R calculation failed; see runs/logs/single-cell-R.log')
         run(root, ['scripts/reproduce_single_cell.py'], logs/'single-cell-plots.log')
         run(root, ['scripts/reproduce_schematic_figures.py'], logs/'schematic-figures.log')
@@ -90,7 +100,10 @@ def main():
         run(root, ['scripts/assemble_additional_figures.py'], logs/'additional-figures.log')
         run(root, ['scripts/reproduce_trajectories.py'], logs / 'trajectories.log')
         if args.refit:
-            run(root, ['scripts/compare_outputs.py', str(ROOT), str(root), '--report', str(root/'runs/output-comparison.json')], logs/'compare-outputs.log')
+            comparison = ['scripts/compare_outputs.py', str(ROOT), str(root), '--report', str(root/'runs/output-comparison.json')]
+            if args.strict_images:
+                comparison.append('--strict-images')
+            run(root, comparison, logs/'compare-outputs.log')
     except BaseException as error:
         result_file.write_text(json.dumps({'status': 'failed', 'error': str(error), 'seconds': round(time.time()-start, 2)}, indent=2)+'\n')
         raise
@@ -98,7 +111,7 @@ def main():
               'platform': platform.platform(), 'seconds': round(time.time()-start, 2),
               'steps': ['scripts/verify_breseq_records.py', 'scripts/reproduce_genomics.py', 'scripts/reproduce_genomic_plots.py', 'scripts/reproduce_single_cell.py','scripts/reproduce_schematic_figures.py'] + STEPS + ['scripts/assemble_additional_figures.py','scripts/reproduce_trajectories.py'], 'status': 'passed',
               'coverage': 'docs/FIGURE_COVERAGE.md', 'single_cell_from_counts':args.single_cell,
-              'raw_inputs': {str(p.relative_to(root)): hashlib.sha256(p.read_bytes()).hexdigest()
+              'raw_inputs': {p.relative_to(root).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
                 for p in sorted((root / SCRIPTS / 'biohpc-pull/data').glob('*.xlsx'))}}
     (root / 'runs/reproduction.json').write_text(json.dumps(report, indent=2)+'\n')
     print(f'Completed: {root / "working/figures-assembled/All_figures.pdf"}', flush=True)

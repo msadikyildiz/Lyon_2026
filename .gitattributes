@@ -1,0 +1,2 @@
+# Preserve the exact bytes of archived inputs, including on Windows checkouts.
+* -text

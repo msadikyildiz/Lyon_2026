@@ -2,6 +2,7 @@
 import hashlib
 import json
 import os
+import shutil
 from pathlib import Path
 import tempfile
 
@@ -119,7 +120,7 @@ def regenerate(name, relative, cells, expected):
         base = work / 'data/genomics'
         base.mkdir(parents=True)
         for folder in ['reference', 'out']:
-            (base / folder).symlink_to(DATA / folder, target_is_directory=True)
+            shutil.copytree(DATA / folder, base / folder)
         for lineage in ['PA', 'PL', 'PC', 'PCr', 'ATEC-C', 'PLAC']:
             (base / 'data/processed/traced_alleles' / lineage).mkdir(parents=True)
         namespace = {'__name__': '__main__'}
@@ -141,7 +142,7 @@ def regenerate(name, relative, cells, expected):
                     a, b = pd.read_csv(supplied), pd.read_csv(generated)
                     keys = ['abs_position'] if 'abs_position' in a else ['position', 'ref_seq', 'new_seq', 'aa_new_seq']
                     count = compare_table(a, b, keys)
-                    processed.append({'file': str(supplied.relative_to(DATA)), 'rows_matched': count})
+                    processed.append({'file': supplied.relative_to(DATA).as_posix(), 'rows_matched': count})
             return table, processed
         finally:
             os.chdir(old_cwd)
@@ -188,13 +189,13 @@ def main():
             csv_table = table.copy()
             csv_table['freq'] = csv_table['freq'].map(lambda x: json.dumps(vector(x)))
             csv_table.to_csv(DEST / f'{name}.csv', index=False)
-        (DEST / 'index.json').write_text(json.dumps(entries, indent=2) + '\n')
+        (DEST / 'index.json').write_text(json.dumps(entries, indent=2) + '\n', encoding='utf-8', newline='\n')
         report = {'status': 'passed', 'mutation_input_files': 149, 'processed_exports_matched': processed,
                   'archive_sha256': manifest['archive_sha256'], 'saved_display_comparisons': comparisons,
                   'row_counts': {name: len(table) for name, table in tables.items()},
                   'comparison_rules': 'Mutation keys exact; numeric tolerance 1e-12; saved display prefixes and empty-field formatting normalized. Original notebook frequency rounding retained.',
                   'inputs_unchanged': True}
-        (DEST / 'validation.json').write_text(json.dumps(report, indent=2) + '\n')
+        (DEST / 'validation.json').write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8', newline='\n')
         status.write_text(json.dumps(report, indent=2) + '\n')
     except BaseException as error:
         status.write_text(json.dumps({'status': 'failed', 'error': str(error)}, indent=2) + '\n')

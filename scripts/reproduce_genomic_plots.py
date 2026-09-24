@@ -18,6 +18,7 @@ from matplotlib.backends.backend_pdf import PdfPages
 import numpy as np
 import pandas as pd
 import seaborn as sns
+from plot_style import figure_font
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT/'data/genomics/generated_tables'
@@ -169,7 +170,7 @@ def s9():
 
 def heatmap(m,labels,cmap,width,height,transpose=False,annot=False,bottom_override=None,top_override=None):
  """Dimensions and text sizes are physical points, independent of saved DPI."""
- plt.rcParams.update({'font.family':'Times New Roman','font.size':8.5,'pdf.fonttype':42,'svg.fonttype':'none'})
+ plt.rcParams.update({'font.family':figure_font(),'font.size':8.5,'pdf.fonttype':42,'svg.fonttype':'none'})
  arr=m.T if transpose else m
  y=list(map(str,m.columns)) if transpose else labels
  x=labels if transpose else list(map(str,m.columns))
@@ -311,7 +312,7 @@ def trajectories():
 
 def main():
  OUT.mkdir(parents=True,exist_ok=True);FIG.mkdir(parents=True,exist_ok=True)
- plt.rcParams.update({'font.family':'Times New Roman','font.size':8.5,'pdf.fonttype':42,'svg.fonttype':'none'})
+ plt.rcParams.update({'font.family':figure_font(),'font.size':8.5,'pdf.fonttype':42,'svg.fonttype':'none'})
  for panel in ENDPOINTS:
   m,labels,cmap=endpoint(panel)
   fig=heatmap(m,labels,cmap,579 if panel=='Fig4c' else 464.4,125 if panel=='Fig4c' else max(180,len(m)*10+45),annot=len(m)<16,bottom_override=18 if panel=='Fig4c' else None,top_override=20 if panel=='Fig4c' else None)
@@ -346,7 +347,7 @@ def main():
  (OUT/'aggregation_corrections.json').write_text(json.dumps(CHANGES,indent=2)+'\n')
  (OUT/'manifest.json').write_text(json.dumps({'source':'Regenerated genomic tables; original notebook selections and aliases',
    'mutation_identity':'coordinate plus source alleles; distinct variants are not averaged',
-   'files':{str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(DATA.glob('*.json'))},
+   'files':{p.relative_to(ROOT).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(DATA.glob('*.json'))},
    'plot_script_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()},indent=2)+'\n')
  print(f'Rendered genomic plots; {len(CROSSWALK)} matrix entries; {len(CHANGES)} historical duplicate groups.')
 

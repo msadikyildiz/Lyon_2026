@@ -173,7 +173,7 @@ def main():
     tables = json.loads(SOURCE.read_text())
     for i, rows in enumerate(tables[:2], 1):
         block(wb[f'Supp Table {i}'], f'Supplementary Table {i}', pd.DataFrame(rows[1:], columns=rows[0]),
-              str(SOURCE.relative_to(ROOT)), 'Table values and column headings from the source manuscript.')
+              SOURCE.relative_to(ROOT).as_posix(), 'Table values and column headings from the source manuscript.')
     single = genomic_repo/'data/single-cell'
     mapping = json.loads((single/'plot_tables/table_mapping.json').read_text())
     for number,sheets in mapping.items():

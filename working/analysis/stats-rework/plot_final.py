@@ -16,6 +16,7 @@ plus PDF and SVG with editable text, in out/figures-final/.
 """
 
 import os
+import sys
 import warnings
 from pathlib import Path
 
@@ -34,14 +35,16 @@ from stats import split_strain
 from fig5a_doubling import load_doubling_times
 from manifest import panel_manifest, comparison_cohort
 from report_results import p_text
+sys.path.insert(0, str(Path(__file__).resolve().parents[3] / 'scripts'))
+from plot_style import figure_font
 
 HERE = Path(__file__).resolve().parent
 OUT = HERE / "out" / "figures-final"
 OUT.mkdir(parents=True, exist_ok=True)
 
-plt.rcParams["font.family"] = "Times New Roman"
+plt.rcParams["font.family"] = figure_font()
 plt.rcParams["mathtext.fontset"] = "custom"
-plt.rcParams["mathtext.rm"] = "Times New Roman"
+plt.rcParams["mathtext.rm"] = figure_font()
 plt.rcParams["pdf.fonttype"] = 42
 plt.rcParams["ps.fonttype"] = 42
 plt.rcParams["svg.fonttype"] = "none"

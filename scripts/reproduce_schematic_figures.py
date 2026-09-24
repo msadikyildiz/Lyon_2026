@@ -6,11 +6,12 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import fitz
+from plot_style import figure_font
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'working/figures-assembled';DATA=ROOT/'data/figure-assets'
 def main():
  manifest=json.loads((DATA/'schematic_sources.json').read_text())
  for name,item in manifest.items():assert hashlib.sha256((DATA/name).read_bytes()).hexdigest()==item['sha256']
- plt.rcParams.update({'font.family':'Times New Roman','font.size':9.5,'mathtext.fontset':'stix','pdf.fonttype':42})
+ plt.rcParams.update({'font.family':figure_font(),'font.size':9.5,'mathtext.fontset':'stix','pdf.fonttype':42})
  fig=plt.figure(figsize=(6.45,4.25));fig.text(.02,.965,'Figure 1',weight='bold',fontsize=12)
  ax=fig.add_axes([.035,.52,.94,.37]);ax.imshow(plt.imread(DATA/'Figure1_schematics.png'));ax.axis('off')
  for i,label in enumerate('abc'):fig.text(.02+i*.333,.905,label,fontsize=12,weight='bold')

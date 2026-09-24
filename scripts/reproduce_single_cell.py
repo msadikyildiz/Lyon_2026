@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 from openpyxl import load_workbook
 from verify_enrichment import verify as verify_enrichment, extend_parent_results
+from plot_style import figure_font
 ROOT=Path(__file__).resolve().parents[1]
 BASE=ROOT/'data/single-cell'; GEN=BASE/'generated'; TABLES=BASE/'original-tables'
 OUT=ROOT/'working/figures-assembled'; EXPORT=BASE/'plot_tables'
@@ -185,7 +186,7 @@ def supplementary_figures(points):
 
 
 def main():
- EXPORT.mkdir(exist_ok=True);plt.rcParams.update({'font.family':'Times New Roman','font.size':9.5,'pdf.fonttype':42,'svg.fonttype':'none','mathtext.fontset':'stix'})
+ EXPORT.mkdir(exist_ok=True);plt.rcParams.update({'font.family':figure_font(),'font.size':9.5,'pdf.fonttype':42,'svg.fonttype':'none','mathtext.fontset':'stix'})
  CHECKS['enrichment']=verify_enrichment();cells=verify();export_tables();points=supplement_points();singlecell_figure(cells);supplementary_figures(points)
  (EXPORT/'validation.json').write_text(json.dumps(CHECKS,indent=2)+'\n');print(json.dumps(CHECKS,indent=2))
 if __name__=='__main__':main()

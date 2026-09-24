@@ -9,7 +9,7 @@ def place(page,path,rect,label=None):
  with fitz.open(path) as src:
   page.show_pdf_page(fitz.Rect(rect),src,keep_proportion=True)
   scale=min((rect[2]-rect[0])/src[0].rect.width,(rect[3]-rect[1])/src[0].rect.height)
-  RECORD.append({'source':str(path.relative_to(ROOT)),'sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'scale':scale,'label':label})
+  RECORD.append({'source':path.relative_to(ROOT).as_posix(),'sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'scale':scale,'label':label})
  if label:page.insert_text((rect[0],rect[1]-3),label,fontsize=12,fontname='hebo')
 def finish(doc,name):
  doc.set_metadata({'title':name.replace('_',' '),'subject':'Source data and code: https://github.com/msadikyildiz/Lyon_2026'})
@@ -45,7 +45,7 @@ def main():
  for number in [8,9]:
   with fitz.open(PANELS/f'Supp_Figure_{number}.pdf') as src:
    doc=fitz.open();doc.insert_pdf(src)
-  RECORD.append({'source':str((PANELS/f'Supp_Figure_{number}.pdf').relative_to(ROOT)),'figure':f'Supplementary Figure {number}','pages':len(doc)})
+  RECORD.append({'source':(PANELS/f'Supp_Figure_{number}.pdf').relative_to(ROOT).as_posix(),'figure':f'Supplementary Figure {number}','pages':len(doc)})
   finish(doc,f'Supplementary_Figure_{number}')
  (OUT/'additional_assembly_manifest.json').write_text(json.dumps(RECORD,indent=2)+'\n')
  files=sorted([p for p in OUT.glob('*.pdf') if p.stem.startswith(('Figure_','Supplementary_Figure_'))],key=lambda p:(p.stem.startswith('Supplementary'),int(p.stem.split('_')[-1])))

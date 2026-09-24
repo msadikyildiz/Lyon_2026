@@ -130,10 +130,10 @@ def verify():
         rows.append({'run': run, 'recorded_date': log.splitlines()[0],
                      'recorded_reference_path': original_ref, 'archived_genbank': reference,
                      'reference_fasta': fasta, 'reference_length': expected_length,
-                     'summary_json': str((output / 'summary.json').relative_to(BASE)),
-                     'log': str((output / 'log.txt').relative_to(BASE)),
+                     'summary_json': (output / 'summary.json').relative_to(BASE).as_posix(),
+                     'log': (output / 'log.txt').relative_to(BASE).as_posix(),
                      'recorded_command': commands[0]})
-    with (RECORDS / 'runs.csv').open('w') as stream:
+    with (RECORDS / 'runs.csv').open('w', newline='', encoding='utf-8') as stream:
         writer = csv.DictWriter(stream, fieldnames=list(rows[0]))
         writer.writeheader()
         writer.writerows(rows)

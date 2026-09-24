@@ -354,7 +354,7 @@ def main():
             path=OUT/f'{stem}.pdf'
             with fitz.open(path) as saved:
                 pdf_width,pdf_height=saved[0].rect.width,saved[0].rect.height
-            replacements[figure['name']+'::'+asset]=dict(source=str(path.relative_to(ROOT)),sha256=hashlib.sha256(path.read_bytes()).hexdigest(),
+            replacements[figure['name']+'::'+asset]=dict(source=path.relative_to(ROOT).as_posix(),sha256=hashlib.sha256(path.read_bytes()).hexdigest(),
                 native_width=pdf_width,native_height=pdf_height,content_box=[0,0,pdf_width,pdf_height],content_aspect=pdf_width/pdf_height)
             audit.append(dict(figure=figure['name'],panel=panel['panel'],print_width_pt=width,print_height_pt=height,
                               text_bounds=bounds,boundary_issues=bad,**details))
@@ -364,7 +364,7 @@ def main():
               *sorted((HERE/'cache').glob('*.pkl')), *sorted((HERE/'out').glob('*.csv'))]
     (OUT/'manifest.json').write_text(json.dumps({'panels':replacements,
         'layout_sha256':hashlib.sha256((HERE/'assembly_layout.json').read_bytes()).hexdigest(),
-        'inputs':{str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in inputs}},indent=2)+'\n')
+        'inputs':{p.relative_to(ROOT).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in inputs}},indent=2)+'\n')
     (OUT/'render_validation.json').write_text(json.dumps(audit,indent=2)+'\n')
     print(f'Rendered {len(audit)} panels at manuscript size.')
 

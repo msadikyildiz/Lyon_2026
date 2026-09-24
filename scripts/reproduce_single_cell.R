@@ -2,7 +2,7 @@
 args <- commandArgs(trailingOnly=TRUE)
 full_dge <- '--dge' %in% args
 script <- sub('^--file=', '', commandArgs()[grepl('^--file=', commandArgs())][1])
-root <- dirname(dirname(normalizePath(script)))
+root <- dirname(dirname(normalizePath(script, winslash='/')))
 base <- file.path(root,'data/single-cell')
 out <- file.path(base,'generated');dir.create(out,recursive=TRUE,showWarnings=FALSE)
 run <- file.path(root,'runs/single-cell');dir.create(run,recursive=TRUE,showWarnings=FALSE)
