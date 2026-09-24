@@ -14,6 +14,8 @@ An isolated raw refit reconstructs all six datasets from OD and plate-layout wor
 
 Full raw-refit verification passes on Apple Silicon macOS. Windows/Linux fits can exceed the strict cache tolerances because nonlinear optimization is sensitive to numerical libraries and CPU architecture. The standard workflow with included fits passes on all three platforms. Tests distinguish harmless array serialization differences from changed values, missing values and sample identities; the [reproduction guide](REPRODUCING.md#raw-refits) states the raw-refit limitation.
 
+Recalculating statistics from the Windows and Linux refits preserves all six measurement tables, all 368 analysis checks and all 36 primary Holm decisions. Primary effect ratios differ by at most 0.00024% and adjusted P-values by less than 0.00001. Individual bootstrap draws can differ more, so strict cache verification remains distinct from agreement of the statistical results ([platform validation](validation-portability.json)).
+
 Primary tests verify matched culture IDs, adjustment families and all 36 IC50 contrasts. The notebook reference check independently covers 49 values, including six expected NaNs. Sensitivity outputs identify their resampling units and comparison families. Source Data verification checks values and cell types against the exported blocks.
 
 ## Genomic checks

@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-24",
+  "standard_workflow": {
+    "status": "passed",
+    "platforms": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "figures": 19,
+    "tests": 27,
+    "workflow": "https://github.com/msadikyildiz/Lyon_2026/actions/runs/36036870967"
+  },
+  "raw_refits": {
+    "workflow": "https://github.com/msadikyildiz/Lyon_2026/actions/runs/36035457866",
+    "macos": "Full raw-refit workflow passed",
+    "windows_linux": "Fitting completed; strict cache comparisons failed",
+    "comparison": "Downstream statistics recalculated from downloaded fit caches with final_stats.py",
+    "relative_error_denominator": "max(abs(reference), abs(refit))",
+    "platforms": {
+      "linux": {
+        "measurement_tables_exact": 6,
+        "analysis_checks_exact": 368,
+        "primary_comparisons": 36,
+        "primary_holm_decisions_identical": true,
+        "primary_ci_null_inclusion_identical": true,
+        "max_primary_ratio_relative_difference": 2.3969775329901467e-06,
+        "max_primary_adjusted_p_absolute_difference": 9.466739131214208e-06,
+        "max_individual_ic50_relative_difference": 2.397505985081602e-05,
+        "max_individual_bootstrap_draw_relative_difference": 0.16592297197321076
+      },
+      "windows": {
+        "measurement_tables_exact": 6,
+        "analysis_checks_exact": 368,
+        "primary_comparisons": 36,
+        "primary_holm_decisions_identical": true,
+        "primary_ci_null_inclusion_identical": true,
+        "max_primary_ratio_relative_difference": 2.397259905856775e-06,
+        "max_primary_adjusted_p_absolute_difference": 9.467486409286963e-06,
+        "max_individual_ic50_relative_difference": 2.3975048684806986e-05,
+        "max_individual_bootstrap_draw_relative_difference": 0.16386690283837654
+      }
+    }
+  }
+}
