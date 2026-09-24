@@ -1,5 +1,6 @@
 """Check numerical outputs and report rendering differences across environments."""
 import argparse
+import difflib
 import hashlib
 import json
 from pathlib import Path
@@ -58,7 +59,10 @@ def compare(reference, rebuilt, strict_images=False):
                 expected.pop('files'); expected.pop('plot_script_sha256')
                 assert expected == actual, str(relative/name)
             else:
-                assert a.read_text(encoding='utf-8') == b.read_text(encoding='utf-8'), str(relative/name)
+                expected, actual = a.read_text(encoding='utf-8'), b.read_text(encoding='utf-8')
+                if expected != actual:
+                    difference = list(difflib.unified_diff(expected.splitlines(), actual.splitlines(), n=1))[:16]
+                    raise AssertionError(f'{relative/name}\n' + '\n'.join(difference))
         generated_files[folder]=len(files)
     a=load_workbook(reference/'working/source-data/Source Data.xlsx',read_only=True,data_only=False)
     b=load_workbook(rebuilt/'working/source-data/Source Data.xlsx',read_only=True,data_only=False)

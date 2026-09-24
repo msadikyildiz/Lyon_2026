@@ -51,4 +51,6 @@ jobs:
           path: |
             runs/**/*.json
             runs/**/*.log
+            data/genomics/plot_tables/*.csv
+            data/genomics/plot_tables/*.json
           retention-days: 14
