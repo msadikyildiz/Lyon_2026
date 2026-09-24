@@ -2,6 +2,8 @@ cff-version: 1.2.0
 message: "Please cite the associated study and this repository when using the data or code. Include the Git commit identifier for the version used."
 type: software
 title: "Lyon et al. (2026): data, analysis and figures"
+version: "1.0.0"
+date-released: "2026-09-24"
 authors:
   - family-names: Lyon
     given-names: Adam
