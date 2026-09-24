@@ -43,9 +43,9 @@ All 141 MG1655 runs used `sequence-4.gb` (U00096.3); eight ATEC runs used `all_A
 
 Run `python scripts/verify_breseq_records.py` to verify every archive member, study-run identity and sequence match. This check also runs at the start of `reproduce.py`. The import option `--import-archive /path/to/Breseq_reference_and_run_records.zip` recreates the deduplicated storage from the original archive without overwriting differing inputs.
 
-## Remaining inputs
+## Sequencing reads
 
-The WGS read accession remains to be added. Commands and saved options document the runs; standalone job scripts are unavailable. Read alignment and mutation calling are not rerun by this repository. Single-cell inputs and count-matrix reconstruction are documented in ../single-cell/README.md.
+Whole-genome sequencing data were submitted under NCBI BioProject [PRJNA1534522](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1534522). SRA reads are processing, with immediate public release requested. Commands and saved options document the runs; standalone job scripts are unavailable. Read alignment and mutation calling are not rerun by this repository. Single-cell inputs and count-matrix reconstruction are documented in ../single-cell/README.md.
 
 ## Software-version assumption
 

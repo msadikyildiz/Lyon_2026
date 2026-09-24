@@ -6,7 +6,7 @@ Data and analysis code for *Recurrent Extinction of Resistance Mutations Leads t
 
 | Task | Input or work remaining | Affected outputs |
 |---|---|---|
-| Add the sequencing accession | Add the WGS accession. All 149 runs include commands, saved options and sequence-verified references. Date-based software-version assumptions are documented with the run records. | Access to sequencing reads |
+| Confirm public access to sequencing reads | BioProject [PRJNA1534522](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1534522) is assigned. SRA reads are processing, with immediate release requested. | Access to sequencing reads |
 
 The repository includes the experimental workbooks, mutation calls, single-cell count matrices and original analysis code. One command regenerates the numerical analyses, Source Data, Supplementary Tables 3 and 4, and all 19 figures. Schematic artwork is retained explicitly; every numerical panel is generated from included data. See the [figure map](docs/FIGURE_COVERAGE.md).
 
@@ -44,6 +44,8 @@ R_LIBS_USER="$PWD/runs/R-library" micromamba run -n lyon-2026 python reproduce.p
 This command replaces the generated single-cell tables in the checkout. Use a separate checkout to compare a different R environment. The R step executes the supplied filtered-analysis Rmd calculations with portable input paths and exports cell identities, embeddings, selected probes, normalized expression and differential-expression results. It reproduces 48,883 cells and the exact nine cluster sizes. All 6,543 cluster DGE rows and the 1,222/863 culture-versus-parent rows agree with the reference expression tables within the recorded numerical tolerances. The [single-cell record](data/single-cell/README.md) explains the sample mapping, table numbering, targeted marker checks and enrichment inputs and assumptions.
 
 ## Outputs and inputs
+
+Whole-genome sequencing data were submitted under NCBI BioProject [PRJNA1534522](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1534522). BioProject and BioSample processing is complete; SRA reads are processing, with immediate public release requested. Single-cell sequencing data are deposited under GEO [GSE314756](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE314756), with public release scheduled for 21 December 2026.
 
 - [All figures](working/figures-assembled/All_figures.pdf), with individual PDF and PNG files alongside it. Larger genomic figures use multiple pages at readable type sizes.
 - [Source Data](working/source-data/Source%20Data.xlsx), [Supplementary Table 3](working/source-data/Supplementary%20Table%203.xlsx) and [Supplementary Table 4](working/source-data/Supplementary%20Table%204.xlsx).
