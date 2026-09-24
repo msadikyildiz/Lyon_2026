@@ -34,4 +34,4 @@ All five EcoCyc export hashes are verified. The 746 rows overlapping the workboo
 
 ## Records
 
-Machine-readable validation measurements are retained in `validation*.json` and the genomic and single-cell output directories. They identify the scope and date of each check. Runtime logs under `runs/` are excluded from the distribution. [Figure coverage](FIGURE_COVERAGE.md) and [data-processing notes](DATA_CORRECTIONS.md) document scientific scope and assumptions; the README TODO table lists remaining repository inputs.
+Machine-readable validation measurements are retained in `validation*.json` and the genomic and single-cell output directories. They identify the scope and date of each check. Runtime logs under `runs/` are excluded from the distribution. [Figure coverage](FIGURE_COVERAGE.md) and [data-processing notes](DATA_CORRECTIONS.md) document scientific scope and assumptions.

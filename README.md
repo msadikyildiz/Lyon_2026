@@ -2,12 +2,6 @@
 
 Code and data for *Recurrent Extinction of Resistance Mutations Leads to Convergent Multidrug Resistance in Sequential Antibiotic Treatment*.
 
-## TODO
-
-| Item | Status |
-|---|---|
-| Public sequencing reads | BioProject [PRJNA1534522](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1534522) is assigned. SRA reads are processing; immediate release was requested. |
-
 ## Reproduce the study
 
 Download or clone this repository, install [micromamba](https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html), and open a terminal in the repository folder. The commands are the same on **Windows (PowerShell), Linux and macOS**:

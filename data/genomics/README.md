@@ -45,7 +45,7 @@ Run `python scripts/verify_breseq_records.py` to verify every archive member, st
 
 ## Sequencing reads
 
-Whole-genome sequencing data were submitted under NCBI BioProject [PRJNA1534522](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1534522). SRA reads are processing, with immediate public release requested. Commands and saved options document the runs; standalone job scripts are unavailable. Read alignment and mutation calling are not rerun by this repository. Single-cell inputs and count-matrix reconstruction are documented in ../single-cell/README.md.
+Whole-genome sequencing data were submitted under NCBI BioProject [PRJNA1534522](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1534522). Commands and saved options document the runs; standalone job scripts are unavailable. Read alignment and mutation calling are not rerun by this repository. Single-cell inputs and count-matrix reconstruction are documented in ../single-cell/README.md.
 
 ## Software-version assumption
 
