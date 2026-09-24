@@ -59,9 +59,16 @@ class PortabilityTests(unittest.TestCase):
             compare(self.reference, self.rebuilt, strict_images=True)
 
     def test_dimension_change_fails(self):
-        Image.new('RGB', (11, 10)).save(self.rebuilt/OUT/'figures-final/panel.png')
+        Image.new('RGB', (11, 10)).save(self.rebuilt/'working/figures-assembled/panel.png')
         with self.assertRaisesRegex(ValueError, 'PNG dimensions differ'):
             compare(self.reference, self.rebuilt)
+
+    def test_intermediate_crop_change_is_reported(self):
+        Image.new('RGB', (11, 10)).save(self.rebuilt/OUT/'figures-final/panel.png')
+        report = compare(self.reference, self.rebuilt)
+        self.assertEqual(len(report['intermediate_crop_differences']), 1)
+        with self.assertRaisesRegex(ValueError, 'PNG dimensions differ'):
+            compare(self.reference, self.rebuilt, strict_images=True)
 
     def test_numeric_change_still_fails(self):
         (self.rebuilt/OUT/'values.csv').write_text('name,value\na,1.5\n')

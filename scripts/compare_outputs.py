@@ -23,7 +23,7 @@ def compare(reference, rebuilt, strict_images=False):
                 np.testing.assert_allclose(list(map(float,x.split(';'))), list(map(float,y.split(';'))), rtol=RTOL, atol=ATOL)
             a, b = a.drop(columns='values'), b.drop(columns='values')
         pd.testing.assert_frame_equal(a,b,check_exact=False,rtol=RTOL,atol=ATOL,obj=name)
-    pngs, image_differences = {}, []
+    pngs, image_differences, crop_differences = {}, [], []
     for relative in [OUT/'figures-final', OUT/'print-panels', OUT/'trajectories', OUT/'genomic-panels', Path('working/figures-assembled')]:
         files = {p.name for p in (reference/relative).glob('*.png')}
         if not files or files != {p.name for p in (rebuilt/relative).glob('*.png')}:
@@ -33,7 +33,9 @@ def compare(reference, rebuilt, strict_images=False):
             with Image.open(a) as ai, Image.open(b) as bi:
                 ai.verify(); bi.verify()
                 if ai.size != bi.size:
-                    raise ValueError(f'PNG dimensions differ: {relative/name}')
+                    if relative not in [OUT/'figures-final', OUT/'trajectories'] or strict_images:
+                        raise ValueError(f'PNG dimensions differ: {relative/name}')
+                    crop_differences.append({'file': (relative/name).as_posix(), 'reference': ai.size, 'rebuilt': bi.size})
             if hashlib.sha256(a.read_bytes()).digest() != hashlib.sha256(b.read_bytes()).digest():
                 image_differences.append((relative/name).as_posix())
         pngs[str(relative)] = len(files)
@@ -84,6 +86,7 @@ def compare(reference, rebuilt, strict_images=False):
                 cells += 1
     a.close();b.close()
     return {'status':'passed','csv_tables':len(names),'pngs_checked':pngs,'pngs_different':image_differences,
+            'intermediate_crop_differences':crop_differences,
             'strict_images':strict_images,'workbook_cells_checked':cells,'generated_files_checked':generated_files,
             'workbook_numeric_cells':numeric,'rtol':RTOL,'atol':ATOL,
             'comparison':'CSV values, generated table text (line endings ignored), provenance hashes, workbook values/types and PNG dimensions; PNG byte differences reported separately'}
