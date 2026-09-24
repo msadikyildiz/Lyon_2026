@@ -16,6 +16,7 @@ ROOT = Path(__file__).resolve().parents[4]
 sys.path.insert(0, str(ROOT / 'scripts'))
 sys.path.insert(0, str(ROOT))
 from compare_outputs import compare, OUT, checked_single_cell_report
+from compare_caches import compare_table
 from plot_style import figure_font
 import reproduce
 import reproduce_genomic_plots as genomic_plots
@@ -51,6 +52,28 @@ class PortabilityTests(unittest.TestCase):
     def test_font_has_bundled_fallback(self):
         with patch.dict('os.environ', {'LYON_PLOT_FONT': 'Absent Font 123456789'}):
             self.assertEqual(figure_font(), 'STIXGeneral')
+
+    def test_fit_array_serialization_uses_numeric_tolerance(self):
+        a = pd.DataFrame({'Strain': ['P1'], 'IC50': [1.0], 'ic50_bootstrap': ['[1.0, 2.0, nan]']})
+        b = a.copy()
+        b['ic50_bootstrap'] = ['[1.000000000001, 2, NaN]']
+        compare_table(a, b)
+        b['ic50_bootstrap'] = ['[1.01, 2, NaN]']
+        with self.assertRaises(AssertionError):
+            compare_table(a, b)
+
+    def test_fit_array_missing_values_and_shapes_remain_strict(self):
+        a = pd.DataFrame({'x_fit': ['[1.0, nan, 3.0]']})
+        for value in ['[1.0, 2.0, 3.0]', '[1.0]', '[[1.0, nan, 3.0]]']:
+            with self.assertRaises(AssertionError):
+                compare_table(a, pd.DataFrame({'x_fit': [value]}))
+
+    def test_fit_identity_remains_exact(self):
+        a = pd.DataFrame({'Strain': ['P1'], 'x_fit': ['[1.0]']})
+        b = a.copy()
+        b['Strain'] = ['P2']
+        with self.assertRaises(AssertionError):
+            compare_table(a, b)
 
     def test_s9_order_is_independent_of_tied_input_rows(self):
         source = genomic_plots.table('combined_lineages')

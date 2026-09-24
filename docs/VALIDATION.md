@@ -6,11 +6,13 @@ The reference validation uses Python 3.11.14 on Apple Silicon macOS with `enviro
 
 Numerical validation is separate from rendering validation. PNG file sets and assembled-figure/print-panel dimensions must match; byte differences from fonts or native rendering libraries are listed explicitly. `--strict-images` additionally requires identical PNG bytes. See [Reproduction](REPRODUCING.md) for environment and comparison commands.
 
-The cached workflow runs 24 failure/invariance tests, 368 analysis checks, a 49-value notebook reference check and a 36-contrast primary regression check. It generates all 19 figures across 26 PDF pages, numerical plotting tables, Source Data and Supplementary Tables 3 and 4. Figure checks cover panel identity, aspect ratios, placement, source hashes and content. Clean-output builds verify regeneration without pre-existing outputs.
+The cached workflow runs 27 failure/invariance tests, 368 analysis checks, a 49-value notebook reference check and a 36-contrast primary regression check. It generates all 19 figures across 26 PDF pages, numerical plotting tables, Source Data and Supplementary Tables 3 and 4. Figure checks cover panel identity, aspect ratios, placement, source hashes and content. Clean-output builds verify regeneration without pre-existing outputs.
 
 ## Dose-response and statistical checks
 
 An isolated raw refit reconstructs all six datasets from OD and plate-layout workbooks, compares every cache column including nested fit/bootstrap arrays, and runs the full analysis and figure workflow. Numerical comparisons use relative tolerance 1e-8 and absolute tolerance 1e-10, matching NaN locations and exact nonnumeric values. The source caches remain unchanged.
+
+Full raw-refit verification passes on Apple Silicon macOS. Windows/Linux fits can exceed the strict cache tolerances because nonlinear optimization is sensitive to numerical libraries and CPU architecture. The standard workflow with included fits passes on all three platforms. Tests distinguish harmless array serialization differences from changed values, missing values and sample identities; the [reproduction guide](REPRODUCING.md#raw-refits) states the raw-refit limitation.
 
 Primary tests verify matched culture IDs, adjustment families and all 36 IC50 contrasts. The notebook reference check independently covers 49 values, including six expected NaNs. Sensitivity outputs identify their resampling units and comparison families. Source Data verification checks values and cell types against the exported blocks.
 

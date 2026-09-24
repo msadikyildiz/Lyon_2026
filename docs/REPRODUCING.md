@@ -6,7 +6,7 @@ Run commands from the repository root. The [README](../README.md) gives the stan
 
 `environment.yml` pins Python 3.11.14, OpenBLAS 0.3.29 and the analysis packages on Windows, Linux and macOS. Micromamba runs the environment directly, so shell activation is unnecessary. Windows on ARM can use x64 Python under emulation; native ARM Windows builds are not tested.
 
-For the default workflow using included fits, a Python 3.11 virtual environment with `requirements-lock.txt` is also supported. Use micromamba for raw refits: pip wheels can use different numerical libraries and fail the strict fit comparisons.
+For the default workflow using included fits, a Python 3.11 virtual environment with `requirements-lock.txt` is also supported. Use micromamba for raw refits: pip wheels can use different numerical libraries. Exact refit validation also depends on CPU architecture; see [Raw refits](#raw-refits).
 
 | Step | Windows PowerShell | Linux / macOS |
 |---|---|---|
@@ -43,9 +43,13 @@ The driver supplies the R library path on all platforms. `--r-library PATH` sele
 
 `--single-cell` replaces generated single-cell tables in the checkout. Combine it with `--refit` to run both reconstructions in an isolated copy. The R library remains in the original checkout and is reused by that copy. The [single-cell record](../data/single-cell/README.md) explains filtering, sample identities, enrichment inputs and validation tolerances.
 
-## Outputs and checks
+## Raw refits
 
 `--refit` writes to a new directory under `runs/`, preserves supplied caches, refits all six datasets and compares them with the included fits. `--output PATH` chooses another new directory; `--jobs 1` reduces concurrent fitting. Logs identify any failed stage, and `runs/reproduction.json` records the result. Figures are written to `working/figures-assembled/`; tables to `working/source-data/` and `working/analysis/stats-rework/out/`.
+
+The full raw-refit workflow passes in the recorded Apple Silicon environment. Windows and Linux compute the fits but can stop at the strict cache comparison, before downstream figures are generated. Small platform-dependent numerical differences affect the nonlinear optimizer; individual bootstrap draws can differ more than the final effect estimates. Use the default workflow to rebuild the published figures and tables on any of the three systems, or the reference environment below for strict raw-refit verification.
+
+## Outputs and checks
 
 To compare two builds:
 
@@ -57,12 +61,12 @@ The comparison requires matching table identities and values, workbook cells/typ
 
 PNG byte differences and font-dependent crop sizes of intermediate plots are listed without failing numerical reproduction. Add `--strict-images` to the comparator or `reproduce.py --refit` to require identical PNG bytes. Times New Roman must be installed separately to match reference typography; otherwise plots use Matplotlib's bundled STIXGeneral. `LYON_PLOT_FONT` can select an installed font. Inspect regenerated figures when changing fonts or rendering libraries.
 
-For the recorded Apple Silicon renderer and numerical libraries, the optional `environment-osx-arm64.lock` and `requirements-pip.txt` retain the original environment:
+For the recorded Apple Silicon renderer and numerical libraries, `environment-osx-arm64.lock` and `requirements-pip.txt` retain the original environment:
 
 ```sh
 micromamba create -y -n lyon-reference -f environment-osx-arm64.lock
 micromamba run -n lyon-reference python -m pip install -r requirements-pip.txt
-micromamba run -n lyon-reference python reproduce.py
+micromamba run -n lyon-reference python reproduce.py --refit
 ```
 
 [GitHub Actions](https://github.com/msadikyildiz/Lyon_2026/actions/workflows/reproduce.yml) rebuilds the default workflow on Windows, Linux and macOS, compares numerical outputs, and saves logs. Its manual **Run workflow** option can also refit dose-response data. The R reconstruction is validated separately; see the recorded environment and results in [Validation](VALIDATION.md).

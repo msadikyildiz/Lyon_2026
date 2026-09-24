@@ -31,6 +31,8 @@ To refit all six dose-response datasets from raw measurements in an isolated cop
 micromamba run -n lyon-2026 python reproduce.py --refit
 ```
 
+Exact raw-refit validation uses the recorded Apple Silicon environment. Windows/Linux refits can fail strict numerical comparisons; the default workflow above passes on all three systems ([details](docs/REPRODUCING.md#raw-refits)).
+
 To also recompute single-cell results from counts, install **R 4.4.2** and its build prerequisites ([setup guide](docs/REPRODUCING.md#single-cell-analysis)), then run:
 
 ```sh
